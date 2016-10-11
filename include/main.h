@@ -40,6 +40,7 @@ struct Main
     u8 state;
 
     u8 oamLoadDisabled:1;
+    u8 unk1:1;
 };
 
 extern u8 gUnknown_3001764;
