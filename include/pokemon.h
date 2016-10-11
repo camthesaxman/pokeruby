@@ -280,43 +280,48 @@ struct BattlePokemon
 
 struct BaseStats
 {
-    u8 baseHP;
-    u8 baseAttack;
-    u8 baseDefense;
-    u8 baseSpeed;
-    u8 baseSpAttack;
-    u8 baseSpDefense;
-
-    u8 type1, type2;
-
-    u8 catchRate;
-
-    u8 expYield;
-
-    u16 evYield_HP:2;
-    u16 evYield_Attack:2;
-    u16 evYield_Defense:2;
-    u16 evYield_Speed:2;
-    u16 evYield_SpAttack:2;
-    u16 evYield_SpDefense:2;
-
-    u16 item1, item2;
-
-    u8 genderRatio;
-
-    u8 eggCycles;
-
-    u8 friendship;
-
-    u8 growthRate;
-
-    u8 eggGroup1, eggGroup2;
-
-    u8 ability1, ability2;
-
-    u8 safariZoneFleeRate;
-
-    u8 bodyColor;
+    /*0x00*/ u8 baseHP;
+    /*0x01*/ u8 baseAttack;
+    /*0x02*/ u8 baseDefense;
+    /*0x03*/ u8 baseSpeed;
+    /*0x04*/ u8 baseSpAttack;
+    /*0x05*/ u8 baseSpDefense;
+    /*0x06*/ u8 type1;
+    /*0x07*/ u8 type2;
+    
+    /*0x08*/ u8 catchRate;
+    
+    /*0x09*/ u8 expYield;
+    
+    /*0x0A*/ u16 evYield_HP:2;
+             u16 evYield_Attack:2;
+             u16 evYield_Defense:2;
+             u16 evYield_Speed:2;
+    /*0x0B*/ u16 evYield_SpAttack:2;
+             u16 evYield_SpDefense:2;
+    
+    /*0x0C*/ u16 item1;
+    /*0x0E*/ u16 item2;
+    
+    /*0x10*/ u8 genderRatio;
+    
+    /*0x11*/ u8 eggCycles;
+    
+    /*0x12*/ u8 friendship;
+    
+    /*0x13*/ u8 growthRate;
+    
+    /*0x14*/ u8 eggGroup1;
+    /*0x15*/ u8 eggGroup2;
+    
+    /*0x16*/ u8 ability1;
+    /*0x17*/ u8 ability2;
+    
+    /*0x18*/ u8 safariZoneFleeRate;
+    
+    /*0x19*/ u8 bodyColor;
+    
+    /*0x1A*/ //2 byte padding
 };
 
 struct BattleMove

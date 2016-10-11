@@ -8,10 +8,17 @@ struct UnknownStruct {
     u8 unknown[28];
 };
 
+struct UnknownStruct2 {
+    u8 unknown[12];
+};
+
 extern u8 battle_side_get_owner(u8);
 extern u8 itemid_get_x12(u16);
 extern void sub_8111924(struct Pokemon *, u16, u8, u8);
 
+extern u32 gExperienceTables[8][101];
+extern struct BaseStats gBaseStats[];
+extern struct UnknownStruct2 gUnknown_02024C80[];
 extern struct UnknownStruct gUnknown_02024DF8[];
 extern u32 gItemEffectTable[];
 extern u8 gUnknown_02024A60;
@@ -24,6 +31,7 @@ extern struct EnigmaBerry gEnigmaBerries[];
 extern struct BattlePokemon gBattleMons[];
 
 u32 sub_803E1B0(struct Pokemon *, u16 b, u8 c, u8 d, u8 e);
+extern bool8 HealStatusConditions(struct Pokemon *pkmn, u32 unused, u32 a, u8 b);
 
 u8 ExecuteTableBasedItemEffect_(struct Pokemon *pkmn, u16 b, u8 c, u8 d)
 {
@@ -156,8 +164,98 @@ u32 sub_803E1B0(struct Pokemon *pkmn, u16 b, u8 c, u8 d, u8 e)
                 continue;
                 break;
             case 1: //_0803E474
+                if((sp20->unknown[sp18] & 0xF0) &&
+                   gBattleMons[gUnknown_02024A60].statStages[2] <= 11)
+                {
+                    gBattleMons[gUnknown_02024A60].statStages[2] += (sp20->unknown[sp18] & 0xF0) >> 4;
+                    if(gBattleMons[gUnknown_02024A60].statStages[2] > 12)
+                        gBattleMons[gUnknown_02024A60].statStages[2] = 12;
+                    sp1C = 0;
+                }
+                //_0803E4BA
+                if(!(sp20->unknown[sp18] & 0xF))
+                    continue;
+                if(gBattleMons[gUnknown_02024A60].statStages[3] > 11)
+                    continue;
+                gBattleMons[gUnknown_02024A60].statStages[3] += sp20->unknown[sp18] & 0xF;
+                if(gBattleMons[gUnknown_02024A60].statStages[3] > 12)
+                    gBattleMons[gUnknown_02024A60].statStages[3] = 12;
+                sp1C = 0;
+                continue;
+                break;
             case 2: //_0803E508
+                if((sp20->unknown[sp18] & 0xF0) &&
+                   gBattleMons[gUnknown_02024A60].statStages[6] <= 11)
+                {
+                    gBattleMons[gUnknown_02024A60].statStages[6] += (sp20->unknown[sp18] & 0xF0) >> 4;
+                    if(gBattleMons[gUnknown_02024A60].statStages[6] > 12)
+                        gBattleMons[gUnknown_02024A60].statStages[6] = 12;
+                    sp1C = 0;
+                }
+                //_0803E54E
+                if(sp20->unknown[sp18] & 0xF)
+                    continue;
+                if(gBattleMons[gUnknown_02024A60].statStages[4] > 11)
+                    continue;
+                gBattleMons[gUnknown_02024A60].statStages[4] += sp20->unknown[sp18] & 0xF;
+                if(gBattleMons[gUnknown_02024A60].statStages[4] > 12)
+                    gBattleMons[gUnknown_02024A60].statStages[4] = 12;
+                sp1C = 0;
+                continue;
+                break;
             case 3: //_0803E59C
+                if((sp20->unknown[sp18] & 0x80) &&
+                   !gUnknown_02024C80[battle_side_get_owner(gUnknown_02024A60)].unknown[2])
+                {
+                    gUnknown_02024C80[battle_side_get_owner(gUnknown_02024A60)].unknown[2] = 5;
+                    sp1C = 0;
+                }
+                //_0803E5E4
+                if((sp20->unknown[sp18] & 0x40) &&
+                   GetMonData(pkmn, MON_DATA_LEVEL, NULL) != 100)
+                {
+                    u32 level = GetMonData(pkmn, MON_DATA_LEVEL, NULL);
+                    u32 species = GetMonData(pkmn, MON_DATA_SPECIES, NULL);
+                    u32 experience = gExperienceTables[gBaseStats[species].growthRate][level + 1];
+                    
+                    SetMonData(pkmn, MON_DATA_EXP, &experience);
+                    CalculateMonStats(pkmn);
+                }
+                //_0803E646
+                if(sp20->unknown[sp18] & 0x20)
+                {
+                    if(!HealStatusConditions(pkmn, c, 7, sp34))
+                    {
+                        if(sp34 != 4)
+                            gBattleMons[sp34].status2 &= 0xf7ffffff;
+                        //_0803E67E
+                        sp1C = 0;
+                    }
+                }
+                //_0803E682
+                if(sp20->unknown[sp18] & 0x10)
+                {
+                    if(!HealStatusConditions(pkmn, c, 0xF88, sp34))
+                        sp1C = 0;
+                }
+                if(sp20->unknown[sp18] & 0x8)
+                {
+                    if(!HealStatusConditions(pkmn, c, 0x10, sp34))
+                        sp1C = 0;
+                }
+                if(sp20->unknown[sp18] & 0x4)
+                {
+                    if(!HealStatusConditions(pkmn, c, 0x20, sp34))
+                        sp1C = 0;
+                }
+                if(sp20->unknown[sp18] & 0x2)
+                {
+                    if(!HealStatusConditions(pkmn, c, 0x40, sp34))
+                        sp1C = 0;
+                }
+                //_0803E702
+                //Continue decompiling here
+                break;
             case 4: //_0803E77C
             case 5: //_0803EE1E
         }
