@@ -711,3 +711,49 @@ void sub_811EC10(void)
     }
     dp01_tbl3_exec_completed();
 }
+
+//Probably just gUnknown_02023A60[foo] + 3
+extern u8 gUnknown_02023A63[][0x200];
+
+void sub_811EC68(u8 a)
+{
+    switch (gUnknown_02023A60[gUnknown_02024A60][1])
+    {
+        case 0:
+            //TODO:
+            SetMonData(&gPlayerParty[a], 0xB, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            SetMonData(&gPlayerParty[a], 0xC, gUnknown_02023A60[gUnknown_02024A60] + 3 + 0x2E);
+            break;
+        case 1:
+            SetMonData(&gPlayerParty[a], 0xB, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            break;
+        case 2:
+            SetMonData(&gPlayerParty[a], 0xC, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            break;
+        case 3:
+            //TODO:
+            break;
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            SetMonData(&gPlayerParty[a], gUnknown_02023A60[gUnknown_02024A60][1] + 9, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            break;
+        case 8:
+            SetMonData(&gPlayerParty[a], 0x11, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            SetMonData(&gPlayerParty[a], 0x12, gUnknown_02023A60[gUnknown_02024A60] + 3 + 1);
+            SetMonData(&gPlayerParty[a], 0x13, gUnknown_02023A60[gUnknown_02024A60] + 3 + 2);
+            SetMonData(&gPlayerParty[a], 0x14, gUnknown_02023A60[gUnknown_02024A60] + 3 + 3);
+            SetMonData(&gPlayerParty[a], 0x15, gUnknown_02023A60[gUnknown_02024A60] + 3 + 4);
+            break;
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+            SetMonData(&gPlayerParty[a], gUnknown_02023A60[gUnknown_02024A60][1] + 8, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            break;
+        case 17:
+            SetMonData(&gPlayerParty[a], 1, gUnknown_02023A60[gUnknown_02024A60] + 3);
+            break;
+    }
+}
