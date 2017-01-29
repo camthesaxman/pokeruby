@@ -1,0 +1,19 @@
+language: assembly
+
+os:
+  - linux
+
+env:
+  global:
+    - DEVKITPRO=$HOME/devkitPro
+    - DEVKITARM=$HOME/devkitARM
+
+before_install:
+  - http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
+
+install:
+  - sudo perl devkitARMupdate.pl
+
+script:
+  - ./build_tools.sh
+  - make compare
