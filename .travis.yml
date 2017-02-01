@@ -31,3 +31,5 @@ script:
 - make tidy && make -j2 compare_sapphire
 - make tidy && make -j2 compare_sapphire_rev1
 - make tidy && make -j2 compare_sapphire_rev2
+cache:
+  apt: true
