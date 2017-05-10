@@ -52,7 +52,7 @@ void UpdateDewfordTrendPerDay(u16 a)
             u32 r4;
             u32 r2 = sp0;
 			struct EasyChatPair *r5 = &gSaveBlock1.easyChatPairs[i];
-            
+
             if (r5->unk1_6 == 0)
             {
                 if (r5->unk0_0 >= (u16)r2)
