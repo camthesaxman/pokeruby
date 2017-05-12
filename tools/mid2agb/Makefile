@@ -2,6 +2,8 @@ CXX := g++
 
 CXXFLAGS := -std=c++11 -O2 -Wall -Wno-switch
 
+LDFLAGS := -s -static
+
 SRCS := agb.cpp error.cpp main.cpp midi.cpp tables.cpp
 
 HEADERS := agb.h error.h main.h midi.h tables.h
@@ -9,7 +11,7 @@ HEADERS := agb.h error.h main.h midi.h tables.h
 .PHONY: clean
 
 mid2agb: $(SRCS) $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(SRCS) -o $@
+	$(CXX) $(CXXFLAGS) $(SRCS) -o $@ $(LDFLAGS)
 
 clean:
 	$(RM) mid2agb mid2agb.exe
