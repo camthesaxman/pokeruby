@@ -10,6 +10,7 @@ It builds the following roms:
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
 ### irc: [freenode#pret][irc]
+### Discord: [https://discord.gg/Et2MqwR]
 
 [irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
 [travis]: https://travis-ci.org/pret/pokeruby
