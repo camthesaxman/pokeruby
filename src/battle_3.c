@@ -1394,6 +1394,13 @@ extern u8 gUnknown_081D978C[]; //intimidate1
 extern u8 gUnknown_081D9795[]; //intimidate2
 extern u8 gUnknown_081D9726[]; //trace effect
 
+struct Struct2017100
+{
+    u32 arr[4];
+};
+
+#define ewram17100 (*(struct Struct2017100 *)(ewram + 0x17100))
+
 u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
 {
     u8 effect = 0;
@@ -1426,9 +1433,11 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI)) // why isn't that check done at the beginning?
     {
+        int i;  // r4
         u16 move;
-        u8 moveType;
-        int i;
+        // Hmm...
+        #define moveType moveArg
+        //u16 moveType;
         u8 side;
 
         if (special)
@@ -1436,8 +1445,11 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
         else
             gLastUsedAbility = gBattleMons[bank].ability;
 
-        move = moveArg ? moveArg : gCurrentMove;
-
+        if (moveArg)
+            move = moveArg;
+        else
+            move = gCurrentMove;
+        
         if (BATTLE_STRUCT->dynamicMoveType)
             moveType = BATTLE_STRUCT->dynamicMoveType & 0x3F;
         else
@@ -1524,7 +1536,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
 				break;
 			case ABILITY_FORECAST:
-			    if ((effect = CastformDataTypeChange(bank)))
+                effect = CastformDataTypeChange(bank);
+                if (effect != 0)
                 {
                     b_push_move_exec(gUnknown_081D977D);
                     BATTLE_STRUCT->scriptingActive = bank;
@@ -1542,9 +1555,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
 			case ABILITY_AIR_LOCK:
 			    {
 			        u8 i;
+                    
 			        for (i = 0; i < gNoOfAllBanks; i++)
                     {
-                        if ((effect = CastformDataTypeChange(i)))
+                        // TODO: i should be in r6 here
+                        //asm("":::"r4","r5");
+                        effect = CastformDataTypeChange(i);
+                        if (effect != 0)
                         {
                             b_push_move_exec(gUnknown_081D977D);
                             BATTLE_STRUCT->scriptingActive = i;
@@ -1563,11 +1580,12 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 switch (gLastUsedAbility)
                 {
                 case ABILITY_RAIN_DISH:
-                    if (WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_RAIN_ANY && gBattleMons[bank].maxHP > gBattleMons[bank].hp)
+                    if (WEATHER_HAS_EFFECT && (gBattleWeather & WEATHER_RAIN_ANY)
+                     && gBattleMons[bank].maxHP > gBattleMons[bank].hp)
                     {
                         gLastUsedAbility = ABILITY_RAIN_DISH; //why
                         b_push_move_exec(gUnknown_081D9730);
-                        gBattleMoveDamage = gBattleMons[bank].hp / 16;
+                        gBattleMoveDamage = gBattleMons[bank].maxHP / 16;
                         if (gBattleMoveDamage == 0)
                             gBattleMoveDamage = 1;
                         gBattleMoveDamage *= -1;
@@ -1575,7 +1593,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                     }
                     break;
                 case ABILITY_SHED_SKIN:
-                    if (gBattleMons[bank].status1 & STATUS_ANY && (Random() % 3) == 0)
+                    if ((gBattleMons[bank].status1 & STATUS_ANY) && (Random() % 3) == 0)
                     {
                         if (gBattleMons[bank].status1 & (STATUS_POISON | STATUS_TOXIC_POISON))
                             StringCopy(gBattleTextBuff1, gStatusConditionString_PoisonJpn);
@@ -1614,9 +1632,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
             }
             break;
         case ABILITYEFFECT_MOVES_BLOCK: // 2
-            switch (gLastUsedAbility)
+            if (gLastUsedAbility == ABILITY_SOUNDPROOF)
             {
-            case ABILITY_SOUNDPROOF:
                 for (i = 0; gUnknown_081FA724[i] != 0xFFFF; i++)
                 {
                     if (gUnknown_081FA724[i] == move)
@@ -1629,7 +1646,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                     gBattlescriptCurrInstr = gUnknown_081D98F3;
                     effect = 1;
                 }
-                break;
             }
             break;
         case ABILITYEFFECT_ABSORBING: // 3
@@ -1660,20 +1676,20 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 case ABILITY_FLASH_FIRE:
                     if (moveType == TYPE_FIRE && !(gBattleMons[bank].status1 & STATUS_FREEZE))
                     {
-                        if (!(ewram17000[bank] & 1))
+                        if (!(ewram17100.arr[bank] & 1))
                         {
                             gBattleCommunication[MULTISTRING_CHOOSER] = 0;
                             if (gProtectStructs[gBankAttacker].notFirstStrike)
                                 gBattlescriptCurrInstr = gUnknown_081D987C;
                             else
                                 gBattlescriptCurrInstr = gUnknown_081D987B;
-                            ewram17000[bank] |= 1;
+                            ewram17100.arr[bank] |= 1;
                             effect = 2;
                         }
                         else
                         {
                             gBattleCommunication[MULTISTRING_CHOOSER] = 1;
-                            if (!(gProtectStructs[gBankAttacker].notFirstStrike))
+                            if (gProtectStructs[gBankAttacker].notFirstStrike)
                                 gBattlescriptCurrInstr = gUnknown_081D987C;
                             else
                                 gBattlescriptCurrInstr = gUnknown_081D987B;
@@ -1686,7 +1702,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 {
                     if (gBattleMons[bank].maxHP == gBattleMons[bank].hp)
                     {
-                        if (!(gProtectStructs[gBankAttacker].notFirstStrike))
+                        if ((gProtectStructs[gBankAttacker].notFirstStrike))
                             gBattlescriptCurrInstr = gUnknown_081D9843;
                         else
                             gBattlescriptCurrInstr = gUnknown_081D9842;
@@ -1705,9 +1721,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
             switch (gLastUsedAbility)
             {
             case ABILITY_COLOR_CHANGE:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && move != MOVE_STRUGGLE && gBattleMoves[move].power != 0
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMons[bank].type1 != moveType && gBattleMons[bank].type2 != moveType && gBattleMons[bank].hp)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && move != MOVE_STRUGGLE
+                 && gBattleMoves[move].power != 0
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && gBattleMons[bank].type1 != moveType
+                 && gBattleMons[bank].type2 != moveType
+                 && gBattleMons[bank].hp != 0)
                 {
                     gBattleMons[bank].type1 = moveType;
                     gBattleMons[bank].type2 = moveType;
@@ -1721,9 +1741,11 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_ROUGH_SKIN:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && gBattleMons[gBankAttacker].hp != 0
+                 && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT))
                 {
                     gBattleMoveDamage = gBattleMons[gBankAttacker].maxHP / 16;
                     if (gBattleMoveDamage == 0)
@@ -1734,9 +1756,12 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_EFFECT_SPORE:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMoves[move].flags & FLAG_MAKES_CONTACT && (Random() % 10) == 0)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && gBattleMons[gBankAttacker].hp != 0
+                 && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                 && (Random() % 10) == 0)
                 {
                     do
                     {
@@ -1752,11 +1777,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_POISON_POINT:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMoves[move].flags & FLAG_MAKES_CONTACT && (Random() % 3) == 0)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && gBattleMons[gBankAttacker].hp != 0
+                 && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                 && (Random() % 3) == 0)
                 {
-                    gBattleCommunication[MOVE_EFFECT_BYTE] += 0x42;
+                    gBattleCommunication[MOVE_EFFECT_BYTE] = 0x42;
                     b_movescr_stack_push_cursor();
                     gBattlescriptCurrInstr = gUnknown_081D9950;
                     gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
@@ -1764,11 +1792,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_STATIC:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMoves[move].flags & FLAG_MAKES_CONTACT && (Random() % 3) == 0)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && gBattleMons[gBankAttacker].hp != 0
+                 && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                 && (Random() % 3) == 0)
                 {
-                    gBattleCommunication[MOVE_EFFECT_BYTE] += 0x45;
+                    gBattleCommunication[MOVE_EFFECT_BYTE] = 0x45;
                     b_movescr_stack_push_cursor();
                     gBattlescriptCurrInstr = gUnknown_081D9950;
                     gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
@@ -1776,11 +1807,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_FLAME_BODY:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg && gBattleMoves[move].flags & FLAG_MAKES_CONTACT
-                    && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && (Random() % 3) == 0)
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                 && gBattleMons[gBankAttacker].hp != 0
+                 && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                 && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+                 && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
+                 && (Random() % 3) == 0)
                 {
-                    gBattleCommunication[MOVE_EFFECT_BYTE] += 0x43;
+                    gBattleCommunication[MOVE_EFFECT_BYTE] = 0x43;
                     b_movescr_stack_push_cursor();
                     gBattlescriptCurrInstr = gUnknown_081D9950;
                     gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
@@ -1788,11 +1822,17 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                 }
                 break;
             case ABILITY_CUTE_CHARM:
-                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT) && gBattleMons[gBankAttacker].hp && !gProtectStructs[gBankAttacker].confusionSelfDmg && gBattleMoves[move].flags & FLAG_MAKES_CONTACT
+                if (!(gBattleMoveFlags & MOVESTATUS_NOEFFECT)
+                    && gBattleMons[gBankAttacker].hp != 0
+                    && !gProtectStructs[gBankAttacker].confusionSelfDmg
+                    && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
                     && (gSpecialStatuses[gBankTarget].moveturnLostHP_physical || gSpecialStatuses[gBankTarget].moveturnLostHP_special)
-                    && gBattleMons[gBankTarget].hp && (Random() % 3) == 0 && gBattleMons[gBankTarget].ability != ABILITY_OBLIVIOUS
+                    && gBattleMons[gBankTarget].hp != 0
+                    && (Random() % 3) == 0
+                    && gBattleMons[gBankAttacker].ability != ABILITY_OBLIVIOUS
                     && GetGenderFromSpeciesAndPersonality(speciesAtk, pidAtk) != GetGenderFromSpeciesAndPersonality(speciesDef, pidDef)
-                    && !(gBattleMons[gBankTarget].status2 & STATUS2_INFATUATION) && GetGenderFromSpeciesAndPersonality(speciesAtk, pidAtk) != 0xFF
+                    && !(gBattleMons[gBankAttacker].status2 & STATUS2_INFATUATION)
+                    && GetGenderFromSpeciesAndPersonality(speciesAtk, pidAtk) != 0xFF
                     && GetGenderFromSpeciesAndPersonality(speciesDef, pidDef) != 0xFF)
                 {
                     gBattleMons[gBankAttacker].status2 |= (gBitTable[gBankTarget] << 0x10);
@@ -1805,13 +1845,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
             break;
         case ABILITYEFFECT_IMMUNITY: // 5
             {
-                u8 i;
+            #define i bank
                 for (i = 0; i < gNoOfAllBanks; i++)
                 {
                     switch (gBattleMons[i].ability)
                     {
                     case ABILITY_IMMUNITY:
-                        if (gBattleMons[i].status1 & (STATUS_POISON | STATUS_TOXIC_POISON))
+                        if (gBattleMons[i].status1 & (STATUS_POISON | STATUS_TOXIC_POISON | 0xF00))  // TODO: what is 0xF00?
                         {
                             StringCopy(gBattleTextBuff1, gStatusConditionString_PoisonJpn);
                             effect = 1;
@@ -1880,26 +1920,32 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                         gBattlescriptCurrInstr = gUnknown_081D9956;
                         BATTLE_STRUCT->scriptingActive = i;
                         gActiveBank = i;
-                        EmitSetAttributes(0, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[i].status1);
+                        EmitSetAttributes(0, REQUEST_STATUS_BATTLE, 0, 4, &gBattleMons[gActiveBank].status1);
                         MarkBufferBankForExecution(gActiveBank);
                         return effect;
                     }
                 }
+            #undef i
             }
             break;
         case ABILITYEFFECT_FORECAST: // 6
             {
-                u8 i;
+            #define i bank
                 for (i = 0; i < gNoOfAllBanks; i++)
                 {
-                    if (gBattleMons[i].ability == ABILITY_FORECAST && (effect = CastformDataTypeChange(i)))
+                    if (gBattleMons[i].ability == ABILITY_FORECAST)
                     {
-                        b_push_move_exec(gUnknown_081D977D);
-                        BATTLE_STRUCT->scriptingActive = i;
-                        BATTLE_STRUCT->castformToChangeInto = effect - 1;
-                        return effect;
+                        effect = CastformDataTypeChange(i);
+                        if (effect)
+                        {
+                            b_push_move_exec(gUnknown_081D977D);
+                            BATTLE_STRUCT->scriptingActive = i;
+                            BATTLE_STRUCT->castformToChangeInto = effect - 1;
+                            return effect;
+                        }
                     }
                 }
+            #undef i
             }
             break;
         case ABILITYEFFECT_SYNCHRONIZE: // 7
@@ -1911,7 +1957,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                     BATTLE_STRUCT->synchroniseEffect = 2;
                 gBattleCommunication[MOVE_EFFECT_BYTE] = BATTLE_STRUCT->synchroniseEffect + 0x40;
                 BATTLE_STRUCT->scriptingActive = gBankTarget;
-                b_movescr_stack_pop_cursor();
+                b_movescr_stack_push_cursor();
                 gBattlescriptCurrInstr = gUnknown_081D9953;
                 gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
                 effect++;
@@ -1926,7 +1972,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                     BATTLE_STRUCT->synchroniseEffect = 2;
                 gBattleCommunication[MOVE_EFFECT_BYTE] = BATTLE_STRUCT->synchroniseEffect;
                 BATTLE_STRUCT->scriptingActive = gBankAttacker;
-                b_movescr_stack_pop_cursor();
+                b_movescr_stack_push_cursor();
                 gBattlescriptCurrInstr = gUnknown_081D9953;
                 gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
                 effect++;
@@ -1949,29 +1995,29 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
         case ABILITYEFFECT_TRACE: // 11
             for (i = 0; i < gNoOfAllBanks; i++)
             {
-                if (gBattleMons[i].ability == ABILITY_TRACE && gStatuses3[i] & STATUS3_TRACE)
+                if (gBattleMons[i].ability == ABILITY_TRACE && (gStatuses3[i] & STATUS3_TRACE))
                 {
                     u8 opposite = (GetBankIdentity(i) ^ 1) & 1;
                     u8 target1 = GetBankByPlayerAI(opposite);
                     u8 target2 = GetBankByPlayerAI(opposite + 2);
                     if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
                     {
-                        if (gBattleMons[target1].ability && gBattleMons[target1].hp && gBattleMons[target2].ability && gBattleMons[target2].hp)
+                        if (gBattleMons[target1].ability != 0 && gBattleMons[target1].hp != 0
+                         && gBattleMons[target2].ability != 0 && gBattleMons[target2].hp != 0)
                         {
-                            //random target
                             gActiveBank = GetBankByPlayerAI(((Random() & 1) * 2) | opposite);
                             gBattleMons[i].ability = gBattleMons[gActiveBank].ability;
                             gLastUsedAbility = gBattleMons[gActiveBank].ability;
                             effect++;
                         }
-                        else if (gBattleMons[target1].ability && gBattleMons[target1].hp)
+                        else if (gBattleMons[target1].ability != 0 && gBattleMons[target1].hp != 0)
                         {
                             gActiveBank = target1;
                             gBattleMons[i].ability = gBattleMons[gActiveBank].ability;
                             gLastUsedAbility = gBattleMons[gActiveBank].ability;
                             effect++;
                         }
-                        else if (gBattleMons[target2].ability && gBattleMons[target2].hp)
+                        else if (gBattleMons[target2].ability != 0 && gBattleMons[target2].hp != 0)
                         {
                             gActiveBank = target2;
                             gBattleMons[i].ability = gBattleMons[gActiveBank].ability;
@@ -1984,8 +2030,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                         gActiveBank = target1;
                         if (gBattleMons[target1].ability && gBattleMons[target1].hp)
                         {
-                            gBattleMons[i].ability = gBattleMons[gActiveBank].ability;
-                            gLastUsedAbility = gBattleMons[gActiveBank].ability;
+                            gBattleMons[i].ability = gBattleMons[target1].ability;
+                            gLastUsedAbility = gBattleMons[target1].ability;
                             effect++;
                         }
                     }
@@ -2013,7 +2059,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
         case ABILITYEFFECT_INTIMIDATE2: // 10
             for (i = 0; i < gNoOfAllBanks; i++)
             {
-                if (gBattleMons[i].ability == ABILITY_INTIMIDATE && gStatuses3[i] & STATUS3_INTIMIDATE_POKES)
+                if (gBattleMons[i].ability == ABILITY_INTIMIDATE && (gStatuses3[i] & STATUS3_INTIMIDATE_POKES))
                 {
                     gLastUsedAbility = ABILITY_INTIMIDATE;
                     gStatuses3[i] &= ~(STATUS3_INTIMIDATE_POKES);
@@ -2048,24 +2094,23 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
             }
             break;
         case ABILITYEFFECT_FIELD_SPORT: // 14
-            if (gLastUsedAbility == 0xFD)
+            switch (gLastUsedAbility)
             {
+            case 0xFD:
                 for (i = 0; i < gNoOfAllBanks; i++)
                 {
                     if (gStatuses3[i] & STATUS3_MUDSPORT)
                         effect = i + 1;
                 }
-            }
-            else if (gLastUsedAbility == 0xFE)
-            {
+                break;
+            case 0xFE:
                 for (i = 0; i < gNoOfAllBanks; i++)
                 {
                     if (gStatuses3[i] & STATUS3_WATERSPORT)
                         effect = i + 1;
                 }
-            }
-            else
-            {
+                break;
+            default:
                 for (i = 0; i < gNoOfAllBanks; i++)
                 {
                     if (gBattleMons[i].ability == ability)
@@ -2074,12 +2119,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
                         effect = i + 1;
                     }
                 }
+                break;
             }
             break;
         case ABILITYEFFECT_CHECK_ON_FIELD: // 19
             for (i = 0; i < gNoOfAllBanks; i++)
             {
-                if (gBattleMons[i].ability == ability && gBattleMons[i].hp)
+                if (gBattleMons[i].ability == ability && gBattleMons[i].hp != 0)
                 {
                     gLastUsedAbility = ability;
                     effect = i + 1;

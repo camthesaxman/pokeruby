@@ -657,6 +657,7 @@ extern u8 ewram[];
 #define ewram17800              ((struct Struct2017800 *)    (ewram + 0x17800))
 #define ewram17810              ((struct Struct2017810 *)    (ewram + 0x17810))
 #define ewram17840              (*(struct Struct2017840 *)   (ewram + 0x17840))
+// TODO: this is wrong
 #define ewram17000              ((u32 *)                     (ewram + 0x17100))
 
 struct funcStack
