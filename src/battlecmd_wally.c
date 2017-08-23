@@ -29,7 +29,6 @@ struct UnknownStruct3
 extern u8 gActiveBank;
 extern void (*gBattleBankFunc[])(void);
 extern u32 gBattleExecBuffer;
-extern void (*gWallyBufferCommands[])(void);
 extern u8 gBattleBufferA[][0x200];
 extern u8 gObjectBankIDs[];
 extern MainCallback gPreBattleCallback1;
@@ -98,6 +97,8 @@ extern u8 sub_8079E90();
 extern void sub_80312F0(struct Sprite *);
 extern bool8 move_anim_start_t3();
 
+// this file's functions
+
 void WallyBufferRunCommand(void);
 void sub_81374FC(void);
 void sub_81376B8(void);
@@ -106,6 +107,130 @@ u32 sub_8137A84(u8, u8 *);
 void sub_8138294(u8);
 void sub_81390D0(void);
 void sub_8139A2C(u8);
+
+void WallyHandleGetAttributes(void);
+void sub_8138230(void);
+void WallyHandleSetAttributes(void);
+void sub_8138C90(void);
+void sub_8138C9C(void);
+void sub_8138CA8(void);
+void sub_8138CB4(void);
+void sub_8138D38(void);
+void sub_8138E04(void);
+void sub_8138ED0(void);
+void sub_8138EDC(void);
+void sub_8138EE8(void);
+void sub_8138EF4(void);
+void sub_8138F44(void);
+void sub_8138FA0(void);
+void sub_8138FAC(void);
+void sub_8139208(void);
+void dp01t_11_5_message_for_player_only(void);
+void sub_8139298(void);
+void sub_8139378(void);
+void sub_8139384(void);
+void sub_81393EC(void);
+void sub_813942C(void);
+void sub_8139438(void);
+void sub_8139444(void);
+void sub_8139544(void);
+void sub_8139550(void);
+void sub_813955C(void);
+void sub_8139568(void);
+void sub_8139574(void);
+void sub_8139580(void);
+void sub_813958C(void);
+void sub_8139598(void);
+void sub_81395A4(void);
+void sub_81395B0(void);
+void sub_81395BC(void);
+void sub_81395C8(void);
+void sub_81395D4(void);
+void sub_81395E0(void);
+void sub_81395EC(void);
+void sub_81395F8(void);
+void sub_8139604(void);
+void sub_8139674(void);
+void sub_8139680(void);
+void sub_81396B0(void);
+void sub_81396E0(void);
+void dp01t_2E_5_battle_intro(void);
+void sub_8139750(void);
+void sub_8139AA0(void);
+void sub_8139B20(void);
+void sub_8139B2C(void);
+void sub_8139B38(void);
+void sub_8139B44(void);
+void sub_8139BA0(void);
+void sub_8139BAC(void);
+void sub_8139BB8(void);
+void nullsub_80(void);
+
+// const data
+
+typedef void (*BattleBufferCmd) (void);
+static const BattleBufferCmd gWallyBufferCommands[] =
+{
+	WallyHandleGetAttributes,
+	sub_8138230,
+	WallyHandleSetAttributes,
+	sub_8138C90,
+	sub_8138C9C,
+	sub_8138CA8,
+	sub_8138CB4,
+	sub_8138D38,
+	sub_8138E04,
+	sub_8138ED0,
+	sub_8138EDC,
+	sub_8138EE8,
+	sub_8138EF4,
+	sub_8138F44,
+	sub_8138FA0,
+	sub_8138FAC,
+	sub_8139208,
+	dp01t_11_5_message_for_player_only,
+	sub_8139298,
+	sub_8139378,
+	sub_8139384,
+	sub_81393EC,
+	sub_813942C,
+	sub_8139438,
+	sub_8139444,
+	sub_8139544,
+	sub_8139550,
+	sub_813955C,
+	sub_8139568,
+	sub_8139574,
+	sub_8139580,
+	sub_813958C,
+	sub_8139598,
+	sub_81395A4,
+	sub_81395B0,
+	sub_81395BC,
+	sub_81395C8,
+	sub_81395D4,
+	sub_81395E0,
+	sub_81395EC,
+	sub_81395F8,
+	sub_8139604,
+	sub_8139674,
+	sub_8139680,
+	sub_81396B0,
+	sub_81396E0,
+	dp01t_2E_5_battle_intro,
+	sub_8139750,
+	sub_8139AA0,
+	sub_8139B20,
+	sub_8139B2C,
+	sub_8139B38,
+	sub_8139B44,
+	sub_8139BA0,
+	sub_8139BAC,
+	sub_8139BB8,
+	nullsub_80,
+};
+
+// code
 
 void unref_sub_8137220(void)
 {
@@ -374,7 +499,7 @@ void unref_sub_81379E4(void)
         WallyBufferExecCompleted();
 }
 
-void dp01t_00_5_getattr(void)
+void WallyHandleGetAttributes(void)
 {
     u8 arr[0x100];
     u32 r6 = 0;
@@ -709,7 +834,7 @@ void sub_8138230(void)
     sub_802ECF0();
 }
 
-void sub_813823C(void)
+void WallyHandleSetAttributes(void)
 {
     u8 r4;
     u8 i;
