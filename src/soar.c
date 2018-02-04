@@ -15,6 +15,7 @@
 #include "string_util.h"
 #include "task.h"
 #include "trig.h"
+#include "random.h"
 
 #define DEBUG 1
 
@@ -41,18 +42,18 @@ extern const u8 sRegionMapBkgnd_TilemapLZ[];
 #if SAPPHIRE
 static const u8 sEonBrendanSpriteTiles[]       = INCBIN_U8("graphics/soar/latias_brendan.4bpp.lz");
 static const u8 sEonBrendanSpritePaletteData[] = INCBIN_U8("graphics/soar/latias_brendan.gbapal.lz");
-static const u8 sEonMaySpriteTiles[]           = INCBIN_U8("graphics/soar/latias_brendan.4bpp.lz");
-static const u8 sEonMaySpritePaletteData[]     = INCBIN_U8("graphics/soar/latias_brendan.gbapal.lz");
+static const u8 sEonMaySpriteTiles[]           = INCBIN_U8("graphics/soar/latias_may.4bpp.lz");
+static const u8 sEonMaySpritePaletteData[]     = INCBIN_U8("graphics/soar/latias_may.gbapal.lz");
 #else
 static const u8 sEonBrendanSpriteTiles[]       = INCBIN_U8("graphics/soar/latios_brendan.4bpp.lz");
 static const u8 sEonBrendanSpritePaletteData[] = INCBIN_U8("graphics/soar/latios_brendan.gbapal.lz");
-static const u8 sEonMaySpriteTiles[]           = INCBIN_U8("graphics/soar/latios_brendan.4bpp.lz");
-static const u8 sEonMaySpritePaletteData[]     = INCBIN_U8("graphics/soar/latios_brendan.gbapal.lz");
+static const u8 sEonMaySpriteTiles[]           = INCBIN_U8("graphics/soar/latios_may.4bpp.lz");
+static const u8 sEonMaySpritePaletteData[]     = INCBIN_U8("graphics/soar/latios_may.gbapal.lz");
 #endif
 
 static const struct OamData sEonSpriteOamData =
 {
-    .y = DISPLAY_HEIGHT / 2,
+    .y = 100,
     .affineMode = 3,
     .objMode = 0,
     .mosaic = 0,
@@ -167,13 +168,12 @@ void CB2_InitSoar(void)
             ResetSpriteData();
             ResetPaletteFade();
             FreeAllSpritePalettes();
-            
+
             gMain.state = 0;
             SetMainCallback2(CB2_LoadSoarGraphics);
         }
         break;
     }
-    
     /*
     RunTasks();
     AnimateSprites();
@@ -209,7 +209,7 @@ static void LoadEonGraphics(void)
 
     LoadCompressedObjectPic(&sEonSpriteSheet);
     LoadCompressedObjectPalette(&sEonSpritePalette);
-    sEonSpriteId = CreateSprite(&sEonSpriteTemplate, DISPLAY_WIDTH / 2, DISPLAY_HEIGHT / 2, 0);
+    sEonSpriteId = CreateSprite(&sEonSpriteTemplate, DISPLAY_WIDTH / 2, 100, 0);
     gSprites[sEonSpriteId].data[0] = 0;
     gSprites[sEonSpriteId].data[1] = 0;
     gSprites[sEonSpriteId].data[2] = 0;
@@ -265,21 +265,20 @@ static void CB2_LoadSoarGraphics(void)
         //break;
         // continue fade in
         //if (!UpdatePaletteFade())
-        {
-            //DmaClear32(3, (void *)(VRAM + 0x6000), 0x2000);
+        //DmaClear32(3, (void *)(VRAM + 0x6000), 0x2000);
 
-            REG_IME = 0;
-            REG_IE |= INTR_FLAG_VBLANK | INTR_FLAG_HBLANK;
-            REG_IME = 1;
-            REG_DISPSTAT |= DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR;
+        REG_IME = 0;
+        REG_IE |= INTR_FLAG_VBLANK | INTR_FLAG_HBLANK;
+        REG_IME = 1;
+        REG_DISPSTAT |= DISPSTAT_VBLANK_INTR | DISPSTAT_HBLANK_INTR;
 
-            LoadCompressedObjectPic(&sShadowSpriteSheet);
-            sShadowSpriteId = CreateSprite(&sShadowSpriteTemplate, DISPLAY_WIDTH / 2, 3 * DISPLAY_HEIGHT / 4, 0);
+        LoadCompressedObjectPic(&sShadowSpriteSheet);
+        sShadowSpriteId = CreateSprite(&sShadowSpriteTemplate, DISPLAY_WIDTH / 2, 3 * DISPLAY_HEIGHT / 4, 0);
 
-            // HACK! Please use the right palette
-            //gSprites[sEonSpriteId].oam.paletteNum = 0;
-            //((u16 *)PLTT)[0x100 + 1] = RGB(4, 4, 16);
-        }
+        // HACK! Please use the right palette
+        //gSprites[sEonSpriteId].oam.paletteNum = 0;
+        //((u16 *)PLTT)[0x100 + 1] = RGB(4, 4, 16);
+
         BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, 0);
         gMain.state++;
         break;
@@ -306,21 +305,21 @@ static void SoarVBlankCallback(void)
 
     // Turn off BG for first scanline
     REG_DISPCNT &= ~DISPCNT_BG2_ON;
-    
+
     TransferPlttBuffer();
 }
 
 #define M7_D 128
+#define bldcntShadow BLDCNT_EFFECT_DARKEN | BLDCNT_TGT1_BG2
+#define bldcntFog BLDCNT_EFFECT_LIGHTEN | BLDCNT_TGT1_BD | BLDCNT_TGT1_BG2
 
 static void SoarHBlankCallback(void)
 {
-    const unsigned int bldcntFog = BLDCNT_EFFECT_LIGHTEN | BLDCNT_TGT1_BD | BLDCNT_TGT1_BG2;
-    const unsigned int bldcntShadow = BLDCNT_EFFECT_DARKEN | BLDCNT_TGT1_BG2;
-    int sinYaw = gSineTable[sPlayerYaw];
-    int cosYaw = gSineTable[sPlayerYaw + 64];
+    s16 sinYaw = gSineTable[sPlayerYaw];
+    s16 cosYaw = gSineTable[sPlayerYaw + 64];
 
-    int lam, lcf, lsf, lxr, lyr;
-    int currScanline = REG_VCOUNT - 1;
+    s32 lam, lcf, lsf, lxr, lyr;
+    s32 currScanline = REG_VCOUNT - 1;
 
     if (currScanline > 159)  // We're in vblank. Nothing to do.
         return;
@@ -328,14 +327,14 @@ static void SoarHBlankCallback(void)
     {
         REG_DISPCNT &= ~DISPCNT_BG2_ON;
         REG_BLDCNT = bldcntFog;
-        REG_BLDY = currScanline / 2;
+        REG_BLDY = currScanline >> 1;
         return;
     }
 
     if (currScanline == 32)
         REG_DISPCNT |= DISPCNT_BG2_ON;
 
-    if (currScanline <= 16 * 6)
+    if (currScanline <= 96)
     {
         REG_BLDCNT = bldcntFog;
         REG_BLDY = 16 - (currScanline / 6);
@@ -360,16 +359,16 @@ static void SoarHBlankCallback(void)
     REG_BG2PC= lsf>>4;
 
     // Offsets
-    // Note that the lxr shifts down first! 
+    // Note that the lxr shifts down first!
 
     // horizontal offset
-    lxr= 120*(lcf>>4);
-    lyr= (M7_D*lsf)>>4;
+    lxr= 120 * (lsf>>4);
+    lyr= lsf<<3;
     REG_BG2X= sPlayerPosX - lxr + lyr;
 
     // vertical offset
-    lxr= 120*(lsf>>4);
-    lyr= (M7_D*lcf)>>4; 
+    lxr= 120 * (lsf>>4);
+    lyr= lcf<<3;
     REG_BG2Y= sPlayerPosY - lxr - lyr;
 }
 
@@ -384,8 +383,6 @@ static void SoarHBlankCallback(void)
 
 static void UpdateEonSpriteRotation(struct Sprite *sprite)
 {
-    int rollTarget;
-
     switch (sprite->spBarrelRollDir)
     {
     case 0:  // no barrel roll
@@ -399,23 +396,23 @@ static void UpdateEonSpriteRotation(struct Sprite *sprite)
         {
             if (sprite->spTiltAngle < TILT_MIN)
             {
-                sprite->spTiltAngle += TILT_STEP * 8;
+                sprite->spTiltAngle += TILT_STEP << 3;
                 if (sprite->spTiltAngle >= TILT_MIN)
                     sprite->spBarrelRollDir = 0;
                 break;
             }
-            sprite->spTiltAngle += TILT_STEP * 8;
+            sprite->spTiltAngle += TILT_STEP << 3;
         }
         else  // decrease angle
         {
             if (sprite->spTiltAngle > TILT_MAX)
             {
-                sprite->spTiltAngle -= TILT_STEP * 8;
+                sprite->spTiltAngle -= TILT_STEP << 3;
                 if (sprite->spTiltAngle <= TILT_MAX)
                     sprite->spBarrelRollDir = 0;
                 break;
             }
-            sprite->spTiltAngle -= TILT_STEP * 8;
+            sprite->spTiltAngle -= TILT_STEP << 3;
         }
         break;
     }
@@ -430,7 +427,7 @@ static void StartBarrelRoll(void)
     if (sprite->spBarrelRollDir == 0)
     {
         sprite->spFlipped = 0;
-        if (sprite->spDestAngle >= 0)
+        if (sprite->spDestAngle > 0 || (sprite->spDestAngle == 0 && Random() & 1))
             sprite->spBarrelRollDir = 1;
         else
             sprite->spBarrelRollDir = -1;
@@ -439,7 +436,7 @@ static void StartBarrelRoll(void)
 
 static void UpdateMapSectionPopup(void)
 {
-    unsigned int mapSection = GetRegionMapSectionAt_((sPlayerPosX >> 8) / 8, (sPlayerPosY >> 8) / 8);
+    u16 mapSection = GetRegionMapSectionAt_(sPlayerPosX >> 11, sPlayerPosY >> 11;
 
     if (mapSection != sPrevMapSection)
     {
@@ -468,17 +465,17 @@ static void ExitSoar(void)
 }
 
 // movement limits
-#define MIN_Z 2
+#define MIN_Z 5
 #define MAX_Z 20
 #define MIN_X 0
-#define MAX_X (30 * 8)
+#define MAX_X (30 << 3)
 #define MIN_Y 0
-#define MAX_Y (20 * 8)
+#define MAX_Y (20 << 3)
 
 static void CB2_HandleInput(void)
 {
-    int sinYaw;
-    int cosYaw;
+    s16 sinYaw;
+    s16 cosYaw;
 
     if ((gMain.newKeys & A_BUTTON) && sPrevMapSection != MAPSEC_NONE)
     {
@@ -521,19 +518,20 @@ static void CB2_HandleInput(void)
         if (sPlayerPosZ < (MIN_Z << 8))
             sPlayerPosZ = (MIN_Z << 8);
     }
-    
+
     UpdateEonSpriteRotation(&gSprites[sEonSpriteId]);
 
     sinYaw = gSineTable[sPlayerYaw];
     cosYaw = gSineTable[sPlayerYaw + 64];
-
-    sPlayerPosX += sinYaw / 8;
-    sPlayerPosY -= cosYaw / 8;
-    
     if (gMain.heldKeys & L_BUTTON)
     {
-        sPlayerPosX += sinYaw / 8;
-        sPlayerPosY -= cosYaw / 8;
+        sPlayerPosX += sinYaw >> 2;
+        sPlayerPosY -= cosYaw >> 2;
+    }
+    else
+    {
+        sPlayerPosX += sinYaw >> 3;
+        sPlayerPosY -= cosYaw >> 3;
     }
 
     if (sPlayerPosX < Q_8_8(MIN_X, 0))
