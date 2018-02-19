@@ -39,7 +39,7 @@ InitNoharaDebugMenu:
 ._2:
 	.align	2, 0
 ._1:
-	.word	gUnknown_Debug_083C4938
+	.word	gNoharaDebugMenu_Items
 	.word	gMenuCallback
 	.word	debug_sub_808F414+1
 
@@ -72,7 +72,7 @@ debug_sub_808F414:
 	.align	2, 0
 ._6:
 	.word	gMenuCallback
-	.word	gUnknown_Debug_083C4938
+	.word	gNoharaDebugMenu_Items
 ._4:
 	bl	CloseMenu
 	mov	r0, #0x1

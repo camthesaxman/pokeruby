@@ -5,116 +5,116 @@
 
 	.if DEBUG
 
-gUnknown_Debug_083C0C54:: @ 0x83C0C54
+gTomomichiDebugMenu_ContestGraphics:: @ 0x83C0C54
 	.string "Contest graphics$"
 
-gUnknown_Debug_083C0C65:: @ 0x83C0C65
+gTomomichiDebugMenu_ArtMusGraphics:: @ 0x83C0C65
 	.string "Art Mus. graphics$"
 
-gUnknown_Debug_083C0C77:: @ 0x83C0C77
+gTomomichiDebugMenu_PreviewData:: @ 0x83C0C77
 	.string "Preview data$"
 
-gUnknown_Debug_083C0C84:: @ 0x83C0C84
+gTomomichiDebugMenu_TrickHouse:: @ 0x83C0C84
 	.string "TRICK HOUSE$"
 
-gUnknown_Debug_083C0C90:: @ 0x83C0C90
+gTomomichiDebugMenu_ControlEvents:: @ 0x83C0C90
 	.string "Control events$"
 
-gUnknown_Debug_083C0C9F:: @ 0x83C0C9F
+gTomomichiDebugMenu_ControlFlags:: @ 0x83C0C9F
 	.string "Control flags$"
 
-gUnknown_Debug_083C0CAD:: @ 0x83C0CAD
+gTomomichiDebugMenu_ControlWorks:: @ 0x83C0CAD
 	.string "Control WORK$"
 
 	.align 2
-gUnknown_Debug_083C0CBA:: @ 0x83C0CBA
-	.4byte gUnknown_Debug_083C0C54, TomomichiDebugMenu_ContestGraphics+1
-	.4byte gUnknown_Debug_083C0C65, TomomichiDebugMenu_ArtMusGraphics+1
-	.4byte gUnknown_Debug_083C0C77, TomomichiDebugMenu_PreviewData+1
-	.4byte gUnknown_Debug_083C0C84, TomomichiDebugMenu_TrickHouse+1
-	.4byte gUnknown_Debug_083C0C90, TomomichiDebugMenu_ControlEvents+1
-	.4byte gUnknown_Debug_083C0C9F, TomomichiDebugMenu_ControlFlags+1
-	.4byte gUnknown_Debug_083C0CAD, TomomichiDebugMenu_ControlWorks+1
+gTomomichiDebugMenu_Items:: @ 0x83C0CBA
+	.4byte gTomomichiDebugMenu_ContestGraphics, TomomichiDebugMenu_ContestGraphics+1
+	.4byte gTomomichiDebugMenu_ArtMusGraphics, TomomichiDebugMenu_ArtMusGraphics+1
+	.4byte gTomomichiDebugMenu_PreviewData, TomomichiDebugMenu_PreviewData+1
+	.4byte gTomomichiDebugMenu_TrickHouse, TomomichiDebugMenu_TrickHouse+1
+	.4byte gTomomichiDebugMenu_ControlEvents, TomomichiDebugMenu_ControlEvents+1
+	.4byte gTomomichiDebugMenu_ControlFlags, TomomichiDebugMenu_ControlFlags+1
+	.4byte gTomomichiDebugMenu_ControlWorks, TomomichiDebugMenu_ControlWorks+1
 
-gUnknown_Debug_083C0CF4:: @ 0x83C0CF4
+gTomomichiDebugMenu_ContestGraphics_Contest:: @ 0x83C0CF4
 	.string "Contest$"
 
-gUnknown_Debug_083C0CFC:: @ 0x83C0CFC
+gTomomichiDebugMenu_ContestGraphics_PokemonNum:: @ 0x83C0CFC
 	.string "Pokémon No.$"
 
-gUnknown_Debug_083C0D08:: @ 0x83C0D08
+gTomomichiDebugMenu_ContestGraphics_IDRNG:: @ 0x83C0D08
 	.string "ID rnd. digit$"
 
-gUnknown_Debug_083C0D16:: @ 0x83C0D16
+gTomomichiDebugMenu_ContestGraphics_ContestType:: @ 0x83C0D16
 	.string "Contest Type$"
 
-gUnknown_Debug_083C0D23:: @ 0x83C0D23
+gTomomichiDebugMenu_ContestGraphics_PokemonArt:: @ 0x83C0D23
 	.string "Poké Art$"
 
 	.align 2
-gUnknown_Debug_083C0D2C:: @ 0x83C0D2C
-	.4byte gUnknown_Debug_083C0CFC, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D08, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D16, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D23, TomomichiDebugMenu_ContestGraphics_Show+1
+gTomomichiDebugMenu_ContestGraphics_Items:: @ 0x83C0D2C
+	.4byte gTomomichiDebugMenu_ContestGraphics_PokemonNum, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ContestGraphics_IDRNG, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ContestGraphics_ContestType, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ContestGraphics_PokemonArt, TomomichiDebugMenu_ContestGraphics_Show+1
 
-gUnknown_Debug_083C0D4C:: @ 0x83C0D4C
+gTomomichiDebugMenu_ArtMusGraphics_ArtMus:: @ 0x83C0D4C
 	.string "Art Mus.$"
 
-gUnknown_Debug_083C0D55:: @ 0x83C0D55
+gTomomichiDebugMenu_ArtMusGraphics_PokemonNum: @ 0x83C0D55
 	.string "Pokémon No.$"
 
-gUnknown_Debug_083C0D61:: @ 0x83C0D61
+gTomomichiDebugMenu_ArtMusGraphics_IDRNG:: @ 0x83C0D61
 	.string "ID rnd. digit$"
 
-gUnknown_Debug_083C0D6F:: @ 0x83C0D6F
+gTomomichiDebugMenu_ArtMusGraphics_TitleType:: @ 0x83C0D6F
 	.string "Title Type$"
 
-gUnknown_Debug_083C0D7A:: @ 0x83C0D7A
+gTomomichiDebugMenu_ArtMusGraphics_PokemonArt:: @ 0x83C0D7A
 	.string "Poké Art$"
 
 	.align 2
-gUnknown_Debug_083C0D83:: @ 0x83C0D83
-	.4byte gUnknown_Debug_083C0D55, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D61, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D6F, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0D7A, TomomichiDebugMenu_MuseumGraphics_Show+1
+gTomomichiDebugMenu_ArtMusGraphics_Items:: @ 0x83C0D83
+	.4byte gTomomichiDebugMenu_ArtMusGraphics_PokemonNum, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ArtMusGraphics_IDRNG, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ArtMusGraphics_TitleType, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_ArtMusGraphics_PokemonArt, TomomichiDebugMenu_MuseumGraphics_Show+1
 
-gUnknown_Debug_083C0DA4:: @ 0x83C0DA4
+gTomomichiDebugMenu_PreviewData_Preview:: @ 0x83C0DA4
 	.string "Preview$"
 
-gUnknown_Debug_083C0DAC:: @ 0x83C0DAC
+gTomomichiDebugMenu_PreviewData_PokemonNum:: @ 0x83C0DAC
 	.string "Pokémon No.$"
 
-gUnknown_Debug_083C0DB8:: @ 0x83C0DB8
+gTomomichiDebugMenu_PreviewData_IDRNG:: @ 0x83C0DB8
 	.string "ID rnd. digit$"
 
-gUnknown_Debug_083C0DC6:: @ 0x83C0DC6
+gTomomichiDebugMenu_PreviewData_Type:: @ 0x83C0DC6
 	.string "Type$"
 
-gUnknown_Debug_083C0DCB:: @ 0x83C0DCB
+gTomomichiDebugMenu_PreviewData_PokemonArt:: @ 0x83C0DCB
 	.string "Poké Art$"
 
 	.align 2
-gUnknown_Debug_083C0DD4:: @ 0x83C0DD4
-	.4byte gUnknown_Debug_083C0DAC, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0DB8, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0DC6, TomomichiDebugMenu_Config+1
-	.4byte gUnknown_Debug_083C0DCB, debug_sub_808ECA4+1
+gTomomichiDebugMenu_PreviewData_Items:: @ 0x83C0DD4
+	.4byte gTomomichiDebugMenu_PreviewData_PokemonNum, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_PreviewData_IDRNG, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_PreviewData_Type, TomomichiDebugMenu_Config+1
+	.4byte gTomomichiDebugMenu_PreviewData_PokemonArt, debug_sub_808ECA4+1
 
-gUnknown_Debug_083C0DF4:: @ 0x83C0DF4
+gTomomichiDebugMenu_TrickHouse_TrickRelated:: @ 0x83C0DF4
 	.string "Trick related$"
 
-gUnknown_Debug_083C0E02:: @ 0x83C0E02
+gTomomichiDebugMenu_TrickHouse_Level: @ 0x83C0E02
 	.string "Level$"
 
-gUnknown_Debug_083C0E08:: @ 0x83C0E08
+gTomomichiDebugMenu_TrickHouse_TrickMaster:: @ 0x83C0E08
 	.string "Trick Master$"
 
 	.align 2
-gUnknown_Debug_083C0E15:: @ 0x83C0E15
-	.4byte gUnknown_Debug_083C0E02, debug_sub_808EB58+1
-	.4byte gUnknown_Debug_083C0E08, debug_sub_808EBB4+1
+gTomomichiDebugMenu_TrickHouse_Items:: @ 0x83C0E15
+	.4byte gTomomichiDebugMenu_TrickHouse_Level, debug_sub_808EB58+1
+	.4byte gTomomichiDebugMenu_TrickHouse_TrickMaster, debug_sub_808EBB4+1
 
 gUnknown_Debug_083C0E28:: @ 0x83C0E28
 	.string "パート1$"

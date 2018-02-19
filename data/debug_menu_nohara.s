@@ -6,44 +6,44 @@
 	.if DEBUG
 
 	.align 2
-gUnknown_Debug_083C48C4:: @ 0x83C48C4
+gNoharaDebugMenu_TV:: @ 0x83C48C4
 	.string "TV$"
 
-gUnknown_Debug_083C48C7:: @ 0x83C48C7
+gNoharaDebugMenu_Fan:: @ 0x83C48C7
 	.string "Fan$"
 
-gUnknown_Debug_083C48CB:: @ 0x83C48CB
+gNoharaDebugMenu_BattleVSDad:: @ 0x83C48CB
 	.string "Battle　(vs　Dad)$"
 
-gUnknown_Debug_083C48DB:: @ 0x83C48DB
+gNoharaDebugMenu_DadAfterBattle:: @ 0x83C48DB
 	.string "Dad　after　battle$"
 
-gUnknown_Debug_083C48EC:: @ 0x83C48EC
+gNoharaDebugMenu_SootopolisCity:: @ 0x83C48EC
 	.string "SOOTOPOLIS　CITY$"
 
-gUnknown_Debug_083C48FC:: @ 0x83C48FC
+gNoharaDebugMenu_Embark:: @ 0x83C48FC
 	.string "Embark$"
 
-gUnknown_Debug_083C4903:: @ 0x83C4903
+gNoharaDebugMenu_Yes9999:: @ 0x83C4903
 	.string "Yes　9999$"
 
-gUnknown_Debug_083C490C:: @ 0x83C490C
+gNoharaDebugMenu_LegendsFlagOn:: @ 0x83C490C
 	.string "Legends　flag　ON$"
 
-gUnknown_Debug_083C491C:: @ 0x83C491C
+gNoharaDebugMenu_AddNumWinningStreaks:: @ 0x83C491C
 	.string "Add　num　of　winning　streaks$"
 
 	.align 2
-gUnknown_Debug_083C4938:: @ 0x83C4938
-	.4byte gUnknown_Debug_083C48C4, NoharaDebugMenu_TV+1
-	.4byte gUnknown_Debug_083C48C7, NoharaDebugMenu_Fan+1
-	.4byte gUnknown_Debug_083C48CB, NoharaDebugMenu_BattleVSDad+1
-	.4byte gUnknown_Debug_083C48DB, NoharaDebugMenu_DadAfterBattle+1
-	.4byte gUnknown_Debug_083C48EC, NoharaDebugMenu_SootopolisCity+1
-	.4byte gUnknown_Debug_083C48FC, NoharaDebugMenu_Embark+1
-	.4byte gUnknown_Debug_083C4903, NoharaDebugMenu_Yes9999+1
-	.4byte gUnknown_Debug_083C490C, NoharaDebugMenu_LegendsFlagOn+1
-	.4byte gUnknown_Debug_083C491C, NoharaDebugMenu_AddNumWinningStreaks+1
+gNoharaDebugMenu_Items:: @ 0x83C4938
+	.4byte gNoharaDebugMenu_TV, NoharaDebugMenu_TV+1
+	.4byte gNoharaDebugMenu_Fan, NoharaDebugMenu_Fan+1
+	.4byte gNoharaDebugMenu_BattleVSDad, NoharaDebugMenu_BattleVSDad+1
+	.4byte gNoharaDebugMenu_DadAfterBattle, NoharaDebugMenu_DadAfterBattle+1
+	.4byte gNoharaDebugMenu_SootopolisCity, NoharaDebugMenu_SootopolisCity+1
+	.4byte gNoharaDebugMenu_Embark, NoharaDebugMenu_Embark+1
+	.4byte gNoharaDebugMenu_Yes9999, NoharaDebugMenu_Yes9999+1
+	.4byte gNoharaDebugMenu_LegendsFlagOn, NoharaDebugMenu_LegendsFlagOn+1
+	.4byte gNoharaDebugMenu_AddNumWinningStreaks, NoharaDebugMenu_AddNumWinningStreaks+1
 
 gUnknown_Debug_083C4980:: @ 0x83C4980
 	.string "Want　to　change　data　type{CLEAR_TO 143}Press　Left\n"

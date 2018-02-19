@@ -57,7 +57,7 @@ debug_sub_808B874:
 ._2:
 	.align	2, 0
 ._1:
-	.word	gUnknown_Debug_083C0CBA
+	.word	gTomomichiDebugMenu_Items
 	.word	gDebug_0300071D
 	.word	gMenuCallback
 	.word	debug_sub_808B8C8+1
@@ -116,7 +116,7 @@ debug_sub_808B8C8:
 ._7:
 	.word	gMain
 	.word	gDebug_0300071D
-	.word	gUnknown_Debug_083C0CBA
+	.word	gTomomichiDebugMenu_Items
 ._5:
 	mov	r0, #0xa
 	and	r0, r0, r1
@@ -183,8 +183,8 @@ TomomichiDebugMenu_ContestGraphics:
 ._12:
 	.align	2, 0
 ._11:
-	.word	gUnknown_Debug_083C0CF4
-	.word	gUnknown_Debug_083C0D2C
+	.word	gTomomichiDebugMenu_ContestGraphics_Contest
+	.word	gTomomichiDebugMenu_ContestGraphics_Items
 	.word	gMenuCallback
 	.word	debug_sub_808BC48+1
 	.word	gDebug_03000700
@@ -244,8 +244,8 @@ TomomichiDebugMenu_ArtMusGraphics:
 ._14:
 	.align	2, 0
 ._13:
-	.word	gUnknown_Debug_083C0D4C
-	.word	gUnknown_Debug_083C0D83
+	.word	gTomomichiDebugMenu_ArtMusGraphics_ArtMus
+	.word	gTomomichiDebugMenu_ArtMusGraphics_Items
 	.word	gMenuCallback
 	.word	debug_sub_808BCBC+1
 	.word	gDebug_03000700
@@ -305,8 +305,8 @@ TomomichiDebugMenu_PreviewData:
 ._16:
 	.align	2, 0
 ._15:
-	.word	gUnknown_Debug_083C0DA4
-	.word	gUnknown_Debug_083C0DD4
+	.word	gTomomichiDebugMenu_PreviewData_Preview
+	.word	gTomomichiDebugMenu_PreviewData_Items
 	.word	gMenuCallback
 	.word	debug_sub_808BD30+1
 	.word	gDebug_03000700
@@ -356,8 +356,8 @@ TomomichiDebugMenu_TrickHouse:
 ._18:
 	.align	2, 0
 ._17:
-	.word	gUnknown_Debug_083C0DF4
-	.word	gUnknown_Debug_083C0E15
+	.word	gTomomichiDebugMenu_TrickHouse_TrickRelated
+	.word	gTomomichiDebugMenu_TrickHouse_Items
 	.word	gDebug_0300071E
 	.word	gMenuCallback
 	.word	debug_sub_808BDA4+1
@@ -551,7 +551,7 @@ debug_sub_808BC48:
 	.align	2, 0
 ._37:
 	.word	gMenuCallback
-	.word	gUnknown_Debug_083C0D2C
+	.word	gTomomichiDebugMenu_ContestGraphics_Items
 
 	thumb_func_end debug_sub_808BC48
 
@@ -616,7 +616,7 @@ debug_sub_808BCBC:
 	.align	2, 0
 ._51:
 	.word	gMenuCallback
-	.word	gUnknown_Debug_083C0D83
+	.word	gTomomichiDebugMenu_ArtMusGraphics_Items
 
 	thumb_func_end debug_sub_808BCBC
 
@@ -681,7 +681,7 @@ debug_sub_808BD30:
 	.align	2, 0
 ._65:
 	.word	gMenuCallback
-	.word	gUnknown_Debug_083C0DD4
+	.word	gTomomichiDebugMenu_PreviewData_Items
 
 	thumb_func_end debug_sub_808BD30
 
@@ -737,7 +737,7 @@ debug_sub_808BDA4:
 ._71:
 	.word	gMain
 	.word	gDebug_0300071E
-	.word	gUnknown_Debug_083C0E15
+	.word	gTomomichiDebugMenu_TrickHouse_Items
 ._69:
 	mov	r0, #0xa
 	and	r0, r0, r1
