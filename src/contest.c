@@ -3758,7 +3758,7 @@ u8 unref_sub_80B06E0(u8 *a)
 void sub_80B0748(u8 taskId)
 {
     u8 i;
-    u8 r4_2;
+    u8 r4;
     u8 r1;
     u8 r7;
 
@@ -3860,7 +3860,7 @@ void sub_80B0748(u8 taskId)
     }
     //_080B0920
 
-    #define i r4_2
+    #define i r4
     for (i = 0; i < 4; i++)  // r4 is i
     {
         if (gTasks[taskId].data[i * 4 + 0] != 0)
@@ -4943,8 +4943,13 @@ void sub_80B1DFC(u8 taskId)
 {
     if (gTasks[taskId].data[10]++ > 6)
     {
+#ifdef PORTABLE
+        struct Task *task;
+        u32 r4 = taskId * 4;
+#else
         register struct Task *task asm("r0");
         register u32 r4 asm("r4") = taskId * 4;
+#endif
 
         gTasks[taskId].data[10] = 0;
         if (gTasks[taskId].data[11] == 0)
@@ -4958,11 +4963,15 @@ void sub_80B1DFC(u8 taskId)
         }
 
         // Why won't this match the normal way?
+        #ifdef NONMATCHING
+        task = &gTasks[r4+taskId];
+        #else
         asm("add %0, %1, #0\n\t"
             "add %0, %3\n\t"
             "lsl %0, #3\n\t"
             "add %0, %2\n\t"
             : "=r"(task):"r"(r4),"r"(gTasks),"r"(taskId));
+        #endif
 
         //gTasks[taskId].data[11] ^= 1;
         task->data[11] ^= 1;

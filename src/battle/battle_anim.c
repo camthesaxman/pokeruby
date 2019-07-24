@@ -2525,9 +2525,12 @@ static void ScriptCmd_changebg(void)
 }
 
 //Weird control flow
-/*
+#ifdef NONMATCHING
 s8 BattleAnimAdjustPanning(s8 a)
 {
+    puts("function BattleAnimAdjustPanning is a stub");
+    return;
+    
     if (!IsContest() && (EWRAM_17810[gBattleAnimAttacker].unk0 & 0x10))
     {
         a = GetBattlerSide(gBattleAnimAttacker) ? SOUND_PAN_ATTACKER : SOUND_PAN_TARGET;
@@ -2552,6 +2555,8 @@ s8 BattleAnimAdjustPanning(s8 a)
             if (GetBattlerSide(gBattleAnimAttacker) == 0)
             {
                 if (GetBattlerSide(gBattleAnimTarget) == 0)
+                {
+                }
             }
             //_08077042
             else
@@ -2563,7 +2568,7 @@ s8 BattleAnimAdjustPanning(s8 a)
     }
     //_0807706E
 }
-*/
+#else
 NAKED
 s8 BattleAnimAdjustPanning(s8 a)
 {
@@ -2693,7 +2698,7 @@ _08077088:\n\
     bx r1\n\
     .syntax divided\n");
 }
-
+#endif
 s8 BattleAnimAdjustPanning2(s8 pan)
 {
     if (!IsContest() && (EWRAM_17810[gBattleAnimAttacker].unk0 & 0x10))

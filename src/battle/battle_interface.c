@@ -15,6 +15,7 @@
 #include "text.h"
 #include "ewram.h"
 #include "graphics.h"
+#include "pokemon_summary_screen.h"
 
 struct UnknownStruct5
 {
@@ -269,48 +270,48 @@ const struct OamData gOamData_820A79C =
     .priority = 1,
 };
 
-const struct SpriteTemplate gSpriteTemplate_820A7A4 =
+const struct SpriteTemplate gSpriteTemplate_820A7A4[] =
 {
-    .tileTag = 55052,
-    .paletteTag = 55056,
-    .oam = &gOamData_820A4E4,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = sub_8045030,
+    {
+        .tileTag = 55052,
+        .paletteTag = 55056,
+        .oam = &gOamData_820A4E4,
+        .anims = gDummySpriteAnimTable,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = sub_8045030,
+    },
+    {
+        .tileTag = 55053,
+        .paletteTag = 55057,
+        .oam = &gOamData_820A4E4,
+        .anims = gDummySpriteAnimTable,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = sub_8045030,
+    }
 };
 
-const struct SpriteTemplate gSpriteTemplate_820A7BC =
+const struct SpriteTemplate gSpriteTemplate_820A7D4[] =
 {
-    .tileTag = 55053,
-    .paletteTag = 55057,
-    .oam = &gOamData_820A4E4,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = sub_8045030,
-};
-
-const struct SpriteTemplate gSpriteTemplate_820A7D4 =
-{
-    .tileTag = 55060,
-    .paletteTag = 55058,
-    .oam = &gOamData_820A79C,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = sub_804507C,
-};
-
-const struct SpriteTemplate gSpriteTemplate_820A7EC =
-{
-    .tileTag = 55061,
-    .paletteTag = 55059,
-    .oam = &gOamData_820A79C,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = sub_804507C,
+    {
+        .tileTag = 55060,
+        .paletteTag = 55058,
+        .oam = &gOamData_820A79C,
+        .anims = gDummySpriteAnimTable,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = sub_804507C,
+    },
+    {
+        .tileTag = 55061,
+        .paletteTag = 55059,
+        .oam = &gOamData_820A79C,
+        .anims = gDummySpriteAnimTable,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = sub_804507C,
+    }
 };
 
 u8 *const gUnknown_0820A804[2] =
@@ -3175,7 +3176,7 @@ s32 sub_8045C78(u8 a, u8 unused1, u8 c, u8 unused2)
 
 static void sub_8045D58(u8 a, u8 b)
 {
-    u8 sp8[7];
+    u8 sp8[8];
     u8 r0;
     u8 r8;
     u8 i;

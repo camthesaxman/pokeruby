@@ -495,145 +495,145 @@ const u8 gUnknown_083D02BA[3][4] =
 };
 
 #ifdef NONMATCHING
-void sub_80B9C6C(u8 *a, u32 b, u8 c, void *d)
-{
-    u8 r8;
-    u8 sp4[4];
-    u8 sp8[4];
-    void *spC[4];
-    u8 sp1C[4][2];
-    u8 sp24[4][2];
-    u8 sp3C;
-    u16 sp40 = Random();
-    u16 i;  // r3
-    u16 r7;
-    u8 r1;
-    struct DayCareMisc *r6;
-
-    //asm("":::"r8");
-    SeedRng(gLinkPlayers[0].trainerId);
-    r8 = GetLinkPlayerCount();
-    for (i = 0; i < 4; i++)
-    {
-        sp4[i] = 0xFF;
-        sp8[i] = 0;
-        sp1C[i][0] = 0;
-        sp1C[i][1] = 0;
-    }
-    sp3C = 0;
-    for (i = 0; i < r8; i++)
-    {
-        r6 = (struct DayCareMisc *)(a + b * i);
-        if (r6->numDaycareMons != 0)
-        {
-            for (r7 = 0; r7 < r6->numDaycareMons; r7++)
-            {
-                if (r6->itemsHeld[r7] == 0)
-                    sp1C[i][r7] = 1;
-            }
-        }
-        //_080B9D3C
-    }
-    //_080B9D46
-    for (r7 = 0, i = 0; i < r8; i++)
-    {
-        r6 = (struct DayCareMisc *)(a + b * i);
-        if (sp1C[i][0] == 1 || sp1C[i][1] == 1)
-            sp3C++;
-        if (sp1C[i][0] == 1 && sp1C[i][1] == 0)
-        {
-            sp24[r7][0] = i;
-            sp24[r7][1] = 0;
-            r7++;
-        }
-        else if (sp1C[i][0] == 0 && sp1C[i][1] == 1)
-        {
-            sp24[r7][0] = i;
-            sp24[r7][1] = 0;
-            r7++;
-        }
-        //else if (sp1C[i][0] == 1 + 1 && sp1C[i][1] + 1 == 1 + 1)
-        else if (sp1C[i][0] == 1 && sp1C[i][1] == 1)
-        {
-            u8 r4, r1;
-
-            sp24[r7][0] = i;
-            r4 = sub_80B9BBC((u16 *)&r6->data[0]);
-            r1 = sub_80B9BBC((u16 *)&r6->data[1]);
-
-            asm("");
-            if (r4 == 0 && r1 != 0)
-                sp24[r7][1] = 1;
-            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
-                sp24[r7][1] = Random() % 2;
-            else
-                sp24[r7][1] = 0;
-            /*
-            if (r4 == 0 && r1 != 0)
-                sp24[r7][1] = 1;
-            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
-                sp24[r7][1] = Random() % 2;
-            else
-                sp24[r7][1] = 0;
-            */
-
-            /*
-            if (r4 == 0 && r1 != 0)
-                sp24[r7][1] = 1;
-            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
-                //sp24[r7][1] = ((Random() << 16) >> 16) % 2;
-                sp24[r7][1] = Random() % 2;
-            else
-                sp24[r7][1] = 0;
-            */
-          //_080B9E2C:
-            r7++;
-        }
-    }
-    //_080B9E3E
-    for (i = 0; i < 4; i++)
-    {
-        r6 = (struct DayCareMisc *)a + b * c;
-        spC[i] = r6;
-    }
-    r1 = sub_80B9C4C(d) % 3;
-    switch (sp3C)
-    {
-    case 2:
-        sub_80B9BC4(a, b, (u8 *)sp24, 0, 1);
-        break;
-    case 3:
-        {
-            u8 var1 = gUnknown_083D02B4[r1][0];
-            u8 var2 = gUnknown_083D02B4[r1][1];
-            sub_80B9BC4(a, b, (u8 *)sp24, var1, var2);
-        }
-        break;
-    case 4:
-        {
-            u8 *r6 = (u8 *)sp24;
-            u8 var1 = gUnknown_083D02BA[r1][0];
-            u8 var2 = gUnknown_083D02BA[r1][1];
-            sub_80B9BC4(a, b, r6, var1, var2);
-        }
-        {
-            u8 *r6 = (u8 *)sp24;
-            u8 var1 = gUnknown_083D02BA[r1][2];
-            u8 var2 = gUnknown_083D02BA[r1][3];
-            sub_80B9BC4(a, b, r6, var1, var2);
-        }
-        break;
-    }
-    //_080B9EF0
-    //memcpy(&gSaveBlock1.filler_303C.data[0], a + b * c, 0x38);
-    //memcpy(&gSaveBlock1.filler_303C.data[1], a + b * c + 0x38, 0x38);
-    r6 = (struct DayCareMisc *)(a + b * c);
-    gSaveBlock1.filler_303C.data[0] = r6->data[0];
-    gSaveBlock1.filler_303C.data[1] = r6->data[1];
-    //memcpy(&gSaveBlock1.filler_303C.data[0], &r6->data[0], 0x38);
-    //memcpy(&gSaveBlock1.filler_303C.data[1], &r6->data[1], 0x38);
-    SeedRng(sp40);
-}
+//void sub_80B9C6C(u8 *a, u32 b, u8 c, void *d)
+//{
+//    u8 r8;
+//    u8 sp4[4];
+//    u8 sp8[4];
+//    void *spC[4];
+//    u8 sp1C[4][2];
+//    u8 sp24[4][2];
+//    u8 sp3C;
+//    u16 sp40 = Random();
+//    u16 i;  // r3
+//    u16 r7;
+//    u8 r1;
+//    struct RecordMixingDayCareMail *r6;
+//
+//    //asm("":::"r8");
+//    SeedRng(gLinkPlayers[0].trainerId);
+//    r8 = GetLinkPlayerCount();
+//    for (i = 0; i < 4; i++)
+//    {
+//        sp4[i] = 0xFF;
+//        sp8[i] = 0;
+//        sp1C[i][0] = 0;
+//        sp1C[i][1] = 0;
+//    }
+//    sp3C = 0;
+//    for (i = 0; i < r8; i++)
+//    {
+//        r6 = (struct RecordMixingDayCareMail *)(a + b * i);
+//        if (r6->numDaycareMons != 0)
+//        {
+//            for (r7 = 0; r7 < r6->numDaycareMons; r7++)
+//            {
+//                if (r6->itemsHeld[r7] == 0)
+//                    sp1C[i][r7] = 1;
+//            }
+//        }
+//        //_080B9D3C
+//    }
+//    //_080B9D46
+//    for (r7 = 0, i = 0; i < r8; i++)
+//    {
+//        r6 = (struct RecordMixingDayCareMail *)(a + b * i);
+//        if (sp1C[i][0] == 1 || sp1C[i][1] == 1)
+//            sp3C++;
+//        if (sp1C[i][0] == 1 && sp1C[i][1] == 0)
+//        {
+//            sp24[r7][0] = i;
+//            sp24[r7][1] = 0;
+//            r7++;
+//        }
+//        else if (sp1C[i][0] == 0 && sp1C[i][1] == 1)
+//        {
+//            sp24[r7][0] = i;
+//            sp24[r7][1] = 0;
+//            r7++;
+//        }
+//        //else if (sp1C[i][0] == 1 + 1 && sp1C[i][1] + 1 == 1 + 1)
+//        else if (sp1C[i][0] == 1 && sp1C[i][1] == 1)
+//        {
+//            u8 r4, r1;
+//
+//            sp24[r7][0] = i;
+//            r4 = sub_80B9BBC((u16 *)&r6->data[0]);
+//            r1 = sub_80B9BBC((u16 *)&r6->data[1]);
+//
+//            asm("");
+//            if (r4 == 0 && r1 != 0)
+//                sp24[r7][1] = 1;
+//            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
+//                sp24[r7][1] = Random() % 2;
+//            else
+//                sp24[r7][1] = 0;
+//            /*
+//            if (r4 == 0 && r1 != 0)
+//                sp24[r7][1] = 1;
+//            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
+//                sp24[r7][1] = Random() % 2;
+//            else
+//                sp24[r7][1] = 0;
+//            */
+//
+//            /*
+//            if (r4 == 0 && r1 != 0)
+//                sp24[r7][1] = 1;
+//            else if ((r4 == 0 && r1 == 0) || (r4 != 0 && r1 != 0))
+//                //sp24[r7][1] = ((Random() << 16) >> 16) % 2;
+//                sp24[r7][1] = Random() % 2;
+//            else
+//                sp24[r7][1] = 0;
+//            */
+//          //_080B9E2C:
+//            r7++;
+//        }
+//    }
+//    //_080B9E3E
+//    for (i = 0; i < 4; i++)
+//    {
+//        r6 = (struct RecordMixingDayCareMail *)a + b * c;
+//        spC[i] = r6;
+//    }
+//    r1 = sub_80B9C4C(d) % 3;
+//    switch (sp3C)
+//    {
+//    case 2:
+//        sub_80B9BC4(a, b, (u8 *)sp24, 0, 1);
+//        break;
+//    case 3:
+//        {
+//            u8 var1 = gUnknown_083D02B4[r1][0];
+//            u8 var2 = gUnknown_083D02B4[r1][1];
+//            sub_80B9BC4(a, b, (u8 *)sp24, var1, var2);
+//        }
+//        break;
+//    case 4:
+//        {
+//            u8 *r6 = (u8 *)sp24;
+//            u8 var1 = gUnknown_083D02BA[r1][0];
+//            u8 var2 = gUnknown_083D02BA[r1][1];
+//            sub_80B9BC4(a, b, r6, var1, var2);
+//        }
+//        {
+//            u8 *r6 = (u8 *)sp24;
+//            u8 var1 = gUnknown_083D02BA[r1][2];
+//            u8 var2 = gUnknown_083D02BA[r1][3];
+//            sub_80B9BC4(a, b, r6, var1, var2);
+//        }
+//        break;
+//    }
+//    //_080B9EF0
+//    //memcpy(&gSaveBlock1.filler_303C.data[0], a + b * c, 0x38);
+//    //memcpy(&gSaveBlock1.filler_303C.data[1], a + b * c + 0x38, 0x38);
+//    r6 = (struct DayCareMisc *)(a + b * c);
+//    gSaveBlock1.filler_303C.data[0] = r6->data[0];
+//    gSaveBlock1.filler_303C.data[1] = r6->data[1];
+//    //memcpy(&gSaveBlock1.filler_303C.data[0], &r6->data[0], 0x38);
+//    //memcpy(&gSaveBlock1.filler_303C.data[1], &r6->data[1], 0x38);
+//    SeedRng(sp40);
+//}
 #else
 NAKED
 void sub_80B9C6C(u8 *a, u32 b, u8 c, void *d)

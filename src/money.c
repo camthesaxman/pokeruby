@@ -176,6 +176,7 @@ void sub_80B7AEC(u32 arg0, u8 right, u8 top)
 #endif
 }
 
+#ifndef NONMATCHING
 NAKED
 void Draw10000Sprite(u8 var1, u8 var2, int var3)
 {
@@ -269,6 +270,7 @@ _080B7BE4: .4byte 0x0600f800\n\
 _080B7BE8: .4byte 0x0600f840\n\
     .syntax divided\n");
 }
+#endif
 
 void UpdateMoneyWindow(u32 amount, u8 x, u8 y)
 {

@@ -769,7 +769,7 @@ bool8 sub_80EF874(void)
     return TRUE;
 }
 
-asm(".include \"constants/gba_constants.inc\"\n");
+//asm(".include \"constants/gba_constants.inc\"\n");
 
 void sub_80EF9F8(void)
 {
@@ -1391,7 +1391,7 @@ void sub_80F0954(u16 arg0, u16 arg1, u16 arg2)
 #ifdef NONMATCHING
 bool8 sub_80F098C(void)
 {
-    register u16 zero asm("r8");
+    u16 zero;
     if (!gPokenavStructPtr->unk8784)
     {
         DONE:
@@ -2067,8 +2067,11 @@ void sub_80F1494(void)
 
         // FIXME!
         arr = ((u8*)&gSaveBlock1);
+        //WTF is this shit?
+        #ifndef NONMATCHING
         asm("ldrh r1, [r5]\n\
             add r0, r0, r1");
+        #endif
         gUnknown_020388B4 = arr[0x30F7];
         // The bug fix for this code is the following:
         // gUnknown_020388B4 = gSaveBlock1.externalReservedData.giftRibbons[gUnknown_020388B4];
@@ -2244,8 +2247,12 @@ void sub_80F19DC(u8 *text)
 
 void sub_80F19FC(void)
 {
+    #ifdef NONMATCHING
+    u8 *ptr = gUnknown_020388B0;
+    #else
     // FIXME r4/r5 swapped
     register u8 *ptr asm("r5") = gUnknown_020388B0;
+    #endif
     if (ptr[0] == 1)
     {
         const u8 *landmarkName = GetLandmarkName(
@@ -4881,7 +4888,11 @@ void sub_80F4D44(void)
 bool8 sub_80F4D88(void)
 {
     u16 i;
+    #ifdef NONMATCHING
+    int mask;
+    #else
     register int mask asm("r3"); // FIXME
+    #endif
     int nextValue;
     struct UnkUsePokeblockSub var0;
 
@@ -5188,6 +5199,7 @@ void sub_80F567C(u8 *a0, struct UnkPokenav11 a1[])
     sub_80F55AC(a0, a1);
 }
 
+#ifdef NONMATCHING
 /* TODO
 // emerald: sub_81D2278
 void sub_80F5688(u16 * r6, u16 * r5, u16 * sp0, u8 r9, u16 * r7)
@@ -5205,7 +5217,7 @@ void sub_80F5688(u16 * r6, u16 * r5, u16 * sp0, u8 r9, u16 * r7)
     }
 }
 */
-
+#else
 NAKED
 void sub_80F5688(u16 r6[66][2], struct UnkPokenav11 * r5, struct UnkPokenav11 * sp0, u8 r9, u16 r7[66][2])
 {
@@ -5518,6 +5530,7 @@ void sub_80F5688(u16 r6[66][2], struct UnkPokenav11 * r5, struct UnkPokenav11 * 
                 "\tpop {r0}\n"
                 "\tbx r0");
 }
+#endif
 
 void sub_80F58DC(struct UnkPokenav11 * a0)
 {

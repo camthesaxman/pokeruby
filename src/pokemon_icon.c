@@ -1222,7 +1222,11 @@ u8 UpdateMonIconFrame(struct Sprite *sprite)
                 OBJ_VRAM0 + sprite->oam.tileNum * TILE_SIZE_4BPP,
                 sSpriteImageSizes[sprite->oam.shape][sprite->oam.size]);
             {
+                #ifdef NONMATCHING
+                u8 duration = sprite->anims[sprite->animNum][sprite->animCmdIndex].frame.duration;
+                #else
                 register u8 duration asm("r0") = sprite->anims[sprite->animNum][sprite->animCmdIndex].frame.duration;
+                #endif
                 sprite->animDelayCounter = duration;
             }
             sprite->animCmdIndex++;

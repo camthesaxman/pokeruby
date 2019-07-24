@@ -471,11 +471,17 @@ static u8 sub_80724F4(u8 left, u8 top, u8 menuItemCount, const struct MenuAction
         u8 right;
         u8 bottom;
         u32 totalWidth;
+        #ifdef NONMATCHING
+        s32 val;
+        #else
         register s32 val asm("r1");
+        #endif
 
         val = (s8)top + height;
         val = val << 24;
+        #ifndef NONMATCHING
         asm("" ::: "r3");
+        #endif
         bottom = val >> 24;
 
         totalWidth = (gMenu.columnXCoords[columnCount] + 1);

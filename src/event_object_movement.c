@@ -1168,7 +1168,9 @@ static u8 InitEventObjectStateFromTemplate(struct EventObjectTemplate *template,
     eventObject->movementType = template->movementType;
     eventObject->localId = template->localId;
     eventObject->mapNum = mapNum;
+#ifndef NONMATCHING
     asm("":::"r6");
+#endif
     eventObject->mapGroup = mapGroup;
     eventObject->initialCoords.x = initialX;
     eventObject->initialCoords.y = initialY;
@@ -1184,7 +1186,9 @@ static u8 InitEventObjectStateFromTemplate(struct EventObjectTemplate *template,
     eventObject->trainerRange_berryTreeId = template->trainerRange_berryTreeId;
     eventObject->previousMovementDirection = gInitialMovementTypeFacingDirections[template->movementType];
     SetEventObjectDirection(eventObject, eventObject->previousMovementDirection);
+#ifndef NONMATCHING
     asm("":::"r5","r6");
+#endif
     SetEventObjectDynamicGraphicsId(eventObject);
 
     if (gRangedMovementTypes[eventObject->movementType])
@@ -1596,7 +1600,9 @@ void sub_805B75C(u8 eventObjectId, s16 x, s16 y)
 #undef i
 
     eventObject = &gEventObjects[eventObjectId];
+#ifndef NONMATCHING
     asm("":::"r5");
+#endif
     subspriteTables = NULL;
     graphicsInfo = GetEventObjectGraphicsInfo(eventObject->graphicsId);
     spriteFrameImage.size = graphicsInfo->size;

@@ -12,6 +12,7 @@
 #include "item.h"
 #include "pokemon_summary_screen.h"
 #include "pokemon_storage_system.h"
+#include "sound.h"
 
 // Static type declarations
 
@@ -2606,7 +2607,11 @@ u8 sub_809C85C(void)
 {
     u8 retVal;
     s8 var0;
+    #ifdef NONMATCHING
+    s8 var1;
+    #else
     register s8 var1 asm("r5"); // FAKEMATCHING: r5 and r6 become swapped without this register hack
+    #endif
 
     gPokemonStorageSystemPtr->unk_11df = 0;
     gPokemonStorageSystemPtr->unk_11de = 0;

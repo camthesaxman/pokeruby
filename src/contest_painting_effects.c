@@ -393,6 +393,7 @@ void sub_80FD114(void)
     }
 }
 
+#ifndef NONMATCHING
 NAKED
 void sub_80FD1C8(u16 arg0)
 {
@@ -652,6 +653,7 @@ _080FD38A:\n\
     bx r0\n\
     .syntax divided\n");
 }
+#endif
 
 u16 ConvertColorToGrayscale(u16 *color)
 {
@@ -910,6 +912,7 @@ u16 sub_80FD7AC(u16 *a0, u16 *a1, u16 *a2)
     return RGB2(red, green, blue);
 }
 
+#ifdef NONMATCHING
 /*
 void sub_80FD8CC(struct Unk03005E20 * a0)
 {
@@ -954,7 +957,7 @@ void sub_80FD8CC(struct Unk03005E20 * a0)
     }
 }
 */
-
+#else
 NAKED
 void sub_80FD8CC(struct Unk03005E20 * a0)
 {
@@ -1135,6 +1138,7 @@ void sub_80FD8CC(struct Unk03005E20 * a0)
                 "\tpop {r0}\n"
                 "\tbx r0");
 }
+#endif
 
 void sub_80FDA18(struct Unk03005E20 *arg0)
 {

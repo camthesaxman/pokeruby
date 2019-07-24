@@ -774,7 +774,7 @@ static void Shop_MoveItemListUp(void)
 {
     u16 *r1;
     u16 *r2;
-    register u8 *r10 asm("r10");
+    u8 *r10;
     s32 i;
     s32 j;
     struct Window *r8 = &gMenuWindow;
@@ -937,8 +937,8 @@ static void Shop_MoveItemListDown(void)
     }
 
     {
-        register u8 *r1 asm("r1") = r10 + 0x960;
-        register u8 *r2 asm("r2") = r1;
+        u8 *r1 = r10 + 0x960;
+        u8 *r2 = r1;
        
         r1 += 0x780;
         for (i = 0; i < 14; i++)

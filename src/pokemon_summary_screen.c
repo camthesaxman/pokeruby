@@ -1208,6 +1208,12 @@ static void sub_809E83C(u8 taskId, s8 b)
     sub_80A2078(taskId);
 }
 
+#ifdef NONMATCHING
+static void sub_809E8F0(/*u8 taskId, s8 direction, u8 *c*/)
+{
+    puts("function sub_809E8F0 is a stub");
+}
+#else
 NAKED
 static void sub_809E8F0(/*u8 taskId, s8 direction, u8 *c*/)
 {
@@ -1387,6 +1393,7 @@ _0809EA34:\n\
 _0809EA4C: .4byte gSharedMem + 0x18010\n\
     .syntax divided\n");
 }
+#endif
 
 static void SummaryScreenHandleAButton(u8 taskId)
 {
@@ -2963,8 +2970,9 @@ static void PokemonSummaryScreen_PrintEggTrainerMemo(struct Pokemon *mon, u8 lef
         Menu_PrintText(gOtherText_EggObtainedInTrade, left, top);
         return;
     }
-
+#ifndef NONMATCHING
     asm(""); // needed to match for some reason
+#endif
 
     if (locationMet == 253)
     {
@@ -3592,6 +3600,12 @@ _080A1044: .4byte 0x0600e056\n\
 }
 #endif // NONMATCHING
 
+#ifdef NONMATCHING
+void sub_80A1048(u8 taskId)
+{
+    puts("function sub_80A1048 is a stub");
+}
+#else
 NAKED
 void sub_80A1048(u8 taskId)
 {
@@ -3908,6 +3922,7 @@ _080A12C8: .4byte 0x0600ecc0\n\
 _080A12CC: .4byte gOtherText_Status\n\
     .syntax divided\n");
 }
+#endif
 
 static void sub_80A12D0(s8 a)
 {
@@ -3927,6 +3942,11 @@ static void sub_80A12D0(s8 a)
     gTasks[newTaskId].data[2] = 1;
 }
 
+#ifdef NONMATCHING
+void sub_80A1334(u8 taskId)
+{
+    puts("function sub_80A1334 is a stub");
+}
 // void sub_80A1334(u8 taskId)
 // {
 //     u8 i;
@@ -3995,6 +4015,7 @@ static void sub_80A12D0(s8 a)
 //         DestroyTask(taskId);
 //     }
 // }
+#else
 NAKED
 static void sub_80A1334(u8 taskId)
 {
@@ -4166,6 +4187,7 @@ _080A1480: .4byte gSharedMem + 0x18000\n\
 _080A1484: .4byte gOtherText_Status\n\
     .syntax divided\n");
 }
+#endif
 
 // Related to re-drawing the summary area underneath the pokemon's picture
 // in all of the summary screen tabs.
@@ -4191,6 +4213,12 @@ static void sub_80A1488(s8 a, u8 b)
     gTasks[taskId].data[3] = b;
 }
 
+#ifdef NONMATCHING
+static void sub_80A1500(u8 taskId)
+{
+    puts("function sub_80A1500 is a stub");
+}
+#else
 NAKED
 static void sub_80A1500(u8 taskId)
 {
@@ -4362,6 +4390,7 @@ _080A164C: .4byte gSharedMem + 0x18000\n\
 _080A1650: .4byte gOtherText_Status\n\
     .syntax divided\n");
 }
+#endif
 
 static void sub_80A1654(s8 a, u8 b)
 {

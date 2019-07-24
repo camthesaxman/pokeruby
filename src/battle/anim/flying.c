@@ -587,8 +587,13 @@ void sub_80DA4D8(struct Sprite *sprite)
     u32 arg2;
     u32 matrixNum;
     u8 sinIndex;
+    #ifdef NONMATCHING
+    s16 sinVal;
+    int sinVal2;
+    #else
     register s16 sinVal asm ("r4");
     register int sinVal2 asm ("r0");
+    #endif
 
     data = sprite->data;
 

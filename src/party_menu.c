@@ -174,7 +174,9 @@ const u16 TMHMMoves[] =
 
 //FIXME
 //const u8 *unrefTileBuffer = gTileBuffer;
+#ifndef NONMATCHING
 asm(".4byte gTileBuffer\n");
+#endif
 
 static const u8 MenuGfx_HoldIcons[] = INCBIN_U8("graphics/interface/hold_icons.4bpp");
 static const u16 MenuPal_HoldIcons[] = INCBIN_U16("graphics/interface/hold_icons.gbapal");
@@ -3161,9 +3163,13 @@ void SetHeldItemIconVisibility(u8 taskId, u8 monIndex)
     }
     else
     {
+        #ifdef NONMATCHING
+        struct Sprite *sprite, *sprite2;
+        #else
         register struct Sprite *sprite asm("r4");
 // sprite2 is required to mimic a failed optimization where r0 would have been loaded at the end of the if statement
         register struct Sprite *sprite2 asm("r0");
+        #endif
         u8 animNum;
         heldItem = GetMonData(&gPlayerParty[monIndex], MON_DATA_HELD_ITEM);
         if (ItemIsMail(heldItem))
@@ -3352,8 +3358,13 @@ void PartyMenuPrintGenderIcon(u8 monIndex, u8 menuLayout, struct Pokemon *pokemo
 void PartyMenuDoPrintHP(u8 monIndex, u8 b, u16 currentHP, u16 maxHP)
 {
     u32 *var;
+    #ifdef NONMATCHING
+    u8 *stringVar1 = gStringVar1;
+    u8 *textPtr = AlignInt1InMenuWindow(stringVar1, currentHP, 15, 1);
+    #else
     register u8 *stringVar1 asm("r2") = gStringVar1;
     register u8 *textPtr asm("r2") = AlignInt1InMenuWindow(stringVar1, currentHP, 15, 1);
+    #endif
     textPtr[0] = CHAR_SLASH;
 
     AlignInt1InMenuWindow(++textPtr, maxHP, 35, 1);

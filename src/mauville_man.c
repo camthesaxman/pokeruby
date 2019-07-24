@@ -709,7 +709,11 @@ static void Task_BardSong(u8 taskId)
             u16 wordLen = 0;
             // Can't get it to match without hacking
             u32 temp;
+            #ifdef NONMATCHING
+            s16 zero;
+            #else
             register s16 zero asm("r1");
+            #endif
 
             while (*str != CHAR_SPACE
                 && *str != CHAR_NEWLINE

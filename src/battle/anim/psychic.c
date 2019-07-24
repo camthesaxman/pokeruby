@@ -1047,7 +1047,11 @@ void sub_80DC4F4(u8 taskId)
 {
     s16 spriteId;
     u8 matrixNum;
+    #ifdef PORTABLE
+    u8 matrixNum2;
+    #else
     register u8 matrixNum2 asm("r6");
+    #endif
     struct Task *task = &gTasks[taskId];
     
     matrixNum = AllocOamMatrix();

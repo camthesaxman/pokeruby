@@ -208,6 +208,7 @@ void sub_8055BFC(u8, u8);
 // sub_8055D30
 // sub_8055D38
 void sub_805465C(void);
+void sub_80546B8(void);
 
 void CB2_InitTestMenu(void);
 void debug_sub_8058C00(void);

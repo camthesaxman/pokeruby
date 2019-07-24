@@ -835,7 +835,11 @@ static void LoadAllContestMonIcons(u8 srcOffset, bool8 useDmaNow)
 void sub_80C310C(void)
 {
     int i;
+#ifdef PORTABLE
+    u16 species;
+#else
     register u16 species asm("r0");
+#endif
 
     for (i = 0; i < 4; i++)
     {
@@ -2052,7 +2056,11 @@ void sub_80C3D04(u8 taskId)
 
 void sub_80C3DF0(struct Sprite *sprite)
 {
+#ifdef PORTABLE
+    s16 var0;
+#else
     register s16 var0 asm("r1");
+#endif
 
     sprite->data[3] += sprite->data[0];
     sprite->pos2.x = Sin(sprite->data[3] >> 8, sprite->data[1]);

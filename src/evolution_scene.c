@@ -113,8 +113,8 @@ static void CB2_BeginEvolutionScene(void)
 }
 
 #define tState              data[0]
-#define tMonPtrHI           data[1]
-#define tMonPtrLO           data[2]
+#define tMonPtrLo           data[1]
+#define tMonPtrHi           data[2]
 #define tPreEvoSpecies      data[3]
 #define tPostEvoSpecies     data[4]
 #define tCanStop            data[5] // in first fast data[5] only checks that
@@ -145,7 +145,11 @@ static void Task_BeginEvolutionScene(u8 taskID)
             bool8 canStopEvo;
             u8 partyID;
 
-            mon = (struct Pokemon*)(gTasks[taskID].tMonPtrHI | (gTasks[taskID].tMonPtrLO << 0x10));
+#if MODERN
+            mon = (struct Pokemon*)((u16)gTasks[taskID].tMonPtrLo | (gTasks[taskID].tMonPtrHi << 0x10));
+#else
+            mon = (struct Pokemon*)(gTasks[taskID].tMonPtrLo | (gTasks[taskID].tMonPtrHi << 0x10));
+#endif
             speciesToEvolve = gTasks[taskID].tPostEvoSpecies;
             canStopEvo = gTasks[taskID].tCanStop;
             partyID = gTasks[taskID].tPartyID;
@@ -161,8 +165,8 @@ void BeginEvolutionScene(struct Pokemon* mon, u16 speciesToEvolve, bool8 canStop
 {
     u8 taskID = CreateTask(Task_BeginEvolutionScene, 0);
     gTasks[taskID].tState = 0;
-    gTasks[taskID].tMonPtrHI = (u32)(mon);
-    gTasks[taskID].tMonPtrLO = (u32)(mon) >> 0x10;
+    gTasks[taskID].tMonPtrLo = (u32)(mon);
+    gTasks[taskID].tMonPtrHi = (u32)(mon) >> 0x10;
     gTasks[taskID].tPostEvoSpecies = speciesToEvolve;
     gTasks[taskID].tCanStop = canStopEvo;
     gTasks[taskID].tPartyID = partyID;
@@ -258,8 +262,8 @@ void EvolutionScene(struct Pokemon* mon, u16 speciesToEvolve, bool8 canStopEvo, 
     gTasks[ID].tState = 0;
     gTasks[ID].tPreEvoSpecies = currSpecies;
     gTasks[ID].tPostEvoSpecies = speciesToEvolve;
-    gTasks[ID].tMonPtrHI = (u32)(mon);
-    gTasks[ID].tMonPtrLO = (u32)(mon) >> 0x10;
+    gTasks[ID].tMonPtrLo = (u32)(mon);
+    gTasks[ID].tMonPtrHi = (u32)(mon) >> 0x10;
     gTasks[ID].tCanStop = canStopEvo;
     gTasks[ID].tLearnsFirstMove = TRUE;
     gTasks[ID].tEvoWasStopped = FALSE;
@@ -459,8 +463,8 @@ void TradeEvolutionScene(struct Pokemon* mon, u16 speciesToEvolve, u8 preEvoSpri
     gTasks[ID].tState = 0;
     gTasks[ID].tPreEvoSpecies = currSpecies;
     gTasks[ID].tPostEvoSpecies = speciesToEvolve;
-    gTasks[ID].tMonPtrHI = (u32)(mon);
-    gTasks[ID].tMonPtrLO = (u32)(mon) >> 0x10;
+    gTasks[ID].tMonPtrLo = (u32)(mon);
+    gTasks[ID].tMonPtrHi = (u32)(mon) >> 0x10;
     gTasks[ID].tLearnsFirstMove = TRUE;
     gTasks[ID].tEvoWasStopped = FALSE;
     gTasks[ID].tPartyID = partyID;
@@ -525,7 +529,7 @@ static void CreateShedinja(u16 preEvoSpecies, struct Pokemon* mon)
 static void Task_EvolutionScene(u8 taskID)
 {
     u32 var;
-    struct Pokemon* mon = (struct Pokemon*)(gTasks[taskID].tMonPtrHI | (gTasks[taskID].tMonPtrLO << 0x10));
+    struct Pokemon* mon = (struct Pokemon*)(gTasks[taskID].tMonPtrLo | (gTasks[taskID].tMonPtrHi << 0x10));
 
     // check if B Button was held, so the evolution gets stopped
     if (gMain.heldKeys == B_BUTTON && gTasks[taskID].tState == 8 && gTasks[taskID].tBits & TASK_BIT_CAN_STOP)
@@ -881,7 +885,7 @@ static void Task_EvolutionScene(u8 taskID)
 static void Task_TradeEvolutionScene(u8 taskID)
 {
     u32 var;
-    struct Pokemon* mon = (struct Pokemon*)(gTasks[taskID].tMonPtrHI | (gTasks[taskID].tMonPtrLO << 0x10));
+    struct Pokemon* mon = (struct Pokemon*)(gTasks[taskID].tMonPtrLo | (gTasks[taskID].tMonPtrHi << 0x10));
 
     switch (gTasks[taskID].tState)
     {
@@ -1198,6 +1202,7 @@ static void Task_TradeEvolutionScene(u8 taskID)
     }
 }
 
+#ifdef NONMATCHING
 /*
 DizzyEgg, 27.08.2017
 NOTE:
@@ -1503,6 +1508,7 @@ void unref_sub_8113B50(u8 *a, u8 *b)
 #undef sp4
 }
 */
+#else
 NAKED
 void unref_sub_8113B50()
 {
@@ -2375,6 +2381,7 @@ _081141E8: .4byte gSharedMem + 0x14800\n\
 _081141EC: .4byte gSharedMem + 0x14804\n\
         .syntax divided");
 }
+#endif
 
 void sub_81141F0(s32 a, s32 b, s32 c)
 {
@@ -2428,6 +2435,7 @@ void sub_811430C(u32 a, u32 b)
     sEvoInfo.unk90C4[b][a] = r7 * 16;
 }
 
+#ifndef NONMATCHING
 NAKED
 void unref_sub_81143CC()
 {
@@ -3652,6 +3660,7 @@ _08114DAC: .4byte 0x000008c4\n\
 _08114DB0: .4byte gSharedMem + 0x14800\n\
         .syntax divided");
 }
+#endif
 
 void sub_8114DB4(u32 a, u8 b)
 {
@@ -3680,6 +3689,7 @@ void sub_8114DF0(u32 a, u8 b)
     }
 }
 
+#ifndef NONMATCHING
 NAKED
 void sub_8114E48()
 {
@@ -3899,6 +3909,7 @@ _08114FCA:\n\
     bx r1\n\
         .syntax divided");
 }
+#endif
 
 // Functions below are vblank callbacks and are used
 

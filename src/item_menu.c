@@ -36,40 +36,28 @@
 #include "scanline_effect.h"
 #include "menu_helpers.h"
 #include "ewram.h"
+#include "berry_blender.h"
+#include "field_fadetransition.h"
+#include "shop.h"
+#include "field_weather.h"
+#include "pokemon_storage_system.h"
+#include "event_obj_lock.h"
 
-// External stuff
-extern void FreeAndReserveObjectSpritePalettes(void);
-extern void SetVerticalScrollIndicatorPriority();
-extern void sub_809D104(u16 *, u16, u16, const u8 *, u16, u16, u16, u16);
-extern void PauseVerticalScrollIndicator();
-extern u8 sub_80F9284(void);
-extern void sub_808B5B4();
-extern u8 sub_80F92F4();
-extern void pal_fill_black(void);
-extern bool8 IsWeatherNotFadingIn(void);
-extern u8 sub_80F931C();
-extern void sub_808A3F8(u8);
-extern void Shop_FadeReturnToMartMenu(void);
-extern void sub_80546B8(u8);
-extern void sub_804E990(u8);
-extern void sub_802E424(u8);
-extern void ScriptUnfreezeEventObjects(void);
-
-struct UnknownStruct2
+struct itemUnknownStruct2
 {
     u8 unk0;
     u8 textLine;
     u8 unk2;
 };
 
-struct UnknownStruct3
+struct itemUnknownStruct3
 {
     u8 unk0;
     u8 unk1;
     u8 unk2;
 };
 
-struct UnknownStruct4
+struct itemUnknownStruct4
 {
     u8 unk0;
     u8 unk1;
@@ -78,7 +66,7 @@ struct UnknownStruct4
     TaskFunc unk8;
 };
 
-struct UnknownStruct5
+struct itemUnknownStruct5
 {
     u8 unk0;
     u8 unk1;
@@ -86,7 +74,7 @@ struct UnknownStruct5
     u8 unk3;
 };
 
-struct UnknownStruct6
+struct itemUnknownStruct6
 {
     u8 unk0;
 };
@@ -127,11 +115,11 @@ enum
 };
 
 // ewram
-EWRAM_DATA static struct UnknownStruct2 gUnknown_0203853C = {0};
-EWRAM_DATA static struct UnknownStruct3 gUnknown_02038540 = {0};
-EWRAM_DATA static struct UnknownStruct4 gUnknown_02038544 = {0};
-EWRAM_DATA static struct UnknownStruct5 gUnknown_02038550 = {0};
-EWRAM_DATA static struct UnknownStruct6 gUnknown_02038554 = {0};  // There are 3 bytes of padding after this, so I assume it's a struct
+EWRAM_DATA static struct itemUnknownStruct2 gUnknown_0203853C = {0};
+EWRAM_DATA static struct itemUnknownStruct3 gUnknown_02038540 = {0};
+EWRAM_DATA static struct itemUnknownStruct4 gUnknown_02038544 = {0};
+EWRAM_DATA static struct itemUnknownStruct5 gUnknown_02038550 = {0};
+EWRAM_DATA static struct itemUnknownStruct6 gUnknown_02038554 = {0};  // There are 3 bytes of padding after this, so I assume it's a struct
 EWRAM_DATA static u8 gUnknown_02038558 = 0;
 EWRAM_DATA static s8 sCurrentBagPocket = 0;
 EWRAM_DATA static u8 gUnknown_0203855A = 0;
@@ -762,7 +750,7 @@ static void sub_80A39B8(u16 *a, u8 b)
 {
     u8 var = b * 2;
 
-    sub_809D104(a, 4, 10, gBagScreenLabels_Tilemap, 0, var, 8, 2);
+    sub_809D104((void *)a, 4, 10, gBagScreenLabels_Tilemap, 0, var, 8, 2);
 }
 
 static void sub_80A39E4(u16 *a, u8 b, u8 c, s8 d)
@@ -776,8 +764,8 @@ static void sub_80A39E4(u16 *a, u8 b, u8 c, s8 d)
         if (b == 5)
             r7 = 2;
 
-        sub_809D104(a, 4, 10, gBagScreenLabels_Tilemap, 8 - c, r2, c, 2);
-        sub_809D104(a, c + 4, 10, gBagScreenLabels_Tilemap, 0, r7, 8 - c, 2);
+        sub_809D104((void *)a, 4, 10, gBagScreenLabels_Tilemap, 8 - c, r2, c, 2);
+        sub_809D104((void *)a, c + 4, 10, gBagScreenLabels_Tilemap, 0, r7, 8 - c, 2);
     }
     else if (d == 1)
     {
@@ -785,8 +773,8 @@ static void sub_80A39E4(u16 *a, u8 b, u8 c, s8 d)
         if (b == 1)
             r7 = 10;
 
-        sub_809D104(a, 4, 10, gBagScreenLabels_Tilemap, c, r7, 8 - c, 2);
-        sub_809D104(a, 12 - c, 10, gBagScreenLabels_Tilemap, 0, r2, c, 2);
+        sub_809D104((void *)a, 4, 10, gBagScreenLabels_Tilemap, c, r7, 8 - c, 2);
+        sub_809D104((void *)a, 12 - c, 10, gBagScreenLabels_Tilemap, 0, r2, c, 2);
     }
 }
 
@@ -1135,7 +1123,7 @@ static bool8 sub_80A42B0(u8 itemPos, int b)
 {
     u8 r5;
     u16 *ptr;
-    struct UnknownStruct3 *r8 = &gUnknown_02038540;
+    struct itemUnknownStruct3 *r8 = &gUnknown_02038540;
 
     if (gBagPocketScrollStates[sCurrentBagPocket].scrollTop + itemPos > gBagPocketScrollStates[sCurrentBagPocket].numSlots)
         return TRUE;
@@ -1285,7 +1273,11 @@ static void sub_80A46FC(u16 taskId, int b, int c, int d)
         u8 r4;
         u8 r5;
         u8 *text;
+#ifdef PORTABLE
+        int var;
+#else
         register int var asm("r0");
+#endif
 
         if (sub_80A42B0(i, d) == TRUE)
             break;
@@ -2122,6 +2114,13 @@ _080A55FA:\n\
 }
 #endif
 
+#ifdef NONMATCHING
+static void sub_80A5600(u8 taskId)
+{
+    puts("function sub_80A5600 is a stub");
+    return;
+}
+#else
 NAKED
 static void sub_80A5600(u8 taskId)
 {
@@ -2335,6 +2334,7 @@ _080A57BE:\n\
     bx r0\n\
     .syntax divided\n");
 }
+#endif
 
 static void sub_80A57C4(void)
 {
@@ -3405,7 +3405,7 @@ static void sub_80A740C(void)
 
 static void sub_80A7420(void)
 {
-    struct UnknownStruct2 *unkStruct = &gUnknown_0203853C;
+    struct itemUnknownStruct2 *unkStruct = &gUnknown_0203853C;
     int index;
 
     switch (unkStruct->unk0)
@@ -3542,7 +3542,7 @@ static void sub_80A7630(void)
 
 static void sub_80A763C(void)
 {
-    struct UnknownStruct3 *r4 = &gUnknown_02038540;
+    struct itemUnknownStruct3 *r4 = &gUnknown_02038540;
 
     switch (sub_80A78C4())
     {
@@ -3577,14 +3577,14 @@ static void sub_80A76A0(void)
 
 static bool32 sub_80A76B8(void)
 {
-    struct UnknownStruct3 *s = &gUnknown_02038540;
+    struct itemUnknownStruct3 *s = &gUnknown_02038540;
 
     return (s->unk0 == 0);
 }
 
 static bool32 sub_80A76D0(void)
 {
-    struct UnknownStruct3 *s = &gUnknown_02038540;
+    struct itemUnknownStruct3 *s = &gUnknown_02038540;
 
     return (s->unk1 > 5);
 }
@@ -3609,7 +3609,7 @@ static void sub_80A770C(void)
 
 static void DisplayCannotUseItemMessage(int a, const u8 *b, TaskFunc func, int d)
 {
-    struct UnknownStruct4 *r4 = &gUnknown_02038544;
+    struct itemUnknownStruct4 *r4 = &gUnknown_02038544;
 
     switch (sub_80A7924())
     {
@@ -3628,7 +3628,7 @@ static void DisplayCannotUseItemMessage(int a, const u8 *b, TaskFunc func, int d
 
 static void sub_80A7768(void)
 {
-    struct UnknownStruct5 *r4 = &gUnknown_02038550;
+    struct itemUnknownStruct5 *r4 = &gUnknown_02038550;
 
     if (r4->unk0 == 2)
     {
@@ -3670,7 +3670,7 @@ static void sub_80A7828(void)
 
 static void sub_80A7834(int a, int b)
 {
-    struct UnknownStruct5 *r4 = &gUnknown_02038550;
+    struct itemUnknownStruct5 *r4 = &gUnknown_02038550;
 
     switch (sub_80A7958())
     {
@@ -3710,7 +3710,7 @@ static void sub_80A7880(void)
 
 static bool32 sub_80A78A0(void)
 {
-    struct UnknownStruct5 *r0 = &gUnknown_02038550;
+    struct itemUnknownStruct5 *r0 = &gUnknown_02038550;
 
     return (r0->unk0 == 0);
 }

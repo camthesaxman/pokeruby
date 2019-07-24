@@ -13,11 +13,7 @@
 
 #define ALIGNED(n) __attribute__((aligned(n)))
 
-#define SOUND_INFO_PTR (*(struct SoundInfo **)0x3007FF0)
-#define INTR_CHECK     (*(u16 *)0x3007FF8)
-#define INTR_VECTOR    (*(void **)0x3007FFC)
-
-#define PLTT      0x5000000
+//#define PLTT      0x5000000
 #define PLTT_SIZE 0x400
 
 #define BG_PLTT      PLTT
@@ -26,7 +22,7 @@
 #define OBJ_PLTT      (PLTT + 0x200)
 #define OBJ_PLTT_SIZE 0x200
 
-#define VRAM      0x6000000
+//#define VRAM      0x6000000
 #define VRAM_SIZE 0x18000
 
 #define BG_VRAM           VRAM
@@ -43,7 +39,7 @@
 #define OBJ_VRAM1      (void *)(VRAM + 0x14000)
 #define OBJ_VRAM1_SIZE 0x4000
 
-#define OAM      0x7000000
+//#define OAM      0x7000000
 #define OAM_SIZE 0x400
 
 #define DISPLAY_WIDTH  240
@@ -60,5 +56,22 @@
 #define RGB_WHITE RGB(31, 31, 31)
 
 #define WIN_RANGE(a, b) (((a) << 8) | (b))
+
+#ifdef PORTABLE
+    extern struct SoundInfo *SOUND_INFO_PTR;
+    extern unsigned short INTR_CHECK;
+    extern void *INTR_VECTOR;
+    extern unsigned char PLTT[PLTT_SIZE];
+    extern unsigned char VRAM_[VRAM_SIZE];
+    #define VRAM (u32)VRAM_
+    extern unsigned char OAM[OAM_SIZE];
+#else
+    #define SOUND_INFO_PTR (*(struct SoundInfo **)0x3007FF0)
+    #define INTR_CHECK     (*(u16 *)0x3007FF8)
+    #define INTR_VECTOR    (*(void **)0x3007FFC)
+    #define PLTT      0x5000000
+    #define VRAM      0x6000000
+    #define OAM      0x7000000
+#endif
 
 #endif // GUARD_GBA_DEFINES

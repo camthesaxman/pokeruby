@@ -1319,7 +1319,9 @@ void sub_80E97C0(u16 a, u16 b)
     u8 i;
     u8 r7 = 0;
 
+#ifndef NONMATCHING
     asm("":::"r9");
+#endif
 
     for (i = 0; i < gEasyChatStruct->unk84; i++)
     {

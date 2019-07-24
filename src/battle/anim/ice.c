@@ -530,14 +530,14 @@ const struct SpriteTemplate gIceBallParticleSpriteTemplate =
 
 // unknown - potentially used in weather ball
 // TODO: decompile function and name it
-/*
+#ifdef NONMATCHING
 // NOT EQUIVALENT
 static void sub_80D7704(struct Sprite *sprite)
 {
     //
     //u16 battler1, battler2, battler3, battler4; //
     u16 r9, r8, r3, r6;
-    //s16 r4, r10;
+    s16 r4, r10;
 
     sprite->oam.tileNum += 7;
 
@@ -592,8 +592,7 @@ static void sub_80D7704(struct Sprite *sprite)
     }
     // _080D77DE
 }
-*/
-
+#else
 NAKED static void sub_80D7704(struct Sprite *sprite)
 {
     asm_unified("\tpush {r4-r7,lr}\n"
@@ -786,6 +785,7 @@ NAKED static void sub_80D7704(struct Sprite *sprite)
                 "\t.align 2, 0\n"
                 "_080D7884: .4byte sub_80D7888");
 }
+#endif
 
 void sub_80D7888(struct Sprite *sprite)
 {
@@ -1466,7 +1466,11 @@ static void InitPoisonGasCloudAnim(struct Sprite *sprite)
 static void sub_80D8874(struct Sprite *sprite)
 {
     int value;
+#ifdef PORTABLE
+    s16 value2;
+#else
     register s16 value2 asm("r5");
+#endif
 
     switch (sprite->data[7] & 0xFF)
     {
@@ -1530,7 +1534,9 @@ static void sub_80D8874(struct Sprite *sprite)
 
         if (sprite->data[0] <= 0)
         {
+            #ifndef PORTABLE
             asm("mov r2, #0"); // unused local variable?
+            #endif
             sprite->data[0] = 0x300;
             sprite->data[1] = sprite->pos1.x += sprite->pos2.x;
             sprite->data[3] = sprite->pos1.y += sprite->pos2.y;
@@ -1930,7 +1936,7 @@ static void AnimTask_Hail2(u8 taskId)
 }
 
 
-/*
+#ifdef NONMATCHING
 // Something to do with Hail.
 // possibly equivalent, possibly not
 bool8 sub_80D8BA8(u8 a1, u8 a2, u8 a3, u8 a4)//(u8 spriteId, u8 taskId, u8 a3)//(u8 taskId)
@@ -1985,7 +1991,7 @@ bool8 sub_80D8BA8(u8 a1, u8 a2, u8 a3, u8 a4)//(u8 spriteId, u8 taskId, u8 a3)//
         r6 = gUnknown_083D9DC4[a1][1];
     }
 
-    spriteId = CreateSprite(&HailSpriteTemplate, r7 - r6, -0x8, 0x12);
+    //spriteId = CreateSprite(&HailSpriteTemplate, r7 - r6, -0x8, 0x12);
 
     if (spriteId != 0x40)
     {
@@ -2006,9 +2012,7 @@ bool8 sub_80D8BA8(u8 a1, u8 a2, u8 a3, u8 a4)//(u8 spriteId, u8 taskId, u8 a3)//
     return FALSE;
 
 }
-//*/
-
-//*
+#else
 NAKED bool8 sub_80D8BA8(u8 a1, u8 a2, u8 a3, u8 a4)
 {
     asm_unified("\tpush {r4-r7,lr}\n"
@@ -2188,7 +2192,7 @@ NAKED bool8 sub_80D8BA8(u8 a1, u8 a2, u8 a3, u8 a4)
                 "\tpop {r1}\n"
                 "\tbx r1");
 }
-//*/
+#endif
 
 static void AnimHailBegin(struct Sprite *sprite)
 {

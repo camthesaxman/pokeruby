@@ -816,6 +816,7 @@ bool8 TrainerCard_InitFlipAnimation(struct Task *task)
     return FALSE;
 }
 
+#ifdef NONMATCHING
 /*
 bool8 TrainerCard_ScaleDownFlipAnimation(struct Task *task)
 {
@@ -863,7 +864,7 @@ bool8 TrainerCard_ScaleDownFlipAnimation(struct Task *task)
     return FALSE;
 }
 */
-
+#else
 NAKED
 bool8 TrainerCard_ScaleDownFlipAnimation(struct Task *task)
 {
@@ -1015,6 +1016,7 @@ _08093C04: .4byte gScanlineEffectRegBuffers\n\
 _08093C08: .4byte 0x0000fffc\n\
     .syntax divided\n");
 }
+#endif
 
 bool8 TrainerCard_SwitchToNewSide(struct Task *task)
 {
@@ -1028,6 +1030,7 @@ bool8 TrainerCard_SwitchToNewSide(struct Task *task)
     return TRUE;
 }
 
+#ifndef NONMATCHING
 NAKED
 bool8 TrainerCard_ScaleUpFlipAnimation(struct Task *task)
 {
@@ -1177,6 +1180,7 @@ _08093D48: .4byte gScanlineEffectRegBuffers\n\
 _08093D4C: .4byte 0x0000fffc\n\
     .syntax divided\n");
 }
+#endif
 
 bool8 TrainerCard_FinishFlipAnimation(struct Task *task)
 {

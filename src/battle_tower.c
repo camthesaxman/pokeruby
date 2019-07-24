@@ -557,6 +557,12 @@ void SetEReaderTrainerGfxId(void)
     SetBattleTowerTrainerGfxId(BATTLE_TOWER_EREADER_TRAINER_ID);
 }
 
+#ifdef NONMATCHING
+void sub_8134AC0(struct BattleTowerRecord *record)
+{
+    puts("function atk93_tryKO is a stub");
+    return;
+}
 // void sub_8134AC0(struct BattleTowerRecord *record)
 // {
 //     u16 var1[6];
@@ -641,6 +647,7 @@ void SetEReaderTrainerGfxId(void)
 
 //     gSaveBlock2.battleTower.records[var2[(Random() % l)]] = *record;
 // }
+#else
 NAKED
 void sub_8134AC0(struct BattleTowerRecord *record)
 {
@@ -876,7 +883,7 @@ _08134C5E:\n\
 _08134C70: .4byte gSaveBlock2\n\
     .syntax divided\n");
 }
-
+#endif
 u8 get_trainer_class_pic_index(void)
 {
     if (gSaveBlock2.battleTower.battleTowerTrainerId == BATTLE_TOWER_EREADER_TRAINER_ID)

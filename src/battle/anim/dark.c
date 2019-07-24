@@ -730,51 +730,52 @@ static void sub_80E0620(u8 taskId)
     }
 }
 
-// static void sub_80E079C(struct Task *task)
-// {
-//     int var0, var1;
-//     s16 var2;
-//     s16 i, j;
+#ifdef NONMATCHING
+static void sub_80E079C(struct Task *task)
+{
+    int var0, var1;
+    s16 var2;
+    s16 i, j;
 
-//     var2 = task->data[5] - task->data[4];
-//     if (var2 != 0)
-//     {
-//         var0 = task->data[13] / var2;
-//         var1 = task->data[6];
+    var2 = task->data[5] - task->data[4];
+    if (var2 != 0)
+    {
+        var0 = task->data[13] / var2;
+        var1 = task->data[6];
 
-//         for (i = 0; i < task->data[4]; i++)
-//         {
-//             gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[10] - (i - 159);
-//         }
+        for (i = 0; i < task->data[4]; i++)
+        {
+            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[10] - (i - 159);
+        }
 
-//         for (i = task->data[4]; i <= task->data[5]; i++)
-//         {
-//             if (i >= 0)
-//             {
-//                 gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = (var1 - i) + task->data[10];
-//             }
+        for (i = task->data[4]; i <= task->data[5]; i++)
+        {
+            if (i >= 0)
+            {
+                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = (var1 - i) + task->data[10];
+            }
 
-//             var1 += var0;
-//         }
+            var1 += var0;
+        }
 
-//         for (j = i; j < task->data[7]; j++)
-//         {
-//             if (j >= 0)
-//             {
-//                 gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][j] = (task->data[10] + 159) - j;
-//             }
-//         }
-//     }
-//     else
-//     {
-//         for (i = 0; i < 112; i++)
-//         {
-//             gScanlineEffectRegBuffers[0][i] = task->data[10] + 159 - i;
-//             gScanlineEffectRegBuffers[1][i] = task->data[10] + 159 - i;
-//         }
-//     }
-// }
-
+        for (j = i; j < task->data[7]; j++)
+        {
+            if (j >= 0)
+            {
+                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][j] = (task->data[10] + 159) - j;
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; i < 112; i++)
+        {
+            gScanlineEffectRegBuffers[0][i] = task->data[10] + 159 - i;
+            gScanlineEffectRegBuffers[1][i] = task->data[10] + 159 - i;
+        }
+    }
+}
+#else
 NAKED
 static void sub_80E079C(struct Task *task)
 {
@@ -940,6 +941,7 @@ _080E08BE:\n\
 _080E08C8: .4byte gScanlineEffectRegBuffers\n\
     .syntax divided\n");
 }
+#endif
 
 static void sub_80E08CC(u8 priority)
 {

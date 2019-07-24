@@ -257,6 +257,8 @@ static void sub_80D3874(struct Sprite *sprite)
     }
 }
 
+#ifdef NONMATCHING
+#else
 NAKED
 void AnimTask_CreateSurfWave(u8 taskId)
 {
@@ -575,9 +577,10 @@ _080D3B38:\n\
 _080D3B5C: .4byte sub_80D3B60\n\
     .syntax divided\n");
 }
+#endif
 
 #ifdef NONMATCHING
-void sub_80D3B60(u8 taskId)
+/*void sub_80D3B60(u8 taskId)
 {
     struct UnknownAnimStruct2 unk;
     u8 i;
@@ -624,7 +627,7 @@ void sub_80D3B60(u8 taskId)
         gTasks[taskId].data[0] = gTasks[gTasks[taskId].data[15]].data[1] & 0x1F;
         gTasks[taskId].func = sub_8107CC4;
     }
-}
+}*/
 #else
 NAKED
 void sub_80D3B60(u8 taskId)
@@ -880,98 +883,98 @@ _080D3D32:\n\
 #endif
 
 #ifdef NONMATCHING
-void sub_80D3D68(u8 taskId)
-{
-    s16 i;
-    struct ScanlineEffectParams params;
-    struct Task *task = &gTasks[taskId];
-    // u16 *scanlineBuffer;
-
-    switch (task->data[0])
-    {
-        case 0:
-            for (i = 0; i < task->data[4]; i++)
-            {
-                /* scanlineBuffer = &gScanlineEffectRegBuffers[0][i];
-                *(u16 *)(&gScanlineEffect) = task->data[2];
-                *scanlineBuffer = task->data[2] & -1; */
-                gScanlineEffectRegBuffers[1][i] = task->data[2];
-                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[2] & 0xFFFF));
-            }
-            for (i = task->data[4]; i < task->data[5]; i++)
-            {
-                gScanlineEffectRegBuffers[1][i] = task->data[1];
-                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[1] & 0xFFFF));
-            }
-            for (i = task->data[5]; i < 160; i++)
-            {
-                gScanlineEffectRegBuffers[1][i] = task->data[2];
-                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[2] & 0xFFFF));
-            }
-            if (task->data[4] == 0)
-            {
-                gScanlineEffectRegBuffers[1][i] = task->data[1];
-                gScanlineEffectRegBuffers[0][i] = task->data[1];
-            }
-            else
-            {
-                gScanlineEffectRegBuffers[1][i] = task->data[2];
-                gScanlineEffectRegBuffers[0][i] = task->data[2];
-            }
-            params.dmaDest = (vu16 *)REG_ADDR_BLDALPHA;
-            params.dmaControl = SCANLINE_EFFECT_DMACNT_16BIT;
-            params.initState = 1;
-            params.unused9 = 0;
-            ScanlineEffect_SetParams(params);
-            task->data[0]++;
-            break;
-        case 1:
-            if (task->data[3] == 0)
-            {
-                if (--task->data[4] <= 0)
-                {
-                    task->data[4] = 0;
-                    task->data[0]++;
-                }
-            }
-            else if (++task->data[5] > 111)
-            {
-                task->data[0]++;
-            }
-            for (i = 0; i < task->data[4]; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
-            }
-            for (i = task->data[4]; i < task->data[5]; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[1];
-            }
-            for (i = task->data[5]; i < 160; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
-            }
-            break;
-        case 2:
-            for (i = 0; i < task->data[4]; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
-            }
-            for (i = task->data[4]; i < task->data[5]; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[1];
-            }
-            for (i = task->data[5]; i < 160; i++)
-            {
-                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
-            }
-            if (task->data[15] == -1)
-            {
-                ScanlineEffect_Stop();
-                DestroyTask(taskId);
-            }
-            break;
-    }
-}
+//void sub_80D3D68(u8 taskId)
+//{
+//    s16 i;
+//    struct ScanlineEffectParams params;
+//    struct Task *task = &gTasks[taskId];
+//    // u16 *scanlineBuffer;
+//
+//    switch (task->data[0])
+//    {
+//        case 0:
+//            for (i = 0; i < task->data[4]; i++)
+//            {
+//                /* scanlineBuffer = &gScanlineEffectRegBuffers[0][i];
+//                *(u16 *)(&gScanlineEffect) = task->data[2];
+//                *scanlineBuffer = task->data[2] & -1; */
+//                gScanlineEffectRegBuffers[1][i] = task->data[2];
+//                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[2] & 0xFFFF));
+//            }
+//            for (i = task->data[4]; i < task->data[5]; i++)
+//            {
+//                gScanlineEffectRegBuffers[1][i] = task->data[1];
+//                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[1] & 0xFFFF));
+//            }
+//            for (i = task->data[5]; i < 160; i++)
+//            {
+//                gScanlineEffectRegBuffers[1][i] = task->data[2];
+//                gScanlineEffectRegBuffers[0][i] = (u16)((int)(task->data[2] & 0xFFFF));
+//            }
+//            if (task->data[4] == 0)
+//            {
+//                gScanlineEffectRegBuffers[1][i] = task->data[1];
+//                gScanlineEffectRegBuffers[0][i] = task->data[1];
+//            }
+//            else
+//            {
+//                gScanlineEffectRegBuffers[1][i] = task->data[2];
+//                gScanlineEffectRegBuffers[0][i] = task->data[2];
+//            }
+//            params.dmaDest = (vu16 *)REG_ADDR_BLDALPHA;
+//            params.dmaControl = SCANLINE_EFFECT_DMACNT_16BIT;
+//            params.initState = 1;
+//            params.unused9 = 0;
+//            ScanlineEffect_SetParams(params);
+//            task->data[0]++;
+//            break;
+//        case 1:
+//            if (task->data[3] == 0)
+//            {
+//                if (--task->data[4] <= 0)
+//                {
+//                    task->data[4] = 0;
+//                    task->data[0]++;
+//                }
+//            }
+//            else if (++task->data[5] > 111)
+//            {
+//                task->data[0]++;
+//            }
+//            for (i = 0; i < task->data[4]; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
+//            }
+//            for (i = task->data[4]; i < task->data[5]; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[1];
+//            }
+//            for (i = task->data[5]; i < 160; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
+//            }
+//            break;
+//        case 2:
+//            for (i = 0; i < task->data[4]; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
+//            }
+//            for (i = task->data[4]; i < task->data[5]; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[1];
+//            }
+//            for (i = task->data[5]; i < 160; i++)
+//            {
+//                gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = task->data[2];
+//            }
+//            if (task->data[15] == -1)
+//            {
+//                ScanlineEffect_Stop();
+//                DestroyTask(taskId);
+//            }
+//            break;
+//    }
+//}
 #else
 NAKED
 void sub_80D3D68(u8 taskId)
@@ -1902,7 +1905,7 @@ void sub_80D4D64(struct Sprite *sprite, int xDiff, int yDiff)
 
     for (i = 0; i <= 0; i++)
     {
-        spriteId = CreateSprite(&gUnknown_08595310, combinedX, combinedY + something, 130);
+        spriteId = CreateSprite(&gSpriteTemplate_83D9420, combinedX, combinedY + something, 130);
         gSprites[spriteId].data[0] = 20;
         gSprites[spriteId].data[1] = randomSomethingY;
         gSprites[spriteId].subpriority = GetBattlerSubpriority(gBattleAnimAttacker) - 1;
@@ -1913,7 +1916,7 @@ void sub_80D4D64(struct Sprite *sprite, int xDiff, int yDiff)
     }
     for (i = 0; i <= 0; i++)
     {
-        spriteId = CreateSprite(&gUnknown_08595310, combinedX, combinedY - something, 130);
+        spriteId = CreateSprite(&gSpriteTemplate_83D9420, combinedX, combinedY - something, 130);
         gSprites[spriteId].data[0] = 20;
         gSprites[spriteId].data[1] = randomSomethingY;
         gSprites[spriteId].subpriority = GetBattlerSubpriority(gBattleAnimAttacker) - 1;

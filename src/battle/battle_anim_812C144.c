@@ -2556,7 +2556,11 @@ static void sub_812E09C(struct Sprite *sprite)
 static void sub_812E0F8(struct Sprite *sprite)
 {
     u16 d2;
+#ifdef PORTABLE
+    u16 d3;
+#else
     register u16 d3 asm("r1");
+#endif
     int var0;
     s8 var1;
     

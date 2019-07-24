@@ -98,7 +98,7 @@ struct PokenavRibbonIconGfx {
     u8 paletteNum;
 };
 
-IWRAM_DATA void (*gUnknown_03000744)(void);
+static void (*gUnknown_03000744)(void);
 
 struct UnkPokenavStruct *const gPokenavStructPtr = (struct UnkPokenavStruct *)gSharedMem;
 
@@ -2020,6 +2020,8 @@ void sub_80ED858()
 	.word	0xfbd");
 }
 #else
+    
+#ifndef NONMATCHING
 NAKED
 void sub_80ED858()
 {
@@ -2392,6 +2394,7 @@ _080EDB7A:\n\
     .align 2, 0\n\
 _080EDB84: .4byte sub_80ED3D0\n");
 }
+#endif
 #endif
 #endif
 
@@ -3057,7 +3060,7 @@ void sub_80EE9C0(u8 param1, u8 param2, u8 param3)
     gPokenavStructPtr->unk6E17 = param3;
 }
 
-#if 0
+#ifdef NONMATCHING
 bool8 sub_80EEA0C() {
     switch (gPokenavStructPtr->unk6E16) {
     case 0:
@@ -3077,7 +3080,7 @@ bool8 sub_80EEA0C() {
         if (sub_80F2CBC(gPokenavStructPtr->unk6E17)) return 1;
         gPokenavStructPtr->unk6E16++;
     case 3:
-
+        break;
     }
 }
 #else

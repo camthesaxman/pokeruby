@@ -149,7 +149,11 @@ void ReadPlttIntoBuffers(void)
 bool8 BeginNormalPaletteFade(u32 selectedPalettes, s8 delay, u8 startY, u8 targetY, u16 blendColor)
 {
     u8 temp;
+    #ifdef NONMATCHING
+    u32 _blendColor = blendColor;
+    #else
     register u32 _blendColor asm("r8") = blendColor;
+    #endif
 
     if (gPaletteFade.active)
     {

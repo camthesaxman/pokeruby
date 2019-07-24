@@ -104,6 +104,7 @@ static void VBlankCB_ContestPainting(void);
 void sub_8106B90();  //should be static
 static void sub_8107090(u8 arg0, u8 arg1);
 
+#ifndef NONMATCHING
 NAKED
 void sub_8106630(u32 arg0)
 {
@@ -136,6 +137,7 @@ _08106660: .4byte gSaveBlock1\n\
 _08106664: .4byte 0x00002dfc\n\
     .syntax divided\n");
 }
+#endif
 
 void CB2_ContestPainting(void)
 {

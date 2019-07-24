@@ -1,3 +1,4 @@
+#include <string.h>
 #include "gba/m4a_internal.h"
 
 extern const u8 gCgb3Vol[];
@@ -312,10 +313,12 @@ void MPlayExtender(struct CgbChannel *cgbChans)
     soundInfo->ident = ident;
 }
 
+#ifndef PORTABLE
 void MusicPlayerJumpTableCopy(void)
 {
     asm("swi 0x2A");
 }
+#endif
 
 void ClearChain(void *x)
 {
@@ -903,7 +906,9 @@ void CgbModVol(struct CgbChannel *chan)
         // Force chan->rightVolume and chan->leftVolume to be read from memory again,
         // even though there is no reason to do so.
         // The command line option "-fno-gcse" achieves the same result as this.
+        #ifndef NONMATCHING
         asm("" : : : "memory");
+        #endif
 
         chan->eg = (u32)(chan->rightVolume + chan->leftVolume) >> 4;
         if (chan->eg > 15)

@@ -1259,9 +1259,12 @@ void sub_80BE9D4(void)
     if (gUnknown_03005D38.var0 != -1 && sub_80BF1B4(TVSHOW_FISHING_ADVICE) != 1)
     {
         struct TVShowPokemonAngler *pokemonAngler = &gSaveBlock1.tvShows[gUnknown_03005D38.var0].pokemonAngler;
+        #ifdef NONMATCHING
+        u8 zero = 0;
+        #else
         register u8 zero asm("r1") = 0;
-
         asm(""::"r"(zero));
+        #endif
         pokemonAngler->kind = TVSHOW_FISHING_ADVICE;
         pokemonAngler->active = zero;
         pokemonAngler->var02 = gUnknown_020387E2 & 0xFF;

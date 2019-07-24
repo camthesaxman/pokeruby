@@ -2865,7 +2865,11 @@ static void ClipLeft(struct Window *win)
 
 static void ClipRight(struct Window *win)
 {
+    #ifdef NONMATCHING
+    u8 cursorX = win->cursorX;
+    #else
     register u8 cursorX asm("r0") = win->cursorX;
+    #endif
     u8 left = win->left;
     u32 pixelX = (cursorX + left) & 7;
 
