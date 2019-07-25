@@ -47,9 +47,15 @@
 #define CMD_TIME     CMD(3)
 #define CMD_ALARM    CMD(4)
 
+#ifdef PORTABLE
+u16 GPIO_PORT_DATA;
+u16 GPIO_PORT_DIRECTION;
+u16 GPIO_PORT_READ_ENABLE;
+#else
 #define GPIO_PORT_DATA        (*(vu16 *)0x80000C4)
 #define GPIO_PORT_DIRECTION   (*(vu16 *)0x80000C6)
 #define GPIO_PORT_READ_ENABLE (*(vu16 *)0x80000C8)
+#endif
 
 extern vu16 GPIOPortDirection;
 
