@@ -184,6 +184,23 @@ static void CPUWriteByte(void *dest, uint8_t val)
     *(uint8_t *)dest = val;
 }
 
+void DmaSet(int dmaNum, const void *src, void *dest, u32 control)
+{
+    int i;
+    for (i=0; i<(control & 0x1ffff); i++)
+    {
+        if ((control) & DMA_SRC_FIXED){
+            if ((control) & DMA_16BIT)
+                    ((vu32 *)(dest))[i] = ((vu32 *)(src))[0];
+            else    ((vu16 *)(dest))[i] = ((vu16 *)(src))[0];
+        } else {
+            if ((control) & DMA_32BIT)
+                    ((vu32 *)(dest))[i] = ((vu32 *)(src))[i];
+            else    ((vu16 *)(dest))[i] = ((vu16 *)(src))[i];
+        }
+    }
+}
+
 void CpuSet(const void *src, void *dst, u32 cnt)
 {
     int count = cnt & 0x1FFFFF;

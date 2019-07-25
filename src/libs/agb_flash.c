@@ -146,6 +146,7 @@ void ReadFlash_Core(u8 *src, u8 *dest, u32 size)
 void ReadFlash(u16 sectorNum, u32 offset, void *dest, u32 size)
 {
 #ifdef PORTABLE
+    puts("function ReadFlash is a stub");
     return;
 #else
     u8 *src;
@@ -201,6 +202,7 @@ u32 VerifyFlashSector_Core(u8 *src, u8 *tgt, u32 size)
 u32 VerifyFlashSector(u16 sectorNum, u8 *src)
 {
 #ifdef PORTABLE
+    puts("function VerifyFlashSector is a stub");
     return 0;
 #else
     u16 i;
@@ -243,6 +245,7 @@ u32 VerifyFlashSector(u16 sectorNum, u8 *src)
 u32 VerifyFlashSectorNBytes(u16 sectorNum, u8 *src, u32 n)
 {
 #ifdef PORTABLE
+    puts("function VerifyFlashSectorNBytes is a stub");
     return 0;
 #else
     u16 i;

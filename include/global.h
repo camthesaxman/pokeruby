@@ -17,6 +17,7 @@
 #define getc           _getc
 #define printf         _printf
 #define CpuSet         _CpuSet
+#define DmaSet         _DmaSet
 #define SoftReset _SoftReset
 #define LZ77UnCompVram _LZ77UnCompVram
 #define LZ77UnCompWram _LZ77UnCompWram

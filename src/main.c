@@ -73,7 +73,7 @@ bool8 gLinkVSyncDisabled;
 u32 IntrMain_Buffer[0x200];
 s8 gPcmDmaCounter;
 
-EWRAM_DATA u8 gSharedMem[0x20000] = {0};
+EWRAM_DATA u8 gSharedMem[0x40000] = {0};
 EWRAM_DATA void (**gFlashTimerIntrFunc)(void) = NULL;
 
 static void UpdateLinkAndCallCallbacks(void);
@@ -119,11 +119,11 @@ void AgbMain()
     InitKeys();
     InitIntrHandlers();
     m4aSoundInit();
-    //RtcInit();
+    RtcInit();
     CheckForFlashMemory();
     InitMainCallbacks();
     InitMapMusic();
-    //SeedRngWithRtc(); puts("Test9");
+    SeedRngWithRtc(); puts("Test9");
 
     gSoftResetDisabled = FALSE;
     

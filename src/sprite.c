@@ -1299,6 +1299,9 @@ static void ApplyAffineAnimFrameRelativeAndUpdateMatrix(u8 matrixNum, struct Aff
 
 static s16 ConvertScaleParam(s16 scale)
 {
+    #ifdef PORTABLE
+    if(!scale) return 0;
+    #endif
     s32 val = 0x10000;
     return val / scale;
 }

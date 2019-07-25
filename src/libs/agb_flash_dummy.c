@@ -33,31 +33,37 @@ const struct FlashSetupInfo DUMMY_SAVE =
 
 u16 WaitForFlashWrite_DUMMY(u8 phase, u8 *addr, u8 lastData)
 {
+    puts("function WaitForFlashWrite_DUMMY is a stub");
     return 0;
 }
 
 u16 EraseFlashChip_DUMMY(void)
 {
+    puts("function EraseFlashChip_DUMMY is a stub");
     return 0;
 }
 
 u16 EraseFlashSector_DUMMY(u16 sectorNum)
 {
+    puts("function EraseFlashSector_DUMMY is a stub");
     return 0;
 }
 
 u16 ProgramFlashByte_DUMMY(u16 sectorNum, u32 offset, u8 data)
 {
+    puts("function ProgramFlashByte_DUMMY is a stub");
     return 0;
 }
 
 static u16 ProgramByte(u8 *src, u8 *dest)
 {
+    puts("function ProgramByte is a stub");
     return 0;
 }
 
 u16 ProgramFlashSector_DUMMY(u16 sectorNum, void *src)
 {
+    puts("function ProgramFlashSector_DUMMY is a stub");
     return 0;
 }
 

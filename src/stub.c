@@ -72,7 +72,7 @@ STUB_FUNC(void RLUnCompWram(const void *src, void *dest))
 STUB_FUNC(void RLUnCompVram(const void *src, void *dest))
 //STUB_FUNC(void DmaSet())
 STUB_FUNC(u16 Sqrt(u32 num))
-STUB_FUNC(void DmaSet(int dmaNum, const void *src, void *dest, u32 control))
+//STUB_FUNC(void DmaSet(int dmaNum, const void *src, void *dest, u32 control))
 
 // Stuff that I don't care about right now.
 STUB_FUNC_QUIET(void m4aSoundVSync())

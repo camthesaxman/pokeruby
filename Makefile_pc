@@ -1,20 +1,19 @@
 SHELL := /bin/bash -o pipefail
 
-AS      := as
+#MINGW_PREFIX := i686-w64-mingw32-
+MINGW_PREFIX := 
+SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
+ASM_PSEUDO_OP_CONV := sed -e 's/\.4byte/\.int/g;s/\.2byte/\.short/g'
+
+AS      := $(MINGW_PREFIX)as
 ASFLAGS := --32 --defsym DEBUG=0
 
-SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
-
-#CC 				:= i686-w64-mingw32-gcc
-CC 				:= gcc
-#CC1             := i686-w64-mingw32-gcc -c -x c
-CC1             := gcc -c -x c
+CC	:= $(MINGW_PREFIX)gcc
+CC1     := $(MINGW_PREFIX)gcc -c -x c
 override CFLAGS += -static-libgcc -Wno-trigraphs -Wimplicit -Wparentheses -Wunused -O0 -g -m32 -std=gnu99 -fno-leading-underscore -fno-dce -Wno-unused-function -DNONMATCHING -DMODERN=1 -DDEBUG=0 -DPORTABLE
 
-#CPP      := i686-w64-mingw32-cpp
-CPP      := cpp
+CPP      := $(MINGW_PREFIX)cpp
 CPPFLAGS := -iquote include -Wno-trigraphs -D NONMATCHING -I$(SDL_DIR)/include -L$(SDL_DIR)/lib
-#CPPFLAGS := -I tools/agbcc/include -iquote include -Wno-trigraphs -D NONMATCHING
 
 LD      := ld
 
@@ -143,7 +142,7 @@ $$($1_DATA_ASM_OBJS): VERSION := $2
 $$($1_DATA_ASM_OBJS): REVISION := $3
 $$($1_DATA_ASM_OBJS): LANGUAGE := $4
 build/$1/data/%.o: data/%.s $$$$(asm_dep)
-	$$(PREPROC) $$< charmap.txt | $$(CPP) -I include | $$(AS) $$(ASFLAGS) --defsym $$(VERSION)=1 --defsym REVISION=$$(REVISION) --defsym $$(LANGUAGE)=1 -o $$@
+	$$(PREPROC) $$< charmap.txt | $$(CPP) -I include | $$(ASM_PSEUDO_OP_CONV) | $$(AS) $$(ASFLAGS) --defsym $$(VERSION)=1 --defsym REVISION=$$(REVISION) --defsym $$(LANGUAGE)=1 -o $$@
 
 build/$1/sym_bss.ld: LANGUAGE := $4
 build/$1/sym_bss.ld: sym_bss.txt
