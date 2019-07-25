@@ -345,12 +345,12 @@ void sub_80DF924(u8 taskId)
     u8 r1;
     if (GetBattlerPosition_permutated(gBattleAnimAttacker) == 1)
     {
-        sp.dmaDest = &REG_BG1HOFS;
+        sp.dmaDest = REG_ADDR_BG1HOFS;
         task->data[2] = gBattle_BG1_X;
     }
     else
     {
-        sp.dmaDest = &REG_BG2HOFS;
+        sp.dmaDest = REG_ADDR_BG2HOFS;
         task->data[2] = gBattle_BG2_X;
     }
     sp.dmaControl = 0xA2600001;

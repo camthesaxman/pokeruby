@@ -1824,9 +1824,9 @@ void sub_812CDC8(u8 taskId)
     }
 
     if (toBG2 == 1)
-        scanlineParams.dmaDest = &REG_BG1HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG1HOFS;
     else
-        scanlineParams.dmaDest = &REG_BG2HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG2HOFS;
 
     scanlineParams.dmaControl = 0xA2600001;
     scanlineParams.initState = 1;
@@ -3329,14 +3329,14 @@ void sub_812F314(u8 taskId)
     task->data[15] = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
     if (GetBattlerPosition_permutated(battler) == 1)
     {
-        scanlineParams.dmaDest = &REG_BG1HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG1HOFS;
         REG_BLDCNT = 0x3F42;
         bgX = gBattle_BG1_X;
         bgY = gBattle_BG1_Y;
     }
     else
     {
-        scanlineParams.dmaDest = &REG_BG2HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG2HOFS;
         REG_BLDCNT = 0x3F44;
         bgX = gBattle_BG2_X;
         bgY = gBattle_BG2_Y;

@@ -974,12 +974,12 @@ void sub_80DC2D4(u8 taskId)
     if (GetBattlerPosition_permutated(gBattleAnimTarget) == 1)
     {
         task->data[10] = gBattle_BG1_X;
-        scanlineParams.dmaDest = &REG_BG1HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG1HOFS;
     }
     else
     {
         task->data[10] = gBattle_BG2_X;
-        scanlineParams.dmaDest = &REG_BG2HOFS;
+        scanlineParams.dmaDest = REG_ADDR_BG2HOFS;
     }
 
     i = task->data[14];

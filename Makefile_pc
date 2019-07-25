@@ -6,7 +6,7 @@ SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
 ASM_PSEUDO_OP_CONV := sed -e 's/\.4byte/\.int/g;s/\.2byte/\.short/g'
 
 AS      := $(MINGW_PREFIX)as
-ASFLAGS := --32 --defsym DEBUG=0
+ASFLAGS := --32 --defsym DEBUG=0 --defsym NONMATCHING=1 --defsym MODERN=1 --defsym PORTABLE=1
 
 CC	:= $(MINGW_PREFIX)gcc
 CC1     := $(MINGW_PREFIX)gcc -c -x c

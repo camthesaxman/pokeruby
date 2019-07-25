@@ -3,7 +3,7 @@
 
 extern u8 gSharedMem[];
 #define EWRAM gSharedMem // using gSharedMem doesn't match
-#define ewram_addr 0x02000000 // used in gSharedMem addr hacks
+#define ewram_addr ((u32)gSharedMem) // used in gSharedMem addr hacks
 
 // Note: we have duplicate ewram labels because its clear some memory
 // regions overlap others but have different definitions. Until some
