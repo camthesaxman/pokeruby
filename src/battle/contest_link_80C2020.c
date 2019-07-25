@@ -1419,27 +1419,27 @@ static inline s32 de_sub_80C39A8(s32 a0)
     s32 result = 0;
     if (gIsLinkContest & 0x1)
     {
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 9, 2, 8, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 9, 2, 8, 2);
         result = 8;
     }
     else if (gSpecialVar_ContestRank == 0)
     {
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 0, 0, 9, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 0, 0, 9, 2);
         result = 9;
     }
     else if (gSpecialVar_ContestRank == 1)
     {
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 9, 0, 8, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 9, 0, 8, 2);
         result = 8;
     }
     else if (gSpecialVar_ContestRank == 2)
     {
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 17, 0, 8, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 17, 0, 8, 2);
         result = 8;
     }
     else
     {
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 0, 2, 9, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 0, 2, 9, 2);
         result = 9;
     }
     return result;
@@ -1451,31 +1451,31 @@ static inline s32 de_sub_80C3A84(s32 a0, s32 * a1)
     if (gSpecialVar_ContestCategory == 0)
     {
         *a1 = 0;
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 17, 2, 10, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 17, 2, 10, 2);
         result = 10;
     }
     else if (gSpecialVar_ContestCategory == 1)
     {
         *a1 = 1;
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 0, 4, 11, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 0, 4, 11, 2);
         result = 11;
     }
     else if (gSpecialVar_ContestCategory == 2)
     {
         *a1 = 2;
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 11, 4, 10, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 11, 4, 10, 2);
         result = 10;
     }
     else if (gSpecialVar_ContestCategory == 3)
     {
         *a1 = 3;
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 21, 4, 10, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 21, 4, 10, 2);
         result = 10;
     }
     else
     {
         *a1 = 4;
-        sub_809D104((void *)0x0600E000, a0, 1, gUnknown_08E964B8, 0, 6, 10, 2);
+        sub_809D104((void *)VRAM+0xE000, a0, 1, gUnknown_08E964B8, 0, 6, 10, 2);
         result = 10;
     }
     return result;
@@ -1488,8 +1488,8 @@ void sub_80C37E4(void)
     de_sub_80C3A84(de_sub_80C39A8(5) + 5, &sp0);
     for (i = 0; i < 0x80; i++)
     {
-        ((vu16 *)0x0600E000)[i] &= 0xFFF;
-        ((vu16 *)0x0600E000)[i] |= sp0 << 12;;
+        ((vu16 *)VRAM+0xE000)[i] &= 0xFFF;
+        ((vu16 *)VRAM+0xE000)[i] |= sp0 << 12;;
     }
 }
 #else
@@ -1711,27 +1711,27 @@ s16 de_sub_80C39A8(s32 a0)
     s16 result;
     if (gIsLinkContest & 1)
     {
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 11, 3, 8, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 11, 3, 8, 3);
         result = 8;
     }
     else if (gSpecialVar_ContestRank == 0)
     {
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 0, 0, 11, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 0, 0, 11, 3);
         result = 11;
     }
     else if (gSpecialVar_ContestRank == 1)
     {
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 11, 0, 10, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 11, 0, 10, 3);
         result = 10;
     }
     else if (gSpecialVar_ContestRank == 2)
     {
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 21, 0, 10, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 21, 0, 10, 3);
         result = 10;
     }
     else
     {
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 0, 3, 11, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 0, 3, 11, 3);
         result = 11;
     }
     return result;
@@ -1743,31 +1743,31 @@ s16 de_sub_80C3A84(s32 a0, s32 * a1)
     if (gSpecialVar_ContestCategory == 0)
     {
         *a1 = 0;
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 19, 3, 7, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 19, 3, 7, 3);
         result = 7;
     }
     else if (gSpecialVar_ContestCategory == 1)
     {
         *a1 = 1;
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 0, 6, 7, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 0, 6, 7, 3);
         result = 7;
     }
     else if (gSpecialVar_ContestCategory == 2)
     {
         *a1 = 2;
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 7, 6, 4, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 7, 6, 4, 3);
         result = 4;
     }
     else if (gSpecialVar_ContestCategory == 3)
     {
         *a1 = 3;
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 11, 6, 6, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 11, 6, 6, 3);
         result = 6;
     }
     else
     {
         *a1 = 4;
-        sub_809D104((void *)0x0600E000, a0, 0, gUnknown_08E964B8, 17, 6, 5, 3);
+        sub_809D104((void *)VRAM+0xE000, a0, 0, gUnknown_08E964B8, 17, 6, 5, 3);
         result = 5;
     }
     return result;
@@ -1780,8 +1780,8 @@ void sub_80C37E4(void)
     de_sub_80C3A84(de_sub_80C39A8(6) + 6, &sp0);
     for (i = 0; i < 0x80; i++)
     {
-        ((vu16 *)0x0600E000)[i] &= 0xFFF;
-        ((vu16 *)0x0600E000)[i] |= sp0 << 12;;
+        ((vu16 *)VRAM+0xE000)[i] &= 0xFFF;
+        ((vu16 *)VRAM+0xE000)[i] |= sp0 << 12;;
     }
 }
 #endif
@@ -1852,10 +1852,10 @@ void sub_80C3A5C(u8 taskId)
         if (--gTasks[taskId].data[11] == -1)
         {
             firstTileNum = gTasks[taskId].data[0] * 2 + 0x5043;
-            *(vu16 *)(0x0600E142 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x00;
-            *(vu16 *)(0x0600E144 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x01;
-            *(vu16 *)(0x0600E182 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x10;
-            *(vu16 *)(0x0600E184 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x11;
+            *(vu16 *)(VRAM+0xE142 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x00;
+            *(vu16 *)(VRAM+0xE144 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x01;
+            *(vu16 *)(VRAM+0xE182 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x10;
+            *(vu16 *)(VRAM+0xE184 + gTasks[taskId].data[1] * 192) = firstTileNum + 0x11;
             eContestLink80C2020Struct2018000.unk_05++;
             DestroyTask(taskId);
             PlaySE(SE_JYUNI);
@@ -1875,8 +1875,8 @@ void sub_80C3B30(u8 taskId)
     {
         for (k = 0; k < 30; k++)
         {
-            ((u16 *)(0x0600E100 + 2 * (96 * i + 32 * j)))[k] &= 0x0FFF;
-            ((u16 *)(0x0600E100 + 2 * (96 * i + 32 * j)))[k] |= 0x9000;
+            ((u16 *)(VRAM+0xE100 + 2 * (96 * i + 32 * j)))[k] &= 0x0FFF;
+            ((u16 *)(VRAM+0xE100 + 2 * (96 * i + 32 * j)))[k] |= 0x9000;
         }
     }
     gTasks[taskId].data[10] = i;
