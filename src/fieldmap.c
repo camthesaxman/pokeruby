@@ -91,6 +91,13 @@ void sub_80560AC(struct MapHeader *mapHeader)
     // is NULL, causing count to be assigned a garbage value. This garbage value
     // just so happens to have the most significant bit set, so it is treated as
     // negative and the loop below thankfully never executes in this scenario.
+    #ifdef PORTABLE
+    if(mapHeader->connections == NULL) 
+    {
+        gUnknown_0202E850 = sDummyConnectionFlags;
+        return;
+    }
+    #endif
     int count = mapHeader->connections->count;
     struct MapConnection *connection = mapHeader->connections->connections;
     int i;
