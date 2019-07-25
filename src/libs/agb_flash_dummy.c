@@ -1,6 +1,13 @@
 #include "global.h"
 #include "gba/gba.h"
 #include "gba/flash_internal.h"
+#include <stdio.h>
+
+#define fopen         _fopen
+#define fseek         _fseek
+#define fclose        _fclose
+#define fread         _fread
+#define fwrite        _fwrite
 
 const u16 dummyMaxTime[] =
 {
@@ -51,19 +58,45 @@ u16 EraseFlashSector_DUMMY(u16 sectorNum)
 
 u16 ProgramFlashByte_DUMMY(u16 sectorNum, u32 offset, u8 data)
 {
-    puts("function ProgramFlashByte_DUMMY is a stub");
+    u8 val = data;
+    FILE * savefile = fopen("pokeruby.sav", "r+b");
+    if (savefile == NULL)
+    {
+        return 1;
+    }
+    if (fseek(savefile, 0x1000 * sectorNum + offset, SEEK_SET))
+    {
+        fclose(savefile);
+        return 1;
+    }
+    if (fwrite(&val, 1, 1, savefile) != 1)
+    {
+        fclose(savefile);
+        return 1;
+    }
+    fclose(savefile);
     return 0;
 }
 
-static u16 ProgramByte(u8 *src, u8 *dest)
-{
-    puts("function ProgramByte is a stub");
-    return 0;
-}
 
 u16 ProgramFlashSector_DUMMY(u16 sectorNum, void *src)
 {
-    puts("function ProgramFlashSector_DUMMY is a stub");
+    FILE * savefile = fopen("pokeruby.sav", "r+b");
+    if (savefile == NULL)
+    {
+        return 1;
+    }
+    if (fseek(savefile, 0x1000 * sectorNum, SEEK_SET))
+    {
+        fclose(savefile);
+        return 1;
+    }
+    if (fwrite(src, 1, 0x1000, savefile) != 0x1000)
+    {
+        fclose(savefile);
+        return 1;
+    }
+    fclose(savefile);
     return 0;
 }
 

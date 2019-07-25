@@ -1,6 +1,13 @@
 #include "global.h"
 #include "gba/gba.h"
 #include "gba/flash_internal.h"
+#include <stdio.h>
+
+#define fopen         _fopen
+#define fseek         _fseek
+#define fclose        _fclose
+#define fread         _fread
+#define fwrite        _fwrite
 
 static u8 sTimerNum;
 static u16 sTimerCount;
@@ -146,7 +153,22 @@ void ReadFlash_Core(u8 *src, u8 *dest, u32 size)
 void ReadFlash(u16 sectorNum, u32 offset, void *dest, u32 size)
 {
 #ifdef PORTABLE
-    puts("function ReadFlash is a stub");
+    FILE * savefile = fopen("pokeruby.sav", "r+b");
+    if (savefile == NULL)
+    {
+        return;
+    }
+    if (fseek(savefile, 0x1000 * sectorNum + offset, SEEK_SET))
+    {
+        fclose(savefile);
+        return;
+    }
+    if (fread(dest, 1, size, savefile) != size)
+    {
+        fclose(savefile);
+        return;
+    }
+    fclose(savefile);
     return;
 #else
     u8 *src;
