@@ -86,8 +86,8 @@ se_esuka:
 	.byte	se_esuka_pri	@ Priority
 	.byte	se_esuka_rev	@ Reverb.
 
-	.word	se_esuka_grp
+	.int	se_esuka_grp
 
-	.word	se_esuka_1
+	.int	se_esuka_1
 
 	.end

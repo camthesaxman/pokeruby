@@ -193,7 +193,7 @@ bgm_syoujoeye_1_000:
 	.byte		N03   
 	.byte	W15
 	.byte	PATT
-	 .word	bgm_syoujoeye_1_000
+	 .int	bgm_syoujoeye_1_000
 	.byte		N12   , Cs5 , v100
 	.byte	W18
 	.byte		N06   , Cn5 
@@ -274,7 +274,7 @@ bgm_syoujoeye_1_000:
 	.byte	W36
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_syoujoeye_1_B1
+	 .int	bgm_syoujoeye_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -345,9 +345,9 @@ bgm_syoujoeye_2_001:
 	.byte		N06   , Cn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_syoujoeye_2_000
+	 .int	bgm_syoujoeye_2_000
 	.byte	PATT
-	 .word	bgm_syoujoeye_2_001
+	 .int	bgm_syoujoeye_2_001
 	.byte		N18   , Ds1 , v127
 	.byte	W18
 	.byte		N03   
@@ -371,7 +371,7 @@ bgm_syoujoeye_2_001:
 	.byte		N12   , Cs1 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_2_B1
+	 .int	bgm_syoujoeye_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -449,9 +449,9 @@ bgm_syoujoeye_3_001:
 	.byte		        Ds2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_syoujoeye_3_000
+	 .int	bgm_syoujoeye_3_000
 	.byte	PATT
-	 .word	bgm_syoujoeye_3_001
+	 .int	bgm_syoujoeye_3_001
 	.byte		N12   , Fs4 , v096
 	.byte	W18
 	.byte		N06   , Fn4 
@@ -473,7 +473,7 @@ bgm_syoujoeye_3_001:
 	.byte		N12   , Cs3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_3_B1
+	 .int	bgm_syoujoeye_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -580,7 +580,7 @@ bgm_syoujoeye_4_000:
 	.byte		        Fn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_syoujoeye_4_000
+	 .int	bgm_syoujoeye_4_000
 	.byte		VOICE , 26
 	.byte		N42   , Cs4 , v052
 	.byte	W42
@@ -604,7 +604,7 @@ bgm_syoujoeye_4_000:
 	.byte		N06   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_4_B1
+	 .int	bgm_syoujoeye_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -718,7 +718,7 @@ bgm_syoujoeye_5_000:
 	.byte		        Cn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_syoujoeye_5_000
+	 .int	bgm_syoujoeye_5_000
 	.byte		VOICE , 27
 	.byte		N42   , As3 , v052
 	.byte	W42
@@ -743,7 +743,7 @@ bgm_syoujoeye_5_000:
 	.byte		N06   , Fn3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_5_B1
+	 .int	bgm_syoujoeye_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -830,7 +830,7 @@ bgm_syoujoeye_6_B1:
 	.byte		        Fn5 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_6_B1
+	 .int	bgm_syoujoeye_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -902,7 +902,7 @@ bgm_syoujoeye_7_000:
 	.byte		N12   , Gs4 , v040
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_syoujoeye_7_000
+	 .int	bgm_syoujoeye_7_000
 	.byte		N12   , Gs4 , v052
 	.byte	W24
 	.byte		N12   
@@ -942,7 +942,7 @@ bgm_syoujoeye_7_000:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_syoujoeye_7_B1
+	 .int	bgm_syoujoeye_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1013,9 +1013,9 @@ bgm_syoujoeye_8_001:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_syoujoeye_8_000
+	 .int	bgm_syoujoeye_8_000
 	.byte	PATT
-	 .word	bgm_syoujoeye_8_001
+	 .int	bgm_syoujoeye_8_001
 	.byte		N06   , Cn1 , v120
 	.byte	W42
 	.byte		N06   
@@ -1039,7 +1039,7 @@ bgm_syoujoeye_8_001:
 	.byte		        Cn1 , v120
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_syoujoeye_8_B1
+	 .int	bgm_syoujoeye_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1051,15 +1051,15 @@ bgm_syoujoeye:
 	.byte	bgm_syoujoeye_pri	@ Priority
 	.byte	bgm_syoujoeye_rev	@ Reverb.
 
-	.word	bgm_syoujoeye_grp
+	.int	bgm_syoujoeye_grp
 
-	.word	bgm_syoujoeye_1
-	.word	bgm_syoujoeye_2
-	.word	bgm_syoujoeye_3
-	.word	bgm_syoujoeye_4
-	.word	bgm_syoujoeye_5
-	.word	bgm_syoujoeye_6
-	.word	bgm_syoujoeye_7
-	.word	bgm_syoujoeye_8
+	.int	bgm_syoujoeye_1
+	.int	bgm_syoujoeye_2
+	.int	bgm_syoujoeye_3
+	.int	bgm_syoujoeye_4
+	.int	bgm_syoujoeye_5
+	.int	bgm_syoujoeye_6
+	.int	bgm_syoujoeye_7
+	.int	bgm_syoujoeye_8
 
 	.end

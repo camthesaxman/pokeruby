@@ -130,9 +130,9 @@ se_w007:
 	.byte	se_w007_pri	@ Priority
 	.byte	se_w007_rev	@ Reverb.
 
-	.word	se_w007_grp
+	.int	se_w007_grp
 
-	.word	se_w007_1
-	.word	se_w007_2
+	.int	se_w007_1
+	.int	se_w007_2
 
 	.end

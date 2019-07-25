@@ -72,7 +72,7 @@ LittlerootTown_MapScript2_14D5D5:: @ 814D5D5
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 1, LittlerootTown_EventScript_14D5EF
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_14D60D
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 7, LittlerootTown_EventScript_14D6C5
-	.2byte 0
+	.short 0
 
 LittlerootTown_EventScript_14D5EF:: @ 814D5EF
 	lockall

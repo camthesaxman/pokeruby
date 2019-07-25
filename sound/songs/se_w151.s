@@ -195,8 +195,8 @@ se_w151:
 	.byte	se_w151_pri	@ Priority
 	.byte	se_w151_rev	@ Reverb.
 
-	.word	se_w151_grp
+	.int	se_w151_grp
 
-	.word	se_w151_1
+	.int	se_w151_1
 
 	.end

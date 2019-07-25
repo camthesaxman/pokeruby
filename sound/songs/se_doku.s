@@ -43,8 +43,8 @@ se_doku:
 	.byte	se_doku_pri	@ Priority
 	.byte	se_doku_rev	@ Reverb.
 
-	.word	se_doku_grp
+	.int	se_doku_grp
 
-	.word	se_doku_1
+	.int	se_doku_1
 
 	.end

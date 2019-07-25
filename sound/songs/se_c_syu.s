@@ -47,8 +47,8 @@ se_c_syu:
 	.byte	se_c_syu_pri	@ Priority
 	.byte	se_c_syu_rev	@ Reverb.
 
-	.word	se_c_syu_grp
+	.int	se_c_syu_grp
 
-	.word	se_c_syu_1
+	.int	se_c_syu_1
 
 	.end

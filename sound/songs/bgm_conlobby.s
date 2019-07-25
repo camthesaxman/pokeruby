@@ -141,7 +141,7 @@ bgm_conlobby_1_B1:
 	.byte		N12   , Ds3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_conlobby_1_B1
+	 .int	bgm_conlobby_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -203,31 +203,31 @@ bgm_conlobby_2_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_2_000
+	 .int	bgm_conlobby_2_000
 	.byte	PATT
-	 .word	bgm_conlobby_2_001
+	 .int	bgm_conlobby_2_001
 	.byte	PATT
-	 .word	bgm_conlobby_2_002
+	 .int	bgm_conlobby_2_002
 	.byte	PATT
-	 .word	bgm_conlobby_2_003
+	 .int	bgm_conlobby_2_003
 	.byte	PATT
-	 .word	bgm_conlobby_2_000
+	 .int	bgm_conlobby_2_000
 	.byte	PATT
-	 .word	bgm_conlobby_2_001
+	 .int	bgm_conlobby_2_001
 	.byte	PATT
-	 .word	bgm_conlobby_2_002
+	 .int	bgm_conlobby_2_002
 	.byte	PATT
-	 .word	bgm_conlobby_2_003
+	 .int	bgm_conlobby_2_003
 	.byte	PATT
-	 .word	bgm_conlobby_2_000
+	 .int	bgm_conlobby_2_000
 	.byte	PATT
-	 .word	bgm_conlobby_2_001
+	 .int	bgm_conlobby_2_001
 	.byte	PATT
-	 .word	bgm_conlobby_2_002
+	 .int	bgm_conlobby_2_002
 	.byte	PATT
-	 .word	bgm_conlobby_2_003
+	 .int	bgm_conlobby_2_003
 	.byte	GOTO
-	 .word	bgm_conlobby_2_B1
+	 .int	bgm_conlobby_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -355,7 +355,7 @@ bgm_conlobby_3_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_3_000
+	 .int	bgm_conlobby_3_000
 	.byte		N06   , En4 , v112
 	.byte	W06
 	.byte		N03   , Fn4 
@@ -433,7 +433,7 @@ bgm_conlobby_3_000:
 	.byte		N03   , As3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_conlobby_3_B1
+	 .int	bgm_conlobby_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -537,25 +537,25 @@ bgm_conlobby_4_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_4_000
+	 .int	bgm_conlobby_4_000
 	.byte	PATT
-	 .word	bgm_conlobby_4_001
+	 .int	bgm_conlobby_4_001
 	.byte	PATT
-	 .word	bgm_conlobby_4_002
+	 .int	bgm_conlobby_4_002
 	.byte	PATT
-	 .word	bgm_conlobby_4_003
+	 .int	bgm_conlobby_4_003
 	.byte	PATT
-	 .word	bgm_conlobby_4_000
+	 .int	bgm_conlobby_4_000
 	.byte	PATT
-	 .word	bgm_conlobby_4_001
+	 .int	bgm_conlobby_4_001
 	.byte	PATT
-	 .word	bgm_conlobby_4_002
+	 .int	bgm_conlobby_4_002
 	.byte	PATT
-	 .word	bgm_conlobby_4_003
+	 .int	bgm_conlobby_4_003
 	.byte	PATT
-	 .word	bgm_conlobby_4_000
+	 .int	bgm_conlobby_4_000
 	.byte	PATT
-	 .word	bgm_conlobby_4_001
+	 .int	bgm_conlobby_4_001
 	.byte		N06   , An2 , v112
 	.byte	W12
 	.byte		N03   , En3 
@@ -585,9 +585,9 @@ bgm_conlobby_4_003:
 	.byte		        En3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_conlobby_4_003
+	 .int	bgm_conlobby_4_003
 	.byte	GOTO
-	 .word	bgm_conlobby_4_B1
+	 .int	bgm_conlobby_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -691,25 +691,25 @@ bgm_conlobby_5_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_5_000
+	 .int	bgm_conlobby_5_000
 	.byte	PATT
-	 .word	bgm_conlobby_5_001
+	 .int	bgm_conlobby_5_001
 	.byte	PATT
-	 .word	bgm_conlobby_5_002
+	 .int	bgm_conlobby_5_002
 	.byte	PATT
-	 .word	bgm_conlobby_5_003
+	 .int	bgm_conlobby_5_003
 	.byte	PATT
-	 .word	bgm_conlobby_5_000
+	 .int	bgm_conlobby_5_000
 	.byte	PATT
-	 .word	bgm_conlobby_5_001
+	 .int	bgm_conlobby_5_001
 	.byte	PATT
-	 .word	bgm_conlobby_5_002
+	 .int	bgm_conlobby_5_002
 	.byte	PATT
-	 .word	bgm_conlobby_5_003
+	 .int	bgm_conlobby_5_003
 	.byte	PATT
-	 .word	bgm_conlobby_5_000
+	 .int	bgm_conlobby_5_000
 	.byte	PATT
-	 .word	bgm_conlobby_5_001
+	 .int	bgm_conlobby_5_001
 	.byte		N06   , En2 , v112
 	.byte	W12
 	.byte		N03   , An3 
@@ -739,9 +739,9 @@ bgm_conlobby_5_003:
 	.byte		        An3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_conlobby_5_003
+	 .int	bgm_conlobby_5_003
 	.byte	GOTO
-	 .word	bgm_conlobby_5_B1
+	 .int	bgm_conlobby_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -895,11 +895,11 @@ bgm_conlobby_6_001:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_001
+	 .int	bgm_conlobby_6_001
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 bgm_conlobby_6_002:
 	.byte		N03   , En1 , v112
 	.byte	W12
@@ -939,27 +939,27 @@ bgm_conlobby_6_002:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_002
+	 .int	bgm_conlobby_6_002
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_001
+	 .int	bgm_conlobby_6_001
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_002
+	 .int	bgm_conlobby_6_002
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_002
+	 .int	bgm_conlobby_6_002
 	.byte	PATT
-	 .word	bgm_conlobby_6_000
+	 .int	bgm_conlobby_6_000
 	.byte	PATT
-	 .word	bgm_conlobby_6_002
+	 .int	bgm_conlobby_6_002
 	.byte	GOTO
-	 .word	bgm_conlobby_6_B1
+	 .int	bgm_conlobby_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1022,31 +1022,31 @@ bgm_conlobby_7_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_conlobby_7_000
+	 .int	bgm_conlobby_7_000
 	.byte	PATT
-	 .word	bgm_conlobby_7_001
+	 .int	bgm_conlobby_7_001
 	.byte	PATT
-	 .word	bgm_conlobby_7_002
+	 .int	bgm_conlobby_7_002
 	.byte	PATT
-	 .word	bgm_conlobby_7_003
+	 .int	bgm_conlobby_7_003
 	.byte	PATT
-	 .word	bgm_conlobby_7_000
+	 .int	bgm_conlobby_7_000
 	.byte	PATT
-	 .word	bgm_conlobby_7_001
+	 .int	bgm_conlobby_7_001
 	.byte	PATT
-	 .word	bgm_conlobby_7_002
+	 .int	bgm_conlobby_7_002
 	.byte	PATT
-	 .word	bgm_conlobby_7_003
+	 .int	bgm_conlobby_7_003
 	.byte	PATT
-	 .word	bgm_conlobby_7_000
+	 .int	bgm_conlobby_7_000
 	.byte	PATT
-	 .word	bgm_conlobby_7_001
+	 .int	bgm_conlobby_7_001
 	.byte	PATT
-	 .word	bgm_conlobby_7_002
+	 .int	bgm_conlobby_7_002
 	.byte	PATT
-	 .word	bgm_conlobby_7_003
+	 .int	bgm_conlobby_7_003
 	.byte	GOTO
-	 .word	bgm_conlobby_7_B1
+	 .int	bgm_conlobby_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1174,7 +1174,7 @@ bgm_conlobby_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_conlobby_8_B1
+	 .int	bgm_conlobby_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1186,15 +1186,15 @@ bgm_conlobby:
 	.byte	bgm_conlobby_pri	@ Priority
 	.byte	bgm_conlobby_rev	@ Reverb.
 
-	.word	bgm_conlobby_grp
+	.int	bgm_conlobby_grp
 
-	.word	bgm_conlobby_1
-	.word	bgm_conlobby_2
-	.word	bgm_conlobby_3
-	.word	bgm_conlobby_4
-	.word	bgm_conlobby_5
-	.word	bgm_conlobby_6
-	.word	bgm_conlobby_7
-	.word	bgm_conlobby_8
+	.int	bgm_conlobby_1
+	.int	bgm_conlobby_2
+	.int	bgm_conlobby_3
+	.int	bgm_conlobby_4
+	.int	bgm_conlobby_5
+	.int	bgm_conlobby_6
+	.int	bgm_conlobby_7
+	.int	bgm_conlobby_8
 
 	.end

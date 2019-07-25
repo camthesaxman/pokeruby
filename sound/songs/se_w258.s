@@ -90,9 +90,9 @@ se_w258:
 	.byte	se_w258_pri	@ Priority
 	.byte	se_w258_rev	@ Reverb.
 
-	.word	se_w258_grp
+	.int	se_w258_grp
 
-	.word	se_w258_1
-	.word	se_w258_2
+	.int	se_w258_1
+	.int	se_w258_2
 
 	.end

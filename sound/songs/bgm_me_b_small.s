@@ -244,14 +244,14 @@ bgm_me_b_small:
 	.byte	bgm_me_b_small_pri	@ Priority
 	.byte	bgm_me_b_small_rev	@ Reverb.
 
-	.word	bgm_me_b_small_grp
+	.int	bgm_me_b_small_grp
 
-	.word	bgm_me_b_small_1
-	.word	bgm_me_b_small_2
-	.word	bgm_me_b_small_3
-	.word	bgm_me_b_small_4
-	.word	bgm_me_b_small_5
-	.word	bgm_me_b_small_6
-	.word	bgm_me_b_small_7
+	.int	bgm_me_b_small_1
+	.int	bgm_me_b_small_2
+	.int	bgm_me_b_small_3
+	.int	bgm_me_b_small_4
+	.int	bgm_me_b_small_5
+	.int	bgm_me_b_small_6
+	.int	bgm_me_b_small_7
 
 	.end

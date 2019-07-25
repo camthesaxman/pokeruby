@@ -327,7 +327,7 @@ bgm_end_1_000:
 	.byte	TEMPO , 122*bgm_end_tbs/2
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_1_000
+	 .int	bgm_end_1_000
 	.byte	W24
 	.byte		N03   , Dn5 , v112
 	.byte	W24
@@ -435,7 +435,7 @@ bgm_end_1_003:
 	.byte	W92
 	.byte	W01
 	.byte	PATT
-	 .word	bgm_end_1_002
+	 .int	bgm_end_1_002
 	.byte	TEMPO , 138*bgm_end_tbs/2
 	.byte	W96
 	.byte	W48
@@ -462,7 +462,7 @@ bgm_end_1_003:
 	.byte	TEMPO , 126*bgm_end_tbs/2
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_end_1_000
+	 .int	bgm_end_1_000
 	.byte	W24
 	.byte		N03   , Dn5 , v112
 	.byte	W24
@@ -495,7 +495,7 @@ bgm_end_1_003:
 	.byte		        Dn5 
 	.byte	W16
 	.byte	PATT
-	 .word	bgm_end_1_001
+	 .int	bgm_end_1_001
 	.byte	W48
 	.byte	TEMPO , 126*bgm_end_tbs/2
 	.byte	W24
@@ -531,7 +531,7 @@ bgm_end_1_003:
 	.byte	TEMPO , 118*bgm_end_tbs/2
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_1_003
+	 .int	bgm_end_1_003
 	.byte		N03   , An5 , v112
 	.byte	W24
 	.byte		        Gn5 
@@ -579,7 +579,7 @@ bgm_end_1_003:
 	.byte		        Ds4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_end_1_B1
+	 .int	bgm_end_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -663,17 +663,17 @@ bgm_end_2_005:
 	.byte		        En2 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_end_2_000
+	 .int	bgm_end_2_000
 	.byte	PATT
-	 .word	bgm_end_2_001
+	 .int	bgm_end_2_001
 	.byte	PATT
-	 .word	bgm_end_2_002
+	 .int	bgm_end_2_002
 	.byte	PATT
-	 .word	bgm_end_2_003
+	 .int	bgm_end_2_003
 	.byte	PATT
-	 .word	bgm_end_2_004
+	 .int	bgm_end_2_004
 	.byte	PATT
-	 .word	bgm_end_2_005
+	 .int	bgm_end_2_005
 	.byte		N01   , Gn3 , v112
 	.byte	W32
 	.byte		        Dn3 , v100
@@ -703,7 +703,7 @@ bgm_end_2_005:
 	.byte		        As2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_2_001
+	 .int	bgm_end_2_001
 	.byte		N03   , En2 , v112
 	.byte	W24
 	.byte		        As2 , v068
@@ -713,7 +713,7 @@ bgm_end_2_005:
 	.byte		        As2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_2_001
+	 .int	bgm_end_2_001
 	.byte		N03   , Fn2 , v112
 	.byte	W24
 	.byte		        As2 , v068
@@ -812,7 +812,7 @@ bgm_end_2_012:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_end_2_011
+	 .int	bgm_end_2_011
 bgm_end_2_013:
 	.byte		N03   , Fn2 , v112
 	.byte	W24
@@ -824,15 +824,15 @@ bgm_end_2_013:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_end_2_011
+	 .int	bgm_end_2_011
 	.byte	PATT
-	 .word	bgm_end_2_013
+	 .int	bgm_end_2_013
 	.byte	PATT
-	 .word	bgm_end_2_006
+	 .int	bgm_end_2_006
 	.byte	PATT
-	 .word	bgm_end_2_007
+	 .int	bgm_end_2_007
 	.byte	PATT
-	 .word	bgm_end_2_008
+	 .int	bgm_end_2_008
 	.byte		N03   , As2 , v112
 	.byte	W24
 	.byte		        Cn4 , v068
@@ -842,11 +842,11 @@ bgm_end_2_013:
 	.byte		        Fn3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_2_006
+	 .int	bgm_end_2_006
 	.byte	PATT
-	 .word	bgm_end_2_007
+	 .int	bgm_end_2_007
 	.byte	PATT
-	 .word	bgm_end_2_008
+	 .int	bgm_end_2_008
 	.byte		N03   , As2 , v112
 	.byte	W24
 	.byte		        As3 , v068
@@ -856,21 +856,21 @@ bgm_end_2_013:
 	.byte		        As3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_end_2_009
+	 .int	bgm_end_2_009
 	.byte	PATT
-	 .word	bgm_end_2_010
+	 .int	bgm_end_2_010
 	.byte	PATT
-	 .word	bgm_end_2_011
+	 .int	bgm_end_2_011
 	.byte	PATT
-	 .word	bgm_end_2_012
+	 .int	bgm_end_2_012
 	.byte	PATT
-	 .word	bgm_end_2_011
+	 .int	bgm_end_2_011
 	.byte	PATT
-	 .word	bgm_end_2_013
+	 .int	bgm_end_2_013
 	.byte	PATT
-	 .word	bgm_end_2_011
+	 .int	bgm_end_2_011
 	.byte	PATT
-	 .word	bgm_end_2_013
+	 .int	bgm_end_2_013
 	.byte		N03   , As3 , v112
 	.byte	W24
 	.byte		        Fn3 
@@ -904,7 +904,7 @@ bgm_end_2_013:
 	.byte		        Fn2 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_end_2_B1
+	 .int	bgm_end_2_B1
 	.byte	FINE
 
 @******************************************************@
@@ -916,9 +916,9 @@ bgm_end:
 	.byte	bgm_end_pri	@ Priority
 	.byte	bgm_end_rev	@ Reverb.
 
-	.word	bgm_end_grp
+	.int	bgm_end_grp
 
-	.word	bgm_end_1
-	.word	bgm_end_2
+	.int	bgm_end_1
+	.int	bgm_end_2
 
 	.end

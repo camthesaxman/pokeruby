@@ -97,54 +97,54 @@ ContestString_DescStopExcitement:
 
 	.align 2
 gContestEffectStrings:: @ 83CADD4
-	.4byte ContestString_DescHighlyAppealing
-	.4byte ContestString_DescStartled1
-	.4byte ContestString_DescGreatLock
-	.4byte ContestString_DescRepeatable
-	.4byte ContestString_DescStartled2
-	.4byte ContestString_DescStartled3
-	.4byte ContestString_DescStartled4
-	.4byte ContestString_DescStartled5
-	.4byte ContestString_DescStartled6
-	.4byte ContestString_DescStartled7
-	.4byte ContestString_DescStartled8
-	.4byte ContestString_DescStartled9
-	.4byte ContestString_DescStartled10
-	.4byte ContestString_DescStartled11
-	.4byte ContestString_DescStartled12
-	.4byte ContestString_DescStartled13
-	.4byte ContestString_DescAttentionShift
-	.4byte ContestString_DescStartled14
-	.4byte ContestString_DescJamOthersMissTurn
-	.4byte ContestString_DescStartled15
-	.4byte ContestString_DescStartled16
-	.4byte ContestString_DescStartled17
-	.4byte ContestString_DescStartled18
-	.4byte ContestString_DescStartled19
-	.4byte ContestString_DescStartled20
-	.4byte ContestString_DescNervousOne
-	.4byte ContestString_DescNervousAllAfter
-	.4byte ContestString_DescConditionWorseBefore
-	.4byte ContestString_DescStartled21
-	.4byte ContestString_DescGreatWhenFirst
-	.4byte ContestString_DescGreatWhenLast
-	.4byte ContestString_DescAppealGoodBeforeAll
-	.4byte ContestString_DescAppealGoodBeforeOne
-	.4byte ContestString_DescBetterWhenLater
-	.4byte ContestString_DescAffectedByTiming
-	.4byte ContestString_DescBetterWhenSameType
-	.4byte ContestString_DescBetterWhenDiffType
-	.4byte ContestString_DescAffectedByFront
-	.4byte ContestString_DescConditionUp
-	.4byte ContestString_DescAffectedByCondition
-	.4byte ContestString_DescAppealEarlier
-	.4byte ContestString_DescAppealLater
-	.4byte ContestString_DescRandomOrderEasier
-	.4byte ContestString_DescRandomOrder
-	.4byte ContestString_DescAnyExcitement
-	.4byte ContestString_DescStartled22
-	.4byte ContestString_DescScaleWithExcitement
-	.4byte ContestString_DescStopExcitement
+	.int ContestString_DescHighlyAppealing
+	.int ContestString_DescStartled1
+	.int ContestString_DescGreatLock
+	.int ContestString_DescRepeatable
+	.int ContestString_DescStartled2
+	.int ContestString_DescStartled3
+	.int ContestString_DescStartled4
+	.int ContestString_DescStartled5
+	.int ContestString_DescStartled6
+	.int ContestString_DescStartled7
+	.int ContestString_DescStartled8
+	.int ContestString_DescStartled9
+	.int ContestString_DescStartled10
+	.int ContestString_DescStartled11
+	.int ContestString_DescStartled12
+	.int ContestString_DescStartled13
+	.int ContestString_DescAttentionShift
+	.int ContestString_DescStartled14
+	.int ContestString_DescJamOthersMissTurn
+	.int ContestString_DescStartled15
+	.int ContestString_DescStartled16
+	.int ContestString_DescStartled17
+	.int ContestString_DescStartled18
+	.int ContestString_DescStartled19
+	.int ContestString_DescStartled20
+	.int ContestString_DescNervousOne
+	.int ContestString_DescNervousAllAfter
+	.int ContestString_DescConditionWorseBefore
+	.int ContestString_DescStartled21
+	.int ContestString_DescGreatWhenFirst
+	.int ContestString_DescGreatWhenLast
+	.int ContestString_DescAppealGoodBeforeAll
+	.int ContestString_DescAppealGoodBeforeOne
+	.int ContestString_DescBetterWhenLater
+	.int ContestString_DescAffectedByTiming
+	.int ContestString_DescBetterWhenSameType
+	.int ContestString_DescBetterWhenDiffType
+	.int ContestString_DescAffectedByFront
+	.int ContestString_DescConditionUp
+	.int ContestString_DescAffectedByCondition
+	.int ContestString_DescAppealEarlier
+	.int ContestString_DescAppealLater
+	.int ContestString_DescRandomOrderEasier
+	.int ContestString_DescRandomOrder
+	.int ContestString_DescAnyExcitement
+	.int ContestString_DescStartled22
+	.int ContestString_DescScaleWithExcitement
+	.int ContestString_DescStopExcitement
 
 ContestString_MoveRainDance:
 	.string "RAIN DANCE$"
@@ -174,20 +174,20 @@ ContestString_MoveLockOn:
 	.string "LOCK-ON$"
 
 	.align 2
-	.4byte ContestString_MoveRainDance
-	.4byte ContestString_MoveRainDance
-	.4byte ContestString_MoveRage
-	.4byte ContestString_MoveFocusEnergy
-	.4byte ContestString_MoveHypnosis
-	.4byte ContestString_MoveSoftboiled
-	.4byte ContestString_MoveHornAttack
-	.4byte ContestString_MoveSwordsDance
-	.4byte ContestString_MoveConversion
-	.4byte ContestString_MoveSunnyDay
-	.4byte ContestString_MoveRest
-	.4byte ContestString_MoveVicegrip
-	.4byte ContestString_MoveDefenseCurl
-	.4byte ContestString_MoveLockOn
+	.int ContestString_MoveRainDance
+	.int ContestString_MoveRainDance
+	.int ContestString_MoveRage
+	.int ContestString_MoveFocusEnergy
+	.int ContestString_MoveHypnosis
+	.int ContestString_MoveSoftboiled
+	.int ContestString_MoveHornAttack
+	.int ContestString_MoveSwordsDance
+	.int ContestString_MoveConversion
+	.int ContestString_MoveSunnyDay
+	.int ContestString_MoveRest
+	.int ContestString_MoveVicegrip
+	.int ContestString_MoveDefenseCurl
+	.int ContestString_MoveLockOn
 
 ContestString_Cool:
 	.string "COOL$"
@@ -202,11 +202,11 @@ ContestString_Tough:
 
 	.align 2
 gContestCategoryNames:: @ 83CAF70
-	.4byte ContestString_Cool
-	.4byte ContestString_Beauty
-	.4byte ContestString_Cute
-	.4byte ContestString_Smart
-	.4byte ContestString_Tough
+	.int ContestString_Cool
+	.int ContestString_Beauty
+	.int ContestString_Cute
+	.int ContestString_Smart
+	.int ContestString_Tough
 
 gText_Contest_WhichMoveWillBePlayed:: @ 83CAF84
 	.string "Appeal no. {NAME_END}!\nWhich move will be played?$"
@@ -252,19 +252,19 @@ ContestString_WorkBetter:
 	.string "It worked a little better\nthan usual.$"
 
 	.align 2
-	.4byte ContestString_AppealJammed
-	.4byte ContestString_FollowLead
-	.4byte ContestString_MessedUp
-	.4byte ContestString_BetterUsual
-	.4byte ContestString_BetterUsual
-	.4byte ContestString_JudgeLookAway
-	.4byte ContestString_WorkHard
-	.4byte ContestString_NoMoreMoves
-	.4byte ContestString_WorkReallyWell
-	.4byte ContestString_WorkHardStandout
-	.4byte ContestString_JudgeExpectantly
-	.4byte ContestString_WorkRatherWell
-	.4byte ContestString_WorkBetter
+	.int ContestString_AppealJammed
+	.int ContestString_FollowLead
+	.int ContestString_MessedUp
+	.int ContestString_BetterUsual
+	.int ContestString_BetterUsual
+	.int ContestString_JudgeLookAway
+	.int ContestString_WorkHard
+	.int ContestString_NoMoreMoves
+	.int ContestString_WorkReallyWell
+	.int ContestString_WorkHardStandout
+	.int ContestString_JudgeExpectantly
+	.int ContestString_WorkRatherWell
+	.int ContestString_WorkBetter
 
 ContestString_StandOutNone:
 	.string "{STR_VAR_1} failed to\nstand out at all...{PAUSE_UNTIL_PRESS}$"
@@ -281,12 +281,12 @@ ContestString_StandOutDidnt:
 
 	.align 2
 gContestStandOutStrings:: @ 83CB2F0
-	.4byte ContestString_StandOutNone
-	.4byte ContestString_StandOutNotMuch
-	.4byte ContestString_StandOutLittle
-	.4byte ContestString_StandOutLot
-	.4byte ContestString_StandOutTotal
-	.4byte ContestString_StandOutDidnt
+	.int ContestString_StandOutNone
+	.int ContestString_StandOutNotMuch
+	.int ContestString_StandOutLittle
+	.int ContestString_StandOutLot
+	.int ContestString_StandOutTotal
+	.int ContestString_StandOutDidnt
 
 ContestString_AppealAnticipation3:
 	.string "Anticipation swelled for\n{STR_VAR_1}'s appeal next.$"
@@ -342,32 +342,32 @@ ContestString_AppealFullWorse:
 	.string "Its {STR_VAR_1} is full.\nIt worsened its appeal.$"
 
 	.align 2
-	.4byte ContestString_JudgeHeldFirm
-	.4byte ContestString_ChangedPerceptions
-	.4byte ContestString_Terminator
-	.4byte ContestString_AppealWoreOff
-	.4byte ContestString_AppealWoreOff2
-	.4byte ContestString_AppealLookSame
-	.4byte ContestString_AppealCheapened
-	.4byte ContestString_AppealCheapened2
-	.4byte ContestString_AppealAttentionStolen
-	.4byte ContestString_AppealCheapened3
-	.4byte ContestString_AppealCheapened4
-	.4byte ContestString_AppealAnticipation
-	.4byte ContestString_AppealCheapened5
-	.4byte ContestString_AppealCheapened6
-	.4byte ContestString_AppealCheapened7
-	.4byte ContestString_JammedStoodOut
-	.4byte ContestString_AppealNoMore
-	.4byte ContestString_AppealTouched
-	.4byte ContestString_AppealAnticipation2
-	.4byte ContestString_AppealStoodOut2
-	.4byte ContestString_AppealStoodOut3
-	.4byte ContestString_Terminator
-	.4byte ContestString_Terminator
-	.4byte ContestString_Terminator
-	.4byte ContestString_JammedAppealsNotice
-	.4byte ContestString_AppealSame
+	.int ContestString_JudgeHeldFirm
+	.int ContestString_ChangedPerceptions
+	.int ContestString_Terminator
+	.int ContestString_AppealWoreOff
+	.int ContestString_AppealWoreOff2
+	.int ContestString_AppealLookSame
+	.int ContestString_AppealCheapened
+	.int ContestString_AppealCheapened2
+	.int ContestString_AppealAttentionStolen
+	.int ContestString_AppealCheapened3
+	.int ContestString_AppealCheapened4
+	.int ContestString_AppealAnticipation
+	.int ContestString_AppealCheapened5
+	.int ContestString_AppealCheapened6
+	.int ContestString_AppealCheapened7
+	.int ContestString_JammedStoodOut
+	.int ContestString_AppealNoMore
+	.int ContestString_AppealTouched
+	.int ContestString_AppealAnticipation2
+	.int ContestString_AppealStoodOut2
+	.int ContestString_AppealStoodOut3
+	.int ContestString_Terminator
+	.int ContestString_Terminator
+	.int ContestString_Terminator
+	.int ContestString_JammedAppealsNotice
+	.int ContestString_AppealSame
 ContestString_MoreConscious:
 	.string "It became more conscious\nof the other POKéMON.{PAUSE 60}$"
 ContestString_NoAppeal:
@@ -535,68 +535,68 @@ ContestString_Ignored2::
 
 	.align 2
 gUnknown_083CC188:: @ 83CC188
-	.4byte ContestString_MoreConscious
-	.4byte ContestString_NoAppeal
-	.4byte ContestString_SettleDown
-	.4byte ContestString_ObliviousToOthers
-	.4byte ContestString_LessAware
-	.4byte ContestString_StoppedCaring
-	.4byte ContestString_StartleAttempt
-	.4byte ContestString_DazzleAttempt
-	.4byte ContestString_JudgeLookAway2
-	.4byte ContestString_UnnerveAttempt
-	.4byte ContestString_Nervous
-	.4byte ContestString_UnnerveWaiting
-	.4byte ContestString_TauntWell
-	.4byte ContestString_RegainedForm
-	.4byte ContestString_JamWell
-	.4byte ContestString_HustleStandout
-	.4byte ContestString_WorkHardUnnoticed
-	.4byte ContestString_WorkBefore
-	.4byte ContestString_AppealNotWell
-	.4byte ContestString_WorkPreceding
-	.4byte ContestString_AppealNotWell2
-	.4byte ContestString_AppealNotShownWell
-	.4byte ContestString_AppealSlightlyWell
-	.4byte ContestString_AppealPrettyWell
-	.4byte ContestString_AppealExcellently
-	.4byte ContestString_AppealDud
-	.4byte ContestString_AppealNotVeryWell
-	.4byte ContestString_AppealSlightlyWell2
-	.4byte ContestString_AppealPrettyWell2
-	.4byte ContestString_AppealVeryWell
-	.4byte ContestString_AppealExcellently2
-	.4byte ContestString_SameTypeGood
-	.4byte ContestString_DiffTypeGood
-	.4byte ContestString_StoodOutAsMuch
-	.4byte ContestString_NotAsWell
-	.4byte ContestString_ConditionRose
-	.4byte ContestString_HotStatus
-	.4byte ContestString_MoveUpLine
-	.4byte ContestString_MoveBackLine
-	.4byte ContestString_ScrambleOrder
-	.4byte ContestString_JudgeExpectantly2 @ expectantly
-	.4byte ContestString_WentOverWell
-	.4byte ContestString_WentOverVeryWell
-	.4byte ContestString_AppealComboExcellently
-	.4byte ContestString_AvertGaze
-	.4byte ContestString_AvoidSeeing
-	.4byte ContestString_NotFazed
-	.4byte ContestString_LittleDistracted
-	.4byte ContestString_AttemptStartle
-	.4byte ContestString_LookedDown
-	.4byte ContestString_TurnedBack
-	.4byte ContestString_UtterCry
-	.4byte ContestString_LeaptUp
-	.4byte ContestString_TrippedOver
-	.4byte ContestString_MessedUp2
-	.4byte ContestString_FailedTargetNervous
-	.4byte ContestString_FailedAnyoneNervous
-	.4byte ContestString_Ignored
-	.4byte ContestString_NoConditionImprove
-	.4byte ContestString_BadConditionWeakAppeal
-	.4byte ContestString_Unaffected
-	.4byte ContestString_AttractedAttention
+	.int ContestString_MoreConscious
+	.int ContestString_NoAppeal
+	.int ContestString_SettleDown
+	.int ContestString_ObliviousToOthers
+	.int ContestString_LessAware
+	.int ContestString_StoppedCaring
+	.int ContestString_StartleAttempt
+	.int ContestString_DazzleAttempt
+	.int ContestString_JudgeLookAway2
+	.int ContestString_UnnerveAttempt
+	.int ContestString_Nervous
+	.int ContestString_UnnerveWaiting
+	.int ContestString_TauntWell
+	.int ContestString_RegainedForm
+	.int ContestString_JamWell
+	.int ContestString_HustleStandout
+	.int ContestString_WorkHardUnnoticed
+	.int ContestString_WorkBefore
+	.int ContestString_AppealNotWell
+	.int ContestString_WorkPreceding
+	.int ContestString_AppealNotWell2
+	.int ContestString_AppealNotShownWell
+	.int ContestString_AppealSlightlyWell
+	.int ContestString_AppealPrettyWell
+	.int ContestString_AppealExcellently
+	.int ContestString_AppealDud
+	.int ContestString_AppealNotVeryWell
+	.int ContestString_AppealSlightlyWell2
+	.int ContestString_AppealPrettyWell2
+	.int ContestString_AppealVeryWell
+	.int ContestString_AppealExcellently2
+	.int ContestString_SameTypeGood
+	.int ContestString_DiffTypeGood
+	.int ContestString_StoodOutAsMuch
+	.int ContestString_NotAsWell
+	.int ContestString_ConditionRose
+	.int ContestString_HotStatus
+	.int ContestString_MoveUpLine
+	.int ContestString_MoveBackLine
+	.int ContestString_ScrambleOrder
+	.int ContestString_JudgeExpectantly2 @ expectantly
+	.int ContestString_WentOverWell
+	.int ContestString_WentOverVeryWell
+	.int ContestString_AppealComboExcellently
+	.int ContestString_AvertGaze
+	.int ContestString_AvoidSeeing
+	.int ContestString_NotFazed
+	.int ContestString_LittleDistracted
+	.int ContestString_AttemptStartle
+	.int ContestString_LookedDown
+	.int ContestString_TurnedBack
+	.int ContestString_UtterCry
+	.int ContestString_LeaptUp
+	.int ContestString_TrippedOver
+	.int ContestString_MessedUp2
+	.int ContestString_FailedTargetNervous
+	.int ContestString_FailedAnyoneNervous
+	.int ContestString_Ignored
+	.int ContestString_NoConditionImprove
+	.int ContestString_BadConditionWeakAppeal
+	.int ContestString_Unaffected
+	.int ContestString_AttractedAttention
 
 gText_Contest_Shyness:: @ 83CC280
 	.string "shyness$"
@@ -626,11 +626,11 @@ ContestString_Toughness:
 
 	.align 2
 gContestCategoryStrings:: @ 83CC2D8
-	.4byte ContestString_Coolness
-	.4byte ContestString_Beauty2
-	.4byte ContestString_Cuteness
-	.4byte ContestString_Smartness
-	.4byte ContestString_Toughness
+	.int ContestString_Coolness
+	.int ContestString_Beauty2
+	.int ContestString_Cuteness
+	.int ContestString_Smartness
+	.int ContestString_Toughness
 
 gUnknown_083CC2EC:: @ 83CC2EC
 	.string "TENSION:$"
@@ -655,12 +655,12 @@ ContestString_UnknownMoveType:
 
 	.align 2
 gUnknown_083CC330:: @ 83CC330
-	.4byte ContestString_CoolMove
-	.4byte ContestString_BeautyMove
-	.4byte ContestString_CuteMove
-	.4byte ContestString_SmartMove
-	.4byte ContestString_ToughMove
-	.4byte ContestString_UnknownMoveType
+	.int ContestString_CoolMove
+	.int ContestString_BeautyMove
+	.int ContestString_CuteMove
+	.int ContestString_SmartMove
+	.int ContestString_ToughMove
+	.int ContestString_UnknownMoveType
 
 @ unused?
 ContestString_Rank:

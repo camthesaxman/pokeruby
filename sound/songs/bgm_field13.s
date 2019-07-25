@@ -157,7 +157,7 @@ bgm_field13_1_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_field13_1_000
+	 .int	bgm_field13_1_000
 	.byte		N05   , An2 , v104
 	.byte	W12
 	.byte		N05   
@@ -259,9 +259,9 @@ bgm_field13_1_001:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_field13_1_001
+	 .int	bgm_field13_1_001
 	.byte	GOTO
-	 .word	bgm_field13_1_B1
+	 .int	bgm_field13_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -336,7 +336,7 @@ bgm_field13_2_000:
 	.byte		N23   , Fs3 , v112
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_field13_2_000
+	 .int	bgm_field13_2_000
 	.byte		N23   , Cs4 , v112
 	.byte	W24
 	.byte		        Bn3 
@@ -391,7 +391,7 @@ bgm_field13_2_001:
 	.byte		        Gs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_field13_2_001
+	 .int	bgm_field13_2_001
 	.byte		N17   , Fs4 , v096
 	.byte	W18
 	.byte		N05   , Ds4 
@@ -444,7 +444,7 @@ bgm_field13_2_001:
 	.byte		N23   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_field13_2_B1
+	 .int	bgm_field13_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -515,9 +515,9 @@ bgm_field13_3_001:
 	.byte		        Fs1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_field13_3_001
+	 .int	bgm_field13_3_001
 	.byte	PATT
-	 .word	bgm_field13_3_001
+	 .int	bgm_field13_3_001
 	.byte		N11   , An1 , v112
 	.byte	W12
 	.byte		        Cs2 
@@ -535,7 +535,7 @@ bgm_field13_3_001:
 	.byte		        An1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_field13_3_001
+	 .int	bgm_field13_3_001
 bgm_field13_3_002:
 	.byte		N11   , Bn1 , v112
 	.byte	W12
@@ -591,7 +591,7 @@ bgm_field13_3_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_field13_3_002
+	 .int	bgm_field13_3_002
 	.byte		N11   , Bn1 , v112
 	.byte	W12
 	.byte		        Fs2 
@@ -609,19 +609,19 @@ bgm_field13_3_004:
 	.byte		        Fs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_field13_3_003
+	 .int	bgm_field13_3_003
 	.byte	PATT
-	 .word	bgm_field13_3_004
+	 .int	bgm_field13_3_004
 	.byte	PATT
-	 .word	bgm_field13_3_002
+	 .int	bgm_field13_3_002
 	.byte	PATT
-	 .word	bgm_field13_3_001
+	 .int	bgm_field13_3_001
 	.byte	PATT
-	 .word	bgm_field13_3_000
+	 .int	bgm_field13_3_000
 	.byte	PATT
-	 .word	bgm_field13_3_000
+	 .int	bgm_field13_3_000
 	.byte	GOTO
-	 .word	bgm_field13_3_B1
+	 .int	bgm_field13_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -722,41 +722,41 @@ bgm_field13_4_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_000
+	 .int	bgm_field13_4_000
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_000
+	 .int	bgm_field13_4_000
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_001
+	 .int	bgm_field13_4_001
 	.byte	PATT
-	 .word	bgm_field13_4_000
+	 .int	bgm_field13_4_000
 	.byte	GOTO
-	 .word	bgm_field13_4_B1
+	 .int	bgm_field13_4_B1
 	.byte	FINE
 
 @******************************************************@
@@ -768,11 +768,11 @@ bgm_field13:
 	.byte	bgm_field13_pri	@ Priority
 	.byte	bgm_field13_rev	@ Reverb.
 
-	.word	bgm_field13_grp
+	.int	bgm_field13_grp
 
-	.word	bgm_field13_1
-	.word	bgm_field13_2
-	.word	bgm_field13_3
-	.word	bgm_field13_4
+	.int	bgm_field13_1
+	.int	bgm_field13_2
+	.int	bgm_field13_3
+	.int	bgm_field13_4
 
 	.end

@@ -84,7 +84,7 @@ se_w016_1_B1:
 	.byte		PAN   , c_v-11
 	.byte	W03
 	.byte	GOTO
-	 .word	se_w016_1_B1
+	 .int	se_w016_1_B1
 	.byte	FINE
 
 @******************************************************@
@@ -96,8 +96,8 @@ se_w016:
 	.byte	se_w016_pri	@ Priority
 	.byte	se_w016_rev	@ Reverb.
 
-	.word	se_w016_grp
+	.int	se_w016_grp
 
-	.word	se_w016_1
+	.int	se_w016_1
 
 	.end

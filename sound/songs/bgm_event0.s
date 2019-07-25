@@ -84,7 +84,7 @@ bgm_event0_1_000:
 	.byte		N06   , Gs4 , v036
 	.byte	W15
 	.byte	PATT
-	 .word	bgm_event0_1_000
+	 .int	bgm_event0_1_000
 	.byte	W12
 	.byte		N09   , An4 , v112
 	.byte	W09
@@ -106,7 +106,7 @@ bgm_event0_1_000:
 	.byte		        As4 , v116
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_1_B1
+	 .int	bgm_event0_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -164,7 +164,7 @@ bgm_event0_2_000:
 	.byte		N03   , Cn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_event0_2_000
+	 .int	bgm_event0_2_000
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		N03   , Cn2 
@@ -186,7 +186,7 @@ bgm_event0_2_000:
 	.byte		        Gn2 , v112
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_2_B1
+	 .int	bgm_event0_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -235,7 +235,7 @@ bgm_event0_3_000:
 	.byte		N03   
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_event0_3_000
+	 .int	bgm_event0_3_000
 	.byte	W12
 	.byte		N09   , Dn4 , v112
 	.byte	W18
@@ -252,7 +252,7 @@ bgm_event0_3_000:
 	.byte		        Fn4 , v116
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_3_B1
+	 .int	bgm_event0_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -315,7 +315,7 @@ bgm_event0_4_000:
 	.byte		N03   , Cn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_event0_4_000
+	 .int	bgm_event0_4_000
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		N03   , Cn2 
@@ -337,7 +337,7 @@ bgm_event0_4_000:
 	.byte		        Gn2 , v112
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_4_B1
+	 .int	bgm_event0_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -433,7 +433,7 @@ bgm_event0_5_000:
 	.byte		        Gs2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_event0_5_000
+	 .int	bgm_event0_5_000
 	.byte		PAN   , c_v-62
 	.byte		N03   , An3 , v096
 	.byte	W06
@@ -468,7 +468,7 @@ bgm_event0_5_000:
 	.byte		        Fn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_5_B1
+	 .int	bgm_event0_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -508,7 +508,7 @@ bgm_event0_6_000:
 	.byte		N06   
 	.byte	W30
 	.byte	PATT
-	 .word	bgm_event0_6_000
+	 .int	bgm_event0_6_000
 	.byte		N12   , Fn3 , v112
 	.byte	W18
 	.byte		N06   
@@ -524,7 +524,7 @@ bgm_event0_6_000:
 	.byte		        Bn3 , v116
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_event0_6_B1
+	 .int	bgm_event0_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -622,7 +622,7 @@ bgm_event0_7_000:
 	.byte		        Fs1 , v068
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_event0_7_000
+	 .int	bgm_event0_7_000
 	.byte		N06   , Fs1 , v112
 	.byte	W06
 	.byte		        Fs1 , v072
@@ -652,7 +652,7 @@ bgm_event0_7_000:
 	.byte		N12   , As1 , v112
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_event0_7_B1
+	 .int	bgm_event0_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -664,14 +664,14 @@ bgm_event0:
 	.byte	bgm_event0_pri	@ Priority
 	.byte	bgm_event0_rev	@ Reverb.
 
-	.word	bgm_event0_grp
+	.int	bgm_event0_grp
 
-	.word	bgm_event0_1
-	.word	bgm_event0_2
-	.word	bgm_event0_3
-	.word	bgm_event0_4
-	.word	bgm_event0_5
-	.word	bgm_event0_6
-	.word	bgm_event0_7
+	.int	bgm_event0_1
+	.int	bgm_event0_2
+	.int	bgm_event0_3
+	.int	bgm_event0_4
+	.int	bgm_event0_5
+	.int	bgm_event0_6
+	.int	bgm_event0_7
 
 	.end

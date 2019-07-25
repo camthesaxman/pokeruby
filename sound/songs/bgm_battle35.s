@@ -237,7 +237,7 @@ bgm_battle35_1_000:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_1_000
+	 .int	bgm_battle35_1_000
 	.byte		N12   , Cn3 , v096
 	.byte	W12
 	.byte		        Dn3 
@@ -319,7 +319,7 @@ bgm_battle35_1_001:
 	.byte		N12   , Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_1_001
+	 .int	bgm_battle35_1_001
 	.byte		VOICE , 56
 	.byte	W12
 	.byte		PAN   , c_v+32
@@ -410,7 +410,7 @@ bgm_battle35_1_001:
 	.byte		        Ds2 , v096
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_battle35_1_B1
+	 .int	bgm_battle35_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -643,7 +643,7 @@ bgm_battle35_2_000:
 	.byte		N48   , Cn4 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_battle35_2_000
+	 .int	bgm_battle35_2_000
 	.byte		VOICE , 46
 	.byte		MOD   , 0
 	.byte		PAN   , c_v+32
@@ -721,9 +721,9 @@ bgm_battle35_2_002:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_2_001
+	 .int	bgm_battle35_2_001
 	.byte	PATT
-	 .word	bgm_battle35_2_002
+	 .int	bgm_battle35_2_002
 	.byte		MOD   , 0
 	.byte		N72   , Fn3 , v108
 	.byte	W36
@@ -890,7 +890,7 @@ bgm_battle35_2_003:
 	.byte		TIE   , Fn3 , v108
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_battle35_2_003
+	 .int	bgm_battle35_2_003
 	.byte		EOT   , Fn3 
 	.byte		MOD   , 0
 	.byte	W03
@@ -973,7 +973,7 @@ bgm_battle35_2_003:
 	.byte		MOD   , 0
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_battle35_2_B1
+	 .int	bgm_battle35_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1024,7 +1024,7 @@ bgm_battle35_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_3_000
+	 .int	bgm_battle35_3_000
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -1040,11 +1040,11 @@ bgm_battle35_3_001:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_3_000
+	 .int	bgm_battle35_3_000
 	.byte	PATT
-	 .word	bgm_battle35_3_001
+	 .int	bgm_battle35_3_001
 	.byte	PATT
-	 .word	bgm_battle35_3_000
+	 .int	bgm_battle35_3_000
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -1151,9 +1151,9 @@ bgm_battle35_3_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_3_006
+	 .int	bgm_battle35_3_006
 	.byte	PATT
-	 .word	bgm_battle35_3_004
+	 .int	bgm_battle35_3_004
 	.byte		N12   , Ds1 , v108
 	.byte	W12
 	.byte		        Gs1 
@@ -1239,9 +1239,9 @@ bgm_battle35_3_008:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_3_007
+	 .int	bgm_battle35_3_007
 	.byte	PATT
-	 .word	bgm_battle35_3_008
+	 .int	bgm_battle35_3_008
 	.byte		N12   , Fn1 , v108
 	.byte	W12
 	.byte		N24   , An1 
@@ -1309,21 +1309,21 @@ bgm_battle35_3_010:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte	PATT
-	 .word	bgm_battle35_3_010
+	 .int	bgm_battle35_3_010
 	.byte	PATT
-	 .word	bgm_battle35_3_010
+	 .int	bgm_battle35_3_010
 	.byte	PATT
-	 .word	bgm_battle35_3_010
+	 .int	bgm_battle35_3_010
 	.byte	PATT
-	 .word	bgm_battle35_3_010
+	 .int	bgm_battle35_3_010
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte		N12   , As0 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -1341,11 +1341,11 @@ bgm_battle35_3_010:
 	.byte		        Gs1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte	PATT
-	 .word	bgm_battle35_3_009
+	 .int	bgm_battle35_3_009
 	.byte		N12   , As0 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -1363,11 +1363,11 @@ bgm_battle35_3_010:
 	.byte		        Bn0 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_3_002
+	 .int	bgm_battle35_3_002
 	.byte	PATT
-	 .word	bgm_battle35_3_002
+	 .int	bgm_battle35_3_002
 	.byte	PATT
-	 .word	bgm_battle35_3_007
+	 .int	bgm_battle35_3_007
 	.byte		N12   , Ds1 , v108
 	.byte	W12
 	.byte		        Gn1 
@@ -1385,19 +1385,19 @@ bgm_battle35_3_010:
 	.byte		        As1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_3_002
+	 .int	bgm_battle35_3_002
 	.byte	PATT
-	 .word	bgm_battle35_3_003
+	 .int	bgm_battle35_3_003
 	.byte	PATT
-	 .word	bgm_battle35_3_004
+	 .int	bgm_battle35_3_004
 	.byte	PATT
-	 .word	bgm_battle35_3_005
+	 .int	bgm_battle35_3_005
 	.byte	PATT
-	 .word	bgm_battle35_3_006
+	 .int	bgm_battle35_3_006
 	.byte	PATT
-	 .word	bgm_battle35_3_006
+	 .int	bgm_battle35_3_006
 	.byte	PATT
-	 .word	bgm_battle35_3_004
+	 .int	bgm_battle35_3_004
 	.byte		N12   , Ds1 , v108
 	.byte	W12
 	.byte		        Gs1 
@@ -1415,7 +1415,7 @@ bgm_battle35_3_010:
 	.byte		        Gs1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_battle35_3_B1
+	 .int	bgm_battle35_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1582,7 +1582,7 @@ bgm_battle35_4_000:
 	.byte		        Gn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_4_000
+	 .int	bgm_battle35_4_000
 	.byte	W36
 	.byte		VOICE , 80
 	.byte		N24   , Cn3 , v060
@@ -1664,7 +1664,7 @@ bgm_battle35_4_001:
 	.byte		N12   , As2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_4_001
+	 .int	bgm_battle35_4_001
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1739,7 +1739,7 @@ bgm_battle35_4_001:
 	.byte		N48   , Gs2 , v060
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_battle35_4_B1
+	 .int	bgm_battle35_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1905,7 +1905,7 @@ bgm_battle35_5_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_5_000
+	 .int	bgm_battle35_5_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1915,7 +1915,7 @@ bgm_battle35_5_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_battle35_5_B1
+	 .int	bgm_battle35_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1988,7 +1988,7 @@ bgm_battle35_6_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_6_000
+	 .int	bgm_battle35_6_000
 bgm_battle35_6_001:
 	.byte		N12   , Fn2 , v064
 	.byte	W12
@@ -2008,11 +2008,11 @@ bgm_battle35_6_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_6_001
+	 .int	bgm_battle35_6_001
 	.byte	PATT
-	 .word	bgm_battle35_6_000
+	 .int	bgm_battle35_6_000
 	.byte	PATT
-	 .word	bgm_battle35_6_000
+	 .int	bgm_battle35_6_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -2049,7 +2049,7 @@ bgm_battle35_6_001:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_battle35_6_B1
+	 .int	bgm_battle35_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2073,26 +2073,26 @@ bgm_battle35_7_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 bgm_battle35_7_B1:
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 bgm_battle35_7_001:
 	.byte	W24
 	.byte		N12   , Dn1 , v112
@@ -2103,25 +2103,25 @@ bgm_battle35_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte		N12   , Dn1 , v112
 	.byte	W24
 	.byte		N12   
@@ -2129,9 +2129,9 @@ bgm_battle35_7_001:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 bgm_battle35_7_002:
 	.byte	W36
 	.byte		N12   , Dn1 , v112
@@ -2140,17 +2140,17 @@ bgm_battle35_7_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_002
+	 .int	bgm_battle35_7_002
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte	PATT
-	 .word	bgm_battle35_7_002
+	 .int	bgm_battle35_7_002
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 bgm_battle35_7_003:
 	.byte	W12
 	.byte		N12   , Dn1 , v112
@@ -2161,17 +2161,17 @@ bgm_battle35_7_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_003
+	 .int	bgm_battle35_7_003
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_003
+	 .int	bgm_battle35_7_003
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_003
+	 .int	bgm_battle35_7_003
 	.byte		N96   , An2 , v096
 	.byte	W96
 	.byte	W96
@@ -2186,23 +2186,23 @@ bgm_battle35_7_003:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_000
+	 .int	bgm_battle35_7_000
 	.byte	PATT
-	 .word	bgm_battle35_7_001
+	 .int	bgm_battle35_7_001
 	.byte	GOTO
-	 .word	bgm_battle35_7_B1
+	 .int	bgm_battle35_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2223,19 +2223,19 @@ bgm_battle35_8_000:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 	.byte	PATT
-	 .word	bgm_battle35_8_000
+	 .int	bgm_battle35_8_000
 bgm_battle35_8_B1:
 bgm_battle35_8_001:
 	.byte		N12   , Cn2 , v112
@@ -2246,31 +2246,31 @@ bgm_battle35_8_001:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	W12
 	.byte		N12   , Cn2 , v112
 	.byte	W24
@@ -2287,7 +2287,7 @@ bgm_battle35_8_001:
 	.byte		N12   
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 bgm_battle35_8_002:
 	.byte		N12   , Cn2 , v112
 	.byte	W24
@@ -2299,17 +2299,17 @@ bgm_battle35_8_002:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_002
+	 .int	bgm_battle35_8_002
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_002
+	 .int	bgm_battle35_8_002
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 bgm_battle35_8_003:
 	.byte		N12   , Cn2 , v112
 	.byte	W24
@@ -2323,39 +2323,39 @@ bgm_battle35_8_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_003
+	 .int	bgm_battle35_8_003
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_003
+	 .int	bgm_battle35_8_003
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_003
+	 .int	bgm_battle35_8_003
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	PATT
-	 .word	bgm_battle35_8_001
+	 .int	bgm_battle35_8_001
 	.byte	GOTO
-	 .word	bgm_battle35_8_B1
+	 .int	bgm_battle35_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2367,15 +2367,15 @@ bgm_battle35:
 	.byte	bgm_battle35_pri	@ Priority
 	.byte	bgm_battle35_rev	@ Reverb.
 
-	.word	bgm_battle35_grp
+	.int	bgm_battle35_grp
 
-	.word	bgm_battle35_1
-	.word	bgm_battle35_2
-	.word	bgm_battle35_3
-	.word	bgm_battle35_4
-	.word	bgm_battle35_5
-	.word	bgm_battle35_6
-	.word	bgm_battle35_7
-	.word	bgm_battle35_8
+	.int	bgm_battle35_1
+	.int	bgm_battle35_2
+	.int	bgm_battle35_3
+	.int	bgm_battle35_4
+	.int	bgm_battle35_5
+	.int	bgm_battle35_6
+	.int	bgm_battle35_7
+	.int	bgm_battle35_8
 
 	.end

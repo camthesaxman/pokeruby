@@ -358,7 +358,7 @@ bgm_kachi5_1_B1:
 	.byte		N24   , An3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi5_1_B1
+	 .int	bgm_kachi5_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -690,7 +690,7 @@ bgm_kachi5_2_B1:
 	.byte		MOD   , 6
 	.byte	W16
 	.byte	GOTO
-	 .word	bgm_kachi5_2_B1
+	 .int	bgm_kachi5_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -890,7 +890,7 @@ bgm_kachi5_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi5_3_B1
+	 .int	bgm_kachi5_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1300,7 +1300,7 @@ bgm_kachi5_4_B1:
 	.byte		N24   , Ds3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi5_4_B1
+	 .int	bgm_kachi5_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1708,7 +1708,7 @@ bgm_kachi5_5_B1:
 	.byte		N24   , Cn3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi5_5_B1
+	 .int	bgm_kachi5_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1962,7 +1962,7 @@ bgm_kachi5_6_B1:
 	.byte		N24   , Fn1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi5_6_B1
+	 .int	bgm_kachi5_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2126,7 +2126,7 @@ bgm_kachi5_7_B1:
 	.byte		N12   , Fn1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi5_7_B1
+	 .int	bgm_kachi5_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2225,13 +2225,13 @@ bgm_kachi5_8_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kachi5_8_001
+	 .int	bgm_kachi5_8_001
 	.byte	PATT
-	 .word	bgm_kachi5_8_000
+	 .int	bgm_kachi5_8_000
 	.byte	PATT
-	 .word	bgm_kachi5_8_001
+	 .int	bgm_kachi5_8_001
 	.byte	PATT
-	 .word	bgm_kachi5_8_002
+	 .int	bgm_kachi5_8_002
 	.byte		N04   , En1 , v112
 	.byte	W16
 	.byte		        En1 , v080
@@ -2309,7 +2309,7 @@ bgm_kachi5_8_002:
 	.byte		N48   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_kachi5_8_B1
+	 .int	bgm_kachi5_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2321,15 +2321,15 @@ bgm_kachi5:
 	.byte	bgm_kachi5_pri	@ Priority
 	.byte	bgm_kachi5_rev	@ Reverb.
 
-	.word	bgm_kachi5_grp
+	.int	bgm_kachi5_grp
 
-	.word	bgm_kachi5_1
-	.word	bgm_kachi5_2
-	.word	bgm_kachi5_3
-	.word	bgm_kachi5_4
-	.word	bgm_kachi5_5
-	.word	bgm_kachi5_6
-	.word	bgm_kachi5_7
-	.word	bgm_kachi5_8
+	.int	bgm_kachi5_1
+	.int	bgm_kachi5_2
+	.int	bgm_kachi5_3
+	.int	bgm_kachi5_4
+	.int	bgm_kachi5_5
+	.int	bgm_kachi5_6
+	.int	bgm_kachi5_7
+	.int	bgm_kachi5_8
 
 	.end

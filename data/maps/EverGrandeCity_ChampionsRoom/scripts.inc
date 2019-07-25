@@ -10,7 +10,7 @@ EverGrandeCity_ChampionsRoom_MapScript1_15B7BF:: @ 815B7BF
 
 EverGrandeCity_ChampionsRoom_MapScript2_15B7C5:: @ 815B7C5
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_ChampionsRoom_EventScript_15B7CF
-	.2byte 0
+	.short 0
 
 EverGrandeCity_ChampionsRoom_EventScript_15B7CF:: @ 815B7CF
 	turnobject 255, 2
@@ -18,7 +18,7 @@ EverGrandeCity_ChampionsRoom_EventScript_15B7CF:: @ 815B7CF
 
 EverGrandeCity_ChampionsRoom_MapScript2_15B7D4:: @ 815B7D4
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_ChampionsRoom_EventScript_15B7DE
-	.2byte 0
+	.short 0
 
 EverGrandeCity_ChampionsRoom_EventScript_15B7DE:: @ 815B7DE
 	lockall

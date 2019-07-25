@@ -329,7 +329,7 @@ bgm_ayasii_1_B1:
 	.byte		        En4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ayasii_1_B1
+	 .int	bgm_ayasii_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -400,7 +400,7 @@ bgm_ayasii_2_B1:
 	.byte		N24   , Fn2 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_ayasii_2_B1
+	 .int	bgm_ayasii_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -511,7 +511,7 @@ bgm_ayasii_3_000:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ayasii_3_000
+	 .int	bgm_ayasii_3_000
 	.byte		N36   , Fs1 , v112
 	.byte	W12
 	.byte		MOD   , 8
@@ -568,7 +568,7 @@ bgm_ayasii_3_000:
 	.byte		        Cn2 , v112
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_ayasii_3_B1
+	 .int	bgm_ayasii_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -728,7 +728,7 @@ bgm_ayasii_4_B1:
 	.byte		N24   , Fn3 , v120
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_ayasii_4_B1
+	 .int	bgm_ayasii_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -890,7 +890,7 @@ bgm_ayasii_5_B1:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_ayasii_5_B1
+	 .int	bgm_ayasii_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1148,7 +1148,7 @@ bgm_ayasii_6_B1:
 	.byte	W12
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_ayasii_6_B1
+	 .int	bgm_ayasii_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1223,7 +1223,7 @@ bgm_ayasii_7_000:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ayasii_7_000
+	 .int	bgm_ayasii_7_000
 	.byte		N36   , Fs1 , v112
 	.byte	W12
 	.byte		MOD   , 8
@@ -1263,7 +1263,7 @@ bgm_ayasii_7_000:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_ayasii_7_B1
+	 .int	bgm_ayasii_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1376,19 +1376,19 @@ bgm_ayasii_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_000
+	 .int	bgm_ayasii_8_000
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_000
+	 .int	bgm_ayasii_8_000
 	.byte		N02   , En5 , v112
 	.byte	W12
 	.byte		        En5 , v056
@@ -1402,9 +1402,9 @@ bgm_ayasii_8_001:
 	.byte		        En5 , v056
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ayasii_8_001
+	 .int	bgm_ayasii_8_001
 	.byte	PATT
-	 .word	bgm_ayasii_8_000
+	 .int	bgm_ayasii_8_000
 	.byte		N02   , En5 , v112
 	.byte	W24
 	.byte		N02   
@@ -1418,7 +1418,7 @@ bgm_ayasii_8_001:
 	.byte		N02   , En5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_ayasii_8_B1
+	 .int	bgm_ayasii_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1711,7 +1711,7 @@ bgm_ayasii_9_B1:
 	.byte		        En3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ayasii_9_B1
+	 .int	bgm_ayasii_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1723,16 +1723,16 @@ bgm_ayasii:
 	.byte	bgm_ayasii_pri	@ Priority
 	.byte	bgm_ayasii_rev	@ Reverb.
 
-	.word	bgm_ayasii_grp
+	.int	bgm_ayasii_grp
 
-	.word	bgm_ayasii_1
-	.word	bgm_ayasii_2
-	.word	bgm_ayasii_3
-	.word	bgm_ayasii_4
-	.word	bgm_ayasii_5
-	.word	bgm_ayasii_6
-	.word	bgm_ayasii_7
-	.word	bgm_ayasii_8
-	.word	bgm_ayasii_9
+	.int	bgm_ayasii_1
+	.int	bgm_ayasii_2
+	.int	bgm_ayasii_3
+	.int	bgm_ayasii_4
+	.int	bgm_ayasii_5
+	.int	bgm_ayasii_6
+	.int	bgm_ayasii_7
+	.int	bgm_ayasii_8
+	.int	bgm_ayasii_9
 
 	.end

@@ -43,8 +43,8 @@ se_select:
 	.byte	se_select_pri	@ Priority
 	.byte	se_select_rev	@ Reverb.
 
-	.word	se_select_grp
+	.int	se_select_grp
 
-	.word	se_select_1
+	.int	se_select_1
 
 	.end

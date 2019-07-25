@@ -43,3 +43,4 @@ build/
 .vs/
 .projects/ARM/
 *.diff
+SDL-1.2.15/

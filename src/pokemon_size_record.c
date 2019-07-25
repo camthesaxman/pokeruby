@@ -71,19 +71,21 @@ static u8 TranslateBigMonSizeTableIndex(u16 a)
 
 static u32 GetMonSize(u16 species, u16 b)
 {
-    u64 unk2;
-    u64 unk4;
-    u64 unk0;
-    u32 height;
-    u32 var;
-
-    height = GetPokedexHeightWeight(SpeciesToNationalPokedexNum(species), 0);
-    var = TranslateBigMonSizeTableIndex(b);
-    unk0 = sBigMonSizeTable[var].unk0;
-    unk2 = sBigMonSizeTable[var].unk2;
-    unk4 = sBigMonSizeTable[var].unk4;
-    unk0 += (b - unk4) / unk2;
-    return height * unk0 / 10;
+    puts("function GetMonSize is a stub");
+    return 4;
+//    u64 unk2;
+//    u64 unk4;
+//    u64 unk0;
+//    u32 height;
+//    u32 var;
+//
+//    height = GetPokedexHeightWeight(SpeciesToNationalPokedexNum(species), 0);
+//    var = TranslateBigMonSizeTableIndex(b);
+//    unk0 = sBigMonSizeTable[var].unk0;
+//    unk2 = sBigMonSizeTable[var].unk2;
+//    unk4 = sBigMonSizeTable[var].unk4;
+//    unk0 += (b - unk4) / unk2;
+//    return height * unk0 / 10;
 }
 
 static void FormatMonSizeRecord(u8 *string, u32 size)

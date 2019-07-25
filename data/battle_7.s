@@ -9,9 +9,9 @@ gUnknown_081FAF24:: @ 81FAF24
 
 	.align 2
 gOamData_81FAF2C:: @ 81FAF2C
-	.2byte 0x4000
-	.2byte 0x4000
-	.2byte 0x0C00
+	.short 0x4000
+	.short 0x4000
+	.short 0x0C00
 
 	.align 2
 gSpriteTemplate_81FAF34:: @ 81FAF34
@@ -19,7 +19,7 @@ gSpriteTemplate_81FAF34:: @ 81FAF34
 
 	.align 2
 gUnknown_081FAF4C:: @ 81FAF4C
-	.4byte gSharedMem + 0x8000
-	.4byte gSharedMem + 0xA000
-	.4byte gSharedMem + 0xC000
-	.4byte gSharedMem + 0xE000
+	.int gSharedMem + 0x8000
+	.int gSharedMem + 0xA000
+	.int gSharedMem + 0xC000
+	.int gSharedMem + 0xE000

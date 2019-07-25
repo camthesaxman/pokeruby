@@ -45,29 +45,29 @@ bgm_safari_1_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	PATT
-	 .word	bgm_safari_1_000
+	 .int	bgm_safari_1_000
 	.byte	GOTO
-	 .word	bgm_safari_1_B1
+	 .int	bgm_safari_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -92,29 +92,29 @@ bgm_safari_2_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	PATT
-	 .word	bgm_safari_2_000
+	 .int	bgm_safari_2_000
 	.byte	GOTO
-	 .word	bgm_safari_2_B1
+	 .int	bgm_safari_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -189,11 +189,11 @@ bgm_safari_3_001:
 	.byte		        c_v+0
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_safari_3_001
+	 .int	bgm_safari_3_001
 	.byte	PATT
-	 .word	bgm_safari_3_000
+	 .int	bgm_safari_3_000
 	.byte	PATT
-	 .word	bgm_safari_3_001
+	 .int	bgm_safari_3_001
 	.byte	W36
 	.byte		N06   , Fn0 , v127
 	.byte	W12
@@ -208,7 +208,7 @@ bgm_safari_3_001:
 	.byte		        c_v+0
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_safari_3_B1
+	 .int	bgm_safari_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -529,7 +529,7 @@ bgm_safari_4_B1:
 	.byte		        c_v+62
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_safari_4_B1
+	 .int	bgm_safari_4_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -618,7 +618,7 @@ bgm_safari_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_safari_5_B1
+	 .int	bgm_safari_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -732,7 +732,7 @@ bgm_safari_6_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_6_000
+	 .int	bgm_safari_6_000
 	.byte		N03   , Gn3 , v112
 	.byte	W12
 	.byte		N06   , Fn3 
@@ -753,11 +753,11 @@ bgm_safari_6_002:
 	.byte		MOD   , 6
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_safari_6_001
+	 .int	bgm_safari_6_001
 	.byte	PATT
-	 .word	bgm_safari_6_002
+	 .int	bgm_safari_6_002
 	.byte	GOTO
-	 .word	bgm_safari_6_B1
+	 .int	bgm_safari_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -871,7 +871,7 @@ bgm_safari_7_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_7_000
+	 .int	bgm_safari_7_000
 	.byte		N03   , Cn4 , v112
 	.byte	W12
 	.byte		N06   , As3 
@@ -892,11 +892,11 @@ bgm_safari_7_002:
 	.byte		MOD   , 6
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_safari_7_001
+	 .int	bgm_safari_7_001
 	.byte	PATT
-	 .word	bgm_safari_7_002
+	 .int	bgm_safari_7_002
 	.byte	GOTO
-	 .word	bgm_safari_7_B1
+	 .int	bgm_safari_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1107,23 +1107,23 @@ bgm_safari_8_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_8_000
+	 .int	bgm_safari_8_000
 	.byte	PATT
-	 .word	bgm_safari_8_001
+	 .int	bgm_safari_8_001
 	.byte	PATT
-	 .word	bgm_safari_8_002
+	 .int	bgm_safari_8_002
 	.byte	PATT
-	 .word	bgm_safari_8_003
+	 .int	bgm_safari_8_003
 	.byte	PATT
-	 .word	bgm_safari_8_000
+	 .int	bgm_safari_8_000
 	.byte	PATT
-	 .word	bgm_safari_8_001
+	 .int	bgm_safari_8_001
 	.byte	PATT
-	 .word	bgm_safari_8_002
+	 .int	bgm_safari_8_002
 	.byte	PATT
-	 .word	bgm_safari_8_003
+	 .int	bgm_safari_8_003
 	.byte	GOTO
-	 .word	bgm_safari_8_B1
+	 .int	bgm_safari_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1199,27 +1199,27 @@ bgm_safari_9_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_safari_9_000
+	 .int	bgm_safari_9_000
 	.byte	PATT
-	 .word	bgm_safari_9_001
+	 .int	bgm_safari_9_001
 	.byte	PATT
-	 .word	bgm_safari_9_000
+	 .int	bgm_safari_9_000
 	.byte	PATT
-	 .word	bgm_safari_9_001
+	 .int	bgm_safari_9_001
 	.byte	PATT
-	 .word	bgm_safari_9_000
+	 .int	bgm_safari_9_000
 	.byte	PATT
-	 .word	bgm_safari_9_001
+	 .int	bgm_safari_9_001
 	.byte	PATT
-	 .word	bgm_safari_9_000
+	 .int	bgm_safari_9_000
 	.byte	PATT
-	 .word	bgm_safari_9_001
+	 .int	bgm_safari_9_001
 	.byte	PATT
-	 .word	bgm_safari_9_000
+	 .int	bgm_safari_9_000
 	.byte	PATT
-	 .word	bgm_safari_9_001
+	 .int	bgm_safari_9_001
 	.byte	GOTO
-	 .word	bgm_safari_9_B1
+	 .int	bgm_safari_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1231,16 +1231,16 @@ bgm_safari:
 	.byte	bgm_safari_pri	@ Priority
 	.byte	bgm_safari_rev	@ Reverb.
 
-	.word	bgm_safari_grp
+	.int	bgm_safari_grp
 
-	.word	bgm_safari_1
-	.word	bgm_safari_2
-	.word	bgm_safari_3
-	.word	bgm_safari_4
-	.word	bgm_safari_5
-	.word	bgm_safari_6
-	.word	bgm_safari_7
-	.word	bgm_safari_8
-	.word	bgm_safari_9
+	.int	bgm_safari_1
+	.int	bgm_safari_2
+	.int	bgm_safari_3
+	.int	bgm_safari_4
+	.int	bgm_safari_5
+	.int	bgm_safari_6
+	.int	bgm_safari_7
+	.int	bgm_safari_8
+	.int	bgm_safari_9
 
 	.end

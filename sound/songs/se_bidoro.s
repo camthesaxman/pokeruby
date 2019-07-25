@@ -54,8 +54,8 @@ se_bidoro:
 	.byte	se_bidoro_pri	@ Priority
 	.byte	se_bidoro_rev	@ Reverb.
 
-	.word	se_bidoro_grp
+	.int	se_bidoro_grp
 
-	.word	se_bidoro_1
+	.int	se_bidoro_1
 
 	.end

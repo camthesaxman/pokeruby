@@ -16,8 +16,8 @@ SecretBase_RedCave1_MapScript1_15F34F:: @ 815F34F
 
 SecretBase_RedCave1_MapScript2_15F358:: @ 815F358
 	map_script_2 0x4089, 0, SecretBase_RedCave1_EventScript_1A2F68
-	.2byte 0
+	.short 0
 
 SecretBase_RedCave1_MapScript2_15F362:: @ 815F362
 	map_script_2 VAR_0x4097, 0, SecretBase_RedCave1_EventScript_1A2DDE
-	.2byte 0
+	.short 0

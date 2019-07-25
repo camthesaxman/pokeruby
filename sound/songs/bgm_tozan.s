@@ -220,9 +220,9 @@ bgm_tozan_1_003:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_1_000
+	 .int	bgm_tozan_1_000
 	.byte	PATT
-	 .word	bgm_tozan_1_001
+	 .int	bgm_tozan_1_001
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
 	.byte		N03   , Cn4 , v112
@@ -297,7 +297,7 @@ bgm_tozan_1_003:
 	.byte		        54*bgm_tozan_mvl/mxv
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tozan_1_000
+	 .int	bgm_tozan_1_000
 bgm_tozan_1_004:
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
@@ -325,7 +325,7 @@ bgm_tozan_1_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_1_002
+	 .int	bgm_tozan_1_002
 bgm_tozan_1_005:
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
@@ -402,9 +402,9 @@ bgm_tozan_1_005:
 	.byte		        Fn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_1_001
+	 .int	bgm_tozan_1_001
 	.byte	PATT
-	 .word	bgm_tozan_1_002
+	 .int	bgm_tozan_1_002
 bgm_tozan_1_006:
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
@@ -517,7 +517,7 @@ bgm_tozan_1_007:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_1_007
+	 .int	bgm_tozan_1_007
 bgm_tozan_1_008:
 	.byte		PAN   , c_v-62
 	.byte		N03   , En4 , v112
@@ -557,7 +557,7 @@ bgm_tozan_1_008:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_1_008
+	 .int	bgm_tozan_1_008
 	.byte		PAN   , c_v-62
 	.byte		N03   , En4 , v112
 	.byte	W06
@@ -631,15 +631,15 @@ bgm_tozan_1_009:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_1_001
+	 .int	bgm_tozan_1_001
 	.byte	PATT
-	 .word	bgm_tozan_1_002
+	 .int	bgm_tozan_1_002
 	.byte	PATT
-	 .word	bgm_tozan_1_003
+	 .int	bgm_tozan_1_003
 	.byte	PATT
-	 .word	bgm_tozan_1_009
+	 .int	bgm_tozan_1_009
 	.byte	PATT
-	 .word	bgm_tozan_1_001
+	 .int	bgm_tozan_1_001
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
 	.byte		N03   , Cn4 , v112
@@ -713,13 +713,13 @@ bgm_tozan_1_009:
 	.byte		        54*bgm_tozan_mvl/mxv
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tozan_1_000
+	 .int	bgm_tozan_1_000
 	.byte	PATT
-	 .word	bgm_tozan_1_004
+	 .int	bgm_tozan_1_004
 	.byte	PATT
-	 .word	bgm_tozan_1_002
+	 .int	bgm_tozan_1_002
 	.byte	PATT
-	 .word	bgm_tozan_1_005
+	 .int	bgm_tozan_1_005
 	.byte		VOICE , 127
 	.byte		PAN   , c_v-64
 	.byte		VOL   , 27*bgm_tozan_mvl/mxv
@@ -744,11 +744,11 @@ bgm_tozan_1_009:
 	.byte		        Fn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_1_001
+	 .int	bgm_tozan_1_001
 	.byte	PATT
-	 .word	bgm_tozan_1_002
+	 .int	bgm_tozan_1_002
 	.byte	PATT
-	 .word	bgm_tozan_1_006
+	 .int	bgm_tozan_1_006
 	.byte	W24
 	.byte		VOICE , 126
 	.byte		VOL   , 3*bgm_tozan_mvl/mxv
@@ -881,7 +881,7 @@ bgm_tozan_1_009:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_1_B1
+	 .int	bgm_tozan_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -1041,9 +1041,9 @@ bgm_tozan_2_006:
 	.byte	W84
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_2_000
+	 .int	bgm_tozan_2_000
 	.byte	PATT
-	 .word	bgm_tozan_2_001
+	 .int	bgm_tozan_2_001
 bgm_tozan_2_007:
 	.byte		N03   , Ds2 , v112
 	.byte	W06
@@ -1063,7 +1063,7 @@ bgm_tozan_2_008:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_2_004
+	 .int	bgm_tozan_2_004
 	.byte		VOICE , 56
 	.byte	W96
 bgm_tozan_2_009:
@@ -1087,34 +1087,34 @@ bgm_tozan_2_009:
 	.byte		N06   , Gs1 
 	.byte	W84
 	.byte	PATT
-	 .word	bgm_tozan_2_000
+	 .int	bgm_tozan_2_000
 	.byte	PATT
-	 .word	bgm_tozan_2_001
+	 .int	bgm_tozan_2_001
 	.byte	PATT
-	 .word	bgm_tozan_2_002
+	 .int	bgm_tozan_2_002
 	.byte	PATT
-	 .word	bgm_tozan_2_003
+	 .int	bgm_tozan_2_003
 	.byte	PATT
-	 .word	bgm_tozan_2_004
+	 .int	bgm_tozan_2_004
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_2_005
+	 .int	bgm_tozan_2_005
 	.byte	PATT
-	 .word	bgm_tozan_2_006
+	 .int	bgm_tozan_2_006
 	.byte	PATT
-	 .word	bgm_tozan_2_000
+	 .int	bgm_tozan_2_000
 	.byte	PATT
-	 .word	bgm_tozan_2_001
+	 .int	bgm_tozan_2_001
 	.byte	PATT
-	 .word	bgm_tozan_2_007
+	 .int	bgm_tozan_2_007
 	.byte	PATT
-	 .word	bgm_tozan_2_008
+	 .int	bgm_tozan_2_008
 	.byte	PATT
-	 .word	bgm_tozan_2_004
+	 .int	bgm_tozan_2_004
 	.byte		VOICE , 56
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_2_009
+	 .int	bgm_tozan_2_009
 bgm_tozan_2_010:
 	.byte		N12   , Gs2 , v112
 	.byte	W12
@@ -1130,7 +1130,7 @@ bgm_tozan_2_010:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_2_010
+	 .int	bgm_tozan_2_010
 	.byte		N12   , Gs2 , v112
 	.byte	W12
 	.byte		        Gs1 
@@ -1207,7 +1207,7 @@ bgm_tozan_2_010:
 	.byte		N12   , Gs1 , v127
 	.byte	W84
 	.byte	GOTO
-	 .word	bgm_tozan_2_B1
+	 .int	bgm_tozan_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1760,7 +1760,7 @@ bgm_tozan_3_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_3_002
+	 .int	bgm_tozan_3_002
 bgm_tozan_3_005:
 	.byte		N96   , Ds3 , v112
 	.byte	W48
@@ -1952,7 +1952,7 @@ bgm_tozan_3_005:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_3_000
+	 .int	bgm_tozan_3_000
 	.byte		PAN   , c_v-32
 	.byte		VOL   , 54*bgm_tozan_mvl/mxv
 	.byte	W09
@@ -2019,9 +2019,9 @@ bgm_tozan_3_005:
 	.byte		N06   , Bn4 , v112
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_3_001
+	 .int	bgm_tozan_3_001
 	.byte	PATT
-	 .word	bgm_tozan_3_002
+	 .int	bgm_tozan_3_002
 	.byte		N96   , Ds3 , v112
 	.byte	W03
 	.byte		VOL   , 66*bgm_tozan_mvl/mxv
@@ -2152,7 +2152,7 @@ bgm_tozan_3_005:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_3_003
+	 .int	bgm_tozan_3_003
 	.byte		PAN   , c_v-32
 	.byte		VOL   , 54*bgm_tozan_mvl/mxv
 	.byte		N03   , Ds3 , v112
@@ -2223,11 +2223,11 @@ bgm_tozan_3_005:
 	.byte		N06   , Bn4 , v112
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_3_004
+	 .int	bgm_tozan_3_004
 	.byte	PATT
-	 .word	bgm_tozan_3_002
+	 .int	bgm_tozan_3_002
 	.byte	PATT
-	 .word	bgm_tozan_3_005
+	 .int	bgm_tozan_3_005
 	.byte		VOICE , 60
 	.byte		MOD   , 1
 	.byte		VOL   , 71*bgm_tozan_mvl/mxv
@@ -2351,7 +2351,7 @@ bgm_tozan_3_005:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_3_B1
+	 .int	bgm_tozan_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -2965,7 +2965,7 @@ bgm_tozan_4_005:
 	.byte		        Ds3 , v020
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_4_002
+	 .int	bgm_tozan_4_002
 bgm_tozan_4_006:
 	.byte		PAN   , c_v-5
 	.byte		TIE   , As3 , v104
@@ -3272,9 +3272,9 @@ bgm_tozan_4_007:
 	.byte		        Cs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_4_000
+	 .int	bgm_tozan_4_000
 	.byte	PATT
-	 .word	bgm_tozan_4_001
+	 .int	bgm_tozan_4_001
 	.byte		VOICE , 56
 	.byte		N06   , Dn4 , v112
 	.byte	W06
@@ -3358,7 +3358,7 @@ bgm_tozan_4_007:
 	.byte		N09   , Ds3 , v020
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_4_002
+	 .int	bgm_tozan_4_002
 	.byte		N96   , As3 , v112
 	.byte	W03
 	.byte		VOL   , 69*bgm_tozan_mvl/mxv
@@ -3423,11 +3423,11 @@ bgm_tozan_4_007:
 	.byte		        76*bgm_tozan_mvl/mxv
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tozan_4_003
+	 .int	bgm_tozan_4_003
 	.byte	PATT
-	 .word	bgm_tozan_4_004
+	 .int	bgm_tozan_4_004
 	.byte	PATT
-	 .word	bgm_tozan_4_005
+	 .int	bgm_tozan_4_005
 	.byte		VOICE , 60
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 73*bgm_tozan_mvl/mxv
@@ -3525,11 +3525,11 @@ bgm_tozan_4_007:
 	.byte		        Ds3 , v020
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_4_002
+	 .int	bgm_tozan_4_002
 	.byte	PATT
-	 .word	bgm_tozan_4_006
+	 .int	bgm_tozan_4_006
 	.byte	PATT
-	 .word	bgm_tozan_4_007
+	 .int	bgm_tozan_4_007
 	.byte		EOT   , As3 
 	.byte		MOD   , 1
 	.byte		PAN   , c_v+0
@@ -3649,7 +3649,7 @@ bgm_tozan_4_007:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_4_B1
+	 .int	bgm_tozan_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -3932,7 +3932,7 @@ bgm_tozan_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_5_B1
+	 .int	bgm_tozan_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -4128,7 +4128,7 @@ bgm_tozan_6_002:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_6_000
+	 .int	bgm_tozan_6_000
 bgm_tozan_6_003:
 	.byte		PAN   , c_v+0
 	.byte		N03   , Gs2 , v112
@@ -4307,30 +4307,30 @@ bgm_tozan_6_006:
 	.byte		N03   , Fn3 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tozan_6_000
+	 .int	bgm_tozan_6_000
 	.byte	PATT
-	 .word	bgm_tozan_6_001
+	 .int	bgm_tozan_6_001
 	.byte	PATT
-	 .word	bgm_tozan_6_004
+	 .int	bgm_tozan_6_004
 	.byte	PATT
-	 .word	bgm_tozan_6_005
+	 .int	bgm_tozan_6_005
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_6_002
+	 .int	bgm_tozan_6_002
 	.byte	PATT
-	 .word	bgm_tozan_6_000
+	 .int	bgm_tozan_6_000
 	.byte	PATT
-	 .word	bgm_tozan_6_003
+	 .int	bgm_tozan_6_003
 	.byte	PATT
-	 .word	bgm_tozan_6_004
+	 .int	bgm_tozan_6_004
 	.byte	PATT
-	 .word	bgm_tozan_6_005
+	 .int	bgm_tozan_6_005
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_6_006
+	 .int	bgm_tozan_6_006
 	.byte		N03   , Gs2 , v112
 	.byte	W06
 	.byte		N03   
@@ -4438,7 +4438,7 @@ bgm_tozan_6_006:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_6_B1
+	 .int	bgm_tozan_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -4740,7 +4740,7 @@ bgm_tozan_7_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 bgm_tozan_7_005:
 	.byte		PAN   , c_v-63
 	.byte		N18   , Ds1 , v112
@@ -4781,9 +4781,9 @@ bgm_tozan_7_005:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_7_001
+	 .int	bgm_tozan_7_001
 	.byte	PATT
-	 .word	bgm_tozan_7_000
+	 .int	bgm_tozan_7_000
 	.byte		PAN   , c_v-63
 	.byte		N18   , Gs1 , v112
 	.byte	W18
@@ -4814,13 +4814,13 @@ bgm_tozan_7_005:
 	.byte		        Cs2 , v036
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_7_002
+	 .int	bgm_tozan_7_002
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 	.byte	PATT
-	 .word	bgm_tozan_7_004
+	 .int	bgm_tozan_7_004
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 bgm_tozan_7_006:
 	.byte		PAN   , c_v-63
 	.byte		N18   , Ds1 , v112
@@ -5076,27 +5076,27 @@ bgm_tozan_7_006:
 	.byte		        Cs2 , v036
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_7_000
+	 .int	bgm_tozan_7_000
 	.byte	PATT
-	 .word	bgm_tozan_7_001
+	 .int	bgm_tozan_7_001
 	.byte	PATT
-	 .word	bgm_tozan_7_002
+	 .int	bgm_tozan_7_002
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 	.byte	PATT
-	 .word	bgm_tozan_7_004
+	 .int	bgm_tozan_7_004
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 	.byte	PATT
-	 .word	bgm_tozan_7_005
+	 .int	bgm_tozan_7_005
 	.byte	PATT
-	 .word	bgm_tozan_7_001
+	 .int	bgm_tozan_7_001
 	.byte	PATT
-	 .word	bgm_tozan_7_000
+	 .int	bgm_tozan_7_000
 	.byte	PATT
-	 .word	bgm_tozan_7_001
+	 .int	bgm_tozan_7_001
 	.byte	PATT
-	 .word	bgm_tozan_7_002
+	 .int	bgm_tozan_7_002
 	.byte		PAN   , c_v-63
 	.byte		N18   , Ds1 , v112
 	.byte	W18
@@ -5127,11 +5127,11 @@ bgm_tozan_7_006:
 	.byte		        Gn1 , v036
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_7_004
+	 .int	bgm_tozan_7_004
 	.byte	PATT
-	 .word	bgm_tozan_7_003
+	 .int	bgm_tozan_7_003
 	.byte	PATT
-	 .word	bgm_tozan_7_006
+	 .int	bgm_tozan_7_006
 	.byte		VOICE , 88
 	.byte		PAN   , c_v+0
 	.byte		N12   , Gs2 , v112
@@ -5251,7 +5251,7 @@ bgm_tozan_7_006:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_7_B1
+	 .int	bgm_tozan_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -5492,9 +5492,9 @@ bgm_tozan_8_005:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_8_000
+	 .int	bgm_tozan_8_000
 	.byte	PATT
-	 .word	bgm_tozan_8_001
+	 .int	bgm_tozan_8_001
 	.byte		N06   , En1 , v120
 	.byte	W06
 	.byte		        En1 , v112
@@ -5516,11 +5516,11 @@ bgm_tozan_8_005:
 	.byte		        Dn1 , v096
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_8_002
+	 .int	bgm_tozan_8_002
 	.byte	PATT
-	 .word	bgm_tozan_8_001
+	 .int	bgm_tozan_8_001
 	.byte	PATT
-	 .word	bgm_tozan_8_004
+	 .int	bgm_tozan_8_004
 	.byte	W48
 	.byte		N03   , Fs1 , v112
 	.byte	W06
@@ -5727,9 +5727,9 @@ bgm_tozan_8_005:
 	.byte		N12   , As1 , v064
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_8_000
+	 .int	bgm_tozan_8_000
 	.byte	PATT
-	 .word	bgm_tozan_8_001
+	 .int	bgm_tozan_8_001
 	.byte		N06   , En1 , v112
 	.byte	W06
 	.byte		N06   
@@ -5751,11 +5751,11 @@ bgm_tozan_8_005:
 	.byte		        Dn1 , v096
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_8_002
+	 .int	bgm_tozan_8_002
 	.byte	PATT
-	 .word	bgm_tozan_8_003
+	 .int	bgm_tozan_8_003
 	.byte	PATT
-	 .word	bgm_tozan_8_004
+	 .int	bgm_tozan_8_004
 	.byte		N48   , An2 , v112
 	.byte	W48
 	.byte		N03   , Fs1 
@@ -5775,7 +5775,7 @@ bgm_tozan_8_005:
 	.byte		        En1 , v112
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_8_005
+	 .int	bgm_tozan_8_005
 	.byte		N06   , Dn1 , v120
 	.byte	W06
 	.byte		        Dn1 , v076
@@ -5799,7 +5799,7 @@ bgm_tozan_8_005:
 	.byte		        En1 , v084
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tozan_8_001
+	 .int	bgm_tozan_8_001
 	.byte		N06   , En1 , v120
 	.byte	W06
 	.byte		        En1 , v112
@@ -5821,11 +5821,11 @@ bgm_tozan_8_005:
 	.byte		        Dn1 , v096
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tozan_8_002
+	 .int	bgm_tozan_8_002
 	.byte	PATT
-	 .word	bgm_tozan_8_001
+	 .int	bgm_tozan_8_001
 	.byte	PATT
-	 .word	bgm_tozan_8_004
+	 .int	bgm_tozan_8_004
 	.byte	W48
 	.byte		N03   , Fs1 , v112
 	.byte	W06
@@ -6102,7 +6102,7 @@ bgm_tozan_8_005:
 	.byte		N03   , En1 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_tozan_8_B1
+	 .int	bgm_tozan_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -6233,14 +6233,14 @@ bgm_tozan_9_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tozan_9_000
+	 .int	bgm_tozan_9_000
 	.byte	PATT
-	 .word	bgm_tozan_9_001
+	 .int	bgm_tozan_9_001
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_9_002
+	 .int	bgm_tozan_9_002
 	.byte	PATT
-	 .word	bgm_tozan_9_003
+	 .int	bgm_tozan_9_003
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -6330,25 +6330,25 @@ bgm_tozan_9_004:
 	.byte		N03   , Dn3 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tozan_9_001
+	 .int	bgm_tozan_9_001
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_9_002
+	 .int	bgm_tozan_9_002
 	.byte	PATT
-	 .word	bgm_tozan_9_003
+	 .int	bgm_tozan_9_003
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_9_004
+	 .int	bgm_tozan_9_004
 	.byte	PATT
-	 .word	bgm_tozan_9_000
+	 .int	bgm_tozan_9_000
 	.byte	PATT
-	 .word	bgm_tozan_9_001
+	 .int	bgm_tozan_9_001
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tozan_9_002
+	 .int	bgm_tozan_9_002
 	.byte	PATT
-	 .word	bgm_tozan_9_003
+	 .int	bgm_tozan_9_003
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -6361,7 +6361,7 @@ bgm_tozan_9_004:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tozan_9_B1
+	 .int	bgm_tozan_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -6373,16 +6373,16 @@ bgm_tozan:
 	.byte	bgm_tozan_pri	@ Priority
 	.byte	bgm_tozan_rev	@ Reverb.
 
-	.word	bgm_tozan_grp
+	.int	bgm_tozan_grp
 
-	.word	bgm_tozan_1
-	.word	bgm_tozan_2
-	.word	bgm_tozan_3
-	.word	bgm_tozan_4
-	.word	bgm_tozan_5
-	.word	bgm_tozan_6
-	.word	bgm_tozan_7
-	.word	bgm_tozan_8
-	.word	bgm_tozan_9
+	.int	bgm_tozan_1
+	.int	bgm_tozan_2
+	.int	bgm_tozan_3
+	.int	bgm_tozan_4
+	.int	bgm_tozan_5
+	.int	bgm_tozan_6
+	.int	bgm_tozan_7
+	.int	bgm_tozan_8
+	.int	bgm_tozan_9
 
 	.end

@@ -14,7 +14,7 @@ gSpriteAnim_83930D8:: @ 83930D8
 
 	.align 2
 gSpriteAnimTable_83930F0:: @ 83930F0
-	.4byte gSpriteAnim_83930D8
+	.int gSpriteAnim_83930D8
 
 	.align 2
 gBattleAnimSpriteTemplate_83930F4:: @ 83930F4

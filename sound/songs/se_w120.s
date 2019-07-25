@@ -67,8 +67,8 @@ se_w120:
 	.byte	se_w120_pri	@ Priority
 	.byte	se_w120_rev	@ Reverb.
 
-	.word	se_w120_grp
+	.int	se_w120_grp
 
-	.word	se_w120_1
+	.int	se_w120_1
 
 	.end

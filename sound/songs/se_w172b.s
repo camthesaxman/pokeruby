@@ -91,9 +91,9 @@ se_w172b:
 	.byte	se_w172b_pri	@ Priority
 	.byte	se_w172b_rev	@ Reverb.
 
-	.word	se_w172b_grp
+	.int	se_w172b_grp
 
-	.word	se_w172b_1
-	.word	se_w172b_2
+	.int	se_w172b_1
+	.int	se_w172b_2
 
 	.end

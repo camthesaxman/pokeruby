@@ -103,9 +103,9 @@ se_tamago:
 	.byte	se_tamago_pri	@ Priority
 	.byte	se_tamago_rev	@ Reverb.
 
-	.word	se_tamago_grp
+	.int	se_tamago_grp
 
-	.word	se_tamago_1
-	.word	se_tamago_2
+	.int	se_tamago_1
+	.int	se_tamago_2
 
 	.end

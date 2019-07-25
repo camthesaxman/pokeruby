@@ -59,7 +59,7 @@ bgm_p_school_1_B1:
 	.byte		N18   , En3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_p_school_1_B1
+	 .int	bgm_p_school_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -374,7 +374,7 @@ bgm_p_school_2_B1:
 	.byte		N18   , En5 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_p_school_2_B1
+	 .int	bgm_p_school_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -423,7 +423,7 @@ bgm_p_school_3_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_3_000
+	 .int	bgm_p_school_3_000
 bgm_p_school_3_001:
 	.byte		N06   , En2 , v064
 	.byte	W12
@@ -479,13 +479,13 @@ bgm_p_school_3_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_3_000
+	 .int	bgm_p_school_3_000
 	.byte	PATT
-	 .word	bgm_p_school_3_001
+	 .int	bgm_p_school_3_001
 	.byte	PATT
-	 .word	bgm_p_school_3_002
+	 .int	bgm_p_school_3_002
 	.byte	PATT
-	 .word	bgm_p_school_3_003
+	 .int	bgm_p_school_3_003
 bgm_p_school_3_004:
 	.byte		N06   , Gn2 , v064
 	.byte	W12
@@ -557,11 +557,11 @@ bgm_p_school_3_006:
 	.byte		        An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_p_school_3_004
+	 .int	bgm_p_school_3_004
 	.byte	PATT
-	 .word	bgm_p_school_3_005
+	 .int	bgm_p_school_3_005
 	.byte	PATT
-	 .word	bgm_p_school_3_006
+	 .int	bgm_p_school_3_006
 	.byte		N06   , An2 , v064
 	.byte	W24
 	.byte		        En2 
@@ -573,7 +573,7 @@ bgm_p_school_3_006:
 	.byte		        Cs2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_p_school_3_B1
+	 .int	bgm_p_school_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -606,7 +606,7 @@ bgm_p_school_4_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_4_000
+	 .int	bgm_p_school_4_000
 bgm_p_school_4_001:
 	.byte	W12
 	.byte		N06   , Gn3 , v064
@@ -619,7 +619,7 @@ bgm_p_school_4_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_4_000
+	 .int	bgm_p_school_4_000
 bgm_p_school_4_002:
 	.byte	W12
 	.byte		N06   , Gn3 , v064
@@ -632,13 +632,13 @@ bgm_p_school_4_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_4_000
+	 .int	bgm_p_school_4_000
 	.byte	PATT
-	 .word	bgm_p_school_4_001
+	 .int	bgm_p_school_4_001
 	.byte	PATT
-	 .word	bgm_p_school_4_000
+	 .int	bgm_p_school_4_000
 	.byte	PATT
-	 .word	bgm_p_school_4_002
+	 .int	bgm_p_school_4_002
 bgm_p_school_4_003:
 	.byte	W12
 	.byte		N06   , Dn4 , v064
@@ -673,13 +673,13 @@ bgm_p_school_4_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_p_school_4_004
+	 .int	bgm_p_school_4_004
 	.byte	PATT
-	 .word	bgm_p_school_4_003
+	 .int	bgm_p_school_4_003
 	.byte	PATT
-	 .word	bgm_p_school_4_004
+	 .int	bgm_p_school_4_004
 	.byte	PATT
-	 .word	bgm_p_school_4_005
+	 .int	bgm_p_school_4_005
 	.byte	W12
 	.byte		N06   , Cs4 , v064
 	.byte	W24
@@ -690,7 +690,7 @@ bgm_p_school_4_005:
 	.byte		N18   , An3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_p_school_4_B1
+	 .int	bgm_p_school_4_B1
 	.byte	FINE
 
 @******************************************************@
@@ -702,11 +702,11 @@ bgm_p_school:
 	.byte	bgm_p_school_pri	@ Priority
 	.byte	bgm_p_school_rev	@ Reverb.
 
-	.word	bgm_p_school_grp
+	.int	bgm_p_school_grp
 
-	.word	bgm_p_school_1
-	.word	bgm_p_school_2
-	.word	bgm_p_school_3
-	.word	bgm_p_school_4
+	.int	bgm_p_school_1
+	.int	bgm_p_school_2
+	.int	bgm_p_school_3
+	.int	bgm_p_school_4
 
 	.end

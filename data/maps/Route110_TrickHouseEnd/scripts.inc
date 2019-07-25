@@ -18,7 +18,7 @@ Route110_TrickHouseEnd_MapScript1_161957:: @ 8161957
 
 Route110_TrickHouseEnd_MapScript2_161965:: @ 8161965
 	map_script_2 VAR_TEMP_2, 0, Route110_TrickHouseEnd_EventScript_16196F
-	.2byte 0
+	.short 0
 
 Route110_TrickHouseEnd_EventScript_16196F:: @ 816196F
 	addobject 1
@@ -28,7 +28,7 @@ Route110_TrickHouseEnd_EventScript_16196F:: @ 816196F
 
 Route110_TrickHouseEnd_MapScript2_16197C:: @ 816197C
 	map_script_2 VAR_TEMP_1, 0, Route110_TrickHouseEnd_EventScript_161986
-	.2byte 0
+	.short 0
 
 Route110_TrickHouseEnd_EventScript_161986:: @ 8161986
 	setvar VAR_TEMP_1, 1

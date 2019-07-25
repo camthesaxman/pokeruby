@@ -364,7 +364,7 @@ bgm_machi_s4_1_B1:
 	.byte		MOD   , 0
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machi_s4_1_B1
+	 .int	bgm_machi_s4_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -642,7 +642,7 @@ bgm_machi_s4_2_B1:
 	.byte		        24*bgm_machi_s4_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_machi_s4_2_B1
+	 .int	bgm_machi_s4_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -775,7 +775,7 @@ bgm_machi_s4_3_000:
 	.byte	W24
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machi_s4_3_000
+	 .int	bgm_machi_s4_3_000
 	.byte		VOL   , 80*bgm_machi_s4_mvl/mxv
 	.byte		N24   , As1 , v127
 	.byte	W12
@@ -1011,7 +1011,7 @@ bgm_machi_s4_3_000:
 	.byte		        24*bgm_machi_s4_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_machi_s4_3_B1
+	 .int	bgm_machi_s4_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1052,7 +1052,7 @@ bgm_machi_s4_4_000:
 	.byte		        An3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_machi_s4_4_000
+	 .int	bgm_machi_s4_4_000
 	.byte	W24
 	.byte		N06   , As3 , v048
 	.byte	W48
@@ -1260,7 +1260,7 @@ bgm_machi_s4_4_000:
 	.byte		        15*bgm_machi_s4_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_machi_s4_4_B1
+	 .int	bgm_machi_s4_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1294,13 +1294,13 @@ bgm_machi_s4_5_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s4_5_001
+	 .int	bgm_machi_s4_5_001
 	.byte	PATT
-	 .word	bgm_machi_s4_5_001
+	 .int	bgm_machi_s4_5_001
 	.byte	PATT
-	 .word	bgm_machi_s4_5_000
+	 .int	bgm_machi_s4_5_000
 	.byte	PATT
-	 .word	bgm_machi_s4_5_001
+	 .int	bgm_machi_s4_5_001
 	.byte	W24
 	.byte		N06   , Gn3 , v048
 	.byte	W24
@@ -1531,7 +1531,7 @@ bgm_machi_s4_5_001:
 	.byte		VOL   , 15*bgm_machi_s4_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_machi_s4_5_B1
+	 .int	bgm_machi_s4_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1774,7 +1774,7 @@ bgm_machi_s4_6_B1:
 	.byte		        24*bgm_machi_s4_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_machi_s4_6_B1
+	 .int	bgm_machi_s4_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1833,7 +1833,7 @@ bgm_machi_s4_7_B1:
 	.byte		N36   , An3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_machi_s4_7_B1
+	 .int	bgm_machi_s4_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1845,14 +1845,14 @@ bgm_machi_s4:
 	.byte	bgm_machi_s4_pri	@ Priority
 	.byte	bgm_machi_s4_rev	@ Reverb.
 
-	.word	bgm_machi_s4_grp
+	.int	bgm_machi_s4_grp
 
-	.word	bgm_machi_s4_1
-	.word	bgm_machi_s4_2
-	.word	bgm_machi_s4_3
-	.word	bgm_machi_s4_4
-	.word	bgm_machi_s4_5
-	.word	bgm_machi_s4_6
-	.word	bgm_machi_s4_7
+	.int	bgm_machi_s4_1
+	.int	bgm_machi_s4_2
+	.int	bgm_machi_s4_3
+	.int	bgm_machi_s4_4
+	.int	bgm_machi_s4_5
+	.int	bgm_machi_s4_6
+	.int	bgm_machi_s4_7
 
 	.end

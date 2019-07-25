@@ -64,43 +64,43 @@ bgm_ajito_1_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	PATT
-	 .word	bgm_ajito_1_000
+	 .int	bgm_ajito_1_000
 	.byte	GOTO
-	 .word	bgm_ajito_1_B1
+	 .int	bgm_ajito_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -265,7 +265,7 @@ bgm_ajito_2_000:
 	.byte	W06
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ajito_2_000
+	 .int	bgm_ajito_2_000
 	.byte		N36   , Ds5 , v112
 	.byte	W36
 	.byte	W03
@@ -299,7 +299,7 @@ bgm_ajito_2_000:
 	.byte		        Ds5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ajito_2_B1
+	 .int	bgm_ajito_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -358,17 +358,17 @@ bgm_ajito_3_001:
 	.byte	W48
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		N12   , Cn1 , v088
@@ -418,7 +418,7 @@ bgm_ajito_3_002:
 	.byte		        Cn2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_ajito_3_002
+	 .int	bgm_ajito_3_002
 	.byte		N06   , Fn1 , v112
 	.byte	W12
 	.byte		N12   , Fn1 , v088
@@ -440,19 +440,19 @@ bgm_ajito_3_002:
 	.byte		        c_v+0
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	PATT
-	 .word	bgm_ajito_3_001
+	 .int	bgm_ajito_3_001
 	.byte	PATT
-	 .word	bgm_ajito_3_000
+	 .int	bgm_ajito_3_000
 	.byte	GOTO
-	 .word	bgm_ajito_3_B1
+	 .int	bgm_ajito_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -638,7 +638,7 @@ bgm_ajito_4_000:
 	.byte	W06
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ajito_4_000
+	 .int	bgm_ajito_4_000
 	.byte		N96   , Cn5 , v112
 	.byte	W96
 	.byte		N03   , Gn4 
@@ -670,7 +670,7 @@ bgm_ajito_4_000:
 	.byte		        Cn5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ajito_4_B1
+	 .int	bgm_ajito_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -782,7 +782,7 @@ bgm_ajito_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_ajito_5_B1
+	 .int	bgm_ajito_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -960,7 +960,7 @@ bgm_ajito_6_000:
 	.byte	W06
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ajito_6_000
+	 .int	bgm_ajito_6_000
 	.byte		TIE   , As2 , v112
 	.byte	W96
 	.byte	W48
@@ -978,7 +978,7 @@ bgm_ajito_6_000:
 	.byte		        Gn2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ajito_6_B1
+	 .int	bgm_ajito_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1119,7 +1119,7 @@ bgm_ajito_7_000:
 	.byte	W06
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ajito_7_000
+	 .int	bgm_ajito_7_000
 	.byte		TIE   , Ds3 , v112
 	.byte	W96
 	.byte	W48
@@ -1137,7 +1137,7 @@ bgm_ajito_7_000:
 	.byte		        Ds3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_ajito_7_B1
+	 .int	bgm_ajito_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1213,7 +1213,7 @@ bgm_ajito_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		        Cn1 , v064
@@ -1259,19 +1259,19 @@ bgm_ajito_8_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        Cn1 , v120
@@ -1295,19 +1295,19 @@ bgm_ajito_8_002:
 	.byte		        Cn1 , v064
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_002
+	 .int	bgm_ajito_8_002
 	.byte	PATT
-	 .word	bgm_ajito_8_001
+	 .int	bgm_ajito_8_001
 	.byte	PATT
-	 .word	bgm_ajito_8_000
+	 .int	bgm_ajito_8_000
 	.byte	GOTO
-	 .word	bgm_ajito_8_B1
+	 .int	bgm_ajito_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1460,9 +1460,9 @@ bgm_ajito_9_001:
 	.byte		N12   , Bn1 , v124
 	.byte	W60
 	.byte	PATT
-	 .word	bgm_ajito_9_001
+	 .int	bgm_ajito_9_001
 	.byte	PATT
-	 .word	bgm_ajito_9_000
+	 .int	bgm_ajito_9_000
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		N12   , Cn1 , v088
@@ -1504,7 +1504,7 @@ bgm_ajito_9_002:
 	.byte		        Cn2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_ajito_9_002
+	 .int	bgm_ajito_9_002
 	.byte		N06   , Fn1 , v112
 	.byte	W12
 	.byte		N12   , Fn1 , v088
@@ -1522,19 +1522,19 @@ bgm_ajito_9_002:
 	.byte		N12   , En2 , v124
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_ajito_9_000
+	 .int	bgm_ajito_9_000
 	.byte	PATT
-	 .word	bgm_ajito_9_001
+	 .int	bgm_ajito_9_001
 	.byte	PATT
-	 .word	bgm_ajito_9_000
+	 .int	bgm_ajito_9_000
 	.byte	PATT
-	 .word	bgm_ajito_9_001
+	 .int	bgm_ajito_9_001
 	.byte	PATT
-	 .word	bgm_ajito_9_000
+	 .int	bgm_ajito_9_000
 	.byte	PATT
-	 .word	bgm_ajito_9_001
+	 .int	bgm_ajito_9_001
 	.byte	GOTO
-	 .word	bgm_ajito_9_B1
+	 .int	bgm_ajito_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1546,16 +1546,16 @@ bgm_ajito:
 	.byte	bgm_ajito_pri	@ Priority
 	.byte	bgm_ajito_rev	@ Reverb.
 
-	.word	bgm_ajito_grp
+	.int	bgm_ajito_grp
 
-	.word	bgm_ajito_1
-	.word	bgm_ajito_2
-	.word	bgm_ajito_3
-	.word	bgm_ajito_4
-	.word	bgm_ajito_5
-	.word	bgm_ajito_6
-	.word	bgm_ajito_7
-	.word	bgm_ajito_8
-	.word	bgm_ajito_9
+	.int	bgm_ajito_1
+	.int	bgm_ajito_2
+	.int	bgm_ajito_3
+	.int	bgm_ajito_4
+	.int	bgm_ajito_5
+	.int	bgm_ajito_6
+	.int	bgm_ajito_7
+	.int	bgm_ajito_8
+	.int	bgm_ajito_9
 
 	.end

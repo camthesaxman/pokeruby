@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 #include "global.h"
 #include "gba/flash_internal.h"
 #include "gba/m4a_internal.h"
@@ -89,6 +92,7 @@ static void WaitForVBlank(void);
 
 void AgbMain()
 {
+    puts("Test0");
 #if MODERN && !defined(PORTABLE)
     // Modern compilers are liberal with the stack on entry to this function,
     // so RegisterRamReset may crash if it resets IWRAM.
@@ -111,16 +115,18 @@ void AgbMain()
     RegisterRamReset(RESET_ALL);
 #endif //MODERN
     REG_WAITCNT = WAITCNT_PREFETCH_ENABLE | WAITCNT_WS0_S_1 | WAITCNT_WS0_N_3;
+        
     InitKeys();
     InitIntrHandlers();
     m4aSoundInit();
-    RtcInit();
+    //RtcInit();
     CheckForFlashMemory();
     InitMainCallbacks();
     InitMapMusic();
-    SeedRngWithRtc();
+    //SeedRngWithRtc(); puts("Test9");
 
     gSoftResetDisabled = FALSE;
+    
 
 // In Fire Red, AGBPrintInit is called at this spot. For user convenience, I
 // opt to initialize the print area here. It is up to the user where they choose
@@ -225,7 +231,11 @@ void InitKeys(void)
 
 static void ReadKeys(void)
 {
+#ifdef PORTABLE
+    u16 keyInput = Platform_GetKeyInput();
+#else
     u16 keyInput = REG_KEYINPUT ^ KEYS_MASK;
+#endif
     gMain.newKeysRaw = keyInput & ~gMain.heldKeysRaw;
     gMain.newKeys = gMain.newKeysRaw;
     gMain.newAndRepeatedKeys = gMain.newKeysRaw;

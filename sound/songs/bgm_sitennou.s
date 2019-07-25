@@ -45,25 +45,25 @@ bgm_sitennou_1_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	PATT
-	 .word	bgm_sitennou_1_000
+	 .int	bgm_sitennou_1_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_sitennou_1_B1
+	 .int	bgm_sitennou_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -242,7 +242,7 @@ bgm_sitennou_2_000:
 	.byte		BEND  , c_v+0
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_sitennou_2_000
+	 .int	bgm_sitennou_2_000
 	.byte		BEND  , c_v-5
 	.byte		N12   , Dn1 , v112
 	.byte	W06
@@ -364,7 +364,7 @@ bgm_sitennou_2_001:
 	.byte		        Cn1 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_sitennou_2_001
+	 .int	bgm_sitennou_2_001
 	.byte		N06   , An0 , v112
 	.byte	W12
 	.byte		N03   
@@ -398,7 +398,7 @@ bgm_sitennou_2_001:
 	.byte		        c_v-59
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_sitennou_2_B1
+	 .int	bgm_sitennou_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -871,7 +871,7 @@ bgm_sitennou_3_B1:
 	.byte		        Dn4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_sitennou_3_B1
+	 .int	bgm_sitennou_3_B1
 	.byte		PAN   , c_v+6
 	.byte	FINE
 
@@ -897,25 +897,25 @@ bgm_sitennou_4_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	PATT
-	 .word	bgm_sitennou_4_000
+	 .int	bgm_sitennou_4_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_sitennou_4_B1
+	 .int	bgm_sitennou_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1107,7 +1107,7 @@ bgm_sitennou_5_000:
 	.byte		        Gs2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_sitennou_5_000
+	 .int	bgm_sitennou_5_000
 	.byte		N12   , An2 , v112
 	.byte	W12
 	.byte		N03   , Gs2 
@@ -1235,7 +1235,7 @@ bgm_sitennou_5_000:
 	.byte		        An3 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_sitennou_5_B1
+	 .int	bgm_sitennou_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1522,7 +1522,7 @@ bgm_sitennou_6_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_6_000
+	 .int	bgm_sitennou_6_000
 	.byte		PAN   , c_v+63
 	.byte		N06   , An4 , v112
 	.byte	W12
@@ -1559,7 +1559,7 @@ bgm_sitennou_6_000:
 	.byte		        Fs4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_sitennou_6_B1
+	 .int	bgm_sitennou_6_B1
 	.byte		PAN   , c_v+63
 	.byte	FINE
 
@@ -1619,9 +1619,9 @@ bgm_sitennou_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_7_000
+	 .int	bgm_sitennou_7_000
 	.byte	PATT
-	 .word	bgm_sitennou_7_001
+	 .int	bgm_sitennou_7_001
 bgm_sitennou_7_002:
 	.byte		N48   , An2 , v112
 	.byte	W18
@@ -1652,7 +1652,7 @@ bgm_sitennou_7_002:
 	.byte		        En1 , v112
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_sitennou_7_002
+	 .int	bgm_sitennou_7_002
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		N06   
@@ -1692,9 +1692,9 @@ bgm_sitennou_7_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_7_003
+	 .int	bgm_sitennou_7_003
 	.byte	PATT
-	 .word	bgm_sitennou_7_003
+	 .int	bgm_sitennou_7_003
 	.byte		N06   , En1 , v112
 	.byte	W12
 	.byte		N06   
@@ -1715,7 +1715,7 @@ bgm_sitennou_7_003:
 	.byte		N03   , En1 
 	.byte	W21
 	.byte	GOTO
-	 .word	bgm_sitennou_7_B1
+	 .int	bgm_sitennou_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2054,7 +2054,7 @@ bgm_sitennou_8_B1:
 	.byte		N03   
 	.byte	W36
 	.byte	GOTO
-	 .word	bgm_sitennou_8_B1
+	 .int	bgm_sitennou_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2259,7 +2259,7 @@ bgm_sitennou_9_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_sitennou_9_000
+	 .int	bgm_sitennou_9_000
 	.byte		N06   , An2 , v112
 	.byte	W06
 	.byte		N06   
@@ -2317,7 +2317,7 @@ bgm_sitennou_9_000:
 	.byte		N06   , An2 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_sitennou_9_B1
+	 .int	bgm_sitennou_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2329,16 +2329,16 @@ bgm_sitennou:
 	.byte	bgm_sitennou_pri	@ Priority
 	.byte	bgm_sitennou_rev	@ Reverb.
 
-	.word	bgm_sitennou_grp
+	.int	bgm_sitennou_grp
 
-	.word	bgm_sitennou_1
-	.word	bgm_sitennou_2
-	.word	bgm_sitennou_3
-	.word	bgm_sitennou_4
-	.word	bgm_sitennou_5
-	.word	bgm_sitennou_6
-	.word	bgm_sitennou_7
-	.word	bgm_sitennou_8
-	.word	bgm_sitennou_9
+	.int	bgm_sitennou_1
+	.int	bgm_sitennou_2
+	.int	bgm_sitennou_3
+	.int	bgm_sitennou_4
+	.int	bgm_sitennou_5
+	.int	bgm_sitennou_6
+	.int	bgm_sitennou_7
+	.int	bgm_sitennou_8
+	.int	bgm_sitennou_9
 
 	.end

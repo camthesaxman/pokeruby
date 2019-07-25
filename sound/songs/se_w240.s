@@ -109,8 +109,8 @@ se_w240:
 	.byte	se_w240_pri	@ Priority
 	.byte	se_w240_rev	@ Reverb.
 
-	.word	se_w240_grp
+	.int	se_w240_grp
 
-	.word	se_w240_1
+	.int	se_w240_1
 
 	.end

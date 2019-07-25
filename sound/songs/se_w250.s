@@ -118,8 +118,8 @@ se_w250:
 	.byte	se_w250_pri	@ Priority
 	.byte	se_w250_rev	@ Reverb.
 
-	.word	se_w250_grp
+	.int	se_w250_grp
 
-	.word	se_w250_1
+	.int	se_w250_1
 
 	.end

@@ -233,7 +233,7 @@ bgm_battle27_1_004:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_1_004
+	 .int	bgm_battle27_1_004
 	.byte		MOD   , 0
 	.byte		N36   , Dn4 , v092
 	.byte	W18
@@ -320,7 +320,7 @@ bgm_battle27_1_005:
 	.byte		        Bn3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_1_005
+	 .int	bgm_battle27_1_005
 	.byte		N60   , En4 , v092
 	.byte	W21
 	.byte		VOL   , 76*bgm_battle27_mvl/mxv
@@ -387,11 +387,11 @@ bgm_battle27_1_005:
 	.byte		N24   , Bn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_1_000
+	 .int	bgm_battle27_1_000
 	.byte	PATT
-	 .word	bgm_battle27_1_001
+	 .int	bgm_battle27_1_001
 	.byte	PATT
-	 .word	bgm_battle27_1_002
+	 .int	bgm_battle27_1_002
 	.byte		N12   , Gs4 , v092
 	.byte	W36
 	.byte		        Fn4 
@@ -401,9 +401,9 @@ bgm_battle27_1_005:
 	.byte		MOD   , 5
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_1_003
+	 .int	bgm_battle27_1_003
 	.byte	GOTO
-	 .word	bgm_battle27_1_B1
+	 .int	bgm_battle27_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -628,7 +628,7 @@ bgm_battle27_2_005:
 	.byte		        Cn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_2_005
+	 .int	bgm_battle27_2_005
 	.byte		MOD   , 0
 	.byte		N36   , Fn4 , v100
 	.byte	W18
@@ -823,17 +823,17 @@ bgm_battle27_2_005:
 	.byte		N24   , Fn3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_2_000
+	 .int	bgm_battle27_2_000
 	.byte	PATT
-	 .word	bgm_battle27_2_001
+	 .int	bgm_battle27_2_001
 	.byte	PATT
-	 .word	bgm_battle27_2_002
+	 .int	bgm_battle27_2_002
 	.byte	PATT
-	 .word	bgm_battle27_2_003
+	 .int	bgm_battle27_2_003
 	.byte	PATT
-	 .word	bgm_battle27_2_004
+	 .int	bgm_battle27_2_004
 	.byte	GOTO
-	 .word	bgm_battle27_2_B1
+	 .int	bgm_battle27_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -881,15 +881,15 @@ bgm_battle27_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_3_000
+	 .int	bgm_battle27_3_000
 	.byte	PATT
-	 .word	bgm_battle27_3_001
+	 .int	bgm_battle27_3_001
 	.byte	PATT
-	 .word	bgm_battle27_3_000
+	 .int	bgm_battle27_3_000
 	.byte	PATT
-	 .word	bgm_battle27_3_001
+	 .int	bgm_battle27_3_001
 	.byte	PATT
-	 .word	bgm_battle27_3_000
+	 .int	bgm_battle27_3_000
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -972,7 +972,7 @@ bgm_battle27_3_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Gn1 
@@ -988,9 +988,9 @@ bgm_battle27_3_004:
 	.byte		        Cn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_3_003
+	 .int	bgm_battle27_3_003
 	.byte	PATT
-	 .word	bgm_battle27_3_004
+	 .int	bgm_battle27_3_004
 	.byte		N12   , En1 , v108
 	.byte	W12
 	.byte		        Gn1 
@@ -1008,7 +1008,7 @@ bgm_battle27_3_004:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte		N12   , Dn1 , v108
 	.byte	W12
 	.byte		        Fn1 
@@ -1070,7 +1070,7 @@ bgm_battle27_3_005:
 	.byte		        En1 
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_battle27_3_005
+	 .int	bgm_battle27_3_005
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Gn0 
@@ -1138,7 +1138,7 @@ bgm_battle27_3_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_3_006
+	 .int	bgm_battle27_3_006
 bgm_battle27_3_007:
 	.byte		N12   , Gs1 , v108
 	.byte	W12
@@ -1158,9 +1158,9 @@ bgm_battle27_3_007:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_3_007
+	 .int	bgm_battle27_3_007
 	.byte	PATT
-	 .word	bgm_battle27_3_006
+	 .int	bgm_battle27_3_006
 	.byte		N12   , Gn1 , v108
 	.byte	W12
 	.byte		        Cn2 
@@ -1178,11 +1178,11 @@ bgm_battle27_3_007:
 	.byte		        Cn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Ds1 
@@ -1198,11 +1198,11 @@ bgm_battle27_3_007:
 	.byte		        Bn0 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Ds1 
@@ -1218,9 +1218,9 @@ bgm_battle27_3_007:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_3_002
+	 .int	bgm_battle27_3_002
 	.byte	GOTO
-	 .word	bgm_battle27_3_B1
+	 .int	bgm_battle27_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1298,7 +1298,7 @@ bgm_battle27_4_000:
 	.byte		        Cs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_4_000
+	 .int	bgm_battle27_4_000
 	.byte		N12   , Cs4 , v060
 	.byte	W36
 	.byte		        Ds4 
@@ -1337,7 +1337,7 @@ bgm_battle27_4_002:
 	.byte		N24   , Fn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_4_002
+	 .int	bgm_battle27_4_002
 	.byte		N12   , Gn2 , v060
 	.byte	W24
 	.byte		N36   
@@ -1456,7 +1456,7 @@ bgm_battle27_4_003:
 	.byte		        Bn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_4_003
+	 .int	bgm_battle27_4_003
 	.byte		N12   , Cn4 , v072
 	.byte	W12
 	.byte		        Gn3 
@@ -1472,9 +1472,9 @@ bgm_battle27_4_003:
 	.byte		        Bn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_4_001
+	 .int	bgm_battle27_4_001
 	.byte	GOTO
-	 .word	bgm_battle27_4_B1
+	 .int	bgm_battle27_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1633,7 +1633,7 @@ bgm_battle27_5_000:
 	.byte		        Fn3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_battle27_5_000
+	 .int	bgm_battle27_5_000
 	.byte		N48   , Gn3 , v064
 	.byte	W48
 	.byte		        Cn4 
@@ -1649,7 +1649,7 @@ bgm_battle27_5_000:
 	.byte		PAN   , c_v+0
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_battle27_5_B1
+	 .int	bgm_battle27_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1784,7 +1784,7 @@ bgm_battle27_6_B1:
 	.byte	W12
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_battle27_6_B1
+	 .int	bgm_battle27_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1807,50 +1807,50 @@ bgm_battle27_7_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 bgm_battle27_7_B1:
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	W24
 	.byte		N12   , Dn1 , v112
 	.byte	W24
@@ -1861,41 +1861,41 @@ bgm_battle27_7_B1:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	PATT
-	 .word	bgm_battle27_7_000
+	 .int	bgm_battle27_7_000
 	.byte	GOTO
-	 .word	bgm_battle27_7_B1
+	 .int	bgm_battle27_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1921,90 +1921,90 @@ bgm_battle27_8_000:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 bgm_battle27_8_B1:
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte		N12   , Cn2 , v112
 	.byte	W60
 	.byte		N12   
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	PATT
-	 .word	bgm_battle27_8_000
+	 .int	bgm_battle27_8_000
 	.byte	GOTO
-	 .word	bgm_battle27_8_B1
+	 .int	bgm_battle27_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2016,15 +2016,15 @@ bgm_battle27:
 	.byte	bgm_battle27_pri	@ Priority
 	.byte	bgm_battle27_rev	@ Reverb.
 
-	.word	bgm_battle27_grp
+	.int	bgm_battle27_grp
 
-	.word	bgm_battle27_1
-	.word	bgm_battle27_2
-	.word	bgm_battle27_3
-	.word	bgm_battle27_4
-	.word	bgm_battle27_5
-	.word	bgm_battle27_6
-	.word	bgm_battle27_7
-	.word	bgm_battle27_8
+	.int	bgm_battle27_1
+	.int	bgm_battle27_2
+	.int	bgm_battle27_3
+	.int	bgm_battle27_4
+	.int	bgm_battle27_5
+	.int	bgm_battle27_6
+	.int	bgm_battle27_7
+	.int	bgm_battle27_8
 
 	.end

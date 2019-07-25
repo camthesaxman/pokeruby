@@ -39,8 +39,8 @@ se_tk_kasya:
 	.byte	se_tk_kasya_pri	@ Priority
 	.byte	se_tk_kasya_rev	@ Reverb.
 
-	.word	se_tk_kasya_grp
+	.int	se_tk_kasya_grp
 
-	.word	se_tk_kasya_1
+	.int	se_tk_kasya_1
 
 	.end

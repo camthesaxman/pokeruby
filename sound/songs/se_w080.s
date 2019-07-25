@@ -197,9 +197,9 @@ se_w080:
 	.byte	se_w080_pri	@ Priority
 	.byte	se_w080_rev	@ Reverb.
 
-	.word	se_w080_grp
+	.int	se_w080_grp
 
-	.word	se_w080_1
-	.word	se_w080_2
+	.int	se_w080_1
+	.int	se_w080_2
 
 	.end

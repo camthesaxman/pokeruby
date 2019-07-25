@@ -5,7 +5,7 @@
 
 	.align 2
 gUnknown_083DFEC8:: @ 83DFEC8
-	.4byte gTileBuffer
+	.int gTileBuffer
 
 	.align 1
 gUnknown_083DFECC:: @ 83DFECC
@@ -83,11 +83,11 @@ gUnknown_083E0354:: @ 83E0354
 
 	.align 1
 gUnknown_083E039C:: @ 83E039C
-	.2byte 0x4280, 0x4282
+	.short 0x4280, 0x4282
 
 	.align 1
 gUnknown_083E03A0:: @ 83E03A0
-	.2byte 0x4000, 0x4000, 0x4281, 0x4283
+	.short 0x4000, 0x4000, 0x4281, 0x4283
 
 	.align 1
 gUnknown_083E03A8:: @ 83E03A8
@@ -210,53 +210,53 @@ gPokenavCityMap_Petalburg_0:: @ 83E0F6C
 
 	.align 2
 gUnknown_083E31B0:: @ 83E31B0
-	.4byte PCText_CheckMap
-	.4byte PCText_CheckPoke
-	.4byte PCText_CheckTrainer
-	.4byte PCText_CheckRibbons
-	.4byte PCText_PutAwayNav
-	.4byte PCText_NoRibbonWin
-	.4byte PCText_NoTrainers
+	.int PCText_CheckMap
+	.int PCText_CheckPoke
+	.int PCText_CheckTrainer
+	.int PCText_CheckRibbons
+	.int PCText_PutAwayNav
+	.int PCText_NoRibbonWin
+	.int PCText_NoTrainers
 
 	.align 2
 gUnknown_083E31CC:: @ 83E31CC
-	.4byte PCText_CheckParty
-	.4byte PCText_CheckPokeAll
-	.4byte PCText_ReturnToNav
+	.int PCText_CheckParty
+	.int PCText_CheckPokeAll
+	.int PCText_ReturnToNav
 
 	.align 2
 gUnknown_083E31D8:: @ 83E31D8
-	.4byte PCText_FindCool
-	.4byte PCText_FindBeauty
-	.4byte PCText_FindCute
-	.4byte PCText_FindSmart
-	.4byte PCText_FindTough
-	.4byte PCText_ReturnToCondition
+	.int PCText_FindCool
+	.int PCText_FindBeauty
+	.int PCText_FindCute
+	.int PCText_FindSmart
+	.int PCText_FindTough
+	.int PCText_ReturnToCondition
 
 	.align 2
 gPokenavCityMaps:: @ 83E31F0
-	.4byte gPokenavCityMap_Littleroot_0, NULL
-	.4byte gPokenavCityMap_Oldale_0, NULL
-	.4byte gPokenavCityMap_Dewford_0, NULL
-	.4byte gPokenavCityMap_Lavaridge_0, NULL
-	.4byte gPokenavCityMap_Fallarbor_0, NULL
-	.4byte gPokenavCityMap_Verdanturf_0, NULL
-	.4byte gPokenavCityMap_Pacifidlog_0, NULL
-	.4byte gPokenavCityMap_Petalburg_0, NULL
-	.4byte gPokenavCityMap_Slateport_0, gPokenavCityMap_Slateport_1
-	.4byte gPokenavCityMap_Mauville_0, gPokenavCityMap_Mauville_1
-	.4byte gPokenavCityMap_Rustboro_0, gPokenavCityMap_Rustboro_1
-	.4byte gPokenavCityMap_Fortree_0, NULL
-	.4byte gPokenavCityMap_Lilycove_0, gPokenavCityMap_Lilycove_1
-	.4byte gPokenavCityMap_Mossdeep_0, gPokenavCityMap_Mossdeep_1
-	.4byte gPokenavCityMap_Sootopolis_0, NULL
-	.4byte gPokenavCityMap_EverGrande_0, gPokenavCityMap_EverGrande_1
+	.int gPokenavCityMap_Littleroot_0, NULL
+	.int gPokenavCityMap_Oldale_0, NULL
+	.int gPokenavCityMap_Dewford_0, NULL
+	.int gPokenavCityMap_Lavaridge_0, NULL
+	.int gPokenavCityMap_Fallarbor_0, NULL
+	.int gPokenavCityMap_Verdanturf_0, NULL
+	.int gPokenavCityMap_Pacifidlog_0, NULL
+	.int gPokenavCityMap_Petalburg_0, NULL
+	.int gPokenavCityMap_Slateport_0, gPokenavCityMap_Slateport_1
+	.int gPokenavCityMap_Mauville_0, gPokenavCityMap_Mauville_1
+	.int gPokenavCityMap_Rustboro_0, gPokenavCityMap_Rustboro_1
+	.int gPokenavCityMap_Fortree_0, NULL
+	.int gPokenavCityMap_Lilycove_0, gPokenavCityMap_Lilycove_1
+	.int gPokenavCityMap_Mossdeep_0, gPokenavCityMap_Mossdeep_1
+	.int gPokenavCityMap_Sootopolis_0, NULL
+	.int gPokenavCityMap_EverGrande_0, gPokenavCityMap_EverGrande_1
 
 	.align 2
 gUnknown_083E3270:: @ 83E3270
-	.4byte sub_80F0A24
-	.4byte sub_80F0A24
-	.4byte sub_80F0A74
+	.int sub_80F0A24
+	.int sub_80F0A24
+	.int sub_80F0A74
 
 	.align 2
 gPokenavIconPalette::
@@ -320,28 +320,28 @@ Palette_3E42D8: @ 83E42D8
 
 	.align 1
 gUnknown_083E42F8:: @ 83E42F8
-	.2byte  0x408
-	.2byte  0x408
-	.2byte  0x507
-	.2byte  0x507
-	.2byte  0x606
-	.2byte  0x606
-	.2byte  0x805
-	.2byte  0x805
-	.2byte  0xA04
-	.2byte  0xA04
-	.2byte  0xC03
-	.2byte  0xC03
-	.2byte  0xE02
-	.2byte  0xE02
-	.2byte 0x1000
-	.2byte 0x1000
+	.short  0x408
+	.short  0x408
+	.short  0x507
+	.short  0x507
+	.short  0x606
+	.short  0x606
+	.short  0x805
+	.short  0x805
+	.short  0xA04
+	.short  0xA04
+	.short  0xC03
+	.short  0xC03
+	.short  0xE02
+	.short  0xE02
+	.short 0x1000
+	.short 0x1000
 
 	.align 2
 gOamData_83E4318:: @ 83E4318
-	.2byte 0x4000
-	.2byte 0x8000
-	.2byte 0x0400
+	.short 0x4000
+	.short 0x8000
+	.short 0x0400
 
 	.align 2
 gSpriteAnim_83E4320:: @ 83E4320
@@ -465,30 +465,30 @@ gSpriteAnim_83E43D8:: @ 83E43D8
 
 	.align 2
 gSpriteAnimTable_83E43E0:: @ 83E43E0
-	.4byte gSpriteAnim_83E4320
-	.4byte gSpriteAnim_83E4328
-	.4byte gSpriteAnim_83E4330
-	.4byte gSpriteAnim_83E4338
-	.4byte gSpriteAnim_83E4340
-	.4byte gSpriteAnim_83E4348
-	.4byte gSpriteAnim_83E4350
-	.4byte gSpriteAnim_83E4358
-	.4byte gSpriteAnim_83E4360
-	.4byte gSpriteAnim_83E4368
-	.4byte gSpriteAnim_83E4370
-	.4byte gSpriteAnim_83E4378
-	.4byte gSpriteAnim_83E4380
-	.4byte gSpriteAnim_83E4388
-	.4byte gSpriteAnim_83E4390
-	.4byte gSpriteAnim_83E4398
-	.4byte gSpriteAnim_83E43A0
-	.4byte gSpriteAnim_83E43A8
-	.4byte gSpriteAnim_83E43B0
-	.4byte gSpriteAnim_83E43B8
-	.4byte gSpriteAnim_83E43C0
-	.4byte gSpriteAnim_83E43C8
-	.4byte gSpriteAnim_83E43D0
-	.4byte gSpriteAnim_83E43D8
+	.int gSpriteAnim_83E4320
+	.int gSpriteAnim_83E4328
+	.int gSpriteAnim_83E4330
+	.int gSpriteAnim_83E4338
+	.int gSpriteAnim_83E4340
+	.int gSpriteAnim_83E4348
+	.int gSpriteAnim_83E4350
+	.int gSpriteAnim_83E4358
+	.int gSpriteAnim_83E4360
+	.int gSpriteAnim_83E4368
+	.int gSpriteAnim_83E4370
+	.int gSpriteAnim_83E4378
+	.int gSpriteAnim_83E4380
+	.int gSpriteAnim_83E4388
+	.int gSpriteAnim_83E4390
+	.int gSpriteAnim_83E4398
+	.int gSpriteAnim_83E43A0
+	.int gSpriteAnim_83E43A8
+	.int gSpriteAnim_83E43B0
+	.int gSpriteAnim_83E43B8
+	.int gSpriteAnim_83E43C0
+	.int gSpriteAnim_83E43C8
+	.int gSpriteAnim_83E43D0
+	.int gSpriteAnim_83E43D8
 
 	.align 2
 gSpriteAffineAnim_83E4440:: @ 83E4440
@@ -497,7 +497,7 @@ gSpriteAffineAnim_83E4440:: @ 83E4440
 
 	.align 2
 gSpriteAffineAnimTable_83E4450:: @ 83E4450
-	.4byte gSpriteAffineAnim_83E4440
+	.int gSpriteAffineAnim_83E4440
 
 	.align 2
 gSpriteTemplate_83E4454:: @ 83E4454
@@ -513,9 +513,9 @@ gSpritePalette_PokenavBlueLight:: @ 83E4474
 
 	.align 2
 gOamData_83E447C:: @ 83E447C
-	.2byte 0x4000
-	.2byte 0x8000
-	.2byte 0x0400
+	.short 0x4000
+	.short 0x8000
+	.short 0x0400
 
 	.align 2
 gSpriteTemplate_83E4484:: @ 83E4484
@@ -528,9 +528,9 @@ gUnknown_083E449C:: @ 83E449C
 
 	.align 2
 gOamData_83E44B4:: @ 83E44B4
-	.2byte 0x4000
-	.2byte 0xC000
-	.2byte 0x0400
+	.short 0x4000
+	.short 0xC000
+	.short 0x0400
 
 	.align 2
 gSpriteAnim_83E44BC:: @ 83E44BC
@@ -549,9 +549,9 @@ gSpriteAnim_83E44CC:: @ 83E44CC
 
 	.align 2
 gSpriteAnimTable_83E44D4:: @ 83E44D4
-	.4byte gSpriteAnim_83E44BC
-	.4byte gSpriteAnim_83E44C4
-	.4byte gSpriteAnim_83E44CC
+	.int gSpriteAnim_83E44BC
+	.int gSpriteAnim_83E44C4
+	.int gSpriteAnim_83E44CC
 
 	.align 2
 gSpriteTemplate_83E44E0:: @ 83E44E0
@@ -563,9 +563,9 @@ gSpriteTemplate_83E44F8:: @ 83E44F8
 
 	.align 2
 gOamData_83E4510:: @ 83E4510
-	.2byte 0x4000
-	.2byte 0x8000
-	.2byte 0x0400
+	.short 0x4000
+	.short 0x8000
+	.short 0x0400
 
 	.align 2
 gSpriteAnim_83E4518:: @ 83E4518
@@ -579,8 +579,8 @@ gSpriteAnim_83E4520:: @ 83E4520
 
 	.align 2
 gSpriteAnimTable_83E4528:: @ 83E4528
-	.4byte gSpriteAnim_83E4518
-	.4byte gSpriteAnim_83E4520
+	.int gSpriteAnim_83E4518
+	.int gSpriteAnim_83E4520
 
 	.align 2
 gSpriteTemplate_83E4530:: @ 83E4530
@@ -592,9 +592,9 @@ gSpriteTemplate_83E4548:: @ 83E4548
 
 	.align 2
 gOamData_83E4560:: @ 83E4560
-	.2byte 0x0000
-	.2byte 0xC000
-	.2byte 0x0400
+	.short 0x0000
+	.short 0xC000
+	.short 0x0400
 
 	.align 2
 gUnknown_083E4568:: @ 83E4568
@@ -620,9 +620,9 @@ gUnknown_083E45A8:: @ 83E45A8
 
 	.align 2
 gOamData_83E45B0:: @ 83E45B0
-	.2byte 0x8000
-	.2byte 0x0000
-	.2byte 0x0800
+	.short 0x8000
+	.short 0x0000
+	.short 0x0800
 
 	.align 2
 gSpriteTemplate_83E45B8:: @ 83E45B8
@@ -640,14 +640,14 @@ gSpriteAnim_83E45D8:: @ 83E45D8
 
 	.align 2
 gSpriteAnimTable_83E45E0:: @ 83E45E0
-	.4byte gSpriteAnim_83E45D0
-	.4byte gSpriteAnim_83E45D8
+	.int gSpriteAnim_83E45D0
+	.int gSpriteAnim_83E45D8
 
 	.align 2
 gOamData_83E45E8:: @ 83E45E8
-	.2byte 0x4000
-	.2byte 0x0000
-	.2byte 0x0800
+	.short 0x4000
+	.short 0x0000
+	.short 0x0800
 
 	.align 2
 gSpriteTemplate_83E45F0:: @ 83E45F0
@@ -655,9 +655,9 @@ gSpriteTemplate_83E45F0:: @ 83E45F0
 
 	.align 2
 gOamData_83E4608:: @ 83E4608
-	.2byte 0x0000
-	.2byte 0x4000
-	.2byte 0x0800
+	.short 0x0000
+	.short 0x4000
+	.short 0x0800
 
 	.align 2
 gSpriteAnim_83E4610:: @ 83E4610
@@ -671,8 +671,8 @@ gSpriteAnim_83E4618:: @ 83E4618
 
 	.align 2
 gSpriteAnimTable_83E4620:: @ 83E4620
-	.4byte gSpriteAnim_83E4610
-	.4byte gSpriteAnim_83E4618
+	.int gSpriteAnim_83E4610
+	.int gSpriteAnim_83E4618
 
 	.align 2
 gUnknown_083E4628:: @ 83E4628
@@ -697,44 +697,44 @@ gUnknown_083E4678:: @ 83E4678
 
 	.align 2
 gPokenavRibbonsIconGfx:: @ 83E4698
-	.2byte  0, 0
-	.2byte  1, 0
-	.2byte  2, 0
-	.2byte  3, 0
-	.2byte  4, 0
-	.2byte  1, 1
-	.2byte  2, 1
-	.2byte  3, 1
-	.2byte  4, 1
-	.2byte  1, 2
-	.2byte  2, 2
-	.2byte  3, 2
-	.2byte  4, 2
-	.2byte  1, 3
-	.2byte  2, 3
-	.2byte  3, 3
-	.2byte  4, 3
-	.2byte  1, 4
-	.2byte  2, 4
-	.2byte  3, 4
-	.2byte  4, 4
-	.2byte  5, 0
-	.2byte  6, 0
-	.2byte  7, 1
-	.2byte  8, 2
-	.2byte  9, 1
-	.2byte  9, 3
-	.2byte  9, 4
-	.2byte 10, 3
-	.2byte 10, 4
-	.2byte 11, 0
-	.2byte 11, 1
+	.short  0, 0
+	.short  1, 0
+	.short  2, 0
+	.short  3, 0
+	.short  4, 0
+	.short  1, 1
+	.short  2, 1
+	.short  3, 1
+	.short  4, 1
+	.short  1, 2
+	.short  2, 2
+	.short  3, 2
+	.short  4, 2
+	.short  1, 3
+	.short  2, 3
+	.short  3, 3
+	.short  4, 3
+	.short  1, 4
+	.short  2, 4
+	.short  3, 4
+	.short  4, 4
+	.short  5, 0
+	.short  6, 0
+	.short  7, 1
+	.short  8, 2
+	.short  9, 1
+	.short  9, 3
+	.short  9, 4
+	.short 10, 3
+	.short 10, 4
+	.short 11, 0
+	.short 11, 1
 
 	.align 2
 gOamData_83E4718:: @ 83E4718
-	.2byte 0x0100
-	.2byte 0x8000
-	.2byte 0x0000
+	.short 0x0100
+	.short 0x8000
+	.short 0x0000
 
 	.align 2
 gSpriteAffineAnim_83E4720:: @ 83E4720
@@ -755,9 +755,9 @@ gSpriteAffineAnim_83E4748:: @ 83E4748
 
 	.align 2
 gSpriteAffineAnimTable_83E4760:: @ 83E4760
-	.4byte gSpriteAffineAnim_83E4720
-	.4byte gSpriteAffineAnim_83E4730
-	.4byte gSpriteAffineAnim_83E4748
+	.int gSpriteAffineAnim_83E4720
+	.int gSpriteAffineAnim_83E4730
+	.int gSpriteAffineAnim_83E4748
 
 	.align 2
 gSpriteTemplate_83E476C:: @ 83E476C
@@ -773,22 +773,22 @@ gUnknown_083E478C:: @ 83E478C
 
 	.align 2
 gUnknown_083E4794:: @ 83E4794
-	.2byte   0, -35
-	.2byte  20, -28
-	.2byte  33, -10
-	.2byte  33,  10
-	.2byte  20,  28
-	.2byte   0,  35
-	.2byte -20,  28
-	.2byte -33,  10
-	.2byte -33, -10
-	.2byte -20, -28
+	.short   0, -35
+	.short  20, -28
+	.short  33, -10
+	.short  33,  10
+	.short  20,  28
+	.short   0,  35
+	.short -20,  28
+	.short -33,  10
+	.short -33, -10
+	.short -20, -28
 
 	.align 2
 gOamData_83E47BC:: @ 83E47BC
-	.2byte 0x0000
-	.2byte 0x4000
-	.2byte 0x0000
+	.short 0x0000
+	.short 0x4000
+	.short 0x0000
 
 	.align 2
 gSpriteAnim_83E47C4:: @ 83E47C4
@@ -803,15 +803,15 @@ gSpriteAnim_83E47C4:: @ 83E47C4
 
 	.align 2
 gSpriteAnimTable_83E47E4:: @ 83E47E4
-	.4byte gSpriteAnim_83E47C4
-	.4byte gSpriteAnim_83E47C4 + 0x8
-	.4byte gSpriteAnim_83E47C4 + 0x10
-	.4byte gSpriteAnim_83E47C4 + 0x18
+	.int gSpriteAnim_83E47C4
+	.int gSpriteAnim_83E47C4 + 0x8
+	.int gSpriteAnim_83E47C4 + 0x10
+	.int gSpriteAnim_83E47C4 + 0x18
 
 	@ unused?
-	.4byte gSpriteAnim_83E47C4 + 0x20
-	.4byte gSpriteAnim_83E47C4 + 0x28
-	.4byte gSpriteAnim_83E47C4 + 0x30
+	.int gSpriteAnim_83E47C4 + 0x20
+	.int gSpriteAnim_83E47C4 + 0x28
+	.int gSpriteAnim_83E47C4 + 0x30
 
 	.align 2
 gSpriteTemplate_83E4800:: @ 83E4800
@@ -835,13 +835,13 @@ gSpriteAnim_83E4820:: @ 83E4820
 
 	.align 2
 gSpriteAnimTable_83E4844:: @ 83E4844
-	.4byte gSpriteAnim_83E4820
+	.int gSpriteAnim_83E4820
 
 	.align 2
 gOamData_83E4848:: @ 83E4848
-	.2byte 0x0000
-	.2byte 0x8000
-	.2byte 0x0000
+	.short 0x0000
+	.short 0x8000
+	.short 0x0000
 
 	.align 2
 gSpriteTemplate_83E4850:: @ 83E4850
@@ -853,9 +853,9 @@ gUnknown_083E4868:: @ 83E4868
 
 	.align 2
 gOamData_83E4870:: @ 83E4870
-	.2byte 0x4000
-	.2byte 0x8000
-	.2byte 0x0C00
+	.short 0x4000
+	.short 0x8000
+	.short 0x0C00
 
 	.align 2
 gSpriteTemplate_83E4878:: @ 83E4878
@@ -1121,26 +1121,26 @@ gUnknown_083E4890:: @ 83E4890
 
 	.align 2
 gUnknown_083E4990:: @ 83E4990
-	.4byte REG_WIN0H
-	.4byte ((DMA_ENABLE | DMA_START_HBLANK | DMA_32BIT | DMA_REPEAT | DMA_DEST_RELOAD) << 16) | 1
-	.4byte 1
+	.int REG_WIN0H
+	.int ((DMA_ENABLE | DMA_START_HBLANK | DMA_32BIT | DMA_REPEAT | DMA_DEST_RELOAD) << 16) | 1
+	.int 1
 
 	.align 1
 gUnknown_083E499C:: @ 83E499C
-	.2byte 0x43
-	.2byte 0x32
-	.2byte 0x33
-	.2byte 0x34
-	.2byte 0x35
-	.2byte 0x36
-	.2byte 0x44
-	.2byte 0x45
-	.2byte 0x46
-	.2byte 0x47
-	.2byte 0x48
-	.2byte 0x49
-	.2byte 0x4A
-	.2byte 0x4B
-	.2byte 0x4C
-	.2byte 0x4D
-	.2byte 0x4E
+	.short 0x43
+	.short 0x32
+	.short 0x33
+	.short 0x34
+	.short 0x35
+	.short 0x36
+	.short 0x44
+	.short 0x45
+	.short 0x46
+	.short 0x47
+	.short 0x48
+	.short 0x49
+	.short 0x4A
+	.short 0x4B
+	.short 0x4C
+	.short 0x4D
+	.short 0x4E

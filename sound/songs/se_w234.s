@@ -127,9 +127,9 @@ se_w234:
 	.byte	se_w234_pri	@ Priority
 	.byte	se_w234_rev	@ Reverb.
 
-	.word	se_w234_grp
+	.int	se_w234_grp
 
-	.word	se_w234_1
-	.word	se_w234_2
+	.int	se_w234_1
+	.int	se_w234_2
 
 	.end

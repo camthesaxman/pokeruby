@@ -55,7 +55,7 @@ LittlerootTown_MaysHouse_1F_MapScript2_15290E:: @ 815290E
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_152971
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_2, 1, LittlerootTown_MaysHouse_1F_EventScript_152982
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE, 3, LittlerootTown_MaysHouse_1F_EventScript_1B6CDE
-	.2byte 0
+	.short 0
 
 LittlerootTown_MaysHouse_1F_EventScript_152938:: @ 8152938
 	lockall

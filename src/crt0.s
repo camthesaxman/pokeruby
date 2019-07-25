@@ -50,7 +50,7 @@ RomHeaderReserved2:
 	.space 2
 
 @ 80000C0
-	.word 0
+	.int 0
 
 	.global GPIOPortData
 GPIOPortData: @ 80000C4
@@ -168,8 +168,8 @@ Init:
 	b Init
 
 	.align 2, 0
-sp_sys: .word IWRAM_END - 0x1a0
-sp_irq: .word IWRAM_END - 0x60
+sp_sys: .int IWRAM_END - 0x1a0
+sp_irq: .int IWRAM_END - 0x60
 
 	.arm
 	.align 2, 0

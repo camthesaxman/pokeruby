@@ -82,8 +82,8 @@ se_w185:
 	.byte	se_w185_pri	@ Priority
 	.byte	se_w185_rev	@ Reverb.
 
-	.word	se_w185_grp
+	.int	se_w185_grp
 
-	.word	se_w185_1
+	.int	se_w185_1
 
 	.end

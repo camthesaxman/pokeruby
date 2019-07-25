@@ -513,7 +513,7 @@ bgm_battle20_1_000:
 	.byte		        Gn2 
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_battle20_1_000
+	 .int	bgm_battle20_1_000
 	.byte		VOICE , 17
 	.byte		VOL   , 80*bgm_battle20_mvl/mxv
 	.byte		PAN   , c_v+15
@@ -560,7 +560,7 @@ bgm_battle20_1_000:
 	.byte		        Cs3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_battle20_1_B1
+	 .int	bgm_battle20_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -886,7 +886,7 @@ bgm_battle20_2_000:
 	.byte		N60   , As4 
 	.byte	W60
 	.byte	PATT
-	 .word	bgm_battle20_2_000
+	 .int	bgm_battle20_2_000
 	.byte		N36   , En4 , v100
 	.byte	W36
 	.byte		N60   , Cn4 
@@ -965,7 +965,7 @@ bgm_battle20_2_001:
 	.byte		N96   , Cn3 
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_battle20_2_001
+	 .int	bgm_battle20_2_001
 	.byte		N96   , As2 , v104
 	.byte	W96
 	.byte		        Dn3 
@@ -1159,7 +1159,7 @@ bgm_battle20_2_001:
 	.byte		N24   , As4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_battle20_2_B1
+	 .int	bgm_battle20_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1216,17 +1216,17 @@ bgm_battle20_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 bgm_battle20_3_B1:
 bgm_battle20_3_002:
 	.byte		N12   , Cn1 , v108
@@ -1297,7 +1297,7 @@ bgm_battle20_3_003:
 	.byte		        Fn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Gn1 
@@ -1315,13 +1315,13 @@ bgm_battle20_3_003:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_3_003
+	 .int	bgm_battle20_3_003
 	.byte	PATT
-	 .word	bgm_battle20_3_003
+	 .int	bgm_battle20_3_003
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 bgm_battle20_3_004:
 	.byte		N12   , As0 , v108
 	.byte	W12
@@ -1341,19 +1341,19 @@ bgm_battle20_3_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 bgm_battle20_3_005:
 	.byte		N12   , Cn1 , v108
 	.byte	W12
@@ -1391,11 +1391,11 @@ bgm_battle20_3_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_3_006
+	 .int	bgm_battle20_3_006
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        As1 
@@ -1413,45 +1413,45 @@ bgm_battle20_3_006:
 	.byte		        As1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_3_006
+	 .int	bgm_battle20_3_006
 	.byte	PATT
-	 .word	bgm_battle20_3_005
+	 .int	bgm_battle20_3_005
 	.byte	PATT
-	 .word	bgm_battle20_3_005
+	 .int	bgm_battle20_3_005
 	.byte	PATT
-	 .word	bgm_battle20_3_006
+	 .int	bgm_battle20_3_006
 	.byte	PATT
-	 .word	bgm_battle20_3_006
+	 .int	bgm_battle20_3_006
 	.byte	PATT
-	 .word	bgm_battle20_3_005
+	 .int	bgm_battle20_3_005
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_003
+	 .int	bgm_battle20_3_003
 	.byte	PATT
-	 .word	bgm_battle20_3_003
+	 .int	bgm_battle20_3_003
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 	.byte	PATT
-	 .word	bgm_battle20_3_004
+	 .int	bgm_battle20_3_004
 bgm_battle20_3_007:
 	.byte		N12   , Cn1 , v108
 	.byte	W12
@@ -1471,9 +1471,9 @@ bgm_battle20_3_007:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_3_007
+	 .int	bgm_battle20_3_007
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Gn1 
@@ -1509,33 +1509,33 @@ bgm_battle20_3_008:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_3_008
+	 .int	bgm_battle20_3_008
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_008
+	 .int	bgm_battle20_3_008
 	.byte	PATT
-	 .word	bgm_battle20_3_008
+	 .int	bgm_battle20_3_008
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_002
+	 .int	bgm_battle20_3_002
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte	PATT
-	 .word	bgm_battle20_3_001
+	 .int	bgm_battle20_3_001
 	.byte	PATT
-	 .word	bgm_battle20_3_000
+	 .int	bgm_battle20_3_000
 	.byte		N12   , Cn1 , v108
 	.byte	W12
 	.byte		        Fs1 
@@ -1553,7 +1553,7 @@ bgm_battle20_3_008:
 	.byte		        Cs1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_battle20_3_B1
+	 .int	bgm_battle20_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1610,7 +1610,7 @@ bgm_battle20_4_000:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_4_000
+	 .int	bgm_battle20_4_000
 	.byte		N12   , Gn3 , v052
 	.byte	W12
 	.byte		        Cs3 
@@ -1705,15 +1705,15 @@ bgm_battle20_4_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_4_001
+	 .int	bgm_battle20_4_001
 	.byte	PATT
-	 .word	bgm_battle20_4_001
+	 .int	bgm_battle20_4_001
 	.byte	PATT
-	 .word	bgm_battle20_4_002
+	 .int	bgm_battle20_4_002
 	.byte	PATT
-	 .word	bgm_battle20_4_003
+	 .int	bgm_battle20_4_003
 	.byte	PATT
-	 .word	bgm_battle20_4_001
+	 .int	bgm_battle20_4_001
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1796,9 +1796,9 @@ bgm_battle20_4_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_4_005
+	 .int	bgm_battle20_4_005
 	.byte	PATT
-	 .word	bgm_battle20_4_004
+	 .int	bgm_battle20_4_004
 	.byte		N12   , Fn4 , v032
 	.byte	W12
 	.byte		        Cn4 
@@ -1916,7 +1916,7 @@ bgm_battle20_4_005:
 	.byte		N24   , Fn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_battle20_4_B1
+	 .int	bgm_battle20_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2148,15 +2148,15 @@ bgm_battle20_5_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_5_000
+	 .int	bgm_battle20_5_000
 	.byte	PATT
-	 .word	bgm_battle20_5_000
+	 .int	bgm_battle20_5_000
 	.byte	PATT
-	 .word	bgm_battle20_5_001
+	 .int	bgm_battle20_5_001
 	.byte	PATT
-	 .word	bgm_battle20_5_002
+	 .int	bgm_battle20_5_002
 	.byte	PATT
-	 .word	bgm_battle20_5_000
+	 .int	bgm_battle20_5_000
 	.byte		VOICE , 4
 	.byte		N36   , Cn4 , v072
 	.byte	W36
@@ -2401,9 +2401,9 @@ bgm_battle20_5_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_5_004
+	 .int	bgm_battle20_5_004
 	.byte	PATT
-	 .word	bgm_battle20_5_003
+	 .int	bgm_battle20_5_003
 	.byte	W06
 	.byte		N12   , Fn4 , v020
 	.byte	W12
@@ -2487,7 +2487,7 @@ bgm_battle20_5_004:
 	.byte		N24   , As3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_battle20_5_B1
+	 .int	bgm_battle20_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2624,7 +2624,7 @@ bgm_battle20_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_battle20_6_B1
+	 .int	bgm_battle20_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2646,24 +2646,24 @@ bgm_battle20_7_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 bgm_battle20_7_B1:
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	W24
 	.byte		N12   , Dn1 , v112
 	.byte	W72
@@ -2671,9 +2671,9 @@ bgm_battle20_7_B1:
 	.byte		N12   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	W24
 	.byte		N12   , Dn1 , v112
 	.byte	W72
@@ -2681,7 +2681,7 @@ bgm_battle20_7_B1:
 	.byte		N12   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 bgm_battle20_7_001:
 	.byte	W24
 	.byte		N12   , Dn1 , v112
@@ -2692,43 +2692,43 @@ bgm_battle20_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_001
+	 .int	bgm_battle20_7_001
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 bgm_battle20_7_002:
 	.byte	W24
 	.byte		N12   , Dn1 , v112
@@ -2741,13 +2741,13 @@ bgm_battle20_7_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_001
+	 .int	bgm_battle20_7_001
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -2763,11 +2763,11 @@ bgm_battle20_7_002:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	W24
 	.byte		N48   , An2 , v100
 	.byte	W48
@@ -2776,39 +2776,39 @@ bgm_battle20_7_002:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_001
+	 .int	bgm_battle20_7_001
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_000
+	 .int	bgm_battle20_7_000
 	.byte	PATT
-	 .word	bgm_battle20_7_002
+	 .int	bgm_battle20_7_002
 	.byte	GOTO
-	 .word	bgm_battle20_7_B1
+	 .int	bgm_battle20_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2847,7 +2847,7 @@ bgm_battle20_8_001:
 	.byte	W60
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 bgm_battle20_8_002:
 	.byte		N12   , Cn2 , v112
 	.byte	W36
@@ -2857,18 +2857,18 @@ bgm_battle20_8_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 bgm_battle20_8_B1:
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 bgm_battle20_8_003:
 	.byte		N12   , Cn2 , v112
 	.byte	W36
@@ -2895,11 +2895,11 @@ bgm_battle20_8_004:
 	.byte		N12   
 	.byte	W60
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_003
+	 .int	bgm_battle20_8_003
 	.byte	PATT
-	 .word	bgm_battle20_8_004
+	 .int	bgm_battle20_8_004
 	.byte		VOICE , 47
 	.byte		N12   , Cn2 , v112
 	.byte	W36
@@ -2916,19 +2916,19 @@ bgm_battle20_8_005:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte		N12   , Cn2 , v112
 	.byte	W36
 	.byte		N12   
@@ -2946,9 +2946,9 @@ bgm_battle20_8_006:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 bgm_battle20_8_007:
 	.byte		N12   , Cn2 , v112
 	.byte	W48
@@ -2960,21 +2960,21 @@ bgm_battle20_8_007:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_007
+	 .int	bgm_battle20_8_007
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 	.byte	PATT
-	 .word	bgm_battle20_8_006
+	 .int	bgm_battle20_8_006
 bgm_battle20_8_008:
 	.byte		N12   , Cn2 , v112
 	.byte	W12
@@ -2984,9 +2984,9 @@ bgm_battle20_8_008:
 	.byte	W48
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_battle20_8_008
+	 .int	bgm_battle20_8_008
 	.byte	PATT
-	 .word	bgm_battle20_8_008
+	 .int	bgm_battle20_8_008
 	.byte		N12   , Cn2 , v112
 	.byte	W12
 	.byte		N12   
@@ -3106,9 +3106,9 @@ bgm_battle20_8_008:
 	.byte		N12   
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_battle20_8_000
+	 .int	bgm_battle20_8_000
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte		N09   , Cn2 , v112
 	.byte	W36
 	.byte		N12   
@@ -3116,41 +3116,41 @@ bgm_battle20_8_008:
 	.byte		N12   
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_002
+	 .int	bgm_battle20_8_002
 	.byte	PATT
-	 .word	bgm_battle20_8_005
+	 .int	bgm_battle20_8_005
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte	PATT
-	 .word	bgm_battle20_8_001
+	 .int	bgm_battle20_8_001
 	.byte		N12   , Cn2 , v112
 	.byte	W48
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_battle20_8_B1
+	 .int	bgm_battle20_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3162,15 +3162,15 @@ bgm_battle20:
 	.byte	bgm_battle20_pri	@ Priority
 	.byte	bgm_battle20_rev	@ Reverb.
 
-	.word	bgm_battle20_grp
+	.int	bgm_battle20_grp
 
-	.word	bgm_battle20_1
-	.word	bgm_battle20_2
-	.word	bgm_battle20_3
-	.word	bgm_battle20_4
-	.word	bgm_battle20_5
-	.word	bgm_battle20_6
-	.word	bgm_battle20_7
-	.word	bgm_battle20_8
+	.int	bgm_battle20_1
+	.int	bgm_battle20_2
+	.int	bgm_battle20_3
+	.int	bgm_battle20_4
+	.int	bgm_battle20_5
+	.int	bgm_battle20_6
+	.int	bgm_battle20_7
+	.int	bgm_battle20_8
 
 	.end

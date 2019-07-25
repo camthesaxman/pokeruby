@@ -189,9 +189,9 @@ se_w328:
 	.byte	se_w328_pri	@ Priority
 	.byte	se_w328_rev	@ Reverb.
 
-	.word	se_w328_grp
+	.int	se_w328_grp
 
-	.word	se_w328_1
-	.word	se_w328_2
+	.int	se_w328_1
+	.int	se_w328_2
 
 	.end

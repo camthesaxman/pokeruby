@@ -180,7 +180,7 @@ bgm_kachi3_1_001:
 	.byte		N24   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi3_1_001
+	 .int	bgm_kachi3_1_001
 	.byte		N06   , Cn4 , v112
 	.byte	W12
 	.byte		        As3 
@@ -242,7 +242,7 @@ bgm_kachi3_1_002:
 	.byte		TIE   , Fn4 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kachi3_1_002
+	 .int	bgm_kachi3_1_002
 	.byte		EOT   , Fn4 
 	.byte		MOD   , 0
 	.byte	W03
@@ -380,7 +380,7 @@ bgm_kachi3_1_003:
 	.byte		TIE   , Fn5 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kachi3_1_003
+	 .int	bgm_kachi3_1_003
 	.byte		EOT   , Fn5 
 	.byte		VOL   , 5*bgm_kachi3_mvl/mxv
 	.byte	W06
@@ -433,9 +433,9 @@ bgm_kachi3_1_003:
 	.byte		        28*bgm_kachi3_mvl/mxv
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kachi3_1_000
+	 .int	bgm_kachi3_1_000
 	.byte	GOTO
-	 .word	bgm_kachi3_1_B1
+	 .int	bgm_kachi3_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -933,9 +933,9 @@ bgm_kachi3_2_B1:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_kachi3_2_000
+	 .int	bgm_kachi3_2_000
 	.byte	GOTO
-	 .word	bgm_kachi3_2_B1
+	 .int	bgm_kachi3_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1088,7 +1088,7 @@ bgm_kachi3_3_001:
 	.byte		N24   , Dn1 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi3_3_001
+	 .int	bgm_kachi3_3_001
 	.byte		N06   , Gs1 , v080
 	.byte	W12
 	.byte		        As1 
@@ -1242,9 +1242,9 @@ bgm_kachi3_3_001:
 	.byte		N06   , Ds2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kachi3_3_000
+	 .int	bgm_kachi3_3_000
 	.byte	GOTO
-	 .word	bgm_kachi3_3_B1
+	 .int	bgm_kachi3_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1684,7 +1684,7 @@ bgm_kachi3_4_B1:
 	.byte		PAN   , c_v+0
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi3_4_B1
+	 .int	bgm_kachi3_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2158,7 +2158,7 @@ bgm_kachi3_5_B1:
 	.byte		PAN   , c_v+0
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi3_5_B1
+	 .int	bgm_kachi3_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2217,7 +2217,7 @@ bgm_kachi3_6_B1:
 	.byte		        As3 , v060
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi3_6_000
+	 .int	bgm_kachi3_6_000
 	.byte		VOICE , 60
 	.byte		PAN   , c_v+9
 	.byte		N09   , Gs2 , v100
@@ -2414,7 +2414,7 @@ bgm_kachi3_6_B1:
 	.byte		        Dn4 , v060
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_kachi3_6_B1
+	 .int	bgm_kachi3_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2481,7 +2481,7 @@ bgm_kachi3_7_000:
 	.byte		        As1 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi3_7_000
+	 .int	bgm_kachi3_7_000
 	.byte		N12   , Cn2 , v120
 	.byte	W24
 	.byte		        Gs1 
@@ -2653,7 +2653,7 @@ bgm_kachi3_7_000:
 	.byte		        Ds2 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi3_7_B1
+	 .int	bgm_kachi3_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2831,7 +2831,7 @@ bgm_kachi3_8_000:
 	.byte		        En1 , v080
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kachi3_8_000
+	 .int	bgm_kachi3_8_000
 	.byte		N06   , En1 , v112
 	.byte	W12
 	.byte		        En1 , v080
@@ -2925,7 +2925,7 @@ bgm_kachi3_8_000:
 	.byte	W12
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi3_8_B1
+	 .int	bgm_kachi3_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2937,15 +2937,15 @@ bgm_kachi3:
 	.byte	bgm_kachi3_pri	@ Priority
 	.byte	bgm_kachi3_rev	@ Reverb.
 
-	.word	bgm_kachi3_grp
+	.int	bgm_kachi3_grp
 
-	.word	bgm_kachi3_1
-	.word	bgm_kachi3_2
-	.word	bgm_kachi3_3
-	.word	bgm_kachi3_4
-	.word	bgm_kachi3_5
-	.word	bgm_kachi3_6
-	.word	bgm_kachi3_7
-	.word	bgm_kachi3_8
+	.int	bgm_kachi3_1
+	.int	bgm_kachi3_2
+	.int	bgm_kachi3_3
+	.int	bgm_kachi3_4
+	.int	bgm_kachi3_5
+	.int	bgm_kachi3_6
+	.int	bgm_kachi3_7
+	.int	bgm_kachi3_8
 
 	.end

@@ -38,8 +38,8 @@ se_c_pasi:
 	.byte	se_c_pasi_pri	@ Priority
 	.byte	se_c_pasi_rev	@ Reverb.
 
-	.word	se_c_pasi_grp
+	.int	se_c_pasi_grp
 
-	.word	se_c_pasi_1
+	.int	se_c_pasi_1
 
 	.end

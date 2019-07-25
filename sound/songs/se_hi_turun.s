@@ -55,8 +55,8 @@ se_hi_turun:
 	.byte	se_hi_turun_pri	@ Priority
 	.byte	se_hi_turun_rev	@ Reverb.
 
-	.word	se_hi_turun_grp
+	.int	se_hi_turun_grp
 
-	.word	se_hi_turun_1
+	.int	se_hi_turun_1
 
 	.end

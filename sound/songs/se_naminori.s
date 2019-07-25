@@ -87,8 +87,8 @@ se_naminori:
 	.byte	se_naminori_pri	@ Priority
 	.byte	se_naminori_rev	@ Reverb.
 
-	.word	se_naminori_grp
+	.int	se_naminori_grp
 
-	.word	se_naminori_1
+	.int	se_naminori_1
 
 	.end

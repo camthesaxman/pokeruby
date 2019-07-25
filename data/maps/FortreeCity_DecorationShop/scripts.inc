@@ -21,15 +21,15 @@ FortreeCity_DecorationShop_EventScript_15826A:: @ 815826A
 
 	.align 2
 FortreeCity_DecorationShop_Decorations1:: @ 8158284
-	.2byte DECOR_SMALL_DESK
-	.2byte DECOR_POKEMON_DESK
-	.2byte DECOR_HEAVY_DESK
-	.2byte DECOR_RAGGED_DESK
-	.2byte DECOR_COMFORT_DESK
-	.2byte DECOR_BRICK_DESK
-	.2byte DECOR_CAMP_DESK
-	.2byte DECOR_HARD_DESK
-	.2byte DECOR_NONE
+	.short DECOR_SMALL_DESK
+	.short DECOR_POKEMON_DESK
+	.short DECOR_HEAVY_DESK
+	.short DECOR_RAGGED_DESK
+	.short DECOR_COMFORT_DESK
+	.short DECOR_BRICK_DESK
+	.short DECOR_CAMP_DESK
+	.short DECOR_HARD_DESK
+	.short DECOR_NONE
 	release
 	end
 
@@ -45,14 +45,14 @@ FortreeCity_DecorationShop_EventScript_158298:: @ 8158298
 
 	.align 2
 FortreeCity_DecorationShop_Decorations2:: @ 81582B0
-	.2byte DECOR_SMALL_CHAIR
-	.2byte DECOR_POKEMON_CHAIR
-	.2byte DECOR_HEAVY_CHAIR
-	.2byte DECOR_RAGGED_CHAIR
-	.2byte DECOR_COMFORT_CHAIR
-	.2byte DECOR_BRICK_CHAIR
-	.2byte DECOR_CAMP_CHAIR
-	.2byte DECOR_HARD_CHAIR
-	.2byte DECOR_NONE
+	.short DECOR_SMALL_CHAIR
+	.short DECOR_POKEMON_CHAIR
+	.short DECOR_HEAVY_CHAIR
+	.short DECOR_RAGGED_CHAIR
+	.short DECOR_COMFORT_CHAIR
+	.short DECOR_BRICK_CHAIR
+	.short DECOR_CAMP_CHAIR
+	.short DECOR_HARD_CHAIR
+	.short DECOR_NONE
 	release
 	end

@@ -45,7 +45,7 @@ se_t_koame_1_B1:
 	.byte	W24
 	.byte	W12
 	.byte	GOTO
-	 .word	se_t_koame_1_B1
+	 .int	se_t_koame_1_B1
 	.byte	W12
 	.byte	FINE
 
@@ -58,8 +58,8 @@ se_t_koame:
 	.byte	se_t_koame_pri	@ Priority
 	.byte	se_t_koame_rev	@ Reverb.
 
-	.word	se_t_koame_grp
+	.int	se_t_koame_grp
 
-	.word	se_t_koame_1
+	.int	se_t_koame_1
 
 	.end

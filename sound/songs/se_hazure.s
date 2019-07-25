@@ -48,8 +48,8 @@ se_hazure:
 	.byte	se_hazure_pri	@ Priority
 	.byte	se_hazure_rev	@ Reverb.
 
-	.word	se_hazure_grp
+	.int	se_hazure_grp
 
-	.word	se_hazure_1
+	.int	se_hazure_1
 
 	.end

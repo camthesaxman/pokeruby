@@ -9,7 +9,7 @@ FortreeCity_Gym_MapScript1_157EDE:: @ 8157EDE
 
 FortreeCity_Gym_MapScript2_157EE2:: @ 8157EE2
 	map_script_2 VAR_TEMP_0, 16384, FortreeCity_Gym_EventScript_157EEC
-	.2byte 0
+	.short 0
 
 FortreeCity_Gym_EventScript_157EEC:: @ 8157EEC
 	special RotatingGate_InitPuzzleAndGraphics

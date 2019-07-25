@@ -328,9 +328,9 @@ se_w179:
 	.byte	se_w179_pri	@ Priority
 	.byte	se_w179_rev	@ Reverb.
 
-	.word	se_w179_grp
+	.int	se_w179_grp
 
-	.word	se_w179_1
-	.word	se_w179_2
+	.int	se_w179_1
+	.int	se_w179_2
 
 	.end

@@ -385,7 +385,7 @@ bgm_boy_sup_1_B1:
 	.byte		        Bn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_boy_sup_1_B1
+	 .int	bgm_boy_sup_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -416,19 +416,19 @@ bgm_boy_sup_2_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 	.byte	PATT
-	 .word	bgm_boy_sup_2_001
+	 .int	bgm_boy_sup_2_001
 bgm_boy_sup_2_002:
 	.byte	W12
 	.byte		N06   , Gn4 , v112
@@ -439,22 +439,22 @@ bgm_boy_sup_2_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_boy_sup_2_002
+	 .int	bgm_boy_sup_2_002
 	.byte	PATT
-	 .word	bgm_boy_sup_2_002
+	 .int	bgm_boy_sup_2_002
 	.byte	PATT
-	 .word	bgm_boy_sup_2_002
+	 .int	bgm_boy_sup_2_002
 	.byte	PATT
-	 .word	bgm_boy_sup_2_002
+	 .int	bgm_boy_sup_2_002
 	.byte	PATT
-	 .word	bgm_boy_sup_2_002
+	 .int	bgm_boy_sup_2_002
 	.byte	W60
 	.byte		N12   , Gn4 , v112
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_boy_sup_2_000
+	 .int	bgm_boy_sup_2_000
 	.byte	GOTO
-	 .word	bgm_boy_sup_2_B1
+	 .int	bgm_boy_sup_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -839,7 +839,7 @@ bgm_boy_sup_3_B1:
 	.byte		BEND  , c_v+0
 	.byte	W18
 	.byte	GOTO
-	 .word	bgm_boy_sup_3_B1
+	 .int	bgm_boy_sup_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1086,7 +1086,7 @@ bgm_boy_sup_4_B1:
 	.byte		        Bn3 , v056
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_boy_sup_4_B1
+	 .int	bgm_boy_sup_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1158,7 +1158,7 @@ bgm_boy_sup_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_boy_sup_5_B1
+	 .int	bgm_boy_sup_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1224,19 +1224,19 @@ bgm_boy_sup_6_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 	.byte	PATT
-	 .word	bgm_boy_sup_6_001
+	 .int	bgm_boy_sup_6_001
 bgm_boy_sup_6_002:
 	.byte		N03   , En4 , v112
 	.byte	W06
@@ -1262,15 +1262,15 @@ bgm_boy_sup_6_002:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_boy_sup_6_002
+	 .int	bgm_boy_sup_6_002
 	.byte	PATT
-	 .word	bgm_boy_sup_6_002
+	 .int	bgm_boy_sup_6_002
 	.byte	PATT
-	 .word	bgm_boy_sup_6_002
+	 .int	bgm_boy_sup_6_002
 	.byte	PATT
-	 .word	bgm_boy_sup_6_002
+	 .int	bgm_boy_sup_6_002
 	.byte	PATT
-	 .word	bgm_boy_sup_6_002
+	 .int	bgm_boy_sup_6_002
 	.byte		N03   , En4 , v112
 	.byte	W12
 	.byte		        En4 , v064
@@ -1288,9 +1288,9 @@ bgm_boy_sup_6_002:
 	.byte		N03   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_boy_sup_6_000
+	 .int	bgm_boy_sup_6_000
 	.byte	GOTO
-	 .word	bgm_boy_sup_6_B1
+	 .int	bgm_boy_sup_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1432,9 +1432,9 @@ bgm_boy_sup_7_002:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boy_sup_7_001
+	 .int	bgm_boy_sup_7_001
 	.byte	PATT
-	 .word	bgm_boy_sup_7_002
+	 .int	bgm_boy_sup_7_002
 	.byte		N03   , Bn2 , v112
 	.byte	W06
 	.byte		        Gs2 
@@ -1631,9 +1631,9 @@ bgm_boy_sup_7_002:
 	.byte		        Gs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_boy_sup_7_000
+	 .int	bgm_boy_sup_7_000
 	.byte	GOTO
-	 .word	bgm_boy_sup_7_B1
+	 .int	bgm_boy_sup_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1771,11 +1771,11 @@ bgm_boy_sup_8_002:
 	.byte		        Gs3 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_boy_sup_8_000
+	 .int	bgm_boy_sup_8_000
 	.byte	PATT
-	 .word	bgm_boy_sup_8_001
+	 .int	bgm_boy_sup_8_001
 	.byte	PATT
-	 .word	bgm_boy_sup_8_002
+	 .int	bgm_boy_sup_8_002
 	.byte		N03   , Gs3 , v112
 	.byte	W06
 	.byte		        En3 
@@ -1992,7 +1992,7 @@ bgm_boy_sup_8_002:
 	.byte		        Fs3 , v044
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_boy_sup_8_B1
+	 .int	bgm_boy_sup_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2062,9 +2062,9 @@ bgm_boy_sup_9_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_boy_sup_9_001
+	 .int	bgm_boy_sup_9_001
 	.byte	PATT
-	 .word	bgm_boy_sup_9_001
+	 .int	bgm_boy_sup_9_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        En1 
@@ -2088,11 +2088,11 @@ bgm_boy_sup_9_001:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boy_sup_9_001
+	 .int	bgm_boy_sup_9_001
 	.byte	PATT
-	 .word	bgm_boy_sup_9_001
+	 .int	bgm_boy_sup_9_001
 	.byte	PATT
-	 .word	bgm_boy_sup_9_001
+	 .int	bgm_boy_sup_9_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        En1 
@@ -2156,7 +2156,7 @@ bgm_boy_sup_9_002:
 	.byte		        Cn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boy_sup_9_002
+	 .int	bgm_boy_sup_9_002
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        Dn1 
@@ -2238,9 +2238,9 @@ bgm_boy_sup_9_002:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boy_sup_9_000
+	 .int	bgm_boy_sup_9_000
 	.byte	GOTO
-	 .word	bgm_boy_sup_9_B1
+	 .int	bgm_boy_sup_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -2563,7 +2563,7 @@ bgm_boy_sup_10_B1:
 	.byte		        Bn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_boy_sup_10_B1
+	 .int	bgm_boy_sup_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2575,17 +2575,17 @@ bgm_boy_sup:
 	.byte	bgm_boy_sup_pri	@ Priority
 	.byte	bgm_boy_sup_rev	@ Reverb.
 
-	.word	bgm_boy_sup_grp
+	.int	bgm_boy_sup_grp
 
-	.word	bgm_boy_sup_1
-	.word	bgm_boy_sup_2
-	.word	bgm_boy_sup_3
-	.word	bgm_boy_sup_4
-	.word	bgm_boy_sup_5
-	.word	bgm_boy_sup_6
-	.word	bgm_boy_sup_7
-	.word	bgm_boy_sup_8
-	.word	bgm_boy_sup_9
-	.word	bgm_boy_sup_10
+	.int	bgm_boy_sup_1
+	.int	bgm_boy_sup_2
+	.int	bgm_boy_sup_3
+	.int	bgm_boy_sup_4
+	.int	bgm_boy_sup_5
+	.int	bgm_boy_sup_6
+	.int	bgm_boy_sup_7
+	.int	bgm_boy_sup_8
+	.int	bgm_boy_sup_9
+	.int	bgm_boy_sup_10
 
 	.end

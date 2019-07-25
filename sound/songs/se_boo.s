@@ -40,8 +40,8 @@ se_boo:
 	.byte	se_boo_pri	@ Priority
 	.byte	se_boo_rev	@ Reverb.
 
-	.word	se_boo_grp
+	.int	se_boo_grp
 
-	.word	se_boo_1
+	.int	se_boo_1
 
 	.end

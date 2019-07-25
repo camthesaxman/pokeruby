@@ -234,7 +234,7 @@ bgm_mishiro_1_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_mishiro_1_B1
+	 .int	bgm_mishiro_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -868,7 +868,7 @@ bgm_mishiro_2_B1:
 	.byte		        Gn4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_mishiro_2_B1
+	 .int	bgm_mishiro_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1643,7 +1643,7 @@ bgm_mishiro_3_B1:
 	.byte		        Gn1 , v028
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mishiro_3_B1
+	 .int	bgm_mishiro_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1716,7 +1716,7 @@ bgm_mishiro_4_000:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_mishiro_4_000
+	 .int	bgm_mishiro_4_000
 	.byte	W24
 	.byte		N06   , Cn4 , v112
 	.byte	W06
@@ -1727,7 +1727,7 @@ bgm_mishiro_4_000:
 	.byte		N12   , Cn4 , v040
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_mishiro_4_000
+	 .int	bgm_mishiro_4_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1748,7 +1748,7 @@ bgm_mishiro_4_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_mishiro_4_B1
+	 .int	bgm_mishiro_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1889,7 +1889,7 @@ bgm_mishiro_5_B1:
 	.byte		        Gn5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_mishiro_5_B1
+	 .int	bgm_mishiro_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2182,7 +2182,7 @@ bgm_mishiro_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_mishiro_6_B1
+	 .int	bgm_mishiro_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2833,7 +2833,7 @@ bgm_mishiro_7_000:
 	.byte		        En4 , v032
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_mishiro_7_000
+	 .int	bgm_mishiro_7_000
 	.byte		N06   , As2 , v112
 	.byte	W06
 	.byte		        As2 , v032
@@ -2899,7 +2899,7 @@ bgm_mishiro_7_000:
 	.byte		        Gn4 , v032
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mishiro_7_B1
+	 .int	bgm_mishiro_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2998,7 +2998,7 @@ bgm_mishiro_8_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_mishiro_8_000
+	 .int	bgm_mishiro_8_000
 bgm_mishiro_8_001:
 	.byte	W24
 	.byte		N06   , Cn4 , v112
@@ -3067,7 +3067,7 @@ bgm_mishiro_8_002:
 	.byte		        An3 , v032
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_mishiro_8_002
+	 .int	bgm_mishiro_8_002
 	.byte	W24
 	.byte		N06   , As3 , v112
 	.byte	W06
@@ -3078,9 +3078,9 @@ bgm_mishiro_8_002:
 	.byte		        Bn3 , v032
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_mishiro_8_001
+	 .int	bgm_mishiro_8_001
 	.byte	GOTO
-	 .word	bgm_mishiro_8_B1
+	 .int	bgm_mishiro_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3120,37 +3120,37 @@ bgm_mishiro_9_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	PATT
-	 .word	bgm_mishiro_9_000
+	 .int	bgm_mishiro_9_000
 	.byte	GOTO
-	 .word	bgm_mishiro_9_B1
+	 .int	bgm_mishiro_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3162,16 +3162,16 @@ bgm_mishiro:
 	.byte	bgm_mishiro_pri	@ Priority
 	.byte	bgm_mishiro_rev	@ Reverb.
 
-	.word	bgm_mishiro_grp
+	.int	bgm_mishiro_grp
 
-	.word	bgm_mishiro_1
-	.word	bgm_mishiro_2
-	.word	bgm_mishiro_3
-	.word	bgm_mishiro_4
-	.word	bgm_mishiro_5
-	.word	bgm_mishiro_6
-	.word	bgm_mishiro_7
-	.word	bgm_mishiro_8
-	.word	bgm_mishiro_9
+	.int	bgm_mishiro_1
+	.int	bgm_mishiro_2
+	.int	bgm_mishiro_3
+	.int	bgm_mishiro_4
+	.int	bgm_mishiro_5
+	.int	bgm_mishiro_6
+	.int	bgm_mishiro_7
+	.int	bgm_mishiro_8
+	.int	bgm_mishiro_9
 
 	.end

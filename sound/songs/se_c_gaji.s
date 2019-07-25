@@ -37,8 +37,8 @@ se_c_gaji:
 	.byte	se_c_gaji_pri	@ Priority
 	.byte	se_c_gaji_rev	@ Reverb.
 
-	.word	se_c_gaji_grp
+	.int	se_c_gaji_grp
 
-	.word	se_c_gaji_1
+	.int	se_c_gaji_1
 
 	.end

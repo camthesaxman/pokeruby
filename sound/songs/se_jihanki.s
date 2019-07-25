@@ -39,8 +39,8 @@ se_jihanki:
 	.byte	se_jihanki_pri	@ Priority
 	.byte	se_jihanki_rev	@ Reverb.
 
-	.word	se_jihanki_grp
+	.int	se_jihanki_grp
 
-	.word	se_jihanki_1
+	.int	se_jihanki_1
 
 	.end

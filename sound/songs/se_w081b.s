@@ -112,9 +112,9 @@ se_w081b_2_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w081b_2_000
+	 .int	se_w081b_2_000
 	.byte	PATT
-	 .word	se_w081b_2_000
+	 .int	se_w081b_2_000
 	.byte	FINE
 
 @******************************************************@
@@ -126,9 +126,9 @@ se_w081b:
 	.byte	se_w081b_pri	@ Priority
 	.byte	se_w081b_rev	@ Reverb.
 
-	.word	se_w081b_grp
+	.int	se_w081b_grp
 
-	.word	se_w081b_1
-	.word	se_w081b_2
+	.int	se_w081b_1
+	.int	se_w081b_2
 
 	.end

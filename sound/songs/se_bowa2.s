@@ -74,10 +74,10 @@ se_bowa2:
 	.byte	se_bowa2_pri	@ Priority
 	.byte	se_bowa2_rev	@ Reverb.
 
-	.word	se_bowa2_grp
+	.int	se_bowa2_grp
 
-	.word	se_bowa2_1
-	.word	se_bowa2_2
-	.word	se_bowa2_3
+	.int	se_bowa2_1
+	.int	se_bowa2_2
+	.int	se_bowa2_3
 
 	.end

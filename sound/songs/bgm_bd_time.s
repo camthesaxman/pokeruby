@@ -144,14 +144,14 @@ bgm_bd_time_1_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bd_time_1_000
+	 .int	bgm_bd_time_1_000
 bgm_bd_time_1_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_1_000
+	 .int	bgm_bd_time_1_000
 	.byte	PATT
-	 .word	bgm_bd_time_1_000
+	 .int	bgm_bd_time_1_000
 	.byte	GOTO
-	 .word	bgm_bd_time_1_B1
+	 .int	bgm_bd_time_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -292,11 +292,11 @@ bgm_bd_time_2_001:
 	.byte	PEND
 bgm_bd_time_2_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_2_000
+	 .int	bgm_bd_time_2_000
 	.byte	PATT
-	 .word	bgm_bd_time_2_001
+	 .int	bgm_bd_time_2_001
 	.byte	GOTO
-	 .word	bgm_bd_time_2_B1
+	 .int	bgm_bd_time_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -438,11 +438,11 @@ bgm_bd_time_3_001:
 	.byte	PEND
 bgm_bd_time_3_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_3_000
+	 .int	bgm_bd_time_3_000
 	.byte	PATT
-	 .word	bgm_bd_time_3_001
+	 .int	bgm_bd_time_3_001
 	.byte	GOTO
-	 .word	bgm_bd_time_3_B1
+	 .int	bgm_bd_time_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -553,7 +553,7 @@ bgm_bd_time_4_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bd_time_4_000
+	 .int	bgm_bd_time_4_000
 bgm_bd_time_4_001:
 	.byte		N06   , Gn5 , v052
 	.byte	W06
@@ -589,7 +589,7 @@ bgm_bd_time_4_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bd_time_4_001
+	 .int	bgm_bd_time_4_001
 bgm_bd_time_4_002:
 	.byte		N06   , An5 , v052
 	.byte	W06
@@ -625,14 +625,14 @@ bgm_bd_time_4_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bd_time_4_002
+	 .int	bgm_bd_time_4_002
 bgm_bd_time_4_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_4_002
+	 .int	bgm_bd_time_4_002
 	.byte	PATT
-	 .word	bgm_bd_time_4_002
+	 .int	bgm_bd_time_4_002
 	.byte	GOTO
-	 .word	bgm_bd_time_4_B1
+	 .int	bgm_bd_time_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -933,9 +933,9 @@ bgm_bd_time_5_B1:
 	.byte		        An5 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_bd_time_5_000
+	 .int	bgm_bd_time_5_000
 	.byte	GOTO
-	 .word	bgm_bd_time_5_B1
+	 .int	bgm_bd_time_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1208,11 +1208,11 @@ bgm_bd_time_6_001:
 	.byte	PEND
 bgm_bd_time_6_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_6_000
+	 .int	bgm_bd_time_6_000
 	.byte	PATT
-	 .word	bgm_bd_time_6_001
+	 .int	bgm_bd_time_6_001
 	.byte	GOTO
-	 .word	bgm_bd_time_6_B1
+	 .int	bgm_bd_time_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1286,22 +1286,22 @@ bgm_bd_time_7_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bd_time_7_000
+	 .int	bgm_bd_time_7_000
 	.byte	PATT
-	 .word	bgm_bd_time_7_001
+	 .int	bgm_bd_time_7_001
 	.byte	PATT
-	 .word	bgm_bd_time_7_000
+	 .int	bgm_bd_time_7_000
 	.byte	PATT
-	 .word	bgm_bd_time_7_001
+	 .int	bgm_bd_time_7_001
 	.byte	PATT
-	 .word	bgm_bd_time_7_000
+	 .int	bgm_bd_time_7_000
 bgm_bd_time_7_B1:
 	.byte	PATT
-	 .word	bgm_bd_time_7_001
+	 .int	bgm_bd_time_7_001
 	.byte	PATT
-	 .word	bgm_bd_time_7_000
+	 .int	bgm_bd_time_7_000
 	.byte	GOTO
-	 .word	bgm_bd_time_7_B1
+	 .int	bgm_bd_time_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1314,14 +1314,14 @@ bgm_bd_time:
 	.byte	bgm_bd_time_pri	@ Priority
 	.byte	bgm_bd_time_rev	@ Reverb.
 
-	.word	bgm_bd_time_grp
+	.int	bgm_bd_time_grp
 
-	.word	bgm_bd_time_1
-	.word	bgm_bd_time_2
-	.word	bgm_bd_time_3
-	.word	bgm_bd_time_4
-	.word	bgm_bd_time_5
-	.word	bgm_bd_time_6
-	.word	bgm_bd_time_7
+	.int	bgm_bd_time_1
+	.int	bgm_bd_time_2
+	.int	bgm_bd_time_3
+	.int	bgm_bd_time_4
+	.int	bgm_bd_time_5
+	.int	bgm_bd_time_6
+	.int	bgm_bd_time_7
 
 	.end

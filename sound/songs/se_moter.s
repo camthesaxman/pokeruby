@@ -29,7 +29,7 @@ se_moter_1_B1:
 	.byte	W48
 	.byte		EOT   
 	.byte	GOTO
-	 .word	se_moter_1_B1
+	 .int	se_moter_1_B1
 	.byte	W48
 	.byte	FINE
 
@@ -42,8 +42,8 @@ se_moter:
 	.byte	se_moter_pri	@ Priority
 	.byte	se_moter_rev	@ Reverb.
 
-	.word	se_moter_grp
+	.int	se_moter_grp
 
-	.word	se_moter_1
+	.int	se_moter_1
 
 	.end

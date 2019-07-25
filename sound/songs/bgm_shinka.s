@@ -64,13 +64,13 @@ bgm_shinka_1_002:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_1_001
+	 .int	bgm_shinka_1_001
 	.byte	PATT
-	 .word	bgm_shinka_1_000
+	 .int	bgm_shinka_1_000
 	.byte	PATT
-	 .word	bgm_shinka_1_001
+	 .int	bgm_shinka_1_001
 	.byte	PATT
-	 .word	bgm_shinka_1_002
+	 .int	bgm_shinka_1_002
 bgm_shinka_1_B1:
 bgm_shinka_1_003:
 	.byte		MOD   , 0
@@ -96,7 +96,7 @@ bgm_shinka_1_004:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_1_003
+	 .int	bgm_shinka_1_003
 bgm_shinka_1_005:
 	.byte		N06   , An3 , v068
 	.byte	W24
@@ -110,15 +110,15 @@ bgm_shinka_1_005:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_1_003
+	 .int	bgm_shinka_1_003
 	.byte	PATT
-	 .word	bgm_shinka_1_004
+	 .int	bgm_shinka_1_004
 	.byte	PATT
-	 .word	bgm_shinka_1_003
+	 .int	bgm_shinka_1_003
 	.byte	PATT
-	 .word	bgm_shinka_1_005
+	 .int	bgm_shinka_1_005
 	.byte	GOTO
-	 .word	bgm_shinka_1_B1
+	 .int	bgm_shinka_1_B1
 	.byte		MOD   , 0
 	.byte	FINE
 
@@ -173,13 +173,13 @@ bgm_shinka_2_002:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_2_001
+	 .int	bgm_shinka_2_001
 	.byte	PATT
-	 .word	bgm_shinka_2_000
+	 .int	bgm_shinka_2_000
 	.byte	PATT
-	 .word	bgm_shinka_2_001
+	 .int	bgm_shinka_2_001
 	.byte	PATT
-	 .word	bgm_shinka_2_002
+	 .int	bgm_shinka_2_002
 bgm_shinka_2_B1:
 bgm_shinka_2_003:
 	.byte		MOD   , 0
@@ -205,7 +205,7 @@ bgm_shinka_2_004:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_2_003
+	 .int	bgm_shinka_2_003
 bgm_shinka_2_005:
 	.byte		N06   , Dn3 , v068
 	.byte	W24
@@ -219,15 +219,15 @@ bgm_shinka_2_005:
 	.byte	W15
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_2_003
+	 .int	bgm_shinka_2_003
 	.byte	PATT
-	 .word	bgm_shinka_2_004
+	 .int	bgm_shinka_2_004
 	.byte	PATT
-	 .word	bgm_shinka_2_003
+	 .int	bgm_shinka_2_003
 	.byte	PATT
-	 .word	bgm_shinka_2_005
+	 .int	bgm_shinka_2_005
 	.byte	GOTO
-	 .word	bgm_shinka_2_B1
+	 .int	bgm_shinka_2_B1
 	.byte		MOD   , 0
 	.byte	FINE
 
@@ -264,7 +264,7 @@ bgm_shinka_3_000:
 	.byte		        Dn1 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_shinka_3_000
+	 .int	bgm_shinka_3_000
 bgm_shinka_3_001:
 	.byte		N03   , Cn2 , v080
 	.byte	W12
@@ -292,11 +292,11 @@ bgm_shinka_3_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_3_001
+	 .int	bgm_shinka_3_001
 	.byte	PATT
-	 .word	bgm_shinka_3_001
+	 .int	bgm_shinka_3_001
 	.byte	PATT
-	 .word	bgm_shinka_3_001
+	 .int	bgm_shinka_3_001
 bgm_shinka_3_B1:
 bgm_shinka_3_002:
 	.byte		N03   , Dn2 , v080
@@ -325,21 +325,21 @@ bgm_shinka_3_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	PATT
-	 .word	bgm_shinka_3_002
+	 .int	bgm_shinka_3_002
 	.byte	GOTO
-	 .word	bgm_shinka_3_B1
+	 .int	bgm_shinka_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -426,9 +426,9 @@ bgm_shinka_4_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_4_000
+	 .int	bgm_shinka_4_000
 	.byte	PATT
-	 .word	bgm_shinka_4_001
+	 .int	bgm_shinka_4_001
 bgm_shinka_4_B1:
 bgm_shinka_4_002:
 	.byte		N12   , Dn2 , v112
@@ -461,7 +461,7 @@ bgm_shinka_4_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_4_002
+	 .int	bgm_shinka_4_002
 bgm_shinka_4_004:
 	.byte		N15   , Dn2 , v112
 	.byte	W24
@@ -481,15 +481,15 @@ bgm_shinka_4_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_4_002
+	 .int	bgm_shinka_4_002
 	.byte	PATT
-	 .word	bgm_shinka_4_004
+	 .int	bgm_shinka_4_004
 	.byte	PATT
-	 .word	bgm_shinka_4_002
+	 .int	bgm_shinka_4_002
 	.byte	PATT
-	 .word	bgm_shinka_4_003
+	 .int	bgm_shinka_4_003
 	.byte	GOTO
-	 .word	bgm_shinka_4_B1
+	 .int	bgm_shinka_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -530,15 +530,15 @@ bgm_shinka_5_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_5_000
+	 .int	bgm_shinka_5_000
 	.byte	PATT
-	 .word	bgm_shinka_5_001
+	 .int	bgm_shinka_5_001
 	.byte	PATT
-	 .word	bgm_shinka_5_000
+	 .int	bgm_shinka_5_000
 	.byte	PATT
-	 .word	bgm_shinka_5_001
+	 .int	bgm_shinka_5_001
 	.byte	PATT
-	 .word	bgm_shinka_5_000
+	 .int	bgm_shinka_5_000
 bgm_shinka_5_B1:
 bgm_shinka_5_002:
 	.byte		N06   , Dn3 , v056
@@ -561,19 +561,19 @@ bgm_shinka_5_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_5_002
+	 .int	bgm_shinka_5_002
 	.byte	PATT
-	 .word	bgm_shinka_5_003
+	 .int	bgm_shinka_5_003
 	.byte	PATT
-	 .word	bgm_shinka_5_002
+	 .int	bgm_shinka_5_002
 	.byte	PATT
-	 .word	bgm_shinka_5_003
+	 .int	bgm_shinka_5_003
 	.byte	PATT
-	 .word	bgm_shinka_5_002
+	 .int	bgm_shinka_5_002
 	.byte	PATT
-	 .word	bgm_shinka_5_003
+	 .int	bgm_shinka_5_003
 	.byte	GOTO
-	 .word	bgm_shinka_5_B1
+	 .int	bgm_shinka_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -615,15 +615,15 @@ bgm_shinka_6_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_6_000
+	 .int	bgm_shinka_6_000
 	.byte	PATT
-	 .word	bgm_shinka_6_001
+	 .int	bgm_shinka_6_001
 	.byte	PATT
-	 .word	bgm_shinka_6_000
+	 .int	bgm_shinka_6_000
 	.byte	PATT
-	 .word	bgm_shinka_6_001
+	 .int	bgm_shinka_6_001
 	.byte	PATT
-	 .word	bgm_shinka_6_000
+	 .int	bgm_shinka_6_000
 bgm_shinka_6_B1:
 bgm_shinka_6_002:
 	.byte		N06   , Bn2 , v056
@@ -646,19 +646,19 @@ bgm_shinka_6_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_shinka_6_002
+	 .int	bgm_shinka_6_002
 	.byte	PATT
-	 .word	bgm_shinka_6_003
+	 .int	bgm_shinka_6_003
 	.byte	PATT
-	 .word	bgm_shinka_6_002
+	 .int	bgm_shinka_6_002
 	.byte	PATT
-	 .word	bgm_shinka_6_003
+	 .int	bgm_shinka_6_003
 	.byte	PATT
-	 .word	bgm_shinka_6_002
+	 .int	bgm_shinka_6_002
 	.byte	PATT
-	 .word	bgm_shinka_6_003
+	 .int	bgm_shinka_6_003
 	.byte	GOTO
-	 .word	bgm_shinka_6_B1
+	 .int	bgm_shinka_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -882,23 +882,23 @@ bgm_shinka_7_001:
 	.byte	PEND
 bgm_shinka_7_B1:
 	.byte	PATT
-	 .word	bgm_shinka_7_000
+	 .int	bgm_shinka_7_000
 	.byte	PATT
-	 .word	bgm_shinka_7_001
+	 .int	bgm_shinka_7_001
 	.byte	PATT
-	 .word	bgm_shinka_7_000
+	 .int	bgm_shinka_7_000
 	.byte	PATT
-	 .word	bgm_shinka_7_001
+	 .int	bgm_shinka_7_001
 	.byte	PATT
-	 .word	bgm_shinka_7_000
+	 .int	bgm_shinka_7_000
 	.byte	PATT
-	 .word	bgm_shinka_7_001
+	 .int	bgm_shinka_7_001
 	.byte	PATT
-	 .word	bgm_shinka_7_000
+	 .int	bgm_shinka_7_000
 	.byte	PATT
-	 .word	bgm_shinka_7_001
+	 .int	bgm_shinka_7_001
 	.byte	GOTO
-	 .word	bgm_shinka_7_B1
+	 .int	bgm_shinka_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -910,14 +910,14 @@ bgm_shinka:
 	.byte	bgm_shinka_pri	@ Priority
 	.byte	bgm_shinka_rev	@ Reverb.
 
-	.word	bgm_shinka_grp
+	.int	bgm_shinka_grp
 
-	.word	bgm_shinka_1
-	.word	bgm_shinka_2
-	.word	bgm_shinka_3
-	.word	bgm_shinka_4
-	.word	bgm_shinka_5
-	.word	bgm_shinka_6
-	.word	bgm_shinka_7
+	.int	bgm_shinka_1
+	.int	bgm_shinka_2
+	.int	bgm_shinka_3
+	.int	bgm_shinka_4
+	.int	bgm_shinka_5
+	.int	bgm_shinka_6
+	.int	bgm_shinka_7
 
 	.end

@@ -99,8 +99,8 @@ se_reapoke:
 	.byte	se_reapoke_pri	@ Priority
 	.byte	se_reapoke_rev	@ Reverb.
 
-	.word	se_reapoke_grp
+	.int	se_reapoke_grp
 
-	.word	se_reapoke_1
+	.int	se_reapoke_1
 
 	.end

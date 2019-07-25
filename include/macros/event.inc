@@ -21,27 +21,27 @@
 	@ Jumps to destination and continues script execution from there. The location of the calling script is remembered and can be returned to later.
 	.macro call destination
 	.byte 0x04
-	.4byte \destination
+	.int \destination
 	.endm
 
 	@ Jumps to destination and continues script execution from there.
 	.macro goto destination
 	.byte 0x05
-	.4byte \destination
+	.int \destination
 	.endm
 
 	@ If the result of the last comparison matches condition (see Comparison operators), jumps to destination and continues script execution from there.
 	.macro goto_if condition, destination
 	.byte 0x06
 	.byte \condition
-	.4byte \destination
+	.int \destination
 	.endm
 
 	@ If the result of the last comparison matches condition (see Comparison operators), calls destination.
 	.macro call_if condition, destination
 	.byte 0x07
 	.byte \condition
-	.4byte \destination
+	.int \destination
 	.endm
 
 	@ Jumps to the standard function at index function.
@@ -90,7 +90,7 @@
 	.macro loadword destination, value
 	.byte 0x0f
 	.byte \destination
-	.4byte \value
+	.int \value
 	.endm
 
 	@ Sets the specified script bank to value.
@@ -104,21 +104,21 @@
 	.macro writebytetoaddr value, offset
 	.byte 0x11
 	.byte \value
-	.4byte \offset
+	.int \offset
 	.endm
 
 	@ Copies the byte value at source into the specified script bank.
 	.macro loadbytefromaddr destination, source
 	.byte 0x12
 	.byte \destination
-	.4byte \source
+	.int \source
 	.endm
 
 	@ Not sure. Judging from XSE's description I think it takes the least-significant byte in bank source and writes it to destination.
 	.macro setptrbyte source, destination
 	.byte 0x13
 	.byte \source
-	.4byte \destination
+	.int \destination
 	.endm
 
 	@ Copies the contents of bank source into bank destination.
@@ -131,43 +131,43 @@
 	@ Copies the byte at source to destination, replacing whatever byte was previously there.
 	.macro copybyte destination, source
 	.byte 0x15
-	.4byte \destination
-	.4byte \source
+	.int \destination
+	.int \source
 	.endm
 
 	@ Changes the value of destination to value.
 	.macro setvar destination, value
 	.byte 0x16
-	.2byte \destination
-	.2byte \value
+	.short \destination
+	.short \value
 	.endm
 
 	@ Changes the value of destination by adding value to it. Overflow is not prevented (0xFFFF + 1 = 0x0000).
 	.macro addvar destination, value
 	.byte 0x17
-	.2byte \destination
-	.2byte \value
+	.short \destination
+	.short \value
 	.endm
 
 	@ Changes the value of destination by subtracting value to it. Overflow is not prevented (0x0000 - 1 = 0xFFFF).
 	.macro subvar destination, value
 	.byte 0x18
-	.2byte \destination
-	.2byte \value
+	.short \destination
+	.short \value
 	.endm
 
 	@ Copies the value of source into destination.
 	.macro copyvar destination, source
 	.byte 0x19
-	.2byte \destination
-	.2byte \source
+	.short \destination
+	.short \source
 	.endm
 
 	@ If source is not a variable, then this function acts like setvar. Otherwise, it acts like copyvar.
 	.macro setorcopyvar destination, source
 	.byte 0x1a
-	.2byte \destination
-	.2byte \source
+	.short \destination
+	.short \source
 	.endm
 
 	@ Compares the values of script banks a and b, after forcing the values to bytes.
@@ -188,42 +188,42 @@
 	.macro compare_local_to_addr a, b
 	.byte 0x1d
 	.byte \a
-	.4byte \b
+	.int \b
 	.endm
 
 	@ Compares the byte located at offset a to the least-significant byte of the value of script bank b.
 	.macro compare_addr_to_local a, b
 	.byte 0x1e
-	.4byte \a
+	.int \a
 	.byte \b
 	.endm
 
 	@ Compares the byte located at offset a to a fixed byte value (b).
 	.macro compare_addr_to_value a, b
 	.byte 0x1f
-	.4byte \a
+	.int \a
 	.byte \b
 	.endm
 
 	@ Compares the byte located at offset a to the byte located at offset b.
 	.macro compare_addr_to_addr a, b
 	.byte 0x20
-	.4byte \a
-	.4byte \b
+	.int \a
+	.int \b
 	.endm
 
 	@ Compares the value of `var` to a fixed word value (b).
 	.macro compare_var_to_value var, value
 	.byte 0x21
-	.2byte \var
-	.2byte \value
+	.short \var
+	.short \value
 	.endm
 
 	@ Compares the value of `var1` to the value of `var2`.
 	.macro compare_var_to_var var1, var2
 	.byte 0x22
-	.2byte \var1
-	.2byte \var2
+	.short \var1
+	.short \var2
 	.endm
 
 	@ Generic compare macro which attempts to deduce argument types based on their values
@@ -241,26 +241,26 @@
 	@ Calls the native C function stored at `func`.
 	.macro callnative func
 	.byte 0x23
-	.4byte \func
+	.int \func
 	.endm
 
 	@ Replaces the script with the function stored at `func`. Execution returns to the bytecode script when func returns TRUE.
 	.macro gotonative func
 	.byte 0x24
-	.4byte \func
+	.int \func
 	.endm
 
 	@ Calls a special function; that is, a function designed for use by scripts and listed in a table of pointers.
 	.macro special function
 	.byte 0x25
-	.2byte SPECIAL_\function
+	.short SPECIAL_\function
 	.endm
 
 	@ Calls a special function. That function's output (if any) will be written to the variable you specify.
 	.macro specialvar output, function
 	.byte 0x26
-	.2byte \output
-	.2byte SPECIAL_\function
+	.short \output
+	.short SPECIAL_\function
 	.endm
 
 	@ Blocks script execution until a command or ASM code manually unblocks it. Generally used with specific commands and specials. If this command runs, and a subsequent command or piece of ASM does not unblock state, the script will remain blocked indefinitely (essentially a hang).
@@ -271,32 +271,32 @@
 	@ Blocks script execution for time (frames? milliseconds?).
 	.macro delay time
 	.byte 0x28
-	.2byte \time
+	.short \time
 	.endm
 
 	@ Sets a to 1.
 	.macro setflag a
 	.byte 0x29
-	.2byte \a
+	.short \a
 	.endm
 
 	@ Sets a to 0.
 	.macro clearflag a
 	.byte 0x2a
-	.2byte \a
+	.short \a
 	.endm
 
 	@ Compares a to 1.
 	.macro checkflag a
 	.byte 0x2b
-	.2byte \a
+	.short \a
 	.endm
 
 	@ Initializes the RTC`s local time offset to the given hour and minute. In FireRed, this command is a nop.
 	.macro initclock hour, minute
 	.byte 0x2c
-	.2byte \hour
-	.2byte \minute
+	.short \hour
+	.short \minute
 	.endm
 
 	@ Runs time based events. In FireRed, this command is a nop.
@@ -312,7 +312,7 @@
 	@ Plays the specified (sound_number) sound. Only one sound may play at a time, with newer ones interrupting older ones.
 	.macro playse sound_number
 	.byte 0x2f
-	.2byte \sound_number
+	.short \sound_number
 	.endm
 
 	@ Blocks script execution until the currently-playing sound (triggered by playse) finishes playing.
@@ -323,7 +323,7 @@
 	@ Plays the specified (fanfare_number) fanfare.
 	.macro playfanfare fanfare_number
 	.byte 0x31
-	.2byte \fanfare_number
+	.short \fanfare_number
 	.endm
 
 	@ Blocks script execution until all currently-playing fanfares finish.
@@ -334,14 +334,14 @@
 	@ Plays the specified (song_number) song. The byte is apparently supposed to be 0x00.
 	.macro playbgm song_number, unknown
 	.byte 0x33
-	.2byte \song_number
+	.short \song_number
 	.byte \unknown
 	.endm
 
 	@ Saves the specified (song_number) song to be played later.
 	.macro savebgm song_number
 	.byte 0x34
-	.2byte \song_number
+	.short \song_number
 	.endm
 
 	@ Crossfades the currently-playing song into the map's default song.
@@ -352,7 +352,7 @@
 	@ Crossfades the currently-playng song into the specified (song_number) song.
 	.macro fadenewbgm song_number
 	.byte 0x36
-	.2byte \song_number
+	.short \song_number
 	.endm
 
 	@ Fades out the currently-playing song.
@@ -372,8 +372,8 @@
 	.byte 0x39
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Clone of warp that does not play a sound effect.
@@ -381,8 +381,8 @@
 	.byte 0x3a
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Clone of warp that plays a door opening animation before stepping upwards into it.
@@ -390,8 +390,8 @@
 	.byte 0x3b
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Warps the player to another map using a hole animation.
@@ -405,8 +405,8 @@
 	.byte 0x3d
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Sets the warp destination to be used later.
@@ -414,8 +414,8 @@
 	.byte 0x3e
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Sets the warp destination that a warp to Warp 127 on Map 127.127 will connect to. Useful when a map has warps that need to go to script-controlled locations (i.e. elevators).
@@ -423,8 +423,8 @@
 	.byte 0x3f
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Sets the destination that diving or emerging from a dive will take the player to.
@@ -432,8 +432,8 @@
 	.byte 0x40
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Sets the destination that falling into a hole will take the player to.
@@ -441,15 +441,15 @@
 	.byte 0x41
 	map \map
 	.byte \warp
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Retrieves the player's zero-indexed X- and Y-coordinates in the map, and stores them in the specified variables.
 	.macro getplayerxy X, Y
 	.byte 0x42
-	.2byte \X
-	.2byte \Y
+	.short \X
+	.short \Y
 	.endm
 
 	@ Retrieves the number of Pokemon in the player's party, and stores that number in variable 0x800D (LASTRESULT).
@@ -460,73 +460,73 @@
 	@ Attempts to add quantity of item index to the player's Bag. If the player has enough room, the item will be added and variable 0x800D (LASTRESULT) will be set to 0x0001; otherwise, LASTRESULT is set to 0x0000.
 	.macro giveitem index, quantity
 	.byte 0x44
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Removes quantity of item index from the player's Bag.
 	.macro takeitem index, quantity
 	.byte 0x45
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Checks if the player has enough space in their Bag to hold quantity more of item index. Sets variable 0x800D (LASTRESULT) to 0x0001 if there is room, or 0x0000 is there is no room.
 	.macro checkitemspace index, quantity
 	.byte 0x46
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Checks if the player has quantity or more of item index in their Bag. Sets variable 0x800D (LASTRESULT) to 0x0001 if the player has enough of the item, or 0x0000 if they have fewer than quantity of the item.
 	.macro checkitem index, quantity
 	.byte 0x47
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Checks which Bag pocket the specified (index) item belongs in, and writes the value to variable 0x800D (LASTRESULT). This script is used to show the name of the proper Bag pocket when the player receives an item via callstd (simplified to giveitem in XSE).
 	.macro checkitemtype index
 	.byte 0x48
-	.2byte \index
+	.short \index
 	.endm
 
 	@ Adds a quantity amount of item index to the player's PC. Both arguments can be variables.
 	.macro givepcitem index, quantity
 	.byte 0x49
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Checks for quantity amount of item index in the player's PC. Both arguments can be variables.
 	.macro checkpcitem index, quantity
 	.byte 0x4a
-	.2byte \index
-	.2byte \quantity
+	.short \index
+	.short \quantity
 	.endm
 
 	@ Adds decoration to the player's PC. In FireRed, this command is a nop. (The argument is read, but not used for anything.)
 	.macro givedecoration decoration
 	.byte 0x4b
-	.2byte \decoration
+	.short \decoration
 	.endm
 
 	@ Removes a decoration from the player's PC. In FireRed, this command is a nop. (The argument is read, but not used for anything.)
 	.macro takedecoration decoration
 	.byte 0x4c
-	.2byte \decoration
+	.short \decoration
 	.endm
 
 	@ Checks for decoration in the player's PC. In FireRed, this command is a nop. (The argument is read, but not used for anything.)
 	.macro checkdecor decoration
 	.byte 0x4d
-	.2byte \decoration
+	.short \decoration
 	.endm
 
 	@ Checks if the player has enough space in their PC to hold decoration. Sets variable 0x800D (LASTRESULT) to 0x0001 if there is room, or 0x0000 is there is no room. In FireRed, this command is a nop. (The argument is read, but not used for anything.)
 	.macro checkdecorspace decoration
 	.byte 0x4e
-	.2byte \decoration
+	.short \decoration
 	.endm
 
 	@ Applies the movement data at movements to the specified (index) Object event. Also closes any standard message boxes that are still open.
@@ -534,12 +534,12 @@
 	.macro applymovement index, movements, mapGroup, mapNum
 		.ifb \mapGroup
 			.byte 0x4f
-			.2byte \index
-			.4byte \movements
+			.short \index
+			.int \movements
 		.else
 			.byte 0x50
-			.2byte \index
-			.4byte \movements
+			.short \index
+			.int \movements
 			.byte \mapGroup
 			.byte \mapNum
 		.endif
@@ -549,10 +549,10 @@
 	.macro waitmovement index, mapBank, mapNum
 		.ifb \mapBank
 			.byte 0x51
-			.2byte \index
+			.short \index
 		.else
 			.byte 0x52
-			.2byte \index
+			.short \index
 			.byte \mapBank
 			.byte \mapNum
 		.endif
@@ -563,10 +563,10 @@
 	.macro removeobject localId, mapGroup, mapNum
 		.ifb \mapGroup
 			.byte 0x53
-			.2byte \localId
+			.short \localId
 		.else
 			.byte 0x54
-			.2byte \localId
+			.short \localId
 			.byte \mapGroup
 			.byte \mapNum
 		.endif
@@ -575,10 +575,10 @@
 	.macro addobject localId, mapGroup, mapNum
 		.ifb \mapGroup
 			.byte 0x55
-			.2byte \localId
+			.short \localId
 		.else
 			.byte 0x56
-			.2byte \localId
+			.short \localId
 			.byte \mapGroup
 			.byte \mapNum
 		.endif
@@ -587,20 +587,20 @@
 	@ Sets the specified (index) Object's position on the current map.
 	.macro setobjectxy index, x, y
 	.byte 0x57
-	.2byte \index
-	.2byte \x
-	.2byte \y
+	.short \index
+	.short \x
+	.short \y
 	.endm
 
 	.macro showobjectat index, map
 	.byte 0x58
-	.2byte \index
+	.short \index
 	map \map
 	.endm
 
 	.macro hideobjectat index, map
 	.byte 0x59
-	.2byte \index
+	.short \index
 	map \map
 	.endm
 
@@ -611,7 +611,7 @@
 
 	.macro turnobject index, direction
 	.byte 0x5b
-	.2byte \index
+	.short \index
 	.byte \direction
 	.endm
 
@@ -619,42 +619,42 @@
 	.macro trainerbattle type, trainer, word, pointer1, pointer2, pointer3, pointer4
 	.byte 0x5c
 	.byte \type
-	.2byte \trainer
-	.2byte \word
+	.short \trainer
+	.short \word
 	.if \type == 0
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
+		.int \pointer1 @ text
+		.int \pointer2 @ text
 	.elseif \type == 1
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ event script
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ event script
 	.elseif \type == 2
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ event script
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ event script
 	.elseif \type == 3
-		.4byte \pointer1 @ text
+		.int \pointer1 @ text
 	.elseif \type == 4
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ text
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ text
 	.elseif \type == 5
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
+		.int \pointer1 @ text
+		.int \pointer2 @ text
 	.elseif \type == 6
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ text
-		.4byte \pointer4 @ event script
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ text
+		.int \pointer4 @ event script
 	.elseif \type == 7
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ text
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ text
 	.elseif \type == 8
-		.4byte \pointer1 @ text
-		.4byte \pointer2 @ text
-		.4byte \pointer3 @ text
-		.4byte \pointer4 @ event script
+		.int \pointer1 @ text
+		.int \pointer2 @ text
+		.int \pointer3 @ text
+		.int \pointer4 @ event script
 	.endif
 	.endm
 
@@ -676,36 +676,36 @@
 	@ Compares Flag (trainer + 0x500) to 1. (If the flag is set, then the trainer has been defeated by the player.)
 	.macro checktrainerflag trainer
 	.byte 0x60
-	.2byte \trainer
+	.short \trainer
 	.endm
 
 	@ Sets Flag (trainer + 0x500).
 	.macro settrainerflag trainer
 	.byte 0x61
-	.2byte \trainer
+	.short \trainer
 	.endm
 
 	@ Clears Flag (trainer + 0x500).
 	.macro cleartrainerflag trainer
 	.byte 0x62
-	.2byte \trainer
+	.short \trainer
 	.endm
 
 	.macro setobjectxyperm index, x, y
 	.byte 0x63
-	.2byte \index
-	.2byte \x
-	.2byte \y
+	.short \index
+	.short \x
+	.short \y
 	.endm
 
 	.macro moveobjectoffscreen index
 	.byte 0x64
-	.2byte \index
+	.short \index
 	.endm
 
 	.macro setobjectmovementtype word, byte
 	.byte 0x65
-	.2byte \word
+	.short \word
 	.byte \byte
 	.endm
 
@@ -717,7 +717,7 @@
 	@ Starts displaying a standard message box containing the specified text. If text is a pointer, then the string at that offset will be loaded and used. If text is script bank 0, then the value of script bank 0 will be treated as a pointer to the text. (You can use loadpointer to place a string pointer in a script bank.)
 	.macro message text
 	.byte 0x67
-	.4byte \text
+	.int \text
 	.endm
 
 	@ Closes the current message box.
@@ -813,7 +813,7 @@
 	@ Displays a box containing the front sprite for the specified (species) Pokemon species.
 	.macro drawmonpic species, x, y
 	.byte 0x75
-	.2byte \species
+	.short \species
 	.byte \x
 	.byte \y
 	.endm
@@ -832,43 +832,43 @@
 	@ Displays the string at pointer as braille text in a standard message box. The string must be formatted to use braille characters.
 	.macro braillemessage text
 	.byte 0x78
-	.4byte \text
+	.int \text
 	.endm
 
 	@ Gives the player one of the specified (species) Pokemon at level level holding item. The unknown arguments should all be zeroes.
 	.macro givemon species, level, item, unknown1, unknown2, unknown3
 	.byte 0x79
-	.2byte \species
+	.short \species
 	.byte \level
-	.2byte \item
-	.4byte \unknown1
-	.4byte \unknown2
+	.short \item
+	.int \unknown1
+	.int \unknown2
 	.byte \unknown3
 	.endm
 
 	.macro giveegg species
 	.byte 0x7a
-	.2byte \species
+	.short \species
 	.endm
 
 	.macro setmonmove index, slot, move
 	.byte 0x7b
 	.byte \index
 	.byte \slot
-	.2byte \move
+	.short \move
 	.endm
 
 	@ Checks if at least one Pokemon in the player's party knows the specified (index) attack. If so, variable 0x800D (LASTRESULT) is set to the (zero-indexed) slot number of the first Pokemon that knows the move. If not, LASTRESULT is set to 0x0006. Variable 0x8004 is also set to this Pokemon's species.
 	.macro checkpartymove index
 	.byte 0x7c
-	.2byte \index
+	.short \index
 	.endm
 
 	@ Writes the name of the Pokemon at index species to the specified buffer.
 	.macro bufferspeciesname out, species
 	.byte 0x7d
 	.byte \out
-	.2byte \species
+	.short \species
 	.endm
 
 	@ Writes the name of the species of the first Pokemon in the player's party to the specified buffer.
@@ -881,73 +881,73 @@
 	.macro bufferpartymonnick out, slot
 	.byte 0x7f
 	.byte \out
-	.2byte \slot
+	.short \slot
 	.endm
 
 	@ Writes the name of the item at index item to the specified buffer. If the specified index is larger than the number of items in the game (0x176), the name of item 0 ("????????") is buffered instead.
 	.macro bufferitemname out, item
 	.byte 0x80
 	.byte \out
-	.2byte \item
+	.short \item
 	.endm
 
 	@ Writes the name of the decoration at index decoration to the specified buffer. In FireRed, this command is a nop.
 	.macro bufferdecorationname out, decoration
 	.byte 0x81
 	.byte \out
-	.2byte \decoration
+	.short \decoration
 	.endm
 
 	@ Writes the name of the move at index move to the specified buffer.
 	.macro buffermovename out, move
 	.byte 0x82
 	.byte \out
-	.2byte \move
+	.short \move
 	.endm
 
 	@ Converts the value of input to a decimal string, and writes that string to the specified buffer.
 	.macro buffernumberstring out, input
 	.byte 0x83
 	.byte \out
-	.2byte \input
+	.short \input
 	.endm
 
 	@ Writes the standard string identified by index to the specified buffer. This command has no protections in place at all, so specifying an invalid standard string (e.x. 0x2B) can and usually will cause data corruption.
 	.macro bufferstdstring out, index
 	.byte 0x84
 	.byte \out
-	.2byte \index
+	.short \index
 	.endm
 
 	@ Copies the string at offset to the specified buffer.
 	.macro bufferstring out, offset
 	.byte 0x85
 	.byte \out
-	.4byte \offset
+	.int \offset
 	.endm
 
 	@ Opens the Pokemart system, offering the specified products for sale.
 	.macro pokemart products
 	.byte 0x86
-	.4byte \products
+	.int \products
 	.endm
 
 	@ Opens the Pokemart system and treats the list of items as decorations.
 	.macro pokemartdecoration products
 	.byte 0x87
-	.4byte \products
+	.int \products
 	.endm
 
 	@ Apparent clone of pokemartdecoration.
 	.macro pokemartdecoration2 products
 	.byte 0x88
-	.4byte \products
+	.int \products
 	.endm
 
 	@ Starts up the slot machine minigame.
 	.macro playslotmachine word
 	.byte 0x89
-	.2byte \word
+	.short \word
 	.endm
 
 	@ Sets a berry tree's specific berry and growth stage. In FireRed, this command is a nop.
@@ -981,27 +981,27 @@
 	@ Stores a random integer between 0 and limit in variable 0x800D (LASTRESULT).
 	.macro random limit
 	.byte 0x8f
-	.2byte \limit
+	.short \limit
 	.endm
 
 	@ If check is 0x00, this command adds value to the player's money.
 	.macro givemoney value, check
 	.byte 0x90
-	.4byte \value
+	.int \value
 	.byte \check
 	.endm
 
 	@ If check is 0x00, this command subtracts value from the player's money.
 	.macro takemoney value, check
 	.byte 0x91
-	.4byte \value
+	.int \value
 	.byte \check
 	.endm
 
 	@ If check is 0x00, this command will check if the player has value or more money; script variable 0x800D (LASTRESULT) is set to 0x0001 if the player has enough money, or 0x0000 if the do not.
 	.macro checkmoney value, check
 	.byte 0x92
-	.4byte \value
+	.int \value
 	.byte \check
 	.endm
 
@@ -1029,7 +1029,7 @@
 	@ Gets the price reduction for the index given. In FireRed, this command is a nop.
 	.macro getpricereduction index
 	.byte 0x96
-	.2byte \index
+	.short \index
 	.endm
 
 	@ Fades the screen to and from black and white. Mode 0x00 fades from black, mode 0x01 fades out to black, mode 0x2 fades in from white, and mode 0x3 fades out to white.
@@ -1047,7 +1047,7 @@
 
 	.macro setflashradius word
 	.byte 0x99
-	.2byte \word
+	.short \word
 	.endm
 
 	.macro animateflash byte
@@ -1057,32 +1057,32 @@
 
 	.macro messageautoscroll pointer
 	.byte 0x9b
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	@ Executes the specified field move animation.
 	.macro dofieldeffect animation
 	.byte 0x9c
-	.2byte \animation
+	.short \animation
 	.endm
 
 	@ Sets up the field effect argument argument with the value value.
 	.macro setfieldeffectargument argument, param
 	.byte 0x9d
 	.byte \argument
-	.2byte \param
+	.short \param
 	.endm
 
 	@ Blocks script execution until all playing field move animations complete.
 	.macro waitfieldeffect animation
 	.byte 0x9e
-	.2byte \animation
+	.short \animation
 	.endm
 
 	@ Sets which healing place the player will return to if all of the Pokemon in their party faint.
 	.macro setrespawn heallocation
 	.byte 0x9f
-	.2byte \heallocation
+	.short \heallocation
 	.endm
 
 	@ Checks the player's gender. If male, then 0x0000 is stored in variable 0x800D (LASTRESULT). If female, then 0x0001 is stored in LASTRESULT.
@@ -1093,17 +1093,17 @@
 	@ Plays the specified (species) Pokemon's cry. You can use waitcry to block script execution until the sound finishes.
 	.macro playmoncry species, effect
 	.byte 0xa1
-	.2byte \species
-	.2byte \effect
+	.short \species
+	.short \effect
 	.endm
 
 	@ Changes the metatile at (x, y) on the current map.
 	.macro setmetatile x, y, metatile_number, tile_attrib
 	.byte 0xa2
-	.2byte \x
-	.2byte \y
-	.2byte \metatile_number
-	.2byte \tile_attrib
+	.short \x
+	.short \y
+	.short \metatile_number
+	.short \tile_attrib
 	.endm
 
 	@ Queues a weather change to the default weather for the map.
@@ -1114,7 +1114,7 @@
 	@ Queues a weather change to type weather.
 	.macro setweather type
 	.byte 0xa4
-	.2byte \type
+	.short \type
 	.endm
 
 	@ Executes the weather change queued with resetweather or setweather. The current weather will smoothly fade into the queued weather.
@@ -1130,19 +1130,19 @@
 
 	.macro setmaplayoutindex index
 	.byte 0xa7
-	.2byte \index
+	.short \index
 	.endm
 
 	.macro setobjectpriority index, map, priority
 	.byte 0xa8
-	.2byte \index
+	.short \index
 	map \map
 	.byte \priority
 	.endm
 
 	.macro resetobjectpriority index, map
 	.byte 0xa9
-	.2byte \index
+	.short \index
 	map \map
 	.endm
 
@@ -1150,8 +1150,8 @@
 	.byte 0xaa
 	.byte \sprite
 	.byte \byte2
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.byte \elevation
 	.byte \direction
 	.endm
@@ -1165,15 +1165,15 @@
 	@ Opens the door metatile at (X, Y) with an animation.
 	.macro opendoor x, y
 	.byte 0xac
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.endm
 
 	@ Closes the door metatile at (X, Y) with an animation.
 	.macro closedoor x, y
 	.byte 0xad
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.endm
 
 	@ Waits for the door animation started with opendoor or closedoor to finish.
@@ -1184,15 +1184,15 @@
 	@ Sets the door tile at (x, y) to be open without an animation.
 	.macro setdooropen x, y
 	.byte 0xaf
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.endm
 
 	@ Sets the door tile at (x, y) to be closed without an animation.
 	.macro setdoorclosed x, y
 	.byte 0xb0
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.endm
 
 	@ In FireRed, this command is a nop.
@@ -1207,25 +1207,25 @@
 
 	.macro checkcoins out
 	.byte 0xb3
-	.2byte \out
+	.short \out
 	.endm
 
 	.macro givecoins count
 	.byte 0xb4
-	.2byte \count
+	.short \count
 	.endm
 
 	.macro takecoins count
 	.byte 0xb5
-	.2byte \count
+	.short \count
 	.endm
 
 	@ Prepares to start a wild battle against a species at Level level holding item. Running this command will not affect normal wild battles. You start the prepared battle with dowildbattle.
 	.macro setwildbattle species, level, item
 	.byte 0xb6
-	.2byte \species
+	.short \species
 	.byte \level
-	.2byte \item
+	.short \item
 	.endm
 
 	@ Starts a wild battle against the Pokemon generated by setwildbattle. Blocks script execution until the battle finishes.
@@ -1235,45 +1235,45 @@
 
 	.macro setvaddress addr
 	.byte 0xb8
-	.4byte \addr
+	.int \addr
 	.endm
 
 	.macro vgoto pointer
 	.byte 0xb9
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vcall pointer
 	.byte 0xba
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vgoto_if byte, pointer
 	.byte 0xbb
 	.byte \byte
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vcall_if byte, pointer
 	.byte 0xbc
 	.byte \byte
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vmessage pointer
 	.byte 0xbd
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vloadptr pointer
 	.byte 0xbe
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	.macro vbufferstring byte, pointer
 	.byte 0xbf
 	.byte \byte
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	@ Spawns a secondary box showing how many Coins the player has.
@@ -1308,8 +1308,8 @@
 	.byte 0xc4
 	map \map
 	.byte \warp
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.endm
 
 	@ Blocks script execution until cry finishes.
@@ -1321,7 +1321,7 @@
 	.macro bufferboxname out, box
 	.byte 0xc6
 	.byte \out
-	.2byte \box
+	.short \box
 	.endm
 
 	@ Sets the color of the text in standard message boxes. 0x00 produces blue (male) text, 0x01 produces red (female) text, 0xFF resets the color to the default for the current OW's gender, and all other values produce black text.
@@ -1333,7 +1333,7 @@
 	@ The exact purpose of this command is unknown, but it is related to the blue help-text box that appears on the bottom of the screen when the Main Menu is opened.
 	.macro loadhelp pointer
 	.byte 0xc8
-	.4byte \pointer
+	.int \pointer
 	.endm
 
 	@ The exact purpose of this command is unknown, but it is related to the blue help-text box that appears on the bottom of the screen when the Main Menu is opened.
@@ -1355,7 +1355,7 @@
 	.macro comparehiddenvar a, value
 	.byte 0xcc
 	.byte \a
-	.4byte \value
+	.int \value
 	.endm
 
 @ Supplementary

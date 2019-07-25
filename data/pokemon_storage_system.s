@@ -6,11 +6,11 @@
 	.align 2
 
 gUnknown_083BBBD4:: @ 83BBBD4
-	.4byte sub_809C464, 0
-	.4byte sub_809C664, 1
-	.4byte sub_809C85C, 2
-	.4byte sub_809C944, 3
-	.4byte NULL, 0
+	.int sub_809C464, 0
+	.int sub_809C664, 1
+	.int sub_809C85C, 2
+	.int sub_809C944, 3
+	.int NULL, 0
 
 	.align 2
 gHandCursorSpriteSheets:: @ 83BBBFC
@@ -26,15 +26,15 @@ gHandCursorSpritePalettes:: @ 83BBC14
 
 	.align 2
 gOamData_83BBC2C:: @ 83BBC2C
-	.2byte 0x0000
-	.2byte 0x8000
-	.2byte 0x0400
+	.short 0x0000
+	.short 0x8000
+	.short 0x0400
 
 	.align 2
 gOamData_83BBC34:: @ 83BBC34
-	.2byte 0x0000
-	.2byte 0x4000
-	.2byte 0x0800
+	.short 0x0000
+	.short 0x4000
+	.short 0x0800
 
 	.align 2
 gSpriteAnim_83BBC3C:: @ 83BBC3C
@@ -59,10 +59,10 @@ gSpriteAnim_83BBC58:: @ 83BBC58
 
 	.align 2
 gSpriteAnimTable_83BBC60:: @ 83BBC60
-	.4byte gSpriteAnim_83BBC3C
-	.4byte gSpriteAnim_83BBC48
-	.4byte gSpriteAnim_83BBC50
-	.4byte gSpriteAnim_83BBC58
+	.int gSpriteAnim_83BBC3C
+	.int gSpriteAnim_83BBC48
+	.int gSpriteAnim_83BBC50
+	.int gSpriteAnim_83BBC58
 
 	.align 2
 gSpriteTemplate_83BBC70:: @ 83BBC70
@@ -79,38 +79,38 @@ gUnknown_Debug_0x83E6268:: @ 0x83E6268
 
 	.align 2
 gUnknown_083BBCA0:: @ 83BBCA0
-	.4byte PCText_Cancel2
-	.4byte PCText_Deposit
-	.4byte PCText_Withdraw
-	.4byte PCText_Move
-	.4byte PCText_Switch
-	.4byte PCText_Place
-	.4byte PCText_Summary
-	.4byte PCText_Release
-	.4byte PCText_Mark
-	.4byte PCText_Jump
-	.4byte PCText_Wallpaper
-	.4byte PCText_Name
-	.4byte PCText_Scenery1
-	.4byte PCText_Scenery2
-	.4byte PCText_Scenery3
-	.4byte PCText_Etc
-	.4byte PCText_Forest
-	.4byte PCText_City
-	.4byte PCText_Desert
-	.4byte PCText_Savanna
-	.4byte PCText_Crag
-	.4byte PCText_Volcano
-	.4byte PCText_Snow
-	.4byte PCText_Cave
-	.4byte PCText_Beach
-	.4byte PCText_Seafloor
-	.4byte PCText_River
-	.4byte PCText_Sky
-	.4byte PCText_Polka
-	.4byte PCText_PokeCenter
-	.4byte PCText_Machine
-	.4byte PCText_Plain
+	.int PCText_Cancel2
+	.int PCText_Deposit
+	.int PCText_Withdraw
+	.int PCText_Move
+	.int PCText_Switch
+	.int PCText_Place
+	.int PCText_Summary
+	.int PCText_Release
+	.int PCText_Mark
+	.int PCText_Jump
+	.int PCText_Wallpaper
+	.int PCText_Name
+	.int PCText_Scenery1
+	.int PCText_Scenery2
+	.int PCText_Scenery3
+	.int PCText_Etc
+	.int PCText_Forest
+	.int PCText_City
+	.int PCText_Desert
+	.int PCText_Savanna
+	.int PCText_Crag
+	.int PCText_Volcano
+	.int PCText_Snow
+	.int PCText_Cave
+	.int PCText_Beach
+	.int PCText_Seafloor
+	.int PCText_River
+	.int PCText_Sky
+	.int PCText_Polka
+	.int PCText_PokeCenter
+	.int PCText_Machine
+	.int PCText_Plain
 .if DEBUG
-	.4byte gUnknown_Debug_0x83E6268
+	.int gUnknown_Debug_0x83E6268
 .endif

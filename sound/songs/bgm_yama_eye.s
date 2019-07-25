@@ -46,7 +46,7 @@ bgm_yama_eye_1_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_yama_eye_1_B1
+	 .int	bgm_yama_eye_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -245,7 +245,7 @@ bgm_yama_eye_2_B1:
 	.byte		MOD   , 0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_yama_eye_2_B1
+	 .int	bgm_yama_eye_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -328,16 +328,16 @@ bgm_yama_eye_3_001:
 	.byte		        Bn0 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_yama_eye_3_001
+	 .int	bgm_yama_eye_3_001
 	.byte		BEND  , c_v+0
 	.byte		N08   , An0 , v112
 	.byte	W48
 	.byte		        En0 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_yama_eye_3_000
+	 .int	bgm_yama_eye_3_000
 	.byte	GOTO
-	 .word	bgm_yama_eye_3_B1
+	 .int	bgm_yama_eye_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -467,7 +467,7 @@ bgm_yama_eye_4_B1:
 	.byte		BEND  , c_v+20
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_yama_eye_4_B1
+	 .int	bgm_yama_eye_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -544,7 +544,7 @@ bgm_yama_eye_5_000:
 	.byte		N02   , Fs3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_yama_eye_5_000
+	 .int	bgm_yama_eye_5_000
 bgm_yama_eye_5_001:
 	.byte		N04   , Gn3 , v112
 	.byte	W12
@@ -590,7 +590,7 @@ bgm_yama_eye_5_001:
 	.byte		N02   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_yama_eye_5_001
+	 .int	bgm_yama_eye_5_001
 	.byte		N12   , En3 , v112
 	.byte	W16
 	.byte		N02   
@@ -634,7 +634,7 @@ bgm_yama_eye_5_001:
 	.byte		N02   , Dn3 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_yama_eye_5_B1
+	 .int	bgm_yama_eye_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -711,7 +711,7 @@ bgm_yama_eye_6_000:
 	.byte		N02   , An3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_yama_eye_6_000
+	 .int	bgm_yama_eye_6_000
 bgm_yama_eye_6_001:
 	.byte		N04   , Bn3 , v112
 	.byte	W12
@@ -757,7 +757,7 @@ bgm_yama_eye_6_001:
 	.byte		N02   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_yama_eye_6_001
+	 .int	bgm_yama_eye_6_001
 	.byte		N12   , An3 , v112
 	.byte	W16
 	.byte		N02   
@@ -801,7 +801,7 @@ bgm_yama_eye_6_001:
 	.byte		N02   , An3 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_yama_eye_6_B1
+	 .int	bgm_yama_eye_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -878,19 +878,19 @@ bgm_yama_eye_7_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_yama_eye_7_000
+	 .int	bgm_yama_eye_7_000
 	.byte	PATT
-	 .word	bgm_yama_eye_7_001
+	 .int	bgm_yama_eye_7_001
 	.byte	PATT
-	 .word	bgm_yama_eye_7_000
+	 .int	bgm_yama_eye_7_000
 	.byte	PATT
-	 .word	bgm_yama_eye_7_001
+	 .int	bgm_yama_eye_7_001
 	.byte	PATT
-	 .word	bgm_yama_eye_7_000
+	 .int	bgm_yama_eye_7_000
 	.byte	PATT
-	 .word	bgm_yama_eye_7_001
+	 .int	bgm_yama_eye_7_001
 	.byte	GOTO
-	 .word	bgm_yama_eye_7_B1
+	 .int	bgm_yama_eye_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1013,7 +1013,7 @@ bgm_yama_eye_8_B1:
 	.byte		        0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_yama_eye_8_B1
+	 .int	bgm_yama_eye_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1025,15 +1025,15 @@ bgm_yama_eye:
 	.byte	bgm_yama_eye_pri	@ Priority
 	.byte	bgm_yama_eye_rev	@ Reverb.
 
-	.word	bgm_yama_eye_grp
+	.int	bgm_yama_eye_grp
 
-	.word	bgm_yama_eye_1
-	.word	bgm_yama_eye_2
-	.word	bgm_yama_eye_3
-	.word	bgm_yama_eye_4
-	.word	bgm_yama_eye_5
-	.word	bgm_yama_eye_6
-	.word	bgm_yama_eye_7
-	.word	bgm_yama_eye_8
+	.int	bgm_yama_eye_1
+	.int	bgm_yama_eye_2
+	.int	bgm_yama_eye_3
+	.int	bgm_yama_eye_4
+	.int	bgm_yama_eye_5
+	.int	bgm_yama_eye_6
+	.int	bgm_yama_eye_7
+	.int	bgm_yama_eye_8
 
 	.end

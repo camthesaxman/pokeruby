@@ -326,8 +326,8 @@ se_exp:
 	.byte	se_exp_pri	@ Priority
 	.byte	se_exp_rev	@ Reverb.
 
-	.word	se_exp_grp
+	.int	se_exp_grp
 
-	.word	se_exp_1
+	.int	se_exp_1
 
 	.end

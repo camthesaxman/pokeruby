@@ -65,8 +65,8 @@ se_w059b:
 	.byte	se_w059b_pri	@ Priority
 	.byte	se_w059b_rev	@ Reverb.
 
-	.word	se_w059b_grp
+	.int	se_w059b_grp
 
-	.word	se_w059b_1
+	.int	se_w059b_1
 
 	.end

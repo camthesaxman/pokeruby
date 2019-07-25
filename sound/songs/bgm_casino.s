@@ -62,59 +62,59 @@ bgm_casino_1_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte		N04   , En5 , v112
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte		VOICE , 127
 	.byte		N04   , En5 , v112
 	.byte	W16
@@ -153,7 +153,7 @@ bgm_casino_1_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_1_002
+	 .int	bgm_casino_1_002
 bgm_casino_1_003:
 	.byte		N04   , En5 , v112
 	.byte	W16
@@ -175,7 +175,7 @@ bgm_casino_1_003:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_1_003
+	 .int	bgm_casino_1_003
 	.byte		N04   , En5 , v112
 	.byte	W16
 	.byte		        En5 , v064
@@ -231,39 +231,39 @@ bgm_casino_1_003:
 	.byte		        En5 , v064
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_1_000
+	 .int	bgm_casino_1_000
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	PATT
-	 .word	bgm_casino_1_001
+	 .int	bgm_casino_1_001
 	.byte	GOTO
-	 .word	bgm_casino_1_B1
+	 .int	bgm_casino_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -580,7 +580,7 @@ bgm_casino_2_B1:
 	.byte		N48   , Dn6 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_casino_2_B1
+	 .int	bgm_casino_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -692,9 +692,9 @@ bgm_casino_3_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_3_000
+	 .int	bgm_casino_3_000
 	.byte	PATT
-	 .word	bgm_casino_3_001
+	 .int	bgm_casino_3_001
 bgm_casino_3_004:
 	.byte		N08   , Fn1 , v112
 	.byte	W16
@@ -720,19 +720,19 @@ bgm_casino_3_004:
 	.byte		        Dn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_casino_3_000
+	 .int	bgm_casino_3_000
 	.byte	PATT
-	 .word	bgm_casino_3_001
+	 .int	bgm_casino_3_001
 	.byte	PATT
-	 .word	bgm_casino_3_002
+	 .int	bgm_casino_3_002
 	.byte	PATT
-	 .word	bgm_casino_3_003
+	 .int	bgm_casino_3_003
 	.byte	PATT
-	 .word	bgm_casino_3_000
+	 .int	bgm_casino_3_000
 	.byte	PATT
-	 .word	bgm_casino_3_001
+	 .int	bgm_casino_3_001
 	.byte	PATT
-	 .word	bgm_casino_3_004
+	 .int	bgm_casino_3_004
 	.byte		VOL   , 72*bgm_casino_mvl/mxv
 	.byte		N08   , As1 , v112
 	.byte	W24
@@ -854,9 +854,9 @@ bgm_casino_3_006:
 	.byte		        Cn2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_3_005
+	 .int	bgm_casino_3_005
 	.byte	PATT
-	 .word	bgm_casino_3_006
+	 .int	bgm_casino_3_006
 	.byte		N12   , Gn2 , v112
 	.byte	W16
 	.byte		N04   , Ds2 
@@ -900,7 +900,7 @@ bgm_casino_3_006:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_casino_3_B1
+	 .int	bgm_casino_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1666,7 +1666,7 @@ bgm_casino_4_B1:
 	.byte		N08   , As3 , v036
 	.byte	W28
 	.byte	GOTO
-	 .word	bgm_casino_4_B1
+	 .int	bgm_casino_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2331,7 +2331,7 @@ bgm_casino_5_B1:
 	.byte		N08   , An4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_casino_5_B1
+	 .int	bgm_casino_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2474,9 +2474,9 @@ bgm_casino_6_004:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_6_001
+	 .int	bgm_casino_6_001
 	.byte	PATT
-	 .word	bgm_casino_6_002
+	 .int	bgm_casino_6_002
 	.byte		N02   , Dn4 , v112
 	.byte	W04
 	.byte		        Ds4 
@@ -2506,19 +2506,19 @@ bgm_casino_6_004:
 	.byte		        Dn3 , v112
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_6_000
+	 .int	bgm_casino_6_000
 	.byte	PATT
-	 .word	bgm_casino_6_001
+	 .int	bgm_casino_6_001
 	.byte	PATT
-	 .word	bgm_casino_6_002
+	 .int	bgm_casino_6_002
 	.byte	PATT
-	 .word	bgm_casino_6_003
+	 .int	bgm_casino_6_003
 	.byte	PATT
-	 .word	bgm_casino_6_004
+	 .int	bgm_casino_6_004
 	.byte	PATT
-	 .word	bgm_casino_6_001
+	 .int	bgm_casino_6_001
 	.byte	PATT
-	 .word	bgm_casino_6_002
+	 .int	bgm_casino_6_002
 	.byte		N04   , Dn4 , v112
 	.byte	W72
 	.byte		VOICE , 80
@@ -2604,7 +2604,7 @@ bgm_casino_6_005:
 	.byte		N08   , Ds3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_6_005
+	 .int	bgm_casino_6_005
 	.byte		N60   , Dn3 , v112
 	.byte	W60
 	.byte	W02
@@ -2742,7 +2742,7 @@ bgm_casino_6_005:
 	.byte		        Fn3 , v112
 	.byte	W32
 	.byte	GOTO
-	 .word	bgm_casino_6_B1
+	 .int	bgm_casino_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2883,9 +2883,9 @@ bgm_casino_7_004:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_7_001
+	 .int	bgm_casino_7_001
 	.byte	PATT
-	 .word	bgm_casino_7_002
+	 .int	bgm_casino_7_002
 	.byte		N02   , An4 , v112
 	.byte	W04
 	.byte		        As4 
@@ -2915,19 +2915,19 @@ bgm_casino_7_004:
 	.byte		        As3 , v112
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_7_000
+	 .int	bgm_casino_7_000
 	.byte	PATT
-	 .word	bgm_casino_7_001
+	 .int	bgm_casino_7_001
 	.byte	PATT
-	 .word	bgm_casino_7_002
+	 .int	bgm_casino_7_002
 	.byte	PATT
-	 .word	bgm_casino_7_003
+	 .int	bgm_casino_7_003
 	.byte	PATT
-	 .word	bgm_casino_7_004
+	 .int	bgm_casino_7_004
 	.byte	PATT
-	 .word	bgm_casino_7_001
+	 .int	bgm_casino_7_001
 	.byte	PATT
-	 .word	bgm_casino_7_002
+	 .int	bgm_casino_7_002
 	.byte		N04   , As4 , v112
 	.byte	W72
 	.byte		VOICE , 81
@@ -3148,7 +3148,7 @@ bgm_casino_7_004:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_casino_7_B1
+	 .int	bgm_casino_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3225,7 +3225,7 @@ bgm_casino_8_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_8_000
+	 .int	bgm_casino_8_000
 	.byte	W16
 	.byte		N04   , Cn1 , v112
 	.byte	W32
@@ -3240,11 +3240,11 @@ bgm_casino_8_001:
 	.byte		        En1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_casino_8_000
+	 .int	bgm_casino_8_000
 	.byte	PATT
-	 .word	bgm_casino_8_001
+	 .int	bgm_casino_8_001
 	.byte	PATT
-	 .word	bgm_casino_8_000
+	 .int	bgm_casino_8_000
 	.byte	W16
 	.byte		N04   , Cn1 , v112
 	.byte	W32
@@ -3288,7 +3288,7 @@ bgm_casino_8_001:
 	.byte		N04   
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_casino_8_B1
+	 .int	bgm_casino_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3406,9 +3406,9 @@ bgm_casino_9_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_casino_9_000
+	 .int	bgm_casino_9_000
 	.byte	PATT
-	 .word	bgm_casino_9_001
+	 .int	bgm_casino_9_001
 bgm_casino_9_004:
 	.byte		N08   , Fn1 , v112
 	.byte	W16
@@ -3434,19 +3434,19 @@ bgm_casino_9_004:
 	.byte		        Dn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_casino_9_000
+	 .int	bgm_casino_9_000
 	.byte	PATT
-	 .word	bgm_casino_9_001
+	 .int	bgm_casino_9_001
 	.byte	PATT
-	 .word	bgm_casino_9_002
+	 .int	bgm_casino_9_002
 	.byte	PATT
-	 .word	bgm_casino_9_003
+	 .int	bgm_casino_9_003
 	.byte	PATT
-	 .word	bgm_casino_9_000
+	 .int	bgm_casino_9_000
 	.byte	PATT
-	 .word	bgm_casino_9_001
+	 .int	bgm_casino_9_001
 	.byte	PATT
-	 .word	bgm_casino_9_004
+	 .int	bgm_casino_9_004
 	.byte		N08   , As1 , v112
 	.byte	W96
 	.byte		VOICE , 83
@@ -3804,7 +3804,7 @@ bgm_casino_9_004:
 	.byte		N08   , An4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_casino_9_B1
+	 .int	bgm_casino_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -4113,7 +4113,7 @@ bgm_casino_10_000:
 	.byte		N04   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_casino_10_000
+	 .int	bgm_casino_10_000
 	.byte		N04   , Dn3 , v088
 	.byte	W16
 	.byte		        Dn3 , v112
@@ -4123,7 +4123,7 @@ bgm_casino_10_000:
 	.byte		        Dn3 , v112
 	.byte	W32
 	.byte	GOTO
-	 .word	bgm_casino_10_B1
+	 .int	bgm_casino_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -4135,17 +4135,17 @@ bgm_casino:
 	.byte	bgm_casino_pri	@ Priority
 	.byte	bgm_casino_rev	@ Reverb.
 
-	.word	bgm_casino_grp
+	.int	bgm_casino_grp
 
-	.word	bgm_casino_1
-	.word	bgm_casino_2
-	.word	bgm_casino_3
-	.word	bgm_casino_4
-	.word	bgm_casino_5
-	.word	bgm_casino_6
-	.word	bgm_casino_7
-	.word	bgm_casino_8
-	.word	bgm_casino_9
-	.word	bgm_casino_10
+	.int	bgm_casino_1
+	.int	bgm_casino_2
+	.int	bgm_casino_3
+	.int	bgm_casino_4
+	.int	bgm_casino_5
+	.int	bgm_casino_6
+	.int	bgm_casino_7
+	.int	bgm_casino_8
+	.int	bgm_casino_9
+	.int	bgm_casino_10
 
 	.end

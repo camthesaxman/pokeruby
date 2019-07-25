@@ -38,8 +38,8 @@ se_bowa:
 	.byte	se_bowa_pri	@ Priority
 	.byte	se_bowa_rev	@ Reverb.
 
-	.word	se_bowa_grp
+	.int	se_bowa_grp
 
-	.word	se_bowa_1
+	.int	se_bowa_1
 
 	.end

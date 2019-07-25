@@ -210,12 +210,12 @@ bgm_me_zannen:
 	.byte	bgm_me_zannen_pri	@ Priority
 	.byte	bgm_me_zannen_rev	@ Reverb.
 
-	.word	bgm_me_zannen_grp
+	.int	bgm_me_zannen_grp
 
-	.word	bgm_me_zannen_1
-	.word	bgm_me_zannen_2
-	.word	bgm_me_zannen_3
-	.word	bgm_me_zannen_4
-	.word	bgm_me_zannen_5
+	.int	bgm_me_zannen_1
+	.int	bgm_me_zannen_2
+	.int	bgm_me_zannen_3
+	.int	bgm_me_zannen_4
+	.int	bgm_me_zannen_5
 
 	.end

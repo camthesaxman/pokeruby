@@ -3414,17 +3414,17 @@ bgm_demo1:
 	.byte	bgm_demo1_pri	@ Priority
 	.byte	bgm_demo1_rev	@ Reverb.
 
-	.word	bgm_demo1_grp
+	.int	bgm_demo1_grp
 
-	.word	bgm_demo1_1
-	.word	bgm_demo1_2
-	.word	bgm_demo1_3
-	.word	bgm_demo1_4
-	.word	bgm_demo1_5
-	.word	bgm_demo1_6
-	.word	bgm_demo1_7
-	.word	bgm_demo1_8
-	.word	bgm_demo1_9
-	.word	bgm_demo1_10
+	.int	bgm_demo1_1
+	.int	bgm_demo1_2
+	.int	bgm_demo1_3
+	.int	bgm_demo1_4
+	.int	bgm_demo1_5
+	.int	bgm_demo1_6
+	.int	bgm_demo1_7
+	.int	bgm_demo1_8
+	.int	bgm_demo1_9
+	.int	bgm_demo1_10
 
 	.end

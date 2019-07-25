@@ -45,8 +45,8 @@ se_toy_dango:
 	.byte	se_toy_dango_pri	@ Priority
 	.byte	se_toy_dango_rev	@ Reverb.
 
-	.word	se_toy_dango_grp
+	.int	se_toy_dango_grp
 
-	.word	se_toy_dango_1
+	.int	se_toy_dango_1
 
 	.end

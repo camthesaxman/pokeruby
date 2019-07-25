@@ -83,12 +83,12 @@ SoundMain_5:
 	bx r3
 
 	.align 2, 0
-lt_SOUND_INFO_PTR:        .word SOUND_INFO_PTR
-lt_ID_NUMBER:             .word ID_NUMBER
-lt_SoundMainRAM_Buffer:   .word SoundMainRAM_Buffer + 1
-lt_REG_VCOUNT:            .word REG_VCOUNT
-lt_o_SoundInfo_pcmBuffer: .word o_SoundInfo_pcmBuffer
-lt_PCM_DMA_BUF_SIZE:      .word PCM_DMA_BUF_SIZE
+lt_SOUND_INFO_PTR:        .int SOUND_INFO_PTR
+lt_ID_NUMBER:             .int ID_NUMBER
+lt_SoundMainRAM_Buffer:   .int SoundMainRAM_Buffer + 1
+lt_REG_VCOUNT:            .int REG_VCOUNT
+lt_o_SoundInfo_pcmBuffer: .int o_SoundInfo_pcmBuffer
+lt_PCM_DMA_BUF_SIZE:      .int PCM_DMA_BUF_SIZE
 	thumb_func_end SoundMain
 
 	thumb_func_start SoundMainRAM
@@ -820,7 +820,7 @@ chk_adr_r2_done:
 	bx lr
 
 	.align 2, 0
-lt_MPlayJumpTableTemplate: .word gMPlayJumpTableTemplate
+lt_MPlayJumpTableTemplate: .int gMPlayJumpTableTemplate
 
 	thumb_func_start ld_r3_tp_adr_i
 ld_r3_tp_adr_i:
@@ -1464,9 +1464,9 @@ call_r3:
 	bx r3
 
 	.align 2, 0
-lt_gClockTable:     .word gClockTable
-lt2_SOUND_INFO_PTR: .word SOUND_INFO_PTR
-lt2_ID_NUMBER:      .word ID_NUMBER
+lt_gClockTable:     .int gClockTable
+lt2_SOUND_INFO_PTR: .int SOUND_INFO_PTR
+lt2_ID_NUMBER:      .int ID_NUMBER
 	thumb_func_end MPlayMain
 
 	thumb_func_start TrackStop

@@ -34,8 +34,8 @@ se_jido_doa:
 	.byte	se_jido_doa_pri	@ Priority
 	.byte	se_jido_doa_rev	@ Reverb.
 
-	.word	se_jido_doa_grp
+	.int	se_jido_doa_grp
 
-	.word	se_jido_doa_1
+	.int	se_jido_doa_1
 
 	.end

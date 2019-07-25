@@ -243,9 +243,9 @@ se_w019:
 	.byte	se_w019_pri	@ Priority
 	.byte	se_w019_rev	@ Reverb.
 
-	.word	se_w019_grp
+	.int	se_w019_grp
 
-	.word	se_w019_1
-	.word	se_w019_2
+	.int	se_w019_1
+	.int	se_w019_2
 
 	.end

@@ -7,7 +7,7 @@ SSTidalCorridor_MapScript2_15FC9A:: @ 815FC9A
 	map_script_2 VAR_PORTHOLE_STATE, 5, SSTidalCorridor_EventScript_15FCD2
 	map_script_2 VAR_PORTHOLE_STATE, 9, SSTidalCorridor_EventScript_15FD24
 	map_script_2 VAR_PORTHOLE_STATE, 10, SSTidalCorridor_EventScript_15FD3A
-	.2byte 0
+	.short 0
 
 SSTidalCorridor_EventScript_15FCBC:: @ 815FCBC
 	special SetSSTidalFlag

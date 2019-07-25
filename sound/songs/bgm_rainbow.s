@@ -441,7 +441,7 @@ bgm_rainbow_1_B1:
 	.byte		        Cn4 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_rainbow_1_B1
+	 .int	bgm_rainbow_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -568,15 +568,15 @@ bgm_rainbow_2_003:
 	.byte		N56   , Cn4 
 	.byte	W56
 	.byte	PATT
-	 .word	bgm_rainbow_2_000
+	 .int	bgm_rainbow_2_000
 	.byte	W96
 	.byte		EOT   , Cn4 
 	.byte	PATT
-	 .word	bgm_rainbow_2_001
+	 .int	bgm_rainbow_2_001
 	.byte	PATT
-	 .word	bgm_rainbow_2_002
+	 .int	bgm_rainbow_2_002
 	.byte	PATT
-	 .word	bgm_rainbow_2_003
+	 .int	bgm_rainbow_2_003
 	.byte		N24   , Dn4 , v112
 	.byte	W24
 	.byte		N04   , Fn4 
@@ -745,7 +745,7 @@ bgm_rainbow_2_003:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_rainbow_2_B1
+	 .int	bgm_rainbow_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1020,11 +1020,11 @@ bgm_rainbow_3_005:
 	.byte		        As1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_3_000
+	 .int	bgm_rainbow_3_000
 	.byte	PATT
-	 .word	bgm_rainbow_3_001
+	 .int	bgm_rainbow_3_001
 	.byte	PATT
-	 .word	bgm_rainbow_3_002
+	 .int	bgm_rainbow_3_002
 	.byte		N04   , Fs1 , v112
 	.byte	W16
 	.byte		N04   
@@ -1046,9 +1046,9 @@ bgm_rainbow_3_005:
 	.byte		        Fs1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_3_004
+	 .int	bgm_rainbow_3_004
 	.byte	PATT
-	 .word	bgm_rainbow_3_005
+	 .int	bgm_rainbow_3_005
 	.byte		N04   , Ds1 , v112
 	.byte	W16
 	.byte		N04   
@@ -1070,7 +1070,7 @@ bgm_rainbow_3_005:
 	.byte		        Fn2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_3_003
+	 .int	bgm_rainbow_3_003
 	.byte		N04   , Fs1 , v112
 	.byte	W16
 	.byte		N04   
@@ -1092,7 +1092,7 @@ bgm_rainbow_3_005:
 	.byte		        Fs1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_3_004
+	 .int	bgm_rainbow_3_004
 	.byte		N04   , Fn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -1352,7 +1352,7 @@ bgm_rainbow_3_005:
 	.byte		        Cn2 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_rainbow_3_B1
+	 .int	bgm_rainbow_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1660,7 +1660,7 @@ bgm_rainbow_4_000:
 	.byte		        Cs4 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_4_000
+	 .int	bgm_rainbow_4_000
 	.byte		N48   , Cs5 , v112
 	.byte	W12
 	.byte		VOL   , 67*bgm_rainbow_mvl/mxv
@@ -1801,7 +1801,7 @@ bgm_rainbow_4_000:
 	.byte		        31*bgm_rainbow_mvl/mxv
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_rainbow_4_B1
+	 .int	bgm_rainbow_4_B1
 	.byte		VOL   , 68*bgm_rainbow_mvl/mxv
 	.byte	FINE
 
@@ -1827,7 +1827,7 @@ bgm_rainbow_5_000:
 	.byte	W48
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_rainbow_5_000
+	 .int	bgm_rainbow_5_000
 bgm_rainbow_5_B1:
 	.byte		N16   , Fn3 , v112
 	.byte	W16
@@ -1927,9 +1927,9 @@ bgm_rainbow_5_002:
 	.byte		        Fn3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_5_001
+	 .int	bgm_rainbow_5_001
 	.byte	PATT
-	 .word	bgm_rainbow_5_002
+	 .int	bgm_rainbow_5_002
 	.byte		N48   , Ds3 , v112
 	.byte	W48
 	.byte		N24   
@@ -1982,7 +1982,7 @@ bgm_rainbow_5_003:
 	.byte	W56
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_rainbow_5_003
+	 .int	bgm_rainbow_5_003
 	.byte		N24   , Fs3 , v112
 	.byte	W24
 	.byte		N24   
@@ -2059,7 +2059,7 @@ bgm_rainbow_5_003:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_rainbow_5_B1
+	 .int	bgm_rainbow_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2182,7 +2182,7 @@ bgm_rainbow_6_000:
 	.byte		        An3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_6_000
+	 .int	bgm_rainbow_6_000
 	.byte		N16   , Gn3 , v112
 	.byte	W24
 	.byte		N24   
@@ -2243,7 +2243,7 @@ bgm_rainbow_6_001:
 	.byte	W56
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_rainbow_6_001
+	 .int	bgm_rainbow_6_001
 	.byte		N24   , Cs4 , v112
 	.byte	W24
 	.byte		N24   
@@ -2323,7 +2323,7 @@ bgm_rainbow_6_001:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_rainbow_6_B1
+	 .int	bgm_rainbow_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2389,7 +2389,7 @@ bgm_rainbow_7_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte		N01   , En5 , v112
 	.byte	W08
 	.byte		        En5 , v064
@@ -2418,19 +2418,19 @@ bgm_rainbow_7_001:
 	.byte	W08
 bgm_rainbow_7_B1:
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte		N01   , En5 , v112
 	.byte	W08
 	.byte		        En5 , v064
@@ -2456,55 +2456,55 @@ bgm_rainbow_7_B1:
 	.byte		        En5 , v064
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	PATT
-	 .word	bgm_rainbow_7_000
+	 .int	bgm_rainbow_7_000
 	.byte	PATT
-	 .word	bgm_rainbow_7_001
+	 .int	bgm_rainbow_7_001
 	.byte	GOTO
-	 .word	bgm_rainbow_7_B1
+	 .int	bgm_rainbow_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2648,11 +2648,11 @@ bgm_rainbow_8_002:
 	.byte	W96
 	.byte		EOT   
 	.byte	PATT
-	 .word	bgm_rainbow_8_000
+	 .int	bgm_rainbow_8_000
 	.byte	PATT
-	 .word	bgm_rainbow_8_001
+	 .int	bgm_rainbow_8_001
 	.byte	PATT
-	 .word	bgm_rainbow_8_002
+	 .int	bgm_rainbow_8_002
 	.byte		N24   , Dn4 , v112
 	.byte	W24
 	.byte		N04   , Fn4 
@@ -2801,7 +2801,7 @@ bgm_rainbow_8_002:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_rainbow_8_B1
+	 .int	bgm_rainbow_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2813,15 +2813,15 @@ bgm_rainbow:
 	.byte	bgm_rainbow_pri	@ Priority
 	.byte	bgm_rainbow_rev	@ Reverb.
 
-	.word	bgm_rainbow_grp
+	.int	bgm_rainbow_grp
 
-	.word	bgm_rainbow_1
-	.word	bgm_rainbow_2
-	.word	bgm_rainbow_3
-	.word	bgm_rainbow_4
-	.word	bgm_rainbow_5
-	.word	bgm_rainbow_6
-	.word	bgm_rainbow_7
-	.word	bgm_rainbow_8
+	.int	bgm_rainbow_1
+	.int	bgm_rainbow_2
+	.int	bgm_rainbow_3
+	.int	bgm_rainbow_4
+	.int	bgm_rainbow_5
+	.int	bgm_rainbow_6
+	.int	bgm_rainbow_7
+	.int	bgm_rainbow_8
 
 	.end

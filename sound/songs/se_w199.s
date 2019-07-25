@@ -62,8 +62,8 @@ se_w199:
 	.byte	se_w199_pri	@ Priority
 	.byte	se_w199_rev	@ Reverb.
 
-	.word	se_w199_grp
+	.int	se_w199_grp
 
-	.word	se_w199_1
+	.int	se_w199_1
 
 	.end

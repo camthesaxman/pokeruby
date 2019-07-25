@@ -471,7 +471,7 @@ bgm_naminori_1_000:
 	.byte		        Fn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_naminori_1_000
+	 .int	bgm_naminori_1_000
 	.byte		N18   , As4 , v104
 	.byte	W18
 	.byte		N06   , An4 
@@ -570,7 +570,7 @@ bgm_naminori_1_000:
 	.byte		MOD   , 0
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_naminori_1_B1
+	 .int	bgm_naminori_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -659,9 +659,9 @@ bgm_naminori_2_001:
 	.byte		N12   , Cs1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_naminori_2_000
+	 .int	bgm_naminori_2_000
 	.byte	PATT
-	 .word	bgm_naminori_2_001
+	 .int	bgm_naminori_2_001
 	.byte		N24   , As0 , v127
 	.byte	W24
 	.byte		N06   , Fs0 
@@ -786,7 +786,7 @@ bgm_naminori_2_002:
 	.byte		        25*bgm_naminori_mvl/mxv
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_naminori_2_002
+	 .int	bgm_naminori_2_002
 	.byte		VOL   , 80*bgm_naminori_mvl/mxv
 	.byte		N32   , Ds2 , v112
 	.byte	W36
@@ -805,7 +805,7 @@ bgm_naminori_2_003:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_naminori_2_003
+	 .int	bgm_naminori_2_003
 	.byte		N24   , As0 , v127
 	.byte	W24
 	.byte		N06   
@@ -997,7 +997,7 @@ bgm_naminori_2_003:
 	.byte		        27*bgm_naminori_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_naminori_2_B1
+	 .int	bgm_naminori_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1389,7 +1389,7 @@ bgm_naminori_3_B1:
 	.byte		        Ds4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_naminori_3_B1
+	 .int	bgm_naminori_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1884,7 +1884,7 @@ bgm_naminori_4_B1:
 	.byte		        27*bgm_naminori_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_naminori_4_B1
+	 .int	bgm_naminori_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2262,7 +2262,7 @@ bgm_naminori_5_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_naminori_5_000
+	 .int	bgm_naminori_5_000
 	.byte		N12   , Fn3 , v060
 	.byte	W12
 	.byte		N06   , As3 
@@ -2435,7 +2435,7 @@ bgm_naminori_5_000:
 	.byte		VOL   , 27*bgm_naminori_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_naminori_5_B1
+	 .int	bgm_naminori_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2862,9 +2862,9 @@ bgm_naminori_6_001:
 	.byte		        Gs4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_naminori_6_000
+	 .int	bgm_naminori_6_000
 	.byte	PATT
-	 .word	bgm_naminori_6_001
+	 .int	bgm_naminori_6_001
 	.byte		N06   , Cn3 , v092
 	.byte	W06
 	.byte		        Fn3 
@@ -2981,7 +2981,7 @@ bgm_naminori_6_001:
 	.byte		        27*bgm_naminori_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_naminori_6_B1
+	 .int	bgm_naminori_6_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2993,13 +2993,13 @@ bgm_naminori:
 	.byte	bgm_naminori_pri	@ Priority
 	.byte	bgm_naminori_rev	@ Reverb.
 
-	.word	bgm_naminori_grp
+	.int	bgm_naminori_grp
 
-	.word	bgm_naminori_1
-	.word	bgm_naminori_2
-	.word	bgm_naminori_3
-	.word	bgm_naminori_4
-	.word	bgm_naminori_5
-	.word	bgm_naminori_6
+	.int	bgm_naminori_1
+	.int	bgm_naminori_2
+	.int	bgm_naminori_3
+	.int	bgm_naminori_4
+	.int	bgm_naminori_5
+	.int	bgm_naminori_6
 
 	.end

@@ -16,44 +16,44 @@
 	.include "include/macros/event.inc"
 	.include "constants/constants.inc"
 
-	.section script_data, "aw", %progbits
+	.section script_data, "aw"
 
 @ 814AE30
 	.include "data/script_cmd_table.inc"
 
 	.align 2
 gSpecialVars::
-	.4byte gSpecialVar_0x8000
-	.4byte gSpecialVar_0x8001
-	.4byte gSpecialVar_0x8002
-	.4byte gSpecialVar_0x8003
-	.4byte gSpecialVar_0x8004
-	.4byte gSpecialVar_0x8005
-	.4byte gSpecialVar_0x8006
-	.4byte gSpecialVar_0x8007
-	.4byte gSpecialVar_0x8008
-	.4byte gSpecialVar_0x8009
-	.4byte gSpecialVar_0x800A
-	.4byte gSpecialVar_0x800B
-	.4byte gSpecialVar_Facing
-	.4byte gSpecialVar_Result
-	.4byte gSpecialVar_ItemId
-	.4byte gSpecialVar_LastTalked
-	.4byte gSpecialVar_ContestRank
-	.4byte gSpecialVar_ContestCategory
+	.int gSpecialVar_0x8000
+	.int gSpecialVar_0x8001
+	.int gSpecialVar_0x8002
+	.int gSpecialVar_0x8003
+	.int gSpecialVar_0x8004
+	.int gSpecialVar_0x8005
+	.int gSpecialVar_0x8006
+	.int gSpecialVar_0x8007
+	.int gSpecialVar_0x8008
+	.int gSpecialVar_0x8009
+	.int gSpecialVar_0x800A
+	.int gSpecialVar_0x800B
+	.int gSpecialVar_Facing
+	.int gSpecialVar_Result
+	.int gSpecialVar_ItemId
+	.int gSpecialVar_LastTalked
+	.int gSpecialVar_ContestRank
+	.int gSpecialVar_ContestCategory
 
 	.include "data/specials.inc"
 
 	.align 2
 gStdScripts::
-	.4byte Std_ObtainItem
-	.4byte Std_FindItem
-	.4byte Std_2
-	.4byte Std_3
-	.4byte Std_4
-	.4byte Std_5
-	.4byte Std_6
-	.4byte Std_ObtainDecoration
+	.int Std_ObtainItem
+	.int Std_FindItem
+	.int Std_2
+	.int Std_3
+	.int Std_4
+	.int Std_5
+	.int Std_6
+	.int Std_ObtainDecoration
 gStdScripts_End::
 
 	.include "data/maps/PetalburgCity/scripts.inc"
@@ -4844,7 +4844,7 @@ MtPyre_2F_MapScript2_1C6BB5:: @ 81C6BB5
 SkyPillar_2F_MapScript2_1C6BB5:: @ 81C6BB5
 SkyPillar_4F_MapScript2_1C6BB5:: @ 81C6BB5
 	map_script_2 VAR_ICE_STEP_COUNT, 0, S_FallDownHole
-	.2byte 0
+	.short 0
 
 GraniteCave_B1F_MapScript1_1C6BBF:: @ 81C6BBF
 MtPyre_2F_MapScript1_1C6BBF:: @ 81C6BBF

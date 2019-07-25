@@ -9,7 +9,7 @@ Route101_MapScript1_14E92F:: @ 814E92F
 
 Route101_MapScript2_14E935:: @ 814E935
 	map_script_2 VAR_ROUTE101_STATE, 0, Route101_EventScript_14E93F
-	.2byte 0
+	.short 0
 
 Route101_EventScript_14E93F:: @ 814E93F
 	setflag FLAG_SPECIAL_FLAG_0

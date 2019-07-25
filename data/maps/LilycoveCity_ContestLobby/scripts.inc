@@ -10,7 +10,7 @@ LilycoveCity_ContestLobby_MapScript1_158871:: @ 8158871
 LilycoveCity_ContestLobby_MapScript2_158877:: @ 8158877
 	map_script_2 VAR_LILYCOVE_CONTEST_LOBBY_STATE, 1, LilycoveCity_ContestLobby_EventScript_158889
 	map_script_2 VAR_LILYCOVE_CONTEST_LOBBY_STATE, 2, LilycoveCity_ContestLobby_EventScript_158A5B
-	.2byte 0
+	.short 0
 
 LilycoveCity_ContestLobby_EventScript_158889:: @ 8158889
 	goto_if_set FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR, LilycoveCity_ContestLobby_EventScript_158898

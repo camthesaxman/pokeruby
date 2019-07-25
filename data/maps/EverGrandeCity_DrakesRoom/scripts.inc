@@ -6,7 +6,7 @@ EverGrandeCity_DrakesRoom_MapScripts:: @ 815B70D
 
 @ 815B71D
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_15B727
-	.2byte 0
+	.short 0
 
 EverGrandeCity_DrakesRoom_EventScript_15B727:: @ 815B727
 	turnobject 255, 2
@@ -14,7 +14,7 @@ EverGrandeCity_DrakesRoom_EventScript_15B727:: @ 815B727
 
 EverGrandeCity_DrakesRoom_MapScript2_15B72C:: @ 815B72C
 	map_script_2 VAR_ELITE_4_STATE, 3, EverGrandeCity_DrakesRoom_EventScript_15B736
-	.2byte 0
+	.short 0
 
 EverGrandeCity_DrakesRoom_EventScript_15B736:: @ 815B736
 	lockall

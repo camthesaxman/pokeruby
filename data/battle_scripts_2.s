@@ -6,40 +6,40 @@
 	.include "constants/constants.inc"
 	.include "constants/battle_script_constants.inc"
 
-	.section script_data, "aw", %progbits
+	.section script_data, "aw"
 
 	.align 2
 gBattlescriptsForBallThrow:: @ 81D9E48
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_SafariBallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_SafariBallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
+	.int BattleScript_BallThrow
 
 gBattlescriptsForUsingItem:: @ 81D9E7C
-	.4byte BattleScript_PlayerUsesItem
-	.4byte BattleScript_OpponentUsesHealItem
-	.4byte BattleScript_OpponentUsesHealItem
-	.4byte BattleScript_OpponentUsesStatusCureItem
-	.4byte BattleScript_OpponentUsesXItem
-	.4byte BattleScript_OpponentUsesGuardSpecs
+	.int BattleScript_PlayerUsesItem
+	.int BattleScript_OpponentUsesHealItem
+	.int BattleScript_OpponentUsesHealItem
+	.int BattleScript_OpponentUsesStatusCureItem
+	.int BattleScript_OpponentUsesXItem
+	.int BattleScript_OpponentUsesGuardSpecs
 
 gBattlescriptsForRunningByItem:: @ 81D9E94
-	.4byte BattleScript_RunByUsingItem
+	.int BattleScript_RunByUsingItem
 
 gBattlescriptsForSafariActions:: @ 81D9E98
-	.4byte BattleScript_ActionWatchesCarefully
-	.4byte BattleScript_ActionGetNear
-	.4byte BattleScript_ActionThrowPokeblock
-	.4byte BattleScript_1DA00A
+	.int BattleScript_ActionWatchesCarefully
+	.int BattleScript_ActionGetNear
+	.int BattleScript_ActionThrowPokeblock
+	.int BattleScript_1DA00A
 
 BattleScript_BallThrow: @ 81D9EA8
 	jumpifhalfword COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_WALLY_TUTORIAL, BattleScript_BallThrowByWally

@@ -49,8 +49,8 @@ se_tk_warpin:
 	.byte	se_tk_warpin_pri	@ Priority
 	.byte	se_tk_warpin_rev	@ Reverb.
 
-	.word	se_tk_warpin_grp
+	.int	se_tk_warpin_grp
 
-	.word	se_tk_warpin_1
+	.int	se_tk_warpin_1
 
 	.end

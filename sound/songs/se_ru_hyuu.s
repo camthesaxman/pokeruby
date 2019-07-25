@@ -73,8 +73,8 @@ se_ru_hyuu:
 	.byte	se_ru_hyuu_pri	@ Priority
 	.byte	se_ru_hyuu_rev	@ Reverb.
 
-	.word	se_ru_hyuu_grp
+	.int	se_ru_hyuu_grp
 
-	.word	se_ru_hyuu_1
+	.int	se_ru_hyuu_1
 
 	.end

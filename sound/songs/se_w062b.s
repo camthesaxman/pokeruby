@@ -124,8 +124,8 @@ se_w062b:
 	.byte	se_w062b_pri	@ Priority
 	.byte	se_w062b_rev	@ Reverb.
 
-	.word	se_w062b_grp
+	.int	se_w062b_grp
 
-	.word	se_w062b_1
+	.int	se_w062b_1
 
 	.end

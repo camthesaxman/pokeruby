@@ -66,8 +66,8 @@ se_fu_zuzuzu:
 	.byte	se_fu_zuzuzu_pri	@ Priority
 	.byte	se_fu_zuzuzu_rev	@ Reverb.
 
-	.word	se_fu_zuzuzu_grp
+	.int	se_fu_zuzuzu_grp
 
-	.word	se_fu_zuzuzu_1
+	.int	se_fu_zuzuzu_1
 
 	.end

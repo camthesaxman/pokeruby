@@ -566,7 +566,7 @@ bgm_nextroad_1_B1:
 	.byte		        As4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_nextroad_1_B1
+	 .int	bgm_nextroad_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -749,7 +749,7 @@ bgm_nextroad_2_000:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_nextroad_2_000
+	 .int	bgm_nextroad_2_000
 	.byte	W96
 	.byte	W96
 	.byte		VOICE , 60
@@ -772,7 +772,7 @@ bgm_nextroad_2_000:
 	.byte		N48   , Ds3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_nextroad_2_B1
+	 .int	bgm_nextroad_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -836,7 +836,7 @@ bgm_nextroad_3_000:
 	.byte		        Gn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_nextroad_3_000
+	 .int	bgm_nextroad_3_000
 	.byte		N08   , Fs1 , v112
 	.byte	W48
 	.byte		        Cs1 
@@ -1032,7 +1032,7 @@ bgm_nextroad_3_000:
 	.byte		N24   , Ds1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_nextroad_3_B1
+	 .int	bgm_nextroad_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1599,7 +1599,7 @@ bgm_nextroad_4_B1:
 	.byte		        Cs3 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_nextroad_4_B1
+	 .int	bgm_nextroad_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1745,9 +1745,9 @@ bgm_nextroad_5_B1:
 	.byte		N16   , Fn2 , v112
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_nextroad_5_000
+	 .int	bgm_nextroad_5_000
 	.byte	GOTO
-	 .word	bgm_nextroad_5_B1
+	 .int	bgm_nextroad_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2034,7 +2034,7 @@ bgm_nextroad_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_nextroad_6_B1
+	 .int	bgm_nextroad_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2568,7 +2568,7 @@ bgm_nextroad_7_B1:
 	.byte		        Cs5 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_nextroad_7_B1
+	 .int	bgm_nextroad_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2660,7 +2660,7 @@ bgm_nextroad_8_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nextroad_8_000
+	 .int	bgm_nextroad_8_000
 	.byte		N16   , As3 , v112
 	.byte	W16
 	.byte		N04   , Gs2 
@@ -2694,9 +2694,9 @@ bgm_nextroad_8_000:
 	.byte		N04   , Cs2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_nextroad_8_000
+	 .int	bgm_nextroad_8_000
 	.byte	PATT
-	 .word	bgm_nextroad_8_000
+	 .int	bgm_nextroad_8_000
 	.byte		N36   , An3 , v112
 	.byte	W24
 	.byte		MOD   , 8
@@ -2929,7 +2929,7 @@ bgm_nextroad_8_000:
 	.byte		        Cs5 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_nextroad_8_B1
+	 .int	bgm_nextroad_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3016,17 +3016,17 @@ bgm_nextroad_9_000:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	PATT
-	 .word	bgm_nextroad_9_000
+	 .int	bgm_nextroad_9_000
 	.byte	W48
 	.byte		N04   , En1 , v112
 	.byte	W16
@@ -3156,9 +3156,9 @@ bgm_nextroad_9_002:
 	.byte		        Cn1 , v112
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_nextroad_9_001
+	 .int	bgm_nextroad_9_001
 	.byte	PATT
-	 .word	bgm_nextroad_9_002
+	 .int	bgm_nextroad_9_002
 	.byte		N04   , Cn1 , v127
 	.byte	W08
 	.byte		N08   , Fs1 , v112
@@ -3292,7 +3292,7 @@ bgm_nextroad_9_002:
 	.byte		N04   
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_nextroad_9_B1
+	 .int	bgm_nextroad_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -3439,13 +3439,13 @@ bgm_nextroad_10_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nextroad_10_000
+	 .int	bgm_nextroad_10_000
 	.byte	PATT
-	 .word	bgm_nextroad_10_001
+	 .int	bgm_nextroad_10_001
 	.byte	PATT
-	 .word	bgm_nextroad_10_000
+	 .int	bgm_nextroad_10_000
 	.byte	PATT
-	 .word	bgm_nextroad_10_001
+	 .int	bgm_nextroad_10_001
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 41*bgm_nextroad_mvl/mxv
 	.byte		N01   , An3 , v112
@@ -3526,17 +3526,17 @@ bgm_nextroad_10_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte	PATT
-	 .word	bgm_nextroad_10_002
+	 .int	bgm_nextroad_10_002
 	.byte		PAN   , c_v-63
 	.byte		VOL   , 36*bgm_nextroad_mvl/mxv
 	.byte		N01   , An3 , v112
@@ -3651,7 +3651,7 @@ bgm_nextroad_10_002:
 	.byte		N01   
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_nextroad_10_B1
+	 .int	bgm_nextroad_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3663,17 +3663,17 @@ bgm_nextroad:
 	.byte	bgm_nextroad_pri	@ Priority
 	.byte	bgm_nextroad_rev	@ Reverb.
 
-	.word	bgm_nextroad_grp
+	.int	bgm_nextroad_grp
 
-	.word	bgm_nextroad_1
-	.word	bgm_nextroad_2
-	.word	bgm_nextroad_3
-	.word	bgm_nextroad_4
-	.word	bgm_nextroad_5
-	.word	bgm_nextroad_6
-	.word	bgm_nextroad_7
-	.word	bgm_nextroad_8
-	.word	bgm_nextroad_9
-	.word	bgm_nextroad_10
+	.int	bgm_nextroad_1
+	.int	bgm_nextroad_2
+	.int	bgm_nextroad_3
+	.int	bgm_nextroad_4
+	.int	bgm_nextroad_5
+	.int	bgm_nextroad_6
+	.int	bgm_nextroad_7
+	.int	bgm_nextroad_8
+	.int	bgm_nextroad_9
+	.int	bgm_nextroad_10
 
 	.end

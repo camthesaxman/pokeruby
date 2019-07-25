@@ -45,7 +45,7 @@ se_t_ame_1_B1:
 	.byte	W24
 	.byte	W12
 	.byte	GOTO
-	 .word	se_t_ame_1_B1
+	 .int	se_t_ame_1_B1
 	.byte	W12
 	.byte	FINE
 
@@ -58,8 +58,8 @@ se_t_ame:
 	.byte	se_t_ame_pri	@ Priority
 	.byte	se_t_ame_rev	@ Reverb.
 
-	.word	se_t_ame_grp
+	.int	se_t_ame_grp
 
-	.word	se_t_ame_1
+	.int	se_t_ame_1
 
 	.end

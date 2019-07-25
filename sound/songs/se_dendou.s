@@ -100,41 +100,41 @@ se_dendou_1_000:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte	PATT
-	 .word	se_dendou_1_000
+	 .int	se_dendou_1_000
 	.byte		VOL   , 96*se_dendou_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W01
@@ -190,8 +190,8 @@ se_dendou:
 	.byte	se_dendou_pri	@ Priority
 	.byte	se_dendou_rev	@ Reverb.
 
-	.word	se_dendou_grp
+	.int	se_dendou_grp
 
-	.word	se_dendou_1
+	.int	se_dendou_1
 
 	.end

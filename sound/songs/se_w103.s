@@ -104,9 +104,9 @@ se_w103:
 	.byte	se_w103_pri	@ Priority
 	.byte	se_w103_rev	@ Reverb.
 
-	.word	se_w103_grp
+	.int	se_w103_grp
 
-	.word	se_w103_1
-	.word	se_w103_2
+	.int	se_w103_1
+	.int	se_w103_2
 
 	.end

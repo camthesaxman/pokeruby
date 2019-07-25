@@ -39,8 +39,8 @@ se_hashi:
 	.byte	se_hashi_pri	@ Priority
 	.byte	se_hashi_rev	@ Reverb.
 
-	.word	se_hashi_grp
+	.int	se_hashi_grp
 
-	.word	se_hashi_1
+	.int	se_hashi_1
 
 	.end

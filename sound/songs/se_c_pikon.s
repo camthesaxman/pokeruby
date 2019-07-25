@@ -47,8 +47,8 @@ se_c_pikon:
 	.byte	se_c_pikon_pri	@ Priority
 	.byte	se_c_pikon_rev	@ Reverb.
 
-	.word	se_c_pikon_grp
+	.int	se_c_pikon_grp
 
-	.word	se_c_pikon_1
+	.int	se_c_pikon_1
 
 	.end

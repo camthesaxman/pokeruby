@@ -4,11 +4,11 @@
 
 	.macro me_checkcompat word, v1, v2, v3, v4
 	.byte 1
-	.4byte \word
-	.2byte \v1
-	.4byte \v2
-	.2byte \v3
-	.4byte \v4
+	.int \word
+	.short \v1
+	.int \v2
+	.short \v3
+	.int \v4
 	.endm
 
 	.macro me_end
@@ -18,7 +18,7 @@
 	.macro me_setmsg value, str
 	.byte 3
 	.byte \value
-	.4byte \str
+	.int \str
 	.endm
 
 	.macro me_setstatus value
@@ -28,19 +28,19 @@
 
 	.macro me_runscript script
 	.byte 5
-	.4byte \script
+	.int \script
 	.endm
 
 	.macro me_initramscript mapId, objId, script, end
 	.byte 6
 	map \mapId
 	.byte \objId
-	.4byte \script, \end
+	.int \script, \end
 	.endm
 
 	.macro me_setenigmaberry berry
 	.byte 7
-	.4byte \berry
+	.int \berry
 	.endm
 
 	.macro me_giveribbon index, ribbonId
@@ -60,17 +60,17 @@
 	.macro me_setrecordmixinggift unk, quantity, itemId
 	.byte 11
 	.byte \unk, \quantity
-	.2byte \itemId
+	.short \itemId
 	.endm
 
 	.macro me_givepokemon data
 	.byte 12
-	.4byte \data
+	.int \data
 	.endm
 
 	.macro me_addtrainer data
 	.byte 13
-	.4byte \data
+	.int \data
 	.endm
 
 	.macro me_enableresetrtc
@@ -79,10 +79,10 @@
 
 	.macro me_checksum checksum, data, dataEnd
 	.byte 15
-	.4byte \checksum, \data, \dataEnd
+	.int \checksum, \data, \dataEnd
 	.endm
 
 	.macro me_crc crc, data, dataEnd
 	.byte 16
-	.4byte \crc, \data, \dataEnd
+	.int \crc, \data, \dataEnd
 	.endm

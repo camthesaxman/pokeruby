@@ -136,9 +136,9 @@ se_w060:
 	.byte	se_w060_pri	@ Priority
 	.byte	se_w060_rev	@ Reverb.
 
-	.word	se_w060_grp
+	.int	se_w060_grp
 
-	.word	se_w060_1
-	.word	se_w060_2
+	.int	se_w060_1
+	.int	se_w060_2
 
 	.end

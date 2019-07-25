@@ -48,9 +48,9 @@ se_kouka_l:
 	.byte	se_kouka_l_pri	@ Priority
 	.byte	se_kouka_l_rev	@ Reverb.
 
-	.word	se_kouka_l_grp
+	.int	se_kouka_l_grp
 
-	.word	se_kouka_l_1
-	.word	se_kouka_l_2
+	.int	se_kouka_l_1
+	.int	se_kouka_l_2
 
 	.end

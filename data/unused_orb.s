@@ -13,7 +13,7 @@ gSpriteAnim_8393054:: @ 8393054
 
 	.align 2
 gSpriteAnimTable_8393068:: @ 8393068
-	.4byte gSpriteAnim_8393054
+	.int gSpriteAnim_8393054
 
 	.align 2
 gSpriteTemplate_839306C:: @ 839306C

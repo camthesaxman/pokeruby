@@ -87,7 +87,7 @@ Route110_TrickHousePuzzle7_MapScript1_16326F:: @ 816326F
 
 Route110_TrickHousePuzzle7_MapScript2_16327B:: @ 816327B
 	map_script_2 VAR_TRICK_HOUSE_PUZZLE_7_STATE_2, 1, Route110_TrickHousePuzzle7_EventScript_163285
-	.2byte 0
+	.short 0
 
 Route110_TrickHousePuzzle7_EventScript_163285:: @ 8163285
 	setvar VAR_TRICK_HOUSE_PUZZLE_7_STATE_2, 0

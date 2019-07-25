@@ -147,9 +147,9 @@ se_w071b:
 	.byte	se_w071b_pri	@ Priority
 	.byte	se_w071b_rev	@ Reverb.
 
-	.word	se_w071b_grp
+	.int	se_w071b_grp
 
-	.word	se_w071b_1
-	.word	se_w071b_2
+	.int	se_w071b_1
+	.int	se_w071b_2
 
 	.end

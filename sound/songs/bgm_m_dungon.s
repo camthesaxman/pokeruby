@@ -59,9 +59,9 @@ bgm_m_dungon_1_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_1_000
+	 .int	bgm_m_dungon_1_000
 	.byte	PATT
-	 .word	bgm_m_dungon_1_000
+	 .int	bgm_m_dungon_1_000
 bgm_m_dungon_1_001:
 	.byte		N12   , Gn4 , v068
 	.byte	W12
@@ -134,9 +134,9 @@ bgm_m_dungon_1_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_1_002
+	 .int	bgm_m_dungon_1_002
 	.byte	PATT
-	 .word	bgm_m_dungon_1_002
+	 .int	bgm_m_dungon_1_002
 	.byte		PAN   , c_v+63
 	.byte		N06   , Gn4 , v112
 	.byte	W06
@@ -161,26 +161,26 @@ bgm_m_dungon_1_002:
 	.byte		        Gn4 , v084
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_m_dungon_1_000
+	 .int	bgm_m_dungon_1_000
 	.byte	PATT
-	 .word	bgm_m_dungon_1_000
+	 .int	bgm_m_dungon_1_000
 	.byte	PATT
-	 .word	bgm_m_dungon_1_000
+	 .int	bgm_m_dungon_1_000
 	.byte	PATT
-	 .word	bgm_m_dungon_1_001
+	 .int	bgm_m_dungon_1_001
 	.byte	PATT
-	 .word	bgm_m_dungon_1_002
+	 .int	bgm_m_dungon_1_002
 	.byte	PATT
-	 .word	bgm_m_dungon_1_002
+	 .int	bgm_m_dungon_1_002
 	.byte	PATT
-	 .word	bgm_m_dungon_1_002
+	 .int	bgm_m_dungon_1_002
 	.byte		PAN   , c_v+63
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_m_dungon_1_B1
+	 .int	bgm_m_dungon_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -225,17 +225,17 @@ bgm_m_dungon_2_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte	PATT
-	 .word	bgm_m_dungon_2_000
+	 .int	bgm_m_dungon_2_000
 	.byte		N12   , Gs2 , v112
 	.byte	W12
 	.byte		        Dn2 
@@ -271,17 +271,17 @@ bgm_m_dungon_2_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte	PATT
-	 .word	bgm_m_dungon_2_001
+	 .int	bgm_m_dungon_2_001
 	.byte		N12   , Bn2 , v112
 	.byte	W12
 	.byte		        Fn2 
@@ -356,7 +356,7 @@ bgm_m_dungon_2_001:
 	.byte		N08   , Dn4 , v104
 	.byte	W76
 	.byte	GOTO
-	 .word	bgm_m_dungon_2_B1
+	 .int	bgm_m_dungon_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -398,17 +398,17 @@ bgm_m_dungon_3_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	PATT
-	 .word	bgm_m_dungon_3_000
+	 .int	bgm_m_dungon_3_000
 	.byte	W18
 	.byte		N03   , En1 , v124
 	.byte	W03
@@ -438,17 +438,17 @@ bgm_m_dungon_3_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	PATT
-	 .word	bgm_m_dungon_3_001
+	 .int	bgm_m_dungon_3_001
 	.byte	W18
 	.byte		N03   , Gn1 , v124
 	.byte	W03
@@ -520,7 +520,7 @@ bgm_m_dungon_3_001:
 	.byte		N24   , As0 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_m_dungon_3_B1
+	 .int	bgm_m_dungon_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -805,7 +805,7 @@ bgm_m_dungon_4_B1:
 	.byte		N14   , As1 , v112
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_m_dungon_4_B1
+	 .int	bgm_m_dungon_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1083,7 +1083,7 @@ bgm_m_dungon_5_B1:
 	.byte		N06   , As0 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_m_dungon_5_B1
+	 .int	bgm_m_dungon_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1404,7 +1404,7 @@ bgm_m_dungon_6_000:
 	.byte		        c_v+0
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_m_dungon_6_000
+	 .int	bgm_m_dungon_6_000
 	.byte	W24
 	.byte		EOT   , Fn3 
 	.byte	W30
@@ -1474,7 +1474,7 @@ bgm_m_dungon_6_000:
 	.byte		N08   , An3 , v112
 	.byte	W76
 	.byte	GOTO
-	 .word	bgm_m_dungon_6_B1
+	 .int	bgm_m_dungon_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1795,7 +1795,7 @@ bgm_m_dungon_7_000:
 	.byte		        c_v+0
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_m_dungon_7_000
+	 .int	bgm_m_dungon_7_000
 	.byte	W24
 	.byte		EOT   , As3 
 	.byte	W30
@@ -1865,7 +1865,7 @@ bgm_m_dungon_7_000:
 	.byte		N08   , Fn4 , v112
 	.byte	W76
 	.byte	GOTO
-	 .word	bgm_m_dungon_7_B1
+	 .int	bgm_m_dungon_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1899,7 +1899,7 @@ bgm_m_dungon_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_m_dungon_8_B1
+	 .int	bgm_m_dungon_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1951,9 +1951,9 @@ bgm_m_dungon_9_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_9_000
+	 .int	bgm_m_dungon_9_000
 	.byte	PATT
-	 .word	bgm_m_dungon_9_000
+	 .int	bgm_m_dungon_9_000
 bgm_m_dungon_9_001:
 	.byte	W18
 	.byte		N03   , En1 , v112
@@ -1970,11 +1970,11 @@ bgm_m_dungon_9_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_9_001
+	 .int	bgm_m_dungon_9_001
 	.byte	PATT
-	 .word	bgm_m_dungon_9_001
+	 .int	bgm_m_dungon_9_001
 	.byte	PATT
-	 .word	bgm_m_dungon_9_001
+	 .int	bgm_m_dungon_9_001
 	.byte	W18
 	.byte		N03   , En1 , v112
 	.byte	W03
@@ -2004,17 +2004,17 @@ bgm_m_dungon_9_002:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	PATT
-	 .word	bgm_m_dungon_9_002
+	 .int	bgm_m_dungon_9_002
 	.byte	W18
 	.byte		N03   , Gn1 , v112
 	.byte	W03
@@ -2025,7 +2025,7 @@ bgm_m_dungon_9_002:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_m_dungon_9_B1
+	 .int	bgm_m_dungon_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -2460,7 +2460,7 @@ bgm_m_dungon_10_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_m_dungon_10_B1
+	 .int	bgm_m_dungon_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2472,17 +2472,17 @@ bgm_m_dungon:
 	.byte	bgm_m_dungon_pri	@ Priority
 	.byte	bgm_m_dungon_rev	@ Reverb.
 
-	.word	bgm_m_dungon_grp
+	.int	bgm_m_dungon_grp
 
-	.word	bgm_m_dungon_1
-	.word	bgm_m_dungon_2
-	.word	bgm_m_dungon_3
-	.word	bgm_m_dungon_4
-	.word	bgm_m_dungon_5
-	.word	bgm_m_dungon_6
-	.word	bgm_m_dungon_7
-	.word	bgm_m_dungon_8
-	.word	bgm_m_dungon_9
-	.word	bgm_m_dungon_10
+	.int	bgm_m_dungon_1
+	.int	bgm_m_dungon_2
+	.int	bgm_m_dungon_3
+	.int	bgm_m_dungon_4
+	.int	bgm_m_dungon_5
+	.int	bgm_m_dungon_6
+	.int	bgm_m_dungon_7
+	.int	bgm_m_dungon_8
+	.int	bgm_m_dungon_9
+	.int	bgm_m_dungon_10
 
 	.end

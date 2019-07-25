@@ -21,7 +21,7 @@ PetalburgCity_EventScript_14B739:: @ 814B739
 
 PetalburgCity_MapScript2_14B73D:: @ 814B73D
 	map_script_2 VAR_PETALBURG_STATE, 2, PetalburgCity_EventScript_14B747
-	.2byte 0
+	.short 0
 
 PetalburgCity_EventScript_14B747:: @ 814B747
 	lockall

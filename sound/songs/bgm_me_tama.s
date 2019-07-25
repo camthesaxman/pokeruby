@@ -314,7 +314,7 @@ bgm_me_tama_3_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_me_tama_3_000
+	 .int	bgm_me_tama_3_000
 	.byte		VOICE , 83
 	.byte		PAN   , c_v-48
 	.byte		N16   , Gn3 , v060
@@ -670,14 +670,14 @@ bgm_me_tama:
 	.byte	bgm_me_tama_pri	@ Priority
 	.byte	bgm_me_tama_rev	@ Reverb.
 
-	.word	bgm_me_tama_grp
+	.int	bgm_me_tama_grp
 
-	.word	bgm_me_tama_1
-	.word	bgm_me_tama_2
-	.word	bgm_me_tama_3
-	.word	bgm_me_tama_4
-	.word	bgm_me_tama_5
-	.word	bgm_me_tama_6
-	.word	bgm_me_tama_7
+	.int	bgm_me_tama_1
+	.int	bgm_me_tama_2
+	.int	bgm_me_tama_3
+	.int	bgm_me_tama_4
+	.int	bgm_me_tama_5
+	.int	bgm_me_tama_6
+	.int	bgm_me_tama_7
 
 	.end

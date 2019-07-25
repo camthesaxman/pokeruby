@@ -38,7 +38,7 @@ MossdeepCity_GameCorner_1F_MapScript2_15ACBB:: @ 815ACBB
 	map_script_2 VAR_GAME_CORNER_STATE, 1, MossdeepCity_GameCorner_1F_EventScript_15ACD5
 	map_script_2 VAR_GAME_CORNER_STATE, 2, MossdeepCity_GameCorner_1F_EventScript_15ACD5
 	map_script_2 VAR_GAME_CORNER_STATE, 3, MossdeepCity_GameCorner_1F_EventScript_15ACD5
-	.2byte 0
+	.short 0
 
 MossdeepCity_GameCorner_1F_EventScript_15ACD5:: @ 815ACD5
 	lockall

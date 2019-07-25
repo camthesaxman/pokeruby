@@ -46,7 +46,7 @@ se_track_move_1_B1:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	se_track_move_1_B1
+	 .int	se_track_move_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -126,7 +126,7 @@ se_track_move_2_B1:
 	.byte		N03   , Fn2 , v044
 	.byte	W12
 	.byte	GOTO
-	 .word	se_track_move_2_B1
+	 .int	se_track_move_2_B1
 	.byte	FINE
 
 @******************************************************@
@@ -138,9 +138,9 @@ se_track_move:
 	.byte	se_track_move_pri	@ Priority
 	.byte	se_track_move_rev	@ Reverb.
 
-	.word	se_track_move_grp
+	.int	se_track_move_grp
 
-	.word	se_track_move_1
-	.word	se_track_move_2
+	.int	se_track_move_1
+	.int	se_track_move_2
 
 	.end

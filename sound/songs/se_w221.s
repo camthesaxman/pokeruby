@@ -97,9 +97,9 @@ se_w221:
 	.byte	se_w221_pri	@ Priority
 	.byte	se_w221_rev	@ Reverb.
 
-	.word	se_w221_grp
+	.int	se_w221_grp
 
-	.word	se_w221_1
-	.word	se_w221_2
+	.int	se_w221_1
+	.int	se_w221_2
 
 	.end

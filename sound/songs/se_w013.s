@@ -78,9 +78,9 @@ se_w013:
 	.byte	se_w013_pri	@ Priority
 	.byte	se_w013_rev	@ Reverb.
 
-	.word	se_w013_grp
+	.int	se_w013_grp
 
-	.word	se_w013_1
-	.word	se_w013_2
+	.int	se_w013_1
+	.int	se_w013_2
 
 	.end

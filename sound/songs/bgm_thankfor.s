@@ -1800,7 +1800,7 @@ bgm_thankfor_3_000:
 	.byte		        Dn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_3_000
+	 .int	bgm_thankfor_3_000
 	.byte		N48   , Fn1 , v112
 	.byte	W48
 	.byte		N36   , En1 
@@ -2183,11 +2183,11 @@ bgm_thankfor_3_001:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_3_001
+	 .int	bgm_thankfor_3_001
 	.byte	PATT
-	 .word	bgm_thankfor_3_001
+	 .int	bgm_thankfor_3_001
 	.byte	PATT
-	 .word	bgm_thankfor_3_001
+	 .int	bgm_thankfor_3_001
 	.byte		VOL   , 10*bgm_thankfor_mvl/mxv
 	.byte		TIE   , An1 , v112
 	.byte	W05
@@ -2405,15 +2405,15 @@ bgm_thankfor_4_004:
 	.byte		        Dn2 , v068
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_4_000
+	 .int	bgm_thankfor_4_000
 	.byte	PATT
-	 .word	bgm_thankfor_4_001
+	 .int	bgm_thankfor_4_001
 	.byte	PATT
-	 .word	bgm_thankfor_4_002
+	 .int	bgm_thankfor_4_002
 	.byte	PATT
-	 .word	bgm_thankfor_4_003
+	 .int	bgm_thankfor_4_003
 	.byte	PATT
-	 .word	bgm_thankfor_4_004
+	 .int	bgm_thankfor_4_004
 	.byte	W12
 	.byte		N24   , An2 , v068
 	.byte	W24
@@ -4100,7 +4100,7 @@ bgm_thankfor_5_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_5_000
+	 .int	bgm_thankfor_5_000
 	.byte		N72   , En3 , v112
 	.byte	W96
 	.byte		VOICE , 48
@@ -4236,7 +4236,7 @@ bgm_thankfor_6_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_6_001
+	 .int	bgm_thankfor_6_001
 	.byte	W12
 	.byte		N24   , Bn2 , v112
 	.byte	W24
@@ -4258,7 +4258,7 @@ bgm_thankfor_6_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_6_002
+	 .int	bgm_thankfor_6_002
 	.byte	W12
 	.byte		N24   , Fs3 , v112
 	.byte	W24
@@ -4327,9 +4327,9 @@ bgm_thankfor_6_002:
 	.byte		        62*bgm_thankfor_mvl/mxv
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_6_000
+	 .int	bgm_thankfor_6_000
 	.byte	PATT
-	 .word	bgm_thankfor_6_001
+	 .int	bgm_thankfor_6_001
 	.byte	W12
 	.byte		N24   , Dn3 , v112
 	.byte	W24
@@ -4361,7 +4361,7 @@ bgm_thankfor_6_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_6_003
+	 .int	bgm_thankfor_6_003
 	.byte	W12
 	.byte		N24   , Fs4 , v112
 	.byte	W24
@@ -5149,9 +5149,9 @@ bgm_thankfor_6_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_6_004
+	 .int	bgm_thankfor_6_004
 	.byte	PATT
-	 .word	bgm_thankfor_6_004
+	 .int	bgm_thankfor_6_004
 	.byte		VOICE , 81
 	.byte		VOL   , 5*bgm_thankfor_mvl/mxv
 	.byte		MOD   , 0
@@ -5283,7 +5283,7 @@ bgm_thankfor_7_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_7_003
+	 .int	bgm_thankfor_7_003
 	.byte		N24   , An3 , v112
 	.byte	W24
 	.byte		N24   
@@ -5351,11 +5351,11 @@ bgm_thankfor_7_003:
 	.byte		        62*bgm_thankfor_mvl/mxv
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_7_000
+	 .int	bgm_thankfor_7_000
 	.byte	PATT
-	 .word	bgm_thankfor_7_001
+	 .int	bgm_thankfor_7_001
 	.byte	PATT
-	 .word	bgm_thankfor_7_002
+	 .int	bgm_thankfor_7_002
 	.byte		N06   , En4 , v112
 	.byte	W24
 	.byte		N24   
@@ -5375,7 +5375,7 @@ bgm_thankfor_7_004:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_thankfor_7_004
+	 .int	bgm_thankfor_7_004
 	.byte		N24   , An4 , v112
 	.byte	W24
 	.byte		N24   
@@ -5897,11 +5897,11 @@ bgm_thankfor_7_005:
 	.byte		        Gn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_thankfor_7_005
+	 .int	bgm_thankfor_7_005
 	.byte	PATT
-	 .word	bgm_thankfor_7_005
+	 .int	bgm_thankfor_7_005
 	.byte	PATT
-	 .word	bgm_thankfor_7_005
+	 .int	bgm_thankfor_7_005
 	.byte		VOICE , 109
 	.byte		VOL   , 7*bgm_thankfor_mvl/mxv
 	.byte		TIE   , An4 , v112
@@ -6567,7 +6567,7 @@ bgm_thankfor_10_003:
 	.byte		N42   , Fs4 , v112
 	.byte	W54
 	.byte	PATT
-	 .word	bgm_thankfor_10_000
+	 .int	bgm_thankfor_10_000
 	.byte		N24   , Cn3 , v076
 	.byte	W24
 	.byte		        Bn2 , v084
@@ -6592,11 +6592,11 @@ bgm_thankfor_10_003:
 	.byte		        Gn2 , v104
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_thankfor_10_001
+	 .int	bgm_thankfor_10_001
 	.byte	PATT
-	 .word	bgm_thankfor_10_002
+	 .int	bgm_thankfor_10_002
 	.byte	PATT
-	 .word	bgm_thankfor_10_003
+	 .int	bgm_thankfor_10_003
 	.byte	W96
 bgm_thankfor_10_004:
 	.byte	W24
@@ -6621,7 +6621,7 @@ bgm_thankfor_10_004:
 	.byte		N24   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_thankfor_10_004
+	 .int	bgm_thankfor_10_004
 	.byte	W24
 	.byte		N24   , Gs2 , v092
 	.byte	W48
@@ -7446,17 +7446,17 @@ bgm_thankfor:
 	.byte	bgm_thankfor_pri	@ Priority
 	.byte	bgm_thankfor_rev	@ Reverb.
 
-	.word	bgm_thankfor_grp
+	.int	bgm_thankfor_grp
 
-	.word	bgm_thankfor_1
-	.word	bgm_thankfor_2
-	.word	bgm_thankfor_3
-	.word	bgm_thankfor_4
-	.word	bgm_thankfor_5
-	.word	bgm_thankfor_6
-	.word	bgm_thankfor_7
-	.word	bgm_thankfor_8
-	.word	bgm_thankfor_9
-	.word	bgm_thankfor_10
+	.int	bgm_thankfor_1
+	.int	bgm_thankfor_2
+	.int	bgm_thankfor_3
+	.int	bgm_thankfor_4
+	.int	bgm_thankfor_5
+	.int	bgm_thankfor_6
+	.int	bgm_thankfor_7
+	.int	bgm_thankfor_8
+	.int	bgm_thankfor_9
+	.int	bgm_thankfor_10
 
 	.end

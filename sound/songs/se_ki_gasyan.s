@@ -68,9 +68,9 @@ se_ki_gasyan:
 	.byte	se_ki_gasyan_pri	@ Priority
 	.byte	se_ki_gasyan_rev	@ Reverb.
 
-	.word	se_ki_gasyan_grp
+	.int	se_ki_gasyan_grp
 
-	.word	se_ki_gasyan_1
-	.word	se_ki_gasyan_2
+	.int	se_ki_gasyan_1
+	.int	se_ki_gasyan_2
 
 	.end

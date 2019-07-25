@@ -296,9 +296,9 @@ se_z_search:
 	.byte	se_z_search_pri	@ Priority
 	.byte	se_z_search_rev	@ Reverb.
 
-	.word	se_z_search_grp
+	.int	se_z_search_grp
 
-	.word	se_z_search_1
-	.word	se_z_search_2
+	.int	se_z_search_1
+	.int	se_z_search_2
 
 	.end

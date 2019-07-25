@@ -78,9 +78,9 @@ se_pn_on:
 	.byte	se_pn_on_pri	@ Priority
 	.byte	se_pn_on_rev	@ Reverb.
 
-	.word	se_pn_on_grp
+	.int	se_pn_on_grp
 
-	.word	se_pn_on_1
-	.word	se_pn_on_2
+	.int	se_pn_on_1
+	.int	se_pn_on_2
 
 	.end

@@ -29,7 +29,7 @@ void CheckForFlashMemory(void)
     if (!IdentifyFlash())
     {
         gFlashMemoryPresent = TRUE;
-        InitFlashTimer();
+        //InitFlashTimer();
     }
     else
         gFlashMemoryPresent = FALSE;

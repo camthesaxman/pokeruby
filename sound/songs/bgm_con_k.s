@@ -81,19 +81,19 @@ bgm_con_k_1_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_con_k_1_000
+	 .int	bgm_con_k_1_000
 	.byte	PATT
-	 .word	bgm_con_k_1_001
+	 .int	bgm_con_k_1_001
 	.byte	PATT
-	 .word	bgm_con_k_1_000
+	 .int	bgm_con_k_1_000
 	.byte	PATT
-	 .word	bgm_con_k_1_001
+	 .int	bgm_con_k_1_001
 	.byte	PATT
-	 .word	bgm_con_k_1_000
+	 .int	bgm_con_k_1_000
 	.byte	PATT
-	 .word	bgm_con_k_1_001
+	 .int	bgm_con_k_1_001
 	.byte	GOTO
-	 .word	bgm_con_k_1_B1
+	 .int	bgm_con_k_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -200,7 +200,7 @@ bgm_con_k_2_B1:
 	.byte		N08   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_con_k_2_B1
+	 .int	bgm_con_k_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -296,13 +296,13 @@ bgm_con_k_3_002:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_con_k_3_000
+	 .int	bgm_con_k_3_000
 	.byte	PATT
-	 .word	bgm_con_k_3_001
+	 .int	bgm_con_k_3_001
 	.byte	PATT
-	 .word	bgm_con_k_3_002
+	 .int	bgm_con_k_3_002
 	.byte	GOTO
-	 .word	bgm_con_k_3_B1
+	 .int	bgm_con_k_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -467,7 +467,7 @@ bgm_con_k_4_B1:
 	.byte		        Bn4 , v032
 	.byte	W88
 	.byte	GOTO
-	 .word	bgm_con_k_4_B1
+	 .int	bgm_con_k_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -538,13 +538,13 @@ bgm_con_k_5_002:
 	.byte		N08   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_con_k_5_000
+	 .int	bgm_con_k_5_000
 	.byte	PATT
-	 .word	bgm_con_k_5_001
+	 .int	bgm_con_k_5_001
 	.byte	PATT
-	 .word	bgm_con_k_5_002
+	 .int	bgm_con_k_5_002
 	.byte	GOTO
-	 .word	bgm_con_k_5_B1
+	 .int	bgm_con_k_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -614,13 +614,13 @@ bgm_con_k_6_002:
 	.byte		        Gs3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_con_k_6_000
+	 .int	bgm_con_k_6_000
 	.byte	PATT
-	 .word	bgm_con_k_6_001
+	 .int	bgm_con_k_6_001
 	.byte	PATT
-	 .word	bgm_con_k_6_002
+	 .int	bgm_con_k_6_002
 	.byte	GOTO
-	 .word	bgm_con_k_6_B1
+	 .int	bgm_con_k_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -670,7 +670,7 @@ bgm_con_k_7_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_con_k_7_000
+	 .int	bgm_con_k_7_000
 	.byte		N04   , Cn1 , v112
 	.byte	W24
 	.byte		        Dn1 
@@ -688,11 +688,11 @@ bgm_con_k_7_001:
 	.byte		        Dn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_con_k_7_000
+	 .int	bgm_con_k_7_000
 	.byte	PATT
-	 .word	bgm_con_k_7_001
+	 .int	bgm_con_k_7_001
 	.byte	PATT
-	 .word	bgm_con_k_7_000
+	 .int	bgm_con_k_7_000
 	.byte		N04   , Cn1 , v112
 	.byte	W24
 	.byte		        Dn1 
@@ -710,7 +710,7 @@ bgm_con_k_7_001:
 	.byte		N04   
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_k_7_B1
+	 .int	bgm_con_k_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -798,7 +798,7 @@ bgm_con_k_8_B1:
 	.byte		N08   , Bn4 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_con_k_8_B1
+	 .int	bgm_con_k_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -810,15 +810,15 @@ bgm_con_k:
 	.byte	bgm_con_k_pri	@ Priority
 	.byte	bgm_con_k_rev	@ Reverb.
 
-	.word	bgm_con_k_grp
+	.int	bgm_con_k_grp
 
-	.word	bgm_con_k_1
-	.word	bgm_con_k_2
-	.word	bgm_con_k_3
-	.word	bgm_con_k_4
-	.word	bgm_con_k_5
-	.word	bgm_con_k_6
-	.word	bgm_con_k_7
-	.word	bgm_con_k_8
+	.int	bgm_con_k_1
+	.int	bgm_con_k_2
+	.int	bgm_con_k_3
+	.int	bgm_con_k_4
+	.int	bgm_con_k_5
+	.int	bgm_con_k_6
+	.int	bgm_con_k_7
+	.int	bgm_con_k_8
 
 	.end

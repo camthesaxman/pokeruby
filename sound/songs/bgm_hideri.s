@@ -80,15 +80,15 @@ bgm_hideri_1_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_1_001
+	 .int	bgm_hideri_1_001
 	.byte	PATT
-	 .word	bgm_hideri_1_000
+	 .int	bgm_hideri_1_000
 	.byte	PATT
-	 .word	bgm_hideri_1_000
+	 .int	bgm_hideri_1_000
 	.byte	PATT
-	 .word	bgm_hideri_1_001
+	 .int	bgm_hideri_1_001
 	.byte	PATT
-	 .word	bgm_hideri_1_001
+	 .int	bgm_hideri_1_001
 bgm_hideri_1_002:
 	.byte		N03   , Ds6 , v096
 	.byte	W09
@@ -124,7 +124,7 @@ bgm_hideri_1_002:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_1_002
+	 .int	bgm_hideri_1_002
 bgm_hideri_1_003:
 	.byte		N03   , Fn6 , v096
 	.byte	W09
@@ -160,17 +160,17 @@ bgm_hideri_1_003:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_1_003
+	 .int	bgm_hideri_1_003
 	.byte	PATT
-	 .word	bgm_hideri_1_002
+	 .int	bgm_hideri_1_002
 	.byte	PATT
-	 .word	bgm_hideri_1_002
+	 .int	bgm_hideri_1_002
 	.byte	PATT
-	 .word	bgm_hideri_1_003
+	 .int	bgm_hideri_1_003
 	.byte	PATT
-	 .word	bgm_hideri_1_003
+	 .int	bgm_hideri_1_003
 	.byte	GOTO
-	 .word	bgm_hideri_1_B1
+	 .int	bgm_hideri_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -238,7 +238,7 @@ bgm_hideri_2_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_2_001
+	 .int	bgm_hideri_2_001
 	.byte		BEND  , c_v-2
 	.byte		N03   , Ds6 , v096
 	.byte	W12
@@ -257,11 +257,11 @@ bgm_hideri_2_001:
 	.byte		        Fs5 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_hideri_2_000
+	 .int	bgm_hideri_2_000
 	.byte	PATT
-	 .word	bgm_hideri_2_001
+	 .int	bgm_hideri_2_001
 	.byte	PATT
-	 .word	bgm_hideri_2_001
+	 .int	bgm_hideri_2_001
 bgm_hideri_2_002:
 	.byte		N03   , Ds6 , v096
 	.byte	W09
@@ -297,7 +297,7 @@ bgm_hideri_2_002:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_2_002
+	 .int	bgm_hideri_2_002
 bgm_hideri_2_003:
 	.byte		N03   , Fn6 , v096
 	.byte	W09
@@ -333,7 +333,7 @@ bgm_hideri_2_003:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_2_003
+	 .int	bgm_hideri_2_003
 bgm_hideri_2_004:
 	.byte	W02
 	.byte		N03   , Ds6 , v096
@@ -370,7 +370,7 @@ bgm_hideri_2_004:
 	.byte	W01
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_2_004
+	 .int	bgm_hideri_2_004
 	.byte	W02
 	.byte		N03   , Fn6 , v096
 	.byte	W09
@@ -436,7 +436,7 @@ bgm_hideri_2_004:
 	.byte		        Gs5 
 	.byte	W10
 	.byte	GOTO
-	 .word	bgm_hideri_2_B1
+	 .int	bgm_hideri_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -518,29 +518,29 @@ bgm_hideri_3_003:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hideri_3_000
+	 .int	bgm_hideri_3_000
 	.byte	PATT
-	 .word	bgm_hideri_3_001
+	 .int	bgm_hideri_3_001
 	.byte	PATT
-	 .word	bgm_hideri_3_002
+	 .int	bgm_hideri_3_002
 	.byte	PATT
-	 .word	bgm_hideri_3_003
+	 .int	bgm_hideri_3_003
 	.byte	PATT
-	 .word	bgm_hideri_3_000
+	 .int	bgm_hideri_3_000
 	.byte	PATT
-	 .word	bgm_hideri_3_001
+	 .int	bgm_hideri_3_001
 	.byte	PATT
-	 .word	bgm_hideri_3_002
+	 .int	bgm_hideri_3_002
 	.byte	PATT
-	 .word	bgm_hideri_3_003
+	 .int	bgm_hideri_3_003
 	.byte	PATT
-	 .word	bgm_hideri_3_000
+	 .int	bgm_hideri_3_000
 	.byte	PATT
-	 .word	bgm_hideri_3_001
+	 .int	bgm_hideri_3_001
 	.byte	PATT
-	 .word	bgm_hideri_3_002
+	 .int	bgm_hideri_3_002
 	.byte	GOTO
-	 .word	bgm_hideri_3_B1
+	 .int	bgm_hideri_3_B1
 	.byte		MOD   , 0
 	.byte	FINE
 
@@ -553,10 +553,10 @@ bgm_hideri:
 	.byte	bgm_hideri_pri	@ Priority
 	.byte	bgm_hideri_rev	@ Reverb.
 
-	.word	bgm_hideri_grp
+	.int	bgm_hideri_grp
 
-	.word	bgm_hideri_1
-	.word	bgm_hideri_2
-	.word	bgm_hideri_3
+	.int	bgm_hideri_1
+	.int	bgm_hideri_2
+	.int	bgm_hideri_3
 
 	.end

@@ -309,7 +309,7 @@ bgm_dan02_1_B1:
 	.byte		        Cs4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_1_B1
+	 .int	bgm_dan02_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -643,7 +643,7 @@ bgm_dan02_2_B1:
 	.byte		        Fn2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_2_B1
+	 .int	bgm_dan02_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -770,7 +770,7 @@ bgm_dan02_3_B1:
 	.byte		N12   
 	.byte	W60
 	.byte	GOTO
-	 .word	bgm_dan02_3_B1
+	 .int	bgm_dan02_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1104,7 +1104,7 @@ bgm_dan02_4_B1:
 	.byte		        Gs3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_4_B1
+	 .int	bgm_dan02_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1308,7 +1308,7 @@ bgm_dan02_5_B1:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_5_B1
+	 .int	bgm_dan02_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1340,7 +1340,7 @@ bgm_dan02_6_000:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dan02_6_000
+	 .int	bgm_dan02_6_000
 	.byte		N06   , Fn1 , v064
 	.byte	W12
 	.byte		N06   
@@ -1438,7 +1438,7 @@ bgm_dan02_6_000:
 	.byte		        Fn1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_6_B1
+	 .int	bgm_dan02_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1579,7 +1579,7 @@ bgm_dan02_7_B1:
 	.byte		        Gs2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dan02_7_B1
+	 .int	bgm_dan02_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1694,13 +1694,13 @@ bgm_dan02_8_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dan02_8_001
+	 .int	bgm_dan02_8_001
 	.byte	PATT
-	 .word	bgm_dan02_8_000
+	 .int	bgm_dan02_8_000
 	.byte	PATT
-	 .word	bgm_dan02_8_001
+	 .int	bgm_dan02_8_001
 	.byte	PATT
-	 .word	bgm_dan02_8_002
+	 .int	bgm_dan02_8_002
 	.byte		N06   , En1 , v092
 	.byte	W12
 	.byte		N06   
@@ -1763,7 +1763,7 @@ bgm_dan02_8_002:
 	.byte		        80*bgm_dan02_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_dan02_8_B1
+	 .int	bgm_dan02_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1775,15 +1775,15 @@ bgm_dan02:
 	.byte	bgm_dan02_pri	@ Priority
 	.byte	bgm_dan02_rev	@ Reverb.
 
-	.word	bgm_dan02_grp
+	.int	bgm_dan02_grp
 
-	.word	bgm_dan02_1
-	.word	bgm_dan02_2
-	.word	bgm_dan02_3
-	.word	bgm_dan02_4
-	.word	bgm_dan02_5
-	.word	bgm_dan02_6
-	.word	bgm_dan02_7
-	.word	bgm_dan02_8
+	.int	bgm_dan02_1
+	.int	bgm_dan02_2
+	.int	bgm_dan02_3
+	.int	bgm_dan02_4
+	.int	bgm_dan02_5
+	.int	bgm_dan02_6
+	.int	bgm_dan02_7
+	.int	bgm_dan02_8
 
 	.end

@@ -531,14 +531,14 @@ bgm_me_bachi:
 	.byte	bgm_me_bachi_pri	@ Priority
 	.byte	bgm_me_bachi_rev	@ Reverb.
 
-	.word	bgm_me_bachi_grp
+	.int	bgm_me_bachi_grp
 
-	.word	bgm_me_bachi_1
-	.word	bgm_me_bachi_2
-	.word	bgm_me_bachi_3
-	.word	bgm_me_bachi_4
-	.word	bgm_me_bachi_5
-	.word	bgm_me_bachi_6
-	.word	bgm_me_bachi_7
+	.int	bgm_me_bachi_1
+	.int	bgm_me_bachi_2
+	.int	bgm_me_bachi_3
+	.int	bgm_me_bachi_4
+	.int	bgm_me_bachi_5
+	.int	bgm_me_bachi_6
+	.int	bgm_me_bachi_7
 
 	.end

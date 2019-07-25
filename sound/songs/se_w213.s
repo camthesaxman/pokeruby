@@ -118,9 +118,9 @@ se_w213:
 	.byte	se_w213_pri	@ Priority
 	.byte	se_w213_rev	@ Reverb.
 
-	.word	se_w213_grp
+	.int	se_w213_grp
 
-	.word	se_w213_1
-	.word	se_w213_2
+	.int	se_w213_1
+	.int	se_w213_2
 
 	.end

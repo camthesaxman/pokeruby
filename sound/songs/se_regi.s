@@ -55,9 +55,9 @@ se_regi:
 	.byte	se_regi_pri	@ Priority
 	.byte	se_regi_rev	@ Reverb.
 
-	.word	se_regi_grp
+	.int	se_regi_grp
 
-	.word	se_regi_1
-	.word	se_regi_2
+	.int	se_regi_1
+	.int	se_regi_2
 
 	.end

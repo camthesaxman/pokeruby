@@ -37,8 +37,8 @@ se_seikai:
 	.byte	se_seikai_pri	@ Priority
 	.byte	se_seikai_rev	@ Reverb.
 
-	.word	se_seikai_grp
+	.int	se_seikai_grp
 
-	.word	se_seikai_1
+	.int	se_seikai_1
 
 	.end

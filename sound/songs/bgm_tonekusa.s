@@ -243,7 +243,7 @@ bgm_tonekusa_1_000:
 	.byte		        As4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_1_000
+	 .int	bgm_tonekusa_1_000
 	.byte		N48   , Dn4 , v048
 	.byte	W48
 	.byte		N03   , Cn4 
@@ -510,7 +510,7 @@ bgm_tonekusa_1_000:
 	.byte		        Ds4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tonekusa_1_B1
+	 .int	bgm_tonekusa_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -643,7 +643,7 @@ bgm_tonekusa_2_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tonekusa_2_B1
+	 .int	bgm_tonekusa_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -738,7 +738,7 @@ bgm_tonekusa_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tonekusa_3_B1
+	 .int	bgm_tonekusa_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1060,7 +1060,7 @@ bgm_tonekusa_4_000:
 	.byte		MOD   , 6
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_4_000
+	 .int	bgm_tonekusa_4_000
 	.byte		MOD   , 0
 	.byte		N72   , As1 , v072
 	.byte	W24
@@ -1097,7 +1097,7 @@ bgm_tonekusa_4_000:
 	.byte		        19*bgm_tonekusa_mvl/mxv
 	.byte	W07
 	.byte	GOTO
-	 .word	bgm_tonekusa_4_B1
+	 .int	bgm_tonekusa_4_B1
 	.byte		MOD   , 0
 	.byte		VOL   , 100*bgm_tonekusa_mvl/mxv
 	.byte	FINE
@@ -1444,7 +1444,7 @@ bgm_tonekusa_5_000:
 	.byte		BEND  , c_v+6
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_5_000
+	 .int	bgm_tonekusa_5_000
 	.byte		N12   , Dn4 , v040
 	.byte	W12
 	.byte		        Cn4 , v048
@@ -1511,7 +1511,7 @@ bgm_tonekusa_5_000:
 	.byte		        As4 , v028
 	.byte	W84
 	.byte	GOTO
-	 .word	bgm_tonekusa_5_B1
+	 .int	bgm_tonekusa_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1856,7 +1856,7 @@ bgm_tonekusa_6_000:
 	.byte		        An2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_6_000
+	 .int	bgm_tonekusa_6_000
 	.byte		N12   , Gn2 , v072
 	.byte	W12
 	.byte		        Cn4 
@@ -1938,7 +1938,7 @@ bgm_tonekusa_6_000:
 	.byte		        Dn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tonekusa_6_B1
+	 .int	bgm_tonekusa_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2056,7 +2056,7 @@ bgm_tonekusa_7_000:
 	.byte		MOD   , 6
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_tonekusa_7_000
+	 .int	bgm_tonekusa_7_000
 	.byte		MOD   , 0
 	.byte		N48   , An3 , v072
 	.byte	W24
@@ -2278,7 +2278,7 @@ bgm_tonekusa_7_001:
 	.byte		        Ds3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_7_001
+	 .int	bgm_tonekusa_7_001
 	.byte		N12   , As2 , v072
 	.byte	W12
 	.byte		        Ds4 
@@ -2360,7 +2360,7 @@ bgm_tonekusa_7_001:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tonekusa_7_B1
+	 .int	bgm_tonekusa_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2463,7 +2463,7 @@ bgm_tonekusa_8_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tonekusa_8_002
+	 .int	bgm_tonekusa_8_002
 	.byte		N48   , Dn4 , v064
 	.byte	W48
 	.byte		N03   , Cn4 
@@ -2496,9 +2496,9 @@ bgm_tonekusa_8_005:
 	.byte		        Dn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_8_000
+	 .int	bgm_tonekusa_8_000
 	.byte	PATT
-	 .word	bgm_tonekusa_8_001
+	 .int	bgm_tonekusa_8_001
 	.byte		N72   , Fn4 , v064
 	.byte	W72
 	.byte		N12   , Ds4 
@@ -2516,7 +2516,7 @@ bgm_tonekusa_8_005:
 	.byte		N03   , En4 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_tonekusa_8_002
+	 .int	bgm_tonekusa_8_002
 	.byte		N48   , Dn4 , v064
 	.byte	W48
 	.byte		N16   
@@ -2540,9 +2540,9 @@ bgm_tonekusa_8_005:
 	.byte		        Gn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_tonekusa_8_003
+	 .int	bgm_tonekusa_8_003
 	.byte	PATT
-	 .word	bgm_tonekusa_8_004
+	 .int	bgm_tonekusa_8_004
 	.byte		N24   , Dn4 , v064
 	.byte	W24
 	.byte		        Ds4 
@@ -2552,7 +2552,7 @@ bgm_tonekusa_8_005:
 	.byte		        Fs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_tonekusa_8_005
+	 .int	bgm_tonekusa_8_005
 	.byte		N24   , Dn5 , v064
 	.byte	W24
 	.byte		        Cn5 
@@ -2581,7 +2581,7 @@ bgm_tonekusa_8_005:
 	.byte		        Ds4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tonekusa_8_B1
+	 .int	bgm_tonekusa_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2638,7 +2638,7 @@ bgm_tonekusa_9_000:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tonekusa_9_000
+	 .int	bgm_tonekusa_9_000
 	.byte		N06   , Cn5 , v048
 	.byte	W12
 	.byte		N12   , Cn5 , v020
@@ -2820,7 +2820,7 @@ bgm_tonekusa_9_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tonekusa_9_B1
+	 .int	bgm_tonekusa_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2832,16 +2832,16 @@ bgm_tonekusa:
 	.byte	bgm_tonekusa_pri	@ Priority
 	.byte	bgm_tonekusa_rev	@ Reverb.
 
-	.word	bgm_tonekusa_grp
+	.int	bgm_tonekusa_grp
 
-	.word	bgm_tonekusa_1
-	.word	bgm_tonekusa_2
-	.word	bgm_tonekusa_3
-	.word	bgm_tonekusa_4
-	.word	bgm_tonekusa_5
-	.word	bgm_tonekusa_6
-	.word	bgm_tonekusa_7
-	.word	bgm_tonekusa_8
-	.word	bgm_tonekusa_9
+	.int	bgm_tonekusa_1
+	.int	bgm_tonekusa_2
+	.int	bgm_tonekusa_3
+	.int	bgm_tonekusa_4
+	.int	bgm_tonekusa_5
+	.int	bgm_tonekusa_6
+	.int	bgm_tonekusa_7
+	.int	bgm_tonekusa_8
+	.int	bgm_tonekusa_9
 
 	.end

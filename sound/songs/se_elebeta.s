@@ -63,9 +63,9 @@ se_elebeta:
 	.byte	se_elebeta_pri	@ Priority
 	.byte	se_elebeta_rev	@ Reverb.
 
-	.word	se_elebeta_grp
+	.int	se_elebeta_grp
 
-	.word	se_elebeta_1
-	.word	se_elebeta_2
+	.int	se_elebeta_1
+	.int	se_elebeta_2
 
 	.end

@@ -41,8 +41,8 @@ se_pc_off:
 	.byte	se_pc_off_pri	@ Priority
 	.byte	se_pc_off_rev	@ Reverb.
 
-	.word	se_pc_off_grp
+	.int	se_pc_off_grp
 
-	.word	se_pc_off_1
+	.int	se_pc_off_1
 
 	.end

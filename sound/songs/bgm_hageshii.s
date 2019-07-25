@@ -59,7 +59,7 @@ bgm_hageshii_1_001:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hageshii_1_000
+	 .int	bgm_hageshii_1_000
 bgm_hageshii_1_002:
 	.byte	W72
 	.byte		N06   , En4 , v112
@@ -68,15 +68,15 @@ bgm_hageshii_1_002:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hageshii_1_000
+	 .int	bgm_hageshii_1_000
 	.byte	PATT
-	 .word	bgm_hageshii_1_001
+	 .int	bgm_hageshii_1_001
 	.byte	PATT
-	 .word	bgm_hageshii_1_000
+	 .int	bgm_hageshii_1_000
 	.byte	PATT
-	 .word	bgm_hageshii_1_002
+	 .int	bgm_hageshii_1_002
 	.byte	GOTO
-	 .word	bgm_hageshii_1_B1
+	 .int	bgm_hageshii_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -106,7 +106,7 @@ bgm_hageshii_2_B1:
 	.byte		        Gn4 , v112
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_hageshii_2_B1
+	 .int	bgm_hageshii_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -391,7 +391,7 @@ bgm_hageshii_3_B1:
 	.byte		        c_v-44
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_hageshii_3_B1
+	 .int	bgm_hageshii_3_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -655,7 +655,7 @@ bgm_hageshii_4_B1:
 	.byte		BEND  , c_v-62
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_hageshii_4_B1
+	 .int	bgm_hageshii_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -920,7 +920,7 @@ bgm_hageshii_5_B1:
 	.byte		        c_v-50
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_hageshii_5_B1
+	 .int	bgm_hageshii_5_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -1153,7 +1153,7 @@ bgm_hageshii_6_B1:
 	.byte		BEND  , c_v-64
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_hageshii_6_B1
+	 .int	bgm_hageshii_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1338,15 +1338,15 @@ bgm_hageshii_7_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hageshii_7_000
+	 .int	bgm_hageshii_7_000
 	.byte	PATT
-	 .word	bgm_hageshii_7_001
+	 .int	bgm_hageshii_7_001
 	.byte	PATT
-	 .word	bgm_hageshii_7_002
+	 .int	bgm_hageshii_7_002
 	.byte	PATT
-	 .word	bgm_hageshii_7_003
+	 .int	bgm_hageshii_7_003
 	.byte	GOTO
-	 .word	bgm_hageshii_7_B1
+	 .int	bgm_hageshii_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1581,7 +1581,7 @@ bgm_hageshii_8_B1:
 	.byte		BEND  , c_v-64
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_hageshii_8_B1
+	 .int	bgm_hageshii_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1593,15 +1593,15 @@ bgm_hageshii:
 	.byte	bgm_hageshii_pri	@ Priority
 	.byte	bgm_hageshii_rev	@ Reverb.
 
-	.word	bgm_hageshii_grp
+	.int	bgm_hageshii_grp
 
-	.word	bgm_hageshii_1
-	.word	bgm_hageshii_2
-	.word	bgm_hageshii_3
-	.word	bgm_hageshii_4
-	.word	bgm_hageshii_5
-	.word	bgm_hageshii_6
-	.word	bgm_hageshii_7
-	.word	bgm_hageshii_8
+	.int	bgm_hageshii_1
+	.int	bgm_hageshii_2
+	.int	bgm_hageshii_3
+	.int	bgm_hageshii_4
+	.int	bgm_hageshii_5
+	.int	bgm_hageshii_6
+	.int	bgm_hageshii_7
+	.int	bgm_hageshii_8
 
 	.end

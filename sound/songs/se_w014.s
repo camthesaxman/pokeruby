@@ -203,9 +203,9 @@ se_w014:
 	.byte	se_w014_pri	@ Priority
 	.byte	se_w014_rev	@ Reverb.
 
-	.word	se_w014_grp
+	.int	se_w014_grp
 
-	.word	se_w014_1
-	.word	se_w014_2
+	.int	se_w014_1
+	.int	se_w014_2
 
 	.end

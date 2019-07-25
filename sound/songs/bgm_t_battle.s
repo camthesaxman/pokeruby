@@ -2101,7 +2101,7 @@ bgm_t_battle_8_000:
 	.byte		N48   , An2 , v084
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_t_battle_8_000
+	 .int	bgm_t_battle_8_000
 	.byte		N06   , En1 , v112
 	.byte	W12
 	.byte		N06   
@@ -2343,16 +2343,16 @@ bgm_t_battle:
 	.byte	bgm_t_battle_pri	@ Priority
 	.byte	bgm_t_battle_rev	@ Reverb.
 
-	.word	bgm_t_battle_grp
+	.int	bgm_t_battle_grp
 
-	.word	bgm_t_battle_1
-	.word	bgm_t_battle_2
-	.word	bgm_t_battle_3
-	.word	bgm_t_battle_4
-	.word	bgm_t_battle_5
-	.word	bgm_t_battle_6
-	.word	bgm_t_battle_7
-	.word	bgm_t_battle_8
-	.word	bgm_t_battle_9
+	.int	bgm_t_battle_1
+	.int	bgm_t_battle_2
+	.int	bgm_t_battle_3
+	.int	bgm_t_battle_4
+	.int	bgm_t_battle_5
+	.int	bgm_t_battle_6
+	.int	bgm_t_battle_7
+	.int	bgm_t_battle_8
+	.int	bgm_t_battle_9
 
 	.end

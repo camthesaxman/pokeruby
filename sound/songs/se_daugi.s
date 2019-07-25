@@ -72,9 +72,9 @@ se_daugi:
 	.byte	se_daugi_pri	@ Priority
 	.byte	se_daugi_rev	@ Reverb.
 
-	.word	se_daugi_grp
+	.int	se_daugi_grp
 
-	.word	se_daugi_1
-	.word	se_daugi_2
+	.int	se_daugi_1
+	.int	se_daugi_2
 
 	.end

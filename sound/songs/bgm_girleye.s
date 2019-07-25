@@ -161,7 +161,7 @@ bgm_girleye_1_B1:
 	.byte		        An3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_1_B1
+	 .int	bgm_girleye_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -387,7 +387,7 @@ bgm_girleye_2_B1:
 	.byte		        Gn5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_2_B1
+	 .int	bgm_girleye_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -514,7 +514,7 @@ bgm_girleye_3_B1:
 	.byte		        Cs2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_3_B1
+	 .int	bgm_girleye_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -566,7 +566,7 @@ bgm_girleye_4_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_girleye_4_B1
+	 .int	bgm_girleye_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -692,7 +692,7 @@ bgm_girleye_5_B1:
 	.byte		        Gn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_5_B1
+	 .int	bgm_girleye_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -912,7 +912,7 @@ bgm_girleye_6_B1:
 	.byte		        An3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_6_B1
+	 .int	bgm_girleye_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -991,7 +991,7 @@ bgm_girleye_7_B1:
 	.byte		N06   
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_7_B1
+	 .int	bgm_girleye_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1113,7 +1113,7 @@ bgm_girleye_8_B1:
 	.byte		        Fs3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_girleye_8_B1
+	 .int	bgm_girleye_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1235,11 +1235,11 @@ bgm_girleye_9_001:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_girleye_9_000
+	 .int	bgm_girleye_9_000
 	.byte	PATT
-	 .word	bgm_girleye_9_001
+	 .int	bgm_girleye_9_001
 	.byte	GOTO
-	 .word	bgm_girleye_9_B1
+	 .int	bgm_girleye_9_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1252,16 +1252,16 @@ bgm_girleye:
 	.byte	bgm_girleye_pri	@ Priority
 	.byte	bgm_girleye_rev	@ Reverb.
 
-	.word	bgm_girleye_grp
+	.int	bgm_girleye_grp
 
-	.word	bgm_girleye_1
-	.word	bgm_girleye_2
-	.word	bgm_girleye_3
-	.word	bgm_girleye_4
-	.word	bgm_girleye_5
-	.word	bgm_girleye_6
-	.word	bgm_girleye_7
-	.word	bgm_girleye_8
-	.word	bgm_girleye_9
+	.int	bgm_girleye_1
+	.int	bgm_girleye_2
+	.int	bgm_girleye_3
+	.int	bgm_girleye_4
+	.int	bgm_girleye_5
+	.int	bgm_girleye_6
+	.int	bgm_girleye_7
+	.int	bgm_girleye_8
+	.int	bgm_girleye_9
 
 	.end

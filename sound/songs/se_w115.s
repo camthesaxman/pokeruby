@@ -207,7 +207,7 @@ se_w115_2_000:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w115_2_000
+	 .int	se_w115_2_000
 	.byte		VOL   , 60*se_w115_mvl/mxv
 	.byte	W01
 	.byte		        20*se_w115_mvl/mxv
@@ -259,9 +259,9 @@ se_w115:
 	.byte	se_w115_pri	@ Priority
 	.byte	se_w115_rev	@ Reverb.
 
-	.word	se_w115_grp
+	.int	se_w115_grp
 
-	.word	se_w115_1
-	.word	se_w115_2
+	.int	se_w115_1
+	.int	se_w115_2
 
 	.end

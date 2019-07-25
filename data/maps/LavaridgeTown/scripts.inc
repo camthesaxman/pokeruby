@@ -23,7 +23,7 @@ LavaridgeTown_EventScript_14E4DF:: @ 814E4DF
 
 LavaridgeTown_MapScript2_14E4E3:: @ 814E4E3
 	map_script_2 VAR_LAVARIDGE_RIVAL_STATE, 1, LavaridgeTown_EventScript_14E4ED
-	.2byte 0
+	.short 0
 
 LavaridgeTown_EventScript_14E4ED:: @ 814E4ED
 	lockall

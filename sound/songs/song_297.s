@@ -25,7 +25,7 @@ song_297_1:
 song_297_1_B1:
 	.byte	W96
 	.byte	GOTO
-	 .word	song_297_1_B1
+	 .int	song_297_1_B1
 	.byte	W48
 	.byte		EOT   , Cn3 
 	.byte	FINE
@@ -39,8 +39,8 @@ song_297:
 	.byte	song_297_pri	@ Priority
 	.byte	song_297_rev	@ Reverb.
 
-	.word	song_297_grp
+	.int	song_297_grp
 
-	.word	song_297_1
+	.int	song_297_1
 
 	.end

@@ -63,8 +63,8 @@ se_ban:
 	.byte	se_ban_pri	@ Priority
 	.byte	se_ban_rev	@ Reverb.
 
-	.word	se_ban_grp
+	.int	se_ban_grp
 
-	.word	se_ban_1
+	.int	se_ban_1
 
 	.end

@@ -1,6 +1,37 @@
 #ifndef GUARD_GLOBAL_H
 #define GUARD_GLOBAL_H
 
+#ifndef NO_UNDERSCORE_HACK
+#define VRAM_          _VRAM_
+#define OAM            _OAM
+#define REG_BASE       _REG_BASE
+#define PLTT           _PLTT
+#define PLTT           _PLTT
+#define SOUND_INFO_PTR _SOUND_INFO_PTR
+#define INTR_CHECK     _INTR_CHECK
+#define INTR_VECTOR    _INTR_VECTOR
+#define puts           _puts
+#define memcpy         _memcpy
+#define memset         _memset
+#define strcmp         _strcmp
+#define getc           _getc
+#define printf         _printf
+#define CpuSet         _CpuSet
+#define SoftReset _SoftReset
+#define LZ77UnCompVram _LZ77UnCompVram
+#define LZ77UnCompWram _LZ77UnCompWram
+#define Platform_GetKeyInput _Platform_GetKeyInput
+#define AgbMain _AgbMain
+#define gIntrTable _gIntrTable
+#define VBlankIntrWait _VBlankIntrWait
+#define gMPlayTable _gMPlayTable
+#define voicegroup000 _voicegroup000
+#define gSongTable _gSongTable
+#define gCryTable _gCryTable
+#define gCryTable2 _gCryTable2
+#define GPIOPortDirection _GPIOPortDirection
+#endif
+
 #include <string.h>
 #include <stdlib.h>
 #include "config.h" // we need to define config before gba headers as print stuff needs the functions nulled before defines.

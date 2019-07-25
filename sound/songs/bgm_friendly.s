@@ -666,7 +666,7 @@ bgm_friendly_1_B1:
 	.byte		        As3 , v096
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_1_B1
+	 .int	bgm_friendly_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -965,7 +965,7 @@ bgm_friendly_2_000:
 	.byte		N04   , Bn3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_friendly_2_000
+	 .int	bgm_friendly_2_000
 	.byte		N08   , Cs4 , v112
 	.byte	W72
 	.byte		        Bn3 
@@ -1151,7 +1151,7 @@ bgm_friendly_2_000:
 	.byte		        As4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_2_B1
+	 .int	bgm_friendly_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1399,7 +1399,7 @@ bgm_friendly_3_001:
 	.byte		        Cs4 , v032
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_friendly_3_000
+	 .int	bgm_friendly_3_000
 	.byte		PAN   , c_v+0
 	.byte		N08   , Bn0 , v127
 	.byte	W08
@@ -1429,7 +1429,7 @@ bgm_friendly_3_001:
 	.byte		N08   , Ds3 , v016
 	.byte	W20
 	.byte	PATT
-	 .word	bgm_friendly_3_000
+	 .int	bgm_friendly_3_000
 	.byte		PAN   , c_v+0
 	.byte		N08   , Bn0 , v127
 	.byte	W08
@@ -1519,7 +1519,7 @@ bgm_friendly_3_001:
 	.byte		N08   , En3 , v016
 	.byte	W20
 	.byte	PATT
-	 .word	bgm_friendly_3_001
+	 .int	bgm_friendly_3_001
 	.byte		PAN   , c_v+0
 	.byte		N08   , Fs1 , v127
 	.byte	W08
@@ -1822,7 +1822,7 @@ bgm_friendly_3_001:
 	.byte		        As0 , v112
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_3_B1
+	 .int	bgm_friendly_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1957,7 +1957,7 @@ bgm_friendly_4_B1:
 	.byte		        As4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_4_B1
+	 .int	bgm_friendly_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2126,13 +2126,13 @@ bgm_friendly_5_003:
 	.byte		N08   , Fs3 , v032
 	.byte	W20
 	.byte	PATT
-	 .word	bgm_friendly_5_000
+	 .int	bgm_friendly_5_000
 	.byte	PATT
-	 .word	bgm_friendly_5_001
+	 .int	bgm_friendly_5_001
 	.byte	PATT
-	 .word	bgm_friendly_5_002
+	 .int	bgm_friendly_5_002
 	.byte	PATT
-	 .word	bgm_friendly_5_003
+	 .int	bgm_friendly_5_003
 	.byte	W24
 	.byte		N08   , Gs3 , v112
 	.byte	W08
@@ -2451,7 +2451,7 @@ bgm_friendly_5_003:
 	.byte		        As4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_5_B1
+	 .int	bgm_friendly_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2486,7 +2486,7 @@ bgm_friendly_6_000:
 	.byte	PEND
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_friendly_6_000
+	 .int	bgm_friendly_6_000
 	.byte	W96
 	.byte	W48
 	.byte		N08   , En5 , v112
@@ -2549,7 +2549,7 @@ bgm_friendly_6_001:
 	.byte	PEND
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_friendly_6_001
+	 .int	bgm_friendly_6_001
 	.byte	W96
 	.byte	W48
 	.byte		N08   , En6 , v112
@@ -2642,7 +2642,7 @@ bgm_friendly_6_001:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_friendly_6_B1
+	 .int	bgm_friendly_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2757,7 +2757,7 @@ bgm_friendly_7_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_friendly_7_B1
+	 .int	bgm_friendly_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2954,9 +2954,9 @@ bgm_friendly_8_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_friendly_8_000
+	 .int	bgm_friendly_8_000
 	.byte	PATT
-	 .word	bgm_friendly_8_001
+	 .int	bgm_friendly_8_001
 bgm_friendly_8_002:
 	.byte		N04   , Cn1 , v112
 	.byte		N04   , Fs1 
@@ -3043,17 +3043,17 @@ bgm_friendly_8_003:
 	.byte		N04   , Fs2 , v080
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_friendly_8_002
+	 .int	bgm_friendly_8_002
 	.byte	PATT
-	 .word	bgm_friendly_8_001
+	 .int	bgm_friendly_8_001
 	.byte	PATT
-	 .word	bgm_friendly_8_002
+	 .int	bgm_friendly_8_002
 	.byte	PATT
-	 .word	bgm_friendly_8_001
+	 .int	bgm_friendly_8_001
 	.byte	PATT
-	 .word	bgm_friendly_8_002
+	 .int	bgm_friendly_8_002
 	.byte	PATT
-	 .word	bgm_friendly_8_003
+	 .int	bgm_friendly_8_003
 	.byte		N04   , Cn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -3249,9 +3249,9 @@ bgm_friendly_8_004:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_friendly_8_004
+	 .int	bgm_friendly_8_004
 	.byte	PATT
-	 .word	bgm_friendly_8_004
+	 .int	bgm_friendly_8_004
 	.byte		N04   , Cn1 , v112
 	.byte	W08
 	.byte		        Fs2 
@@ -3279,7 +3279,7 @@ bgm_friendly_8_004:
 	.byte		        En1 , v112
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_friendly_8_B1
+	 .int	bgm_friendly_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3291,15 +3291,15 @@ bgm_friendly:
 	.byte	bgm_friendly_pri	@ Priority
 	.byte	bgm_friendly_rev	@ Reverb.
 
-	.word	bgm_friendly_grp
+	.int	bgm_friendly_grp
 
-	.word	bgm_friendly_1
-	.word	bgm_friendly_2
-	.word	bgm_friendly_3
-	.word	bgm_friendly_4
-	.word	bgm_friendly_5
-	.word	bgm_friendly_6
-	.word	bgm_friendly_7
-	.word	bgm_friendly_8
+	.int	bgm_friendly_1
+	.int	bgm_friendly_2
+	.int	bgm_friendly_3
+	.int	bgm_friendly_4
+	.int	bgm_friendly_5
+	.int	bgm_friendly_6
+	.int	bgm_friendly_7
+	.int	bgm_friendly_8
 
 	.end

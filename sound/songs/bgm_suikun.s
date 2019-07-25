@@ -94,13 +94,13 @@ bgm_suikun_1_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_1_000
+	 .int	bgm_suikun_1_000
 	.byte	PATT
-	 .word	bgm_suikun_1_001
+	 .int	bgm_suikun_1_001
 	.byte	PATT
-	 .word	bgm_suikun_1_000
+	 .int	bgm_suikun_1_000
 	.byte	PATT
-	 .word	bgm_suikun_1_001
+	 .int	bgm_suikun_1_001
 	.byte		N06   , An2 , v112
 	.byte	W12
 	.byte		N06   
@@ -255,15 +255,15 @@ bgm_suikun_1_006:
 	.byte		        En2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_1_002
+	 .int	bgm_suikun_1_002
 	.byte	PATT
-	 .word	bgm_suikun_1_003
+	 .int	bgm_suikun_1_003
 	.byte	PATT
-	 .word	bgm_suikun_1_004
+	 .int	bgm_suikun_1_004
 	.byte	PATT
-	 .word	bgm_suikun_1_005
+	 .int	bgm_suikun_1_005
 	.byte	PATT
-	 .word	bgm_suikun_1_006
+	 .int	bgm_suikun_1_006
 	.byte		N12   , Cn4 , v112
 	.byte	W12
 	.byte		        Gn3 
@@ -333,11 +333,11 @@ bgm_suikun_1_009:
 	.byte	W60
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_1_009
+	 .int	bgm_suikun_1_009
 	.byte	PATT
-	 .word	bgm_suikun_1_007
+	 .int	bgm_suikun_1_007
 	.byte	PATT
-	 .word	bgm_suikun_1_008
+	 .int	bgm_suikun_1_008
 	.byte		N12   , Gn3 , v112
 	.byte	W12
 	.byte		        Cn3 
@@ -444,9 +444,9 @@ bgm_suikun_1_011:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_1_010
+	 .int	bgm_suikun_1_010
 	.byte	PATT
-	 .word	bgm_suikun_1_011
+	 .int	bgm_suikun_1_011
 bgm_suikun_1_012:
 	.byte		N48   , Bn2 , v112
 	.byte	W48
@@ -458,7 +458,7 @@ bgm_suikun_1_012:
 	.byte		        An2 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_suikun_1_012
+	 .int	bgm_suikun_1_012
 	.byte		N60   , Fn2 , v112
 	.byte	W60
 	.byte		VOICE , 48
@@ -502,11 +502,11 @@ bgm_suikun_1_013:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_1_013
+	 .int	bgm_suikun_1_013
 	.byte	PATT
-	 .word	bgm_suikun_1_013
+	 .int	bgm_suikun_1_013
 	.byte	PATT
-	 .word	bgm_suikun_1_013
+	 .int	bgm_suikun_1_013
 bgm_suikun_1_014:
 	.byte	W24
 	.byte		N12   , Fn3 , v112
@@ -515,11 +515,11 @@ bgm_suikun_1_014:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_1_014
+	 .int	bgm_suikun_1_014
 	.byte	PATT
-	 .word	bgm_suikun_1_014
+	 .int	bgm_suikun_1_014
 	.byte	PATT
-	 .word	bgm_suikun_1_014
+	 .int	bgm_suikun_1_014
 	.byte		N24   , En3 , v112
 	.byte	W96
 	.byte	W96
@@ -544,7 +544,7 @@ bgm_suikun_1_014:
 	.byte	W48
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_suikun_1_B1
+	 .int	bgm_suikun_1_B1
 	.byte	W48
 	.byte	FINE
 
@@ -622,7 +622,7 @@ bgm_suikun_2_000:
 	.byte		N12   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_suikun_2_000
+	 .int	bgm_suikun_2_000
 bgm_suikun_2_001:
 	.byte		N12   , An5 , v112
 	.byte	W24
@@ -637,7 +637,7 @@ bgm_suikun_2_001:
 	.byte		        As5 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_suikun_2_001
+	 .int	bgm_suikun_2_001
 	.byte	W24
 	.byte		N12   , En4 , v112
 	.byte	W48
@@ -697,17 +697,17 @@ bgm_suikun_2_007:
 	.byte		        Bn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_suikun_2_002
+	 .int	bgm_suikun_2_002
 	.byte	PATT
-	 .word	bgm_suikun_2_003
+	 .int	bgm_suikun_2_003
 	.byte	PATT
-	 .word	bgm_suikun_2_004
+	 .int	bgm_suikun_2_004
 	.byte	PATT
-	 .word	bgm_suikun_2_005
+	 .int	bgm_suikun_2_005
 	.byte	PATT
-	 .word	bgm_suikun_2_006
+	 .int	bgm_suikun_2_006
 	.byte	PATT
-	 .word	bgm_suikun_2_007
+	 .int	bgm_suikun_2_007
 	.byte		N96   , En4 , v112
 	.byte	W96
 	.byte		VOICE , 1
@@ -860,9 +860,9 @@ bgm_suikun_2_009:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_2_008
+	 .int	bgm_suikun_2_008
 	.byte	PATT
-	 .word	bgm_suikun_2_009
+	 .int	bgm_suikun_2_009
 bgm_suikun_2_010:
 	.byte		N48   , Fs3 , v112
 	.byte	W48
@@ -874,7 +874,7 @@ bgm_suikun_2_010:
 	.byte		        En3 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_suikun_2_010
+	 .int	bgm_suikun_2_010
 	.byte		N96   , Cn3 , v112
 	.byte	W96
 	.byte		VOICE , 48
@@ -940,7 +940,7 @@ bgm_suikun_2_011:
 	.byte		        Fn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_2_011
+	 .int	bgm_suikun_2_011
 	.byte		N12   , Bn2 , v112
 	.byte	W03
 	.byte		VOICE , 48
@@ -990,7 +990,7 @@ bgm_suikun_2_012:
 	.byte		        Fn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_2_012
+	 .int	bgm_suikun_2_012
 bgm_suikun_2_013:
 	.byte		N12   , Dn3 , v112
 	.byte	W12
@@ -1026,9 +1026,9 @@ bgm_suikun_2_014:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_2_013
+	 .int	bgm_suikun_2_013
 	.byte	PATT
-	 .word	bgm_suikun_2_014
+	 .int	bgm_suikun_2_014
 bgm_suikun_2_015:
 	.byte		N12   , Bn3 , v112
 	.byte	W12
@@ -1064,9 +1064,9 @@ bgm_suikun_2_016:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_2_015
+	 .int	bgm_suikun_2_015
 	.byte	PATT
-	 .word	bgm_suikun_2_016
+	 .int	bgm_suikun_2_016
 bgm_suikun_2_017:
 	.byte		N12   , Dn4 , v112
 	.byte	W12
@@ -1102,9 +1102,9 @@ bgm_suikun_2_018:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_2_017
+	 .int	bgm_suikun_2_017
 	.byte	PATT
-	 .word	bgm_suikun_2_018
+	 .int	bgm_suikun_2_018
 	.byte		N24   , An4 , v112
 	.byte	W48
 	.byte		VOICE , 1
@@ -1152,7 +1152,7 @@ bgm_suikun_2_020:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_2_019
+	 .int	bgm_suikun_2_019
 	.byte		N12   , An2 , v112
 	.byte	W12
 	.byte		        En2 
@@ -1203,7 +1203,7 @@ bgm_suikun_2_021:
 	.byte		N24   , Gn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_2_021
+	 .int	bgm_suikun_2_021
 	.byte		N12   , Cn3 , v112
 	.byte	W12
 	.byte		        Gn2 
@@ -1221,11 +1221,11 @@ bgm_suikun_2_021:
 	.byte		N24   , En3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_2_019
+	 .int	bgm_suikun_2_019
 	.byte	PATT
-	 .word	bgm_suikun_2_020
+	 .int	bgm_suikun_2_020
 	.byte	PATT
-	 .word	bgm_suikun_2_019
+	 .int	bgm_suikun_2_019
 	.byte		N12   , An2 , v112
 	.byte	W12
 	.byte		        En2 
@@ -1235,7 +1235,7 @@ bgm_suikun_2_021:
 	.byte		        Bn2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_suikun_2_B1
+	 .int	bgm_suikun_2_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1292,7 +1292,7 @@ bgm_suikun_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_000
+	 .int	bgm_suikun_3_000
 bgm_suikun_3_002:
 	.byte		N12   , Dn1 , v112
 	.byte	W12
@@ -1310,13 +1310,13 @@ bgm_suikun_3_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_000
+	 .int	bgm_suikun_3_000
 	.byte	PATT
-	 .word	bgm_suikun_3_001
+	 .int	bgm_suikun_3_001
 	.byte	PATT
-	 .word	bgm_suikun_3_000
+	 .int	bgm_suikun_3_000
 	.byte	PATT
-	 .word	bgm_suikun_3_002
+	 .int	bgm_suikun_3_002
 bgm_suikun_3_B1:
 bgm_suikun_3_003:
 	.byte		N12   , An0 , v112
@@ -1337,7 +1337,7 @@ bgm_suikun_3_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_003
+	 .int	bgm_suikun_3_003
 bgm_suikun_3_004:
 	.byte		N12   , An0 , v112
 	.byte	W12
@@ -1393,7 +1393,7 @@ bgm_suikun_3_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_006
+	 .int	bgm_suikun_3_006
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		        Gn1 
@@ -1425,15 +1425,15 @@ bgm_suikun_3_006:
 	.byte		        Dn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_suikun_3_003
+	 .int	bgm_suikun_3_003
 	.byte	PATT
-	 .word	bgm_suikun_3_003
+	 .int	bgm_suikun_3_003
 	.byte	PATT
-	 .word	bgm_suikun_3_004
+	 .int	bgm_suikun_3_004
 	.byte	PATT
-	 .word	bgm_suikun_3_005
+	 .int	bgm_suikun_3_005
 	.byte	PATT
-	 .word	bgm_suikun_3_006
+	 .int	bgm_suikun_3_006
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		        Gn1 
@@ -1499,7 +1499,7 @@ bgm_suikun_3_007:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_007
+	 .int	bgm_suikun_3_007
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		        Gn1 
@@ -1549,7 +1549,7 @@ bgm_suikun_3_008:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_008
+	 .int	bgm_suikun_3_008
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		        Gn1 
@@ -1603,9 +1603,9 @@ bgm_suikun_3_010:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_009
+	 .int	bgm_suikun_3_009
 	.byte	PATT
-	 .word	bgm_suikun_3_010
+	 .int	bgm_suikun_3_010
 	.byte		N12   , Bn1 , v112
 	.byte	W12
 	.byte		N12   
@@ -1661,7 +1661,7 @@ bgm_suikun_3_011:
 	.byte		        En1 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_suikun_3_011
+	 .int	bgm_suikun_3_011
 	.byte		N60   , Cn1 , v112
 	.byte	W60
 	.byte		N12   
@@ -1692,11 +1692,11 @@ bgm_suikun_3_012:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_012
+	 .int	bgm_suikun_3_012
 	.byte	PATT
-	 .word	bgm_suikun_3_012
+	 .int	bgm_suikun_3_012
 	.byte	PATT
-	 .word	bgm_suikun_3_012
+	 .int	bgm_suikun_3_012
 bgm_suikun_3_013:
 	.byte		N12   , Bn0 , v112
 	.byte	W12
@@ -1716,9 +1716,9 @@ bgm_suikun_3_013:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_013
+	 .int	bgm_suikun_3_013
 	.byte	PATT
-	 .word	bgm_suikun_3_013
+	 .int	bgm_suikun_3_013
 	.byte		N12   , Bn0 , v112
 	.byte	W12
 	.byte		        Fn1 
@@ -1754,9 +1754,9 @@ bgm_suikun_3_014:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_014
+	 .int	bgm_suikun_3_014
 	.byte	PATT
-	 .word	bgm_suikun_3_014
+	 .int	bgm_suikun_3_014
 bgm_suikun_3_015:
 	.byte		N12   , Dn1 , v112
 	.byte	W12
@@ -1794,11 +1794,11 @@ bgm_suikun_3_016:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_016
+	 .int	bgm_suikun_3_016
 	.byte	PATT
-	 .word	bgm_suikun_3_013
+	 .int	bgm_suikun_3_013
 	.byte	PATT
-	 .word	bgm_suikun_3_013
+	 .int	bgm_suikun_3_013
 bgm_suikun_3_017:
 	.byte		N12   , Dn2 , v112
 	.byte	W12
@@ -1818,11 +1818,11 @@ bgm_suikun_3_017:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_017
+	 .int	bgm_suikun_3_017
 	.byte	PATT
-	 .word	bgm_suikun_3_014
+	 .int	bgm_suikun_3_014
 	.byte	PATT
-	 .word	bgm_suikun_3_015
+	 .int	bgm_suikun_3_015
 	.byte		N24   , An1 , v112
 	.byte	W48
 	.byte		N12   , An0 
@@ -1852,7 +1852,7 @@ bgm_suikun_3_018:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_018
+	 .int	bgm_suikun_3_018
 	.byte		N12   , An0 , v112
 	.byte	W12
 	.byte		        Dn1 
@@ -1904,9 +1904,9 @@ bgm_suikun_3_019:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_019
+	 .int	bgm_suikun_3_019
 	.byte	PATT
-	 .word	bgm_suikun_3_019
+	 .int	bgm_suikun_3_019
 	.byte		N12   , Gn1 , v112
 	.byte	W12
 	.byte		        Cn2 
@@ -1942,7 +1942,7 @@ bgm_suikun_3_020:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_suikun_3_020
+	 .int	bgm_suikun_3_020
 	.byte		N12   , En1 , v112
 	.byte	W12
 	.byte		        An1 
@@ -1967,7 +1967,7 @@ bgm_suikun_3_020:
 	.byte		        En1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_suikun_3_B1
+	 .int	bgm_suikun_3_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1980,10 +1980,10 @@ bgm_suikun:
 	.byte	bgm_suikun_pri	@ Priority
 	.byte	bgm_suikun_rev	@ Reverb.
 
-	.word	bgm_suikun_grp
+	.int	bgm_suikun_grp
 
-	.word	bgm_suikun_1
-	.word	bgm_suikun_2
-	.word	bgm_suikun_3
+	.int	bgm_suikun_1
+	.int	bgm_suikun_2
+	.int	bgm_suikun_3
 
 	.end

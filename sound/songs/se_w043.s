@@ -97,9 +97,9 @@ se_w043:
 	.byte	se_w043_pri	@ Priority
 	.byte	se_w043_rev	@ Reverb.
 
-	.word	se_w043_grp
+	.int	se_w043_grp
 
-	.word	se_w043_1
-	.word	se_w043_2
+	.int	se_w043_1
+	.int	se_w043_2
 
 	.end

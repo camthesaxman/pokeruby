@@ -1867,7 +1867,7 @@ bgm_title3_2_000:
 	.byte		        Cn5 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_2_000
+	 .int	bgm_title3_2_000
 	.byte		N04   , Gs4 , v112
 	.byte	W08
 	.byte		        As4 
@@ -2106,7 +2106,7 @@ bgm_title3_3_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_3_000
+	 .int	bgm_title3_3_000
 	.byte		N20   , Ds1 , v112
 	.byte	W24
 	.byte		N04   
@@ -2148,9 +2148,9 @@ bgm_title3_3_001:
 	.byte		N04   , En1 , v080
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_3_001
+	 .int	bgm_title3_3_001
 	.byte	PATT
-	 .word	bgm_title3_3_000
+	 .int	bgm_title3_3_000
 	.byte		N08   , Ds1 , v112
 	.byte	W08
 	.byte		N04   , Dn1 
@@ -2213,7 +2213,7 @@ bgm_title3_3_001:
 	.byte		N04   , En1 , v080
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_3_000
+	 .int	bgm_title3_3_000
 	.byte		N04   , Ds1 , v112
 	.byte	W08
 	.byte		N04   
@@ -2609,11 +2609,11 @@ bgm_title3_3_003:
 	.byte		        Fn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_3_003
+	 .int	bgm_title3_3_003
 	.byte	PATT
-	 .word	bgm_title3_3_002
+	 .int	bgm_title3_3_002
 	.byte	PATT
-	 .word	bgm_title3_3_003
+	 .int	bgm_title3_3_003
 	.byte		N12   , Fs1 , v112
 	.byte	W16
 	.byte		N04   , Fn1 
@@ -4149,15 +4149,15 @@ bgm_title3_4_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_4_000
+	 .int	bgm_title3_4_000
 	.byte	PATT
-	 .word	bgm_title3_4_000
+	 .int	bgm_title3_4_000
 	.byte	PATT
-	 .word	bgm_title3_4_000
+	 .int	bgm_title3_4_000
 	.byte	PATT
-	 .word	bgm_title3_4_000
+	 .int	bgm_title3_4_000
 	.byte	PATT
-	 .word	bgm_title3_4_000
+	 .int	bgm_title3_4_000
 	.byte		N06   , Fs5 , v112
 	.byte	W24
 	.byte		N04   , Fs3 
@@ -4187,7 +4187,7 @@ bgm_title3_5_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_5_000
+	 .int	bgm_title3_5_000
 	.byte		N24   , Fn1 , v127
 	.byte	W88
 	.byte		N02   , Cn2 
@@ -4352,7 +4352,7 @@ bgm_title3_5_001:
 	.byte		N24   , Cn1 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_title3_5_001
+	 .int	bgm_title3_5_001
 	.byte		N08   , Gn2 , v127
 	.byte	W16
 	.byte		        Cn2 
@@ -4476,9 +4476,9 @@ bgm_title3_5_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_5_002
+	 .int	bgm_title3_5_002
 	.byte	PATT
-	 .word	bgm_title3_5_002
+	 .int	bgm_title3_5_002
 	.byte		VOL   , 76*bgm_title3_mvl/mxv
 	.byte		N08   , Fs1 , v112
 	.byte	W12
@@ -4503,9 +4503,9 @@ bgm_title3_5_002:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_5_002
+	 .int	bgm_title3_5_002
 	.byte	PATT
-	 .word	bgm_title3_5_002
+	 .int	bgm_title3_5_002
 	.byte		N06   , Fs2 , v112
 	.byte	W24
 	.byte		N04   , Fs1 
@@ -4571,7 +4571,7 @@ bgm_title3_6_000:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_6_000
+	 .int	bgm_title3_6_000
 	.byte		N06   , As4 , v112
 	.byte	W08
 	.byte		N02   , An4 
@@ -4746,7 +4746,7 @@ bgm_title3_6_002:
 	.byte		        En4 
 	.byte	W02
 	.byte	PATT
-	 .word	bgm_title3_6_001
+	 .int	bgm_title3_6_001
 	.byte		N06   , An4 , v112
 	.byte	W08
 	.byte		N02   , Gs4 
@@ -4832,7 +4832,7 @@ bgm_title3_6_003:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_6_001
+	 .int	bgm_title3_6_001
 	.byte		N06   , An4 , v112
 	.byte	W08
 	.byte		N02   , Gs4 
@@ -4862,9 +4862,9 @@ bgm_title3_6_003:
 	.byte		        An3 
 	.byte	W02
 	.byte	PATT
-	 .word	bgm_title3_6_002
+	 .int	bgm_title3_6_002
 	.byte	PATT
-	 .word	bgm_title3_6_003
+	 .int	bgm_title3_6_003
 	.byte		N06   , Ds4 , v112
 	.byte	W08
 	.byte		N02   , Dn4 
@@ -6486,7 +6486,7 @@ bgm_title3_7_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_7_000
+	 .int	bgm_title3_7_000
 	.byte		N12   , Cn1 , v112
 	.byte	W12
 	.byte		N02   , Gn2 
@@ -6679,17 +6679,17 @@ bgm_title3_7_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	PATT
-	 .word	bgm_title3_7_001
+	 .int	bgm_title3_7_001
 	.byte	W48
 	.byte		N08   , Bn1 , v112
 	.byte	W08
@@ -6804,7 +6804,7 @@ bgm_title3_7_002:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_7_002
+	 .int	bgm_title3_7_002
 	.byte		N08   , Cs4 , v112
 	.byte	W12
 	.byte		N02   , Cn4 
@@ -7733,7 +7733,7 @@ bgm_title3_8_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_8_000
+	 .int	bgm_title3_8_000
 	.byte		N06   , Cn2 , v112
 	.byte	W12
 	.byte		N02   
@@ -7931,17 +7931,17 @@ bgm_title3_8_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte	PATT
-	 .word	bgm_title3_8_001
+	 .int	bgm_title3_8_001
 	.byte		N08   , Fs4 , v112
 	.byte	W08
 	.byte		N04   , Fn4 
@@ -8040,9 +8040,9 @@ bgm_title3_8_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_8_002
+	 .int	bgm_title3_8_002
 	.byte	PATT
-	 .word	bgm_title3_8_002
+	 .int	bgm_title3_8_002
 	.byte		N06   , Fs1 , v112
 	.byte	W12
 	.byte		N02   
@@ -8066,9 +8066,9 @@ bgm_title3_8_002:
 	.byte		N02   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_8_002
+	 .int	bgm_title3_8_002
 	.byte	PATT
-	 .word	bgm_title3_8_002
+	 .int	bgm_title3_8_002
 	.byte		VOL   , 25*bgm_title3_mvl/mxv
 	.byte		N06   , Cs4 , v112
 	.byte	W24
@@ -8303,7 +8303,7 @@ bgm_title3_9_000:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_9_000
+	 .int	bgm_title3_9_000
 	.byte		N04   , En1 , v112
 	.byte	W08
 	.byte		        En1 , v080
@@ -8363,7 +8363,7 @@ bgm_title3_9_000:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_title3_9_000
+	 .int	bgm_title3_9_000
 	.byte		N48   , An2 , v112
 	.byte	W96
 	.byte	W96
@@ -8574,11 +8574,11 @@ bgm_title3_10_001:
 	.byte		        En2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_10_001
+	 .int	bgm_title3_10_001
 	.byte	PATT
-	 .word	bgm_title3_10_000
+	 .int	bgm_title3_10_000
 	.byte	PATT
-	 .word	bgm_title3_10_001
+	 .int	bgm_title3_10_001
 	.byte		N08   , Ds1 , v112
 	.byte	W08
 	.byte		N04   , Dn1 
@@ -8641,7 +8641,7 @@ bgm_title3_10_001:
 	.byte		N04   , En1 , v080
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_title3_10_001
+	 .int	bgm_title3_10_001
 	.byte		N04   , Ds1 , v112
 	.byte	W08
 	.byte		N04   
@@ -9050,15 +9050,15 @@ bgm_title3_10_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_title3_10_002
+	 .int	bgm_title3_10_002
 	.byte	PATT
-	 .word	bgm_title3_10_002
+	 .int	bgm_title3_10_002
 	.byte	PATT
-	 .word	bgm_title3_10_002
+	 .int	bgm_title3_10_002
 	.byte	PATT
-	 .word	bgm_title3_10_002
+	 .int	bgm_title3_10_002
 	.byte	PATT
-	 .word	bgm_title3_10_002
+	 .int	bgm_title3_10_002
 	.byte		N12   , Fs1 , v112
 	.byte	W16
 	.byte		N04   , Fn1 
@@ -9102,17 +9102,17 @@ bgm_title3:
 	.byte	bgm_title3_pri	@ Priority
 	.byte	bgm_title3_rev	@ Reverb.
 
-	.word	bgm_title3_grp
+	.int	bgm_title3_grp
 
-	.word	bgm_title3_1
-	.word	bgm_title3_2
-	.word	bgm_title3_3
-	.word	bgm_title3_4
-	.word	bgm_title3_5
-	.word	bgm_title3_6
-	.word	bgm_title3_7
-	.word	bgm_title3_8
-	.word	bgm_title3_9
-	.word	bgm_title3_10
+	.int	bgm_title3_1
+	.int	bgm_title3_2
+	.int	bgm_title3_3
+	.int	bgm_title3_4
+	.int	bgm_title3_5
+	.int	bgm_title3_6
+	.int	bgm_title3_7
+	.int	bgm_title3_8
+	.int	bgm_title3_9
+	.int	bgm_title3_10
 
 	.end

@@ -20,9 +20,9 @@ gSpriteAnim_8393134:: @ 8393134
 
 	.align 2
 gSpriteAnimTable_839313C:: @ 839313C
-	.4byte gSpriteAnim_8393124
-	.4byte gSpriteAnim_839312C
-	.4byte gSpriteAnim_8393134
+	.int gSpriteAnim_8393124
+	.int gSpriteAnim_839312C
+	.int gSpriteAnim_8393134
 
 	.align 2
 gSpriteTemplate_8393148:: @ 8393148

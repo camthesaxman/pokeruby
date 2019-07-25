@@ -118,7 +118,7 @@ bgm_kachi22_1_000:
 	.byte		N06   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi22_1_000
+	 .int	bgm_kachi22_1_000
 	.byte		N06   , Dn5 , v112
 	.byte	W12
 	.byte		N06   
@@ -139,7 +139,7 @@ bgm_kachi22_1_000:
 	.byte		        An4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kachi22_1_B1
+	 .int	bgm_kachi22_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -210,7 +210,7 @@ bgm_kachi22_2_000:
 	.byte		        Cn2 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kachi22_2_000
+	 .int	bgm_kachi22_2_000
 	.byte		N06   , Fn3 , v092
 	.byte	W24
 	.byte		VOICE , 47
@@ -220,7 +220,7 @@ bgm_kachi22_2_000:
 	.byte		        Cn2 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_kachi22_2_B1
+	 .int	bgm_kachi22_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -535,7 +535,7 @@ bgm_kachi22_3_B1:
 	.byte		        25*bgm_kachi22_mvl/mxv
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_kachi22_3_B1
+	 .int	bgm_kachi22_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -583,11 +583,11 @@ bgm_kachi22_4_000:
 	.byte		        Dn3 
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_kachi22_4_000
+	 .int	bgm_kachi22_4_000
 	.byte		N06   , Dn3 , v060
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi22_4_B1
+	 .int	bgm_kachi22_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -676,7 +676,7 @@ bgm_kachi22_5_000:
 	.byte		N03   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_kachi22_5_000
+	 .int	bgm_kachi22_5_000
 	.byte		N03   , Dn6 , v032
 	.byte	W12
 	.byte		N03   
@@ -686,7 +686,7 @@ bgm_kachi22_5_000:
 	.byte		        Cn6 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_kachi22_5_B1
+	 .int	bgm_kachi22_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -756,7 +756,7 @@ bgm_kachi22_6_B1:
 	.byte		N06   , An4 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_kachi22_6_B1
+	 .int	bgm_kachi22_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -847,17 +847,17 @@ bgm_kachi22_7_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kachi22_7_000
+	 .int	bgm_kachi22_7_000
 	.byte	PATT
-	 .word	bgm_kachi22_7_001
+	 .int	bgm_kachi22_7_001
 	.byte	PATT
-	 .word	bgm_kachi22_7_000
+	 .int	bgm_kachi22_7_000
 	.byte	PATT
-	 .word	bgm_kachi22_7_001
+	 .int	bgm_kachi22_7_001
 	.byte	PATT
-	 .word	bgm_kachi22_7_000
+	 .int	bgm_kachi22_7_000
 	.byte	GOTO
-	 .word	bgm_kachi22_7_B1
+	 .int	bgm_kachi22_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -869,14 +869,14 @@ bgm_kachi22:
 	.byte	bgm_kachi22_pri	@ Priority
 	.byte	bgm_kachi22_rev	@ Reverb.
 
-	.word	bgm_kachi22_grp
+	.int	bgm_kachi22_grp
 
-	.word	bgm_kachi22_1
-	.word	bgm_kachi22_2
-	.word	bgm_kachi22_3
-	.word	bgm_kachi22_4
-	.word	bgm_kachi22_5
-	.word	bgm_kachi22_6
-	.word	bgm_kachi22_7
+	.int	bgm_kachi22_1
+	.int	bgm_kachi22_2
+	.int	bgm_kachi22_3
+	.int	bgm_kachi22_4
+	.int	bgm_kachi22_5
+	.int	bgm_kachi22_6
+	.int	bgm_kachi22_7
 
 	.end

@@ -54,8 +54,8 @@ se_kaidan:
 	.byte	se_kaidan_pri	@ Priority
 	.byte	se_kaidan_rev	@ Reverb.
 
-	.word	se_kaidan_grp
+	.int	se_kaidan_grp
 
-	.word	se_kaidan_1
+	.int	se_kaidan_1
 
 	.end

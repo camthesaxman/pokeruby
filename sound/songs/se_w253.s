@@ -79,8 +79,8 @@ se_w253:
 	.byte	se_w253_pri	@ Priority
 	.byte	se_w253_rev	@ Reverb.
 
-	.word	se_w253_grp
+	.int	se_w253_grp
 
-	.word	se_w253_1
+	.int	se_w253_1
 
 	.end

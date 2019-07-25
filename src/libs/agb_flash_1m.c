@@ -1,10 +1,15 @@
+#include "global.h"
 #include "gba/gba.h"
 #include "gba/flash_internal.h"
+#include <stdio.h>
 
 static const char AgbLibFlashVersion[] = "FLASH1M_V103";
 
 const struct FlashSetupInfo * const sSetupInfos[] =
 {
+#ifdef PORTABLE
+    &DUMMY_SAVE,
+#endif
     &MX29L010,
     &LE26FV10N1TS,
     &DefaultFlash
@@ -22,9 +27,12 @@ u16 IdentifyFlash(void)
 
     setupInfo = sSetupInfos;
     result = 1;
+    
+    printf("flashId = 0x%04X\n",flashId);
 
     for (;;)
     {
+        printf("loop\n",flashId);
         if ((*setupInfo)->type.ids.separate.makerId == 0)
             break;
 
@@ -36,7 +44,8 @@ u16 IdentifyFlash(void)
 
         setupInfo++;
     }
-
+    
+    printf("test\n",flashId);
     ProgramFlashByte = (*setupInfo)->programFlashByte;
     ProgramFlashSector = (*setupInfo)->programFlashSector;
     EraseFlashChip = (*setupInfo)->eraseFlashChip;
@@ -44,6 +53,8 @@ u16 IdentifyFlash(void)
     WaitForFlashWrite = (*setupInfo)->WaitForFlashWrite;
     gFlashMaxTime = (*setupInfo)->maxTime;
     gFlash = &(*setupInfo)->type;
+    
+    printf("test2\n",flashId);
 
     return result;
 }

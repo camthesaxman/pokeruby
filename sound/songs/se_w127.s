@@ -109,7 +109,7 @@ se_w127_2_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w127_2_000
+	 .int	se_w127_2_000
 	.byte		N06   , Cn3 , v032
 	.byte	W06
 	.byte		        Gn2 
@@ -129,9 +129,9 @@ se_w127:
 	.byte	se_w127_pri	@ Priority
 	.byte	se_w127_rev	@ Reverb.
 
-	.word	se_w127_grp
+	.int	se_w127_grp
 
-	.word	se_w127_1
-	.word	se_w127_2
+	.int	se_w127_1
+	.int	se_w127_2
 
 	.end

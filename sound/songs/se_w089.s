@@ -122,31 +122,31 @@ se_w089_1_008:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w089_1_000
+	 .int	se_w089_1_000
 	.byte	PATT
-	 .word	se_w089_1_001
+	 .int	se_w089_1_001
 	.byte	PATT
-	 .word	se_w089_1_002
+	 .int	se_w089_1_002
 	.byte	PATT
-	 .word	se_w089_1_003
+	 .int	se_w089_1_003
 	.byte	PATT
-	 .word	se_w089_1_007
+	 .int	se_w089_1_007
 	.byte	PATT
-	 .word	se_w089_1_008
+	 .int	se_w089_1_008
 	.byte	PATT
-	 .word	se_w089_1_000
+	 .int	se_w089_1_000
 	.byte	PATT
-	 .word	se_w089_1_001
+	 .int	se_w089_1_001
 	.byte	PATT
-	 .word	se_w089_1_002
+	 .int	se_w089_1_002
 	.byte	PATT
-	 .word	se_w089_1_003
+	 .int	se_w089_1_003
 	.byte	PATT
-	 .word	se_w089_1_004
+	 .int	se_w089_1_004
 	.byte	PATT
-	 .word	se_w089_1_005
+	 .int	se_w089_1_005
 	.byte	PATT
-	 .word	se_w089_1_006
+	 .int	se_w089_1_006
 	.byte		VOL   , 106*se_w089_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N03   , Cn2 , v112
@@ -228,43 +228,43 @@ se_w089_2_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	se_w089_2_000
+	 .int	se_w089_2_000
 	.byte		N06   , Bn1 , v080
 	.byte	W06
 	.byte		N06   
@@ -318,9 +318,9 @@ se_w089:
 	.byte	se_w089_pri	@ Priority
 	.byte	se_w089_rev	@ Reverb.
 
-	.word	se_w089_grp
+	.int	se_w089_grp
 
-	.word	se_w089_1
-	.word	se_w089_2
+	.int	se_w089_1
+	.int	se_w089_2
 
 	.end

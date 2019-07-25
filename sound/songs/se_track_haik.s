@@ -42,8 +42,8 @@ se_track_haik:
 	.byte	se_track_haik_pri	@ Priority
 	.byte	se_track_haik_rev	@ Reverb.
 
-	.word	se_track_haik_grp
+	.int	se_track_haik_grp
 
-	.word	se_track_haik_1
+	.int	se_track_haik_1
 
 	.end

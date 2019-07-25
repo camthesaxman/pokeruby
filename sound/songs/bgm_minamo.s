@@ -541,7 +541,7 @@ bgm_minamo_1_B1:
 	.byte		        Gn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_minamo_1_B1
+	 .int	bgm_minamo_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -953,7 +953,7 @@ bgm_minamo_2_000:
 	.byte		N12   , Cs2 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_minamo_2_000
+	 .int	bgm_minamo_2_000
 	.byte		VOICE , 58
 	.byte		N12   , En1 , v112
 	.byte	W12
@@ -1129,7 +1129,7 @@ bgm_minamo_2_000:
 	.byte		        An1 , v124
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_minamo_2_B1
+	 .int	bgm_minamo_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1339,7 +1339,7 @@ bgm_minamo_3_000:
 	.byte		        Fs3 , v032
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_minamo_3_000
+	 .int	bgm_minamo_3_000
 	.byte		N03   , Fs3 , v112
 	.byte	W03
 	.byte		N06   , Fs3 , v032
@@ -1693,7 +1693,7 @@ bgm_minamo_3_000:
 	.byte		N06   , Bn3 , v032
 	.byte	W09
 	.byte	GOTO
-	 .word	bgm_minamo_3_B1
+	 .int	bgm_minamo_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -2296,7 +2296,7 @@ bgm_minamo_4_B1:
 	.byte		        En4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_minamo_4_B1
+	 .int	bgm_minamo_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2358,7 +2358,7 @@ bgm_minamo_5_000:
 	.byte	W48
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_minamo_5_000
+	 .int	bgm_minamo_5_000
 	.byte		N06   , Bn2 , v112
 	.byte	W06
 	.byte		        Ds3 
@@ -2473,7 +2473,7 @@ bgm_minamo_5_000:
 	.byte		        Gn2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_minamo_5_B1
+	 .int	bgm_minamo_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2671,7 +2671,7 @@ bgm_minamo_6_000:
 	.byte		        Ds3 , v036
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_minamo_6_000
+	 .int	bgm_minamo_6_000
 	.byte		N03   , Ds3 , v112
 	.byte	W03
 	.byte		N06   , Ds3 , v036
@@ -2905,7 +2905,7 @@ bgm_minamo_6_001:
 	.byte		N06   , Fs3 , v036
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_minamo_6_001
+	 .int	bgm_minamo_6_001
 	.byte		N03   , En3 , v112
 	.byte	W03
 	.byte		        En3 , v036
@@ -2935,7 +2935,7 @@ bgm_minamo_6_001:
 	.byte		N06   , En3 , v036
 	.byte	W09
 	.byte	GOTO
-	 .word	bgm_minamo_6_B1
+	 .int	bgm_minamo_6_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2947,13 +2947,13 @@ bgm_minamo:
 	.byte	bgm_minamo_pri	@ Priority
 	.byte	bgm_minamo_rev	@ Reverb.
 
-	.word	bgm_minamo_grp
+	.int	bgm_minamo_grp
 
-	.word	bgm_minamo_1
-	.word	bgm_minamo_2
-	.word	bgm_minamo_3
-	.word	bgm_minamo_4
-	.word	bgm_minamo_5
-	.word	bgm_minamo_6
+	.int	bgm_minamo_1
+	.int	bgm_minamo_2
+	.int	bgm_minamo_3
+	.int	bgm_minamo_4
+	.int	bgm_minamo_5
+	.int	bgm_minamo_6
 
 	.end

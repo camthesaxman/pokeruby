@@ -67,7 +67,7 @@ se_basabasa_1_B1:
 	.byte	W12
 	.byte	W12
 	.byte	GOTO
-	 .word	se_basabasa_1_B1
+	 .int	se_basabasa_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -103,7 +103,7 @@ se_basabasa_2_B1:
 	.byte	W12
 	.byte	W12
 	.byte	GOTO
-	 .word	se_basabasa_2_B1
+	 .int	se_basabasa_2_B1
 	.byte	FINE
 
 @******************************************************@
@@ -115,9 +115,9 @@ se_basabasa:
 	.byte	se_basabasa_pri	@ Priority
 	.byte	se_basabasa_rev	@ Reverb.
 
-	.word	se_basabasa_grp
+	.int	se_basabasa_grp
 
-	.word	se_basabasa_1
-	.word	se_basabasa_2
+	.int	se_basabasa_1
+	.int	se_basabasa_2
 
 	.end

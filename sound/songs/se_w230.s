@@ -184,9 +184,9 @@ se_w230:
 	.byte	se_w230_pri	@ Priority
 	.byte	se_w230_rev	@ Reverb.
 
-	.word	se_w230_grp
+	.int	se_w230_grp
 
-	.word	se_w230_1
-	.word	se_w230_2
+	.int	se_w230_1
+	.int	se_w230_2
 
 	.end

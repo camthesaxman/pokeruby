@@ -121,7 +121,7 @@ bgm_deepdeep_1_000:
 	.byte		        Cn3 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 	.byte		N04   , Gs1 , v112
 	.byte	W04
 	.byte		        Gs1 , v036
@@ -172,7 +172,7 @@ bgm_deepdeep_1_000:
 	.byte		        Cn5 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 bgm_deepdeep_1_001:
 	.byte		N04   , Fn1 , v112
 	.byte	W04
@@ -225,7 +225,7 @@ bgm_deepdeep_1_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 	.byte	TEMPO , 86*bgm_deepdeep_tbs/2
 	.byte		N04   , Gs1 , v112
 	.byte	W04
@@ -482,11 +482,11 @@ bgm_deepdeep_1_005:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 	.byte	PATT
-	 .word	bgm_deepdeep_1_001
+	 .int	bgm_deepdeep_1_001
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 bgm_deepdeep_1_006:
 	.byte		N04   , Fn1 , v112
 	.byte	W04
@@ -588,9 +588,9 @@ bgm_deepdeep_1_006:
 	.byte		        Ds3 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_1_003
+	 .int	bgm_deepdeep_1_003
 	.byte	PATT
-	 .word	bgm_deepdeep_1_004
+	 .int	bgm_deepdeep_1_004
 	.byte		N04   , Gn1 , v112
 	.byte	W04
 	.byte		        Gn1 , v036
@@ -641,15 +641,15 @@ bgm_deepdeep_1_006:
 	.byte		        Dn3 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_1_002
+	 .int	bgm_deepdeep_1_002
 	.byte	PATT
-	 .word	bgm_deepdeep_1_003
+	 .int	bgm_deepdeep_1_003
 	.byte	PATT
-	 .word	bgm_deepdeep_1_004
+	 .int	bgm_deepdeep_1_004
 	.byte	PATT
-	 .word	bgm_deepdeep_1_005
+	 .int	bgm_deepdeep_1_005
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 	.byte		N04   , Fn1 , v112
 	.byte	W04
 	.byte		        Fn1 , v036
@@ -700,13 +700,13 @@ bgm_deepdeep_1_006:
 	.byte		        Cn3 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_1_000
+	 .int	bgm_deepdeep_1_000
 	.byte	PATT
-	 .word	bgm_deepdeep_1_006
+	 .int	bgm_deepdeep_1_006
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_deepdeep_1_B1
+	 .int	bgm_deepdeep_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -855,7 +855,7 @@ bgm_deepdeep_2_B1:
 	.byte		        Cn2 , v044
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_deepdeep_2_B1
+	 .int	bgm_deepdeep_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1034,9 +1034,9 @@ bgm_deepdeep_3_005:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_3_000
+	 .int	bgm_deepdeep_3_000
 	.byte	PATT
-	 .word	bgm_deepdeep_3_001
+	 .int	bgm_deepdeep_3_001
 	.byte		N04   , Fn1 , v127
 	.byte	W08
 	.byte		        En1 
@@ -1070,9 +1070,9 @@ bgm_deepdeep_3_005:
 	.byte		        Gs1 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_3_002
+	 .int	bgm_deepdeep_3_002
 	.byte	PATT
-	 .word	bgm_deepdeep_3_000
+	 .int	bgm_deepdeep_3_000
 	.byte		N04   , Dn1 , v127
 	.byte	W08
 	.byte		        Cs1 
@@ -1174,15 +1174,15 @@ bgm_deepdeep_3_005:
 	.byte		N04   , Gn2 , v127
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_3_004
+	 .int	bgm_deepdeep_3_004
 	.byte	PATT
-	 .word	bgm_deepdeep_3_003
+	 .int	bgm_deepdeep_3_003
 	.byte	PATT
-	 .word	bgm_deepdeep_3_005
+	 .int	bgm_deepdeep_3_005
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_deepdeep_3_B1
+	 .int	bgm_deepdeep_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1226,47 +1226,47 @@ bgm_deepdeep_4_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	PATT
-	 .word	bgm_deepdeep_4_000
+	 .int	bgm_deepdeep_4_000
 	.byte	PATT
-	 .word	bgm_deepdeep_4_001
+	 .int	bgm_deepdeep_4_001
 	.byte	GOTO
-	 .word	bgm_deepdeep_4_B1
+	 .int	bgm_deepdeep_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1416,46 +1416,46 @@ bgm_deepdeep_5_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 bgm_deepdeep_5_B1:
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte		PAN   , c_v-32
 	.byte		N04   , Gn4 , v080
 	.byte	W04
@@ -1607,13 +1607,13 @@ bgm_deepdeep_5_B1:
 	.byte		N12   , Gn5 , v092
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	PATT
-	 .word	bgm_deepdeep_5_001
+	 .int	bgm_deepdeep_5_001
 	.byte	PATT
-	 .word	bgm_deepdeep_5_000
+	 .int	bgm_deepdeep_5_000
 	.byte	GOTO
-	 .word	bgm_deepdeep_5_B1
+	 .int	bgm_deepdeep_5_B1
 	.byte		PAN   , c_v-32
 	.byte	FINE
 
@@ -2226,7 +2226,7 @@ bgm_deepdeep_6_000:
 	.byte		N04   , Cs4 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_6_000
+	 .int	bgm_deepdeep_6_000
 	.byte	W24
 	.byte		MOD   , 6
 	.byte		VOL   , 35*bgm_deepdeep_mvl/mxv
@@ -2273,7 +2273,7 @@ bgm_deepdeep_6_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_deepdeep_6_B1
+	 .int	bgm_deepdeep_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2850,19 +2850,19 @@ bgm_deepdeep_7_003:
 	.byte		        Gs1 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_7_003
+	 .int	bgm_deepdeep_7_003
 	.byte	PATT
-	 .word	bgm_deepdeep_7_001
+	 .int	bgm_deepdeep_7_001
 	.byte	PATT
-	 .word	bgm_deepdeep_7_000
+	 .int	bgm_deepdeep_7_000
 	.byte	PATT
-	 .word	bgm_deepdeep_7_001
+	 .int	bgm_deepdeep_7_001
 	.byte	PATT
-	 .word	bgm_deepdeep_7_002
+	 .int	bgm_deepdeep_7_002
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_deepdeep_7_B1
+	 .int	bgm_deepdeep_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3449,7 +3449,7 @@ bgm_deepdeep_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_deepdeep_8_B1
+	 .int	bgm_deepdeep_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3598,23 +3598,23 @@ bgm_deepdeep_9_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte		N04   , Cn1 , v124
 	.byte	W08
 	.byte		        Cn1 , v096
@@ -3692,19 +3692,19 @@ bgm_deepdeep_9_001:
 	.byte		        Cn1 , v096
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	PATT
-	 .word	bgm_deepdeep_9_000
+	 .int	bgm_deepdeep_9_000
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte		N04   , Cn1 , v127
 	.byte	W08
 	.byte		        Cn1 , v096
@@ -3742,9 +3742,9 @@ bgm_deepdeep_9_001:
 	.byte		        Cn1 , v096
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_deepdeep_9_001
+	 .int	bgm_deepdeep_9_001
 	.byte	GOTO
-	 .word	bgm_deepdeep_9_B1
+	 .int	bgm_deepdeep_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -3844,43 +3844,43 @@ bgm_deepdeep_10_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte	PATT
-	 .word	bgm_deepdeep_10_001
+	 .int	bgm_deepdeep_10_001
 	.byte	PATT
-	 .word	bgm_deepdeep_10_000
+	 .int	bgm_deepdeep_10_000
 	.byte		N03   , Fn4 , v112
 	.byte	W08
 	.byte		        Fn4 , v064
@@ -3904,7 +3904,7 @@ bgm_deepdeep_10_001:
 	.byte		        Fn4 , v112
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_deepdeep_10_B1
+	 .int	bgm_deepdeep_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3916,17 +3916,17 @@ bgm_deepdeep:
 	.byte	bgm_deepdeep_pri	@ Priority
 	.byte	bgm_deepdeep_rev	@ Reverb.
 
-	.word	bgm_deepdeep_grp
+	.int	bgm_deepdeep_grp
 
-	.word	bgm_deepdeep_1
-	.word	bgm_deepdeep_2
-	.word	bgm_deepdeep_3
-	.word	bgm_deepdeep_4
-	.word	bgm_deepdeep_5
-	.word	bgm_deepdeep_6
-	.word	bgm_deepdeep_7
-	.word	bgm_deepdeep_8
-	.word	bgm_deepdeep_9
-	.word	bgm_deepdeep_10
+	.int	bgm_deepdeep_1
+	.int	bgm_deepdeep_2
+	.int	bgm_deepdeep_3
+	.int	bgm_deepdeep_4
+	.int	bgm_deepdeep_5
+	.int	bgm_deepdeep_6
+	.int	bgm_deepdeep_7
+	.int	bgm_deepdeep_8
+	.int	bgm_deepdeep_9
+	.int	bgm_deepdeep_10
 
 	.end

@@ -30,21 +30,21 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_15A167:: @ 815A167
 
 	.align 2
 LilycoveCity_DepartmentStoreRooftop_Decorations:: @ 815A180
-	.2byte DECOR_MUD_BALL
-	.2byte DECOR_FENCE_LENGTH
-	.2byte DECOR_FENCE_WIDTH
-	.2byte DECOR_TIRE
-	.2byte DECOR_BREAKABLE_DOOR
-	.2byte DECOR_SOLID_BOARD
-	.2byte DECOR_SAND_ORNAMENT
-	.2byte DECOR_STAND
-	.2byte DECOR_SLIDE
-	.2byte DECOR_TV
-	.2byte DECOR_ROUND_TV
-	.2byte DECOR_CUTE_TV
-	.2byte DECOR_WAILMER_DOLL
-	.2byte DECOR_RHYDON_DOLL
-	.2byte DECOR_NONE
+	.short DECOR_MUD_BALL
+	.short DECOR_FENCE_LENGTH
+	.short DECOR_FENCE_WIDTH
+	.short DECOR_TIRE
+	.short DECOR_BREAKABLE_DOOR
+	.short DECOR_SOLID_BOARD
+	.short DECOR_SAND_ORNAMENT
+	.short DECOR_STAND
+	.short DECOR_SLIDE
+	.short DECOR_TV
+	.short DECOR_ROUND_TV
+	.short DECOR_CUTE_TV
+	.short DECOR_WAILMER_DOLL
+	.short DECOR_RHYDON_DOLL
+	.short DECOR_NONE
 	release
 	end
 

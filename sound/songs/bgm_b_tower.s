@@ -429,7 +429,7 @@ bgm_b_tower_1_B1:
 	.byte		N12   , Cn4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_b_tower_1_B1
+	 .int	bgm_b_tower_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -700,7 +700,7 @@ bgm_b_tower_2_B1:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_2_B1
+	 .int	bgm_b_tower_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -930,7 +930,7 @@ bgm_b_tower_3_B1:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_3_B1
+	 .int	bgm_b_tower_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1329,7 +1329,7 @@ bgm_b_tower_4_B1:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_4_B1
+	 .int	bgm_b_tower_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1757,7 +1757,7 @@ bgm_b_tower_5_B1:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_5_B1
+	 .int	bgm_b_tower_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1845,7 +1845,7 @@ bgm_b_tower_6_000:
 	.byte		        Cn2 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_b_tower_6_000
+	 .int	bgm_b_tower_6_000
 	.byte		N06   , Fn1 , v080
 	.byte	W12
 	.byte		N06   
@@ -1863,7 +1863,7 @@ bgm_b_tower_6_000:
 	.byte		        Fn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_b_tower_6_000
+	 .int	bgm_b_tower_6_000
 	.byte		N06   , Gs1 , v080
 	.byte	W12
 	.byte		N06   
@@ -1945,7 +1945,7 @@ bgm_b_tower_6_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_b_tower_6_001
+	 .int	bgm_b_tower_6_001
 	.byte		N09   , As1 , v080
 	.byte	W12
 	.byte		        Fn2 
@@ -2028,7 +2028,7 @@ bgm_b_tower_6_001:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_6_B1
+	 .int	bgm_b_tower_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2055,7 +2055,7 @@ bgm_b_tower_7_000:
 	.byte		N24   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_b_tower_7_000
+	 .int	bgm_b_tower_7_000
 	.byte		N24   , Fn2 , v127
 	.byte	W24
 	.byte		        Ds2 
@@ -2129,7 +2129,7 @@ bgm_b_tower_7_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_b_tower_7_B1
+	 .int	bgm_b_tower_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2187,7 +2187,7 @@ bgm_b_tower_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_b_tower_8_B1
+	 .int	bgm_b_tower_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2208,11 +2208,11 @@ bgm_b_tower_9_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_b_tower_9_000
+	 .int	bgm_b_tower_9_000
 	.byte	PATT
-	 .word	bgm_b_tower_9_000
+	 .int	bgm_b_tower_9_000
 	.byte	PATT
-	 .word	bgm_b_tower_9_000
+	 .int	bgm_b_tower_9_000
 	.byte		N06   , En1 , v112
 	.byte	W24
 	.byte		N06   
@@ -2301,7 +2301,7 @@ bgm_b_tower_9_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_b_tower_9_001
+	 .int	bgm_b_tower_9_001
 	.byte		N06   , En1 , v092
 	.byte	W06
 	.byte		        En1 , v076
@@ -2333,11 +2333,11 @@ bgm_b_tower_9_002:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_b_tower_9_001
+	 .int	bgm_b_tower_9_001
 	.byte	PATT
-	 .word	bgm_b_tower_9_002
+	 .int	bgm_b_tower_9_002
 	.byte	PATT
-	 .word	bgm_b_tower_9_001
+	 .int	bgm_b_tower_9_001
 	.byte		N06   , En1 , v092
 	.byte	W06
 	.byte		        En1 , v076
@@ -2353,7 +2353,7 @@ bgm_b_tower_9_002:
 	.byte		        En1 , v112
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_b_tower_9_B1
+	 .int	bgm_b_tower_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2365,16 +2365,16 @@ bgm_b_tower:
 	.byte	bgm_b_tower_pri	@ Priority
 	.byte	bgm_b_tower_rev	@ Reverb.
 
-	.word	bgm_b_tower_grp
+	.int	bgm_b_tower_grp
 
-	.word	bgm_b_tower_1
-	.word	bgm_b_tower_2
-	.word	bgm_b_tower_3
-	.word	bgm_b_tower_4
-	.word	bgm_b_tower_5
-	.word	bgm_b_tower_6
-	.word	bgm_b_tower_7
-	.word	bgm_b_tower_8
-	.word	bgm_b_tower_9
+	.int	bgm_b_tower_1
+	.int	bgm_b_tower_2
+	.int	bgm_b_tower_3
+	.int	bgm_b_tower_4
+	.int	bgm_b_tower_5
+	.int	bgm_b_tower_6
+	.int	bgm_b_tower_7
+	.int	bgm_b_tower_8
+	.int	bgm_b_tower_9
 
 	.end

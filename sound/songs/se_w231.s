@@ -66,9 +66,9 @@ se_w231:
 	.byte	se_w231_pri	@ Priority
 	.byte	se_w231_rev	@ Reverb.
 
-	.word	se_w231_grp
+	.int	se_w231_grp
 
-	.word	se_w231_1
-	.word	se_w231_2
+	.int	se_w231_1
+	.int	se_w231_2
 
 	.end

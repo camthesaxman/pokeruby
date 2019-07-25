@@ -165,15 +165,15 @@ bgm_daigo_1_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_1_001
+	 .int	bgm_daigo_1_001
 	.byte	PATT
-	 .word	bgm_daigo_1_000
+	 .int	bgm_daigo_1_000
 	.byte	PATT
-	 .word	bgm_daigo_1_001
+	 .int	bgm_daigo_1_001
 	.byte	PATT
-	 .word	bgm_daigo_1_002
+	 .int	bgm_daigo_1_002
 	.byte	PATT
-	 .word	bgm_daigo_1_002
+	 .int	bgm_daigo_1_002
 bgm_daigo_1_003:
 	.byte	W12
 	.byte		N03   , Fs5 , v080
@@ -190,11 +190,11 @@ bgm_daigo_1_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_1_003
+	 .int	bgm_daigo_1_003
 	.byte	PATT
-	 .word	bgm_daigo_1_003
+	 .int	bgm_daigo_1_003
 	.byte	PATT
-	 .word	bgm_daigo_1_003
+	 .int	bgm_daigo_1_003
 bgm_daigo_1_004:
 	.byte		N03   , Fs5 , v112
 	.byte	W12
@@ -220,13 +220,13 @@ bgm_daigo_1_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_1_004
+	 .int	bgm_daigo_1_004
 	.byte	PATT
-	 .word	bgm_daigo_1_004
+	 .int	bgm_daigo_1_004
 	.byte	PATT
-	 .word	bgm_daigo_1_004
+	 .int	bgm_daigo_1_004
 	.byte	GOTO
-	 .word	bgm_daigo_1_B1
+	 .int	bgm_daigo_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -755,7 +755,7 @@ bgm_daigo_2_B1:
 	.byte	W28
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_daigo_2_B1
+	 .int	bgm_daigo_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -892,7 +892,7 @@ bgm_daigo_3_000:
 	.byte		BEND  , c_v+4
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_3_000
+	 .int	bgm_daigo_3_000
 	.byte		BEND  , c_v+0
 	.byte		N12   , Gn1 , v127
 	.byte	W06
@@ -992,7 +992,7 @@ bgm_daigo_3_001:
 	.byte		BEND  , c_v+4
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_3_001
+	 .int	bgm_daigo_3_001
 	.byte		BEND  , c_v+0
 	.byte		N15   , Gn0 , v127
 	.byte	W18
@@ -1237,7 +1237,7 @@ bgm_daigo_3_001:
 	.byte		BEND  , c_v+9
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_daigo_3_B1
+	 .int	bgm_daigo_3_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -1607,9 +1607,9 @@ bgm_daigo_4_B1:
 	.byte		        Bn4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_4_000
+	 .int	bgm_daigo_4_000
 	.byte	GOTO
-	 .word	bgm_daigo_4_B1
+	 .int	bgm_daigo_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1659,15 +1659,15 @@ bgm_daigo_5_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_5_001
+	 .int	bgm_daigo_5_001
 	.byte	PATT
-	 .word	bgm_daigo_5_000
+	 .int	bgm_daigo_5_000
 	.byte	PATT
-	 .word	bgm_daigo_5_001
+	 .int	bgm_daigo_5_001
 	.byte	PATT
-	 .word	bgm_daigo_5_002
+	 .int	bgm_daigo_5_002
 	.byte	PATT
-	 .word	bgm_daigo_5_002
+	 .int	bgm_daigo_5_002
 bgm_daigo_5_003:
 	.byte		N06   , En5 , v112
 	.byte	W30
@@ -1683,11 +1683,11 @@ bgm_daigo_5_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_5_003
+	 .int	bgm_daigo_5_003
 	.byte	PATT
-	 .word	bgm_daigo_5_003
+	 .int	bgm_daigo_5_003
 	.byte	PATT
-	 .word	bgm_daigo_5_003
+	 .int	bgm_daigo_5_003
 bgm_daigo_5_004:
 	.byte	W36
 	.byte		N06   , En5 , v092
@@ -1696,13 +1696,13 @@ bgm_daigo_5_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_5_004
+	 .int	bgm_daigo_5_004
 	.byte	PATT
-	 .word	bgm_daigo_5_004
+	 .int	bgm_daigo_5_004
 	.byte	PATT
-	 .word	bgm_daigo_5_004
+	 .int	bgm_daigo_5_004
 	.byte	GOTO
-	 .word	bgm_daigo_5_B1
+	 .int	bgm_daigo_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1806,7 +1806,7 @@ bgm_daigo_6_000:
 	.byte		        Cn6 , v096
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_daigo_6_000
+	 .int	bgm_daigo_6_000
 bgm_daigo_6_001:
 	.byte		N09   , As5 , v112
 	.byte	W12
@@ -1848,7 +1848,7 @@ bgm_daigo_6_001:
 	.byte		N03   , Gn5 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_6_001
+	 .int	bgm_daigo_6_001
 	.byte		MOD   , 4
 	.byte		N06   , Gn6 , v112
 	.byte	W12
@@ -2007,7 +2007,7 @@ bgm_daigo_6_001:
 	.byte		        En4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_daigo_6_B1
+	 .int	bgm_daigo_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2399,7 +2399,7 @@ bgm_daigo_7_B1:
 	.byte		        Gs4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_daigo_7_B1
+	 .int	bgm_daigo_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2507,7 +2507,7 @@ bgm_daigo_8_000:
 	.byte		        Cn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_8_000
+	 .int	bgm_daigo_8_000
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		N06   
@@ -2531,9 +2531,9 @@ bgm_daigo_8_000:
 	.byte		        Cn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_daigo_8_000
+	 .int	bgm_daigo_8_000
 	.byte	PATT
-	 .word	bgm_daigo_8_000
+	 .int	bgm_daigo_8_000
 bgm_daigo_8_001:
 	.byte		N06   , Cn1 , v112
 	.byte	W18
@@ -2563,7 +2563,7 @@ bgm_daigo_8_001:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_daigo_8_001
+	 .int	bgm_daigo_8_001
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		N06   
@@ -2603,7 +2603,7 @@ bgm_daigo_8_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_daigo_8_002
+	 .int	bgm_daigo_8_002
 	.byte		N06   , Dn1 , v112
 	.byte	W12
 	.byte		N06   
@@ -2655,7 +2655,7 @@ bgm_daigo_8_002:
 	.byte		        Cn1 , v096
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_daigo_8_B1
+	 .int	bgm_daigo_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3050,7 +3050,7 @@ bgm_daigo_9_B1:
 	.byte		        Gn4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_daigo_9_B1
+	 .int	bgm_daigo_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -3284,7 +3284,7 @@ bgm_daigo_10_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_daigo_10_B1
+	 .int	bgm_daigo_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3296,17 +3296,17 @@ bgm_daigo:
 	.byte	bgm_daigo_pri	@ Priority
 	.byte	bgm_daigo_rev	@ Reverb.
 
-	.word	bgm_daigo_grp
+	.int	bgm_daigo_grp
 
-	.word	bgm_daigo_1
-	.word	bgm_daigo_2
-	.word	bgm_daigo_3
-	.word	bgm_daigo_4
-	.word	bgm_daigo_5
-	.word	bgm_daigo_6
-	.word	bgm_daigo_7
-	.word	bgm_daigo_8
-	.word	bgm_daigo_9
-	.word	bgm_daigo_10
+	.int	bgm_daigo_1
+	.int	bgm_daigo_2
+	.int	bgm_daigo_3
+	.int	bgm_daigo_4
+	.int	bgm_daigo_5
+	.int	bgm_daigo_6
+	.int	bgm_daigo_7
+	.int	bgm_daigo_8
+	.int	bgm_daigo_9
+	.int	bgm_daigo_10
 
 	.end

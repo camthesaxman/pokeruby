@@ -125,15 +125,15 @@ bgm_nibi_1_005:
 	.byte		N48   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_nibi_1_000
+	 .int	bgm_nibi_1_000
 	.byte	PATT
-	 .word	bgm_nibi_1_001
+	 .int	bgm_nibi_1_001
 	.byte	PATT
-	 .word	bgm_nibi_1_002
+	 .int	bgm_nibi_1_002
 	.byte	PATT
-	 .word	bgm_nibi_1_003
+	 .int	bgm_nibi_1_003
 	.byte	PATT
-	 .word	bgm_nibi_1_004
+	 .int	bgm_nibi_1_004
 	.byte		N24   , Fn3 , v112
 	.byte	W36
 	.byte		N06   , Bn3 , v072
@@ -145,7 +145,7 @@ bgm_nibi_1_005:
 	.byte		N06   , Bn3 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_1_005
+	 .int	bgm_nibi_1_005
 	.byte	W24
 	.byte		N48   , Fn3 , v112
 	.byte	W48
@@ -254,7 +254,7 @@ bgm_nibi_1_006:
 	.byte		        Gn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_1_006
+	 .int	bgm_nibi_1_006
 	.byte	W12
 	.byte		N12   , An3 , v112
 	.byte	W12
@@ -326,7 +326,7 @@ bgm_nibi_1_006:
 	.byte		N24   , Gs3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_nibi_1_B1
+	 .int	bgm_nibi_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -426,24 +426,24 @@ bgm_nibi_2_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nibi_2_000
+	 .int	bgm_nibi_2_000
 	.byte	W24
 	.byte		N48   , Dn2 , v112
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_nibi_2_001
+	 .int	bgm_nibi_2_001
 	.byte	PATT
-	 .word	bgm_nibi_2_002
+	 .int	bgm_nibi_2_002
 	.byte	PATT
-	 .word	bgm_nibi_2_003
+	 .int	bgm_nibi_2_003
 	.byte	PATT
-	 .word	bgm_nibi_2_004
+	 .int	bgm_nibi_2_004
 	.byte	PATT
-	 .word	bgm_nibi_2_005
+	 .int	bgm_nibi_2_005
 	.byte	PATT
-	 .word	bgm_nibi_2_006
+	 .int	bgm_nibi_2_006
 	.byte	PATT
-	 .word	bgm_nibi_2_000
+	 .int	bgm_nibi_2_000
 	.byte	W24
 	.byte		N48   , Dn2 , v112
 	.byte	W48
@@ -540,7 +540,7 @@ bgm_nibi_2_009:
 	.byte		        En2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_2_007
+	 .int	bgm_nibi_2_007
 	.byte		N24   , Fn2 , v112
 	.byte	W36
 	.byte		N06   , An2 
@@ -552,7 +552,7 @@ bgm_nibi_2_009:
 	.byte		N12   , Fn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_2_008
+	 .int	bgm_nibi_2_008
 	.byte	W12
 	.byte		N12   , En2 , v112
 	.byte	W24
@@ -563,7 +563,7 @@ bgm_nibi_2_009:
 	.byte		        Cs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_2_009
+	 .int	bgm_nibi_2_009
 	.byte		N24   , Dn2 , v112
 	.byte	W36
 	.byte		N06   , Gs2 
@@ -587,7 +587,7 @@ bgm_nibi_2_009:
 	.byte		N24   , Gn1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_nibi_2_B1
+	 .int	bgm_nibi_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -714,21 +714,21 @@ bgm_nibi_3_007:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nibi_3_000
+	 .int	bgm_nibi_3_000
 	.byte	PATT
-	 .word	bgm_nibi_3_001
+	 .int	bgm_nibi_3_001
 	.byte	PATT
-	 .word	bgm_nibi_3_002
+	 .int	bgm_nibi_3_002
 	.byte	PATT
-	 .word	bgm_nibi_3_003
+	 .int	bgm_nibi_3_003
 	.byte	PATT
-	 .word	bgm_nibi_3_004
+	 .int	bgm_nibi_3_004
 	.byte	PATT
-	 .word	bgm_nibi_3_005
+	 .int	bgm_nibi_3_005
 	.byte	PATT
-	 .word	bgm_nibi_3_006
+	 .int	bgm_nibi_3_006
 	.byte	PATT
-	 .word	bgm_nibi_3_007
+	 .int	bgm_nibi_3_007
 	.byte	W24
 	.byte		N48   , Cn4 , v112
 	.byte	W48
@@ -838,7 +838,7 @@ bgm_nibi_3_007:
 	.byte		N24   , Dn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_nibi_3_B1
+	 .int	bgm_nibi_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -911,25 +911,25 @@ bgm_nibi_4_002:
 	.byte	PEND
 bgm_nibi_4_B1:
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_002
+	 .int	bgm_nibi_4_002
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte		N12   , Fs2 , v056
 	.byte	W12
 	.byte		N12   
@@ -945,11 +945,11 @@ bgm_nibi_4_B1:
 	.byte		        As1 , v084
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte	PATT
-	 .word	bgm_nibi_4_001
+	 .int	bgm_nibi_4_001
 	.byte	PATT
-	 .word	bgm_nibi_4_000
+	 .int	bgm_nibi_4_000
 	.byte		N12   , Fs2 , v056
 	.byte	W12
 	.byte		N12   
@@ -965,7 +965,7 @@ bgm_nibi_4_B1:
 	.byte		        As1 , v084
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_nibi_4_002
+	 .int	bgm_nibi_4_002
 bgm_nibi_4_003:
 	.byte		N12   , Cn1 , v084
 	.byte	W12
@@ -1001,7 +1001,7 @@ bgm_nibi_4_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 bgm_nibi_4_005:
 	.byte		N12   , Cn1 , v084
 	.byte	W12
@@ -1021,17 +1021,17 @@ bgm_nibi_4_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 	.byte	PATT
-	 .word	bgm_nibi_4_004
+	 .int	bgm_nibi_4_004
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 	.byte	PATT
-	 .word	bgm_nibi_4_004
+	 .int	bgm_nibi_4_004
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 	.byte	PATT
-	 .word	bgm_nibi_4_004
+	 .int	bgm_nibi_4_004
 	.byte		N12   , Cn1 , v084
 	.byte	W12
 	.byte		        As1 
@@ -1047,17 +1047,17 @@ bgm_nibi_4_005:
 	.byte		        En1 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_nibi_4_005
+	 .int	bgm_nibi_4_005
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 	.byte	PATT
-	 .word	bgm_nibi_4_004
+	 .int	bgm_nibi_4_004
 	.byte	PATT
-	 .word	bgm_nibi_4_003
+	 .int	bgm_nibi_4_003
 	.byte	PATT
-	 .word	bgm_nibi_4_004
+	 .int	bgm_nibi_4_004
 	.byte	GOTO
-	 .word	bgm_nibi_4_B1
+	 .int	bgm_nibi_4_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1069,11 +1069,11 @@ bgm_nibi:
 	.byte	bgm_nibi_pri	@ Priority
 	.byte	bgm_nibi_rev	@ Reverb.
 
-	.word	bgm_nibi_grp
+	.int	bgm_nibi_grp
 
-	.word	bgm_nibi_1
-	.word	bgm_nibi_2
-	.word	bgm_nibi_3
-	.word	bgm_nibi_4
+	.int	bgm_nibi_1
+	.int	bgm_nibi_2
+	.int	bgm_nibi_3
+	.int	bgm_nibi_4
 
 	.end

@@ -68,9 +68,9 @@ se_expmax:
 	.byte	se_expmax_pri	@ Priority
 	.byte	se_expmax_rev	@ Reverb.
 
-	.word	se_expmax_grp
+	.int	se_expmax_grp
 
-	.word	se_expmax_1
-	.word	se_expmax_2
+	.int	se_expmax_1
+	.int	se_expmax_2
 
 	.end

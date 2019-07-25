@@ -9,7 +9,7 @@ MossdeepCity_GameCorner_B1F_MapScript1_15AE60:: @ 815AE60
 
 MossdeepCity_GameCorner_B1F_MapScript2_15AE64:: @ 815AE64
 	map_script_2 VAR_TEMP_1, 0, MossdeepCity_GameCorner_B1F_EventScript_15AE6E
-	.2byte 0
+	.short 0
 
 MossdeepCity_GameCorner_B1F_EventScript_15AE6E:: @ 815AE6E
 	lockall

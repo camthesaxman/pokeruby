@@ -190,13 +190,13 @@ bgm_gotown_1_003:
 	.byte		N06   , An3 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_1_000
+	 .int	bgm_gotown_1_000
 	.byte	PATT
-	 .word	bgm_gotown_1_001
+	 .int	bgm_gotown_1_001
 	.byte	PATT
-	 .word	bgm_gotown_1_002
+	 .int	bgm_gotown_1_002
 	.byte	PATT
-	 .word	bgm_gotown_1_003
+	 .int	bgm_gotown_1_003
 	.byte		N01   , Bn3 , v080
 	.byte	W12
 	.byte		N06   , Bn3 , v112
@@ -429,7 +429,7 @@ bgm_gotown_1_005:
 	.byte		        Ds4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_1_004
+	 .int	bgm_gotown_1_004
 	.byte		VOICE , 3
 	.byte		VOL   , 42*bgm_gotown_mvl/mxv
 	.byte		N24   , Cn4 , v112
@@ -477,7 +477,7 @@ bgm_gotown_1_005:
 	.byte		N06   , Ds4 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_1_005
+	 .int	bgm_gotown_1_005
 	.byte		N06   , Cn4 , v112
 	.byte	W12
 	.byte		        As3 
@@ -503,7 +503,7 @@ bgm_gotown_1_005:
 	.byte		N06   
 	.byte	W60
 	.byte	GOTO
-	 .word	bgm_gotown_1_B1
+	 .int	bgm_gotown_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1228,7 +1228,7 @@ bgm_gotown_2_B1:
 	.byte		        An3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_gotown_2_B1
+	 .int	bgm_gotown_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1784,7 +1784,7 @@ bgm_gotown_3_B1:
 	.byte		        An4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_gotown_3_B1
+	 .int	bgm_gotown_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1947,7 +1947,7 @@ bgm_gotown_4_001:
 	.byte		N03   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_gotown_4_001
+	 .int	bgm_gotown_4_001
 	.byte	W36
 	.byte		N36   , Fn2 , v127
 	.byte	W48
@@ -2050,7 +2050,7 @@ bgm_gotown_4_002:
 	.byte		N06   , As1 , v127
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_4_002
+	 .int	bgm_gotown_4_002
 	.byte		N24   , Dn2 , v127
 	.byte	W36
 	.byte		N06   
@@ -2066,7 +2066,7 @@ bgm_gotown_4_002:
 	.byte		        Bn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_gotown_4_000
+	 .int	bgm_gotown_4_000
 	.byte		N24   , Cn2 , v127
 	.byte	W36
 	.byte		N06   
@@ -2110,7 +2110,7 @@ bgm_gotown_4_002:
 	.byte		        c_v-61
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gotown_4_B1
+	 .int	bgm_gotown_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2368,7 +2368,7 @@ bgm_gotown_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_gotown_5_B1
+	 .int	bgm_gotown_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2483,7 +2483,7 @@ bgm_gotown_6_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gotown_6_001
+	 .int	bgm_gotown_6_001
 bgm_gotown_6_003:
 	.byte		VOICE , 2
 	.byte		N36   , As2 , v112
@@ -2535,7 +2535,7 @@ bgm_gotown_6_003:
 	.byte		N06   , Dn3 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_6_000
+	 .int	bgm_gotown_6_000
 	.byte	W12
 	.byte		N01   , Dn3 , v080
 	.byte	W03
@@ -2558,13 +2558,13 @@ bgm_gotown_6_003:
 	.byte		N06   , Ds3 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_6_001
+	 .int	bgm_gotown_6_001
 	.byte	PATT
-	 .word	bgm_gotown_6_002
+	 .int	bgm_gotown_6_002
 	.byte	PATT
-	 .word	bgm_gotown_6_001
+	 .int	bgm_gotown_6_001
 	.byte	PATT
-	 .word	bgm_gotown_6_003
+	 .int	bgm_gotown_6_003
 	.byte		MOD   , 8
 	.byte	W24
 	.byte	W03
@@ -2671,7 +2671,7 @@ bgm_gotown_6_006:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gotown_6_004
+	 .int	bgm_gotown_6_004
 	.byte		VOICE , 2
 	.byte		N06   , Fn3 , v112
 	.byte	W12
@@ -2716,7 +2716,7 @@ bgm_gotown_6_006:
 	.byte		        Bn3 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_gotown_6_006
+	 .int	bgm_gotown_6_006
 	.byte		N01   , Fs3 , v080
 	.byte	W12
 	.byte		N06   , Fs3 , v112
@@ -2736,7 +2736,7 @@ bgm_gotown_6_006:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_6_005
+	 .int	bgm_gotown_6_005
 	.byte		VOICE , 2
 	.byte		N24   , Gs3 , v112
 	.byte	W12
@@ -2764,9 +2764,9 @@ bgm_gotown_6_006:
 	.byte		        Cs3 , v044
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_gotown_6_006
+	 .int	bgm_gotown_6_006
 	.byte	PATT
-	 .word	bgm_gotown_6_004
+	 .int	bgm_gotown_6_004
 	.byte		N06   , Fn3 , v112
 	.byte	W12
 	.byte		        Dn3 
@@ -2792,7 +2792,7 @@ bgm_gotown_6_006:
 	.byte		N06   
 	.byte	W60
 	.byte	GOTO
-	 .word	bgm_gotown_6_B1
+	 .int	bgm_gotown_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2843,49 +2843,49 @@ bgm_gotown_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 	.byte	PATT
-	 .word	bgm_gotown_7_000
+	 .int	bgm_gotown_7_000
 	.byte	PATT
-	 .word	bgm_gotown_7_001
+	 .int	bgm_gotown_7_001
 bgm_gotown_7_002:
 	.byte		N06   , An4 , v112
 	.byte	W12
@@ -2953,11 +2953,11 @@ bgm_gotown_7_003:
 	.byte		N06   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gotown_7_002
+	 .int	bgm_gotown_7_002
 	.byte	PATT
-	 .word	bgm_gotown_7_003
+	 .int	bgm_gotown_7_003
 	.byte	PATT
-	 .word	bgm_gotown_7_002
+	 .int	bgm_gotown_7_002
 	.byte	W12
 	.byte		N03   , En4 , v112
 	.byte	W12
@@ -2972,7 +2972,7 @@ bgm_gotown_7_003:
 	.byte		N15   , En4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_gotown_7_B1
+	 .int	bgm_gotown_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -3029,33 +3029,33 @@ bgm_gotown_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte	PATT
-	 .word	bgm_gotown_8_000
+	 .int	bgm_gotown_8_000
 	.byte	PATT
-	 .word	bgm_gotown_8_001
+	 .int	bgm_gotown_8_001
 	.byte		VOL   , 64*bgm_gotown_mvl/mxv
 	.byte		N06   , Cn1 , v127
 	.byte	W12
@@ -3260,7 +3260,7 @@ bgm_gotown_8_002:
 	.byte		        Cn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_gotown_8_002
+	 .int	bgm_gotown_8_002
 	.byte		N06   , Cn1 , v127
 	.byte	W12
 	.byte		        Dn3 , v100
@@ -3310,7 +3310,7 @@ bgm_gotown_8_002:
 	.byte		N12   , As1 , v088
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_gotown_8_B1
+	 .int	bgm_gotown_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -3323,15 +3323,15 @@ bgm_gotown:
 	.byte	bgm_gotown_pri	@ Priority
 	.byte	bgm_gotown_rev	@ Reverb.
 
-	.word	bgm_gotown_grp
+	.int	bgm_gotown_grp
 
-	.word	bgm_gotown_1
-	.word	bgm_gotown_2
-	.word	bgm_gotown_3
-	.word	bgm_gotown_4
-	.word	bgm_gotown_5
-	.word	bgm_gotown_6
-	.word	bgm_gotown_7
-	.word	bgm_gotown_8
+	.int	bgm_gotown_1
+	.int	bgm_gotown_2
+	.int	bgm_gotown_3
+	.int	bgm_gotown_4
+	.int	bgm_gotown_5
+	.int	bgm_gotown_6
+	.int	bgm_gotown_7
+	.int	bgm_gotown_8
 
 	.end

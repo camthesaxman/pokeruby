@@ -57,8 +57,8 @@ se_nigeru:
 	.byte	se_nigeru_pri	@ Priority
 	.byte	se_nigeru_rev	@ Reverb.
 
-	.word	se_nigeru_grp
+	.int	se_nigeru_grp
 
-	.word	se_nigeru_1
+	.int	se_nigeru_1
 
 	.end

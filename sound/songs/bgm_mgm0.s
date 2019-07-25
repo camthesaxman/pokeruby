@@ -264,7 +264,7 @@ bgm_mgm0_1_000:
 	.byte		        Fs5 , v044
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_mgm0_1_000
+	 .int	bgm_mgm0_1_000
 	.byte		VOICE , 127
 	.byte		N03   , Fs5 , v112
 	.byte	W06
@@ -368,7 +368,7 @@ bgm_mgm0_1_000:
 	.byte		N12   , An5 , v096
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_mgm0_1_B1
+	 .int	bgm_mgm0_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -495,7 +495,7 @@ bgm_mgm0_2_000:
 	.byte		N12   , Fs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_mgm0_2_000
+	 .int	bgm_mgm0_2_000
 	.byte		N03   , An4 , v112
 	.byte	W06
 	.byte		N03   
@@ -518,7 +518,7 @@ bgm_mgm0_2_000:
 	.byte		        En5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mgm0_2_B1
+	 .int	bgm_mgm0_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -789,9 +789,9 @@ bgm_mgm0_3_000:
 	.byte		        Fs1 , v112
 	.byte	W54
 	.byte	PATT
-	 .word	bgm_mgm0_3_000
+	 .int	bgm_mgm0_3_000
 	.byte	GOTO
-	 .word	bgm_mgm0_3_B1
+	 .int	bgm_mgm0_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -981,7 +981,7 @@ bgm_mgm0_4_B1:
 	.byte	W12
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_mgm0_4_B1
+	 .int	bgm_mgm0_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1113,11 +1113,11 @@ bgm_mgm0_5_001:
 	.byte	W90
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_mgm0_5_000
+	 .int	bgm_mgm0_5_000
 	.byte	PATT
-	 .word	bgm_mgm0_5_001
+	 .int	bgm_mgm0_5_001
 	.byte	GOTO
-	 .word	bgm_mgm0_5_B1
+	 .int	bgm_mgm0_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1248,7 +1248,7 @@ bgm_mgm0_6_000:
 	.byte		N06   , An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_mgm0_6_000
+	 .int	bgm_mgm0_6_000
 	.byte		VOL   , 36*bgm_mgm0_mvl/mxv
 	.byte		N03   , Gn4 , v112
 	.byte	W12
@@ -1334,7 +1334,7 @@ bgm_mgm0_6_001:
 	.byte		        An4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_mgm0_6_001
+	 .int	bgm_mgm0_6_001
 bgm_mgm0_6_002:
 	.byte		N06   , Fs2 , v112
 	.byte	W06
@@ -1358,7 +1358,7 @@ bgm_mgm0_6_002:
 	.byte		        Gs2 
 	.byte	W42
 	.byte	PATT
-	 .word	bgm_mgm0_6_002
+	 .int	bgm_mgm0_6_002
 	.byte		N03   , Fs2 , v112
 	.byte	W06
 	.byte		N03   
@@ -1381,7 +1381,7 @@ bgm_mgm0_6_002:
 	.byte		        Cs4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mgm0_6_B1
+	 .int	bgm_mgm0_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1635,9 +1635,9 @@ bgm_mgm0_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_mgm0_7_000
+	 .int	bgm_mgm0_7_000
 	.byte	PATT
-	 .word	bgm_mgm0_7_001
+	 .int	bgm_mgm0_7_001
 bgm_mgm0_7_002:
 	.byte		N06   , En4 , v112
 	.byte	W06
@@ -1673,7 +1673,7 @@ bgm_mgm0_7_002:
 	.byte		        Bn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_mgm0_7_002
+	 .int	bgm_mgm0_7_002
 	.byte		N03   , En4 , v112
 	.byte	W06
 	.byte		N03   
@@ -1696,7 +1696,7 @@ bgm_mgm0_7_002:
 	.byte		        En5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mgm0_7_B1
+	 .int	bgm_mgm0_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1738,7 +1738,7 @@ bgm_mgm0_8_000:
 	.byte		N06   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_mgm0_8_000
+	 .int	bgm_mgm0_8_000
 	.byte	W24
 	.byte		N06   , Cn1 , v112
 	.byte	W24
@@ -1747,7 +1747,7 @@ bgm_mgm0_8_000:
 	.byte		        Cn1 , v112
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_mgm0_8_B1
+	 .int	bgm_mgm0_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2024,7 +2024,7 @@ bgm_mgm0_9_B1:
 	.byte		        c_v-54
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_mgm0_9_B1
+	 .int	bgm_mgm0_9_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -2136,7 +2136,7 @@ bgm_mgm0_10_000:
 	.byte		N12   , Bn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_mgm0_10_000
+	 .int	bgm_mgm0_10_000
 	.byte		N03   , As3 , v112
 	.byte	W06
 	.byte		N03   
@@ -2159,7 +2159,7 @@ bgm_mgm0_10_000:
 	.byte		        Cs5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_mgm0_10_B1
+	 .int	bgm_mgm0_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2171,17 +2171,17 @@ bgm_mgm0:
 	.byte	bgm_mgm0_pri	@ Priority
 	.byte	bgm_mgm0_rev	@ Reverb.
 
-	.word	bgm_mgm0_grp
+	.int	bgm_mgm0_grp
 
-	.word	bgm_mgm0_1
-	.word	bgm_mgm0_2
-	.word	bgm_mgm0_3
-	.word	bgm_mgm0_4
-	.word	bgm_mgm0_5
-	.word	bgm_mgm0_6
-	.word	bgm_mgm0_7
-	.word	bgm_mgm0_8
-	.word	bgm_mgm0_9
-	.word	bgm_mgm0_10
+	.int	bgm_mgm0_1
+	.int	bgm_mgm0_2
+	.int	bgm_mgm0_3
+	.int	bgm_mgm0_4
+	.int	bgm_mgm0_5
+	.int	bgm_mgm0_6
+	.int	bgm_mgm0_7
+	.int	bgm_mgm0_8
+	.int	bgm_mgm0_9
+	.int	bgm_mgm0_10
 
 	.end

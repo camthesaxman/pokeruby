@@ -2,7 +2,7 @@
 	.include "include/macros/contest_ai_script.inc"
 	.include "constants/constants.inc"
 
-	.section script_data, "aw", %progbits
+	.section script_data, "aw"
 
 	enum_start
 	enum MON_1
@@ -12,38 +12,38 @@
 
 	.align 2
 gContestAIs:: @ 81DC118
-	.4byte AI_CheckForBadMove
-	.4byte AI_CheckForCombo
-	.4byte AI_CheckBoring
-	.4byte AI_CheckExcitement
-	.4byte AI_CheckOrder
-	.4byte AI_CheckForGoodMove
-	.4byte AI_Erratic
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
-	.4byte AI_Nothing
+	.int AI_CheckForBadMove
+	.int AI_CheckForCombo
+	.int AI_CheckBoring
+	.int AI_CheckExcitement
+	.int AI_CheckOrder
+	.int AI_CheckForGoodMove
+	.int AI_Erratic
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
+	.int AI_Nothing
 
 @ Unreferenced AI routine to encourage moves that improve condition on the first
 @ turn. Additionally, it checks the appeal order of the user and the effect

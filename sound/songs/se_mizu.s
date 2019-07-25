@@ -47,8 +47,8 @@ se_mizu:
 	.byte	se_mizu_pri	@ Priority
 	.byte	se_mizu_rev	@ Reverb.
 
-	.word	se_mizu_grp
+	.int	se_mizu_grp
 
-	.word	se_mizu_1
+	.int	se_mizu_1
 
 	.end

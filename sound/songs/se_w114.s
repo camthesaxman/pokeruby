@@ -242,9 +242,9 @@ se_w114:
 	.byte	se_w114_pri	@ Priority
 	.byte	se_w114_rev	@ Reverb.
 
-	.word	se_w114_grp
+	.int	se_w114_grp
 
-	.word	se_w114_1
-	.word	se_w114_2
+	.int	se_w114_1
+	.int	se_w114_2
 
 	.end

@@ -74,8 +74,8 @@ se_w020:
 	.byte	se_w020_pri	@ Priority
 	.byte	se_w020_rev	@ Reverb.
 
-	.word	se_w020_grp
+	.int	se_w020_grp
 
-	.word	se_w020_1
+	.int	se_w020_1
 
 	.end

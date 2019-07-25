@@ -92,9 +92,9 @@ se_w044:
 	.byte	se_w044_pri	@ Priority
 	.byte	se_w044_rev	@ Reverb.
 
-	.word	se_w044_grp
+	.int	se_w044_grp
 
-	.word	se_w044_1
-	.word	se_w044_2
+	.int	se_w044_1
+	.int	se_w044_2
 
 	.end

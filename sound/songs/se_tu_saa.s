@@ -48,8 +48,8 @@ se_tu_saa:
 	.byte	se_tu_saa_pri	@ Priority
 	.byte	se_tu_saa_rev	@ Reverb.
 
-	.word	se_tu_saa_grp
+	.int	se_tu_saa_grp
 
-	.word	se_tu_saa_1
+	.int	se_tu_saa_1
 
 	.end

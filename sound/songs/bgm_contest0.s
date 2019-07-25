@@ -326,7 +326,7 @@ bgm_contest0_1_B1:
 	.byte		        Fs4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_contest0_1_B1
+	 .int	bgm_contest0_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -580,7 +580,7 @@ bgm_contest0_2_B1:
 	.byte		        Fs1 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_contest0_2_B1
+	 .int	bgm_contest0_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -776,7 +776,7 @@ bgm_contest0_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_contest0_3_B1
+	 .int	bgm_contest0_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1112,11 +1112,11 @@ bgm_contest0_4_002:
 	.byte		N06   , An3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_contest0_4_000
+	 .int	bgm_contest0_4_000
 	.byte	PATT
-	 .word	bgm_contest0_4_001
+	 .int	bgm_contest0_4_001
 	.byte	PATT
-	 .word	bgm_contest0_4_002
+	 .int	bgm_contest0_4_002
 	.byte		N06   , As3 , v112
 	.byte	W06
 	.byte		N03   , As3 , v096
@@ -1338,7 +1338,7 @@ bgm_contest0_4_002:
 	.byte		        Ds4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_contest0_4_B1
+	 .int	bgm_contest0_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1684,11 +1684,11 @@ bgm_contest0_5_002:
 	.byte		N06   , Dn4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_contest0_5_000
+	 .int	bgm_contest0_5_000
 	.byte	PATT
-	 .word	bgm_contest0_5_001
+	 .int	bgm_contest0_5_001
 	.byte	PATT
-	 .word	bgm_contest0_5_002
+	 .int	bgm_contest0_5_002
 	.byte		N06   , Fn4 , v112
 	.byte	W06
 	.byte		N03   , Fn4 , v096
@@ -1910,7 +1910,7 @@ bgm_contest0_5_002:
 	.byte		        As4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_contest0_5_B1
+	 .int	bgm_contest0_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2121,7 +2121,7 @@ bgm_contest0_6_000:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_contest0_6_000
+	 .int	bgm_contest0_6_000
 	.byte		N06   , En1 , v112
 	.byte	W36
 	.byte		N03   
@@ -2257,7 +2257,7 @@ bgm_contest0_6_001:
 	.byte		        En1 , v088
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_contest0_6_001
+	 .int	bgm_contest0_6_001
 bgm_contest0_6_002:
 	.byte		N06   , Cn1 , v112
 	.byte	W12
@@ -2281,7 +2281,7 @@ bgm_contest0_6_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_contest0_6_001
+	 .int	bgm_contest0_6_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		N03   
@@ -2309,9 +2309,9 @@ bgm_contest0_6_002:
 	.byte		        En1 , v092
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_contest0_6_001
+	 .int	bgm_contest0_6_001
 	.byte	PATT
-	 .word	bgm_contest0_6_002
+	 .int	bgm_contest0_6_002
 bgm_contest0_6_003:
 	.byte		N06   , Cn1 , v112
 	.byte	W18
@@ -2335,9 +2335,9 @@ bgm_contest0_6_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_contest0_6_003
+	 .int	bgm_contest0_6_003
 	.byte	PATT
-	 .word	bgm_contest0_6_003
+	 .int	bgm_contest0_6_003
 	.byte		N06   , Dn1 , v112
 	.byte	W06
 	.byte		        Dn1 , v080
@@ -2363,7 +2363,7 @@ bgm_contest0_6_003:
 	.byte		        Cn1 , v096
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_contest0_6_B1
+	 .int	bgm_contest0_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2765,7 +2765,7 @@ bgm_contest0_7_B1:
 	.byte		N18   , Gs4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_contest0_7_B1
+	 .int	bgm_contest0_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3036,7 +3036,7 @@ bgm_contest0_8_B1:
 	.byte		        Cn4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_contest0_8_B1
+	 .int	bgm_contest0_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3048,15 +3048,15 @@ bgm_contest0:
 	.byte	bgm_contest0_pri	@ Priority
 	.byte	bgm_contest0_rev	@ Reverb.
 
-	.word	bgm_contest0_grp
+	.int	bgm_contest0_grp
 
-	.word	bgm_contest0_1
-	.word	bgm_contest0_2
-	.word	bgm_contest0_3
-	.word	bgm_contest0_4
-	.word	bgm_contest0_5
-	.word	bgm_contest0_6
-	.word	bgm_contest0_7
-	.word	bgm_contest0_8
+	.int	bgm_contest0_1
+	.int	bgm_contest0_2
+	.int	bgm_contest0_3
+	.int	bgm_contest0_4
+	.int	bgm_contest0_5
+	.int	bgm_contest0_6
+	.int	bgm_contest0_7
+	.int	bgm_contest0_8
 
 	.end

@@ -2,6 +2,7 @@
 // S-3511A real-time clock (RTC). This library ("SIIRTC_V001") is for
 // communicating with the RTC.
 
+#include "global.h"
 #include "gba/gba.h"
 #include "siirtc.h"
 

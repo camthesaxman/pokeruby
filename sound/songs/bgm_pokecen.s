@@ -77,7 +77,7 @@ bgm_pokecen_1_B1:
 	.byte		        Gs2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_pokecen_1_B1
+	 .int	bgm_pokecen_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -524,7 +524,7 @@ bgm_pokecen_2_B1:
 	.byte		        Gs4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_pokecen_2_B1
+	 .int	bgm_pokecen_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -667,7 +667,7 @@ bgm_pokecen_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_pokecen_3_B1
+	 .int	bgm_pokecen_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1058,7 +1058,7 @@ bgm_pokecen_4_B1:
 	.byte		        Bn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_pokecen_4_B1
+	 .int	bgm_pokecen_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1300,7 +1300,7 @@ bgm_pokecen_5_B1:
 	.byte		        2
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_pokecen_5_B1
+	 .int	bgm_pokecen_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1538,7 +1538,7 @@ bgm_pokecen_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_pokecen_6_B1
+	 .int	bgm_pokecen_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1626,9 +1626,9 @@ bgm_pokecen_7_001:
 	.byte		        Cs2 , v036
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_pokecen_7_000
+	 .int	bgm_pokecen_7_000
 	.byte	PATT
-	 .word	bgm_pokecen_7_001
+	 .int	bgm_pokecen_7_001
 	.byte		N06   , Bn1 , v127
 	.byte	W06
 	.byte		        Bn1 , v036
@@ -2028,7 +2028,7 @@ bgm_pokecen_7_001:
 	.byte		        Gs1 , v036
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_pokecen_7_B1
+	 .int	bgm_pokecen_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2072,7 +2072,7 @@ bgm_pokecen_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_pokecen_8_B1
+	 .int	bgm_pokecen_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2142,9 +2142,9 @@ bgm_pokecen_9_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_pokecen_9_000
+	 .int	bgm_pokecen_9_000
 	.byte	PATT
-	 .word	bgm_pokecen_9_000
+	 .int	bgm_pokecen_9_000
 	.byte		N01   , Gn4 , v112
 	.byte	W06
 	.byte		        Gn4 , v072
@@ -2174,7 +2174,7 @@ bgm_pokecen_9_000:
 	.byte		N12   , Gs4 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_pokecen_9_000
+	 .int	bgm_pokecen_9_000
 	.byte		N01   , Gn4 , v112
 	.byte	W06
 	.byte		        Gn4 , v072
@@ -2204,7 +2204,7 @@ bgm_pokecen_9_000:
 	.byte		        Gn4 , v064
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_pokecen_9_000
+	 .int	bgm_pokecen_9_000
 	.byte		N01   , Gn4 , v112
 	.byte	W06
 	.byte		        Gn4 , v072
@@ -2262,15 +2262,15 @@ bgm_pokecen_9_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_pokecen_9_001
+	 .int	bgm_pokecen_9_001
 	.byte	PATT
-	 .word	bgm_pokecen_9_001
+	 .int	bgm_pokecen_9_001
 	.byte	PATT
-	 .word	bgm_pokecen_9_001
+	 .int	bgm_pokecen_9_001
 	.byte	PATT
-	 .word	bgm_pokecen_9_001
+	 .int	bgm_pokecen_9_001
 	.byte	PATT
-	 .word	bgm_pokecen_9_001
+	 .int	bgm_pokecen_9_001
 	.byte		N12   , Gs4 , v112
 	.byte	W36
 	.byte		N01   , Gn4 , v088
@@ -2304,7 +2304,7 @@ bgm_pokecen_9_001:
 	.byte		        Gn4 , v064
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_pokecen_9_B1
+	 .int	bgm_pokecen_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2316,16 +2316,16 @@ bgm_pokecen:
 	.byte	bgm_pokecen_pri	@ Priority
 	.byte	bgm_pokecen_rev	@ Reverb.
 
-	.word	bgm_pokecen_grp
+	.int	bgm_pokecen_grp
 
-	.word	bgm_pokecen_1
-	.word	bgm_pokecen_2
-	.word	bgm_pokecen_3
-	.word	bgm_pokecen_4
-	.word	bgm_pokecen_5
-	.word	bgm_pokecen_6
-	.word	bgm_pokecen_7
-	.word	bgm_pokecen_8
-	.word	bgm_pokecen_9
+	.int	bgm_pokecen_1
+	.int	bgm_pokecen_2
+	.int	bgm_pokecen_3
+	.int	bgm_pokecen_4
+	.int	bgm_pokecen_5
+	.int	bgm_pokecen_6
+	.int	bgm_pokecen_7
+	.int	bgm_pokecen_8
+	.int	bgm_pokecen_9
 
 	.end

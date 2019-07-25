@@ -35,8 +35,8 @@ se_door:
 	.byte	se_door_pri	@ Priority
 	.byte	se_door_rev	@ Reverb.
 
-	.word	se_door_grp
+	.int	se_door_grp
 
-	.word	se_door_1
+	.int	se_door_1
 
 	.end

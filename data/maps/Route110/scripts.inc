@@ -22,7 +22,7 @@ Route110_EventScript_14F92F:: @ 814F92F
 
 Route110_MapScript2_14F933:: @ 814F933
 	map_script_2 VAR_CYCLING_CHALLENGE_STATE, 1, Route110_EventScript_14F93D
-	.2byte 0
+	.short 0
 
 Route110_EventScript_14F93D:: @ 814F93D
 	special ScrSpecial_BeginCyclingRoadChallenge

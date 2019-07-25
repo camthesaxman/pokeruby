@@ -45,9 +45,9 @@ se_kon:
 	.byte	se_kon_pri	@ Priority
 	.byte	se_kon_rev	@ Reverb.
 
-	.word	se_kon_grp
+	.int	se_kon_grp
 
-	.word	se_kon_1
-	.word	se_kon_2
+	.int	se_kon_1
+	.int	se_kon_2
 
 	.end

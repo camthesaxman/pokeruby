@@ -156,12 +156,12 @@ bgm_me_kinomi:
 	.byte	bgm_me_kinomi_pri	@ Priority
 	.byte	bgm_me_kinomi_rev	@ Reverb.
 
-	.word	bgm_me_kinomi_grp
+	.int	bgm_me_kinomi_grp
 
-	.word	bgm_me_kinomi_1
-	.word	bgm_me_kinomi_2
-	.word	bgm_me_kinomi_3
-	.word	bgm_me_kinomi_4
-	.word	bgm_me_kinomi_5
+	.int	bgm_me_kinomi_1
+	.int	bgm_me_kinomi_2
+	.int	bgm_me_kinomi_3
+	.int	bgm_me_kinomi_4
+	.int	bgm_me_kinomi_5
 
 	.end

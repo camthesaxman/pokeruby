@@ -147,9 +147,9 @@ bgm_fune_kan_1_001:
 	.byte		        Gn4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_fune_kan_1_000
+	 .int	bgm_fune_kan_1_000
 	.byte	PATT
-	 .word	bgm_fune_kan_1_001
+	 .int	bgm_fune_kan_1_001
 	.byte		N24   , An4 , v100
 	.byte	W24
 	.byte		N12   , Gn4 
@@ -681,7 +681,7 @@ bgm_fune_kan_1_001:
 	.byte		        Gn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_fune_kan_1_B1
+	 .int	bgm_fune_kan_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -783,9 +783,9 @@ bgm_fune_kan_2_001:
 	.byte		N24   , En4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_fune_kan_2_000
+	 .int	bgm_fune_kan_2_000
 	.byte	PATT
-	 .word	bgm_fune_kan_2_001
+	 .int	bgm_fune_kan_2_001
 	.byte		N48   , Dn4 , v092
 	.byte	W48
 	.byte		        Cs4 
@@ -914,7 +914,7 @@ bgm_fune_kan_2_001:
 	.byte		N24   , En4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_fune_kan_2_B1
+	 .int	bgm_fune_kan_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1035,9 +1035,9 @@ bgm_fune_kan_3_001:
 	.byte		        Cs1 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_fune_kan_3_000
+	 .int	bgm_fune_kan_3_000
 	.byte	PATT
-	 .word	bgm_fune_kan_3_001
+	 .int	bgm_fune_kan_3_001
 	.byte		N10   , Bn1 , v120
 	.byte	W24
 	.byte		N10   
@@ -1248,7 +1248,7 @@ bgm_fune_kan_3_001:
 	.byte		        An1 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_fune_kan_3_B1
+	 .int	bgm_fune_kan_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1608,7 +1608,7 @@ bgm_fune_kan_4_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_fune_kan_4_B1
+	 .int	bgm_fune_kan_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1991,7 +1991,7 @@ bgm_fune_kan_5_B1:
 	.byte		MOD   , 0
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_fune_kan_5_B1
+	 .int	bgm_fune_kan_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2470,7 +2470,7 @@ bgm_fune_kan_6_B1:
 	.byte		MOD   , 0
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_fune_kan_6_B1
+	 .int	bgm_fune_kan_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2518,7 +2518,7 @@ bgm_fune_kan_7_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_fune_kan_7_000
+	 .int	bgm_fune_kan_7_000
 	.byte		N06   , Fs2 , v064
 	.byte	W06
 	.byte		        Fs2 , v044
@@ -2739,7 +2739,7 @@ bgm_fune_kan_7_000:
 	.byte	W24
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_fune_kan_7_B1
+	 .int	bgm_fune_kan_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2751,14 +2751,14 @@ bgm_fune_kan:
 	.byte	bgm_fune_kan_pri	@ Priority
 	.byte	bgm_fune_kan_rev	@ Reverb.
 
-	.word	bgm_fune_kan_grp
+	.int	bgm_fune_kan_grp
 
-	.word	bgm_fune_kan_1
-	.word	bgm_fune_kan_2
-	.word	bgm_fune_kan_3
-	.word	bgm_fune_kan_4
-	.word	bgm_fune_kan_5
-	.word	bgm_fune_kan_6
-	.word	bgm_fune_kan_7
+	.int	bgm_fune_kan_1
+	.int	bgm_fune_kan_2
+	.int	bgm_fune_kan_3
+	.int	bgm_fune_kan_4
+	.int	bgm_fune_kan_5
+	.int	bgm_fune_kan_6
+	.int	bgm_fune_kan_7
 
 	.end

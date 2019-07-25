@@ -13,9 +13,9 @@ gUnknown_081FAEAC:: @ 81FAEAC
 
 	.align 2
 gOamData_81FAEB4:: @ 81FAEB4
-	.2byte 0x0000
-	.2byte 0x4000
-	.2byte 0x0400
+	.short 0x0000
+	.short 0x4000
+	.short 0x0400
 
 	.align 2
 gSpriteAnim_81FAEBC:: @ 81FAEBC
@@ -47,10 +47,10 @@ gSpriteAnim_81FAEEC:: @ 81FAEEC
 
 	.align 2
 gSpriteAnimTable_81FAEFC:: @ 81FAEFC
-	.4byte gSpriteAnim_81FAEBC
-	.4byte gSpriteAnim_81FAECC
-	.4byte gSpriteAnim_81FAEDC
-	.4byte gSpriteAnim_81FAEEC
+	.int gSpriteAnim_81FAEBC
+	.int gSpriteAnim_81FAECC
+	.int gSpriteAnim_81FAEDC
+	.int gSpriteAnim_81FAEEC
 
 	.align 2
 gSpriteTemplate_81FAF0C:: @ 81FAF0C

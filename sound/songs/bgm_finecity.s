@@ -37,11 +37,11 @@ bgm_finecity_1_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 bgm_finecity_1_001:
 	.byte		N03   , Gn5 , v112
 	.byte	W12
@@ -65,7 +65,7 @@ bgm_finecity_1_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 bgm_finecity_1_002:
 	.byte		N03   , Gn5 , v112
 	.byte	W12
@@ -107,11 +107,11 @@ bgm_finecity_1_003:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 bgm_finecity_1_004:
 	.byte		N03   , Gn5 , v112
 	.byte	W12
@@ -129,7 +129,7 @@ bgm_finecity_1_004:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte		N03   , Gn5 , v112
 	.byte	W06
 	.byte		        Gn5 , v092
@@ -171,61 +171,61 @@ bgm_finecity_1_004:
 	.byte		        Gn5 , v080
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_finecity_1_004
+	 .int	bgm_finecity_1_004
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_002
+	 .int	bgm_finecity_1_002
 	.byte	PATT
-	 .word	bgm_finecity_1_003
+	 .int	bgm_finecity_1_003
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_001
+	 .int	bgm_finecity_1_001
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	PATT
-	 .word	bgm_finecity_1_000
+	 .int	bgm_finecity_1_000
 	.byte	GOTO
-	 .word	bgm_finecity_1_B1
+	 .int	bgm_finecity_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -619,9 +619,9 @@ bgm_finecity_2_001:
 	.byte		        An3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_finecity_2_000
+	 .int	bgm_finecity_2_000
 	.byte	PATT
-	 .word	bgm_finecity_2_001
+	 .int	bgm_finecity_2_001
 	.byte		VOICE , 48
 	.byte		VOL   , 46*bgm_finecity_mvl/mxv
 	.byte		N24   , Gn3 , v112
@@ -643,9 +643,9 @@ bgm_finecity_2_001:
 	.byte		        An3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_finecity_2_000
+	 .int	bgm_finecity_2_000
 	.byte	PATT
-	 .word	bgm_finecity_2_001
+	 .int	bgm_finecity_2_001
 	.byte		VOICE , 48
 	.byte		VOL   , 48*bgm_finecity_mvl/mxv
 	.byte		N24   , Gn4 , v112
@@ -810,7 +810,7 @@ bgm_finecity_2_001:
 	.byte		        En3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_finecity_2_B1
+	 .int	bgm_finecity_2_B1
 	.byte		VOL   , 42*bgm_finecity_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	FINE
@@ -1369,7 +1369,7 @@ bgm_finecity_3_B1:
 	.byte		        Cs4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_finecity_3_B1
+	 .int	bgm_finecity_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1723,7 +1723,7 @@ bgm_finecity_4_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_finecity_4_B1
+	 .int	bgm_finecity_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1748,11 +1748,11 @@ bgm_finecity_5_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1780,33 +1780,33 @@ bgm_finecity_5_000:
 	.byte		        En5 , v112
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1816,19 +1816,19 @@ bgm_finecity_5_000:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	PATT
-	 .word	bgm_finecity_5_000
+	 .int	bgm_finecity_5_000
 	.byte	GOTO
-	 .word	bgm_finecity_5_B1
+	 .int	bgm_finecity_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2174,7 +2174,7 @@ bgm_finecity_6_000:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_6_000
+	 .int	bgm_finecity_6_000
 	.byte		MOD   , 0
 	.byte		N96   , Gn4 , v112
 	.byte	W24
@@ -2925,7 +2925,7 @@ bgm_finecity_6_000:
 	.byte		        17*bgm_finecity_mvl/mxv
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_finecity_6_B1
+	 .int	bgm_finecity_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -3196,7 +3196,7 @@ bgm_finecity_7_001:
 	.byte		N12   , Fn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_finecity_7_001
+	 .int	bgm_finecity_7_001
 	.byte		N06   , An1 , v112
 	.byte	W06
 	.byte		        An1 , v036
@@ -3384,7 +3384,7 @@ bgm_finecity_7_001:
 	.byte		        Fs1 , v036
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_finecity_7_000
+	 .int	bgm_finecity_7_000
 	.byte		N06   , Gs1 , v112
 	.byte	W06
 	.byte		        An1 
@@ -3742,7 +3742,7 @@ bgm_finecity_7_001:
 	.byte		        An1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_finecity_7_B1
+	 .int	bgm_finecity_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3893,15 +3893,15 @@ bgm_finecity_8_002:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_8_002
+	 .int	bgm_finecity_8_002
 	.byte	PATT
-	 .word	bgm_finecity_8_002
+	 .int	bgm_finecity_8_002
 	.byte	PATT
-	 .word	bgm_finecity_8_002
+	 .int	bgm_finecity_8_002
 	.byte	PATT
-	 .word	bgm_finecity_8_002
+	 .int	bgm_finecity_8_002
 	.byte	PATT
-	 .word	bgm_finecity_8_002
+	 .int	bgm_finecity_8_002
 	.byte		N06   , Cn1 , v120
 	.byte	W24
 	.byte		        En1 , v112
@@ -4002,7 +4002,7 @@ bgm_finecity_8_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_8_003
+	 .int	bgm_finecity_8_003
 	.byte		N06   , En1 , v124
 	.byte	W24
 	.byte		        En1 , v112
@@ -4068,9 +4068,9 @@ bgm_finecity_8_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_8_000
+	 .int	bgm_finecity_8_000
 	.byte	PATT
-	 .word	bgm_finecity_8_001
+	 .int	bgm_finecity_8_001
 bgm_finecity_8_005:
 	.byte		N06   , En1 , v112
 	.byte		N48   , An2 , v092
@@ -4098,7 +4098,7 @@ bgm_finecity_8_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_8_004
+	 .int	bgm_finecity_8_004
 	.byte		N06   , En1 , v112
 	.byte		N48   , An2 , v088
 	.byte	W24
@@ -4122,9 +4122,9 @@ bgm_finecity_8_005:
 	.byte		        Cn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_finecity_8_004
+	 .int	bgm_finecity_8_004
 	.byte	PATT
-	 .word	bgm_finecity_8_005
+	 .int	bgm_finecity_8_005
 	.byte		N06   , En1 , v112
 	.byte		N48   , An2 , v088
 	.byte	W24
@@ -4260,7 +4260,7 @@ bgm_finecity_8_006:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_finecity_8_006
+	 .int	bgm_finecity_8_006
 	.byte		N06   , Cn1 , v120
 	.byte	W18
 	.byte		N03   , Dn1 , v060
@@ -4326,7 +4326,7 @@ bgm_finecity_8_006:
 	.byte		        Cn1 , v127
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_finecity_8_004
+	 .int	bgm_finecity_8_004
 	.byte		N06   , En1 , v112
 	.byte		N48   , An2 , v088
 	.byte	W24
@@ -4396,7 +4396,7 @@ bgm_finecity_8_006:
 	.byte		        Cn1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_finecity_8_B1
+	 .int	bgm_finecity_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -4712,7 +4712,7 @@ bgm_finecity_9_003:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_finecity_9_003
+	 .int	bgm_finecity_9_003
 	.byte		MOD   , 0
 	.byte		N96   , An4 , v112
 	.byte	W24
@@ -4761,9 +4761,9 @@ bgm_finecity_9_003:
 	.byte		        Gn5 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_finecity_9_001
+	 .int	bgm_finecity_9_001
 	.byte	PATT
-	 .word	bgm_finecity_9_002
+	 .int	bgm_finecity_9_002
 	.byte		VOICE , 81
 	.byte		VOL   , 35*bgm_finecity_mvl/mxv
 	.byte		N24   , Bn2 , v112
@@ -4775,11 +4775,11 @@ bgm_finecity_9_003:
 	.byte		        Cs3 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_finecity_9_000
+	 .int	bgm_finecity_9_000
 	.byte	PATT
-	 .word	bgm_finecity_9_001
+	 .int	bgm_finecity_9_001
 	.byte	PATT
-	 .word	bgm_finecity_9_002
+	 .int	bgm_finecity_9_002
 	.byte		VOICE , 81
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 26*bgm_finecity_mvl/mxv
@@ -4977,7 +4977,7 @@ bgm_finecity_9_003:
 	.byte		        Cs4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_finecity_9_B1
+	 .int	bgm_finecity_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -5352,7 +5352,7 @@ bgm_finecity_10_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_finecity_10_B1
+	 .int	bgm_finecity_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -5364,17 +5364,17 @@ bgm_finecity:
 	.byte	bgm_finecity_pri	@ Priority
 	.byte	bgm_finecity_rev	@ Reverb.
 
-	.word	bgm_finecity_grp
+	.int	bgm_finecity_grp
 
-	.word	bgm_finecity_1
-	.word	bgm_finecity_2
-	.word	bgm_finecity_3
-	.word	bgm_finecity_4
-	.word	bgm_finecity_5
-	.word	bgm_finecity_6
-	.word	bgm_finecity_7
-	.word	bgm_finecity_8
-	.word	bgm_finecity_9
-	.word	bgm_finecity_10
+	.int	bgm_finecity_1
+	.int	bgm_finecity_2
+	.int	bgm_finecity_3
+	.int	bgm_finecity_4
+	.int	bgm_finecity_5
+	.int	bgm_finecity_6
+	.int	bgm_finecity_7
+	.int	bgm_finecity_8
+	.int	bgm_finecity_9
+	.int	bgm_finecity_10
 
 	.end

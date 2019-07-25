@@ -39,8 +39,8 @@ se_kaifuku:
 	.byte	se_kaifuku_pri	@ Priority
 	.byte	se_kaifuku_rev	@ Reverb.
 
-	.word	se_kaifuku_grp
+	.int	se_kaifuku_grp
 
-	.word	se_kaifuku_1
+	.int	se_kaifuku_1
 
 	.end

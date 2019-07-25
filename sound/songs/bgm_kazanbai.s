@@ -52,101 +52,101 @@ bgm_kazanbai_1_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	PATT
-	 .word	bgm_kazanbai_1_000
+	 .int	bgm_kazanbai_1_000
 	.byte	GOTO
-	 .word	bgm_kazanbai_1_B1
+	 .int	bgm_kazanbai_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -301,7 +301,7 @@ bgm_kazanbai_2_004:
 	.byte		        Ds4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_2_000
+	 .int	bgm_kazanbai_2_000
 	.byte		N24   , Gn4 , v112
 	.byte	W24
 	.byte		N12   , Dn3 
@@ -337,9 +337,9 @@ bgm_kazanbai_2_004:
 	.byte		        Cs4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_2_003
+	 .int	bgm_kazanbai_2_003
 	.byte	PATT
-	 .word	bgm_kazanbai_2_004
+	 .int	bgm_kazanbai_2_004
 	.byte		VOICE , 60
 	.byte		TIE   , An3 , v112
 	.byte	W24
@@ -628,7 +628,7 @@ bgm_kazanbai_2_004:
 	.byte		N12   , An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_2_001
+	 .int	bgm_kazanbai_2_001
 	.byte		MOD   , 0
 	.byte		N03   , Ds4 , v096
 	.byte	W03
@@ -643,13 +643,13 @@ bgm_kazanbai_2_004:
 	.byte		N12   , Dn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_2_002
+	 .int	bgm_kazanbai_2_002
 	.byte		N72   , An3 , v112
 	.byte	W24
 	.byte		MOD   , 6
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kazanbai_2_004
+	 .int	bgm_kazanbai_2_004
 	.byte		VOICE , 60
 	.byte		N12   , An3 , v112
 	.byte	W12
@@ -788,7 +788,7 @@ bgm_kazanbai_2_004:
 	.byte		MOD   , 7
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kazanbai_2_004
+	 .int	bgm_kazanbai_2_004
 	.byte		VOICE , 60
 	.byte		N60   , An3 , v112
 	.byte	W24
@@ -856,7 +856,7 @@ bgm_kazanbai_2_004:
 	.byte		        Bn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kazanbai_2_B1
+	 .int	bgm_kazanbai_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -942,7 +942,7 @@ bgm_kazanbai_3_001:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_3_000
+	 .int	bgm_kazanbai_3_000
 bgm_kazanbai_3_002:
 	.byte		PAN   , c_v+27
 	.byte		VOL   , 59*bgm_kazanbai_mvl/mxv
@@ -1119,7 +1119,7 @@ bgm_kazanbai_3_006:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_3_000
+	 .int	bgm_kazanbai_3_000
 bgm_kazanbai_3_007:
 	.byte		PAN   , c_v+28
 	.byte		VOL   , 59*bgm_kazanbai_mvl/mxv
@@ -1162,7 +1162,7 @@ bgm_kazanbai_3_007:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_3_003
+	 .int	bgm_kazanbai_3_003
 bgm_kazanbai_3_008:
 	.byte		PAN   , c_v+28
 	.byte		VOL   , 59*bgm_kazanbai_mvl/mxv
@@ -1425,11 +1425,11 @@ bgm_kazanbai_3_011:
 	.byte		N03   , Bn2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_3_009
+	 .int	bgm_kazanbai_3_009
 	.byte	PATT
-	 .word	bgm_kazanbai_3_010
+	 .int	bgm_kazanbai_3_010
 	.byte	PATT
-	 .word	bgm_kazanbai_3_011
+	 .int	bgm_kazanbai_3_011
 	.byte		N06   , Gn1 , v112
 	.byte	W06
 	.byte		N03   , Dn2 
@@ -1505,39 +1505,39 @@ bgm_kazanbai_3_012:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_3_012
+	 .int	bgm_kazanbai_3_012
 	.byte	PATT
-	 .word	bgm_kazanbai_3_005
+	 .int	bgm_kazanbai_3_005
 	.byte	PATT
-	 .word	bgm_kazanbai_3_001
+	 .int	bgm_kazanbai_3_001
 	.byte	PATT
-	 .word	bgm_kazanbai_3_000
+	 .int	bgm_kazanbai_3_000
 	.byte	PATT
-	 .word	bgm_kazanbai_3_002
+	 .int	bgm_kazanbai_3_002
 	.byte	PATT
-	 .word	bgm_kazanbai_3_003
+	 .int	bgm_kazanbai_3_003
 	.byte	PATT
-	 .word	bgm_kazanbai_3_004
+	 .int	bgm_kazanbai_3_004
 	.byte		PAN   , c_v+0
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_kazanbai_3_005
+	 .int	bgm_kazanbai_3_005
 	.byte	PATT
-	 .word	bgm_kazanbai_3_006
+	 .int	bgm_kazanbai_3_006
 	.byte	PATT
-	 .word	bgm_kazanbai_3_000
+	 .int	bgm_kazanbai_3_000
 	.byte	PATT
-	 .word	bgm_kazanbai_3_007
+	 .int	bgm_kazanbai_3_007
 	.byte	PATT
-	 .word	bgm_kazanbai_3_003
+	 .int	bgm_kazanbai_3_003
 	.byte	PATT
-	 .word	bgm_kazanbai_3_008
+	 .int	bgm_kazanbai_3_008
 	.byte		PAN   , c_v+0
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_kazanbai_3_B1
+	 .int	bgm_kazanbai_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1603,7 +1603,7 @@ bgm_kazanbai_4_001:
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_kazanbai_4_000
+	 .int	bgm_kazanbai_4_000
 	.byte		N12   , Dn2 , v120
 	.byte	W12
 	.byte		N06   , An2 
@@ -1617,7 +1617,7 @@ bgm_kazanbai_4_001:
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_kazanbai_4_001
+	 .int	bgm_kazanbai_4_001
 	.byte		N15   , Dn2 , v120
 	.byte	W60
 	.byte		N03   , An1 
@@ -1627,7 +1627,7 @@ bgm_kazanbai_4_001:
 	.byte		N12   , Dn2 
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_kazanbai_4_B1
+	 .int	bgm_kazanbai_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1682,9 +1682,9 @@ bgm_kazanbai_5_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 bgm_kazanbai_5_002:
 	.byte		N12   , Cs3 , v084
 	.byte	W12
@@ -1724,25 +1724,25 @@ bgm_kazanbai_5_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 bgm_kazanbai_5_004:
 	.byte		N12   , Dn3 , v084
 	.byte	W12
@@ -1782,9 +1782,9 @@ bgm_kazanbai_5_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_5_004
+	 .int	bgm_kazanbai_5_004
 	.byte	PATT
-	 .word	bgm_kazanbai_5_005
+	 .int	bgm_kazanbai_5_005
 bgm_kazanbai_5_006:
 	.byte		N12   , Bn3 , v084
 	.byte	W12
@@ -1894,11 +1894,11 @@ bgm_kazanbai_5_008:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_5_007
+	 .int	bgm_kazanbai_5_007
 	.byte	PATT
-	 .word	bgm_kazanbai_5_008
+	 .int	bgm_kazanbai_5_008
 	.byte	PATT
-	 .word	bgm_kazanbai_5_006
+	 .int	bgm_kazanbai_5_006
 	.byte		N12   , Gs3 , v084
 	.byte	W12
 	.byte		N03   , Gs3 , v112
@@ -1952,39 +1952,39 @@ bgm_kazanbai_5_008:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_000
+	 .int	bgm_kazanbai_5_000
 	.byte	PATT
-	 .word	bgm_kazanbai_5_001
+	 .int	bgm_kazanbai_5_001
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	PATT
-	 .word	bgm_kazanbai_5_002
+	 .int	bgm_kazanbai_5_002
 	.byte	PATT
-	 .word	bgm_kazanbai_5_003
+	 .int	bgm_kazanbai_5_003
 	.byte	GOTO
-	 .word	bgm_kazanbai_5_B1
+	 .int	bgm_kazanbai_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2039,9 +2039,9 @@ bgm_kazanbai_6_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 bgm_kazanbai_6_002:
 	.byte		N12   , Fs3 , v084
 	.byte	W12
@@ -2081,25 +2081,25 @@ bgm_kazanbai_6_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte		N12   , An3 , v084
 	.byte	W12
 	.byte		N03   , An3 , v112
@@ -2135,7 +2135,7 @@ bgm_kazanbai_6_003:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte		N12   , Cs4 , v084
 	.byte	W12
 	.byte		N03   , Cs4 , v112
@@ -2293,7 +2293,7 @@ bgm_kazanbai_6_004:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_6_004
+	 .int	bgm_kazanbai_6_004
 	.byte		N12   , Dn4 , v084
 	.byte	W12
 	.byte		N03   , Dn4 , v112
@@ -2347,39 +2347,39 @@ bgm_kazanbai_6_004:
 	.byte		N12   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_000
+	 .int	bgm_kazanbai_6_000
 	.byte	PATT
-	 .word	bgm_kazanbai_6_001
+	 .int	bgm_kazanbai_6_001
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	PATT
-	 .word	bgm_kazanbai_6_002
+	 .int	bgm_kazanbai_6_002
 	.byte	PATT
-	 .word	bgm_kazanbai_6_003
+	 .int	bgm_kazanbai_6_003
 	.byte	GOTO
-	 .word	bgm_kazanbai_6_B1
+	 .int	bgm_kazanbai_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2574,9 +2574,9 @@ bgm_kazanbai_7_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_7_003
+	 .int	bgm_kazanbai_7_003
 	.byte	PATT
-	 .word	bgm_kazanbai_7_002
+	 .int	bgm_kazanbai_7_002
 	.byte		N06   , Cn1 , v127
 	.byte	W24
 	.byte		        Cn1 , v112
@@ -2672,7 +2672,7 @@ bgm_kazanbai_7_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_7_003
+	 .int	bgm_kazanbai_7_003
 bgm_kazanbai_7_006:
 	.byte		N06   , Cn1 , v127
 	.byte	W24
@@ -2742,7 +2742,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v020
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_000
+	 .int	bgm_kazanbai_7_000
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v092
@@ -2819,7 +2819,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v024
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_004
+	 .int	bgm_kazanbai_7_004
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v092
@@ -2839,7 +2839,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v024
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_005
+	 .int	bgm_kazanbai_7_005
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v096
@@ -2913,7 +2913,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v032
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_005
+	 .int	bgm_kazanbai_7_005
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v064
@@ -2973,7 +2973,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v060
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_007
+	 .int	bgm_kazanbai_7_007
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v096
@@ -3031,7 +3031,7 @@ bgm_kazanbai_7_007:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_006
+	 .int	bgm_kazanbai_7_006
 	.byte		N06   , Cn1 , v127
 	.byte	W12
 	.byte		        Dn1 , v112
@@ -3053,7 +3053,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v028
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_7_001
+	 .int	bgm_kazanbai_7_001
 	.byte		N06   , Cn1 , v127
 	.byte	W18
 	.byte		        Cn1 , v096
@@ -3073,7 +3073,7 @@ bgm_kazanbai_7_007:
 	.byte		        Dn1 , v056
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kazanbai_7_B1
+	 .int	bgm_kazanbai_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3159,7 +3159,7 @@ bgm_kazanbai_8_002:
 	.byte		        Ds4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_8_000
+	 .int	bgm_kazanbai_8_000
 	.byte		N24   , Gn4 , v112
 	.byte	W24
 	.byte		N12   , Dn3 
@@ -3418,7 +3418,7 @@ bgm_kazanbai_8_002:
 	.byte		N12   , An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_8_001
+	 .int	bgm_kazanbai_8_001
 	.byte		MOD   , 0
 	.byte		N03   , Ds4 , v096
 	.byte	W03
@@ -3433,7 +3433,7 @@ bgm_kazanbai_8_002:
 	.byte		N12   , Dn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kazanbai_8_002
+	 .int	bgm_kazanbai_8_002
 	.byte		N72   , An3 , v112
 	.byte	W24
 	.byte		MOD   , 6
@@ -3531,7 +3531,7 @@ bgm_kazanbai_8_002:
 	.byte		        Bn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kazanbai_8_B1
+	 .int	bgm_kazanbai_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3735,9 +3735,9 @@ bgm_kazanbai_9_008:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kazanbai_9_003
+	 .int	bgm_kazanbai_9_003
 	.byte	PATT
-	 .word	bgm_kazanbai_9_004
+	 .int	bgm_kazanbai_9_004
 	.byte		TIE   , En3 , v112
 	.byte	W24
 	.byte		VOL   , 54*bgm_kazanbai_mvl/mxv
@@ -3824,20 +3824,20 @@ bgm_kazanbai_9_008:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_9_005
+	 .int	bgm_kazanbai_9_005
 	.byte	PATT
-	 .word	bgm_kazanbai_9_000
+	 .int	bgm_kazanbai_9_000
 	.byte	PATT
-	 .word	bgm_kazanbai_9_001
+	 .int	bgm_kazanbai_9_001
 	.byte	PATT
-	 .word	bgm_kazanbai_9_002
+	 .int	bgm_kazanbai_9_002
 	.byte	W03
 	.byte		N68   , Dn3 , v112
 	.byte	W21
 	.byte		MOD   , 6
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kazanbai_9_004
+	 .int	bgm_kazanbai_9_004
 	.byte		N12   , En3 , v112
 	.byte	W12
 	.byte		N06   , Gn2 
@@ -3907,13 +3907,13 @@ bgm_kazanbai_9_008:
 	.byte		        Gs3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kazanbai_9_005
+	 .int	bgm_kazanbai_9_005
 	.byte	PATT
-	 .word	bgm_kazanbai_9_006
+	 .int	bgm_kazanbai_9_006
 	.byte	PATT
-	 .word	bgm_kazanbai_9_007
+	 .int	bgm_kazanbai_9_007
 	.byte	PATT
-	 .word	bgm_kazanbai_9_008
+	 .int	bgm_kazanbai_9_008
 	.byte		N03   , Ds3 , v112
 	.byte	W03
 	.byte		N68   , Dn3 
@@ -3921,7 +3921,7 @@ bgm_kazanbai_9_008:
 	.byte		MOD   , 7
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_kazanbai_9_004
+	 .int	bgm_kazanbai_9_004
 	.byte		N60   , En3 , v112
 	.byte	W24
 	.byte		VOL   , 54*bgm_kazanbai_mvl/mxv
@@ -3980,7 +3980,7 @@ bgm_kazanbai_9_008:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kazanbai_9_B1
+	 .int	bgm_kazanbai_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3992,16 +3992,16 @@ bgm_kazanbai:
 	.byte	bgm_kazanbai_pri	@ Priority
 	.byte	bgm_kazanbai_rev	@ Reverb.
 
-	.word	bgm_kazanbai_grp
+	.int	bgm_kazanbai_grp
 
-	.word	bgm_kazanbai_1
-	.word	bgm_kazanbai_2
-	.word	bgm_kazanbai_3
-	.word	bgm_kazanbai_4
-	.word	bgm_kazanbai_5
-	.word	bgm_kazanbai_6
-	.word	bgm_kazanbai_7
-	.word	bgm_kazanbai_8
-	.word	bgm_kazanbai_9
+	.int	bgm_kazanbai_1
+	.int	bgm_kazanbai_2
+	.int	bgm_kazanbai_3
+	.int	bgm_kazanbai_4
+	.int	bgm_kazanbai_5
+	.int	bgm_kazanbai_6
+	.int	bgm_kazanbai_7
+	.int	bgm_kazanbai_8
+	.int	bgm_kazanbai_9
 
 	.end

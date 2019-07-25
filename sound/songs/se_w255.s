@@ -80,9 +80,9 @@ se_w255:
 	.byte	se_w255_pri	@ Priority
 	.byte	se_w255_rev	@ Reverb.
 
-	.word	se_w255_grp
+	.int	se_w255_grp
 
-	.word	se_w255_1
-	.word	se_w255_2
+	.int	se_w255_1
+	.int	se_w255_2
 
 	.end

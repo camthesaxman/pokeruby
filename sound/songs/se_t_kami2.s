@@ -73,8 +73,8 @@ se_t_kami2:
 	.byte	se_t_kami2_pri	@ Priority
 	.byte	se_t_kami2_rev	@ Reverb.
 
-	.word	se_t_kami2_grp
+	.int	se_t_kami2_grp
 
-	.word	se_t_kami2_1
+	.int	se_t_kami2_1
 
 	.end

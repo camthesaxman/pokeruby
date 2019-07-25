@@ -13,19 +13,19 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A061:: @ 815A061
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items1:: @ 815A078
-	.2byte ITEM_X_DEFEND
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_SUPER_REPEL
-	.2byte 91
-	.2byte 92
-	.2byte ITEM_SUN_STONE
-	.2byte ITEM_MOON_STONE
-	.2byte ITEM_FIRE_STONE
-	.2byte ITEM_THUNDER_STONE
-	.2byte ITEM_WATER_STONE
-	.2byte ITEM_LEAF_STONE
-	.2byte ITEM_NONE
+	.short ITEM_X_DEFEND
+	.short ITEM_X_SPEED
+	.short ITEM_X_ACCURACY
+	.short ITEM_SUPER_REPEL
+	.short 91
+	.short 92
+	.short ITEM_SUN_STONE
+	.short ITEM_MOON_STONE
+	.short ITEM_FIRE_STONE
+	.short ITEM_THUNDER_STONE
+	.short ITEM_WATER_STONE
+	.short ITEM_LEAF_STONE
+	.short ITEM_NONE
 	release
 	end
 
@@ -41,16 +41,16 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A094:: @ 815A094
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items2:: @ 815A0AC
-	.2byte 101
-	.2byte 102
-	.2byte ITEM_BIG_MUSHROOM
-	.2byte 105
-	.2byte ITEM_PEARL
-	.2byte ITEM_BIG_PEARL
-	.2byte ITEM_STARDUST
-	.2byte ITEM_STAR_PIECE
-	.2byte ITEM_NUGGET
-	.2byte ITEM_NONE
+	.short 101
+	.short 102
+	.short ITEM_BIG_MUSHROOM
+	.short 105
+	.short ITEM_PEARL
+	.short ITEM_BIG_PEARL
+	.short ITEM_STARDUST
+	.short ITEM_STAR_PIECE
+	.short ITEM_NUGGET
+	.short ITEM_NONE
 	release
 	end
 
@@ -66,16 +66,16 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A0C2:: @ 815A0C2
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items3:: @ 815A0DC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_PP_UP
-	.2byte ITEM_ZINC
-	.2byte ITEM_PP_MAX
-	.2byte 72
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_NONE
+	.short ITEM_CARBOS
+	.short ITEM_CALCIUM
+	.short ITEM_RARE_CANDY
+	.short ITEM_PP_UP
+	.short ITEM_ZINC
+	.short ITEM_PP_MAX
+	.short 72
+	.short ITEM_GUARD_SPEC
+	.short ITEM_DIRE_HIT
+	.short ITEM_NONE
 	release
 	end
 
@@ -91,17 +91,17 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A0F2:: @ 815A0F2
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items4:: @ 815A10C
-	.2byte 59
-	.2byte 60
-	.2byte 61
-	.2byte 62
-	.2byte ITEM_HP_UP
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_IRON
-	.2byte ITEM_RED_SHARD
-	.2byte ITEM_BLUE_SHARD
-	.2byte ITEM_YELLOW_SHARD
-	.2byte ITEM_NONE
+	.short 59
+	.short 60
+	.short 61
+	.short 62
+	.short ITEM_HP_UP
+	.short ITEM_PROTEIN
+	.short ITEM_IRON
+	.short ITEM_RED_SHARD
+	.short ITEM_BLUE_SHARD
+	.short ITEM_YELLOW_SHARD
+	.short ITEM_NONE
 	release
 	end
 

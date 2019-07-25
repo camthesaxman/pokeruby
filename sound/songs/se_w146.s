@@ -72,8 +72,8 @@ se_w146:
 	.byte	se_w146_pri	@ Priority
 	.byte	se_w146_rev	@ Reverb.
 
-	.word	se_w146_grp
+	.int	se_w146_grp
 
-	.word	se_w146_1
+	.int	se_w146_1
 
 	.end

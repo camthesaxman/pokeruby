@@ -16,7 +16,7 @@
 	.include "include/macros/event.inc"
 	.include "constants/constants.inc"
 
-	.section script_data, "aw", %progbits
+	.section script_data, "aw"
 
 @ 814AE30
 	.include "data/script_cmd_table.inc"

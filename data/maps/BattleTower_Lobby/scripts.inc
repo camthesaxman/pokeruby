@@ -40,7 +40,7 @@ BattleTower_Lobby_MapScript1_1602E8:: @ 81602E8
 
 BattleTower_Lobby_MapScript2_1602EE:: @ 81602EE
 	map_script_2 VAR_TEMP_1, 0, BattleTower_Lobby_EventScript_1602F8
-	.2byte 0
+	.short 0
 
 BattleTower_Lobby_EventScript_1602F8:: @ 81602F8
 	setvar VAR_TEMP_1, 1
@@ -53,7 +53,7 @@ BattleTower_Lobby_MapScript2_160302:: @ 8160302
 	map_script_2 VAR_TEMP_0, 2, BattleTower_Lobby_EventScript_160342
 	map_script_2 VAR_TEMP_0, 3, BattleTower_Lobby_EventScript_160419
 	map_script_2 VAR_TEMP_0, 4, BattleTower_Lobby_EventScript_16044B
-	.2byte 0
+	.short 0
 
 BattleTower_Lobby_EventScript_16032C:: @ 816032C
 	special sub_8134548

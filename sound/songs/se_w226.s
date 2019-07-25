@@ -161,9 +161,9 @@ se_w226:
 	.byte	se_w226_pri	@ Priority
 	.byte	se_w226_rev	@ Reverb.
 
-	.word	se_w226_grp
+	.int	se_w226_grp
 
-	.word	se_w226_1
-	.word	se_w226_2
+	.int	se_w226_1
+	.int	se_w226_2
 
 	.end

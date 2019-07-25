@@ -16,7 +16,7 @@ Route112_CableCarStation_EventScript_15C052:: @ 815C052
 
 Route112_CableCarStation_MapScript2_15C05E:: @ 815C05E
 	map_script_2 VAR_CABLE_CAR_STATION_STATE, 2, Route112_CableCarStation_EventScript_15C068
-	.2byte 0
+	.short 0
 
 Route112_CableCarStation_EventScript_15C068:: @ 815C068
 	lockall

@@ -179,8 +179,8 @@ se_w268:
 	.byte	se_w268_pri	@ Priority
 	.byte	se_w268_rev	@ Reverb.
 
-	.word	se_w268_grp
+	.int	se_w268_grp
 
-	.word	se_w268_1
+	.int	se_w268_1
 
 	.end

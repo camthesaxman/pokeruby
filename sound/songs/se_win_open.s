@@ -35,8 +35,8 @@ se_win_open:
 	.byte	se_win_open_pri	@ Priority
 	.byte	se_win_open_rev	@ Reverb.
 
-	.word	se_win_open_grp
+	.int	se_win_open_grp
 
-	.word	se_win_open_1
+	.int	se_win_open_1
 
 	.end

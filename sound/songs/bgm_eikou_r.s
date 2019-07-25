@@ -853,7 +853,7 @@ bgm_eikou_r_1_B1:
 	.byte		        En4 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_eikou_r_1_B1
+	 .int	bgm_eikou_r_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -913,7 +913,7 @@ bgm_eikou_r_2_B1:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_eikou_r_2_B1
+	 .int	bgm_eikou_r_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -968,7 +968,7 @@ bgm_eikou_r_3_000:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_eikou_r_3_000
+	 .int	bgm_eikou_r_3_000
 	.byte		N04   , Dn1 , v112
 	.byte	W24
 	.byte		N04   
@@ -990,11 +990,11 @@ bgm_eikou_r_3_000:
 	.byte		        Dn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_eikou_r_3_000
+	 .int	bgm_eikou_r_3_000
 	.byte	PATT
-	 .word	bgm_eikou_r_3_000
+	 .int	bgm_eikou_r_3_000
 	.byte	PATT
-	 .word	bgm_eikou_r_3_000
+	 .int	bgm_eikou_r_3_000
 	.byte		N08   , Dn1 , v112
 	.byte	W08
 	.byte		N04   , An1 
@@ -1110,7 +1110,7 @@ bgm_eikou_r_3_000:
 	.byte		N48   , Cs2 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_eikou_r_3_B1
+	 .int	bgm_eikou_r_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1239,7 +1239,7 @@ bgm_eikou_r_4_B1:
 	.byte		N96   , Cs4 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_eikou_r_4_B1
+	 .int	bgm_eikou_r_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1317,7 +1317,7 @@ bgm_eikou_r_5_000:
 	.byte		        Dn3 
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_eikou_r_5_000
+	 .int	bgm_eikou_r_5_000
 	.byte		N40   , Fn3 , v112
 	.byte	W40
 	.byte		N08   , Cn3 
@@ -1367,7 +1367,7 @@ bgm_eikou_r_5_000:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_eikou_r_5_B1
+	 .int	bgm_eikou_r_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1505,7 +1505,7 @@ bgm_eikou_r_6_B1:
 	.byte	W96
 	.byte		EOT   
 	.byte	GOTO
-	 .word	bgm_eikou_r_6_B1
+	 .int	bgm_eikou_r_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1539,19 +1539,19 @@ bgm_eikou_r_7_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 	.byte	PATT
-	 .word	bgm_eikou_r_7_000
+	 .int	bgm_eikou_r_7_000
 bgm_eikou_r_7_001:
 	.byte		N04   , Dn1 , v112
 	.byte	W24
@@ -1571,21 +1571,21 @@ bgm_eikou_r_7_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	PATT
-	 .word	bgm_eikou_r_7_001
+	 .int	bgm_eikou_r_7_001
 	.byte	GOTO
-	 .word	bgm_eikou_r_7_B1
+	 .int	bgm_eikou_r_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1597,14 +1597,14 @@ bgm_eikou_r:
 	.byte	bgm_eikou_r_pri	@ Priority
 	.byte	bgm_eikou_r_rev	@ Reverb.
 
-	.word	bgm_eikou_r_grp
+	.int	bgm_eikou_r_grp
 
-	.word	bgm_eikou_r_1
-	.word	bgm_eikou_r_2
-	.word	bgm_eikou_r_3
-	.word	bgm_eikou_r_4
-	.word	bgm_eikou_r_5
-	.word	bgm_eikou_r_6
-	.word	bgm_eikou_r_7
+	.int	bgm_eikou_r_1
+	.int	bgm_eikou_r_2
+	.int	bgm_eikou_r_3
+	.int	bgm_eikou_r_4
+	.int	bgm_eikou_r_5
+	.int	bgm_eikou_r_6
+	.int	bgm_eikou_r_7
 
 	.end

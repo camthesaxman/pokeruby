@@ -140,11 +140,11 @@ bgm_me_asa:
 	.byte	bgm_me_asa_pri	@ Priority
 	.byte	bgm_me_asa_rev	@ Reverb.
 
-	.word	bgm_me_asa_grp
+	.int	bgm_me_asa_grp
 
-	.word	bgm_me_asa_1
-	.word	bgm_me_asa_2
-	.word	bgm_me_asa_3
-	.word	bgm_me_asa_4
+	.int	bgm_me_asa_1
+	.int	bgm_me_asa_2
+	.int	bgm_me_asa_3
+	.int	bgm_me_asa_4
 
 	.end

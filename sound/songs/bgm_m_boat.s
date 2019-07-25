@@ -187,9 +187,9 @@ bgm_m_boat_1_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_boat_1_000
+	 .int	bgm_m_boat_1_000
 	.byte	PATT
-	 .word	bgm_m_boat_1_001
+	 .int	bgm_m_boat_1_001
 	.byte		VOICE , 127
 	.byte		N03   , En5 , v112
 	.byte	W06
@@ -217,11 +217,11 @@ bgm_m_boat_1_001:
 	.byte		N12   , Gn5 , v108
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_m_boat_1_001
+	 .int	bgm_m_boat_1_001
 	.byte	PATT
-	 .word	bgm_m_boat_1_000
+	 .int	bgm_m_boat_1_000
 	.byte	PATT
-	 .word	bgm_m_boat_1_001
+	 .int	bgm_m_boat_1_001
 	.byte		N03   , En5 , v112
 	.byte	W06
 	.byte		        En5 , v060
@@ -248,15 +248,15 @@ bgm_m_boat_1_001:
 	.byte		N12   , Gn5 , v100
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_m_boat_1_001
+	 .int	bgm_m_boat_1_001
 	.byte	PATT
-	 .word	bgm_m_boat_1_000
+	 .int	bgm_m_boat_1_000
 	.byte	PATT
-	 .word	bgm_m_boat_1_001
+	 .int	bgm_m_boat_1_001
 	.byte	PATT
-	 .word	bgm_m_boat_1_000
+	 .int	bgm_m_boat_1_000
 	.byte	GOTO
-	 .word	bgm_m_boat_1_B1
+	 .int	bgm_m_boat_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -414,7 +414,7 @@ bgm_m_boat_2_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_m_boat_2_B1
+	 .int	bgm_m_boat_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -442,7 +442,7 @@ bgm_m_boat_3_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_m_boat_3_000
+	 .int	bgm_m_boat_3_000
 	.byte		N36   , Cs1 , v127
 	.byte	W36
 	.byte		N03   , Gs0 , v112
@@ -753,15 +753,15 @@ bgm_m_boat_3_005:
 	.byte		N06   , As1 , v036
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_m_boat_3_001
+	 .int	bgm_m_boat_3_001
 	.byte	PATT
-	 .word	bgm_m_boat_3_002
+	 .int	bgm_m_boat_3_002
 	.byte	PATT
-	 .word	bgm_m_boat_3_003
+	 .int	bgm_m_boat_3_003
 	.byte	PATT
-	 .word	bgm_m_boat_3_004
+	 .int	bgm_m_boat_3_004
 	.byte	PATT
-	 .word	bgm_m_boat_3_005
+	 .int	bgm_m_boat_3_005
 	.byte		N06   , Gs0 , v127
 	.byte	W06
 	.byte		        Gs0 , v036
@@ -795,7 +795,7 @@ bgm_m_boat_3_005:
 	.byte		N06   , Gs1 , v036
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_m_boat_3_002
+	 .int	bgm_m_boat_3_002
 	.byte		N06   , Cs2 , v127
 	.byte	W06
 	.byte		        Cs2 , v036
@@ -815,7 +815,7 @@ bgm_m_boat_3_005:
 	.byte		        As0 , v112
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_m_boat_3_B1
+	 .int	bgm_m_boat_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -962,7 +962,7 @@ bgm_m_boat_4_000:
 	.byte		N36   , Ds5 
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_m_boat_4_000
+	 .int	bgm_m_boat_4_000
 	.byte		N36   , As5 , v112
 	.byte	W36
 	.byte		N06   , Fn5 
@@ -1030,7 +1030,7 @@ bgm_m_boat_4_000:
 	.byte		        Dn5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_m_boat_4_B1
+	 .int	bgm_m_boat_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1546,7 +1546,7 @@ bgm_m_boat_5_B1:
 	.byte		        Gs3 
 	.byte	W54
 	.byte	GOTO
-	 .word	bgm_m_boat_5_B1
+	 .int	bgm_m_boat_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1798,7 +1798,7 @@ bgm_m_boat_6_B1:
 	.byte		N12   , Dn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_m_boat_6_B1
+	 .int	bgm_m_boat_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2047,7 +2047,7 @@ bgm_m_boat_7_B1:
 	.byte		        Cs4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_m_boat_7_B1
+	 .int	bgm_m_boat_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2351,7 +2351,7 @@ bgm_m_boat_8_B1:
 	.byte		        Dn5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_m_boat_8_B1
+	 .int	bgm_m_boat_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2457,9 +2457,9 @@ bgm_m_boat_9_001:
 	.byte		        Fn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_m_boat_9_000
+	 .int	bgm_m_boat_9_000
 	.byte	PATT
-	 .word	bgm_m_boat_9_001
+	 .int	bgm_m_boat_9_001
 	.byte		N36   , Fn4 , v112
 	.byte	W36
 	.byte		N06   , Cs4 
@@ -2529,7 +2529,7 @@ bgm_m_boat_9_001:
 	.byte		        Fn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_m_boat_9_B1
+	 .int	bgm_m_boat_9_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2542,16 +2542,16 @@ bgm_m_boat:
 	.byte	bgm_m_boat_pri	@ Priority
 	.byte	bgm_m_boat_rev	@ Reverb.
 
-	.word	bgm_m_boat_grp
+	.int	bgm_m_boat_grp
 
-	.word	bgm_m_boat_1
-	.word	bgm_m_boat_2
-	.word	bgm_m_boat_3
-	.word	bgm_m_boat_4
-	.word	bgm_m_boat_5
-	.word	bgm_m_boat_6
-	.word	bgm_m_boat_7
-	.word	bgm_m_boat_8
-	.word	bgm_m_boat_9
+	.int	bgm_m_boat_1
+	.int	bgm_m_boat_2
+	.int	bgm_m_boat_3
+	.int	bgm_m_boat_4
+	.int	bgm_m_boat_5
+	.int	bgm_m_boat_6
+	.int	bgm_m_boat_7
+	.int	bgm_m_boat_8
+	.int	bgm_m_boat_9
 
 	.end

@@ -5,7 +5,7 @@ BattleTower_Elevator_MapScripts:: @ 81607CF
 
 BattleTower_Elevator_MapScript2_1607DA:: @ 81607DA
 	map_script_2 VAR_TEMP_0, 0, BattleTower_Elevator_EventScript_1607E4
-	.2byte 0
+	.short 0
 
 BattleTower_Elevator_EventScript_1607E4:: @ 81607E4
 	setvar VAR_TEMP_0, 1
@@ -25,7 +25,7 @@ BattleTower_Elevator_EventScript_1607E4:: @ 81607E4
 
 BattleTower_Elevator_MapScript2_160821:: @ 8160821
 	map_script_2 VAR_TEMP_1, 0, BattleTower_Elevator_EventScript_16082B
-	.2byte 0
+	.short 0
 
 BattleTower_Elevator_EventScript_16082B:: @ 816082B
 	setvar VAR_TEMP_1, 1

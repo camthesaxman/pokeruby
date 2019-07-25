@@ -89,11 +89,11 @@ bgm_tsuretek_1_000:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 bgm_tsuretek_1_001:
 	.byte		N04   , Cn5 , v112
 	.byte	W16
@@ -155,19 +155,19 @@ bgm_tsuretek_1_002:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_000
+	 .int	bgm_tsuretek_1_000
 	.byte	PATT
-	 .word	bgm_tsuretek_1_001
+	 .int	bgm_tsuretek_1_001
 	.byte	PATT
-	 .word	bgm_tsuretek_1_002
+	 .int	bgm_tsuretek_1_002
 	.byte	GOTO
-	 .word	bgm_tsuretek_1_B1
+	 .int	bgm_tsuretek_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -327,7 +327,7 @@ bgm_tsuretek_2_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tsuretek_2_B1
+	 .int	bgm_tsuretek_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -410,7 +410,7 @@ bgm_tsuretek_3_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tsuretek_3_000
+	 .int	bgm_tsuretek_3_000
 bgm_tsuretek_3_001:
 	.byte		N04   , Gs1 , v127
 	.byte	W24
@@ -428,13 +428,13 @@ bgm_tsuretek_3_001:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tsuretek_3_000
+	 .int	bgm_tsuretek_3_000
 	.byte	PATT
-	 .word	bgm_tsuretek_3_000
+	 .int	bgm_tsuretek_3_000
 	.byte	PATT
-	 .word	bgm_tsuretek_3_000
+	 .int	bgm_tsuretek_3_000
 	.byte	PATT
-	 .word	bgm_tsuretek_3_001
+	 .int	bgm_tsuretek_3_001
 	.byte		N04   , En1 , v127
 	.byte	W16
 	.byte		N04   
@@ -460,7 +460,7 @@ bgm_tsuretek_3_001:
 	.byte		N16   , Bn1 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_tsuretek_3_B1
+	 .int	bgm_tsuretek_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -566,9 +566,9 @@ bgm_tsuretek_4_001:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tsuretek_4_000
+	 .int	bgm_tsuretek_4_000
 	.byte	PATT
-	 .word	bgm_tsuretek_4_001
+	 .int	bgm_tsuretek_4_001
 	.byte		N04   , An2 , v112
 	.byte	W08
 	.byte		        En3 
@@ -604,7 +604,7 @@ bgm_tsuretek_4_001:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tsuretek_4_B1
+	 .int	bgm_tsuretek_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -728,17 +728,17 @@ bgm_tsuretek_5_003:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tsuretek_5_000
+	 .int	bgm_tsuretek_5_000
 	.byte	PATT
-	 .word	bgm_tsuretek_5_001
+	 .int	bgm_tsuretek_5_001
 	.byte	PATT
-	 .word	bgm_tsuretek_5_002
+	 .int	bgm_tsuretek_5_002
 	.byte	PATT
-	 .word	bgm_tsuretek_5_003
+	 .int	bgm_tsuretek_5_003
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tsuretek_5_B1
+	 .int	bgm_tsuretek_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -862,17 +862,17 @@ bgm_tsuretek_6_003:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_tsuretek_6_000
+	 .int	bgm_tsuretek_6_000
 	.byte	PATT
-	 .word	bgm_tsuretek_6_001
+	 .int	bgm_tsuretek_6_001
 	.byte	PATT
-	 .word	bgm_tsuretek_6_002
+	 .int	bgm_tsuretek_6_002
 	.byte	PATT
-	 .word	bgm_tsuretek_6_003
+	 .int	bgm_tsuretek_6_003
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tsuretek_6_B1
+	 .int	bgm_tsuretek_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -948,11 +948,11 @@ bgm_tsuretek_7_000:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 bgm_tsuretek_7_001:
 	.byte		N04   , En1 , v112
 	.byte	W16
@@ -1014,19 +1014,19 @@ bgm_tsuretek_7_002:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_000
+	 .int	bgm_tsuretek_7_000
 	.byte	PATT
-	 .word	bgm_tsuretek_7_001
+	 .int	bgm_tsuretek_7_001
 	.byte	PATT
-	 .word	bgm_tsuretek_7_002
+	 .int	bgm_tsuretek_7_002
 	.byte	GOTO
-	 .word	bgm_tsuretek_7_B1
+	 .int	bgm_tsuretek_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1191,7 +1191,7 @@ bgm_tsuretek_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_tsuretek_8_B1
+	 .int	bgm_tsuretek_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1203,15 +1203,15 @@ bgm_tsuretek:
 	.byte	bgm_tsuretek_pri	@ Priority
 	.byte	bgm_tsuretek_rev	@ Reverb.
 
-	.word	bgm_tsuretek_grp
+	.int	bgm_tsuretek_grp
 
-	.word	bgm_tsuretek_1
-	.word	bgm_tsuretek_2
-	.word	bgm_tsuretek_3
-	.word	bgm_tsuretek_4
-	.word	bgm_tsuretek_5
-	.word	bgm_tsuretek_6
-	.word	bgm_tsuretek_7
-	.word	bgm_tsuretek_8
+	.int	bgm_tsuretek_1
+	.int	bgm_tsuretek_2
+	.int	bgm_tsuretek_3
+	.int	bgm_tsuretek_4
+	.int	bgm_tsuretek_5
+	.int	bgm_tsuretek_6
+	.int	bgm_tsuretek_7
+	.int	bgm_tsuretek_8
 
 	.end

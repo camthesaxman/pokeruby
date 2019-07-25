@@ -308,7 +308,7 @@ bgm_machi_s2_1_B1:
 	.byte		N12   , As4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_1_B1
+	 .int	bgm_machi_s2_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -375,9 +375,9 @@ bgm_machi_s2_2_001:
 	.byte		        Gn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_machi_s2_2_000
+	 .int	bgm_machi_s2_2_000
 	.byte	PATT
-	 .word	bgm_machi_s2_2_001
+	 .int	bgm_machi_s2_2_001
 	.byte		N12   , As1 , v127
 	.byte	W24
 	.byte		N24   , Fn1 
@@ -498,7 +498,7 @@ bgm_machi_s2_2_001:
 	.byte		N12   , Gn1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_2_B1
+	 .int	bgm_machi_s2_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -668,7 +668,7 @@ bgm_machi_s2_3_B1:
 	.byte		N12   , Gn2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_3_B1
+	 .int	bgm_machi_s2_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -769,7 +769,7 @@ bgm_machi_s2_4_000:
 	.byte		N03   , Ds3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machi_s2_4_000
+	 .int	bgm_machi_s2_4_000
 	.byte		N42   , Fn2 , v060
 	.byte	W42
 	.byte		VOICE , 25
@@ -919,7 +919,7 @@ bgm_machi_s2_4_000:
 	.byte		N12   , Ds3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_4_B1
+	 .int	bgm_machi_s2_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1340,7 +1340,7 @@ bgm_machi_s2_5_B1:
 	.byte		N12   , Gn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_5_B1
+	 .int	bgm_machi_s2_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1482,7 +1482,7 @@ bgm_machi_s2_6_B1:
 	.byte		N12   , Ds4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_machi_s2_6_B1
+	 .int	bgm_machi_s2_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1537,15 +1537,15 @@ bgm_machi_s2_7_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s2_7_000
+	 .int	bgm_machi_s2_7_000
 	.byte	PATT
-	 .word	bgm_machi_s2_7_000
+	 .int	bgm_machi_s2_7_000
 	.byte	PATT
-	 .word	bgm_machi_s2_7_000
+	 .int	bgm_machi_s2_7_000
 	.byte	PATT
-	 .word	bgm_machi_s2_7_000
+	 .int	bgm_machi_s2_7_000
 	.byte	PATT
-	 .word	bgm_machi_s2_7_000
+	 .int	bgm_machi_s2_7_000
 bgm_machi_s2_7_001:
 	.byte		VOICE , 126
 	.byte		N06   , Gn4 , v052
@@ -1653,17 +1653,17 @@ bgm_machi_s2_7_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s2_7_002
+	 .int	bgm_machi_s2_7_002
 	.byte	PATT
-	 .word	bgm_machi_s2_7_003
+	 .int	bgm_machi_s2_7_003
 	.byte	PATT
-	 .word	bgm_machi_s2_7_002
+	 .int	bgm_machi_s2_7_002
 	.byte	PATT
-	 .word	bgm_machi_s2_7_003
+	 .int	bgm_machi_s2_7_003
 	.byte	PATT
-	 .word	bgm_machi_s2_7_001
+	 .int	bgm_machi_s2_7_001
 	.byte	GOTO
-	 .word	bgm_machi_s2_7_B1
+	 .int	bgm_machi_s2_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1737,13 +1737,13 @@ bgm_machi_s2_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s2_8_000
+	 .int	bgm_machi_s2_8_000
 	.byte	PATT
-	 .word	bgm_machi_s2_8_001
+	 .int	bgm_machi_s2_8_001
 	.byte	PATT
-	 .word	bgm_machi_s2_8_000
+	 .int	bgm_machi_s2_8_000
 	.byte	PATT
-	 .word	bgm_machi_s2_8_001
+	 .int	bgm_machi_s2_8_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        Dn3 , v056
@@ -1847,7 +1847,7 @@ bgm_machi_s2_8_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s2_8_002
+	 .int	bgm_machi_s2_8_002
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        Dn3 , v056
@@ -1887,7 +1887,7 @@ bgm_machi_s2_8_002:
 	.byte		        Dn1 , v116
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machi_s2_8_B1
+	 .int	bgm_machi_s2_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1899,15 +1899,15 @@ bgm_machi_s2:
 	.byte	bgm_machi_s2_pri	@ Priority
 	.byte	bgm_machi_s2_rev	@ Reverb.
 
-	.word	bgm_machi_s2_grp
+	.int	bgm_machi_s2_grp
 
-	.word	bgm_machi_s2_1
-	.word	bgm_machi_s2_2
-	.word	bgm_machi_s2_3
-	.word	bgm_machi_s2_4
-	.word	bgm_machi_s2_5
-	.word	bgm_machi_s2_6
-	.word	bgm_machi_s2_7
-	.word	bgm_machi_s2_8
+	.int	bgm_machi_s2_1
+	.int	bgm_machi_s2_2
+	.int	bgm_machi_s2_3
+	.int	bgm_machi_s2_4
+	.int	bgm_machi_s2_5
+	.int	bgm_machi_s2_6
+	.int	bgm_machi_s2_7
+	.int	bgm_machi_s2_8
 
 	.end

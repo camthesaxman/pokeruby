@@ -39,8 +39,8 @@ se_tamakoro:
 	.byte	se_tamakoro_pri	@ Priority
 	.byte	se_tamakoro_rev	@ Reverb.
 
-	.word	se_tamakoro_grp
+	.int	se_tamakoro_grp
 
-	.word	se_tamakoro_1
+	.int	se_tamakoro_1
 
 	.end

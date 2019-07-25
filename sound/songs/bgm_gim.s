@@ -320,7 +320,7 @@ bgm_gim_1_B1:
 	.byte		N24   , Fs5 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_gim_1_B1
+	 .int	bgm_gim_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -403,7 +403,7 @@ bgm_gim_2_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gim_2_000
+	 .int	bgm_gim_2_000
 	.byte		N06   , Dn1 , v080
 	.byte	W18
 	.byte		N06   
@@ -417,11 +417,11 @@ bgm_gim_2_001:
 	.byte		N18   , Fs1 
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_gim_2_000
+	 .int	bgm_gim_2_000
 	.byte	PATT
-	 .word	bgm_gim_2_001
+	 .int	bgm_gim_2_001
 	.byte	PATT
-	 .word	bgm_gim_2_000
+	 .int	bgm_gim_2_000
 	.byte		N06   , Dn1 , v080
 	.byte	W18
 	.byte		N06   
@@ -435,9 +435,9 @@ bgm_gim_2_001:
 	.byte		N18   , An1 
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_gim_2_000
+	 .int	bgm_gim_2_000
 	.byte	PATT
-	 .word	bgm_gim_2_001
+	 .int	bgm_gim_2_001
 	.byte		N06   , Cs1 , v080
 	.byte	W18
 	.byte		N06   
@@ -515,7 +515,7 @@ bgm_gim_2_001:
 	.byte		        Ds2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gim_2_B1
+	 .int	bgm_gim_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -643,9 +643,9 @@ bgm_gim_3_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gim_3_000
+	 .int	bgm_gim_3_000
 	.byte	PATT
-	 .word	bgm_gim_3_001
+	 .int	bgm_gim_3_001
 	.byte		N12   , Dn3 , v052
 	.byte	W12
 	.byte		VOICE , 88
@@ -665,7 +665,7 @@ bgm_gim_3_001:
 	.byte		N24   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_gim_3_001
+	 .int	bgm_gim_3_001
 	.byte		N12   , Dn3 , v052
 	.byte	W12
 	.byte		VOICE , 88
@@ -859,7 +859,7 @@ bgm_gim_3_001:
 	.byte		        Bn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gim_3_B1
+	 .int	bgm_gim_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -950,11 +950,11 @@ bgm_gim_4_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gim_4_000
+	 .int	bgm_gim_4_000
 	.byte	PATT
-	 .word	bgm_gim_4_001
+	 .int	bgm_gim_4_001
 	.byte	PATT
-	 .word	bgm_gim_4_000
+	 .int	bgm_gim_4_000
 	.byte		N48   , Fs3 , v052
 	.byte	W24
 	.byte		MOD   , 3
@@ -967,7 +967,7 @@ bgm_gim_4_001:
 	.byte		N24   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_gim_4_000
+	 .int	bgm_gim_4_000
 	.byte		N48   , Fs3 , v052
 	.byte	W24
 	.byte		MOD   , 3
@@ -1155,7 +1155,7 @@ bgm_gim_4_001:
 	.byte		        Ds5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gim_4_B1
+	 .int	bgm_gim_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1371,7 +1371,7 @@ bgm_gim_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_gim_5_B1
+	 .int	bgm_gim_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1432,13 +1432,13 @@ bgm_gim_6_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gim_6_000
+	 .int	bgm_gim_6_000
 	.byte	PATT
-	 .word	bgm_gim_6_001
+	 .int	bgm_gim_6_001
 	.byte	PATT
-	 .word	bgm_gim_6_000
+	 .int	bgm_gim_6_000
 	.byte	PATT
-	 .word	bgm_gim_6_001
+	 .int	bgm_gim_6_001
 	.byte		N12   , Dn2 , v100
 	.byte	W48
 	.byte		        Dn2 , v088
@@ -1514,7 +1514,7 @@ bgm_gim_6_001:
 	.byte		        Bn1 , v116
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gim_6_B1
+	 .int	bgm_gim_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1677,15 +1677,15 @@ bgm_gim_7_001:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_gim_7_000
+	 .int	bgm_gim_7_000
 	.byte	PATT
-	 .word	bgm_gim_7_001
+	 .int	bgm_gim_7_001
 	.byte	PATT
-	 .word	bgm_gim_7_000
+	 .int	bgm_gim_7_000
 	.byte	PATT
-	 .word	bgm_gim_7_001
+	 .int	bgm_gim_7_001
 	.byte	PATT
-	 .word	bgm_gim_7_000
+	 .int	bgm_gim_7_000
 	.byte		N48   , Bn2 , v092
 	.byte	W96
 	.byte	W96
@@ -1859,7 +1859,7 @@ bgm_gim_7_001:
 	.byte		        En1 , v104
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_gim_7_B1
+	 .int	bgm_gim_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1871,14 +1871,14 @@ bgm_gim:
 	.byte	bgm_gim_pri	@ Priority
 	.byte	bgm_gim_rev	@ Reverb.
 
-	.word	bgm_gim_grp
+	.int	bgm_gim_grp
 
-	.word	bgm_gim_1
-	.word	bgm_gim_2
-	.word	bgm_gim_3
-	.word	bgm_gim_4
-	.word	bgm_gim_5
-	.word	bgm_gim_6
-	.word	bgm_gim_7
+	.int	bgm_gim_1
+	.int	bgm_gim_2
+	.int	bgm_gim_3
+	.int	bgm_gim_4
+	.int	bgm_gim_5
+	.int	bgm_gim_6
+	.int	bgm_gim_7
 
 	.end

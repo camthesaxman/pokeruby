@@ -95,9 +95,9 @@ se_w327:
 	.byte	se_w327_pri	@ Priority
 	.byte	se_w327_rev	@ Reverb.
 
-	.word	se_w327_grp
+	.int	se_w327_grp
 
-	.word	se_w327_1
-	.word	se_w327_2
+	.int	se_w327_1
+	.int	se_w327_2
 
 	.end

@@ -18,8 +18,8 @@
 
 	.macro accuracycheck address, param1
 	.byte 0x01
-	.4byte \address
-	.2byte \param1
+	.int \address
+	.short \param1
 	.endm
 
 	.macro attackstring
@@ -82,27 +82,27 @@
 
 	.macro printstring string
 	.byte 0x10
-	.2byte \string
+	.short \string
 	.endm
 
 	.macro printselectionstring string
 	.byte 0x11
-	.2byte \string
+	.short \string
 	.endm
 
 	.macro waitmessage delay
 	.byte 0x12
-	.2byte \delay
+	.short \delay
 	.endm
 
 	.macro printfromtable table
 	.byte 0x13
-	.4byte \table
+	.int \table
 	.endm
 
 	.macro printselectionstringfromtable table
 	.byte 0x14
-	.4byte \table
+	.int \table
 	.endm
 
 	.macro seteffectwithchance
@@ -126,7 +126,7 @@
 	.byte 0x19
 	.byte \bank
 	.byte \param2
-	.4byte \param3
+	.int \param3
 	.endm
 
 	.macro dofaintanimation param1
@@ -142,29 +142,29 @@
 	.macro jumpifstatus bank, status, address
 	.byte 0x1c
 	.byte \bank
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro jumpifstatus2 bank, status, address
 	.byte 0x1d
 	.byte \bank
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro jumpifability bank, ability, address
 	.byte 0x1e
 	.byte \bank
 	.byte \ability
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifsideaffecting bank, status, address
 	.byte 0x1f
 	.byte \bank
-	.2byte \status
-	.4byte \address
+	.short \status
+	.int \address
 	.endm
 
 	.macro jumpifstat bank, flag, quantity, statid, address
@@ -173,22 +173,22 @@
 	.byte \flag
 	.byte \quantity
 	.byte \statid
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifstatus3condition bank, mask, status, address
 	.byte 0x21
 	.byte \bank
-	.4byte \mask
+	.int \mask
 	.byte \status
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpiftype bank, type, address
 	.byte 0x22
 	.byte \bank
 	.byte \type
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro getexp bank
@@ -198,7 +198,7 @@
 
 	.macro atk24 address
 	.byte 0x24
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro movevaluescleanup
@@ -212,126 +212,126 @@
 
 	.macro decrementmultihit address
 	.byte 0x27
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro goto address
 	.byte 0x28
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifbyte ifflag, checkaddr, compare, address
 	.byte 0x29
 	.byte \ifflag
-	.4byte \checkaddr
+	.int \checkaddr
 	.byte \compare
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifhalfword ifflag, checkaddr, compare, address
 	.byte 0x2a
 	.byte \ifflag
-	.4byte \checkaddr
-	.2byte \compare
-	.4byte \address
+	.int \checkaddr
+	.short \compare
+	.int \address
 	.endm
 
 	.macro jumpifword ifflag, checkaddr, compare, address
 	.byte 0x2b
 	.byte \ifflag
-	.4byte \checkaddr
-	.4byte \compare
-	.4byte \address
+	.int \checkaddr
+	.int \compare
+	.int \address
 	.endm
 
 	.macro jumpifarrayequal mem1, mem2, size, address
 	.byte 0x2c
-	.4byte \mem1
-	.4byte \mem2
+	.int \mem1
+	.int \mem2
 	.byte \size
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifarraynotequal mem1, mem2, size, address
 	.byte 0x2d
-	.4byte \mem1
-	.4byte \mem2
+	.int \mem1
+	.int \mem2
 	.byte \size
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setbyte pointer, value
 	.byte 0x2e
-	.4byte \pointer
+	.int \pointer
 	.byte \value
 	.endm
 
 	.macro addbyte pointer, value
 	.byte 0x2f
-	.4byte \pointer
+	.int \pointer
 	.byte \value
 	.endm
 
 	.macro subbyte pointer, value
 	.byte 0x30
-	.4byte \pointer
+	.int \pointer
 	.byte \value
 	.endm
 
 	.macro copyarray destination, source, size
 	.byte 0x31
-	.4byte \destination
-	.4byte \source
+	.int \destination
+	.int \source
 	.byte \size
 	.endm
 
 	.macro copyarraywithindex param1, param2, param3, byte
 	.byte 0x32
-	.4byte \param1
-	.4byte \param2
-	.4byte \param3
+	.int \param1
+	.int \param2
+	.int \param3
 	.byte \byte
 	.endm
 
 	.macro orbyte pointer, value
 	.byte 0x33
-	.4byte \pointer
+	.int \pointer
 	.byte \value
 	.endm
 
 	.macro orhalfword pointer, value
 	.byte 0x34
-	.4byte \pointer
-	.2byte \value
+	.int \pointer
+	.short \value
 	.endm
 
 	.macro orword pointer, value
 	.byte 0x35
-	.4byte \pointer
-	.4byte \value
+	.int \pointer
+	.int \value
 	.endm
 
 	.macro bicbyte pointer, value
 	.byte 0x36
-	.4byte \pointer
+	.int \pointer
 	.byte \value
 	.endm
 
 	.macro bichalfword pointer, value
 	.byte 0x37
-	.4byte \pointer
-	.2byte \value
+	.int \pointer
+	.short \value
 	.endm
 
 	.macro bicword pointer, value
 	.byte 0x38
-	.4byte \pointer
-	.4byte \value
+	.int \pointer
+	.int \value
 	.endm
 
 	.macro pause pause_duration
 	.byte 0x39
-	.2byte \pause_duration
+	.short \pause_duration
 	.endm
 
 	.macro waitstate
@@ -361,25 +361,25 @@
 
 	.macro jumpifaffectedbyprotect address
 	.byte 0x40
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro call address
 	.byte 0x41
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpiftype2 bank, type, address
 	.byte 0x42
 	.byte \bank
 	.byte \type
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifabilitypresent ability, address
 	.byte 0x43
 	.byte \ability
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro endselectionscript
@@ -390,14 +390,14 @@
 	.byte 0x45
 	.byte \bank
 	.byte \animation
-	.4byte \var_address
+	.int \var_address
 	.endm
 
 	.macro playanimation2 bank, address, int
 	.byte 0x46
 	.byte \bank
-	.4byte \address
-	.4byte \int
+	.int \address
+	.int \int
 	.endm
 
 	.macro setgraphicalstatchangevalues
@@ -444,13 +444,13 @@
 	.macro jumpifcantswitch bank, address
 	.byte 0x4f
 	.byte \bank
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro openpartyscreen bank, address
 	.byte 0x50
 	.byte \bank
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro switchhandleorder bank, param2
@@ -471,12 +471,12 @@
 
 	.macro playse word
 	.byte 0x54
-	.2byte \word
+	.short \word
 	.endm
 
 	.macro fanfare int
 	.byte 0x55
-	.2byte \int
+	.short \int
 	.endm
 
 	.macro playfaintcry bank_or_side
@@ -495,19 +495,19 @@
 
 	.macro handlelearnnewmove param1, param2, bank_maybe
 	.byte 0x59
-	.4byte \param1
-	.4byte \param2
+	.int \param1
+	.int \param2
 	.byte \bank_maybe
 	.endm
 
 	.macro yesnoboxlearnmove address
 	.byte 0x5a
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro yesnoboxstoplearningmove address
 	.byte 0x5b
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro hitanimation bank
@@ -556,14 +556,14 @@
 	.macro status2animation bank_or_side, address
 	.byte 0x65
 	.byte \bank_or_side
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro chosenstatusanimation bank_or_side, bank_or_side2, address
 	.byte 0x66
 	.byte \bank_or_side
 	.byte \bank_or_side2
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro yesnobox
@@ -615,7 +615,7 @@
 
 	.macro jumpifplayerran address
 	.byte 0x72
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro hpthresholds bank
@@ -652,12 +652,12 @@
 
 	.macro jumpifnexttargetvalid address
 	.byte 0x7a
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro tryhealhalfhealth address, byte
 	.byte 0x7b
-	.4byte \address
+	.int \address
 	.byte \byte
 	.endm
 
@@ -684,12 +684,12 @@
 
 	.macro trysetrest address
 	.byte 0x81
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifnotfirstturn address
 	.byte 0x82
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro nop
@@ -698,7 +698,7 @@
 
 	.macro jumpifcantmakeasleep address
 	.byte 0x84
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro stockpile
@@ -707,12 +707,12 @@
 
 	.macro stockpiletobasedamage address
 	.byte 0x86
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro stockpiletohpheal address
 	.byte 0x87
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro negativedamage
@@ -722,7 +722,7 @@
 	.macro statbuffchange target, address
 	.byte 0x89
 	.byte \target
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro normalisebuffs
@@ -748,12 +748,12 @@
 
 	.macro forcerandomswitch address
 	.byte 0x8f
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro tryconversiontypechange address
 	.byte 0x90
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro givepaydaymoney
@@ -766,7 +766,7 @@
 
 	.macro tryKO address
 	.byte 0x93
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro damagetohalftargethp
@@ -783,7 +783,7 @@
 
 	.macro tryinfatuating address
 	.byte 0x97
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro updatestatusicon byte
@@ -809,7 +809,7 @@
 
 	.macro mimicattackcopy address
 	.byte 0x9d
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro metronome
@@ -826,32 +826,32 @@
 
 	.macro counterdamagecalculator address
 	.byte 0xa1
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro mirrorcoatdamagecalculator address
 	.byte 0xa2
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro disablelastusedattack address
 	.byte 0xa3
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetencore address
 	.byte 0xa4
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro painsplitdmgcalc address
 	.byte 0xa5
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro settypetorandomresistance address
 	.byte 0xa6
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setalwayshitflag
@@ -860,12 +860,12 @@
 
 	.macro copymovepermanently address
 	.byte 0xa8
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trychoosesleeptalkmove address
 	.byte 0xa9
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setdestinybond
@@ -882,7 +882,7 @@
 
 	.macro tryspiteppreduce address
 	.byte 0xad
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro healpartystatus
@@ -891,12 +891,12 @@
 
 	.macro cursetarget address
 	.byte 0xaf
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetspikes address
 	.byte 0xb0
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setforesight
@@ -905,7 +905,7 @@
 
 	.macro trysetperishsong address
 	.byte 0xb2
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro rolloutdamagecalculation
@@ -915,7 +915,7 @@
 	.macro jumpifconfusedandstatmaxed bank, address
 	.byte 0xb4
 	.byte \bank
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro furycuttercalc
@@ -940,7 +940,7 @@
 
 	.macro jumpifnopursuitswitchdmg address
 	.byte 0xba
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setsunny
@@ -949,12 +949,12 @@
 
 	.macro maxattackhalvehp address
 	.byte 0xbc
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro copyfoestats address
 	.byte 0xbd
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro rapidspinfree
@@ -967,7 +967,7 @@
 
 	.macro recoverbasedonsunlight address
 	.byte 0xc0
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro hiddenpowercalc
@@ -980,13 +980,13 @@
 
 	.macro trysetfutureattack address
 	.byte 0xc3
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trydobeatup address1, address2
 	.byte 0xc4
-	.4byte \address1
-	.4byte \address2
+	.int \address1
+	.int \address2
 	.endm
 
 	.macro setsemiinvulnerablebit
@@ -1007,7 +1007,7 @@
 
 	.macro jumpifattackandspecialattackcannotfall address
 	.byte 0xc9
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setforcedtarget
@@ -1024,48 +1024,48 @@
 
 	.macro cureifburnedparalysedorpoisoned address
 	.byte 0xcd
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro settorment address
 	.byte 0xce
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jumpifnodamage address
 	.byte 0xcf
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro settaunt address
 	.byte 0xd0
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysethelpinghand address
 	.byte 0xd1
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro tryswapitems address
 	.byte 0xd2
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trycopyability address
 	.byte 0xd3
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trywish byte, address
 	.byte 0xd4
 	.byte \byte
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetroots address
 	.byte 0xd5
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro doubledamagedealtifdamaged
@@ -1074,12 +1074,12 @@
 
 	.macro setyawn address
 	.byte 0xd7
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setdamagetohealthdifference address
 	.byte 0xd8
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro scaledamagebyhealthratio
@@ -1088,17 +1088,17 @@
 
 	.macro tryswapabilities address
 	.byte 0xda
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro tryimprision address
 	.byte 0xdb
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetgrudge address
 	.byte 0xdc
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro weightdamagecalculation
@@ -1107,22 +1107,22 @@
 
 	.macro assistattackselect address
 	.byte 0xde
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetmagiccoat address
 	.byte 0xdf
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trysetsnatch address
 	.byte 0xe0
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro trygetintimidatetarget address
 	.byte 0xe1
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro switchoutabilities bank
@@ -1133,7 +1133,7 @@
 	.macro jumpifhasnohp bank, address
 	.byte 0xe3
 	.byte \bank
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro getsecretpowereffect
@@ -1154,7 +1154,7 @@
 
 	.macro settypebasedhalvers address
 	.byte 0xe8
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro setweatherballtype
@@ -1163,17 +1163,17 @@
 
 	.macro tryrecycleitem address
 	.byte 0xea
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro settypetoterrain address
 	.byte 0xeb
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro pursuitrelated address
 	.byte 0xec
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro snatchsetbanks
@@ -1194,7 +1194,7 @@
 
 	.macro trysetcaughtmondexflags address
 	.byte 0xf1
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro displaydexinfo
@@ -1203,7 +1203,7 @@
 
 	.macro trygivecaughtmonnick address
 	.byte 0xf3
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro subattackerhpbydmg

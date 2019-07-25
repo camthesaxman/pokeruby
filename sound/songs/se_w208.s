@@ -121,9 +121,9 @@ se_w208:
 	.byte	se_w208_pri	@ Priority
 	.byte	se_w208_rev	@ Reverb.
 
-	.word	se_w208_grp
+	.int	se_w208_grp
 
-	.word	se_w208_1
-	.word	se_w208_2
+	.int	se_w208_1
+	.int	se_w208_2
 
 	.end

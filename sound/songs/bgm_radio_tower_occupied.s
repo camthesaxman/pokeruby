@@ -90,9 +90,9 @@ bgm_radio_tower_occupied_1_000:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_000
+	 .int	bgm_radio_tower_occupied_1_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_000
+	 .int	bgm_radio_tower_occupied_1_000
 	.byte	W96
 bgm_radio_tower_occupied_1_001:
 	.byte	W21
@@ -153,9 +153,9 @@ bgm_radio_tower_occupied_1_002:
 	.byte		        Fs4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_001
+	 .int	bgm_radio_tower_occupied_1_001
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_002
+	 .int	bgm_radio_tower_occupied_1_002
 	.byte		N06   , As3 , v112
 	.byte	W36
 	.byte		N03   , Fs3 
@@ -202,9 +202,9 @@ bgm_radio_tower_occupied_1_003:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_003
+	 .int	bgm_radio_tower_occupied_1_003
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_1_003
+	 .int	bgm_radio_tower_occupied_1_003
 	.byte	W12
 	.byte		N06   , Fn3 , v112
 	.byte	W48
@@ -289,7 +289,7 @@ bgm_radio_tower_occupied_1_003:
 	.byte		        Dn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_radio_tower_occupied_1_B1
+	 .int	bgm_radio_tower_occupied_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -360,9 +360,9 @@ bgm_radio_tower_occupied_2_000:
 	.byte	W36
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_2_000
+	 .int	bgm_radio_tower_occupied_2_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_2_000
+	 .int	bgm_radio_tower_occupied_2_000
 	.byte		N06   , Gs3 , v112
 	.byte	W06
 	.byte		        Fn3 
@@ -438,9 +438,9 @@ bgm_radio_tower_occupied_2_002:
 	.byte		        Dn5 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_2_001
+	 .int	bgm_radio_tower_occupied_2_001
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_2_002
+	 .int	bgm_radio_tower_occupied_2_002
 	.byte		N06   , Ds4 , v112
 	.byte	W12
 	.byte		        Ds3 
@@ -591,7 +591,7 @@ bgm_radio_tower_occupied_2_002:
 	.byte		        Dn5 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_radio_tower_occupied_2_B1
+	 .int	bgm_radio_tower_occupied_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -650,9 +650,9 @@ bgm_radio_tower_occupied_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_000
+	 .int	bgm_radio_tower_occupied_3_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_001
+	 .int	bgm_radio_tower_occupied_3_001
 bgm_radio_tower_occupied_3_002:
 	.byte		N06   , Gs1 , v112
 	.byte	W12
@@ -694,7 +694,7 @@ bgm_radio_tower_occupied_3_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_002
+	 .int	bgm_radio_tower_occupied_3_002
 	.byte		N06   , Gs1 , v112
 	.byte	W12
 	.byte		        Fn2 
@@ -712,19 +712,19 @@ bgm_radio_tower_occupied_3_003:
 	.byte		        Gs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_000
+	 .int	bgm_radio_tower_occupied_3_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_001
+	 .int	bgm_radio_tower_occupied_3_001
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_000
+	 .int	bgm_radio_tower_occupied_3_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_001
+	 .int	bgm_radio_tower_occupied_3_001
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_000
+	 .int	bgm_radio_tower_occupied_3_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_001
+	 .int	bgm_radio_tower_occupied_3_001
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_000
+	 .int	bgm_radio_tower_occupied_3_000
 	.byte		N06   , Cn2 , v112
 	.byte	W12
 	.byte		N06   
@@ -746,13 +746,13 @@ bgm_radio_tower_occupied_3_003:
 	.byte		        Fn2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_002
+	 .int	bgm_radio_tower_occupied_3_002
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_003
+	 .int	bgm_radio_tower_occupied_3_003
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_002
+	 .int	bgm_radio_tower_occupied_3_002
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_3_003
+	 .int	bgm_radio_tower_occupied_3_003
 	.byte		N06   , Cn2 , v112
 	.byte	W12
 	.byte		        Cn3 
@@ -826,7 +826,7 @@ bgm_radio_tower_occupied_3_003:
 	.byte		N06   , Gs3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_radio_tower_occupied_3_B1
+	 .int	bgm_radio_tower_occupied_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -851,40 +851,40 @@ bgm_radio_tower_occupied_4_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	W12
 	.byte		N12   , Gn5 , v032
 	.byte	W24
@@ -893,13 +893,13 @@ bgm_radio_tower_occupied_4_000:
 	.byte		        Gn5 , v036
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_4_000
+	 .int	bgm_radio_tower_occupied_4_000
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_radio_tower_occupied_4_B1
+	 .int	bgm_radio_tower_occupied_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -936,17 +936,17 @@ bgm_radio_tower_occupied_5_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte		N48   , An2 , v112
 	.byte	W48
 	.byte		N12   , En1 
@@ -962,27 +962,27 @@ bgm_radio_tower_occupied_5_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte		N12   , Cn1 , v112
 	.byte	W24
 	.byte		        En1 
@@ -996,9 +996,9 @@ bgm_radio_tower_occupied_5_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte	PATT
-	 .word	bgm_radio_tower_occupied_5_000
+	 .int	bgm_radio_tower_occupied_5_000
 	.byte		N48   , An2 , v112
 	.byte	W48
 	.byte		N12   , En1 
@@ -1026,7 +1026,7 @@ bgm_radio_tower_occupied_5_000:
 	.byte		N06   
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_radio_tower_occupied_5_B1
+	 .int	bgm_radio_tower_occupied_5_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1038,12 +1038,12 @@ bgm_radio_tower_occupied:
 	.byte	bgm_radio_tower_occupied_pri	@ Priority
 	.byte	bgm_radio_tower_occupied_rev	@ Reverb.
 
-	.word	bgm_radio_tower_occupied_grp
+	.int	bgm_radio_tower_occupied_grp
 
-	.word	bgm_radio_tower_occupied_1
-	.word	bgm_radio_tower_occupied_2
-	.word	bgm_radio_tower_occupied_3
-	.word	bgm_radio_tower_occupied_4
-	.word	bgm_radio_tower_occupied_5
+	.int	bgm_radio_tower_occupied_1
+	.int	bgm_radio_tower_occupied_2
+	.int	bgm_radio_tower_occupied_3
+	.int	bgm_radio_tower_occupied_4
+	.int	bgm_radio_tower_occupied_5
 
 	.end

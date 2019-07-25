@@ -56,9 +56,9 @@ bgm_con_fan_1_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_con_fan_1_000
+	 .int	bgm_con_fan_1_000
 	.byte	PATT
-	 .word	bgm_con_fan_1_000
+	 .int	bgm_con_fan_1_000
 	.byte		N02   , Gn5 , v076
 	.byte	W08
 	.byte		        Gn5 , v036
@@ -84,7 +84,7 @@ bgm_con_fan_1_000:
 	.byte		        Gn5 , v056
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_1_B1
+	 .int	bgm_con_fan_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -297,7 +297,7 @@ bgm_con_fan_2_B1:
 	.byte		N04   , As5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_2_B1
+	 .int	bgm_con_fan_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -385,7 +385,7 @@ bgm_con_fan_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_con_fan_3_B1
+	 .int	bgm_con_fan_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -595,7 +595,7 @@ bgm_con_fan_4_B1:
 	.byte		        En5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_4_B1
+	 .int	bgm_con_fan_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -748,7 +748,7 @@ bgm_con_fan_5_B1:
 	.byte		N04   , Cn2 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_5_B1
+	 .int	bgm_con_fan_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -815,7 +815,7 @@ bgm_con_fan_6_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_con_fan_6_000
+	 .int	bgm_con_fan_6_000
 	.byte		N04   , Cn1 , v096
 	.byte	W08
 	.byte		        En1 , v080
@@ -839,7 +839,7 @@ bgm_con_fan_6_000:
 	.byte		        En1 , v096
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_6_B1
+	 .int	bgm_con_fan_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1021,7 +1021,7 @@ bgm_con_fan_7_B1:
 	.byte		N04   , Cn5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_7_B1
+	 .int	bgm_con_fan_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1189,7 +1189,7 @@ bgm_con_fan_8_B1:
 	.byte		N04   , En5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_con_fan_8_B1
+	 .int	bgm_con_fan_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1201,15 +1201,15 @@ bgm_con_fan:
 	.byte	bgm_con_fan_pri	@ Priority
 	.byte	bgm_con_fan_rev	@ Reverb.
 
-	.word	bgm_con_fan_grp
+	.int	bgm_con_fan_grp
 
-	.word	bgm_con_fan_1
-	.word	bgm_con_fan_2
-	.word	bgm_con_fan_3
-	.word	bgm_con_fan_4
-	.word	bgm_con_fan_5
-	.word	bgm_con_fan_6
-	.word	bgm_con_fan_7
-	.word	bgm_con_fan_8
+	.int	bgm_con_fan_1
+	.int	bgm_con_fan_2
+	.int	bgm_con_fan_3
+	.int	bgm_con_fan_4
+	.int	bgm_con_fan_5
+	.int	bgm_con_fan_6
+	.int	bgm_con_fan_7
+	.int	bgm_con_fan_8
 
 	.end

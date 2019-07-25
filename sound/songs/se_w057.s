@@ -102,8 +102,8 @@ se_w057:
 	.byte	se_w057_pri	@ Priority
 	.byte	se_w057_rev	@ Reverb.
 
-	.word	se_w057_grp
+	.int	se_w057_grp
 
-	.word	se_w057_1
+	.int	se_w057_1
 
 	.end

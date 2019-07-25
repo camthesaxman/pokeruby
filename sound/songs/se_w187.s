@@ -65,8 +65,8 @@ se_w187:
 	.byte	se_w187_pri	@ Priority
 	.byte	se_w187_rev	@ Reverb.
 
-	.word	se_w187_grp
+	.int	se_w187_grp
 
-	.word	se_w187_1
+	.int	se_w187_1
 
 	.end

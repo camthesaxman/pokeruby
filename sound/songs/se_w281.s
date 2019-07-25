@@ -119,9 +119,9 @@ se_w281:
 	.byte	se_w281_pri	@ Priority
 	.byte	se_w281_rev	@ Reverb.
 
-	.word	se_w281_grp
+	.int	se_w281_grp
 
-	.word	se_w281_1
-	.word	se_w281_2
+	.int	se_w281_1
+	.int	se_w281_2
 
 	.end

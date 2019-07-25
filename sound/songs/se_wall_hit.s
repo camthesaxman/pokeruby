@@ -34,8 +34,8 @@ se_wall_hit:
 	.byte	se_wall_hit_pri	@ Priority
 	.byte	se_wall_hit_rev	@ Reverb.
 
-	.word	se_wall_hit_grp
+	.int	se_wall_hit_grp
 
-	.word	se_wall_hit_1
+	.int	se_wall_hit_1
 
 	.end

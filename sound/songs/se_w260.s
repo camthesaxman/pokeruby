@@ -60,8 +60,8 @@ se_w260:
 	.byte	se_w260_pri	@ Priority
 	.byte	se_w260_rev	@ Reverb.
 
-	.word	se_w260_grp
+	.int	se_w260_grp
 
-	.word	se_w260_1
+	.int	se_w260_1
 
 	.end

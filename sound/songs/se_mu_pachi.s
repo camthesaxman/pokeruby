@@ -40,8 +40,8 @@ se_mu_pachi:
 	.byte	se_mu_pachi_pri	@ Priority
 	.byte	se_mu_pachi_rev	@ Reverb.
 
-	.word	se_mu_pachi_grp
+	.int	se_mu_pachi_grp
 
-	.word	se_mu_pachi_1
+	.int	se_mu_pachi_1
 
 	.end

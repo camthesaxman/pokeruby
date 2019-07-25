@@ -138,9 +138,9 @@ se_w171:
 	.byte	se_w171_pri	@ Priority
 	.byte	se_w171_rev	@ Reverb.
 
-	.word	se_w171_grp
+	.int	se_w171_grp
 
-	.word	se_w171_1
-	.word	se_w171_2
+	.int	se_w171_1
+	.int	se_w171_2
 
 	.end

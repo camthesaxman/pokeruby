@@ -113,9 +113,9 @@ se_w298:
 	.byte	se_w298_pri	@ Priority
 	.byte	se_w298_rev	@ Reverb.
 
-	.word	se_w298_grp
+	.int	se_w298_grp
 
-	.word	se_w298_1
-	.word	se_w298_2
+	.int	se_w298_1
+	.int	se_w298_2
 
 	.end

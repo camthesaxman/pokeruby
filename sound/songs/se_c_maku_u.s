@@ -87,9 +87,9 @@ se_c_maku_u:
 	.byte	se_c_maku_u_pri	@ Priority
 	.byte	se_c_maku_u_rev	@ Reverb.
 
-	.word	se_c_maku_u_grp
+	.int	se_c_maku_u_grp
 
-	.word	se_c_maku_u_1
-	.word	se_c_maku_u_2
+	.int	se_c_maku_u_1
+	.int	se_c_maku_u_2
 
 	.end

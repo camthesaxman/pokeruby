@@ -33,8 +33,8 @@ song_256:
 	.byte	song_256_pri	@ Priority
 	.byte	song_256_rev	@ Reverb.
 
-	.word	song_256_grp
+	.int	song_256_grp
 
-	.word	song_256_1
+	.int	song_256_1
 
 	.end

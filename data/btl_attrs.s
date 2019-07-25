@@ -10,47 +10,47 @@
 
 	.align 2
 gUnknown_081F9674:: @ 81F9674
-	.4byte REG_BG3HOFS
-	.4byte ((DMA_ENABLE | DMA_START_HBLANK | DMA_REPEAT | DMA_DEST_RELOAD) << 16) | 1
-	.4byte 1
+	.int REG_BG3HOFS
+	.int ((DMA_ENABLE | DMA_START_HBLANK | DMA_REPEAT | DMA_DEST_RELOAD) << 16) | 1
+	.int 1
 
 	.align 2
 gUnknown_081F9680:: @ 81F9680
-	.4byte gUnknown_030041D0
-	.2byte 0x20
+	.int gUnknown_030041D0
+	.short 0x20
 	.byte 0x13
 	.byte 0x10
-	.4byte BG_VRAM + 0xE104
+	.int BG_VRAM + 0xE104
 
-	.4byte gUnknown_03004250
-	.2byte 0x40
+	.int gUnknown_03004250
+	.short 0x40
 	.byte 0x13
 	.byte 0x10
-	.4byte BG_VRAM + 0xF104
+	.int BG_VRAM + 0xF104
 
-	.4byte gUnknown_030041D0
-	.2byte 0x60
+	.int gUnknown_030041D0
+	.short 0x60
 	.byte 0x13
 	.byte 0x30
-	.4byte BG_VRAM + 0xE204
+	.int BG_VRAM + 0xE204
 
-	.4byte gUnknown_03004250
-	.2byte 0x80
+	.int gUnknown_03004250
+	.short 0x80
 	.byte 0x13
 	.byte 0x30
-	.4byte BG_VRAM + 0xF204
+	.int BG_VRAM + 0xF204
 
-	.4byte gUnknown_030041D0
-	.2byte 0x20
+	.int gUnknown_030041D0
+	.short 0x20
 	.byte 0x13
 	.byte 0x18
-	.4byte BG_VRAM + 0xE1C4
+	.int BG_VRAM + 0xE1C4
 
-	.4byte gUnknown_03004250
-	.2byte 0x40
+	.int gUnknown_03004250
+	.short 0x40
 	.byte 0x13
 	.byte 0x18
-	.4byte BG_VRAM + 0xF1C4
+	.int BG_VRAM + 0xF1C4
 
 gUnknown_081F96C8:: @ 81F96C8
 	.string "ヌケニン$" @ "Nukenin" (Shedinja)
@@ -176,15 +176,15 @@ gUnknown_Debug_821F7F3::
 
 	.align 2
 gOamData_81F96E8:: @ 81F96E8
-	.2byte 0x0100
-	.2byte 0xC000
-	.2byte 0x0800
+	.short 0x0100
+	.short 0xC000
+	.short 0x0800
 
 	.align 2
 gOamData_81F96F0:: @ 81F96F0
-	.2byte 0x0100
-	.2byte 0xC000
-	.2byte 0x2800
+	.short 0x0100
+	.short 0xC000
+	.short 0x2800
 
 	.align 2
 gSpriteAnim_81F96F8:: @ 81F96F8
@@ -193,7 +193,7 @@ gSpriteAnim_81F96F8:: @ 81F96F8
 
 	.align 2
 gSpriteAnimTable_81F9700:: @ 81F9700
-	.4byte gSpriteAnim_81F96F8
+	.int gSpriteAnim_81F96F8
 
 	.align 2
 gSpriteAffineAnim_81F9704:: @ 81F9704
@@ -203,7 +203,7 @@ gSpriteAffineAnim_81F9704:: @ 81F9704
 
 	.align 2
 gSpriteAffineAnimTable_81F971C:: @ 81F971C
-	.4byte gSpriteAffineAnim_81F9704
+	.int gSpriteAffineAnim_81F9704
 
 @ 81F9720
 	.include "data/type_effectiveness.inc"
@@ -222,32 +222,32 @@ gSpriteAffineAnimTable_81F971C:: @ 81F971C
 
 	.align 2
 gUnknown_081FA640:: @ 81FA640
-	.4byte HandleAction_UseMove
-	.4byte HandleAction_UseItem
-	.4byte HandleAction_Switch
-	.4byte HandleAction_Run
-	.4byte HandleAction_WatchesCarefully
-	.4byte HandleAction_SafariZoneBallThrow
-	.4byte HandleAction_ThrowPokeblock
-	.4byte HandleAction_GoNear
-	.4byte HandleAction_SafriZoneRun
-	.4byte HandleAction_Action9
-	.4byte sub_801B594
-	.4byte HandleAction_Action11
-	.4byte HandleAction_ActionFinished
-	.4byte HandleAction_NothingIsFainted
+	.int HandleAction_UseMove
+	.int HandleAction_UseItem
+	.int HandleAction_Switch
+	.int HandleAction_Run
+	.int HandleAction_WatchesCarefully
+	.int HandleAction_SafariZoneBallThrow
+	.int HandleAction_ThrowPokeblock
+	.int HandleAction_GoNear
+	.int HandleAction_SafriZoneRun
+	.int HandleAction_Action9
+	.int sub_801B594
+	.int HandleAction_Action11
+	.int HandleAction_ActionFinished
+	.int HandleAction_NothingIsFainted
 
 	.align 2
 gUnknown_081FA678:: @ 81FA678
-	.4byte bc_8013B1C
-	.4byte HandleEndTurn_BattleWon
-	.4byte HandleEndTurn_BattleLost
-	.4byte HandleEndTurn_BattleLost
-	.4byte HandleEndTurn_RanFromBattle
-	.4byte HandleEndTurn_FinishBattle
-	.4byte HandleEndTurn_MonFled
-	.4byte HandleEndTurn_FinishBattle
-	.4byte HandleEndTurn_FinishBattle
+	.int bc_8013B1C
+	.int HandleEndTurn_BattleWon
+	.int HandleEndTurn_BattleLost
+	.int HandleEndTurn_BattleLost
+	.int HandleEndTurn_RanFromBattle
+	.int HandleEndTurn_FinishBattle
+	.int HandleEndTurn_MonFled
+	.int HandleEndTurn_FinishBattle
+	.int HandleEndTurn_FinishBattle
 
 gStatusConditionString_PoisonJpn:: @ 81FA69C
 	.string "どく$$$$$$"
@@ -272,13 +272,13 @@ gStatusConditionString_LoveJpn:: @ 81FA6CC
 
 	.align 2
 gUnknown_081FA6D4:: @ 81FA6D4
-	.4byte gStatusConditionString_PoisonJpn, BattleText_PoisonStatus
-	.4byte gStatusConditionString_SleepJpn, BattleText_Sleep
-	.4byte gStatusConditionString_ParalysisJpn, BattleText_Paralysis
-	.4byte gStatusConditionString_BurnJpn, BattleText_Burn
-	.4byte gStatusConditionString_IceJpn, BattleText_IceStatus
-	.4byte gStatusConditionString_ConfusionJpn, BattleText_Confusion
-	.4byte gStatusConditionString_LoveJpn, BattleText_Love
+	.int gStatusConditionString_PoisonJpn, BattleText_PoisonStatus
+	.int gStatusConditionString_SleepJpn, BattleText_Sleep
+	.int gStatusConditionString_ParalysisJpn, BattleText_Paralysis
+	.int gStatusConditionString_BurnJpn, BattleText_Burn
+	.int gStatusConditionString_IceJpn, BattleText_IceStatus
+	.int gStatusConditionString_ConfusionJpn, BattleText_Confusion
+	.int gStatusConditionString_LoveJpn, BattleText_Love
 
 gUnknown_081FA70C:: @ 81FA70C
 	.byte 0, 0, 0
@@ -295,14 +295,14 @@ gUnknown_081FA71F:: @ 81FA71F
 
 	.align 1
 gSoundMovesTable:: @ 81FA724
-	.2byte   0x2D
-	.2byte   0x2E
-	.2byte   0x2F
-	.2byte   0x30
-	.2byte   0x67
-	.2byte   0xAD
-	.2byte   0xFD
-	.2byte  0x13F
-	.2byte  0x140
-	.2byte  0x130
-	.2byte 0xFFFF
+	.short   0x2D
+	.short   0x2E
+	.short   0x2F
+	.short   0x30
+	.short   0x67
+	.short   0xAD
+	.short   0xFD
+	.short  0x13F
+	.short  0x140
+	.short  0x130
+	.short 0xFFFF

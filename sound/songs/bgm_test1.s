@@ -283,7 +283,7 @@ bgm_test1_1_B1:
 	.byte		        Fs4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_test1_1_B1
+	 .int	bgm_test1_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -554,7 +554,7 @@ bgm_test1_2_B1:
 	.byte		        Fs4 
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_test1_2_B1
+	 .int	bgm_test1_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -776,7 +776,7 @@ bgm_test1_3_B1:
 	.byte		N18   , Gs4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_test1_3_B1
+	 .int	bgm_test1_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -812,7 +812,7 @@ bgm_test1_4_000:
 	.byte	W78
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_4_000
+	 .int	bgm_test1_4_000
 bgm_test1_4_001:
 	.byte		N06   , An3 , v112
 	.byte	W06
@@ -834,13 +834,13 @@ bgm_test1_4_002:
 	.byte	W78
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_4_000
+	 .int	bgm_test1_4_000
 	.byte	PATT
-	 .word	bgm_test1_4_000
+	 .int	bgm_test1_4_000
 	.byte	PATT
-	 .word	bgm_test1_4_001
+	 .int	bgm_test1_4_001
 	.byte	PATT
-	 .word	bgm_test1_4_002
+	 .int	bgm_test1_4_002
 	.byte		N03   , Dn4 , v112
 	.byte	W06
 	.byte		        As3 
@@ -924,7 +924,7 @@ bgm_test1_4_002:
 	.byte	W48
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_test1_4_B1
+	 .int	bgm_test1_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -960,7 +960,7 @@ bgm_test1_5_000:
 	.byte	W78
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_5_000
+	 .int	bgm_test1_5_000
 bgm_test1_5_001:
 	.byte		N06   , Fn4 , v112
 	.byte	W06
@@ -972,15 +972,15 @@ bgm_test1_5_001:
 	.byte	W78
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_5_000
+	 .int	bgm_test1_5_000
 	.byte	PATT
-	 .word	bgm_test1_5_000
+	 .int	bgm_test1_5_000
 	.byte	PATT
-	 .word	bgm_test1_5_000
+	 .int	bgm_test1_5_000
 	.byte	PATT
-	 .word	bgm_test1_5_001
+	 .int	bgm_test1_5_001
 	.byte	PATT
-	 .word	bgm_test1_5_000
+	 .int	bgm_test1_5_000
 	.byte		N03   , As4 , v112
 	.byte	W06
 	.byte		        Fn4 
@@ -1064,7 +1064,7 @@ bgm_test1_5_001:
 	.byte	W48
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_test1_5_B1
+	 .int	bgm_test1_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1275,7 +1275,7 @@ bgm_test1_6_000:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_test1_6_000
+	 .int	bgm_test1_6_000
 	.byte		N06   , En1 , v112
 	.byte	W36
 	.byte		N03   
@@ -1411,7 +1411,7 @@ bgm_test1_6_001:
 	.byte		        En1 , v088
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_test1_6_001
+	 .int	bgm_test1_6_001
 bgm_test1_6_002:
 	.byte		N06   , Cn1 , v112
 	.byte	W12
@@ -1435,7 +1435,7 @@ bgm_test1_6_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_6_001
+	 .int	bgm_test1_6_001
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		N03   
@@ -1463,9 +1463,9 @@ bgm_test1_6_002:
 	.byte		        En1 , v092
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_test1_6_001
+	 .int	bgm_test1_6_001
 	.byte	PATT
-	 .word	bgm_test1_6_002
+	 .int	bgm_test1_6_002
 bgm_test1_6_003:
 	.byte		N06   , Cn1 , v112
 	.byte	W18
@@ -1489,9 +1489,9 @@ bgm_test1_6_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_test1_6_003
+	 .int	bgm_test1_6_003
 	.byte	PATT
-	 .word	bgm_test1_6_003
+	 .int	bgm_test1_6_003
 	.byte		N06   , Dn1 , v112
 	.byte	W06
 	.byte		        Dn1 , v080
@@ -1517,7 +1517,7 @@ bgm_test1_6_003:
 	.byte		        Cn1 , v096
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_test1_6_B1
+	 .int	bgm_test1_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1740,7 +1740,7 @@ bgm_test1_7_B1:
 	.byte		N18   , Gs4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_test1_7_B1
+	 .int	bgm_test1_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1752,14 +1752,14 @@ bgm_test1:
 	.byte	bgm_test1_pri	@ Priority
 	.byte	bgm_test1_rev	@ Reverb.
 
-	.word	bgm_test1_grp
+	.int	bgm_test1_grp
 
-	.word	bgm_test1_1
-	.word	bgm_test1_2
-	.word	bgm_test1_3
-	.word	bgm_test1_4
-	.word	bgm_test1_5
-	.word	bgm_test1_6
-	.word	bgm_test1_7
+	.int	bgm_test1_1
+	.int	bgm_test1_2
+	.int	bgm_test1_3
+	.int	bgm_test1_4
+	.int	bgm_test1_5
+	.int	bgm_test1_6
+	.int	bgm_test1_7
 
 	.end

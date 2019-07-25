@@ -117,11 +117,11 @@ se_jyuni:
 	.byte	se_jyuni_pri	@ Priority
 	.byte	se_jyuni_rev	@ Reverb.
 
-	.word	se_jyuni_grp
+	.int	se_jyuni_grp
 
-	.word	se_jyuni_1
-	.word	se_jyuni_2
-	.word	se_jyuni_3
-	.word	se_jyuni_4
+	.int	se_jyuni_1
+	.int	se_jyuni_2
+	.int	se_jyuni_3
+	.int	se_jyuni_4
 
 	.end

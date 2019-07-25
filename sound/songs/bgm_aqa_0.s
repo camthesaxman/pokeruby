@@ -42,42 +42,42 @@ bgm_aqa_0_1_000:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 bgm_aqa_0_1_B1:
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	PATT
-	 .word	bgm_aqa_0_1_000
+	 .int	bgm_aqa_0_1_000
 	.byte	GOTO
-	 .word	bgm_aqa_0_1_B1
+	 .int	bgm_aqa_0_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -118,39 +118,39 @@ bgm_aqa_0_2_000:
 	.byte	W12
 bgm_aqa_0_2_B1:
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	PATT
-	 .word	bgm_aqa_0_2_000
+	 .int	bgm_aqa_0_2_000
 	.byte	GOTO
-	 .word	bgm_aqa_0_2_B1
+	 .int	bgm_aqa_0_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -471,7 +471,7 @@ bgm_aqa_0_3_000:
 	.byte		        Gs0 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_aqa_0_3_000
+	 .int	bgm_aqa_0_3_000
 	.byte		N06   , As0 , v112
 	.byte	W18
 	.byte		N03   , As0 , v096
@@ -539,7 +539,7 @@ bgm_aqa_0_3_000:
 	.byte		        Ds1 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_aqa_0_3_B1
+	 .int	bgm_aqa_0_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -652,11 +652,11 @@ bgm_aqa_0_4_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_aqa_0_4_001
+	 .int	bgm_aqa_0_4_001
 	.byte	PATT
-	 .word	bgm_aqa_0_4_000
+	 .int	bgm_aqa_0_4_000
 	.byte	PATT
-	 .word	bgm_aqa_0_4_000
+	 .int	bgm_aqa_0_4_000
 	.byte		VOICE , 56
 	.byte		VOL   , 57*bgm_aqa_0_mvl/mxv
 	.byte		N03   , Fn4 , v112
@@ -907,7 +907,7 @@ bgm_aqa_0_4_001:
 	.byte		N48   , Gn4 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_aqa_0_4_B1
+	 .int	bgm_aqa_0_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1074,7 +1074,7 @@ bgm_aqa_0_5_000:
 	.byte		N12   , Gs3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_aqa_0_5_000
+	 .int	bgm_aqa_0_5_000
 	.byte		N03   , As3 , v112
 	.byte	W06
 	.byte		        Fn2 
@@ -1106,7 +1106,7 @@ bgm_aqa_0_5_000:
 	.byte		N12   , Gs3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_aqa_0_5_000
+	 .int	bgm_aqa_0_5_000
 	.byte		VOICE , 56
 	.byte		VOL   , 46*bgm_aqa_0_mvl/mxv
 	.byte		N03   , Cs3 , v112
@@ -1318,7 +1318,7 @@ bgm_aqa_0_5_000:
 	.byte		N48   , Ds4 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_aqa_0_5_B1
+	 .int	bgm_aqa_0_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1387,7 +1387,7 @@ bgm_aqa_0_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_aqa_0_6_B1
+	 .int	bgm_aqa_0_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1610,7 +1610,7 @@ bgm_aqa_0_7_000:
 	.byte		        Cn4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_aqa_0_7_000
+	 .int	bgm_aqa_0_7_000
 	.byte		PAN   , c_v-62
 	.byte		N06   , Ds4 , v112
 	.byte	W06
@@ -1740,7 +1740,7 @@ bgm_aqa_0_7_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_aqa_0_7_001
+	 .int	bgm_aqa_0_7_001
 	.byte		N03   , As3 , v112
 	.byte	W06
 	.byte		        Fn2 
@@ -1772,13 +1772,13 @@ bgm_aqa_0_7_002:
 	.byte		N12   , Gs3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_aqa_0_7_001
+	 .int	bgm_aqa_0_7_001
 	.byte	PATT
-	 .word	bgm_aqa_0_7_002
+	 .int	bgm_aqa_0_7_002
 	.byte	PATT
-	 .word	bgm_aqa_0_7_001
+	 .int	bgm_aqa_0_7_001
 	.byte	GOTO
-	 .word	bgm_aqa_0_7_B1
+	 .int	bgm_aqa_0_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2206,17 +2206,17 @@ bgm_aqa_0_8_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_aqa_0_8_001
+	 .int	bgm_aqa_0_8_001
 	.byte	PATT
-	 .word	bgm_aqa_0_8_000
+	 .int	bgm_aqa_0_8_000
 	.byte	PATT
-	 .word	bgm_aqa_0_8_000
+	 .int	bgm_aqa_0_8_000
 	.byte	PATT
-	 .word	bgm_aqa_0_8_001
+	 .int	bgm_aqa_0_8_001
 	.byte	PATT
-	 .word	bgm_aqa_0_8_001
+	 .int	bgm_aqa_0_8_001
 	.byte	GOTO
-	 .word	bgm_aqa_0_8_B1
+	 .int	bgm_aqa_0_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2289,9 +2289,9 @@ bgm_aqa_0_9_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		        Cn1 , v088
@@ -2307,11 +2307,11 @@ bgm_aqa_0_9_000:
 	.byte		        Cn1 , v112
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte		N06   , Cn1 , v112
 	.byte	W06
 	.byte		        Dn1 
@@ -2347,23 +2347,23 @@ bgm_aqa_0_9_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	PATT
-	 .word	bgm_aqa_0_9_000
+	 .int	bgm_aqa_0_9_000
 	.byte	GOTO
-	 .word	bgm_aqa_0_9_B1
+	 .int	bgm_aqa_0_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -2727,7 +2727,7 @@ bgm_aqa_0_10_B1:
 	.byte	W48
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_aqa_0_10_B1
+	 .int	bgm_aqa_0_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2739,17 +2739,17 @@ bgm_aqa_0:
 	.byte	bgm_aqa_0_pri	@ Priority
 	.byte	bgm_aqa_0_rev	@ Reverb.
 
-	.word	bgm_aqa_0_grp
+	.int	bgm_aqa_0_grp
 
-	.word	bgm_aqa_0_1
-	.word	bgm_aqa_0_2
-	.word	bgm_aqa_0_3
-	.word	bgm_aqa_0_4
-	.word	bgm_aqa_0_5
-	.word	bgm_aqa_0_6
-	.word	bgm_aqa_0_7
-	.word	bgm_aqa_0_8
-	.word	bgm_aqa_0_9
-	.word	bgm_aqa_0_10
+	.int	bgm_aqa_0_1
+	.int	bgm_aqa_0_2
+	.int	bgm_aqa_0_3
+	.int	bgm_aqa_0_4
+	.int	bgm_aqa_0_5
+	.int	bgm_aqa_0_6
+	.int	bgm_aqa_0_7
+	.int	bgm_aqa_0_8
+	.int	bgm_aqa_0_9
+	.int	bgm_aqa_0_10
 
 	.end

@@ -83,11 +83,11 @@ se_w053_1_000:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w053_1_000
+	 .int	se_w053_1_000
 	.byte	PATT
-	 .word	se_w053_1_000
+	 .int	se_w053_1_000
 	.byte	PATT
-	 .word	se_w053_1_000
+	 .int	se_w053_1_000
 	.byte		PAN   , c_v+4
 	.byte	W03
 	.byte		        c_v-5
@@ -167,9 +167,9 @@ se_w053:
 	.byte	se_w053_pri	@ Priority
 	.byte	se_w053_rev	@ Reverb.
 
-	.word	se_w053_grp
+	.int	se_w053_grp
 
-	.word	se_w053_1
-	.word	se_w053_2
+	.int	se_w053_1
+	.int	se_w053_2
 
 	.end

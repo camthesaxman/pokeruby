@@ -58,7 +58,7 @@ PetalburgCity_Gym_EventScript_15454B:: @ 815454B
 
 PetalburgCity_Gym_MapScript2_154553:: @ 8154553
 	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_15455D
-	.2byte 0
+	.short 0
 
 PetalburgCity_Gym_EventScript_15455D:: @ 815455D
 	turnobject 255, 2
@@ -66,7 +66,7 @@ PetalburgCity_Gym_EventScript_15455D:: @ 815455D
 
 PetalburgCity_Gym_MapScript2_154562:: @ 8154562
 	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_15456C
-	.2byte 0
+	.short 0
 
 PetalburgCity_Gym_EventScript_15456C:: @ 815456C
 	lockall

@@ -56,11 +56,11 @@ LinkContestRoom1_EventScript_15F600:: @ 815F600
 
 LinkContestRoom1_MapScript2_15F606:: @ 815F606
 	map_script_2 VAR_LINK_CONTEST_ROOM_STATE, 1, LinkContestRoom1_EventScript_15F61A
-	.2byte 0
+	.short 0
 
 LinkContestRoom1_MapScript2_15F610:: @ 815F610
 	map_script_2 VAR_LINK_CONTEST_ROOM_STATE, 1, LinkContestRoom1_EventScript_15F625
-	.2byte 0
+	.short 0
 
 LinkContestRoom1_EventScript_15F61A:: @ 815F61A
 	call LinkContestRoom1_EventScript_1A514D

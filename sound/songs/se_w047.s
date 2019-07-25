@@ -68,9 +68,9 @@ se_w047_1_001:
 	.byte	W06
 	.byte	W06
 	.byte	PATT
-	 .word	se_w047_1_000
+	 .int	se_w047_1_000
 	.byte	PATT
-	 .word	se_w047_1_001
+	 .int	se_w047_1_001
 	.byte		VOL   , 95*se_w047_mvl/mxv
 	.byte		N66   , Gn4 , v112
 	.byte	W06
@@ -151,9 +151,9 @@ se_w047_2_001:
 	.byte	W06
 	.byte	W06
 	.byte	PATT
-	 .word	se_w047_2_000
+	 .int	se_w047_2_000
 	.byte	PATT
-	 .word	se_w047_2_001
+	 .int	se_w047_2_001
 	.byte		VOL   , 95*se_w047_mvl/mxv
 	.byte		PAN   , c_v-12
 	.byte		N66   , Gn4 , v060
@@ -190,9 +190,9 @@ se_w047:
 	.byte	se_w047_pri	@ Priority
 	.byte	se_w047_rev	@ Reverb.
 
-	.word	se_w047_grp
+	.int	se_w047_grp
 
-	.word	se_w047_1
-	.word	se_w047_2
+	.int	se_w047_1
+	.int	se_w047_2
 
 	.end

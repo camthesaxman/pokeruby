@@ -169,12 +169,12 @@ bgm_fanfa1:
 	.byte	bgm_fanfa1_pri	@ Priority
 	.byte	bgm_fanfa1_rev	@ Reverb.
 
-	.word	bgm_fanfa1_grp
+	.int	bgm_fanfa1_grp
 
-	.word	bgm_fanfa1_1
-	.word	bgm_fanfa1_2
-	.word	bgm_fanfa1_3
-	.word	bgm_fanfa1_4
-	.word	bgm_fanfa1_5
+	.int	bgm_fanfa1_1
+	.int	bgm_fanfa1_2
+	.int	bgm_fanfa1_3
+	.int	bgm_fanfa1_4
+	.int	bgm_fanfa1_5
 
 	.end

@@ -140,9 +140,9 @@ bgm_bijyutu_1_001:
 	.byte		        Gn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_bijyutu_1_000
+	 .int	bgm_bijyutu_1_000
 	.byte	PATT
-	 .word	bgm_bijyutu_1_001
+	 .int	bgm_bijyutu_1_001
 	.byte		N03   , Fs4 , v084
 	.byte	W03
 	.byte		        Gn4 
@@ -520,7 +520,7 @@ bgm_bijyutu_1_002:
 	.byte		        Cn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_bijyutu_1_002
+	 .int	bgm_bijyutu_1_002
 	.byte		N03   , Fs3 , v076
 	.byte	W03
 	.byte		        Gn3 
@@ -627,7 +627,7 @@ bgm_bijyutu_1_002:
 	.byte		        78*bgm_bijyutu_mvl/mxv
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_bijyutu_1_B1
+	 .int	bgm_bijyutu_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -876,7 +876,7 @@ bgm_bijyutu_2_000:
 	.byte		        30*bgm_bijyutu_mvl/mxv
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_bijyutu_2_000
+	 .int	bgm_bijyutu_2_000
 	.byte		VOL   , 54*bgm_bijyutu_mvl/mxv
 	.byte		N48   , Bn2 , v048
 	.byte	W06
@@ -922,7 +922,7 @@ bgm_bijyutu_2_000:
 	.byte	W07
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_bijyutu_2_B1
+	 .int	bgm_bijyutu_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1250,7 +1250,7 @@ bgm_bijyutu_3_000:
 	.byte		VOL   , 30*bgm_bijyutu_mvl/mxv
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_bijyutu_3_000
+	 .int	bgm_bijyutu_3_000
 	.byte		VOICE , 84
 	.byte		VOL   , 54*bgm_bijyutu_mvl/mxv
 	.byte		N12   , Gn2 , v048
@@ -1319,7 +1319,7 @@ bgm_bijyutu_3_000:
 	.byte	W07
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_bijyutu_3_B1
+	 .int	bgm_bijyutu_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1382,9 +1382,9 @@ bgm_bijyutu_4_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bijyutu_4_000
+	 .int	bgm_bijyutu_4_000
 	.byte	PATT
-	 .word	bgm_bijyutu_4_001
+	 .int	bgm_bijyutu_4_001
 	.byte		N24   , Dn2 , v100
 	.byte	W24
 	.byte		N36   , Dn1 
@@ -1561,17 +1561,17 @@ bgm_bijyutu_4_003:
 	.byte		        An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_bijyutu_4_003
+	 .int	bgm_bijyutu_4_003
 	.byte	PATT
-	 .word	bgm_bijyutu_4_000
+	 .int	bgm_bijyutu_4_000
 	.byte	PATT
-	 .word	bgm_bijyutu_4_001
+	 .int	bgm_bijyutu_4_001
 	.byte	PATT
-	 .word	bgm_bijyutu_4_002
+	 .int	bgm_bijyutu_4_002
 	.byte	PATT
-	 .word	bgm_bijyutu_4_003
+	 .int	bgm_bijyutu_4_003
 	.byte	PATT
-	 .word	bgm_bijyutu_4_000
+	 .int	bgm_bijyutu_4_000
 	.byte		N24   , En2 , v100
 	.byte	W24
 	.byte		        En1 
@@ -1610,7 +1610,7 @@ bgm_bijyutu_4_003:
 	.byte		        Gn1 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_bijyutu_4_B1
+	 .int	bgm_bijyutu_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1675,9 +1675,9 @@ bgm_bijyutu_5_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_bijyutu_5_000
+	 .int	bgm_bijyutu_5_000
 	.byte	PATT
-	 .word	bgm_bijyutu_5_001
+	 .int	bgm_bijyutu_5_001
 	.byte		N48   , An3 , v100
 	.byte	W48
 	.byte		N24   , Fs3 
@@ -1793,17 +1793,17 @@ bgm_bijyutu_5_003:
 	.byte		        Cn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_bijyutu_5_003
+	 .int	bgm_bijyutu_5_003
 	.byte	PATT
-	 .word	bgm_bijyutu_5_000
+	 .int	bgm_bijyutu_5_000
 	.byte	PATT
-	 .word	bgm_bijyutu_5_001
+	 .int	bgm_bijyutu_5_001
 	.byte	PATT
-	 .word	bgm_bijyutu_5_002
+	 .int	bgm_bijyutu_5_002
 	.byte	PATT
-	 .word	bgm_bijyutu_5_003
+	 .int	bgm_bijyutu_5_003
 	.byte	PATT
-	 .word	bgm_bijyutu_5_000
+	 .int	bgm_bijyutu_5_000
 	.byte		N48   , Gn2 , v100
 	.byte	W48
 	.byte		N24   
@@ -1839,7 +1839,7 @@ bgm_bijyutu_5_003:
 	.byte		        Bn2 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_bijyutu_5_B1
+	 .int	bgm_bijyutu_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2100,7 +2100,7 @@ bgm_bijyutu_6_B1:
 	.byte	W13
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_bijyutu_6_B1
+	 .int	bgm_bijyutu_6_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2112,13 +2112,13 @@ bgm_bijyutu:
 	.byte	bgm_bijyutu_pri	@ Priority
 	.byte	bgm_bijyutu_rev	@ Reverb.
 
-	.word	bgm_bijyutu_grp
+	.int	bgm_bijyutu_grp
 
-	.word	bgm_bijyutu_1
-	.word	bgm_bijyutu_2
-	.word	bgm_bijyutu_3
-	.word	bgm_bijyutu_4
-	.word	bgm_bijyutu_5
-	.word	bgm_bijyutu_6
+	.int	bgm_bijyutu_1
+	.int	bgm_bijyutu_2
+	.int	bgm_bijyutu_3
+	.int	bgm_bijyutu_4
+	.int	bgm_bijyutu_5
+	.int	bgm_bijyutu_6
 
 	.end

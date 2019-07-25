@@ -735,7 +735,7 @@ bgm_ropeway_4_000:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_ropeway_4_000
+	 .int	bgm_ropeway_4_000
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1400,16 +1400,16 @@ bgm_ropeway:
 	.byte	bgm_ropeway_pri	@ Priority
 	.byte	bgm_ropeway_rev	@ Reverb.
 
-	.word	bgm_ropeway_grp
+	.int	bgm_ropeway_grp
 
-	.word	bgm_ropeway_1
-	.word	bgm_ropeway_2
-	.word	bgm_ropeway_3
-	.word	bgm_ropeway_4
-	.word	bgm_ropeway_5
-	.word	bgm_ropeway_6
-	.word	bgm_ropeway_7
-	.word	bgm_ropeway_8
-	.word	bgm_ropeway_9
+	.int	bgm_ropeway_1
+	.int	bgm_ropeway_2
+	.int	bgm_ropeway_3
+	.int	bgm_ropeway_4
+	.int	bgm_ropeway_5
+	.int	bgm_ropeway_6
+	.int	bgm_ropeway_7
+	.int	bgm_ropeway_8
+	.int	bgm_ropeway_9
 
 	.end

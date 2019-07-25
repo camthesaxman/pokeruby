@@ -110,8 +110,8 @@ se_w109:
 	.byte	se_w109_pri	@ Priority
 	.byte	se_w109_rev	@ Reverb.
 
-	.word	se_w109_grp
+	.int	se_w109_grp
 
-	.word	se_w109_1
+	.int	se_w109_1
 
 	.end

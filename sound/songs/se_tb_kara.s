@@ -36,8 +36,8 @@ se_tb_kara:
 	.byte	se_tb_kara_pri	@ Priority
 	.byte	se_tb_kara_rev	@ Reverb.
 
-	.word	se_tb_kara_grp
+	.int	se_tb_kara_grp
 
-	.word	se_tb_kara_1
+	.int	se_tb_kara_1
 
 	.end

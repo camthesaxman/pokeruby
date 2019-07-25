@@ -67,9 +67,9 @@ se_tb_start:
 	.byte	se_tb_start_pri	@ Priority
 	.byte	se_tb_start_rev	@ Reverb.
 
-	.word	se_tb_start_grp
+	.int	se_tb_start_grp
 
-	.word	se_tb_start_1
-	.word	se_tb_start_2
+	.int	se_tb_start_1
+	.int	se_tb_start_2
 
 	.end

@@ -102,9 +102,9 @@ bgm_pcc_1_001:
 	.byte		        Gn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_pcc_1_000
+	 .int	bgm_pcc_1_000
 	.byte	PATT
-	 .word	bgm_pcc_1_001
+	 .int	bgm_pcc_1_001
 	.byte		N11   , Gn3 , v076
 	.byte	W12
 	.byte		        Dn3 
@@ -248,7 +248,7 @@ bgm_pcc_1_001:
 	.byte		        Fn3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_pcc_1_B1
+	 .int	bgm_pcc_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -336,11 +336,11 @@ bgm_pcc_2_002:
 	.byte		        Gn2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_pcc_2_000
+	 .int	bgm_pcc_2_000
 	.byte	PATT
-	 .word	bgm_pcc_2_001
+	 .int	bgm_pcc_2_001
 	.byte	PATT
-	 .word	bgm_pcc_2_002
+	 .int	bgm_pcc_2_002
 	.byte		N11   , Cn2 , v112
 	.byte	W12
 	.byte		        En2 
@@ -412,13 +412,13 @@ bgm_pcc_2_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_pcc_2_003
+	 .int	bgm_pcc_2_003
 	.byte	PATT
-	 .word	bgm_pcc_2_003
+	 .int	bgm_pcc_2_003
 	.byte	PATT
-	 .word	bgm_pcc_2_004
+	 .int	bgm_pcc_2_004
 	.byte	PATT
-	 .word	bgm_pcc_2_005
+	 .int	bgm_pcc_2_005
 	.byte		N11   , En2 , v112
 	.byte	W12
 	.byte		        Gn2 
@@ -436,7 +436,7 @@ bgm_pcc_2_005:
 	.byte		        Dn2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_pcc_2_B1
+	 .int	bgm_pcc_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -513,11 +513,11 @@ bgm_pcc_3_002:
 	.byte		N12   , En3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_pcc_3_000
+	 .int	bgm_pcc_3_000
 	.byte	PATT
-	 .word	bgm_pcc_3_001
+	 .int	bgm_pcc_3_001
 	.byte	PATT
-	 .word	bgm_pcc_3_002
+	 .int	bgm_pcc_3_002
 	.byte		N44   , Cn4 , v092
 	.byte	W48
 	.byte		N11   , Gn3 
@@ -561,7 +561,7 @@ bgm_pcc_3_004:
 	.byte	W48
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_pcc_3_003
+	 .int	bgm_pcc_3_003
 	.byte		N11   , Fn4 , v092
 	.byte	W12
 	.byte		        En4 
@@ -581,9 +581,9 @@ bgm_pcc_3_004:
 	.byte		N44   , Fn4 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_pcc_3_004
+	 .int	bgm_pcc_3_004
 	.byte	GOTO
-	 .word	bgm_pcc_3_B1
+	 .int	bgm_pcc_3_B1
 	.byte	FINE
 
 @******************************************************@
@@ -595,10 +595,10 @@ bgm_pcc:
 	.byte	bgm_pcc_pri	@ Priority
 	.byte	bgm_pcc_rev	@ Reverb.
 
-	.word	bgm_pcc_grp
+	.int	bgm_pcc_grp
 
-	.word	bgm_pcc_1
-	.word	bgm_pcc_2
-	.word	bgm_pcc_3
+	.int	bgm_pcc_1
+	.int	bgm_pcc_2
+	.int	bgm_pcc_3
 
 	.end

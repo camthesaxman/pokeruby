@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+#include <windows.h>
+
 #include <SDL/SDL.h>
 
 #define NO_UNDERSCORE_HACK
@@ -9,17 +11,27 @@
 #include "global.h"
 #include "platform.h"
 #include "gba/defines.h"
+#include "gba/m4a_internal.h"
+//#include "gba/flash_internal.h"
 
 extern void (*const gIntrTable[])(void);
 
 // GBA memory
+vu16 GPIOPortDirection;
 struct SoundInfo *SOUND_INFO_PTR;
+const struct Song gSongTable[100];
+struct ToneData gCryTable[100];
+struct ToneData gCryTable2[100];
+const struct MusicPlayer gMPlayTable[4];
+const struct ToneData voicegroup000;
+
 u16 INTR_CHECK;
 void *INTR_VECTOR;
 unsigned char REG_BASE[0x400] __attribute__ ((aligned (4)));
 unsigned char PLTT[PLTT_SIZE] __attribute__ ((aligned (4)));
 unsigned char VRAM_[VRAM_SIZE] __attribute__ ((aligned (4)));
 unsigned char OAM[OAM_SIZE] __attribute__ ((aligned (4)));
+unsigned char FLASH_BASE[131072] __attribute__ ((aligned (4)));
 
 SDL_Surface *surface;
 bool speedUp = false;
@@ -27,17 +39,28 @@ unsigned int videoScale = 1;
 
 extern void AgbMain(void);
 
+//#define _impure_ptr         __impure_ptr
+
 int main(int argc, char **argv)
 {
+    AllocConsole() ;
+    AttachConsole( GetCurrentProcessId() ) ;
+    freopen( "CON", "w", stdout ) ;
+    //fputs("FUCK1\n", stderr);
+    //fputs("FUCK2\n", stdout);
+    printf("TestAA");
     SDL_Init(SDL_INIT_VIDEO);
+    printf("TestAB");
     surface = SDL_SetVideoMode(DISPLAY_WIDTH, DISPLAY_HEIGHT, 32, SDL_HWSURFACE | SDL_RESIZABLE);
     if (surface == NULL)
     {
-        fputs("SDL_SetVideoMode failed.\n", stderr);
+        //fputs("SDL_SetVideoMode failed.\n", stderr);
+        puts("SDL_SetVideoMode failed.\n");
         return 1;
     }
     SDL_WM_SetCaption("pokeruby", NULL);
 
+    puts("TestAC");
     AgbMain();
     return 0;
 }
@@ -237,7 +260,8 @@ void LZ77UnCompVram(const void *src_, void *dest_)
 				// Some Ruby/Sapphire tilesets overflow.
 				if (destPos + blockSize > destSize) {
 					blockSize = destSize - destPos;
-					fprintf(stderr, "Destination buffer overflow.\n");
+					//fprintf(stderr, "Destination buffer overflow.\n");
+					puts("Destination buffer overflow.\n");
 				}
 
 				if (blockPos < 0)

@@ -134,7 +134,7 @@ bgm_hutago_1_B1:
 	.byte		N03   
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_hutago_1_B1
+	 .int	bgm_hutago_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -163,7 +163,7 @@ bgm_hutago_2_B1:
 	.byte		N06   
 	.byte	W60
 	.byte	GOTO
-	 .word	bgm_hutago_2_B1
+	 .int	bgm_hutago_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -287,7 +287,7 @@ bgm_hutago_3_B1:
 	.byte		        An1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_hutago_3_B1
+	 .int	bgm_hutago_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -422,7 +422,7 @@ bgm_hutago_4_B1:
 	.byte		        c_v+0
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_hutago_4_B1
+	 .int	bgm_hutago_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -448,7 +448,7 @@ bgm_hutago_5_B1:
 	.byte		        Cs5 , v080
 	.byte	W36
 	.byte	GOTO
-	 .word	bgm_hutago_5_B1
+	 .int	bgm_hutago_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -601,7 +601,7 @@ bgm_hutago_6_B1:
 	.byte		        c_v+0
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_hutago_6_B1
+	 .int	bgm_hutago_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -696,9 +696,9 @@ bgm_hutago_7_000:
 	.byte		        Dn3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_hutago_7_000
+	 .int	bgm_hutago_7_000
 	.byte	GOTO
-	 .word	bgm_hutago_7_B1
+	 .int	bgm_hutago_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -780,11 +780,11 @@ bgm_hutago_8_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hutago_8_000
+	 .int	bgm_hutago_8_000
 	.byte	PATT
-	 .word	bgm_hutago_8_001
+	 .int	bgm_hutago_8_001
 	.byte	GOTO
-	 .word	bgm_hutago_8_B1
+	 .int	bgm_hutago_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -842,7 +842,7 @@ bgm_hutago_9_000:
 	.byte		N06   
 	.byte	W36
 	.byte	PATT
-	 .word	bgm_hutago_9_000
+	 .int	bgm_hutago_9_000
 	.byte		N06   , En3 , v112
 	.byte	W12
 	.byte		        En3 , v072
@@ -856,7 +856,7 @@ bgm_hutago_9_000:
 	.byte		N06   
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_hutago_9_B1
+	 .int	bgm_hutago_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -981,7 +981,7 @@ bgm_hutago_10_B1:
 	.byte		N06   , Dn3 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_hutago_10_B1
+	 .int	bgm_hutago_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -993,17 +993,17 @@ bgm_hutago:
 	.byte	bgm_hutago_pri	@ Priority
 	.byte	bgm_hutago_rev	@ Reverb.
 
-	.word	bgm_hutago_grp
+	.int	bgm_hutago_grp
 
-	.word	bgm_hutago_1
-	.word	bgm_hutago_2
-	.word	bgm_hutago_3
-	.word	bgm_hutago_4
-	.word	bgm_hutago_5
-	.word	bgm_hutago_6
-	.word	bgm_hutago_7
-	.word	bgm_hutago_8
-	.word	bgm_hutago_9
-	.word	bgm_hutago_10
+	.int	bgm_hutago_1
+	.int	bgm_hutago_2
+	.int	bgm_hutago_3
+	.int	bgm_hutago_4
+	.int	bgm_hutago_5
+	.int	bgm_hutago_6
+	.int	bgm_hutago_7
+	.int	bgm_hutago_8
+	.int	bgm_hutago_9
+	.int	bgm_hutago_10
 
 	.end

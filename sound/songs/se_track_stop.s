@@ -114,10 +114,10 @@ se_track_stop:
 	.byte	se_track_stop_pri	@ Priority
 	.byte	se_track_stop_rev	@ Reverb.
 
-	.word	se_track_stop_grp
+	.int	se_track_stop_grp
 
-	.word	se_track_stop_1
-	.word	se_track_stop_2
-	.word	se_track_stop_3
+	.int	se_track_stop_1
+	.int	se_track_stop_2
+	.int	se_track_stop_3
 
 	.end

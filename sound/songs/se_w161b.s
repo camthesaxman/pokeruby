@@ -116,9 +116,9 @@ se_w161b:
 	.byte	se_w161b_pri	@ Priority
 	.byte	se_w161b_rev	@ Reverb.
 
-	.word	se_w161b_grp
+	.int	se_w161b_grp
 
-	.word	se_w161b_1
-	.word	se_w161b_2
+	.int	se_w161b_1
+	.int	se_w161b_2
 
 	.end

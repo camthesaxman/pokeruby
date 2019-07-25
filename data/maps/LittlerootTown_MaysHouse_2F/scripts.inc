@@ -18,7 +18,7 @@ LittlerootTown_MaysHouse_2F_EventScript_152A7A:: @ 8152A7A
 
 LittlerootTown_MaysHouse_2F_MapScript2_152A86:: @ 8152A86
 	map_script_2 VAR_0x4089, 0, LittlerootTown_MaysHouse_2F_EventScript_152A90
-	.2byte 0
+	.short 0
 
 LittlerootTown_MaysHouse_2F_EventScript_152A90:: @ 8152A90
 	checkplayergender

@@ -70,9 +70,9 @@ se_save:
 	.byte	se_save_pri	@ Priority
 	.byte	se_save_rev	@ Reverb.
 
-	.word	se_save_grp
+	.int	se_save_grp
 
-	.word	se_save_1
-	.word	se_save_2
+	.int	se_save_1
+	.int	se_save_2
 
 	.end

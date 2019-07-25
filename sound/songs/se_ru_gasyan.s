@@ -75,9 +75,9 @@ se_ru_gasyan:
 	.byte	se_ru_gasyan_pri	@ Priority
 	.byte	se_ru_gasyan_rev	@ Reverb.
 
-	.word	se_ru_gasyan_grp
+	.int	se_ru_gasyan_grp
 
-	.word	se_ru_gasyan_1
-	.word	se_ru_gasyan_2
+	.int	se_ru_gasyan_1
+	.int	se_ru_gasyan_2
 
 	.end

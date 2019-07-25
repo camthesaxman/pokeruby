@@ -167,8 +167,8 @@ se_op_basyu:
 	.byte	se_op_basyu_pri	@ Priority
 	.byte	se_op_basyu_rev	@ Reverb.
 
-	.word	se_op_basyu_grp
+	.int	se_op_basyu_grp
 
-	.word	se_op_basyu_1
+	.int	se_op_basyu_1
 
 	.end

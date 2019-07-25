@@ -72,8 +72,8 @@ se_w118:
 	.byte	se_w118_pri	@ Priority
 	.byte	se_w118_rev	@ Reverb.
 
-	.word	se_w118_grp
+	.int	se_w118_grp
 
-	.word	se_w118_1
+	.int	se_w118_1
 
 	.end

@@ -68,8 +68,8 @@ se_toy_kabe:
 	.byte	se_toy_kabe_pri	@ Priority
 	.byte	se_toy_kabe_rev	@ Reverb.
 
-	.word	se_toy_kabe_grp
+	.int	se_toy_kabe_grp
 
-	.word	se_toy_kabe_1
+	.int	se_toy_kabe_1
 
 	.end

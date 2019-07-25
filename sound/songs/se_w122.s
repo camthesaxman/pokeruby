@@ -122,8 +122,8 @@ se_w122:
 	.byte	se_w122_pri	@ Priority
 	.byte	se_w122_rev	@ Reverb.
 
-	.word	se_w122_grp
+	.int	se_w122_grp
 
-	.word	se_w122_1
+	.int	se_w122_1
 
 	.end

@@ -154,8 +154,8 @@ se_w048:
 	.byte	se_w048_pri	@ Priority
 	.byte	se_w048_rev	@ Reverb.
 
-	.word	se_w048_grp
+	.int	se_w048_grp
 
-	.word	se_w048_1
+	.int	se_w048_1
 
 	.end

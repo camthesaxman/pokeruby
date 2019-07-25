@@ -42,8 +42,8 @@ se_pc_logon:
 	.byte	se_pc_logon_pri	@ Priority
 	.byte	se_pc_logon_rev	@ Reverb.
 
-	.word	se_pc_logon_grp
+	.int	se_pc_logon_grp
 
-	.word	se_pc_logon_1
+	.int	se_pc_logon_1
 
 	.end

@@ -58,9 +58,9 @@ gUnknown_083CA350:: @ 83CA350
 
 	.align 2
 gOamData_83CA358:: @ 83CA358
-	.2byte 0x0000
-	.2byte 0x0000
-	.2byte 0x0000
+	.short 0x0000
+	.short 0x0000
+	.short 0x0000
 
 	.align 2
 gSpriteAffineAnim_83CA360:: @ 83CA360
@@ -81,9 +81,9 @@ gSpriteAffineAnim_83CA388:: @ 83CA388
 
 	.align 2
 gSpriteAffineAnimTable_83CA3A0:: @ 83CA3A0
-	.4byte gSpriteAffineAnim_83CA360
-	.4byte gSpriteAffineAnim_83CA370
-	.4byte gSpriteAffineAnim_83CA388
+	.int gSpriteAffineAnim_83CA360
+	.int gSpriteAffineAnim_83CA370
+	.int gSpriteAffineAnim_83CA388
 
 	.align 2
 gSpriteTemplate_83CA3AC:: @ 83CA3AC
@@ -102,9 +102,9 @@ gUnknown_083CA3E4:: @ 83CA3E4
 
 	.align 2
 gOamData_83CA3EC:: @ 83CA3EC
-	.2byte 0x4000
-	.2byte 0x4000
-	.2byte 0x0000
+	.short 0x4000
+	.short 0x4000
+	.short 0x0000
 
 	.align 2
 gSpriteTemplate_83CA3F4:: @ 83CA3F4
@@ -129,7 +129,7 @@ gSubspriteTable_83CA454:: @ 83CA454
 
 	.align 2
 gSubspriteTables_83CA464:: @ 83CA464
-	.4byte 2, gSubspriteTable_83CA454
+	.int 2, gSubspriteTable_83CA454
 
 	.align 2
 gUnknown_083CA46C:: @ 83CA46C
@@ -141,9 +141,9 @@ gUnknown_083CA474:: @ 83CA474
 
 	.align 2
 gOamData_83CA47C:: @ 83CA47C
-	.2byte 0x4000
-	.2byte 0xC000
-	.2byte 0x0000
+	.short 0x4000
+	.short 0xC000
+	.short 0x0000
 
 	.align 2
 gSpriteTemplate_83CA484:: @ 83CA484
@@ -151,9 +151,9 @@ gSpriteTemplate_83CA484:: @ 83CA484
 
 	.align 2
 gOamData_83CA49C:: @ 83CA49C
-	.2byte 0x0000
-	.2byte 0xC000
-	.2byte 0x2C00
+	.short 0x0000
+	.short 0xC000
+	.short 0x2C00
 
 	.align 2
 gSpriteTemplate_83CA4A4:: @ 83CA4A4
@@ -240,10 +240,10 @@ gSpriteAnim_83CC3EC:: @ 83CC3EC
 
 	.align 2
 gSpriteAnimTable_83CC3F4:: @ 83CC3F4
-	.4byte gSpriteAnim_83CC3D4
-	.4byte gSpriteAnim_83CC3DC
-	.4byte gSpriteAnim_83CC3E4
-	.4byte gSpriteAnim_83CC3EC
+	.int gSpriteAnim_83CC3D4
+	.int gSpriteAnim_83CC3DC
+	.int gSpriteAnim_83CC3E4
+	.int gSpriteAnim_83CC3EC
 
 	.align 2
 gSpriteAffineAnim_83CC404:: @ 83CC404
@@ -263,16 +263,16 @@ gSpriteAffineAnim_83CC424:: @ 83CC424
 
 	.align 2
 gSpriteAffineAnimTable_83CC43C:: @ 83CC43C
-	.4byte gSpriteAffineAnim_83CC404
-	.4byte gSpriteAffineAnim_83CC414
-	.4byte gSpriteAffineAnim_83CC424
-	.4byte NULL
+	.int gSpriteAffineAnim_83CC404
+	.int gSpriteAffineAnim_83CC414
+	.int gSpriteAffineAnim_83CC424
+	.int NULL
 
 	.align 2
 gOamData_83CC44C:: @ 83CC44C
-	.2byte 0x0000
-	.2byte 0x4000
-	.2byte 0x0000
+	.short 0x0000
+	.short 0x4000
+	.short 0x0000
 
 	.align 2
 gSpriteTemplate_83CC454:: @ 83CC454
@@ -306,9 +306,9 @@ gUnknown_083CC4D4:: @ 83CC4D4
 
 	.align 2
 gOamData_83CC4F4:: @ 83CC4F4
-	.2byte 0x0700
-	.2byte 0xC000
-	.2byte 0x0000
+	.short 0x0700
+	.short 0xC000
+	.short 0x0000
 
 	.align 2
 gSpriteAffineAnim_83CC4FC:: @ 83CC4FC
@@ -325,8 +325,8 @@ gSpriteAffineAnim_83CC50C:: @ 83CC50C
 
 	.align 2
 gSpriteAffineAnimTable_83CC534:: @ 83CC534
-	.4byte gSpriteAffineAnim_83CC4FC
-	.4byte gSpriteAffineAnim_83CC50C
+	.int gSpriteAffineAnim_83CC4FC
+	.int gSpriteAffineAnim_83CC50C
 
 	.align 2
 gSpriteTemplate_83CC53C:: @ 83CC53C
@@ -352,16 +352,16 @@ gUnknown_083CC5A2:: @ 83CC5A2
 
 	.align 1
 gUnknown_083CC5A4:: @ 83CC5A4
-	.2byte 0x73, 0x19E6, 0x253, 0x4CC4, 0x1F, 0x3E0, 0x3FF, 0x7C00
+	.short 0x73, 0x19E6, 0x253, 0x4CC4, 0x1F, 0x3E0, 0x3FF, 0x7C00
 
 @ 83CC5B4
 	.include "data/contest_excitement_table.inc"
 
 	.align 2
 gUnknown_083CC5D0:: @ 83CC5D0
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_TAILLOW
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_TAILLOW
 	.byte CONTEST_SMART
 .ifdef ENGLISH
 	.string "TAILTA$", 11
@@ -371,9 +371,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "ROSEL$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_BRELOOM
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_BRELOOM
 	.byte CONTEST_BEAUTY
 .ifdef ENGLISH
 	.string "BRELO$", 11
@@ -383,9 +383,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "WITOLD$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_PELIPPER
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_PELIPPER
 	.byte CONTEST_COOL
 .ifdef ENGLISH
 	.string "PELEP$", 11
@@ -395,9 +395,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "RUFUS$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_PELIPPER
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_PELIPPER
 	.byte CONTEST_COOL
 .ifdef ENGLISH
 	.string "PELEP$", 11
@@ -407,9 +407,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "ELLEN$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_PELIPPER
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_PELIPPER
 	.byte CONTEST_COOL
 .ifdef ENGLISH
 	.string "PELEP$", 11
@@ -419,9 +419,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "AVIA$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_DELCATTY
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_DELCATTY
 	.byte CONTEST_SMART
 .ifdef ENGLISH
 	.string "KITSY$", 11
@@ -431,9 +431,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "HAUBERT$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_GULPIN
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_GULPIN
 	.byte CONTEST_CUTE
 .ifdef ENGLISH
 	.string "GULPS$", 11
@@ -443,9 +443,9 @@ gUnknown_083CC5D0:: @ 83CC5D0
 	.string "HEILWIG$", 10
 .endif
 
-	.4byte 0
-	.4byte 0xFFFF
-	.2byte SPECIES_LOUDRED
+	.int 0
+	.int 0xFFFF
+	.short SPECIES_LOUDRED
 	.byte CONTEST_TOUGH
 .ifdef ENGLISH
 	.string "LOUDED$", 11

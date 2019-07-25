@@ -21,7 +21,7 @@ EverGrandeCity_SidneysRoom_EventScript_15B56A:: @ 815B56A
 EverGrandeCity_DrakesRoom_MapScript2_15B570:: @ 815B570
 EverGrandeCity_SidneysRoom_MapScript2_15B570:: @ 815B570
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_SidneysRoom_EventScript_15B57A
-	.2byte 0
+	.short 0
 
 EverGrandeCity_SidneysRoom_EventScript_15B57A:: @ 815B57A
 	turnobject 255, 2
@@ -29,7 +29,7 @@ EverGrandeCity_SidneysRoom_EventScript_15B57A:: @ 815B57A
 
 EverGrandeCity_SidneysRoom_MapScript2_15B57F:: @ 815B57F
 	map_script_2 VAR_ELITE_4_STATE, 0, EverGrandeCity_SidneysRoom_EventScript_15B589
-	.2byte 0
+	.short 0
 
 EverGrandeCity_SidneysRoom_EventScript_15B589:: @ 815B589
 	lockall

@@ -227,7 +227,7 @@ bgm_odamaki_1_B1:
 	.byte		MOD   , 0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_odamaki_1_B1
+	 .int	bgm_odamaki_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -391,7 +391,7 @@ bgm_odamaki_2_B1:
 	.byte		        Cs2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_odamaki_2_B1
+	 .int	bgm_odamaki_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -657,7 +657,7 @@ bgm_odamaki_3_B1:
 	.byte		MOD   , 0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_odamaki_3_B1
+	 .int	bgm_odamaki_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -884,7 +884,7 @@ bgm_odamaki_4_B1:
 	.byte		N12   , Dn3 , v080
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_odamaki_4_B1
+	 .int	bgm_odamaki_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1009,7 +1009,7 @@ bgm_odamaki_5_000:
 	.byte		N06   , En3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_odamaki_5_000
+	 .int	bgm_odamaki_5_000
 	.byte		N06   , Bn3 , v052
 	.byte	W12
 	.byte		        Gn3 
@@ -1047,7 +1047,7 @@ bgm_odamaki_5_000:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_odamaki_5_B1
+	 .int	bgm_odamaki_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1222,7 +1222,7 @@ bgm_odamaki_6_B1:
 	.byte		N12   
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_odamaki_6_B1
+	 .int	bgm_odamaki_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1245,9 +1245,9 @@ bgm_odamaki_7_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_odamaki_7_000
+	 .int	bgm_odamaki_7_000
 	.byte	PATT
-	 .word	bgm_odamaki_7_000
+	 .int	bgm_odamaki_7_000
 	.byte	W96
 bgm_odamaki_7_001:
 	.byte	W24
@@ -1272,13 +1272,13 @@ bgm_odamaki_7_001:
 	.byte	PEND
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_odamaki_7_001
+	 .int	bgm_odamaki_7_001
 	.byte	PATT
-	 .word	bgm_odamaki_7_000
+	 .int	bgm_odamaki_7_000
 	.byte	PATT
-	 .word	bgm_odamaki_7_000
+	 .int	bgm_odamaki_7_000
 	.byte	PATT
-	 .word	bgm_odamaki_7_000
+	 .int	bgm_odamaki_7_000
 	.byte	W12
 	.byte		N06   , Fs2 , v044
 	.byte	W06
@@ -1289,7 +1289,7 @@ bgm_odamaki_7_001:
 	.byte		N06   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_odamaki_7_B1
+	 .int	bgm_odamaki_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1301,14 +1301,14 @@ bgm_odamaki:
 	.byte	bgm_odamaki_pri	@ Priority
 	.byte	bgm_odamaki_rev	@ Reverb.
 
-	.word	bgm_odamaki_grp
+	.int	bgm_odamaki_grp
 
-	.word	bgm_odamaki_1
-	.word	bgm_odamaki_2
-	.word	bgm_odamaki_3
-	.word	bgm_odamaki_4
-	.word	bgm_odamaki_5
-	.word	bgm_odamaki_6
-	.word	bgm_odamaki_7
+	.int	bgm_odamaki_1
+	.int	bgm_odamaki_2
+	.int	bgm_odamaki_3
+	.int	bgm_odamaki_4
+	.int	bgm_odamaki_5
+	.int	bgm_odamaki_6
+	.int	bgm_odamaki_7
 
 	.end

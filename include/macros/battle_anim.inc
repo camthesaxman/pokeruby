@@ -1,16 +1,16 @@
 	.macro loadspritegfx id
 	.byte 0x00
-	.2byte \id
+	.short \id
 	.endm
 
 	.macro unloadspritegfx id
 	.byte 0x01
-	.2byte \id
+	.short \id
 	.endm
 
 	.macro createsprite template, anim_battler, subpriority_offset, argv:vararg
     .byte 0x02
-    .4byte \template
+    .int \template
     .if \anim_battler == ANIM_BATTLER_TARGET
     .byte 0x80 | (\subpriority_offset & 0x7F)
     .else
@@ -18,17 +18,17 @@
     .endif
     .byte (.Lsprite_\@_2 - .Lsprite_\@_1) / 2
 .Lsprite_\@_1:
-    .2byte \argv
+    .short \argv
 .Lsprite_\@_2:
 	.endm
 
 	.macro createvisualtask addr, priority, argv:vararg
 	.byte 0x03
-	.4byte \addr
+	.int \addr
 	.byte \priority
 	.byte (.Lcreatetask_\@_2 - .Lcreatetask_\@_1) / 2
 .Lcreatetask_\@_1:
-	.2byte \argv
+	.short \argv
 .Lcreatetask_\@_2:
 	.endm
 
@@ -55,7 +55,7 @@
 
 	.macro playse id
 	.byte 0x09
-	.2byte \id
+	.short \id
 	.endm
 
 	.macro monbg which
@@ -70,7 +70,7 @@
 
 	.macro setalpha eva, evb
 	.byte 0x0C
-	.2byte ((\evb) << 8) | (\eva)
+	.short ((\evb) << 8) | (\eva)
 	.endm
 
 	.macro blendoff
@@ -79,7 +79,7 @@
 
 	.macro call addr
 	.byte 0x0E
-	.4byte \addr
+	.int \addr
 	.endm
 
 	.macro return
@@ -89,24 +89,24 @@
 	.macro setarg arg_num, value
 	.byte 0x10
 	.byte \arg_num
-	.2byte \value
+	.short \value
 	.endm
 
 	.macro choosetwoturnanim addr1, addr2
 	.byte 0x11
-	.4byte \addr1
-	.4byte \addr2
+	.int \addr1
+	.int \addr2
 	.endm
 
 	.macro jumpifmoveturn cond, addr
 	.byte 0x12
 	.byte \cond
-	.4byte \addr
+	.int \addr
 	.endm
 
 	.macro goto addr
 	.byte 0x13
-	.4byte \addr
+	.int \addr
 	.endm
 
 	.macro fadetobg id
@@ -133,7 +133,7 @@
 
 	.macro playsewithpan id, pan
 	.byte 0x19
-	.2byte \id
+	.short \id
 	.byte \pan
 	.endm
 
@@ -144,7 +144,7 @@
 
 	.macro panse_1B id, pan_start, pan_end, step, delay
 	.byte 0x1B
-	.2byte \id
+	.short \id
 	.byte \pan_start
 	.byte \pan_end
 	.byte \step
@@ -153,7 +153,7 @@
 
 	.macro loopsewithpan id, pan, delay, count
 	.byte 0x1C
-	.2byte \id
+	.short \id
 	.byte \pan
 	.byte \delay
 	.byte \count
@@ -161,22 +161,22 @@
 
 	.macro waitplaysewithpan id, pan, count
 	.byte 0x1D
-	.2byte \id
+	.short \id
 	.byte \pan
 	.byte \count
 	.endm
 
 	.macro setbldcnt bldcnt
 	.byte 0x1E
-	.2byte \bldcnt
+	.short \bldcnt
 	.endm
 
 	.macro createsoundtask addr, argv:vararg
 	.byte 0x1F
-	.4byte \addr
+	.int \addr
 	.byte (.Lcreatetask_1F_\@_2 - .Lcreatetask_1F_\@_1) / 2
 .Lcreatetask_1F_\@_1:
-	.2byte \argv
+	.short \argv
 .Lcreatetask_1F_\@_2:
 	.endm
 
@@ -187,8 +187,8 @@
 	.macro jumpargeq arg_num, value, addr
 	.byte 0x21
 	.byte \arg_num
-	.2byte \value
-	.4byte \addr
+	.short \value
+	.int \addr
 	.endm
 
 	.macro monbg_22 bank
@@ -203,7 +203,7 @@
 
 	.macro jumpifcontest addr
 	.byte 0x24
-	.4byte \addr
+	.int \addr
 	.endm
 
 	.macro fadetobgfromset a, b, c
@@ -215,7 +215,7 @@
 
 	.macro panse_26 id, pan_start, pan_end, step, delay
 	.byte 0x26
-	.2byte \id
+	.short \id
 	.byte \pan_start
 	.byte \pan_end
 	.byte \step
@@ -224,7 +224,7 @@
 
 	.macro panse_27 id, pan_start, pan_end, step, delay
 	.byte 0x27
-	.2byte \id
+	.short \id
 	.byte \pan_start
 	.byte \pan_end
 	.byte \step

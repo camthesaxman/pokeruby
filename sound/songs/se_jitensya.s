@@ -33,8 +33,8 @@ se_jitensya:
 	.byte	se_jitensya_pri	@ Priority
 	.byte	se_jitensya_rev	@ Reverb.
 
-	.word	se_jitensya_grp
+	.int	se_jitensya_grp
 
-	.word	se_jitensya_1
+	.int	se_jitensya_1
 
 	.end

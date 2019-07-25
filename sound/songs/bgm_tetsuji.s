@@ -118,7 +118,7 @@ bgm_tetsuji_1_B1:
 	.byte	W96
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_tetsuji_1_B1
+	 .int	bgm_tetsuji_1_B1
 	.byte	W48
 	.byte	FINE
 
@@ -397,7 +397,7 @@ bgm_tetsuji_2_B1:
 	.byte		        Gn4 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tetsuji_2_B1
+	 .int	bgm_tetsuji_2_B1
 	.byte	W48
 	.byte	FINE
 
@@ -737,7 +737,7 @@ bgm_tetsuji_3_B1:
 	.byte		        Gn1 , v028
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_tetsuji_3_B1
+	 .int	bgm_tetsuji_3_B1
 	.byte	W48
 	.byte	FINE
 
@@ -775,7 +775,7 @@ bgm_tetsuji_4_B1:
 	.byte	W96
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_tetsuji_4_B1
+	 .int	bgm_tetsuji_4_B1
 	.byte	W48
 	.byte	FINE
 
@@ -908,7 +908,7 @@ bgm_tetsuji_5_B1:
 	.byte		        Gn5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tetsuji_5_B1
+	 .int	bgm_tetsuji_5_B1
 	.byte	W48
 	.byte	FINE
 
@@ -956,7 +956,7 @@ bgm_tetsuji_6_B1:
 	.byte	W96
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_tetsuji_6_B1
+	 .int	bgm_tetsuji_6_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1408,7 +1408,7 @@ bgm_tetsuji_7_000:
 	.byte		        An3 , v032
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_tetsuji_7_000
+	 .int	bgm_tetsuji_7_000
 	.byte		N06   , Bn2 , v112
 	.byte	W06
 	.byte		        Bn2 , v032
@@ -1458,7 +1458,7 @@ bgm_tetsuji_7_000:
 	.byte		        Gn4 , v032
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_tetsuji_7_B1
+	 .int	bgm_tetsuji_7_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1617,9 +1617,9 @@ bgm_tetsuji_8_001:
 	.byte		        Cn4 , v032
 	.byte	W18
 	.byte	PATT
-	 .word	bgm_tetsuji_8_000
+	 .int	bgm_tetsuji_8_000
 	.byte	PATT
-	 .word	bgm_tetsuji_8_001
+	 .int	bgm_tetsuji_8_001
 	.byte	W24
 	.byte		N06   , Bn3 , v112
 	.byte	W06
@@ -1635,7 +1635,7 @@ bgm_tetsuji_8_001:
 	.byte		        Cn4 , v032
 	.byte	W18
 	.byte	GOTO
-	 .word	bgm_tetsuji_8_B1
+	 .int	bgm_tetsuji_8_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1675,33 +1675,33 @@ bgm_tetsuji_9_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte	PATT
-	 .word	bgm_tetsuji_9_000
+	 .int	bgm_tetsuji_9_000
 	.byte		N06   , Fs2 , v084
 	.byte	W12
 	.byte		        Fs2 , v064
@@ -1711,7 +1711,7 @@ bgm_tetsuji_9_000:
 	.byte		        Fs2 , v068
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_tetsuji_9_B1
+	 .int	bgm_tetsuji_9_B1
 	.byte	W48
 	.byte	FINE
 
@@ -1724,16 +1724,16 @@ bgm_tetsuji:
 	.byte	bgm_tetsuji_pri	@ Priority
 	.byte	bgm_tetsuji_rev	@ Reverb.
 
-	.word	bgm_tetsuji_grp
+	.int	bgm_tetsuji_grp
 
-	.word	bgm_tetsuji_1
-	.word	bgm_tetsuji_2
-	.word	bgm_tetsuji_3
-	.word	bgm_tetsuji_4
-	.word	bgm_tetsuji_5
-	.word	bgm_tetsuji_6
-	.word	bgm_tetsuji_7
-	.word	bgm_tetsuji_8
-	.word	bgm_tetsuji_9
+	.int	bgm_tetsuji_1
+	.int	bgm_tetsuji_2
+	.int	bgm_tetsuji_3
+	.int	bgm_tetsuji_4
+	.int	bgm_tetsuji_5
+	.int	bgm_tetsuji_6
+	.int	bgm_tetsuji_7
+	.int	bgm_tetsuji_8
+	.int	bgm_tetsuji_9
 
 	.end

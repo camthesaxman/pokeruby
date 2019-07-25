@@ -18,7 +18,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_1527CE:: @ 81527CE
 
 LittlerootTown_BrendansHouse_2F_MapScript2_1527DA:: @ 81527DA
 	map_script_2 VAR_0x4089, 0, LittlerootTown_BrendansHouse_2F_EventScript_1527E4
-	.2byte 0
+	.short 0
 
 LittlerootTown_BrendansHouse_2F_EventScript_1527E4:: @ 81527E4
 	checkplayergender

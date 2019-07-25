@@ -110,9 +110,9 @@ se_w153:
 	.byte	se_w153_pri	@ Priority
 	.byte	se_w153_rev	@ Reverb.
 
-	.word	se_w153_grp
+	.int	se_w153_grp
 
-	.word	se_w153_1
-	.word	se_w153_2
+	.int	se_w153_1
+	.int	se_w153_2
 
 	.end

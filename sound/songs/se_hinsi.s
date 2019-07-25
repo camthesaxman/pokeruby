@@ -31,7 +31,7 @@ se_hinsi_1_B1:
 	.byte	W12
 	.byte	W12
 	.byte	GOTO
-	 .word	se_hinsi_1_B1
+	 .int	se_hinsi_1_B1
 	.byte	FINE
 
 @******************************************************@
@@ -43,8 +43,8 @@ se_hinsi:
 	.byte	se_hinsi_pri	@ Priority
 	.byte	se_hinsi_rev	@ Reverb.
 
-	.word	se_hinsi_grp
+	.int	se_hinsi_grp
 
-	.word	se_hinsi_1
+	.int	se_hinsi_1
 
 	.end

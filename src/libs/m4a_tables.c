@@ -1,3 +1,4 @@
+#include "global.h"
 #include "gba/m4a_internal.h"
 
 // Some of these functions have different signatures, so we need to make this

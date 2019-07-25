@@ -180,27 +180,27 @@ bgm_ooame_1_002:
 	.byte	PEND
 	.byte		EOT   , Bn3 
 	.byte	PATT
-	 .word	bgm_ooame_1_000
+	 .int	bgm_ooame_1_000
 	.byte	PATT
-	 .word	bgm_ooame_1_001
+	 .int	bgm_ooame_1_001
 	.byte		EOT   , As3 
 	.byte		TIE   , Bn3 , v112
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ooame_1_002
+	 .int	bgm_ooame_1_002
 	.byte		EOT   , Bn3 
 	.byte	PATT
-	 .word	bgm_ooame_1_000
+	 .int	bgm_ooame_1_000
 	.byte	PATT
-	 .word	bgm_ooame_1_001
+	 .int	bgm_ooame_1_001
 	.byte		EOT   , As3 
 	.byte		TIE   , Bn3 , v112
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_ooame_1_002
+	 .int	bgm_ooame_1_002
 	.byte		EOT   , Bn3 
 	.byte	GOTO
-	 .word	bgm_ooame_1_B1
+	 .int	bgm_ooame_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -241,37 +241,37 @@ bgm_ooame_2_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	PATT
-	 .word	bgm_ooame_2_000
+	 .int	bgm_ooame_2_000
 	.byte	GOTO
-	 .word	bgm_ooame_2_B1
+	 .int	bgm_ooame_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -427,9 +427,9 @@ bgm_ooame_3_001:
 	.byte		N04   , Dn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_ooame_3_000
+	 .int	bgm_ooame_3_000
 	.byte	PATT
-	 .word	bgm_ooame_3_001
+	 .int	bgm_ooame_3_001
 bgm_ooame_3_002:
 	.byte		N08   , En1 , v112
 	.byte	W08
@@ -489,21 +489,21 @@ bgm_ooame_3_003:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ooame_3_000
+	 .int	bgm_ooame_3_000
 	.byte	PATT
-	 .word	bgm_ooame_3_001
+	 .int	bgm_ooame_3_001
 	.byte	PATT
-	 .word	bgm_ooame_3_002
+	 .int	bgm_ooame_3_002
 	.byte	PATT
-	 .word	bgm_ooame_3_003
+	 .int	bgm_ooame_3_003
 	.byte	PATT
-	 .word	bgm_ooame_3_000
+	 .int	bgm_ooame_3_000
 	.byte	PATT
-	 .word	bgm_ooame_3_001
+	 .int	bgm_ooame_3_001
 	.byte	PATT
-	 .word	bgm_ooame_3_002
+	 .int	bgm_ooame_3_002
 	.byte	GOTO
-	 .word	bgm_ooame_3_B1
+	 .int	bgm_ooame_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -603,7 +603,7 @@ bgm_ooame_4_000:
 	.byte		VOL   , 13*bgm_ooame_mvl/mxv
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_ooame_4_000
+	 .int	bgm_ooame_4_000
 	.byte		EOT   , Ds3 
 bgm_ooame_4_001:
 	.byte		VOL   , 40*bgm_ooame_mvl/mxv
@@ -654,12 +654,12 @@ bgm_ooame_4_003:
 	.byte	W48
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ooame_4_000
+	 .int	bgm_ooame_4_000
 	.byte		EOT   , Ds3 
 	.byte	PATT
-	 .word	bgm_ooame_4_001
+	 .int	bgm_ooame_4_001
 	.byte	PATT
-	 .word	bgm_ooame_4_002
+	 .int	bgm_ooame_4_002
 	.byte		EOT   , Ds3 
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 27*bgm_ooame_mvl/mxv
@@ -676,14 +676,14 @@ bgm_ooame_4_003:
 	.byte		        71*bgm_ooame_mvl/mxv
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_ooame_4_003
+	 .int	bgm_ooame_4_003
 	.byte	PATT
-	 .word	bgm_ooame_4_000
+	 .int	bgm_ooame_4_000
 	.byte		EOT   , Ds3 
 	.byte	PATT
-	 .word	bgm_ooame_4_001
+	 .int	bgm_ooame_4_001
 	.byte	PATT
-	 .word	bgm_ooame_4_002
+	 .int	bgm_ooame_4_002
 	.byte		EOT   , Ds3 
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 27*bgm_ooame_mvl/mxv
@@ -700,7 +700,7 @@ bgm_ooame_4_003:
 	.byte		        71*bgm_ooame_mvl/mxv
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_ooame_4_B1
+	 .int	bgm_ooame_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -740,35 +740,35 @@ bgm_ooame_5_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_000
+	 .int	bgm_ooame_5_000
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_000
+	 .int	bgm_ooame_5_000
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_000
+	 .int	bgm_ooame_5_000
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	PATT
-	 .word	bgm_ooame_5_001
+	 .int	bgm_ooame_5_001
 	.byte	GOTO
-	 .word	bgm_ooame_5_B1
+	 .int	bgm_ooame_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -987,9 +987,9 @@ bgm_ooame_6_001:
 	.byte		N04   , Dn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_ooame_6_000
+	 .int	bgm_ooame_6_000
 	.byte	PATT
-	 .word	bgm_ooame_6_001
+	 .int	bgm_ooame_6_001
 	.byte		N08   , En1 , v112
 	.byte	W08
 	.byte		N04   , En1 , v056
@@ -1092,7 +1092,7 @@ bgm_ooame_6_001:
 	.byte		MOD   , 7
 	.byte	W10
 	.byte	GOTO
-	 .word	bgm_ooame_6_B1
+	 .int	bgm_ooame_6_B1
 	.byte		MOD   , 0
 	.byte	FINE
 
@@ -1105,13 +1105,13 @@ bgm_ooame:
 	.byte	bgm_ooame_pri	@ Priority
 	.byte	bgm_ooame_rev	@ Reverb.
 
-	.word	bgm_ooame_grp
+	.int	bgm_ooame_grp
 
-	.word	bgm_ooame_1
-	.word	bgm_ooame_2
-	.word	bgm_ooame_3
-	.word	bgm_ooame_4
-	.word	bgm_ooame_5
-	.word	bgm_ooame_6
+	.int	bgm_ooame_1
+	.int	bgm_ooame_2
+	.int	bgm_ooame_3
+	.int	bgm_ooame_4
+	.int	bgm_ooame_5
+	.int	bgm_ooame_6
 
 	.end

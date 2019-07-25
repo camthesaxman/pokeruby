@@ -204,9 +204,9 @@ se_bt_start:
 	.byte	se_bt_start_pri	@ Priority
 	.byte	se_bt_start_rev	@ Reverb.
 
-	.word	se_bt_start_grp
+	.int	se_bt_start_grp
 
-	.word	se_bt_start_1
-	.word	se_bt_start_2
+	.int	se_bt_start_1
+	.int	se_bt_start_2
 
 	.end

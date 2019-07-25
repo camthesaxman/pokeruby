@@ -1,26 +1,26 @@
 	.macro if_random_less_than percent, address
 	.byte 0x00
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_random_greater_than percent, address
 	.byte 0x01
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_random_equal address
 	.byte 0x02
-	.4byte \address
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_random_not_equal address
 	.byte 0x03
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro score score
@@ -32,178 +32,178 @@
 	.byte 0x05
 	.byte \target
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_hp_more_than target, percent, address
 	.byte 0x06
 	.byte \target
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_hp_equal target, percent, address
 	.byte 0x07
 	.byte \target
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_hp_not_equal target, percent, address
 	.byte 0x08
 	.byte \target
 	.byte \percent
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_status target, status, address
 	.byte 0x09
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_not_status target, status, address
 	.byte 0x0a
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_status2 target, status, address
 	.byte 0x0b
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_not_status2 target, status, address
 	.byte 0x0c
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_status3 target, status, address
 	.byte 0x0d
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_not_status3 target, status, address
 	.byte 0x0e
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_status4 target, status, address
 	.byte 0x0f
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_not_status4 target, status, address
 	.byte 0x10
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro if_less_than value, address
 	.byte 0x11
 	.byte \value
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_more_than value, address
 	.byte 0x12
 	.byte \value
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_equal value, address
 	.byte 0x13
 	.byte \value
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_not_equal value, address
 	.byte 0x14
 	.byte \value
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_less_than_32 value, address
 	.byte 0x15
-	.4byte \value
-	.4byte \address
+	.int \value
+	.int \address
 	.endm
 
 	.macro if_more_than_32 value, address
 	.byte 0x16
-	.4byte \value
-	.4byte \address
+	.int \value
+	.int \address
 	.endm
 
 	.macro if_equal_32 value, address
 	.byte 0x17
-	.4byte \value
-	.4byte \address
+	.int \value
+	.int \address
 	.endm
 
 	.macro if_not_equal_32 value, address
 	.byte 0x18
-	.4byte \value
-	.4byte \address
+	.int \value
+	.int \address
 	.endm
 
 	.macro if_move move, address
 	.byte 0x19
-	.2byte \move
-	.4byte \address
+	.short \move
+	.int \address
 	.endm
 
 	.macro if_not_move move, address
 	.byte 0x1a
-	.2byte \move
-	.4byte \address
+	.short \move
+	.int \address
 	.endm
 
 	.macro if_in_bytes list, address
 	.byte 0x1b
-	.4byte \list
-	.4byte \address
+	.int \list
+	.int \address
 	.endm
 
 	.macro if_not_in_bytes list, address
 	.byte 0x1c
-	.4byte \list
-	.4byte \address
+	.int \list
+	.int \address
 	.endm
 
 	.macro if_in_words list, address
 	.byte 0x1d
-	.4byte \list
-	.4byte \address
+	.int \list
+	.int \address
 	.endm
 
 	.macro if_not_in_words list, address
 	.byte 0x1e
-	.4byte \list
-	.4byte \address
+	.int \list
+	.int \address
 	.endm
 
 	.macro if_user_can_damage address
 	.byte 0x1f
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_user_cant_damage address
 	.byte 0x20
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro get_turn_count
@@ -232,26 +232,26 @@
 	.macro if_arg_equal type, address
 	.byte 0x26
 	.byte \type
-	.4byte \address
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_arg_not_equal type, address
 	.byte 0x27
 	.byte \type
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_would_go_first target, address
 	.byte 0x28
 	.byte \target
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_would_not_go_first target, address
 	.byte 0x29
 	.byte \target
-	.4byte \address
+	.int \address
 	.endm
 
 	@ nullsub
@@ -291,7 +291,7 @@
 	.macro if_damage_bonus value, address
 	.byte 0x31
 	.byte \value
-	.4byte \address
+	.int \address
 	.endm
 
 	@ nullsub
@@ -307,16 +307,16 @@
 	.macro if_status_in_party target, status, address
 	.byte 0x34
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	@ bugged
 	.macro if_status_not_in_party target, status, address
 	.byte 0x35
 	.byte \target
-	.4byte \status
-	.4byte \address
+	.int \status
+	.int \address
 	.endm
 
 	.macro get_weather
@@ -326,13 +326,13 @@
 	.macro if_effect byte, address
 	.byte 0x37
 	.byte \byte
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_not_effect byte, address
 	.byte 0x38
 	.byte \byte
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_stat_level_less_than target, stat, level, address
@@ -340,7 +340,7 @@
 	.byte \target
 	.byte \stat
 	.byte \level
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_stat_level_more_than target, stat, level, address
@@ -348,7 +348,7 @@
 	.byte \target
 	.byte \stat
 	.byte \level
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_stat_level_equal target, stat, level, address
@@ -356,7 +356,7 @@
 	.byte \target
 	.byte \stat
 	.byte \level
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_stat_level_not_equal target, stat, level, address
@@ -364,60 +364,60 @@
 	.byte \target
 	.byte \stat
 	.byte \level
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_can_faint address
 	.byte 0x3d
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_cant_faint address
 	.byte 0x3e
-	.4byte \address
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_has_move, target, move, address
 	.byte 0x3f
 	.byte \target
-	.2byte \move
-	.4byte \address
+	.short \move
+	.int \address
 	.endm
 
 	@ unused
 	.macro if_dont_have_move, target, move, address
 	.byte 0x40
 	.byte \target
-	.2byte \move
-	.4byte \address
+	.short \move
+	.int \address
 	.endm
 
 	.macro if_move_effect target, effect, address
 	.byte 0x41
 	.byte \target
 	.byte \effect
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_not_move_effect target, effect, address
 	.byte 0x42
 	.byte \target
 	.byte \effect
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_last_move_did_damage target, byte, address
 	.byte 0x43
 	.byte \target
 	.byte \byte
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_encored target, address
 	.byte 0x44
 	.byte \target
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro flee
@@ -426,7 +426,7 @@
 
 	.macro if_random_100 address
 	.byte 0x46
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro watch
@@ -512,12 +512,12 @@
 	@ unused
 	.macro call address
 	.byte 0x58
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro jump address
 	.byte 0x59
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro end
@@ -527,7 +527,7 @@
 	.macro if_level_cond cond, address
 	.byte 0x5b
 	.byte \cond
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_user_higher_level address
@@ -545,10 +545,10 @@
 	@ unused
 	.macro if_taunted address
 	.byte 0x5c
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro if_not_taunted address
 	.byte 0x5d
-	.4byte \address
+	.int \address
 	.endm

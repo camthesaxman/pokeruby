@@ -41,7 +41,7 @@ bgm_kakkoii_1_000:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_1_000
+	 .int	bgm_kakkoii_1_000
 bgm_kakkoii_1_B1:
 bgm_kakkoii_1_001:
 	.byte		N03   , En4 , v112
@@ -100,7 +100,7 @@ bgm_kakkoii_1_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 bgm_kakkoii_1_003:
 	.byte		N02   , En4 , v112
 	.byte	W04
@@ -136,31 +136,31 @@ bgm_kakkoii_1_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_002
+	 .int	bgm_kakkoii_1_002
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_003
+	 .int	bgm_kakkoii_1_003
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_002
+	 .int	bgm_kakkoii_1_002
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_003
+	 .int	bgm_kakkoii_1_003
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_002
+	 .int	bgm_kakkoii_1_002
 	.byte	PATT
-	 .word	bgm_kakkoii_1_001
+	 .int	bgm_kakkoii_1_001
 	.byte	PATT
-	 .word	bgm_kakkoii_1_003
+	 .int	bgm_kakkoii_1_003
 	.byte	GOTO
-	 .word	bgm_kakkoii_1_B1
+	 .int	bgm_kakkoii_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -207,7 +207,7 @@ bgm_kakkoii_2_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kakkoii_2_B1
+	 .int	bgm_kakkoii_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -396,9 +396,9 @@ bgm_kakkoii_3_002:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_3_000
+	 .int	bgm_kakkoii_3_000
 	.byte	PATT
-	 .word	bgm_kakkoii_3_001
+	 .int	bgm_kakkoii_3_001
 	.byte		BEND  , c_v+0
 	.byte		N06   , Cn1 , v120
 	.byte	W06
@@ -432,7 +432,7 @@ bgm_kakkoii_3_002:
 	.byte		        As1 , v032
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kakkoii_3_002
+	 .int	bgm_kakkoii_3_002
 	.byte		BEND  , c_v+0
 	.byte		N06   , Dn1 , v120
 	.byte	W06
@@ -605,13 +605,13 @@ bgm_kakkoii_3_005:
 	.byte		BEND  , c_v+5
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kakkoii_3_003
+	 .int	bgm_kakkoii_3_003
 	.byte	PATT
-	 .word	bgm_kakkoii_3_004
+	 .int	bgm_kakkoii_3_004
 	.byte	PATT
-	 .word	bgm_kakkoii_3_005
+	 .int	bgm_kakkoii_3_005
 	.byte	GOTO
-	 .word	bgm_kakkoii_3_B1
+	 .int	bgm_kakkoii_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1167,7 +1167,7 @@ bgm_kakkoii_4_B1:
 	.byte		        Dn5 , v048
 	.byte	W09
 	.byte	GOTO
-	 .word	bgm_kakkoii_4_B1
+	 .int	bgm_kakkoii_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1702,7 +1702,7 @@ bgm_kakkoii_5_B1:
 	.byte		        Bn4 , v048
 	.byte	W09
 	.byte	GOTO
-	 .word	bgm_kakkoii_5_B1
+	 .int	bgm_kakkoii_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1765,7 +1765,7 @@ bgm_kakkoii_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kakkoii_6_B1
+	 .int	bgm_kakkoii_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1829,7 +1829,7 @@ bgm_kakkoii_7_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_7_000
+	 .int	bgm_kakkoii_7_000
 bgm_kakkoii_7_002:
 	.byte		N03   , An1 , v112
 	.byte	W06
@@ -1855,13 +1855,13 @@ bgm_kakkoii_7_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_7_000
+	 .int	bgm_kakkoii_7_000
 	.byte	PATT
-	 .word	bgm_kakkoii_7_001
+	 .int	bgm_kakkoii_7_001
 	.byte	PATT
-	 .word	bgm_kakkoii_7_000
+	 .int	bgm_kakkoii_7_000
 	.byte	PATT
-	 .word	bgm_kakkoii_7_002
+	 .int	bgm_kakkoii_7_002
 bgm_kakkoii_7_003:
 	.byte		N03   , Dn2 , v112
 	.byte	W06
@@ -1911,7 +1911,7 @@ bgm_kakkoii_7_004:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_7_003
+	 .int	bgm_kakkoii_7_003
 bgm_kakkoii_7_005:
 	.byte		N03   , Bn1 , v112
 	.byte	W06
@@ -1937,15 +1937,15 @@ bgm_kakkoii_7_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_7_003
+	 .int	bgm_kakkoii_7_003
 	.byte	PATT
-	 .word	bgm_kakkoii_7_004
+	 .int	bgm_kakkoii_7_004
 	.byte	PATT
-	 .word	bgm_kakkoii_7_003
+	 .int	bgm_kakkoii_7_003
 	.byte	PATT
-	 .word	bgm_kakkoii_7_005
+	 .int	bgm_kakkoii_7_005
 	.byte	GOTO
-	 .word	bgm_kakkoii_7_B1
+	 .int	bgm_kakkoii_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2009,7 +2009,7 @@ bgm_kakkoii_8_001:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_8_000
+	 .int	bgm_kakkoii_8_000
 bgm_kakkoii_8_002:
 	.byte		N03   , Fn2 , v112
 	.byte	W06
@@ -2035,13 +2035,13 @@ bgm_kakkoii_8_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_8_000
+	 .int	bgm_kakkoii_8_000
 	.byte	PATT
-	 .word	bgm_kakkoii_8_001
+	 .int	bgm_kakkoii_8_001
 	.byte	PATT
-	 .word	bgm_kakkoii_8_000
+	 .int	bgm_kakkoii_8_000
 	.byte	PATT
-	 .word	bgm_kakkoii_8_002
+	 .int	bgm_kakkoii_8_002
 bgm_kakkoii_8_003:
 	.byte		N03   , An2 , v112
 	.byte	W06
@@ -2091,7 +2091,7 @@ bgm_kakkoii_8_004:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_8_003
+	 .int	bgm_kakkoii_8_003
 bgm_kakkoii_8_005:
 	.byte		N03   , Gn2 , v112
 	.byte	W06
@@ -2117,15 +2117,15 @@ bgm_kakkoii_8_005:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_8_003
+	 .int	bgm_kakkoii_8_003
 	.byte	PATT
-	 .word	bgm_kakkoii_8_004
+	 .int	bgm_kakkoii_8_004
 	.byte	PATT
-	 .word	bgm_kakkoii_8_003
+	 .int	bgm_kakkoii_8_003
 	.byte	PATT
-	 .word	bgm_kakkoii_8_005
+	 .int	bgm_kakkoii_8_005
 	.byte	GOTO
-	 .word	bgm_kakkoii_8_B1
+	 .int	bgm_kakkoii_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2245,9 +2245,9 @@ bgm_kakkoii_9_002:
 	.byte		        Dn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kakkoii_9_000
+	 .int	bgm_kakkoii_9_000
 	.byte	PATT
-	 .word	bgm_kakkoii_9_001
+	 .int	bgm_kakkoii_9_001
 bgm_kakkoii_9_003:
 	.byte		N06   , Cn1 , v112
 	.byte	W12
@@ -2291,23 +2291,23 @@ bgm_kakkoii_9_004:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kakkoii_9_000
+	 .int	bgm_kakkoii_9_000
 	.byte	PATT
-	 .word	bgm_kakkoii_9_001
+	 .int	bgm_kakkoii_9_001
 	.byte	PATT
-	 .word	bgm_kakkoii_9_002
+	 .int	bgm_kakkoii_9_002
 	.byte	PATT
-	 .word	bgm_kakkoii_9_004
+	 .int	bgm_kakkoii_9_004
 	.byte	PATT
-	 .word	bgm_kakkoii_9_000
+	 .int	bgm_kakkoii_9_000
 	.byte	PATT
-	 .word	bgm_kakkoii_9_001
+	 .int	bgm_kakkoii_9_001
 	.byte	PATT
-	 .word	bgm_kakkoii_9_003
+	 .int	bgm_kakkoii_9_003
 	.byte	PATT
-	 .word	bgm_kakkoii_9_004
+	 .int	bgm_kakkoii_9_004
 	.byte	GOTO
-	 .word	bgm_kakkoii_9_B1
+	 .int	bgm_kakkoii_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2319,16 +2319,16 @@ bgm_kakkoii:
 	.byte	bgm_kakkoii_pri	@ Priority
 	.byte	bgm_kakkoii_rev	@ Reverb.
 
-	.word	bgm_kakkoii_grp
+	.int	bgm_kakkoii_grp
 
-	.word	bgm_kakkoii_1
-	.word	bgm_kakkoii_2
-	.word	bgm_kakkoii_3
-	.word	bgm_kakkoii_4
-	.word	bgm_kakkoii_5
-	.word	bgm_kakkoii_6
-	.word	bgm_kakkoii_7
-	.word	bgm_kakkoii_8
-	.word	bgm_kakkoii_9
+	.int	bgm_kakkoii_1
+	.int	bgm_kakkoii_2
+	.int	bgm_kakkoii_3
+	.int	bgm_kakkoii_4
+	.int	bgm_kakkoii_5
+	.int	bgm_kakkoii_6
+	.int	bgm_kakkoii_7
+	.int	bgm_kakkoii_8
+	.int	bgm_kakkoii_9
 
 	.end

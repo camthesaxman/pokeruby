@@ -60,53 +60,53 @@ bgm_karakuri_1_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	PATT
-	 .word	bgm_karakuri_1_000
+	 .int	bgm_karakuri_1_000
 	.byte	GOTO
-	 .word	bgm_karakuri_1_B1
+	 .int	bgm_karakuri_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -438,7 +438,7 @@ bgm_karakuri_2_002:
 	.byte		        Cs5 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_karakuri_2_000
+	 .int	bgm_karakuri_2_000
 	.byte		N06   , Cs5 , v112
 	.byte	W06
 	.byte		        Fs4 
@@ -495,9 +495,9 @@ bgm_karakuri_2_002:
 	.byte		        Dn5 , v064
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_karakuri_2_001
+	 .int	bgm_karakuri_2_001
 	.byte	PATT
-	 .word	bgm_karakuri_2_002
+	 .int	bgm_karakuri_2_002
 	.byte		N06   , Cs5 , v112
 	.byte	W24
 	.byte		        Bn4 
@@ -667,7 +667,7 @@ bgm_karakuri_2_002:
 	.byte		N06   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_karakuri_2_B1
+	 .int	bgm_karakuri_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1355,7 +1355,7 @@ bgm_karakuri_3_B1:
 	.byte		        Fn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_karakuri_3_B1
+	 .int	bgm_karakuri_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1447,7 +1447,7 @@ bgm_karakuri_4_000:
 	.byte	W09
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte		N06   , Gs3 , v112
 	.byte	W06
 	.byte		N12   , Fn3 
@@ -1530,11 +1530,11 @@ bgm_karakuri_4_000:
 	.byte		        Cs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	W96
 	.byte		N03   , Cs4 , v112
 	.byte	W06
@@ -1569,11 +1569,11 @@ bgm_karakuri_4_000:
 	.byte		        Bn3 , v064
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	PATT
-	 .word	bgm_karakuri_4_000
+	 .int	bgm_karakuri_4_000
 	.byte	W96
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 32*bgm_karakuri_mvl/mxv
@@ -1700,7 +1700,7 @@ bgm_karakuri_4_000:
 	.byte		N06   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_karakuri_4_B1
+	 .int	bgm_karakuri_4_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -1793,7 +1793,7 @@ bgm_karakuri_5_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte		N06   , Cs4 , v112
 	.byte	W06
 	.byte		N12   , Gs3 
@@ -1860,11 +1860,11 @@ bgm_karakuri_5_000:
 	.byte		        Fs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	W96
 	.byte		N03   , Fn4 , v112
 	.byte	W06
@@ -1899,11 +1899,11 @@ bgm_karakuri_5_000:
 	.byte		        Dn4 , v064
 	.byte	W09
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	PATT
-	 .word	bgm_karakuri_5_000
+	 .int	bgm_karakuri_5_000
 	.byte	W96
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 36*bgm_karakuri_mvl/mxv
@@ -2027,7 +2027,7 @@ bgm_karakuri_5_000:
 	.byte		N06   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_karakuri_5_B1
+	 .int	bgm_karakuri_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2065,49 +2065,49 @@ bgm_karakuri_6_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte	PATT
-	 .word	bgm_karakuri_6_000
+	 .int	bgm_karakuri_6_000
 	.byte		N06   , Cn1 , v112
 	.byte	W12
 	.byte		        Cn1 , v088
@@ -2131,7 +2131,7 @@ bgm_karakuri_6_000:
 	.byte		        En3 , v092
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_karakuri_6_B1
+	 .int	bgm_karakuri_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2182,9 +2182,9 @@ bgm_karakuri_7_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_7_000
+	 .int	bgm_karakuri_7_000
 	.byte	PATT
-	 .word	bgm_karakuri_7_000
+	 .int	bgm_karakuri_7_000
 bgm_karakuri_7_001:
 	.byte		N03   , Cs1 , v112
 	.byte	W06
@@ -2208,9 +2208,9 @@ bgm_karakuri_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_karakuri_7_001
+	 .int	bgm_karakuri_7_001
 	.byte	PATT
-	 .word	bgm_karakuri_7_001
+	 .int	bgm_karakuri_7_001
 	.byte		N03   , Cs1 , v112
 	.byte	W06
 	.byte		N06   
@@ -2252,17 +2252,17 @@ bgm_karakuri_7_001:
 	.byte		N06   , Fs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_karakuri_7_000
+	 .int	bgm_karakuri_7_000
 	.byte	PATT
-	 .word	bgm_karakuri_7_000
+	 .int	bgm_karakuri_7_000
 	.byte	PATT
-	 .word	bgm_karakuri_7_000
+	 .int	bgm_karakuri_7_000
 	.byte	PATT
-	 .word	bgm_karakuri_7_001
+	 .int	bgm_karakuri_7_001
 	.byte	PATT
-	 .word	bgm_karakuri_7_001
+	 .int	bgm_karakuri_7_001
 	.byte	PATT
-	 .word	bgm_karakuri_7_001
+	 .int	bgm_karakuri_7_001
 	.byte		N03   , Cs1 , v112
 	.byte	W06
 	.byte		N06   
@@ -2386,7 +2386,7 @@ bgm_karakuri_7_002:
 	.byte		N06   , Cs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_karakuri_7_002
+	 .int	bgm_karakuri_7_002
 	.byte		N03   , Fs1 , v112
 	.byte	W06
 	.byte		N06   , As1 
@@ -2444,7 +2444,7 @@ bgm_karakuri_7_002:
 	.byte		N06   
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_karakuri_7_B1
+	 .int	bgm_karakuri_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2923,7 +2923,7 @@ bgm_karakuri_8_B1:
 	.byte		        Gs4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_karakuri_8_B1
+	 .int	bgm_karakuri_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2935,15 +2935,15 @@ bgm_karakuri:
 	.byte	bgm_karakuri_pri	@ Priority
 	.byte	bgm_karakuri_rev	@ Reverb.
 
-	.word	bgm_karakuri_grp
+	.int	bgm_karakuri_grp
 
-	.word	bgm_karakuri_1
-	.word	bgm_karakuri_2
-	.word	bgm_karakuri_3
-	.word	bgm_karakuri_4
-	.word	bgm_karakuri_5
-	.word	bgm_karakuri_6
-	.word	bgm_karakuri_7
-	.word	bgm_karakuri_8
+	.int	bgm_karakuri_1
+	.int	bgm_karakuri_2
+	.int	bgm_karakuri_3
+	.int	bgm_karakuri_4
+	.int	bgm_karakuri_5
+	.int	bgm_karakuri_6
+	.int	bgm_karakuri_7
+	.int	bgm_karakuri_8
 
 	.end

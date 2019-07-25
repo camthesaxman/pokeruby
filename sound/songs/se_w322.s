@@ -200,9 +200,9 @@ se_w322:
 	.byte	se_w322_pri	@ Priority
 	.byte	se_w322_rev	@ Reverb.
 
-	.word	se_w322_grp
+	.int	se_w322_grp
 
-	.word	se_w322_1
-	.word	se_w322_2
+	.int	se_w322_1
+	.int	se_w322_2
 
 	.end

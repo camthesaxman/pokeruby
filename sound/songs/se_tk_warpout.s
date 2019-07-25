@@ -53,8 +53,8 @@ se_tk_warpout:
 	.byte	se_tk_warpout_pri	@ Priority
 	.byte	se_tk_warpout_rev	@ Reverb.
 
-	.word	se_tk_warpout_grp
+	.int	se_tk_warpout_grp
 
-	.word	se_tk_warpout_1
+	.int	se_tk_warpout_1
 
 	.end

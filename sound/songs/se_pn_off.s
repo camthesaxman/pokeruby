@@ -78,9 +78,9 @@ se_pn_off:
 	.byte	se_pn_off_pri	@ Priority
 	.byte	se_pn_off_rev	@ Reverb.
 
-	.word	se_pn_off_grp
+	.int	se_pn_off_grp
 
-	.word	se_pn_off_1
-	.word	se_pn_off_2
+	.int	se_pn_off_1
+	.int	se_pn_off_2
 
 	.end

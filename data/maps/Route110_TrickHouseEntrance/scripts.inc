@@ -128,7 +128,7 @@ Route110_TrickHouseEntrance_MapScript2_1610B2:: @ 81610B2
 	map_script_2 VAR_TRICK_HOUSE_ENTRANCE_STATE_3, 4, Route110_TrickHouseEntrance_EventScript_1611AB
 	map_script_2 VAR_TRICK_HOUSE_ENTRANCE_STATE_3, 5, Route110_TrickHouseEntrance_EventScript_1611AB
 	map_script_2 VAR_TRICK_HOUSE_ENTRANCE_STATE_3, 6, Route110_TrickHouseEntrance_EventScript_1611BE
-	.2byte 0
+	.short 0
 
 Route110_TrickHouseEntrance_EventScript_1610F4:: @ 81610F4
 	addobject 1
@@ -201,7 +201,7 @@ Route110_TrickHouseEntrance_EventScript_1611BE:: @ 81611BE
 
 Route110_TrickHouseEntrance_MapScript2_1611CD:: @ 81611CD
 	map_script_2 VAR_TRICK_HOUSE_ENTRANCE_STATE_2, 1, Route110_TrickHouseEntrance_EventScript_1611D7
-	.2byte 0
+	.short 0
 
 Route110_TrickHouseEntrance_EventScript_1611D7:: @ 81611D7
 	lockall

@@ -41,8 +41,8 @@ se_fu_zaku2:
 	.byte	se_fu_zaku2_pri	@ Priority
 	.byte	se_fu_zaku2_rev	@ Reverb.
 
-	.word	se_fu_zaku2_grp
+	.int	se_fu_zaku2_grp
 
-	.word	se_fu_zaku2_1
+	.int	se_fu_zaku2_1
 
 	.end

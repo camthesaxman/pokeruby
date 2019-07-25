@@ -91,8 +91,8 @@ se_t_kami:
 	.byte	se_t_kami_pri	@ Priority
 	.byte	se_t_kami_rev	@ Reverb.
 
-	.word	se_t_kami_grp
+	.int	se_t_kami_grp
 
-	.word	se_t_kami_1
+	.int	se_t_kami_1
 
 	.end

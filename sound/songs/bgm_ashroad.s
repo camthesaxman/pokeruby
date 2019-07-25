@@ -319,9 +319,9 @@ bgm_ashroad_1_001:
 	.byte		N12   , As3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_1_000
+	 .int	bgm_ashroad_1_000
 	.byte	PATT
-	 .word	bgm_ashroad_1_001
+	 .int	bgm_ashroad_1_001
 	.byte		MOD   , 0
 	.byte		N24   , An4 , v112
 	.byte	W12
@@ -378,7 +378,7 @@ bgm_ashroad_1_001:
 	.byte		N12   , En5 , v036
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_ashroad_1_B1
+	 .int	bgm_ashroad_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -538,17 +538,17 @@ bgm_ashroad_2_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_2_000
+	 .int	bgm_ashroad_2_000
 	.byte	PATT
-	 .word	bgm_ashroad_2_001
+	 .int	bgm_ashroad_2_001
 	.byte	PATT
-	 .word	bgm_ashroad_2_000
+	 .int	bgm_ashroad_2_000
 	.byte	PATT
-	 .word	bgm_ashroad_2_001
+	 .int	bgm_ashroad_2_001
 	.byte	PATT
-	 .word	bgm_ashroad_2_000
+	 .int	bgm_ashroad_2_000
 	.byte	PATT
-	 .word	bgm_ashroad_2_001
+	 .int	bgm_ashroad_2_001
 bgm_ashroad_2_002:
 	.byte		VOL   , 47*bgm_ashroad_mvl/mxv
 	.byte		N06   , En3 , v112
@@ -774,7 +774,7 @@ bgm_ashroad_2_003:
 	.byte		N06   , An3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_2_003
+	 .int	bgm_ashroad_2_003
 	.byte		N06   , An3 , v112
 	.byte	W21
 	.byte		N03   , As3 
@@ -848,11 +848,11 @@ bgm_ashroad_2_003:
 	.byte		N06   , Dn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_2_001
+	 .int	bgm_ashroad_2_001
 	.byte	PATT
-	 .word	bgm_ashroad_2_002
+	 .int	bgm_ashroad_2_002
 	.byte	GOTO
-	 .word	bgm_ashroad_2_B1
+	 .int	bgm_ashroad_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -931,11 +931,11 @@ bgm_ashroad_3_000:
 	.byte	W18
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_3_000
+	 .int	bgm_ashroad_3_000
 	.byte	PATT
-	 .word	bgm_ashroad_3_000
+	 .int	bgm_ashroad_3_000
 	.byte	PATT
-	 .word	bgm_ashroad_3_000
+	 .int	bgm_ashroad_3_000
 	.byte		N06   , An1 , v127
 	.byte	W06
 	.byte		N12   , An1 , v040
@@ -997,7 +997,7 @@ bgm_ashroad_3_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_3_001
+	 .int	bgm_ashroad_3_001
 	.byte		N06   , An1 , v127
 	.byte	W06
 	.byte		N12   , An1 , v040
@@ -1153,7 +1153,7 @@ bgm_ashroad_3_001:
 	.byte		N12   , Dn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_3_000
+	 .int	bgm_ashroad_3_000
 	.byte		N06   , An1 , v127
 	.byte	W06
 	.byte		N12   , An1 , v040
@@ -1175,7 +1175,7 @@ bgm_ashroad_3_001:
 	.byte		N12   , As1 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_ashroad_3_B1
+	 .int	bgm_ashroad_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1267,21 +1267,21 @@ bgm_ashroad_4_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_4_000
+	 .int	bgm_ashroad_4_000
 	.byte	PATT
-	 .word	bgm_ashroad_4_001
+	 .int	bgm_ashroad_4_001
 	.byte	PATT
-	 .word	bgm_ashroad_4_000
+	 .int	bgm_ashroad_4_000
 	.byte	PATT
-	 .word	bgm_ashroad_4_001
+	 .int	bgm_ashroad_4_001
 	.byte	PATT
-	 .word	bgm_ashroad_4_000
+	 .int	bgm_ashroad_4_000
 	.byte	PATT
-	 .word	bgm_ashroad_4_001
+	 .int	bgm_ashroad_4_001
 	.byte	PATT
-	 .word	bgm_ashroad_4_000
+	 .int	bgm_ashroad_4_000
 	.byte	PATT
-	 .word	bgm_ashroad_4_001
+	 .int	bgm_ashroad_4_001
 bgm_ashroad_4_002:
 	.byte		N06   , An2 , v112
 	.byte	W21
@@ -1431,9 +1431,9 @@ bgm_ashroad_4_003:
 	.byte		N06   , Fs2 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_4_002
+	 .int	bgm_ashroad_4_002
 	.byte	PATT
-	 .word	bgm_ashroad_4_003
+	 .int	bgm_ashroad_4_003
 	.byte		N06   , Cn3 , v112
 	.byte	W21
 	.byte		N03   , Cs3 , v064
@@ -1581,7 +1581,7 @@ bgm_ashroad_4_003:
 	.byte		N06   , En2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_ashroad_4_B1
+	 .int	bgm_ashroad_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2023,7 +2023,7 @@ bgm_ashroad_5_000:
 	.byte		        An3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_ashroad_5_000
+	 .int	bgm_ashroad_5_000
 	.byte		MOD   , 0
 	.byte		N21   , Fn4 , v112
 	.byte	W12
@@ -2097,7 +2097,7 @@ bgm_ashroad_5_000:
 	.byte		MOD   , 0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_ashroad_5_B1
+	 .int	bgm_ashroad_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2333,9 +2333,9 @@ bgm_ashroad_6_001:
 	.byte		N12   , As3 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_ashroad_6_000
+	 .int	bgm_ashroad_6_000
 	.byte	PATT
-	 .word	bgm_ashroad_6_001
+	 .int	bgm_ashroad_6_001
 	.byte		N24   , An4 , v112
 	.byte	W12
 	.byte		MOD   , 7
@@ -2389,7 +2389,7 @@ bgm_ashroad_6_001:
 	.byte		        0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_ashroad_6_B1
+	 .int	bgm_ashroad_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -2452,43 +2452,43 @@ bgm_ashroad_7_001:
 	.byte	W03
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_001
+	 .int	bgm_ashroad_7_001
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_001
+	 .int	bgm_ashroad_7_001
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_001
+	 .int	bgm_ashroad_7_001
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_001
+	 .int	bgm_ashroad_7_001
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_000
+	 .int	bgm_ashroad_7_000
 	.byte	PATT
-	 .word	bgm_ashroad_7_001
+	 .int	bgm_ashroad_7_001
 	.byte	GOTO
-	 .word	bgm_ashroad_7_B1
+	 .int	bgm_ashroad_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2548,11 +2548,11 @@ bgm_ashroad_8_000:
 	.byte		N03   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 bgm_ashroad_8_001:
 	.byte		N06   , Cn1 , v124
 	.byte	W12
@@ -2582,13 +2582,13 @@ bgm_ashroad_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 	.byte	PATT
-	 .word	bgm_ashroad_8_000
+	 .int	bgm_ashroad_8_000
 	.byte	PATT
-	 .word	bgm_ashroad_8_001
+	 .int	bgm_ashroad_8_001
 	.byte		N06   , Cn1 , v124
 	.byte	W12
 	.byte		N12   , As1 , v088
@@ -2803,7 +2803,7 @@ bgm_ashroad_8_001:
 	.byte		        Dn3 , v096
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_ashroad_8_B1
+	 .int	bgm_ashroad_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2815,15 +2815,15 @@ bgm_ashroad:
 	.byte	bgm_ashroad_pri	@ Priority
 	.byte	bgm_ashroad_rev	@ Reverb.
 
-	.word	bgm_ashroad_grp
+	.int	bgm_ashroad_grp
 
-	.word	bgm_ashroad_1
-	.word	bgm_ashroad_2
-	.word	bgm_ashroad_3
-	.word	bgm_ashroad_4
-	.word	bgm_ashroad_5
-	.word	bgm_ashroad_6
-	.word	bgm_ashroad_7
-	.word	bgm_ashroad_8
+	.int	bgm_ashroad_1
+	.int	bgm_ashroad_2
+	.int	bgm_ashroad_3
+	.int	bgm_ashroad_4
+	.int	bgm_ashroad_5
+	.int	bgm_ashroad_6
+	.int	bgm_ashroad_7
+	.int	bgm_ashroad_8
 
 	.end

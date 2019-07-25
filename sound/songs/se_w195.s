@@ -85,13 +85,13 @@ se_w195_1_003:
 	.byte		PAN   , c_v+4
 	.byte	W02
 	.byte	PATT
-	 .word	se_w195_1_000
+	 .int	se_w195_1_000
 	.byte	PATT
-	 .word	se_w195_1_001
+	 .int	se_w195_1_001
 	.byte	PATT
-	 .word	se_w195_1_002
+	 .int	se_w195_1_002
 	.byte	PATT
-	 .word	se_w195_1_003
+	 .int	se_w195_1_003
 	.byte		PAN   , c_v-4
 	.byte	W06
 	.byte		        c_v+0
@@ -171,7 +171,7 @@ se_w195_2_000:
 	.byte		        40*se_w195_mvl/mxv
 	.byte	W03
 	.byte	PATT
-	 .word	se_w195_2_000
+	 .int	se_w195_2_000
 	.byte		VOL   , 56*se_w195_mvl/mxv
 	.byte	W03
 	.byte		        62*se_w195_mvl/mxv
@@ -213,9 +213,9 @@ se_w195:
 	.byte	se_w195_pri	@ Priority
 	.byte	se_w195_rev	@ Reverb.
 
-	.word	se_w195_grp
+	.int	se_w195_grp
 
-	.word	se_w195_1
-	.word	se_w195_2
+	.int	se_w195_1
+	.int	se_w195_2
 
 	.end

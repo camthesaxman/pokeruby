@@ -92,9 +92,9 @@ se_w280:
 	.byte	se_w280_pri	@ Priority
 	.byte	se_w280_rev	@ Reverb.
 
-	.word	se_w280_grp
+	.int	se_w280_grp
 
-	.word	se_w280_1
-	.word	se_w280_2
+	.int	se_w280_1
+	.int	se_w280_2
 
 	.end

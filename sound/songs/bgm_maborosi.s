@@ -176,7 +176,7 @@ bgm_maborosi_1_B1:
 	.byte		        As2 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_maborosi_1_B1
+	 .int	bgm_maborosi_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -267,9 +267,9 @@ bgm_maborosi_2_001:
 	.byte		        Dn4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_2_000
+	 .int	bgm_maborosi_2_000
 	.byte	PATT
-	 .word	bgm_maborosi_2_001
+	 .int	bgm_maborosi_2_001
 	.byte		PAN   , c_v+27
 	.byte		N04   , As4 , v064
 	.byte	W08
@@ -492,11 +492,11 @@ bgm_maborosi_2_002:
 	.byte		        Gs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_maborosi_2_002
+	 .int	bgm_maborosi_2_002
 	.byte		N60   , Fn4 , v064
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_maborosi_2_B1
+	 .int	bgm_maborosi_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -578,7 +578,7 @@ bgm_maborosi_3_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 	.byte		N12   , Fn4 , v076
 	.byte	W12
 	.byte		        As4 , v072
@@ -604,9 +604,9 @@ bgm_maborosi_3_003:
 	.byte		        As4 , v024
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_3_003
+	 .int	bgm_maborosi_3_003
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 bgm_maborosi_3_004:
 	.byte		N12   , Fn4 , v072
 	.byte	W12
@@ -634,11 +634,11 @@ bgm_maborosi_3_004:
 	.byte		        As4 , v024
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_3_003
+	 .int	bgm_maborosi_3_003
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 	.byte	PATT
-	 .word	bgm_maborosi_3_004
+	 .int	bgm_maborosi_3_004
 	.byte		N12   , Fn4 , v044
 	.byte	W12
 	.byte		        As4 , v040
@@ -652,11 +652,11 @@ bgm_maborosi_3_004:
 	.byte		        As4 , v020
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_3_003
+	 .int	bgm_maborosi_3_003
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 	.byte	PATT
-	 .word	bgm_maborosi_3_004
+	 .int	bgm_maborosi_3_004
 	.byte		N12   , Fn4 , v048
 	.byte	W12
 	.byte		        As4 , v044
@@ -670,9 +670,9 @@ bgm_maborosi_3_004:
 	.byte		        As4 , v024
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_3_003
+	 .int	bgm_maborosi_3_003
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 	.byte		N12   , Fn4 , v076
 	.byte	W12
 	.byte		        As4 , v072
@@ -698,15 +698,15 @@ bgm_maborosi_3_004:
 	.byte		        As4 , v028
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_3_003
+	 .int	bgm_maborosi_3_003
 	.byte	PATT
-	 .word	bgm_maborosi_3_000
+	 .int	bgm_maborosi_3_000
 	.byte	PATT
-	 .word	bgm_maborosi_3_001
+	 .int	bgm_maborosi_3_001
 	.byte	PATT
-	 .word	bgm_maborosi_3_002
+	 .int	bgm_maborosi_3_002
 	.byte	GOTO
-	 .word	bgm_maborosi_3_B1
+	 .int	bgm_maborosi_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -792,9 +792,9 @@ bgm_maborosi_4_004:
 	.byte		        En3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_4_000
+	 .int	bgm_maborosi_4_000
 	.byte	PATT
-	 .word	bgm_maborosi_4_001
+	 .int	bgm_maborosi_4_001
 	.byte		TIE   , Dn3 , v064
 	.byte	W72
 	.byte	W66
@@ -802,9 +802,9 @@ bgm_maborosi_4_004:
 	.byte		N06   , Cs3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_4_002
+	 .int	bgm_maborosi_4_002
 	.byte	PATT
-	 .word	bgm_maborosi_4_003
+	 .int	bgm_maborosi_4_003
 	.byte		TIE   , Gn2 , v064
 	.byte	W72
 	.byte	W60
@@ -814,7 +814,7 @@ bgm_maborosi_4_004:
 	.byte		        Ds3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_4_004
+	 .int	bgm_maborosi_4_004
 	.byte		N72   , Fn3 , v064
 	.byte	W72
 	.byte		TIE   , Dn3 
@@ -826,11 +826,11 @@ bgm_maborosi_4_004:
 	.byte		        En3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_4_000
+	 .int	bgm_maborosi_4_000
 	.byte	PATT
-	 .word	bgm_maborosi_4_001
+	 .int	bgm_maborosi_4_001
 	.byte	GOTO
-	 .word	bgm_maborosi_4_B1
+	 .int	bgm_maborosi_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -894,7 +894,7 @@ bgm_maborosi_5_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_maborosi_5_001
+	 .int	bgm_maborosi_5_001
 bgm_maborosi_5_005:
 	.byte		N60   , Cs4 , v064
 	.byte	W60
@@ -920,19 +920,19 @@ bgm_maborosi_5_005:
 	.byte		N06   , An3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_5_000
+	 .int	bgm_maborosi_5_000
 	.byte	PATT
-	 .word	bgm_maborosi_5_001
+	 .int	bgm_maborosi_5_001
 	.byte	PATT
-	 .word	bgm_maborosi_5_002
+	 .int	bgm_maborosi_5_002
 	.byte	PATT
-	 .word	bgm_maborosi_5_003
+	 .int	bgm_maborosi_5_003
 	.byte	PATT
-	 .word	bgm_maborosi_5_004
+	 .int	bgm_maborosi_5_004
 	.byte	PATT
-	 .word	bgm_maborosi_5_001
+	 .int	bgm_maborosi_5_001
 	.byte	PATT
-	 .word	bgm_maborosi_5_005
+	 .int	bgm_maborosi_5_005
 	.byte		N72   , Cn4 , v064
 	.byte	W72
 	.byte		TIE   , Gs3 
@@ -950,7 +950,7 @@ bgm_maborosi_5_005:
 	.byte		N06   , An3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_maborosi_5_B1
+	 .int	bgm_maborosi_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -990,7 +990,7 @@ bgm_maborosi_6_B1:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_maborosi_6_B1
+	 .int	bgm_maborosi_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1055,9 +1055,9 @@ bgm_maborosi_7_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_maborosi_7_000
+	 .int	bgm_maborosi_7_000
 	.byte	PATT
-	 .word	bgm_maborosi_7_001
+	 .int	bgm_maborosi_7_001
 	.byte		N24   , Fs1 , v064
 	.byte	W24
 	.byte		N06   
@@ -1121,7 +1121,7 @@ bgm_maborosi_7_007:
 	.byte		        Gn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_7_001
+	 .int	bgm_maborosi_7_001
 	.byte		N30   , Fs1 , v064
 	.byte	W36
 	.byte		N06   
@@ -1133,7 +1133,7 @@ bgm_maborosi_7_007:
 	.byte		        As1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_7_003
+	 .int	bgm_maborosi_7_003
 	.byte		N60   , Bn1 , v064
 	.byte	W60
 	.byte		N06   , An1 
@@ -1141,7 +1141,7 @@ bgm_maborosi_7_007:
 	.byte		        Gn1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_7_001
+	 .int	bgm_maborosi_7_001
 	.byte		N24   , Fs1 , v064
 	.byte	W36
 	.byte		N06   
@@ -1153,11 +1153,11 @@ bgm_maborosi_7_007:
 	.byte		        Fs1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_maborosi_7_004
+	 .int	bgm_maborosi_7_004
 	.byte	PATT
-	 .word	bgm_maborosi_7_005
+	 .int	bgm_maborosi_7_005
 	.byte	PATT
-	 .word	bgm_maborosi_7_006
+	 .int	bgm_maborosi_7_006
 	.byte		N36   , Fs1 , v064
 	.byte	W36
 	.byte		N06   , Cn1 
@@ -1167,15 +1167,15 @@ bgm_maborosi_7_007:
 	.byte		N06   , Cn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_7_007
+	 .int	bgm_maborosi_7_007
 	.byte	PATT
-	 .word	bgm_maborosi_7_000
+	 .int	bgm_maborosi_7_000
 	.byte	PATT
-	 .word	bgm_maborosi_7_001
+	 .int	bgm_maborosi_7_001
 	.byte	PATT
-	 .word	bgm_maborosi_7_002
+	 .int	bgm_maborosi_7_002
 	.byte	GOTO
-	 .word	bgm_maborosi_7_B1
+	 .int	bgm_maborosi_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1327,9 +1327,9 @@ bgm_maborosi_8_008:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_maborosi_8_005
+	 .int	bgm_maborosi_8_005
 	.byte	PATT
-	 .word	bgm_maborosi_8_006
+	 .int	bgm_maborosi_8_006
 bgm_maborosi_8_009:
 	.byte		N12   , Bn3 , v024
 	.byte	W12
@@ -1345,7 +1345,7 @@ bgm_maborosi_8_009:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_maborosi_8_000
+	 .int	bgm_maborosi_8_000
 	.byte		N12   , As3 , v076
 	.byte	W12
 	.byte		        Cn4 , v072
@@ -1371,31 +1371,31 @@ bgm_maborosi_8_009:
 	.byte		        Cn4 , v020
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_maborosi_8_003
+	 .int	bgm_maborosi_8_003
 	.byte	PATT
-	 .word	bgm_maborosi_8_004
+	 .int	bgm_maborosi_8_004
 	.byte	PATT
-	 .word	bgm_maborosi_8_005
+	 .int	bgm_maborosi_8_005
 	.byte	PATT
-	 .word	bgm_maborosi_8_006
+	 .int	bgm_maborosi_8_006
 	.byte	PATT
-	 .word	bgm_maborosi_8_007
+	 .int	bgm_maborosi_8_007
 	.byte	PATT
-	 .word	bgm_maborosi_8_008
+	 .int	bgm_maborosi_8_008
 	.byte	PATT
-	 .word	bgm_maborosi_8_005
+	 .int	bgm_maborosi_8_005
 	.byte	PATT
-	 .word	bgm_maborosi_8_006
+	 .int	bgm_maborosi_8_006
 	.byte	PATT
-	 .word	bgm_maborosi_8_009
+	 .int	bgm_maborosi_8_009
 	.byte	PATT
-	 .word	bgm_maborosi_8_000
+	 .int	bgm_maborosi_8_000
 	.byte	PATT
-	 .word	bgm_maborosi_8_001
+	 .int	bgm_maborosi_8_001
 	.byte	PATT
-	 .word	bgm_maborosi_8_002
+	 .int	bgm_maborosi_8_002
 	.byte	GOTO
-	 .word	bgm_maborosi_8_B1
+	 .int	bgm_maborosi_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1407,15 +1407,15 @@ bgm_maborosi:
 	.byte	bgm_maborosi_pri	@ Priority
 	.byte	bgm_maborosi_rev	@ Reverb.
 
-	.word	bgm_maborosi_grp
+	.int	bgm_maborosi_grp
 
-	.word	bgm_maborosi_1
-	.word	bgm_maborosi_2
-	.word	bgm_maborosi_3
-	.word	bgm_maborosi_4
-	.word	bgm_maborosi_5
-	.word	bgm_maborosi_6
-	.word	bgm_maborosi_7
-	.word	bgm_maborosi_8
+	.int	bgm_maborosi_1
+	.int	bgm_maborosi_2
+	.int	bgm_maborosi_3
+	.int	bgm_maborosi_4
+	.int	bgm_maborosi_5
+	.int	bgm_maborosi_6
+	.int	bgm_maborosi_7
+	.int	bgm_maborosi_8
 
 	.end

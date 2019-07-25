@@ -54,8 +54,8 @@ se_w052:
 	.byte	se_w052_pri	@ Priority
 	.byte	se_w052_rev	@ Reverb.
 
-	.word	se_w052_grp
+	.int	se_w052_grp
 
-	.word	se_w052_1
+	.int	se_w052_1
 
 	.end

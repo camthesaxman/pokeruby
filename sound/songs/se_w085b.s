@@ -77,9 +77,9 @@ se_w085b:
 	.byte	se_w085b_pri	@ Priority
 	.byte	se_w085b_rev	@ Reverb.
 
-	.word	se_w085b_grp
+	.int	se_w085b_grp
 
-	.word	se_w085b_1
-	.word	se_w085b_2
+	.int	se_w085b_1
+	.int	se_w085b_2
 
 	.end

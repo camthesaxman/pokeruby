@@ -56,9 +56,9 @@ se_ru_gashin:
 	.byte	se_ru_gashin_pri	@ Priority
 	.byte	se_ru_gashin_rev	@ Reverb.
 
-	.word	se_ru_gashin_grp
+	.int	se_ru_gashin_grp
 
-	.word	se_ru_gashin_1
-	.word	se_ru_gashin_2
+	.int	se_ru_gashin_1
+	.int	se_ru_gashin_2
 
 	.end

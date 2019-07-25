@@ -105,9 +105,9 @@ bgm_dooro1_1_001:
 	.byte		        An4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dooro1_1_000
+	 .int	bgm_dooro1_1_000
 	.byte	PATT
-	 .word	bgm_dooro1_1_001
+	 .int	bgm_dooro1_1_001
 	.byte		N06   , An4 , v100
 	.byte	W06
 	.byte		        Gn4 
@@ -186,7 +186,7 @@ bgm_dooro1_1_002:
 	.byte		MOD   , 4
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dooro1_1_002
+	 .int	bgm_dooro1_1_002
 	.byte		N06   , Bn4 , v100
 	.byte	W12
 	.byte		N06   
@@ -264,7 +264,7 @@ bgm_dooro1_1_002:
 	.byte		        Bn4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_dooro1_1_B1
+	 .int	bgm_dooro1_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -343,11 +343,11 @@ bgm_dooro1_2_002:
 	.byte		        An1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dooro1_2_000
+	 .int	bgm_dooro1_2_000
 	.byte	PATT
-	 .word	bgm_dooro1_2_001
+	 .int	bgm_dooro1_2_001
 	.byte	PATT
-	 .word	bgm_dooro1_2_002
+	 .int	bgm_dooro1_2_002
 bgm_dooro1_2_003:
 	.byte		N12   , Gn1 , v120
 	.byte	W24
@@ -429,9 +429,9 @@ bgm_dooro1_2_004:
 	.byte		        An1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dooro1_2_003
+	 .int	bgm_dooro1_2_003
 	.byte	PATT
-	 .word	bgm_dooro1_2_004
+	 .int	bgm_dooro1_2_004
 	.byte		N15   , Fn1 , v120
 	.byte	W18
 	.byte		N06   
@@ -479,7 +479,7 @@ bgm_dooro1_2_004:
 	.byte		        1*bgm_dooro1_mvl/mxv
 	.byte	W01
 	.byte	GOTO
-	 .word	bgm_dooro1_2_B1
+	 .int	bgm_dooro1_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -559,9 +559,9 @@ bgm_dooro1_3_001:
 	.byte		N06   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_dooro1_3_000
+	 .int	bgm_dooro1_3_000
 	.byte	PATT
-	 .word	bgm_dooro1_3_001
+	 .int	bgm_dooro1_3_001
 	.byte		VOICE , 5
 	.byte		PAN   , c_v-49
 	.byte		N06   , Bn3 , v052
@@ -684,7 +684,7 @@ bgm_dooro1_3_001:
 	.byte		        6*bgm_dooro1_mvl/mxv
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_dooro1_3_B1
+	 .int	bgm_dooro1_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -782,9 +782,9 @@ bgm_dooro1_4_001:
 	.byte		        Bn2 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_dooro1_4_000
+	 .int	bgm_dooro1_4_000
 	.byte	PATT
-	 .word	bgm_dooro1_4_001
+	 .int	bgm_dooro1_4_001
 	.byte		VOICE , 8
 	.byte		PAN   , c_v+0
 	.byte		N06   , Gn3 , v052
@@ -955,7 +955,7 @@ bgm_dooro1_4_002:
 	.byte		        Gn4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_dooro1_4_002
+	 .int	bgm_dooro1_4_002
 	.byte		VOICE , 5
 	.byte		PAN   , c_v-48
 	.byte		N06   , As3 , v060
@@ -1021,7 +1021,7 @@ bgm_dooro1_4_002:
 	.byte		N12   , An5 , v044
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_dooro1_4_B1
+	 .int	bgm_dooro1_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1102,11 +1102,11 @@ bgm_dooro1_5_002:
 	.byte		N24   , Dn3 , v060
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_dooro1_5_000
+	 .int	bgm_dooro1_5_000
 	.byte	PATT
-	 .word	bgm_dooro1_5_001
+	 .int	bgm_dooro1_5_001
 	.byte	PATT
-	 .word	bgm_dooro1_5_002
+	 .int	bgm_dooro1_5_002
 	.byte	W48
 	.byte		VOICE , 24
 	.byte		N03   , Dn4 , v044
@@ -1269,7 +1269,7 @@ bgm_dooro1_5_002:
 	.byte		        13*bgm_dooro1_mvl/mxv
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_dooro1_5_B1
+	 .int	bgm_dooro1_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1319,9 +1319,9 @@ bgm_dooro1_6_001:
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_dooro1_6_000
+	 .int	bgm_dooro1_6_000
 	.byte	PATT
-	 .word	bgm_dooro1_6_001
+	 .int	bgm_dooro1_6_001
 	.byte	W96
 	.byte	W48
 	.byte		N06   , Dn5 , v032
@@ -1385,7 +1385,7 @@ bgm_dooro1_6_001:
 	.byte		        0
 	.byte	W18
 	.byte	GOTO
-	 .word	bgm_dooro1_6_B1
+	 .int	bgm_dooro1_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1440,9 +1440,9 @@ bgm_dooro1_7_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dooro1_7_000
+	 .int	bgm_dooro1_7_000
 	.byte	PATT
-	 .word	bgm_dooro1_7_000
+	 .int	bgm_dooro1_7_000
 	.byte		N06   , Gs4 , v040
 	.byte	W12
 	.byte		        Gs4 , v032
@@ -1462,9 +1462,9 @@ bgm_dooro1_7_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_dooro1_7_000
+	 .int	bgm_dooro1_7_000
 	.byte	PATT
-	 .word	bgm_dooro1_7_000
+	 .int	bgm_dooro1_7_000
 	.byte		N06   , Gs4 , v040
 	.byte	W06
 	.byte		        Gs4 , v032
@@ -1504,7 +1504,7 @@ bgm_dooro1_7_000:
 	.byte		        Gs4 , v040
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_dooro1_7_B1
+	 .int	bgm_dooro1_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1565,13 +1565,13 @@ bgm_dooro1_8_001:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dooro1_8_000
+	 .int	bgm_dooro1_8_000
 	.byte	PATT
-	 .word	bgm_dooro1_8_001
+	 .int	bgm_dooro1_8_001
 	.byte	PATT
-	 .word	bgm_dooro1_8_000
+	 .int	bgm_dooro1_8_000
 	.byte	PATT
-	 .word	bgm_dooro1_8_001
+	 .int	bgm_dooro1_8_001
 	.byte		N06   , En3 , v060
 	.byte	W24
 	.byte		        Fs2 , v064
@@ -1621,7 +1621,7 @@ bgm_dooro1_8_002:
 	.byte		N06   , Cn1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dooro1_8_002
+	 .int	bgm_dooro1_8_002
 bgm_dooro1_8_003:
 	.byte		N06   , Cn1 , v112
 	.byte	W24
@@ -1639,9 +1639,9 @@ bgm_dooro1_8_003:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dooro1_8_002
+	 .int	bgm_dooro1_8_002
 	.byte	PATT
-	 .word	bgm_dooro1_8_003
+	 .int	bgm_dooro1_8_003
 	.byte		N06   , Cn1 , v112
 	.byte	W18
 	.byte		N06   
@@ -1687,7 +1687,7 @@ bgm_dooro1_8_003:
 	.byte		N12   , Dn1 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_dooro1_8_B1
+	 .int	bgm_dooro1_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1699,15 +1699,15 @@ bgm_dooro1:
 	.byte	bgm_dooro1_pri	@ Priority
 	.byte	bgm_dooro1_rev	@ Reverb.
 
-	.word	bgm_dooro1_grp
+	.int	bgm_dooro1_grp
 
-	.word	bgm_dooro1_1
-	.word	bgm_dooro1_2
-	.word	bgm_dooro1_3
-	.word	bgm_dooro1_4
-	.word	bgm_dooro1_5
-	.word	bgm_dooro1_6
-	.word	bgm_dooro1_7
-	.word	bgm_dooro1_8
+	.int	bgm_dooro1_1
+	.int	bgm_dooro1_2
+	.int	bgm_dooro1_3
+	.int	bgm_dooro1_4
+	.int	bgm_dooro1_5
+	.int	bgm_dooro1_6
+	.int	bgm_dooro1_7
+	.int	bgm_dooro1_8
 
 	.end

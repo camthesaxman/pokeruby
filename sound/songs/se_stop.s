@@ -22,7 +22,7 @@ se_stop:
 	.byte	se_stop_pri	@ Priority
 	.byte	se_stop_rev	@ Reverb.
 
-	.word	se_stop_grp
+	.int	se_stop_grp
 
 
 	.end

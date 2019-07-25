@@ -314,14 +314,14 @@ bgm_me_waza:
 	.byte	bgm_me_waza_pri	@ Priority
 	.byte	bgm_me_waza_rev	@ Reverb.
 
-	.word	bgm_me_waza_grp
+	.int	bgm_me_waza_grp
 
-	.word	bgm_me_waza_1
-	.word	bgm_me_waza_2
-	.word	bgm_me_waza_3
-	.word	bgm_me_waza_4
-	.word	bgm_me_waza_5
-	.word	bgm_me_waza_6
-	.word	bgm_me_waza_7
+	.int	bgm_me_waza_1
+	.int	bgm_me_waza_2
+	.int	bgm_me_waza_3
+	.int	bgm_me_waza_4
+	.int	bgm_me_waza_5
+	.int	bgm_me_waza_6
+	.int	bgm_me_waza_7
 
 	.end

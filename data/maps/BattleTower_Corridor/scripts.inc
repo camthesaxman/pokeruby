@@ -17,7 +17,7 @@ BattleTower_Corridor_EventScript_16086E:: @ 816086E
 
 BattleTower_Corridor_MapScript2_160881:: @ 8160881
 	map_script_2 VAR_TEMP_0, 0, BattleTower_Corridor_EventScript_16088B
-	.2byte 0
+	.short 0
 
 BattleTower_Corridor_EventScript_16088B:: @ 816088B
 	setvar VAR_TEMP_0, 1

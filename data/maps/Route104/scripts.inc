@@ -5,7 +5,7 @@ Route104_MapScripts:: @ 814EE8C
 
 Route104_MapScript2_14EE97:: @ 814EE97
 	map_script_2 VAR_BOARD_BRINEY_BOAT_ROUTE104_STATE, 1, Route104_EventScript_14EEA1
-	.2byte 0
+	.short 0
 
 Route104_EventScript_14EEA1:: @ 814EEA1
 	lockall

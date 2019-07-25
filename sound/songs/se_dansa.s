@@ -39,8 +39,8 @@ se_dansa:
 	.byte	se_dansa_pri	@ Priority
 	.byte	se_dansa_rev	@ Reverb.
 
-	.word	se_dansa_grp
+	.int	se_dansa_grp
 
-	.word	se_dansa_1
+	.int	se_dansa_1
 
 	.end

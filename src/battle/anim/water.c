@@ -1898,8 +1898,8 @@ void sub_80D4D64(struct Sprite *sprite, int xDiff, int yDiff)
     s16 something = sprite->data[0] / 2;
     s16 combinedX = sprite->pos1.x + sprite->pos2.x;
     s16 combinedY = sprite->pos1.y + sprite->pos2.y;
-    s16 randomSomethingY = yDiff + (Random2() % 10) - 5;
-    s16 randomSomethingX = -xDiff + (Random2() % 10) - 5;
+    s16 randomSomethingY = yDiff + (Random() % 10) - 5;
+    s16 randomSomethingX = -xDiff + (Random() % 10) - 5;
     s16 i;
     u8 spriteId;
 

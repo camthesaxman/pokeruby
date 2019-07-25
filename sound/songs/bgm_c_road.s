@@ -89,7 +89,7 @@ bgm_c_road_1_001:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_c_road_1_000
+	 .int	bgm_c_road_1_000
 	.byte		N02   , Cn5 , v112
 	.byte	W24
 	.byte		N02   
@@ -216,46 +216,46 @@ bgm_c_road_1_003:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_003
+	 .int	bgm_c_road_1_003
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_003
+	 .int	bgm_c_road_1_003
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_002
+	 .int	bgm_c_road_1_002
 	.byte	PATT
-	 .word	bgm_c_road_1_000
+	 .int	bgm_c_road_1_000
 	.byte	PATT
-	 .word	bgm_c_road_1_001
+	 .int	bgm_c_road_1_001
 	.byte	PATT
-	 .word	bgm_c_road_1_000
+	 .int	bgm_c_road_1_000
 	.byte	PATT
-	 .word	bgm_c_road_1_001
+	 .int	bgm_c_road_1_001
 	.byte	GOTO
-	 .word	bgm_c_road_1_B1
+	 .int	bgm_c_road_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -463,7 +463,7 @@ bgm_c_road_2_000:
 	.byte		        Cn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_2_000
+	 .int	bgm_c_road_2_000
 bgm_c_road_2_001:
 	.byte		N04   , Cs1 , v112
 	.byte	W08
@@ -491,9 +491,9 @@ bgm_c_road_2_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_c_road_2_000
+	 .int	bgm_c_road_2_000
 	.byte	PATT
-	 .word	bgm_c_road_2_001
+	 .int	bgm_c_road_2_001
 	.byte		N04   , Dn1 , v112
 	.byte	W08
 	.byte		        En1 , v072
@@ -611,7 +611,7 @@ bgm_c_road_2_001:
 	.byte		        Ds3 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_c_road_2_B1
+	 .int	bgm_c_road_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1122,7 +1122,7 @@ bgm_c_road_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_c_road_3_B1
+	 .int	bgm_c_road_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1205,7 +1205,7 @@ bgm_c_road_4_000:
 	.byte		N04   , En3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_4_000
+	 .int	bgm_c_road_4_000
 	.byte		VOL   , 67*bgm_c_road_mvl/mxv
 	.byte		N24   , Fn4 , v112
 	.byte	W24
@@ -1641,7 +1641,7 @@ bgm_c_road_4_B1:
 	.byte		        Cn4 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_c_road_4_B1
+	 .int	bgm_c_road_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1854,7 +1854,7 @@ bgm_c_road_5_000:
 	.byte		        Cn2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_5_000
+	 .int	bgm_c_road_5_000
 bgm_c_road_5_001:
 	.byte		PAN   , c_v-16
 	.byte		N02   , Cs2 , v112
@@ -1886,9 +1886,9 @@ bgm_c_road_5_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_c_road_5_000
+	 .int	bgm_c_road_5_000
 	.byte	PATT
-	 .word	bgm_c_road_5_001
+	 .int	bgm_c_road_5_001
 	.byte		PAN   , c_v-16
 	.byte		N02   , Dn2 , v112
 	.byte	W08
@@ -2132,9 +2132,9 @@ bgm_c_road_5_003:
 	.byte		N16   
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_c_road_5_002
+	 .int	bgm_c_road_5_002
 	.byte	PATT
-	 .word	bgm_c_road_5_003
+	 .int	bgm_c_road_5_003
 	.byte		N04   , As1 , v112
 	.byte	W24
 	.byte		N04   
@@ -2206,7 +2206,7 @@ bgm_c_road_5_003:
 	.byte		        An3 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_c_road_5_B1
+	 .int	bgm_c_road_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -2855,7 +2855,7 @@ bgm_c_road_6_B1:
 	.byte		N04   
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_c_road_6_B1
+	 .int	bgm_c_road_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -3491,7 +3491,7 @@ bgm_c_road_7_B1:
 	.byte		N04   
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_c_road_7_B1
+	 .int	bgm_c_road_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3515,9 +3515,9 @@ bgm_c_road_8_001:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_c_road_8_000
+	 .int	bgm_c_road_8_000
 	.byte	PATT
-	 .word	bgm_c_road_8_001
+	 .int	bgm_c_road_8_001
 bgm_c_road_8_B1:
 	.byte	W96
 	.byte	W96
@@ -3560,15 +3560,15 @@ bgm_c_road_8_B1:
 	.byte		N48   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_c_road_8_000
+	 .int	bgm_c_road_8_000
 	.byte	PATT
-	 .word	bgm_c_road_8_001
+	 .int	bgm_c_road_8_001
 	.byte	PATT
-	 .word	bgm_c_road_8_000
+	 .int	bgm_c_road_8_000
 	.byte	PATT
-	 .word	bgm_c_road_8_001
+	 .int	bgm_c_road_8_001
 	.byte	GOTO
-	 .word	bgm_c_road_8_B1
+	 .int	bgm_c_road_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -3752,7 +3752,7 @@ bgm_c_road_9_000:
 	.byte		        Dn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_9_000
+	 .int	bgm_c_road_9_000
 	.byte		N48   , Gn2 , v112
 	.byte	W24
 	.byte		MOD   , 5
@@ -3879,11 +3879,11 @@ bgm_c_road_9_003:
 	.byte		        Cs2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_9_001
+	 .int	bgm_c_road_9_001
 	.byte	PATT
-	 .word	bgm_c_road_9_002
+	 .int	bgm_c_road_9_002
 	.byte	PATT
-	 .word	bgm_c_road_9_003
+	 .int	bgm_c_road_9_003
 bgm_c_road_9_004:
 	.byte		N04   , Gs1 , v112
 	.byte	W48
@@ -3905,13 +3905,13 @@ bgm_c_road_9_004:
 	.byte		N04   , Ds1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_c_road_9_004
+	 .int	bgm_c_road_9_004
 	.byte		N04   , Gs1 , v112
 	.byte	W24
 	.byte		N04   
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_c_road_9_B1
+	 .int	bgm_c_road_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -4008,7 +4008,7 @@ bgm_c_road_10_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_c_road_10_B1
+	 .int	bgm_c_road_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -4020,17 +4020,17 @@ bgm_c_road:
 	.byte	bgm_c_road_pri	@ Priority
 	.byte	bgm_c_road_rev	@ Reverb.
 
-	.word	bgm_c_road_grp
+	.int	bgm_c_road_grp
 
-	.word	bgm_c_road_1
-	.word	bgm_c_road_2
-	.word	bgm_c_road_3
-	.word	bgm_c_road_4
-	.word	bgm_c_road_5
-	.word	bgm_c_road_6
-	.word	bgm_c_road_7
-	.word	bgm_c_road_8
-	.word	bgm_c_road_9
-	.word	bgm_c_road_10
+	.int	bgm_c_road_1
+	.int	bgm_c_road_2
+	.int	bgm_c_road_3
+	.int	bgm_c_road_4
+	.int	bgm_c_road_5
+	.int	bgm_c_road_6
+	.int	bgm_c_road_7
+	.int	bgm_c_road_8
+	.int	bgm_c_road_9
+	.int	bgm_c_road_10
 
 	.end

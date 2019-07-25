@@ -120,9 +120,9 @@ se_w025b:
 	.byte	se_w025b_pri	@ Priority
 	.byte	se_w025b_rev	@ Reverb.
 
-	.word	se_w025b_grp
+	.int	se_w025b_grp
 
-	.word	se_w025b_1
-	.word	se_w025b_2
+	.int	se_w025b_1
+	.int	se_w025b_2
 
 	.end

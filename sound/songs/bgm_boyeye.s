@@ -187,7 +187,7 @@ bgm_boyeye_1_B1:
 	.byte		        As4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_boyeye_1_B1
+	 .int	bgm_boyeye_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -358,7 +358,7 @@ bgm_boyeye_2_B1:
 	.byte		N48   , As0 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_boyeye_2_B1
+	 .int	bgm_boyeye_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -474,7 +474,7 @@ bgm_boyeye_3_B1:
 	.byte		        Dn3 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_boyeye_3_B1
+	 .int	bgm_boyeye_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -643,7 +643,7 @@ bgm_boyeye_4_B1:
 	.byte		        As4 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_boyeye_4_B1
+	 .int	bgm_boyeye_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -877,7 +877,7 @@ bgm_boyeye_5_B1:
 	.byte		        Fn4 
 	.byte	W48
 	.byte	GOTO
-	 .word	bgm_boyeye_5_B1
+	 .int	bgm_boyeye_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1041,7 +1041,7 @@ bgm_boyeye_6_B1:
 	.byte		        As4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_boyeye_6_B1
+	 .int	bgm_boyeye_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1137,7 +1137,7 @@ bgm_boyeye_7_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boyeye_7_000
+	 .int	bgm_boyeye_7_000
 	.byte		N06   , Cn1 , v120
 	.byte		N48   , An2 , v080
 	.byte	W12
@@ -1164,7 +1164,7 @@ bgm_boyeye_7_000:
 	.byte		N06   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_boyeye_7_000
+	 .int	bgm_boyeye_7_000
 	.byte		N06   , En1 , v112
 	.byte		N96   , An2 , v080
 	.byte	W12
@@ -1213,7 +1213,7 @@ bgm_boyeye_7_000:
 	.byte		N06   
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_boyeye_7_B1
+	 .int	bgm_boyeye_7_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1225,14 +1225,14 @@ bgm_boyeye:
 	.byte	bgm_boyeye_pri	@ Priority
 	.byte	bgm_boyeye_rev	@ Reverb.
 
-	.word	bgm_boyeye_grp
+	.int	bgm_boyeye_grp
 
-	.word	bgm_boyeye_1
-	.word	bgm_boyeye_2
-	.word	bgm_boyeye_3
-	.word	bgm_boyeye_4
-	.word	bgm_boyeye_5
-	.word	bgm_boyeye_6
-	.word	bgm_boyeye_7
+	.int	bgm_boyeye_1
+	.int	bgm_boyeye_2
+	.int	bgm_boyeye_3
+	.int	bgm_boyeye_4
+	.int	bgm_boyeye_5
+	.int	bgm_boyeye_6
+	.int	bgm_boyeye_7
 
 	.end

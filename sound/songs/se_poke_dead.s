@@ -75,10 +75,10 @@ se_poke_dead:
 	.byte	se_poke_dead_pri	@ Priority
 	.byte	se_poke_dead_rev	@ Reverb.
 
-	.word	se_poke_dead_grp
+	.int	se_poke_dead_grp
 
-	.word	se_poke_dead_1
-	.word	se_poke_dead_2
-	.word	se_poke_dead_3
+	.int	se_poke_dead_1
+	.int	se_poke_dead_2
+	.int	se_poke_dead_3
 
 	.end

@@ -77,8 +77,8 @@ se_card:
 	.byte	se_card_pri	@ Priority
 	.byte	se_card_rev	@ Reverb.
 
-	.word	se_card_grp
+	.int	se_card_grp
 
-	.word	se_card_1
+	.int	se_card_1
 
 	.end

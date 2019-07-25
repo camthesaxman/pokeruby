@@ -59,13 +59,13 @@ bgm_hightown_1_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte		N02   , En5 , v112
 	.byte	W16
 	.byte		        En5 , v072
@@ -83,11 +83,11 @@ bgm_hightown_1_000:
 	.byte		        En5 , v072
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte	PATT
-	 .word	bgm_hightown_1_000
+	 .int	bgm_hightown_1_000
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 28*bgm_hightown_mvl/mxv
 	.byte		N02   , En5 , v116
@@ -243,27 +243,27 @@ bgm_hightown_1_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_1_001
+	 .int	bgm_hightown_1_001
 	.byte	PATT
-	 .word	bgm_hightown_1_002
+	 .int	bgm_hightown_1_002
 	.byte	PATT
-	 .word	bgm_hightown_1_001
+	 .int	bgm_hightown_1_001
 	.byte	PATT
-	 .word	bgm_hightown_1_002
+	 .int	bgm_hightown_1_002
 	.byte	PATT
-	 .word	bgm_hightown_1_001
+	 .int	bgm_hightown_1_001
 	.byte	PATT
-	 .word	bgm_hightown_1_002
+	 .int	bgm_hightown_1_002
 	.byte	PATT
-	 .word	bgm_hightown_1_001
+	 .int	bgm_hightown_1_001
 	.byte	PATT
-	 .word	bgm_hightown_1_002
+	 .int	bgm_hightown_1_002
 	.byte	PATT
-	 .word	bgm_hightown_1_001
+	 .int	bgm_hightown_1_001
 	.byte	PATT
-	 .word	bgm_hightown_1_002
+	 .int	bgm_hightown_1_002
 	.byte	GOTO
-	 .word	bgm_hightown_1_B1
+	 .int	bgm_hightown_1_B1
 	.byte		VOICE , 127
 	.byte	FINE
 
@@ -621,7 +621,7 @@ bgm_hightown_2_B1:
 	.byte		VOL   , 49*bgm_hightown_mvl/mxv
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_hightown_2_B1
+	 .int	bgm_hightown_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -785,7 +785,7 @@ bgm_hightown_3_002:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_3_000
+	 .int	bgm_hightown_3_000
 	.byte		N08   , Bn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -803,11 +803,11 @@ bgm_hightown_3_002:
 	.byte		N08   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_3_001
+	 .int	bgm_hightown_3_001
 	.byte	PATT
-	 .word	bgm_hightown_3_001
+	 .int	bgm_hightown_3_001
 	.byte	PATT
-	 .word	bgm_hightown_3_002
+	 .int	bgm_hightown_3_002
 	.byte		N04   , An1 , v112
 	.byte	W96
 bgm_hightown_3_003:
@@ -825,7 +825,7 @@ bgm_hightown_3_003:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_3_003
+	 .int	bgm_hightown_3_003
 	.byte		N12   , Gn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -851,9 +851,9 @@ bgm_hightown_3_003:
 	.byte		N08   , En1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_3_003
+	 .int	bgm_hightown_3_003
 	.byte	PATT
-	 .word	bgm_hightown_3_003
+	 .int	bgm_hightown_3_003
 	.byte		N12   , Gn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -877,7 +877,7 @@ bgm_hightown_3_003:
 	.byte		N04   
 	.byte	W32
 	.byte	GOTO
-	 .word	bgm_hightown_3_B1
+	 .int	bgm_hightown_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1090,7 +1090,7 @@ bgm_hightown_4_000:
 	.byte		N24   , Fs4 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_hightown_4_000
+	 .int	bgm_hightown_4_000
 	.byte		N40   , En4 , v112
 	.byte	W24
 	.byte		MOD   , 5
@@ -1223,9 +1223,9 @@ bgm_hightown_4_002:
 	.byte		N08   , Gs3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_4_001
+	 .int	bgm_hightown_4_001
 	.byte	PATT
-	 .word	bgm_hightown_4_002
+	 .int	bgm_hightown_4_002
 	.byte		N48   , Gn4 , v112
 	.byte	W48
 	.byte		        Gn3 
@@ -1251,7 +1251,7 @@ bgm_hightown_4_002:
 	.byte		        An3 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_hightown_4_B1
+	 .int	bgm_hightown_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1308,7 +1308,7 @@ bgm_hightown_5_B1:
 	.byte		        Gn4 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_hightown_5_B1
+	 .int	bgm_hightown_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1514,9 +1514,9 @@ bgm_hightown_6_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_6_000
+	 .int	bgm_hightown_6_000
 	.byte	PATT
-	 .word	bgm_hightown_6_001
+	 .int	bgm_hightown_6_001
 	.byte		N08   , Fs3 , v120
 	.byte	W08
 	.byte		N02   , Fs3 , v104
@@ -1654,7 +1654,7 @@ bgm_hightown_6_001:
 	.byte		N72   
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_hightown_6_B1
+	 .int	bgm_hightown_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1865,9 +1865,9 @@ bgm_hightown_7_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_7_000
+	 .int	bgm_hightown_7_000
 	.byte	PATT
-	 .word	bgm_hightown_7_001
+	 .int	bgm_hightown_7_001
 	.byte		N08   , Dn4 , v120
 	.byte	W08
 	.byte		N02   , Dn4 , v104
@@ -1987,9 +1987,9 @@ bgm_hightown_7_003:
 	.byte		N24   , Gs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_hightown_7_002
+	 .int	bgm_hightown_7_002
 	.byte	PATT
-	 .word	bgm_hightown_7_003
+	 .int	bgm_hightown_7_003
 	.byte		N48   , Bn4 , v112
 	.byte	W48
 	.byte		        En4 
@@ -1997,7 +1997,7 @@ bgm_hightown_7_003:
 	.byte		N72   , An4 
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_hightown_7_B1
+	 .int	bgm_hightown_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -2067,7 +2067,7 @@ bgm_hightown_8_001:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte		N04   , Cn1 , v112
 	.byte	W24
 	.byte		        En1 
@@ -2085,11 +2085,11 @@ bgm_hightown_8_001:
 	.byte		        En1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte	PATT
-	 .word	bgm_hightown_8_001
+	 .int	bgm_hightown_8_001
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte		N04   , Cn1 , v112
 	.byte	W08
 	.byte		        Dn1 
@@ -2115,11 +2115,11 @@ bgm_hightown_8_001:
 	.byte		        Cn1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte	PATT
-	 .word	bgm_hightown_8_001
+	 .int	bgm_hightown_8_001
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 bgm_hightown_8_002:
 	.byte		N04   , Cn1 , v112
 	.byte	W24
@@ -2145,15 +2145,15 @@ bgm_hightown_8_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte	PATT
-	 .word	bgm_hightown_8_001
+	 .int	bgm_hightown_8_001
 	.byte	PATT
-	 .word	bgm_hightown_8_000
+	 .int	bgm_hightown_8_000
 	.byte	PATT
-	 .word	bgm_hightown_8_002
+	 .int	bgm_hightown_8_002
 	.byte	GOTO
-	 .word	bgm_hightown_8_B1
+	 .int	bgm_hightown_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -2319,7 +2319,7 @@ bgm_hightown_9_002:
 	.byte		N04   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_9_000
+	 .int	bgm_hightown_9_000
 	.byte		N08   , Bn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -2337,11 +2337,11 @@ bgm_hightown_9_002:
 	.byte		N08   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_9_001
+	 .int	bgm_hightown_9_001
 	.byte	PATT
-	 .word	bgm_hightown_9_001
+	 .int	bgm_hightown_9_001
 	.byte	PATT
-	 .word	bgm_hightown_9_002
+	 .int	bgm_hightown_9_002
 	.byte		N04   , An1 , v112
 	.byte	W96
 bgm_hightown_9_003:
@@ -2359,7 +2359,7 @@ bgm_hightown_9_003:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_hightown_9_003
+	 .int	bgm_hightown_9_003
 	.byte		N12   , Gn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -2385,9 +2385,9 @@ bgm_hightown_9_003:
 	.byte		N08   , En1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_hightown_9_003
+	 .int	bgm_hightown_9_003
 	.byte	PATT
-	 .word	bgm_hightown_9_003
+	 .int	bgm_hightown_9_003
 	.byte		N12   , Gn1 , v112
 	.byte	W16
 	.byte		N04   
@@ -2411,7 +2411,7 @@ bgm_hightown_9_003:
 	.byte		N04   
 	.byte	W32
 	.byte	GOTO
-	 .word	bgm_hightown_9_B1
+	 .int	bgm_hightown_9_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -2603,7 +2603,7 @@ bgm_hightown_10_000:
 	.byte		N24   , An3 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_hightown_10_000
+	 .int	bgm_hightown_10_000
 	.byte		N40   , Gn3 , v112
 	.byte	W40
 	.byte		N04   , Fs3 
@@ -2675,7 +2675,7 @@ bgm_hightown_10_000:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_hightown_10_B1
+	 .int	bgm_hightown_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2687,17 +2687,17 @@ bgm_hightown:
 	.byte	bgm_hightown_pri	@ Priority
 	.byte	bgm_hightown_rev	@ Reverb.
 
-	.word	bgm_hightown_grp
+	.int	bgm_hightown_grp
 
-	.word	bgm_hightown_1
-	.word	bgm_hightown_2
-	.word	bgm_hightown_3
-	.word	bgm_hightown_4
-	.word	bgm_hightown_5
-	.word	bgm_hightown_6
-	.word	bgm_hightown_7
-	.word	bgm_hightown_8
-	.word	bgm_hightown_9
-	.word	bgm_hightown_10
+	.int	bgm_hightown_1
+	.int	bgm_hightown_2
+	.int	bgm_hightown_3
+	.int	bgm_hightown_4
+	.int	bgm_hightown_5
+	.int	bgm_hightown_6
+	.int	bgm_hightown_7
+	.int	bgm_hightown_8
+	.int	bgm_hightown_9
+	.int	bgm_hightown_10
 
 	.end

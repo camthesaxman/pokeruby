@@ -18,7 +18,7 @@ VerdanturfTown_PokemonCenter_2F_MapScript2_1A3D03:: @ 81A3D03
 	map_script_2 VAR_CABLE_CLUB_STATE, 5, OldaleTown_PokemonCenter_2F_EventScript_1A3D2D
 	map_script_2 VAR_CABLE_CLUB_STATE, 3, OldaleTown_PokemonCenter_2F_EventScript_1A3D2D
 	map_script_2 VAR_CABLE_CLUB_STATE, 4, OldaleTown_PokemonCenter_2F_EventScript_1A3D2D
-	.2byte 0
+	.short 0
 
 OldaleTown_PokemonCenter_2F_EventScript_1A3D2D:: @ 81A3D2D
 	turnobject VAR_SPECIAL_7, 4
@@ -83,7 +83,7 @@ VerdanturfTown_PokemonCenter_2F_MapScript2_1A3D88:: @ 81A3D88
 	map_script_2 VAR_CABLE_CLUB_STATE, 5, OldaleTown_PokemonCenter_2F_EventScript_1A3E8D
 	map_script_2 VAR_CABLE_CLUB_STATE, 3, OldaleTown_PokemonCenter_2F_EventScript_1A3E17
 	map_script_2 VAR_CABLE_CLUB_STATE, 4, OldaleTown_PokemonCenter_2F_EventScript_1A3E7B
-	.2byte 0
+	.short 0
 
 OldaleTown_PokemonCenter_2F_EventScript_1A3DB2:: @ 81A3DB2
 	special CloseLink

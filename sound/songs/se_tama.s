@@ -238,9 +238,9 @@ se_tama:
 	.byte	se_tama_pri	@ Priority
 	.byte	se_tama_rev	@ Reverb.
 
-	.word	se_tama_grp
+	.int	se_tama_grp
 
-	.word	se_tama_1
-	.word	se_tama_2
+	.int	se_tama_1
+	.int	se_tama_2
 
 	.end

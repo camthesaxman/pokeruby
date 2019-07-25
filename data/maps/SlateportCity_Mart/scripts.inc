@@ -13,16 +13,16 @@ SlateportCity_Mart_EventScript_156411:: @ 8156411
 
 	.align 2
 SlateportCity_Mart_Items:: @ 8156428
-	.2byte ITEM_POKE_BALL
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_REPEL
-	.2byte ITEM_HARBOR_MAIL
-	.2byte ITEM_NONE
+	.short ITEM_POKE_BALL
+	.short ITEM_GREAT_BALL
+	.short ITEM_POTION
+	.short ITEM_SUPER_POTION
+	.short ITEM_ANTIDOTE
+	.short ITEM_PARALYZE_HEAL
+	.short ITEM_ESCAPE_ROPE
+	.short ITEM_REPEL
+	.short ITEM_HARBOR_MAIL
+	.short ITEM_NONE
 	release
 	end
 

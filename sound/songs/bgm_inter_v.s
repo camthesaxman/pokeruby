@@ -178,7 +178,7 @@ bgm_inter_v_1_B1:
 	.byte		        Gn5 , v096
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_inter_v_1_B1
+	 .int	bgm_inter_v_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -279,11 +279,11 @@ bgm_inter_v_2_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_inter_v_2_000
+	 .int	bgm_inter_v_2_000
 	.byte	PATT
-	 .word	bgm_inter_v_2_000
+	 .int	bgm_inter_v_2_000
 	.byte	GOTO
-	 .word	bgm_inter_v_2_B1
+	 .int	bgm_inter_v_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -355,9 +355,9 @@ bgm_inter_v_3_000:
 	.byte		        As0 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_inter_v_3_000
+	 .int	bgm_inter_v_3_000
 	.byte	GOTO
-	 .word	bgm_inter_v_3_B1
+	 .int	bgm_inter_v_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -458,11 +458,11 @@ bgm_inter_v_4_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_inter_v_4_000
+	 .int	bgm_inter_v_4_000
 	.byte	PATT
-	 .word	bgm_inter_v_4_000
+	 .int	bgm_inter_v_4_000
 	.byte	GOTO
-	 .word	bgm_inter_v_4_B1
+	 .int	bgm_inter_v_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -496,7 +496,7 @@ bgm_inter_v_5_B1:
 	.byte		N12   
 	.byte	W36
 	.byte	GOTO
-	 .word	bgm_inter_v_5_B1
+	 .int	bgm_inter_v_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -681,7 +681,7 @@ bgm_inter_v_6_B1:
 	.byte		        4*bgm_inter_v_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_inter_v_6_B1
+	 .int	bgm_inter_v_6_B1
 	.byte		MOD   , 0
 	.byte		VOL   , 37*bgm_inter_v_mvl/mxv
 	.byte	W96
@@ -868,7 +868,7 @@ bgm_inter_v_7_B1:
 	.byte		        4*bgm_inter_v_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_inter_v_7_B1
+	 .int	bgm_inter_v_7_B1
 	.byte		MOD   , 0
 	.byte		VOL   , 37*bgm_inter_v_mvl/mxv
 	.byte	W96
@@ -933,7 +933,7 @@ bgm_inter_v_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_inter_v_8_B1
+	 .int	bgm_inter_v_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1037,9 +1037,9 @@ bgm_inter_v_9_000:
 	.byte		        As1 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_inter_v_9_000
+	 .int	bgm_inter_v_9_000
 	.byte	GOTO
-	 .word	bgm_inter_v_9_B1
+	 .int	bgm_inter_v_9_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1052,16 +1052,16 @@ bgm_inter_v:
 	.byte	bgm_inter_v_pri	@ Priority
 	.byte	bgm_inter_v_rev	@ Reverb.
 
-	.word	bgm_inter_v_grp
+	.int	bgm_inter_v_grp
 
-	.word	bgm_inter_v_1
-	.word	bgm_inter_v_2
-	.word	bgm_inter_v_3
-	.word	bgm_inter_v_4
-	.word	bgm_inter_v_5
-	.word	bgm_inter_v_6
-	.word	bgm_inter_v_7
-	.word	bgm_inter_v_8
-	.word	bgm_inter_v_9
+	.int	bgm_inter_v_1
+	.int	bgm_inter_v_2
+	.int	bgm_inter_v_3
+	.int	bgm_inter_v_4
+	.int	bgm_inter_v_5
+	.int	bgm_inter_v_6
+	.int	bgm_inter_v_7
+	.int	bgm_inter_v_8
+	.int	bgm_inter_v_9
 
 	.end

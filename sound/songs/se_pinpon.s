@@ -90,9 +90,9 @@ se_pinpon:
 	.byte	se_pinpon_pri	@ Priority
 	.byte	se_pinpon_rev	@ Reverb.
 
-	.word	se_pinpon_grp
+	.int	se_pinpon_grp
 
-	.word	se_pinpon_1
-	.word	se_pinpon_2
+	.int	se_pinpon_1
+	.int	se_pinpon_2
 
 	.end

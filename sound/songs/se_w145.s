@@ -50,8 +50,8 @@ se_w145:
 	.byte	se_w145_pri	@ Priority
 	.byte	se_w145_rev	@ Reverb.
 
-	.word	se_w145_grp
+	.int	se_w145_grp
 
-	.word	se_w145_1
+	.int	se_w145_1
 
 	.end

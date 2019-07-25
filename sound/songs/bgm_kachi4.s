@@ -123,9 +123,9 @@ bgm_kachi4_1_000:
 	.byte		N04   
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kachi4_1_000
+	 .int	bgm_kachi4_1_000
 	.byte	GOTO
-	 .word	bgm_kachi4_1_B1
+	 .int	bgm_kachi4_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -249,7 +249,7 @@ bgm_kachi4_2_B1:
 	.byte		        Dn4 , v036
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_kachi4_2_B1
+	 .int	bgm_kachi4_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -370,7 +370,7 @@ bgm_kachi4_3_B1:
 	.byte		N08   , Bn4 , v036
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_kachi4_3_B1
+	 .int	bgm_kachi4_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -454,7 +454,7 @@ bgm_kachi4_4_B1:
 	.byte		        Bn2 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_kachi4_4_B1
+	 .int	bgm_kachi4_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -523,11 +523,11 @@ bgm_kachi4_5_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kachi4_5_000
+	 .int	bgm_kachi4_5_000
 	.byte	PATT
-	 .word	bgm_kachi4_5_001
+	 .int	bgm_kachi4_5_001
 	.byte	GOTO
-	 .word	bgm_kachi4_5_B1
+	 .int	bgm_kachi4_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -602,7 +602,7 @@ bgm_kachi4_6_000:
 	.byte		N04   
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_kachi4_6_000
+	 .int	bgm_kachi4_6_000
 	.byte		N04   , Gn1 , v112
 	.byte	W12
 	.byte		        Gn2 
@@ -618,7 +618,7 @@ bgm_kachi4_6_000:
 	.byte		        Fs2 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_kachi4_6_B1
+	 .int	bgm_kachi4_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -657,7 +657,7 @@ bgm_kachi4_7_000:
 	.byte		        Cn1 , v096
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_kachi4_7_000
+	 .int	bgm_kachi4_7_000
 	.byte		N04   , Dn1 , v088
 	.byte	W12
 	.byte		        Dn1 , v112
@@ -677,7 +677,7 @@ bgm_kachi4_7_000:
 	.byte		        Cn1 , v096
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_kachi4_7_B1
+	 .int	bgm_kachi4_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -733,11 +733,11 @@ bgm_kachi4_8_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_kachi4_8_000
+	 .int	bgm_kachi4_8_000
 	.byte	PATT
-	 .word	bgm_kachi4_8_001
+	 .int	bgm_kachi4_8_001
 	.byte	GOTO
-	 .word	bgm_kachi4_8_B1
+	 .int	bgm_kachi4_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -870,7 +870,7 @@ bgm_kachi4_9_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_kachi4_9_B1
+	 .int	bgm_kachi4_9_B1
 	.byte	W96
 	.byte	FINE
 
@@ -883,16 +883,16 @@ bgm_kachi4:
 	.byte	bgm_kachi4_pri	@ Priority
 	.byte	bgm_kachi4_rev	@ Reverb.
 
-	.word	bgm_kachi4_grp
+	.int	bgm_kachi4_grp
 
-	.word	bgm_kachi4_1
-	.word	bgm_kachi4_2
-	.word	bgm_kachi4_3
-	.word	bgm_kachi4_4
-	.word	bgm_kachi4_5
-	.word	bgm_kachi4_6
-	.word	bgm_kachi4_7
-	.word	bgm_kachi4_8
-	.word	bgm_kachi4_9
+	.int	bgm_kachi4_1
+	.int	bgm_kachi4_2
+	.int	bgm_kachi4_3
+	.int	bgm_kachi4_4
+	.int	bgm_kachi4_5
+	.int	bgm_kachi4_6
+	.int	bgm_kachi4_7
+	.int	bgm_kachi4_8
+	.int	bgm_kachi4_9
 
 	.end

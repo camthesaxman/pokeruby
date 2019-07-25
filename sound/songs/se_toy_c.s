@@ -51,9 +51,9 @@ se_toy_c:
 	.byte	se_toy_c_pri	@ Priority
 	.byte	se_toy_c_rev	@ Reverb.
 
-	.word	se_toy_c_grp
+	.int	se_toy_c_grp
 
-	.word	se_toy_c_1
-	.word	se_toy_c_2
+	.int	se_toy_c_1
+	.int	se_toy_c_2
 
 	.end

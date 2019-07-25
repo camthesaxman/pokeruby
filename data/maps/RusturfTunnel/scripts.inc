@@ -6,7 +6,7 @@ RusturfTunnel_MapScripts:: @ 815C745
 RusturfTunnel_MapScript2_15C750:: @ 815C750
 	map_script_2 VAR_RUSTURF_TUNNEL_STATE, 4, RusturfTunnel_EventScript_15C7D1
 	map_script_2 VAR_RUSTURF_TUNNEL_STATE, 5, RusturfTunnel_EventScript_15C7D1
-	.2byte 0
+	.short 0
 
 RusturfTunnel_MapScript1_15C762:: @ 815C762
 	call RusturfTunnel_EventScript_1A0196

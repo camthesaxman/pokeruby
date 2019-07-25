@@ -129,9 +129,9 @@ bgm_swimeye_1_000:
 	.byte		        Cs4 
 	.byte	W24
 	.byte	PATT
-	 .word	bgm_swimeye_1_000
+	 .int	bgm_swimeye_1_000
 	.byte	GOTO
-	 .word	bgm_swimeye_1_B1
+	 .int	bgm_swimeye_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -178,15 +178,15 @@ bgm_swimeye_2_002:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_2_000
+	 .int	bgm_swimeye_2_000
 	.byte	PATT
-	 .word	bgm_swimeye_2_000
+	 .int	bgm_swimeye_2_000
 	.byte	PATT
-	 .word	bgm_swimeye_2_001
+	 .int	bgm_swimeye_2_001
 	.byte	PATT
-	 .word	bgm_swimeye_2_002
+	 .int	bgm_swimeye_2_002
 	.byte	GOTO
-	 .word	bgm_swimeye_2_B1
+	 .int	bgm_swimeye_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -274,7 +274,7 @@ bgm_swimeye_3_000:
 	.byte	W24
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_3_000
+	 .int	bgm_swimeye_3_000
 	.byte		VOICE , 60
 	.byte		N21   , An2 , v072
 	.byte	W12
@@ -306,7 +306,7 @@ bgm_swimeye_3_000:
 	.byte		        Ds3 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_swimeye_3_B1
+	 .int	bgm_swimeye_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -458,7 +458,7 @@ bgm_swimeye_4_000:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_4_000
+	 .int	bgm_swimeye_4_000
 	.byte		N21   , Ds3 , v060
 	.byte	W12
 	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
@@ -503,7 +503,7 @@ bgm_swimeye_4_000:
 	.byte		        47*bgm_swimeye_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_swimeye_4_B1
+	 .int	bgm_swimeye_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -656,7 +656,7 @@ bgm_swimeye_5_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_5_000
+	 .int	bgm_swimeye_5_000
 	.byte		N21   , Fs3 , v060
 	.byte	W12
 	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
@@ -702,7 +702,7 @@ bgm_swimeye_5_000:
 	.byte		        47*bgm_swimeye_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_swimeye_5_B1
+	 .int	bgm_swimeye_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -750,7 +750,7 @@ bgm_swimeye_6_B1:
 	.byte		        Fs5 
 	.byte	W12
 	.byte	GOTO
-	 .word	bgm_swimeye_6_B1
+	 .int	bgm_swimeye_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -800,7 +800,7 @@ bgm_swimeye_7_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
+	 .int	bgm_swimeye_7_001
 bgm_swimeye_7_002:
 	.byte		N06   , Gs4 , v052
 	.byte	W12
@@ -817,15 +817,15 @@ bgm_swimeye_7_002:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_7_000
+	 .int	bgm_swimeye_7_000
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
+	 .int	bgm_swimeye_7_001
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
+	 .int	bgm_swimeye_7_001
 	.byte	PATT
-	 .word	bgm_swimeye_7_002
+	 .int	bgm_swimeye_7_002
 	.byte	GOTO
-	 .word	bgm_swimeye_7_B1
+	 .int	bgm_swimeye_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -883,7 +883,7 @@ bgm_swimeye_8_001:
 	.byte	W12
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_8_000
+	 .int	bgm_swimeye_8_000
 	.byte		N06   , Cn1 , v112
 	.byte	W24
 	.byte		        En1 , v088
@@ -893,13 +893,13 @@ bgm_swimeye_8_001:
 	.byte		        En1 , v088
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_swimeye_8_000
+	 .int	bgm_swimeye_8_000
 	.byte	PATT
-	 .word	bgm_swimeye_8_001
+	 .int	bgm_swimeye_8_001
 	.byte	PATT
-	 .word	bgm_swimeye_8_000
+	 .int	bgm_swimeye_8_000
 	.byte	GOTO
-	 .word	bgm_swimeye_8_B1
+	 .int	bgm_swimeye_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -911,15 +911,15 @@ bgm_swimeye:
 	.byte	bgm_swimeye_pri	@ Priority
 	.byte	bgm_swimeye_rev	@ Reverb.
 
-	.word	bgm_swimeye_grp
+	.int	bgm_swimeye_grp
 
-	.word	bgm_swimeye_1
-	.word	bgm_swimeye_2
-	.word	bgm_swimeye_3
-	.word	bgm_swimeye_4
-	.word	bgm_swimeye_5
-	.word	bgm_swimeye_6
-	.word	bgm_swimeye_7
-	.word	bgm_swimeye_8
+	.int	bgm_swimeye_1
+	.int	bgm_swimeye_2
+	.int	bgm_swimeye_3
+	.int	bgm_swimeye_4
+	.int	bgm_swimeye_5
+	.int	bgm_swimeye_6
+	.int	bgm_swimeye_7
+	.int	bgm_swimeye_8
 
 	.end

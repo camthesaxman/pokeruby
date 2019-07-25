@@ -304,7 +304,7 @@ bgm_machupi_1_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_machupi_1_B1
+	 .int	bgm_machupi_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -446,7 +446,7 @@ bgm_machupi_2_000:
 	.byte		        Fn4 , v076
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_2_000
+	 .int	bgm_machupi_2_000
 	.byte		N03   , Fn4 , v084
 	.byte	W06
 	.byte		        Fn4 , v064
@@ -603,7 +603,7 @@ bgm_machupi_2_003:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 bgm_machupi_2_B1:
 bgm_machupi_2_004:
 	.byte		N03   , Fn4 , v084
@@ -640,19 +640,19 @@ bgm_machupi_2_004:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_003
+	 .int	bgm_machupi_2_003
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_004
+	 .int	bgm_machupi_2_004
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_003
+	 .int	bgm_machupi_2_003
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte		PAN   , c_v+0
 	.byte		N01   , Fn4 , v112
 	.byte	W08
@@ -681,7 +681,7 @@ bgm_machupi_2_005:
 	.byte	W56
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machupi_2_005
+	 .int	bgm_machupi_2_005
 	.byte	W96
 	.byte		VOL   , 40*bgm_machupi_mvl/mxv
 	.byte		N03   , Fn4 , v060
@@ -787,27 +787,27 @@ bgm_machupi_2_006:
 	.byte		        Fn4 , v076
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_2_006
+	 .int	bgm_machupi_2_006
 	.byte	W96
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_machupi_2_001
+	 .int	bgm_machupi_2_001
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_004
+	 .int	bgm_machupi_2_004
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_004
+	 .int	bgm_machupi_2_004
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	PATT
-	 .word	bgm_machupi_2_004
+	 .int	bgm_machupi_2_004
 	.byte	PATT
-	 .word	bgm_machupi_2_002
+	 .int	bgm_machupi_2_002
 	.byte	GOTO
-	 .word	bgm_machupi_2_B1
+	 .int	bgm_machupi_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1032,7 +1032,7 @@ bgm_machupi_3_000:
 	.byte		N12   , En1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_machupi_3_000
+	 .int	bgm_machupi_3_000
 	.byte		N06   , Ds1 , v120
 	.byte	W18
 	.byte		        As1 
@@ -1204,7 +1204,7 @@ bgm_machupi_3_001:
 	.byte	W78
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machupi_3_001
+	 .int	bgm_machupi_3_001
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -1212,7 +1212,7 @@ bgm_machupi_3_001:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_machupi_3_B1
+	 .int	bgm_machupi_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -1665,11 +1665,11 @@ bgm_machupi_4_002:
 	.byte		N01   , Bn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_4_000
+	 .int	bgm_machupi_4_000
 	.byte	PATT
-	 .word	bgm_machupi_4_001
+	 .int	bgm_machupi_4_001
 	.byte	PATT
-	 .word	bgm_machupi_4_002
+	 .int	bgm_machupi_4_002
 	.byte		N09   , Bn3 , v127
 	.byte	W03
 	.byte		BEND  , c_v+1
@@ -1757,7 +1757,7 @@ bgm_machupi_4_002:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_4_001
+	 .int	bgm_machupi_4_001
 	.byte		N06   , Bn3 , v127
 	.byte	W96
 	.byte	W96
@@ -1963,7 +1963,7 @@ bgm_machupi_4_003:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_4_001
+	 .int	bgm_machupi_4_001
 	.byte		N09   , As3 , v127
 	.byte	W12
 	.byte		N01   , Ds3 , v112
@@ -2004,7 +2004,7 @@ bgm_machupi_4_003:
 	.byte		N03   , As3 
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_4_003
+	 .int	bgm_machupi_4_003
 	.byte		N06   , Ds3 , v127
 	.byte		N09   , As3 
 	.byte	W12
@@ -2081,7 +2081,7 @@ bgm_machupi_4_003:
 	.byte		        An3 , v112
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_machupi_4_B1
+	 .int	bgm_machupi_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -2318,11 +2318,11 @@ bgm_machupi_5_002:
 	.byte		        Gs2 , v088
 	.byte	W30
 	.byte	PATT
-	 .word	bgm_machupi_5_000
+	 .int	bgm_machupi_5_000
 	.byte	PATT
-	 .word	bgm_machupi_5_001
+	 .int	bgm_machupi_5_001
 	.byte	PATT
-	 .word	bgm_machupi_5_002
+	 .int	bgm_machupi_5_002
 	.byte		N06   , Ds3 , v127
 	.byte	W03
 	.byte		BEND  , c_v+2
@@ -2398,7 +2398,7 @@ bgm_machupi_5_002:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_5_001
+	 .int	bgm_machupi_5_001
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -2571,11 +2571,11 @@ bgm_machupi_5_004:
 	.byte		N03   
 	.byte	W03
 	.byte	PATT
-	 .word	bgm_machupi_5_001
+	 .int	bgm_machupi_5_001
 	.byte	PATT
-	 .word	bgm_machupi_5_003
+	 .int	bgm_machupi_5_003
 	.byte	PATT
-	 .word	bgm_machupi_5_004
+	 .int	bgm_machupi_5_004
 	.byte	W12
 	.byte		N01   , Fs2 , v112
 	.byte	W06
@@ -2638,7 +2638,7 @@ bgm_machupi_5_004:
 	.byte		N03   , Gs2 , v060
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machupi_5_B1
+	 .int	bgm_machupi_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -3530,7 +3530,7 @@ bgm_machupi_6_B1:
 	.byte		        Dn2 , v036
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machupi_6_B1
+	 .int	bgm_machupi_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -3854,7 +3854,7 @@ bgm_machupi_7_000:
 	.byte		N03   , Gs4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_7_000
+	 .int	bgm_machupi_7_000
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+0
 	.byte		N06   , As4 , v112
@@ -4186,7 +4186,7 @@ bgm_machupi_7_000:
 	.byte		PAN   , c_v-61
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_machupi_7_B1
+	 .int	bgm_machupi_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -4455,7 +4455,7 @@ bgm_machupi_8_000:
 	.byte		N03   , Gs4 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_8_000
+	 .int	bgm_machupi_8_000
 	.byte		N06   , As4 , v112
 	.byte	W96
 	.byte		VOICE , 81
@@ -4957,7 +4957,7 @@ bgm_machupi_8_000:
 	.byte		        Dn2 , v036
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machupi_8_B1
+	 .int	bgm_machupi_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -5034,7 +5034,7 @@ bgm_machupi_9_000:
 	.byte	W06
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machupi_9_000
+	 .int	bgm_machupi_9_000
 	.byte		N06   , Cn1 , v112
 	.byte	W06
 	.byte		        En3 
@@ -5375,7 +5375,7 @@ bgm_machupi_9_003:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_9_002
+	 .int	bgm_machupi_9_002
 	.byte		N48   , An2 , v112
 	.byte	W48
 	.byte		N04   , En1 
@@ -5511,9 +5511,9 @@ bgm_machupi_9_003:
 	.byte		N24   , An2 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_machupi_9_001
+	 .int	bgm_machupi_9_001
 	.byte	PATT
-	 .word	bgm_machupi_9_003
+	 .int	bgm_machupi_9_003
 	.byte		N06   , Cn1 , v112
 	.byte	W06
 	.byte		        En3 
@@ -5573,7 +5573,7 @@ bgm_machupi_9_003:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_9_001
+	 .int	bgm_machupi_9_001
 	.byte		N06   , Cn1 , v112
 	.byte	W06
 	.byte		        En3 
@@ -5601,7 +5601,7 @@ bgm_machupi_9_003:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	PATT
-	 .word	bgm_machupi_9_001
+	 .int	bgm_machupi_9_001
 	.byte		N06   , Cn1 , v112
 	.byte	W06
 	.byte		        Dn3 
@@ -5629,7 +5629,7 @@ bgm_machupi_9_003:
 	.byte		        Dn3 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_machupi_9_B1
+	 .int	bgm_machupi_9_B1
 	.byte	FINE
 
 @********************** Track 10 **********************@
@@ -5921,7 +5921,7 @@ bgm_machupi_10_B1:
 	.byte	W15
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_machupi_10_B1
+	 .int	bgm_machupi_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -5933,17 +5933,17 @@ bgm_machupi:
 	.byte	bgm_machupi_pri	@ Priority
 	.byte	bgm_machupi_rev	@ Reverb.
 
-	.word	bgm_machupi_grp
+	.int	bgm_machupi_grp
 
-	.word	bgm_machupi_1
-	.word	bgm_machupi_2
-	.word	bgm_machupi_3
-	.word	bgm_machupi_4
-	.word	bgm_machupi_5
-	.word	bgm_machupi_6
-	.word	bgm_machupi_7
-	.word	bgm_machupi_8
-	.word	bgm_machupi_9
-	.word	bgm_machupi_10
+	.int	bgm_machupi_1
+	.int	bgm_machupi_2
+	.int	bgm_machupi_3
+	.int	bgm_machupi_4
+	.int	bgm_machupi_5
+	.int	bgm_machupi_6
+	.int	bgm_machupi_7
+	.int	bgm_machupi_8
+	.int	bgm_machupi_9
+	.int	bgm_machupi_10
 
 	.end

@@ -47,8 +47,8 @@ se_z_page:
 	.byte	se_z_page_pri	@ Priority
 	.byte	se_z_page_rev	@ Reverb.
 
-	.word	se_z_page_grp
+	.int	se_z_page_grp
 
-	.word	se_z_page_1
+	.int	se_z_page_1
 
 	.end

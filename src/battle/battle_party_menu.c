@@ -20,6 +20,8 @@
 #include "text.h"
 #include "ewram.h"
 
+#define memset         _memset
+
 extern u8 sub_806BD58(u8, u8);
 extern void PartyMenuPrintMonsLevelOrStatus(void);
 extern void nullsub_13(void);
@@ -77,6 +79,7 @@ static const struct PartyPopupMenu sBattlePartyPopupMenus[] =
     {ARRAY_COUNT(Unknown_83B5FF2), 9, Unknown_83B5FF2},
 };
 
+#ifndef PORTABLE
 void unref_sub_8094928(struct PokemonStorage *ptr)
 {
     *ptr = gPokemonStorage;
@@ -86,6 +89,7 @@ void unref_sub_8094940(struct PokemonStorage *ptr)
 {
     gPokemonStorage = *ptr;
 }
+#endif
 
 void sub_8094958(void)
 {

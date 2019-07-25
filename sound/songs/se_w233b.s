@@ -100,9 +100,9 @@ se_w233b:
 	.byte	se_w233b_pri	@ Priority
 	.byte	se_w233b_rev	@ Reverb.
 
-	.word	se_w233b_grp
+	.int	se_w233b_grp
 
-	.word	se_w233b_1
-	.word	se_w233b_2
+	.int	se_w233b_1
+	.int	se_w233b_2
 
 	.end

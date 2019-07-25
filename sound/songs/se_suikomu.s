@@ -70,9 +70,9 @@ se_suikomu:
 	.byte	se_suikomu_pri	@ Priority
 	.byte	se_suikomu_rev	@ Reverb.
 
-	.word	se_suikomu_grp
+	.int	se_suikomu_grp
 
-	.word	se_suikomu_1
-	.word	se_suikomu_2
+	.int	se_suikomu_1
+	.int	se_suikomu_2
 
 	.end

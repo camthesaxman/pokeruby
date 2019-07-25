@@ -5,7 +5,7 @@ LilycoveCity_PokemonTrainerFanClub_MapScripts:: @ 815938A
 
 LilycoveCity_PokemonTrainerFanClub_MapScript2_159395:: @ 8159395
 	map_script_2 VAR_LILYCOVE_FAN_CLUB_STATE, 1, LilycoveCity_PokemonTrainerFanClub_EventScript_15939F
-	.2byte 0
+	.short 0
 
 LilycoveCity_PokemonTrainerFanClub_EventScript_15939F:: @ 815939F
 	lockall

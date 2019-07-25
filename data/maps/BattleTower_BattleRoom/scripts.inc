@@ -4,7 +4,7 @@ BattleTower_BattleRoom_MapScripts:: @ 81608DB
 
 BattleTower_BattleRoom_MapScript2_1608E1:: @ 81608E1
 	map_script_2 VAR_TEMP_0, 0, BattleTower_BattleRoom_EventScript_1608EB
-	.2byte 0
+	.short 0
 
 BattleTower_BattleRoom_EventScript_1608EB:: @ 81608EB
 	setvar VAR_TEMP_0, 1

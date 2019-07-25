@@ -53,8 +53,8 @@ se_fuusen3:
 	.byte	se_fuusen3_pri	@ Priority
 	.byte	se_fuusen3_rev	@ Reverb.
 
-	.word	se_fuusen3_grp
+	.int	se_fuusen3_grp
 
-	.word	se_fuusen3_1
+	.int	se_fuusen3_1
 
 	.end

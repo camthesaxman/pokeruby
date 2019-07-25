@@ -55,13 +55,13 @@ Route104_PrettyPetalFlowerShop_EventScript_15BE7C:: @ 815BE7C
 
 	.align 2
 Route104_PrettyPetalFlowerShop_Items:: @ 815BE94
-	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_MAX_POTION
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_NONE
+	.short ITEM_FULL_RESTORE
+	.short ITEM_MAX_POTION
+	.short ITEM_HYPER_POTION
+	.short ITEM_SUPER_POTION
+	.short ITEM_FULL_HEAL
+	.short ITEM_REVIVE
+	.short ITEM_NONE
 	release
 	end
 

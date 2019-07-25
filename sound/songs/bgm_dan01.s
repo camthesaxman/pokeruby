@@ -48,10 +48,10 @@ bgm_dan01_1_001:
 	.byte	PEND
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_001
+	 .int	bgm_dan01_1_001
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_001
+	 .int	bgm_dan01_1_001
 	.byte	W72
 bgm_dan01_1_002:
 	.byte		N06   , Ds3 , v080
@@ -65,13 +65,13 @@ bgm_dan01_1_002:
 	.byte	PEND
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_002
+	 .int	bgm_dan01_1_002
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_002
+	 .int	bgm_dan01_1_002
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_002
+	 .int	bgm_dan01_1_002
 	.byte	W72
 bgm_dan01_1_003:
 	.byte		N06   , Dn3 , v080
@@ -85,13 +85,13 @@ bgm_dan01_1_003:
 	.byte	PEND
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_003
+	 .int	bgm_dan01_1_003
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_003
+	 .int	bgm_dan01_1_003
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_1_003
+	 .int	bgm_dan01_1_003
 	.byte	W72
 	.byte	W72
 	.byte	W72
@@ -104,11 +104,11 @@ bgm_dan01_1_003:
 	.byte		        Fs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dan01_1_000
+	 .int	bgm_dan01_1_000
 	.byte		N06   , As4 , v080
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_1_B1
+	 .int	bgm_dan01_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -202,7 +202,7 @@ bgm_dan01_2_001:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_2_001
+	 .int	bgm_dan01_2_001
 	.byte		TIE   , Dn1 , v124
 	.byte	W72
 	.byte	W72
@@ -279,9 +279,9 @@ bgm_dan01_2_001:
 	.byte		MOD   , 0
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_2_000
+	 .int	bgm_dan01_2_000
 	.byte	GOTO
-	 .word	bgm_dan01_2_B1
+	 .int	bgm_dan01_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -825,13 +825,13 @@ bgm_dan01_3_005:
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_3_002
+	 .int	bgm_dan01_3_002
 	.byte	PATT
-	 .word	bgm_dan01_3_003
+	 .int	bgm_dan01_3_003
 	.byte	PATT
-	 .word	bgm_dan01_3_004
+	 .int	bgm_dan01_3_004
 	.byte	PATT
-	 .word	bgm_dan01_3_005
+	 .int	bgm_dan01_3_005
 	.byte	W36
 	.byte		VOICE , 73
 	.byte		VOL   , 80*bgm_dan01_mvl/mxv
@@ -842,11 +842,11 @@ bgm_dan01_3_005:
 	.byte		        Fs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_dan01_3_000
+	 .int	bgm_dan01_3_000
 	.byte	PATT
-	 .word	bgm_dan01_3_001
+	 .int	bgm_dan01_3_001
 	.byte	GOTO
-	 .word	bgm_dan01_3_B1
+	 .int	bgm_dan01_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -963,7 +963,7 @@ bgm_dan01_4_000:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_4_000
+	 .int	bgm_dan01_4_000
 	.byte		N06   , As3 , v056
 	.byte	W72
 bgm_dan01_4_001:
@@ -989,9 +989,9 @@ bgm_dan01_4_002:
 	.byte	PEND
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_4_001
+	 .int	bgm_dan01_4_001
 	.byte	PATT
-	 .word	bgm_dan01_4_002
+	 .int	bgm_dan01_4_002
 	.byte	W72
 	.byte	W36
 	.byte		VOICE , 4
@@ -1014,7 +1014,7 @@ bgm_dan01_4_002:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_4_B1
+	 .int	bgm_dan01_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1152,7 +1152,7 @@ bgm_dan01_5_000:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_5_000
+	 .int	bgm_dan01_5_000
 	.byte		N06   , Fs3 , v056
 	.byte	W72
 bgm_dan01_5_001:
@@ -1179,9 +1179,9 @@ bgm_dan01_5_002:
 	.byte	PEND
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_5_001
+	 .int	bgm_dan01_5_001
 	.byte	PATT
-	 .word	bgm_dan01_5_002
+	 .int	bgm_dan01_5_002
 	.byte	W72
 	.byte	W36
 	.byte		VOICE , 5
@@ -1206,7 +1206,7 @@ bgm_dan01_5_002:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_5_B1
+	 .int	bgm_dan01_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1250,7 +1250,7 @@ bgm_dan01_6_001:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_001
+	 .int	bgm_dan01_6_001
 	.byte		N06   , Dn2 , v064
 	.byte	W72
 bgm_dan01_6_002:
@@ -1265,11 +1265,11 @@ bgm_dan01_6_002:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_002
+	 .int	bgm_dan01_6_002
 	.byte		N06   , Ds2 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_002
+	 .int	bgm_dan01_6_002
 	.byte		N06   , Ds2 , v064
 	.byte	W72
 	.byte	W12
@@ -1282,27 +1282,27 @@ bgm_dan01_6_002:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_000
+	 .int	bgm_dan01_6_000
 	.byte		N06   , Dn3 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_000
+	 .int	bgm_dan01_6_000
 	.byte		N06   , Dn3 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_001
+	 .int	bgm_dan01_6_001
 	.byte		N06   , Dn2 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_001
+	 .int	bgm_dan01_6_001
 	.byte		N06   , Dn2 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_001
+	 .int	bgm_dan01_6_001
 	.byte		N06   , Dn2 , v064
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_6_001
+	 .int	bgm_dan01_6_001
 	.byte		N06   , Dn2 , v064
 	.byte	W72
 	.byte		VOICE , 81
@@ -1316,7 +1316,7 @@ bgm_dan01_6_002:
 	.byte		N06   
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_6_B1
+	 .int	bgm_dan01_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1443,7 +1443,7 @@ bgm_dan01_7_001:
 	.byte		N06   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_7_001
+	 .int	bgm_dan01_7_001
 	.byte		TIE   , As1 , v120
 	.byte	W72
 	.byte	W72
@@ -1461,9 +1461,9 @@ bgm_dan01_7_001:
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_7_000
+	 .int	bgm_dan01_7_000
 	.byte	GOTO
-	 .word	bgm_dan01_7_B1
+	 .int	bgm_dan01_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1490,59 +1490,59 @@ bgm_dan01_8_000:
 	.byte		N11   
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_dan01_8_000
+	 .int	bgm_dan01_8_000
 	.byte		N11   , Gs4 , v040
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_8_B1
+	 .int	bgm_dan01_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1608,7 +1608,7 @@ bgm_dan01_9_B1:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_dan01_9_B1
+	 .int	bgm_dan01_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -1620,16 +1620,16 @@ bgm_dan01:
 	.byte	bgm_dan01_pri	@ Priority
 	.byte	bgm_dan01_rev	@ Reverb.
 
-	.word	bgm_dan01_grp
+	.int	bgm_dan01_grp
 
-	.word	bgm_dan01_1
-	.word	bgm_dan01_2
-	.word	bgm_dan01_3
-	.word	bgm_dan01_4
-	.word	bgm_dan01_5
-	.word	bgm_dan01_6
-	.word	bgm_dan01_7
-	.word	bgm_dan01_8
-	.word	bgm_dan01_9
+	.int	bgm_dan01_1
+	.int	bgm_dan01_2
+	.int	bgm_dan01_3
+	.int	bgm_dan01_4
+	.int	bgm_dan01_5
+	.int	bgm_dan01_6
+	.int	bgm_dan01_7
+	.int	bgm_dan01_8
+	.int	bgm_dan01_9
 
 	.end

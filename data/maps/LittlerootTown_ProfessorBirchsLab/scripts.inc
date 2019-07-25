@@ -11,7 +11,7 @@ LittlerootTown_ProfessorBirchsLab_MapScript1_152C92:: @ 8152C92
 
 LittlerootTown_ProfessorBirchsLab_MapScript2_152C9D:: @ 8152C9D
 	map_script_2 VAR_BIRCH_LAB_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_152CA7
-	.2byte 0
+	.short 0
 
 LittlerootTown_ProfessorBirchsLab_EventScript_152CA7:: @ 8152CA7
 	turnobject 255, 2
@@ -20,7 +20,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_152CA7:: @ 8152CA7
 LittlerootTown_ProfessorBirchsLab_MapScript2_152CAC:: @ 8152CAC
 	map_script_2 VAR_BIRCH_LAB_STATE, 2, LittlerootTown_ProfessorBirchsLab_EventScript_152CBE
 	map_script_2 VAR_BIRCH_LAB_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_152D4A
-	.2byte 0
+	.short 0
 
 LittlerootTown_ProfessorBirchsLab_EventScript_152CBE:: @ 8152CBE
 	lockall

@@ -67,8 +67,8 @@ se_t_ooame_e:
 	.byte	se_t_ooame_e_pri	@ Priority
 	.byte	se_t_ooame_e_rev	@ Reverb.
 
-	.word	se_t_ooame_e_grp
+	.int	se_t_ooame_e_grp
 
-	.word	se_t_ooame_e_1
+	.int	se_t_ooame_e_1
 
 	.end

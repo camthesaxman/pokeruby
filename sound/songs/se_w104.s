@@ -64,8 +64,8 @@ se_w104:
 	.byte	se_w104_pri	@ Priority
 	.byte	se_w104_rev	@ Reverb.
 
-	.word	se_w104_grp
+	.int	se_w104_grp
 
-	.word	se_w104_1
+	.int	se_w104_1
 
 	.end

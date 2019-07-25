@@ -50,7 +50,7 @@ struct PokedexAreaScreenEwramStruct
     u16 specialAreaRegionMapSectionIds[0x20];
     struct Sprite * areaMarkerSprites[0x20];
     u16 numAreaMarkerSprites;
-    u8 * errno;
+    u8 * errnum;
     struct RegionMap regionMap;
     u8 charBuffer[0x40];
     struct Sprite * areaUnknownSprites[3];
@@ -1197,12 +1197,12 @@ static void DestroyAreaSprites(void);
 static void LoadAreaUnknownGraphics(void);
 static void CreateAreaUnknownSprites(void);
 
-void ShowPokedexAreaScreen(u16 species, u8 * errno)
+void ShowPokedexAreaScreen(u16 species, u8 * errnum)
 {
     u8 taskId;
     gPokedexAreaScreenPtr->species = species;
-    gPokedexAreaScreenPtr->errno = errno;
-    errno[0] = 0;
+    gPokedexAreaScreenPtr->errnum = errnum;
+    errnum[0] = 0;
     taskId = CreateTask(Task_PokedexAreaScreen_0, 0);
     gTasks[taskId].data[0] = 0;
 }
@@ -1297,7 +1297,7 @@ static void Task_PokedexAreaScreen_1(u8 taskId)
             if (gPaletteFade.active)
                 return;
             DestroyAreaSprites();
-            gPokedexAreaScreenPtr->errno[0] = gTasks[taskId].data[1];
+            gPokedexAreaScreenPtr->errnum[0] = gTasks[taskId].data[1];
             DestroyTask(taskId);
             return;
     }

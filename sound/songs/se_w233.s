@@ -67,9 +67,9 @@ se_w233:
 	.byte	se_w233_pri	@ Priority
 	.byte	se_w233_rev	@ Reverb.
 
-	.word	se_w233_grp
+	.int	se_w233_grp
 
-	.word	se_w233_1
-	.word	se_w233_2
+	.int	se_w233_1
+	.int	se_w233_2
 
 	.end

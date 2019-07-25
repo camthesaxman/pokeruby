@@ -188,13 +188,13 @@ bgm_me_wasure:
 	.byte	bgm_me_wasure_pri	@ Priority
 	.byte	bgm_me_wasure_rev	@ Reverb.
 
-	.word	bgm_me_wasure_grp
+	.int	bgm_me_wasure_grp
 
-	.word	bgm_me_wasure_1
-	.word	bgm_me_wasure_2
-	.word	bgm_me_wasure_3
-	.word	bgm_me_wasure_4
-	.word	bgm_me_wasure_5
-	.word	bgm_me_wasure_6
+	.int	bgm_me_wasure_1
+	.int	bgm_me_wasure_2
+	.int	bgm_me_wasure_3
+	.int	bgm_me_wasure_4
+	.int	bgm_me_wasure_5
+	.int	bgm_me_wasure_6
 
 	.end

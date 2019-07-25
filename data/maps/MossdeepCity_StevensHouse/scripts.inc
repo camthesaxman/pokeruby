@@ -24,7 +24,7 @@ MossdeepCity_StevensHouse_EventScript_15A9F5:: @ 815A9F5
 
 MossdeepCity_StevensHouse_MapScript2_15AA01:: @ 815AA01
 	map_script_2 VAR_STEVENS_HOUSE_STATE, 0, MossdeepCity_StevensHouse_EventScript_15AA0B
-	.2byte 0
+	.short 0
 
 MossdeepCity_StevensHouse_EventScript_15AA0B:: @ 815AA0B
 	lockall

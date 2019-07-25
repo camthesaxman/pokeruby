@@ -5,29 +5,29 @@
 
 	.macro map_script type, address
 	.byte \type
-	.4byte \address
+	.int \address
 	.endm
 
 	.macro map_script_2 word1, word2, address
-	.2byte \word1
-	.2byte \word2
-	.4byte \address
+	.short \word1
+	.short \word2
+	.int \address
 	.endm
 
 	.macro object_event index, gfx, replacement, x, y, elevation, movement_type, x_radius, y_radius, trainer_type, sight_radius_tree_etc, script, event_flag
 	.byte \index, \gfx, \replacement, 0
-	.2byte \x
-	.2byte \y
+	.short \x
+	.short \y
 	.byte \elevation, \movement_type, ((\y_radius << 4) | \x_radius), 0
-    .2byte \trainer_type, \sight_radius_tree_etc
-	.4byte \script
-	.2byte \event_flag
-	.2byte 0
+    .short \trainer_type, \sight_radius_tree_etc
+	.int \script
+	.short \event_flag
+	.short 0
 	inc _num_npcs
 	.endm
 
 	.macro warp_def x, y, elevation, warp, map_id
-	.2byte \x, \y
+	.short \x, \y
 	.byte \elevation, \warp
 	.byte \map_id & 0xFF  @ map num
 	.byte \map_id >> 8    @ map group
@@ -35,30 +35,30 @@
 	.endm
 
 	.macro coord_event x, y, elevation, trigger, index, script
-	.2byte \x, \y
+	.short \x, \y
 	.byte \elevation, 0
-	.2byte \trigger, \index, 0
-	.4byte \script
+	.short \trigger, \index, 0
+	.int \script
 	inc _num_traps
 	.endm
 
 	.macro coord_weather_event x, y, elevation, weather
-	.2byte \x, \y
+	.short \x, \y
 	.byte \elevation, 0
-	.2byte \weather
-	.2byte 0, 0
-	.4byte 0
+	.short \weather
+	.short 0, 0
+	.int 0
 	inc _num_traps
 	.endm
 
 	.macro bg_event x, y, elevation, kind, arg6, arg7, arg8
-	.2byte \x, \y
+	.short \x, \y
 	.byte \elevation, \kind
-	.2byte 0
+	.short 0
 	.if \kind < 5
-	.4byte \arg6
+	.int \arg6
 	.else
-	.2byte \arg6
+	.short \arg6
 	.byte \arg7, \arg8
 	.endif
 	inc _num_signs
@@ -74,7 +74,7 @@
 
 	.macro map_events npcs, warps, traps, signs
 	.byte _num_npcs, _num_warps, _num_traps, _num_signs
-	.4byte \npcs, \warps, \traps, \signs
+	.int \npcs, \warps, \traps, \signs
 	reset_map_events
 	.endm
 
@@ -96,8 +96,8 @@
 	.equiv connection_emerge, 6
 
 	.macro connection direction, offset, map, filler
-	.4byte connection_\direction
-	.4byte \offset
+	.int connection_\direction
+	.int \offset
 	map \map
 	.space 2
 	.endm

@@ -38,8 +38,8 @@ se_e:
 	.byte	se_e_pri	@ Priority
 	.byte	se_e_rev	@ Reverb.
 
-	.word	se_e_grp
+	.int	se_e_grp
 
-	.word	se_e_1
+	.int	se_e_1
 
 	.end

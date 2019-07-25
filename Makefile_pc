@@ -1,7 +1,7 @@
 SHELL := /bin/bash -o pipefail
 
 AS      := as
-ASFLAGS := --32
+ASFLAGS := --32 --defsym DEBUG=0
 
 SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
 
@@ -9,11 +9,11 @@ SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
 CC 				:= gcc
 #CC1             := i686-w64-mingw32-gcc -c -x c
 CC1             := gcc -c -x c
-override CFLAGS += -Wno-trigraphs -Wimplicit -Wparentheses -Wunused -O0 -g -m32 -std=gnu99 -fno-leading-underscore -fno-dce -Wno-unused-function -DNONMATCHING -DMODERN=1 -DDEBUG=0 -DPORTABLE
+override CFLAGS += -static-libgcc -Wno-trigraphs -Wimplicit -Wparentheses -Wunused -O0 -g -m32 -std=gnu99 -fno-leading-underscore -fno-dce -Wno-unused-function -DNONMATCHING -DMODERN=1 -DDEBUG=0 -DPORTABLE
 
 #CPP      := i686-w64-mingw32-cpp
 CPP      := cpp
-CPPFLAGS := -I tools/agbcc/include -iquote include -Wno-trigraphs -D NONMATCHING -I$(SDL_DIR)/include -L$(SDL_DIR)/lib
+CPPFLAGS := -iquote include -Wno-trigraphs -D NONMATCHING -I$(SDL_DIR)/include -L$(SDL_DIR)/lib
 #CPPFLAGS := -I tools/agbcc/include -iquote include -Wno-trigraphs -D NONMATCHING
 
 LD      := ld
@@ -24,12 +24,15 @@ LIBGCC := tools/agbcc/lib/libgcc.a
 
 SHA1 := sha1sum -c
 
-GFX := tools/gbagfx/gbagfx
-AIF := tools/aif2pcm/aif2pcm
-MID := tools/mid2agb/mid2agb
-SCANINC := tools/scaninc/scaninc
-PREPROC := tools/preproc/preproc
+GBAGFX    := tools/gbagfx/gbagfx
+RSFONT    := tools/rsfont/rsfont
+AIF2PCM   := tools/aif2pcm/aif2pcm
+MID2AGB   := tools/mid2agb/mid2agb
+PREPROC   := tools/preproc/preproc
+SCANINC   := tools/scaninc/scaninc
 RAMSCRGEN := tools/ramscrgen/ramscrgen
+GBAFIX    := tools/gbafix/gbafix
+MAPJSON   := tools/mapjson/mapjson
 
 REVISION := 0
 
@@ -55,7 +58,7 @@ C_SRCS := $(shell find src -iname "*.c")
 ASM_SRCS := asm/sym_ewram.s asm/sym_common.s
 DATA_ASM_SRCS := $(wildcard data/*.s)
 
-#SONG_SRCS := $(wildcard sound/songs/*.s)
+#SONG_SRCS := $(wildcard sound/*/*.s)
 SONG_OBJS := $(SONG_SRCS:%.s=%.o)
 
 all: ruby
@@ -90,17 +93,17 @@ include map_data_rules.mk
 %.pal: ;
 %.aif: ;
 
-%.1bpp: %.png  ; $(GFX) $< $@
-%.4bpp: %.png  ; $(GFX) $< $@
-%.8bpp: %.png  ; $(GFX) $< $@
-%.gbapal: %.pal ; $(GFX) $< $@
-%.gbapal: %.png ; $(GFX) $< $@
-%.lz: % ; $(GFX) $< $@
-%.rl: % ; $(GFX) $< $@
-sound/direct_sound_samples/cry_%.bin: sound/direct_sound_samples/cry_%.aif ; $(AIF) $< $@ --compress
-%.bin: %.aif ; $(AIF) $< $@
+%.1bpp: %.png  ; $(GBAGFX) $< $@
+%.4bpp: %.png  ; $(GBAGFX) $< $@
+%.8bpp: %.png  ; $(GBAGFX) $< $@
+%.gbapal: %.pal ; $(GBAGFX) $< $@
+%.gbapal: %.png ; $(GBAGFX) $< $@
+%.lz: % ; $(GBAGFX) $< $@
+%.rl: % ; $(GBAGFX) $< $@
+sound/direct_sound_samples/cry_%.bin: sound/direct_sound_samples/cry_%.aif ; $(AIF2PCM) $< $@ --compress
+%.bin: %.aif ; $(AIF2PCM) $< $@
 sound/songs/%.s: sound/songs/%.mid
-	cd $(@D) && ../../$(MID) $(<F)
+	cd $(@D) && ../../$(MID2AGB) $(<F)
 
 $(SONG_OBJS): %.o: %.s
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
@@ -119,7 +122,7 @@ build/$1/asm/%.o: asm_dep = $$(shell $$(SCANINC) asm/$$(*F).s)
 build/$1/data/%.o: asm_dep = $$(shell $$(SCANINC) data/$$(*F).s)
 endif
 
-$1_OBJS := $$($1_C_OBJS) $$($1_DATA_ASM_OBJS) $$(SONG_OBJS)
+$1_OBJS := $$($1_C_OBJS) $$($1_ASM_OBJS) $$($1_DATA_ASM_OBJS) $$(SONG_OBJS)
 $1_OBJS_REL := $$($1_OBJS:build/$1/%=%)
 $1_OBJS_REL := $$($1_OBJS_REL:sound/%=../../sound/%)
 
@@ -170,7 +173,7 @@ compare_$1: poke$1.gba
 #	@:
 
 poke$1.exe: $$($1_OBJS)
-	$$(CC) $(CFLAGS) -L$(SDL_DIR)/lib -Wl,--demangle $$^ -lmingw32 -lSDLmain -lSDL.dll -lwinmm -static-libgcc -mwindows -o $$@
+	$$(CC) $(CFLAGS) -L$(SDL_DIR)/lib -Wl,--demangle $$^ -lmingw32 -lSDLmain -lSDL.dll -lwinmm -static-libgcc -o $$@
 
 poke$1: $$($1_OBJS)
 	$$(CC) $(CFLAGS) $$^ -LSDL -LSDLmain -o $$@

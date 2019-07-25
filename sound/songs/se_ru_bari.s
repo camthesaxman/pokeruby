@@ -56,9 +56,9 @@ se_ru_bari:
 	.byte	se_ru_bari_pri	@ Priority
 	.byte	se_ru_bari_rev	@ Reverb.
 
-	.word	se_ru_bari_grp
+	.int	se_ru_bari_grp
 
-	.word	se_ru_bari_1
-	.word	se_ru_bari_2
+	.int	se_ru_bari_1
+	.int	se_ru_bari_2
 
 	.end

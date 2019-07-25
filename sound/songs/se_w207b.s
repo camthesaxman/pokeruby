@@ -49,8 +49,8 @@ se_w207b:
 	.byte	se_w207b_pri	@ Priority
 	.byte	se_w207b_rev	@ Reverb.
 
-	.word	se_w207b_grp
+	.int	se_w207b_grp
 
-	.word	se_w207b_1
+	.int	se_w207b_1
 
 	.end

@@ -53,9 +53,9 @@ se_track_door:
 	.byte	se_track_door_pri	@ Priority
 	.byte	se_track_door_rev	@ Reverb.
 
-	.word	se_track_door_grp
+	.int	se_track_door_grp
 
-	.word	se_track_door_1
-	.word	se_track_door_2
+	.int	se_track_door_1
+	.int	se_track_door_2
 
 	.end

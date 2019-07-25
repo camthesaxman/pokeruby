@@ -122,9 +122,9 @@ se_w320:
 	.byte	se_w320_pri	@ Priority
 	.byte	se_w320_rev	@ Reverb.
 
-	.word	se_w320_grp
+	.int	se_w320_grp
 
-	.word	se_w320_1
-	.word	se_w320_2
+	.int	se_w320_1
+	.int	se_w320_2
 
 	.end

@@ -84,11 +84,11 @@ bgm_me_shinka:
 	.byte	bgm_me_shinka_pri	@ Priority
 	.byte	bgm_me_shinka_rev	@ Reverb.
 
-	.word	bgm_me_shinka_grp
+	.int	bgm_me_shinka_grp
 
-	.word	bgm_me_shinka_1
-	.word	bgm_me_shinka_2
-	.word	bgm_me_shinka_3
-	.word	bgm_me_shinka_4
+	.int	bgm_me_shinka_1
+	.int	bgm_me_shinka_2
+	.int	bgm_me_shinka_3
+	.int	bgm_me_shinka_4
 
 	.end

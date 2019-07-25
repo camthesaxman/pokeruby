@@ -43,8 +43,8 @@ se_pin:
 	.byte	se_pin_pri	@ Priority
 	.byte	se_pin_rev	@ Reverb.
 
-	.word	se_pin_grp
+	.int	se_pin_grp
 
-	.word	se_pin_1
+	.int	se_pin_1
 
 	.end

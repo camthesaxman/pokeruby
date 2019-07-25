@@ -44,7 +44,7 @@ SootopolisCity_Gym_1F_MapScript2_15AF86:: @ 815AF86
 	map_script_2 VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_15AFBC
 	map_script_2 VAR_ICE_STEP_COUNT, 69, SootopolisCity_Gym_1F_EventScript_15AFD0
 	map_script_2 VAR_ICE_STEP_COUNT, 0, SootopolisCity_Gym_1F_EventScript_15AFE4
-	.2byte 0
+	.short 0
 
 SootopolisCity_Gym_1F_EventScript_15AFA8:: @ 815AFA8
 	addvar VAR_ICE_STEP_COUNT, 1

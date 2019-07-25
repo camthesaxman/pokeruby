@@ -38,8 +38,8 @@ se_jite_pyoko:
 	.byte	se_jite_pyoko_pri	@ Priority
 	.byte	se_jite_pyoko_rev	@ Reverb.
 
-	.word	se_jite_pyoko_grp
+	.int	se_jite_pyoko_grp
 
-	.word	se_jite_pyoko_1
+	.int	se_jite_pyoko_1
 
 	.end

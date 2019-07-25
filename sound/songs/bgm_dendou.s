@@ -52,37 +52,37 @@ bgm_dendou_1_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	PATT
-	 .word	bgm_dendou_1_000
+	 .int	bgm_dendou_1_000
 	.byte	GOTO
-	 .word	bgm_dendou_1_B1
+	 .int	bgm_dendou_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -182,7 +182,7 @@ bgm_dendou_2_B1:
 	.byte		        Gn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_dendou_2_B1
+	 .int	bgm_dendou_2_B1
 	.byte		VOL   , 47*bgm_dendou_mvl/mxv
 	.byte	FINE
 
@@ -307,7 +307,7 @@ bgm_dendou_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_dendou_3_B1
+	 .int	bgm_dendou_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -447,9 +447,9 @@ bgm_dendou_4_001:
 	.byte		N08   
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_dendou_4_000
+	 .int	bgm_dendou_4_000
 	.byte	PATT
-	 .word	bgm_dendou_4_001
+	 .int	bgm_dendou_4_001
 	.byte		N06   , Dn3 , v112
 	.byte	W08
 	.byte		N08   , Dn2 
@@ -538,9 +538,9 @@ bgm_dendou_4_003:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_dendou_4_002
+	 .int	bgm_dendou_4_002
 	.byte	PATT
-	 .word	bgm_dendou_4_003
+	 .int	bgm_dendou_4_003
 	.byte	W08
 	.byte		N04   , Fn2 , v084
 	.byte	W08
@@ -565,7 +565,7 @@ bgm_dendou_4_003:
 	.byte		        Cn2 , v112
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_dendou_4_B1
+	 .int	bgm_dendou_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1005,7 +1005,7 @@ bgm_dendou_5_B1:
 	.byte		        An5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_dendou_5_B1
+	 .int	bgm_dendou_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1264,11 +1264,11 @@ bgm_dendou_6_000:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dendou_6_000
+	 .int	bgm_dendou_6_000
 	.byte	PATT
-	 .word	bgm_dendou_6_000
+	 .int	bgm_dendou_6_000
 	.byte	PATT
-	 .word	bgm_dendou_6_000
+	 .int	bgm_dendou_6_000
 	.byte		N04   , An5 , v112
 	.byte	W08
 	.byte		        Gn5 
@@ -1404,7 +1404,7 @@ bgm_dendou_6_000:
 	.byte		        Gn4 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_dendou_6_B1
+	 .int	bgm_dendou_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1713,13 +1713,13 @@ bgm_dendou_7_002:
 	.byte		N04   , An1 , v112
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_dendou_7_000
+	 .int	bgm_dendou_7_000
 	.byte	PATT
-	 .word	bgm_dendou_7_001
+	 .int	bgm_dendou_7_001
 	.byte	PATT
-	 .word	bgm_dendou_7_002
+	 .int	bgm_dendou_7_002
 	.byte	GOTO
-	 .word	bgm_dendou_7_B1
+	 .int	bgm_dendou_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -1760,7 +1760,7 @@ bgm_dendou_8_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_dendou_8_B1
+	 .int	bgm_dendou_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -1902,9 +1902,9 @@ bgm_dendou_9_001:
 	.byte		        Dn2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_dendou_9_000
+	 .int	bgm_dendou_9_000
 	.byte	PATT
-	 .word	bgm_dendou_9_001
+	 .int	bgm_dendou_9_001
 	.byte		N06   , Dn2 , v112
 	.byte	W08
 	.byte		N02   
@@ -2065,7 +2065,7 @@ bgm_dendou_9_001:
 	.byte		        An5 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_dendou_9_B1
+	 .int	bgm_dendou_9_B1
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -2093,7 +2093,7 @@ bgm_dendou_10_000:
 	.byte	W72
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_dendou_10_000
+	 .int	bgm_dendou_10_000
 	.byte		N08   , En3 , v112
 	.byte	W08
 	.byte		N04   , Cn3 
@@ -2275,7 +2275,7 @@ bgm_dendou_10_000:
 	.byte		        Cn4 
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_dendou_10_B1
+	 .int	bgm_dendou_10_B1
 	.byte	FINE
 
 @******************************************************@
@@ -2287,17 +2287,17 @@ bgm_dendou:
 	.byte	bgm_dendou_pri	@ Priority
 	.byte	bgm_dendou_rev	@ Reverb.
 
-	.word	bgm_dendou_grp
+	.int	bgm_dendou_grp
 
-	.word	bgm_dendou_1
-	.word	bgm_dendou_2
-	.word	bgm_dendou_3
-	.word	bgm_dendou_4
-	.word	bgm_dendou_5
-	.word	bgm_dendou_6
-	.word	bgm_dendou_7
-	.word	bgm_dendou_8
-	.word	bgm_dendou_9
-	.word	bgm_dendou_10
+	.int	bgm_dendou_1
+	.int	bgm_dendou_2
+	.int	bgm_dendou_3
+	.int	bgm_dendou_4
+	.int	bgm_dendou_5
+	.int	bgm_dendou_6
+	.int	bgm_dendou_7
+	.int	bgm_dendou_8
+	.int	bgm_dendou_9
+	.int	bgm_dendou_10
 
 	.end

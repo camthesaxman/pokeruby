@@ -100,17 +100,17 @@ se_w227b_1_000:
 	.byte	W02
 	.byte	PEND
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte	PATT
-	 .word	se_w227b_1_000
+	 .int	se_w227b_1_000
 	.byte		VOL   , 96*se_w227b_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W01
@@ -166,8 +166,8 @@ se_w227b:
 	.byte	se_w227b_pri	@ Priority
 	.byte	se_w227b_rev	@ Reverb.
 
-	.word	se_w227b_grp
+	.int	se_w227b_grp
 
-	.word	se_w227b_1
+	.int	se_w227b_1
 
 	.end

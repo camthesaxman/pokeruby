@@ -100,8 +100,8 @@ se_w006:
 	.byte	se_w006_pri	@ Priority
 	.byte	se_w006_rev	@ Reverb.
 
-	.word	se_w006_grp
+	.int	se_w006_grp
 
-	.word	se_w006_1
+	.int	se_w006_1
 
 	.end

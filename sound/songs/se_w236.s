@@ -105,15 +105,15 @@ se_w236_1_004:
 	.byte		N20   , Gn6 , v100
 	.byte	W21
 	.byte	PATT
-	 .word	se_w236_1_000
+	 .int	se_w236_1_000
 	.byte	PATT
-	 .word	se_w236_1_001
+	 .int	se_w236_1_001
 	.byte	PATT
-	 .word	se_w236_1_002
+	 .int	se_w236_1_002
 	.byte	PATT
-	 .word	se_w236_1_003
+	 .int	se_w236_1_003
 	.byte	PATT
-	 .word	se_w236_1_004
+	 .int	se_w236_1_004
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -192,11 +192,11 @@ se_w236_2_002:
 	.byte		        Gn6 , v096
 	.byte	W05
 	.byte	PATT
-	 .word	se_w236_2_000
+	 .int	se_w236_2_000
 	.byte	PATT
-	 .word	se_w236_2_001
+	 .int	se_w236_2_001
 	.byte	PATT
-	 .word	se_w236_2_002
+	 .int	se_w236_2_002
 	.byte	W24
 	.byte	W24
 	.byte	FINE
@@ -210,9 +210,9 @@ se_w236:
 	.byte	se_w236_pri	@ Priority
 	.byte	se_w236_rev	@ Reverb.
 
-	.word	se_w236_grp
+	.int	se_w236_grp
 
-	.word	se_w236_1
-	.word	se_w236_2
+	.int	se_w236_1
+	.int	se_w236_2
 
 	.end

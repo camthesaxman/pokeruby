@@ -6,7 +6,7 @@ EverGrandeCity_GlaciasRoom_MapScripts:: @ 815B673
 
 EverGrandeCity_GlaciasRoom_MapScript2_15B683:: @ 815B683
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_GlaciasRoom_EventScript_15B68D
-	.2byte 0
+	.short 0
 
 EverGrandeCity_GlaciasRoom_EventScript_15B68D:: @ 815B68D
 	turnobject 255, 2
@@ -14,7 +14,7 @@ EverGrandeCity_GlaciasRoom_EventScript_15B68D:: @ 815B68D
 
 EverGrandeCity_GlaciasRoom_MapScript2_15B692:: @ 815B692
 	map_script_2 VAR_ELITE_4_STATE, 2, EverGrandeCity_GlaciasRoom_EventScript_15B69C
-	.2byte 0
+	.short 0
 
 EverGrandeCity_GlaciasRoom_EventScript_15B69C:: @ 815B69C
 	lockall

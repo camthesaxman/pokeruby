@@ -16,7 +16,7 @@ RustboroCity_DevonCorp_3F_EventScript_15772D:: @ 815772D
 
 RustboroCity_DevonCorp_3F_MapScript2_157739:: @ 8157739
 	map_script_2 VAR_DEVON_CORP_3F_STATE, 0, RustboroCity_DevonCorp_3F_EventScript_157743
-	.2byte 0
+	.short 0
 
 RustboroCity_DevonCorp_3F_EventScript_157743:: @ 8157743
 	turnobject 255, 4
@@ -24,7 +24,7 @@ RustboroCity_DevonCorp_3F_EventScript_157743:: @ 8157743
 
 RustboroCity_DevonCorp_3F_MapScript2_157748:: @ 8157748
 	map_script_2 VAR_DEVON_CORP_3F_STATE, 0, RustboroCity_DevonCorp_3F_EventScript_157752
-	.2byte 0
+	.short 0
 
 RustboroCity_DevonCorp_3F_EventScript_157752:: @ 8157752
 	lockall

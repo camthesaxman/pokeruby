@@ -106,7 +106,7 @@ bgm_gomachi0_1_B1:
 	.byte		        En4 
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gomachi0_1_B1
+	 .int	bgm_gomachi0_1_B1
 	.byte	W96
 	.byte	FINE
 
@@ -582,7 +582,7 @@ bgm_gomachi0_2_B1:
 	.byte		        90*bgm_gomachi0_mvl/mxv
 	.byte	W15
 	.byte	GOTO
-	 .word	bgm_gomachi0_2_B1
+	 .int	bgm_gomachi0_2_B1
 	.byte	W96
 	.byte	FINE
 
@@ -802,7 +802,7 @@ bgm_gomachi0_3_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_gomachi0_3_B1
+	 .int	bgm_gomachi0_3_B1
 	.byte	W96
 	.byte	FINE
 
@@ -883,7 +883,7 @@ bgm_gomachi0_4_000:
 	.byte		N12   , Fs1 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gomachi0_4_000
+	 .int	bgm_gomachi0_4_000
 	.byte		N12   , Fs1 , v127
 	.byte	W36
 	.byte		N06   , Cs1 
@@ -937,7 +937,7 @@ bgm_gomachi0_4_000:
 	.byte		        32*bgm_gomachi0_mvl/mxv
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_gomachi0_4_B1
+	 .int	bgm_gomachi0_4_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1093,7 +1093,7 @@ bgm_gomachi0_5_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_gomachi0_5_B1
+	 .int	bgm_gomachi0_5_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1243,7 +1243,7 @@ bgm_gomachi0_6_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_gomachi0_6_B1
+	 .int	bgm_gomachi0_6_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1358,9 +1358,9 @@ bgm_gomachi0_7_001:
 	.byte		        Fs4 
 	.byte	W12
 	.byte	PATT
-	 .word	bgm_gomachi0_7_000
+	 .int	bgm_gomachi0_7_000
 	.byte	PATT
-	 .word	bgm_gomachi0_7_001
+	 .int	bgm_gomachi0_7_001
 	.byte		N06   , En4 , v112
 	.byte	W06
 	.byte		        Gn4 
@@ -1461,7 +1461,7 @@ bgm_gomachi0_7_001:
 	.byte		VOL   , 3*bgm_gomachi0_mvl/mxv
 	.byte	W06
 	.byte	GOTO
-	 .word	bgm_gomachi0_7_B1
+	 .int	bgm_gomachi0_7_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1684,7 +1684,7 @@ bgm_gomachi0_8_B1:
 	.byte		        0
 	.byte	W24
 	.byte	GOTO
-	 .word	bgm_gomachi0_8_B1
+	 .int	bgm_gomachi0_8_B1
 	.byte	W96
 	.byte	FINE
 
@@ -1933,7 +1933,7 @@ bgm_gomachi0_9_B1:
 	.byte	W48
 	.byte	W03
 	.byte	GOTO
-	 .word	bgm_gomachi0_9_B1
+	 .int	bgm_gomachi0_9_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2056,7 +2056,7 @@ bgm_gomachi0_10_B1:
 	.byte		N36   , En2 , v104
 	.byte	W60
 	.byte	GOTO
-	 .word	bgm_gomachi0_10_B1
+	 .int	bgm_gomachi0_10_B1
 	.byte	W96
 	.byte	FINE
 
@@ -2069,17 +2069,17 @@ bgm_gomachi0:
 	.byte	bgm_gomachi0_pri	@ Priority
 	.byte	bgm_gomachi0_rev	@ Reverb.
 
-	.word	bgm_gomachi0_grp
+	.int	bgm_gomachi0_grp
 
-	.word	bgm_gomachi0_1
-	.word	bgm_gomachi0_2
-	.word	bgm_gomachi0_3
-	.word	bgm_gomachi0_4
-	.word	bgm_gomachi0_5
-	.word	bgm_gomachi0_6
-	.word	bgm_gomachi0_7
-	.word	bgm_gomachi0_8
-	.word	bgm_gomachi0_9
-	.word	bgm_gomachi0_10
+	.int	bgm_gomachi0_1
+	.int	bgm_gomachi0_2
+	.int	bgm_gomachi0_3
+	.int	bgm_gomachi0_4
+	.int	bgm_gomachi0_5
+	.int	bgm_gomachi0_6
+	.int	bgm_gomachi0_7
+	.int	bgm_gomachi0_8
+	.int	bgm_gomachi0_9
+	.int	bgm_gomachi0_10
 
 	.end

@@ -39,8 +39,8 @@ se_z_scroll:
 	.byte	se_z_scroll_pri	@ Priority
 	.byte	se_z_scroll_rev	@ Reverb.
 
-	.word	se_z_scroll_grp
+	.int	se_z_scroll_grp
 
-	.word	se_z_scroll_1
+	.int	se_z_scroll_1
 
 	.end

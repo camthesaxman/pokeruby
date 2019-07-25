@@ -68,83 +68,83 @@ bgm_runecity_1_002:
 	.byte	W08
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_002
+	 .int	bgm_runecity_1_002
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_000
+	 .int	bgm_runecity_1_000
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	PATT
-	 .word	bgm_runecity_1_001
+	 .int	bgm_runecity_1_001
 	.byte	GOTO
-	 .word	bgm_runecity_1_B1
+	 .int	bgm_runecity_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -273,7 +273,7 @@ bgm_runecity_2_000:
 	.byte		        Bn3 , v032
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_runecity_2_000
+	 .int	bgm_runecity_2_000
 	.byte		N48   , An4 , v112
 	.byte	W24
 	.byte		MOD   , 7
@@ -831,7 +831,7 @@ bgm_runecity_2_000:
 	.byte		        Cs4 , v032
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_runecity_2_B1
+	 .int	bgm_runecity_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -891,7 +891,7 @@ bgm_runecity_3_B1:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_runecity_3_B1
+	 .int	bgm_runecity_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -960,11 +960,11 @@ bgm_runecity_4_002:
 	.byte		        En3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_runecity_4_000
+	 .int	bgm_runecity_4_000
 	.byte	PATT
-	 .word	bgm_runecity_4_001
+	 .int	bgm_runecity_4_001
 	.byte	PATT
-	 .word	bgm_runecity_4_002
+	 .int	bgm_runecity_4_002
 	.byte		N02   , Fs2 , v112
 	.byte	W16
 	.byte		N02   
@@ -1098,7 +1098,7 @@ bgm_runecity_4_003:
 	.byte		        Fs2 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_runecity_4_003
+	 .int	bgm_runecity_4_003
 	.byte		N02   , Gn2 , v112
 	.byte	W16
 	.byte		N04   , Bn2 
@@ -1364,7 +1364,7 @@ bgm_runecity_4_003:
 	.byte		        Cs3 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_runecity_4_B1
+	 .int	bgm_runecity_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -1433,11 +1433,11 @@ bgm_runecity_5_002:
 	.byte		        Gs3 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_runecity_5_000
+	 .int	bgm_runecity_5_000
 	.byte	PATT
-	 .word	bgm_runecity_5_001
+	 .int	bgm_runecity_5_001
 	.byte	PATT
-	 .word	bgm_runecity_5_002
+	 .int	bgm_runecity_5_002
 	.byte		N02   , Bn2 , v112
 	.byte	W16
 	.byte		N02   
@@ -1843,7 +1843,7 @@ bgm_runecity_5_002:
 	.byte		        As3 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_runecity_5_B1
+	 .int	bgm_runecity_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -1873,7 +1873,7 @@ bgm_runecity_6_000:
 	.byte	W72
 	.byte	W72
 	.byte	PATT
-	 .word	bgm_runecity_6_000
+	 .int	bgm_runecity_6_000
 	.byte	W72
 	.byte	W72
 	.byte	W72
@@ -1910,7 +1910,7 @@ bgm_runecity_6_000:
 	.byte	W72
 	.byte	W72
 	.byte	GOTO
-	 .word	bgm_runecity_6_B1
+	 .int	bgm_runecity_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -1996,7 +1996,7 @@ bgm_runecity_7_000:
 	.byte		        As1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_runecity_7_000
+	 .int	bgm_runecity_7_000
 	.byte		N16   , Bn1 , v112
 	.byte	W16
 	.byte		N02   , Fs1 
@@ -2364,7 +2364,7 @@ bgm_runecity_7_000:
 	.byte		        Cs1 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_runecity_7_B1
+	 .int	bgm_runecity_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -3125,7 +3125,7 @@ bgm_runecity_8_B1:
 	.byte		        Fs5 
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_runecity_8_B1
+	 .int	bgm_runecity_8_B1
 	.byte	FINE
 
 @******************************************************@
@@ -3137,15 +3137,15 @@ bgm_runecity:
 	.byte	bgm_runecity_pri	@ Priority
 	.byte	bgm_runecity_rev	@ Reverb.
 
-	.word	bgm_runecity_grp
+	.int	bgm_runecity_grp
 
-	.word	bgm_runecity_1
-	.word	bgm_runecity_2
-	.word	bgm_runecity_3
-	.word	bgm_runecity_4
-	.word	bgm_runecity_5
-	.word	bgm_runecity_6
-	.word	bgm_runecity_7
-	.word	bgm_runecity_8
+	.int	bgm_runecity_1
+	.int	bgm_runecity_2
+	.int	bgm_runecity_3
+	.int	bgm_runecity_4
+	.int	bgm_runecity_5
+	.int	bgm_runecity_6
+	.int	bgm_runecity_7
+	.int	bgm_runecity_8
 
 	.end

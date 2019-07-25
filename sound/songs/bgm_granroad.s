@@ -427,7 +427,7 @@ bgm_granroad_1_B1:
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_granroad_1_B1
+	 .int	bgm_granroad_1_B1
 	.byte	FINE
 
 @********************** Track  2 **********************@
@@ -1023,7 +1023,7 @@ bgm_granroad_2_B1:
 	.byte		N08   , Cs4 , v032
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_granroad_2_000
+	 .int	bgm_granroad_2_000
 	.byte		N32   , Dn4 , v112
 	.byte	W24
 	.byte		MOD   , 6
@@ -1163,7 +1163,7 @@ bgm_granroad_2_B1:
 	.byte		        An3 , v032
 	.byte	W04
 	.byte	GOTO
-	 .word	bgm_granroad_2_B1
+	 .int	bgm_granroad_2_B1
 	.byte	FINE
 
 @********************** Track  3 **********************@
@@ -1736,7 +1736,7 @@ bgm_granroad_3_B1:
 	.byte		N04   , Cs4 
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_granroad_3_B1
+	 .int	bgm_granroad_3_B1
 	.byte	FINE
 
 @********************** Track  4 **********************@
@@ -2726,7 +2726,7 @@ bgm_granroad_4_B1:
 	.byte		        55*bgm_granroad_mvl/mxv
 	.byte	W64
 	.byte	GOTO
-	 .word	bgm_granroad_4_B1
+	 .int	bgm_granroad_4_B1
 	.byte	FINE
 
 @********************** Track  5 **********************@
@@ -3491,7 +3491,7 @@ bgm_granroad_5_B1:
 	.byte		        Gs2 , v080
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_granroad_5_B1
+	 .int	bgm_granroad_5_B1
 	.byte	FINE
 
 @********************** Track  6 **********************@
@@ -4292,7 +4292,7 @@ bgm_granroad_6_B1:
 	.byte		        Bn2 , v080
 	.byte	W08
 	.byte	GOTO
-	 .word	bgm_granroad_6_B1
+	 .int	bgm_granroad_6_B1
 	.byte	FINE
 
 @********************** Track  7 **********************@
@@ -4468,7 +4468,7 @@ bgm_granroad_7_002:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_granroad_7_002
+	 .int	bgm_granroad_7_002
 bgm_granroad_7_003:
 	.byte		N04   , En1 , v112
 	.byte	W16
@@ -4486,9 +4486,9 @@ bgm_granroad_7_003:
 	.byte	W04
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_granroad_7_002
+	 .int	bgm_granroad_7_002
 	.byte	PATT
-	 .word	bgm_granroad_7_003
+	 .int	bgm_granroad_7_003
 	.byte		N04   , En1 , v112
 	.byte	W16
 	.byte		N04   
@@ -4548,7 +4548,7 @@ bgm_granroad_7_003:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_granroad_7_002
+	 .int	bgm_granroad_7_002
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -4579,7 +4579,7 @@ bgm_granroad_7_003:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_granroad_7_000
+	 .int	bgm_granroad_7_000
 	.byte		N04   , En1 , v112
 	.byte	W16
 	.byte		        En1 , v127
@@ -4682,13 +4682,13 @@ bgm_granroad_7_003:
 	.byte		N04   , En1 , v044
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_granroad_7_001
+	 .int	bgm_granroad_7_001
 	.byte		N40   , An2 , v088
 	.byte	W96
 	.byte	W96
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_granroad_7_B1
+	 .int	bgm_granroad_7_B1
 	.byte	FINE
 
 @********************** Track  8 **********************@
@@ -4738,9 +4738,9 @@ bgm_granroad_8_001:
 	.byte		        Gs1 
 	.byte	W08
 	.byte	PATT
-	 .word	bgm_granroad_8_000
+	 .int	bgm_granroad_8_000
 	.byte	PATT
-	 .word	bgm_granroad_8_001
+	 .int	bgm_granroad_8_001
 	.byte		N24   , Fs1 , v112
 	.byte	W64
 	.byte		N32   
@@ -4999,7 +4999,7 @@ bgm_granroad_8_B1:
 	.byte		N16   , En1 
 	.byte	W16
 	.byte	PATT
-	 .word	bgm_granroad_8_003
+	 .int	bgm_granroad_8_003
 	.byte		N08   , En2 , v112
 	.byte	W08
 	.byte		N04   , En3 
@@ -5091,11 +5091,11 @@ bgm_granroad_8_B1:
 	.byte		N24   
 	.byte	W96
 	.byte	PATT
-	 .word	bgm_granroad_8_002
+	 .int	bgm_granroad_8_002
 	.byte	PATT
-	 .word	bgm_granroad_8_003
+	 .int	bgm_granroad_8_003
 	.byte	GOTO
-	 .word	bgm_granroad_8_B1
+	 .int	bgm_granroad_8_B1
 	.byte	FINE
 
 @********************** Track  9 **********************@
@@ -5184,7 +5184,7 @@ bgm_granroad_9_000:
 	.byte		N32   , An1 
 	.byte	W32
 	.byte	PATT
-	 .word	bgm_granroad_9_000
+	 .int	bgm_granroad_9_000
 	.byte		N16   , Fs1 , v127
 	.byte	W40
 	.byte		N04   , Fs2 
@@ -5267,7 +5267,7 @@ bgm_granroad_9_002:
 	.byte		N24   , Bn1 
 	.byte	W48
 	.byte	PATT
-	 .word	bgm_granroad_9_002
+	 .int	bgm_granroad_9_002
 	.byte	W96
 	.byte	W96
 	.byte	W96
@@ -5406,11 +5406,11 @@ bgm_granroad_9_002:
 	.byte		N04   
 	.byte	W04
 	.byte	PATT
-	 .word	bgm_granroad_9_001
+	 .int	bgm_granroad_9_001
 	.byte		N64   , Dn1 , v064
 	.byte	W96
 	.byte	GOTO
-	 .word	bgm_granroad_9_B1
+	 .int	bgm_granroad_9_B1
 	.byte	FINE
 
 @******************************************************@
@@ -5422,16 +5422,16 @@ bgm_granroad:
 	.byte	bgm_granroad_pri	@ Priority
 	.byte	bgm_granroad_rev	@ Reverb.
 
-	.word	bgm_granroad_grp
+	.int	bgm_granroad_grp
 
-	.word	bgm_granroad_1
-	.word	bgm_granroad_2
-	.word	bgm_granroad_3
-	.word	bgm_granroad_4
-	.word	bgm_granroad_5
-	.word	bgm_granroad_6
-	.word	bgm_granroad_7
-	.word	bgm_granroad_8
-	.word	bgm_granroad_9
+	.int	bgm_granroad_1
+	.int	bgm_granroad_2
+	.int	bgm_granroad_3
+	.int	bgm_granroad_4
+	.int	bgm_granroad_5
+	.int	bgm_granroad_6
+	.int	bgm_granroad_7
+	.int	bgm_granroad_8
+	.int	bgm_granroad_9
 
 	.end
