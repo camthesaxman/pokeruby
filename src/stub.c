@@ -67,7 +67,7 @@ STUB_FUNC(void Start())
 
 
 // Stuff that really needs to be implemented
-STUB_FUNC(void CpuFastSet(const void *src, void *dest, u32 control))
+//STUB_FUNC(void CpuFastSet(const void *src, void *dest, u32 control))
 STUB_FUNC(void RLUnCompWram(const void *src, void *dest))
 STUB_FUNC(void RLUnCompVram(const void *src, void *dest))
 //STUB_FUNC(void DmaSet())

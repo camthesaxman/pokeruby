@@ -92,7 +92,6 @@ static void WaitForVBlank(void);
 
 void AgbMain()
 {
-    puts("Test0");
 #if MODERN && !defined(PORTABLE)
     // Modern compilers are liberal with the stack on entry to this function,
     // so RegisterRamReset may crash if it resets IWRAM.
@@ -123,7 +122,7 @@ void AgbMain()
     CheckForFlashMemory();
     InitMainCallbacks();
     InitMapMusic();
-    SeedRngWithRtc(); puts("Test9");
+    SeedRngWithRtc();
 
     gSoftResetDisabled = FALSE;
     

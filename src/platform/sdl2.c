@@ -39,18 +39,12 @@ unsigned int videoScale = 1;
 
 extern void AgbMain(void);
 
-//#define _impure_ptr         __impure_ptr
-
 int main(int argc, char **argv)
 {
     AllocConsole() ;
     AttachConsole( GetCurrentProcessId() ) ;
     freopen( "CON", "w", stdout ) ;
-    //fputs("FUCK1\n", stderr);
-    //fputs("FUCK2\n", stdout);
-    printf("TestAA");
     SDL_Init(SDL_INIT_VIDEO);
-    printf("TestAB");
     surface = SDL_SetVideoMode(DISPLAY_WIDTH, DISPLAY_HEIGHT, 32, SDL_HWSURFACE | SDL_RESIZABLE);
     if (surface == NULL)
     {
@@ -60,7 +54,6 @@ int main(int argc, char **argv)
     }
     SDL_WM_SetCaption("pokeruby", NULL);
 
-    puts("TestAC");
     AgbMain();
     return 0;
 }
@@ -252,6 +245,11 @@ void CpuSet(const void *src, void *dst, u32 cnt)
             }
         }
     }
+}
+
+void CpuFastSet(const void *src, void *dst, u32 cnt)
+{
+    CpuSet(src,dst,cnt | (1<<26));
 }
 
 void LZ77UnCompVram(const void *src_, void *dest_)

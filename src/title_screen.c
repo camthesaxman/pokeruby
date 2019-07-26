@@ -733,7 +733,6 @@ static void MainCB2(void)
 //Shine the Pokemon logo two more times, and fade in the version banner
 static void Task_TitleScreenPhase1(u8 taskId)
 {
-    puts("Task_TitleScreenPhase1\n");
     //Skip to next phase when A, B, Start, or Select is pressed
     if ((gMain.newKeys & A_B_START_SELECT) || gTasks[taskId].data[1] != 0)
     {
@@ -779,7 +778,6 @@ static void Task_TitleScreenPhase1(u8 taskId)
 //Create "Press Start" and copyright banners, and slide Pokemon logo up
 static void Task_TitleScreenPhase2(u8 taskId)
 {
-    puts("Task_TitleScreenPhase2\n");
     //Skip to next phase when A, B, Start, or Select is pressed
     if ((gMain.newKeys & A_B_START_SELECT) || gTasks[taskId].tSkipToNext)
     {
@@ -813,9 +811,7 @@ static void Task_TitleScreenPhase2(u8 taskId)
 
 //Show Kyogre/Groundon silhouette and process main title screen input
 static void Task_TitleScreenPhase3(u8 taskId)
-{
-    puts("Task_TitleScreenPhase3\n");
-    
+{    
     REG_BLDCNT = 0x2142;
     REG_BLDALPHA = 0x1F0F;
     REG_BLDY = 0;
