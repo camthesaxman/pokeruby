@@ -153,12 +153,13 @@ void ReadFlash_Core(u8 *src, u8 *dest, u32 size)
 void ReadFlash(u16 sectorNum, u32 offset, void *dest, u32 size)
 {
 #ifdef PORTABLE
+    printf("ReadFlash(sectorNum=0x%04X,offset=0x%08X,size=0x%02X)\n",sectorNum,offset,size);
     FILE * savefile = fopen("pokeruby.sav", "r+b");
     if (savefile == NULL)
     {
         return;
     }
-    if (fseek(savefile, 0x1000 * sectorNum + offset, SEEK_SET))
+    if (fseek(savefile, (sectorNum << gFlash->sector.shift) + offset, SEEK_SET))
     {
         fclose(savefile);
         return;

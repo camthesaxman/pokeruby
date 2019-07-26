@@ -27,8 +27,8 @@
 	.set OAM, _OAM
 
 	.set SOUND_INFO_PTR, 0x3007FF0
-	.set INTR_CHECK,     0x3007FF8
-	.set INTR_VECTOR,    0x3007FFC
+	.set INTR_CHECK,     _INTR_CHECK
+	.set INTR_VECTOR,    _INTR_VECTOR
 
 	.set INTR_FLAG_VBLANK,  1 << 0
 	.set INTR_FLAG_HBLANK,  1 << 1

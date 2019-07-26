@@ -46,25 +46,45 @@ u16 WaitForFlashWrite_DUMMY(u8 phase, u8 *addr, u8 lastData)
 
 u16 EraseFlashChip_DUMMY(void)
 {
-    puts("function EraseFlashChip_DUMMY is a stub");
+    puts("EraseFlashChip_DUMMY");
+    FILE * savefile = fopen("pokeruby.sav", "w+b");
+    fclose(savefile);
     return 0;
 }
 
 u16 EraseFlashSector_DUMMY(u16 sectorNum)
 {
-    puts("function EraseFlashSector_DUMMY is a stub");
+    printf("EraseFlashSector_DUMMY(0x%04X)\n",sectorNum);
+    FILE * savefile = fopen("pokeruby.sav", "r+b");
+    if (savefile == NULL)
+    {
+        savefile = fopen("pokeruby.sav", "w+b");
+    }
+    if (fseek(savefile, (sectorNum << gFlash->sector.shift), SEEK_SET))
+    {
+        fclose(savefile);
+        return 1;
+    }
+    u8 buf[0x1000] = {0xFF};
+    if (fwrite(buf, 1, sizeof(buf), savefile) != sizeof(buf))
+    {
+        fclose(savefile);
+        return 1;
+    }
+    fclose(savefile);
     return 0;
 }
 
 u16 ProgramFlashByte_DUMMY(u16 sectorNum, u32 offset, u8 data)
 {
+    printf("ProgramFlashByte_DUMMY(0x%04X,0x%08X,0x%02X)\n",sectorNum,offset,data);
     u8 val = data;
     FILE * savefile = fopen("pokeruby.sav", "r+b");
     if (savefile == NULL)
     {
-        return 1;
+        savefile = fopen("pokeruby.sav", "w+b");
     }
-    if (fseek(savefile, 0x1000 * sectorNum + offset, SEEK_SET))
+    if (fseek(savefile, (sectorNum << gFlash->sector.shift) + offset, SEEK_SET))
     {
         fclose(savefile);
         return 1;
@@ -81,12 +101,13 @@ u16 ProgramFlashByte_DUMMY(u16 sectorNum, u32 offset, u8 data)
 
 u16 ProgramFlashSector_DUMMY(u16 sectorNum, void *src)
 {
+    printf("ProgramFlashSector_DUMMY(0x%04X)\n",sectorNum);
     FILE * savefile = fopen("pokeruby.sav", "r+b");
     if (savefile == NULL)
     {
-        return 1;
+        savefile = fopen("pokeruby.sav", "w+b");
     }
-    if (fseek(savefile, 0x1000 * sectorNum, SEEK_SET))
+    if (fseek(savefile, (sectorNum << gFlash->sector.shift), SEEK_SET))
     {
         fclose(savefile);
         return 1;

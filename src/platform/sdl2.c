@@ -249,7 +249,38 @@ void CpuSet(const void *src, void *dst, u32 cnt)
 
 void CpuFastSet(const void *src, void *dst, u32 cnt)
 {
-    CpuSet(src,dst,cnt | (1<<26));
+    int count = cnt & 0x1FFFFF;
+
+    const u8 *source = src;
+    u8 *dest = dst;
+    
+    source = (u8 *)((uint32_t )source & ~3);
+    dest = (u8 *)((uint32_t )dest & ~3);
+
+    // fill?
+    if((cnt >> 24) & 1) {
+        uint32_t value = CPUReadMemory(source);
+        while(count > 0) {
+            // BIOS always transfers 32 bytes at a time
+            for(int i = 0; i < 8; i++) {
+                CPUWriteMemory(dest, value);
+                dest += 4;
+            }
+            count -= 8;
+        }
+    } else {
+        // copy
+        while(count > 0) {
+            // BIOS always transfers 32 bytes at a time
+            for(int i = 0; i < 8; i++) {
+                uint32_t value = CPUReadMemory(source);
+                CPUWriteMemory(dest, value);
+                source += 4;
+                dest += 4;
+            }
+            count -= 8;
+        }
+    }
 }
 
 void LZ77UnCompVram(const void *src_, void *dest_)
