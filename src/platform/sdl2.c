@@ -531,16 +531,18 @@ static void RenderRotScaleBGScanline(uint16_t control, uint16_t hoffs, uint16_t 
     uint8_t *bgmap = (uint8_t *)(VRAM_ + screenBaseBlock * 0x800);
     uint16_t *pal = (uint16_t *)PLTT;
 
+    /*
     hoffs &= 0x1FF;
     voffs &= 0x1FF;
+    */
 
     mapWidth = 1 << (4 + (control >> 14));  // number of tiles
 
     for (unsigned int x = 0; x < DISPLAY_WIDTH; x++)
     {
         // adjust for scroll
-        unsigned int xx = (x + hoffs) % (mapWidth * 8);
-        unsigned int yy = (lineNum + voffs) % (mapWidth * 8);
+        unsigned int xx = (x + hoffs / 256) % (mapWidth * 8);
+        unsigned int yy = (lineNum + voffs / 256) % (mapWidth * 8);
 
         unsigned int mapX = xx / 8;
         unsigned int mapY = yy / 8;
@@ -700,12 +702,12 @@ static void RenderTextBGLayer(uint16_t bgcnt, uint16_t bghoffs, uint16_t bgvoffs
         RenderBGScanline(bgcnt, bghoffs, bgvoffs, vcount, pixels + vcount * DISPLAY_WIDTH);
 }
 
-static void RenderAffineBGLayer(uint16_t bgcnt, uint32_t *pixels)
+static void RenderAffineBGLayer(uint16_t bgcnt, int32_t x, int32_t y, uint32_t *pixels)
 {
     int vcount;
     
     for (vcount = 0; vcount < DISPLAY_HEIGHT; vcount++)
-        RenderRotScaleBGScanline(bgcnt, 0, 0, vcount, pixels + vcount * DISPLAY_WIDTH);
+        RenderRotScaleBGScanline(bgcnt, x, y, vcount, pixels + vcount * DISPLAY_WIDTH);
 }
 
 static uint32_t *target1layer;
@@ -877,7 +879,7 @@ static void DrawFrame(uint32_t *pixels)
             uint16_t bgcnt = *(uint16_t *)(REG_ADDR_BG0CNT + bg * 2);
             unsigned int priority = bgcnt & 3;
             
-            RenderAffineBGLayer(bgcnt, layers[priority]);
+            RenderAffineBGLayer(bgcnt, REG_BG2X, REG_BG2Y, layers[priority]);
             //ProcessBGBlending(layers[priority], bg);
         }
         // BG0 and BG1 are text mode
