@@ -283,9 +283,11 @@ static void InitIntrHandlers(void)
     for (i = 0; i < INTR_COUNT; i++)
         gIntrTable[i] = gIntrTableTemplate[i];
 
+#ifndef PORTABLE
     DmaCopy32(3, IntrMain, IntrMain_Buffer, sizeof(IntrMain_Buffer));
 
     INTR_VECTOR = IntrMain_Buffer;
+#endif
 
     SetVBlankCallback(NULL);
     SetHBlankCallback(NULL);

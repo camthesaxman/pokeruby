@@ -209,6 +209,10 @@ void CpuSet(const void *src, void *dst, u32 cnt)
 
     // 32-bit ?
     if ((cnt >> 26) & 1) {
+        
+        assert(((uintptr_t)src & ~3) == (uintptr_t)src);
+        assert(((uintptr_t)dst & ~3) == (uintptr_t)dst);
+        
         // needed for 32-bit mode!
         source = (u8 *)((uint32_t )source & ~3);
         dest = (u8 *)((uint32_t )dest & ~3);
@@ -232,6 +236,8 @@ void CpuSet(const void *src, void *dst, u32 cnt)
         }
     } else {
         // No align on 16-bit fill?
+        assert(((uintptr_t)src & ~1) == (uintptr_t)src);
+        assert(((uintptr_t)dst & ~1) == (uintptr_t)dst);
 
         // 16-bit fill?
         if ((cnt >> 24) & 1) {

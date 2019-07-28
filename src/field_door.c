@@ -396,6 +396,24 @@ static void CopyDoorTilesToVram(const void *src)
     CpuFastSet(src, (void *)(VRAM + 0x7F00), 0x40);
 }
 
+#ifdef PORTABLE
+static void door_build_blockdef(u16 *a, u16 b, const u8 *c, u32 offset)
+{
+    int i;
+    u16 unk;
+
+    for (i = 0; i < 4 && offset < 8; i++)
+    {
+        unk = c[offset++] << 12;
+        a[i] = unk | (b + i);
+    }
+    for (; i < 8 && offset < 8; i++)
+    {
+        unk = c[offset++] << 12;
+        a[i] = unk;
+    }
+}
+#else
 static void door_build_blockdef(u16 *a, u16 b, const u8 *c)
 {
     int i;
@@ -412,15 +430,23 @@ static void door_build_blockdef(u16 *a, u16 b, const u8 *c)
         a[i] = unk;
     }
 }
+#endif
 
 static void DrawCurrentDoorAnimFrame(u32 x, u32 y, const u8 *c)
 {
     u16 arr[8];
 
+#ifdef PORTABLE
+    door_build_blockdef(arr, 0x3F8, c, 0);
+    DrawDoorMetatileAt(x, y - 1, arr);
+    door_build_blockdef(arr, 0x3FC, c, 4);
+    DrawDoorMetatileAt(x, y, arr);
+#else
     door_build_blockdef(arr, 0x3F8, c);
     DrawDoorMetatileAt(x, y - 1, arr);
     door_build_blockdef(arr, 0x3FC, c + 4);
     DrawDoorMetatileAt(x, y, arr);
+#endif
 }
 
 static void DrawClosedDoorTiles(u32 x, u32 y)

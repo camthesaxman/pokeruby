@@ -192,7 +192,7 @@ EWRAM_DATA u16 gBGTilemapBuffers[4][0x400] = {0};
 EWRAM_DATA u8 gStringVar1[0x100] = {0};
 EWRAM_DATA u8 gStringVar2[0x100] = {0};
 EWRAM_DATA u8 gStringVar3[0x100] = {0};
-EWRAM_DATA u8 gStringVar4[0x100] = {0};
+EWRAM_DATA u8 gStringVar4[0x1000] = {0};
 
 extern u16 gBattleTypeFlags;
 extern u8 gIsLinkContest;
