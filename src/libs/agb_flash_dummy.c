@@ -3,12 +3,6 @@
 #include "gba/flash_internal.h"
 #include <stdio.h>
 
-#define fopen         _fopen
-#define fseek         _fseek
-#define fclose        _fclose
-#define fread         _fread
-#define fwrite        _fwrite
-
 const u16 dummyMaxTime[] =
 {
       10, 65469, TIMER_ENABLE | TIMER_INTR_ENABLE | TIMER_256CLK,

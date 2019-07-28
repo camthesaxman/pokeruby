@@ -44,3 +44,4 @@ build/
 .projects/ARM/
 *.diff
 SDL-1.2.15/
+pokeruby

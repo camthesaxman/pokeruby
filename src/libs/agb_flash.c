@@ -3,12 +3,6 @@
 #include "gba/flash_internal.h"
 #include <stdio.h>
 
-#define fopen         _fopen
-#define fseek         _fseek
-#define fclose        _fclose
-#define fread         _fread
-#define fwrite        _fwrite
-
 static u8 sTimerNum;
 static u16 sTimerCount;
 static vu16 *sTimerReg;

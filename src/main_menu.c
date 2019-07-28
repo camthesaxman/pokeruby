@@ -667,8 +667,15 @@ void PrintMainMenuItem(const u8 *text, u8 left, u8 top)
     buffer[1] = 1;
     buffer[2] = 14;
 
+#ifdef PORTABLE
+    // Out of bounds read. Original code doesn't check for end of string on text.
+    for (i = 0; i < 26 && text[i] != EOS; i++)
+        buffer[3 + i] = text[i];
+    buffer[3 + i] = EOS;
+#else
     for (i = 0; i < 26; i++)
         buffer[3 + i] = text[i];
+#endif
 
     buffer[29] = EOS;
 

@@ -1,4 +1,4 @@
-	.section bss
+	.section .bss
 
 .macro SYMBOL name, size
         .align 4
@@ -6,7 +6,6 @@
     \name:
         .space \size;
 	.endm
-
 
 // main.c
 SYMBOL gKeyRepeatStartDelay, 4
