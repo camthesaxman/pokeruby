@@ -2,7 +2,9 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 #include <SDL/SDL.h>
 
@@ -41,9 +43,13 @@ extern void AgbMain(void);
 
 int main(int argc, char **argv)
 {
+    // Open an output console on Windows
+#ifdef _WIN32
     AllocConsole() ;
     AttachConsole( GetCurrentProcessId() ) ;
     freopen( "CON", "w", stdout ) ;
+#endif
+
     SDL_Init(SDL_INIT_VIDEO);
     surface = SDL_SetVideoMode(DISPLAY_WIDTH, DISPLAY_HEIGHT, 32, SDL_HWSURFACE | SDL_RESIZABLE);
     if (surface == NULL)

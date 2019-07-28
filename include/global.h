@@ -10,6 +10,11 @@
 #define SOUND_INFO_PTR _SOUND_INFO_PTR
 #define INTR_CHECK     _INTR_CHECK
 #define INTR_VECTOR    _INTR_VECTOR
+#define fopen         _fopen
+#define fseek         _fseek
+#define fclose        _fclose
+#define fread         _fread
+#define fwrite        _fwrite
 #define puts           _puts
 #define memcpy         _memcpy
 #define memset         _memset
@@ -38,6 +43,7 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <limits.h>
 #include "config.h" // we need to define config before gba headers as print stuff needs the functions nulled before defines.
 #include "gba/gba.h"
 

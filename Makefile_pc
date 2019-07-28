@@ -5,8 +5,18 @@ MINGW_PREFIX :=
 SDL_DIR := /k/gba/pokeruby_pc2/SDL-1.2.15
 ASM_PSEUDO_OP_CONV := sed -e 's/\.4byte/\.int/g;s/\.2byte/\.short/g'
 
+# Native Linux build
+ifeq ($(shell uname),Linux)
+  CFLAGS := -m32 -DNO_UNDERSCORE_HACK -fsanitize=address
+  ASFLAGS := --defsym NO_UNDERSCORE_HACK=1
+  PLATFORM_LIBS := -lSDLmain -lSDL
+# Windows
+else
+  PLATFORM_LIBS := -L$(SDL_DIR)/lib  -lmingw32 -lSDLmain -lSDL.dll -lwinmm
+endif
+
 AS      := $(MINGW_PREFIX)as
-ASFLAGS := --32 --defsym DEBUG=0 --defsym NONMATCHING=1 --defsym MODERN=1 --defsym PORTABLE=1
+ASFLAGS += --32 --defsym DEBUG=0 --defsym NONMATCHING=1 --defsym MODERN=1 --defsym PORTABLE=1
 
 CC	:= $(MINGW_PREFIX)gcc
 CC1     := $(MINGW_PREFIX)gcc -c -x c
@@ -48,7 +58,9 @@ VERSIONS := ruby sapphire ruby_rev1 sapphire_rev1 ruby_rev2 sapphire_rev2 ruby_d
 .PHONY: all clean tidy all_versions compare compare_all \
 $(VERSIONS) $(VERSIONS:%=compare_%)
 
-%src/platform/sdl2.o: CFLAGS += -fleading-underscore -O3
+ifneq ($(shell uname),Linux)
+  %src/platform/sdl2.o: CFLAGS += -fleading-underscore -O3
+endif
 
 $(shell mkdir -p build/ $(VERSIONS:%=build/%/{,asm,data,src{,/battle{,/anim},/field,/debug,/data,/scene,/pokemon,/engine,/libs,/platform}}))
 
@@ -172,13 +184,18 @@ compare_$1: poke$1.gba
 #	@:
 
 poke$1.exe: $$($1_OBJS)
-	$$(CC) $(CFLAGS) -L$(SDL_DIR)/lib -Wl,--demangle $$^ -lmingw32 -lSDLmain -lSDL.dll -lwinmm -static-libgcc -o $$@
+	$$(CC) $(CFLAGS) -Wl,--demangle $$^ $(PLATFORM_LIBS) -static-libgcc -o $$@
 
 poke$1: $$($1_OBJS)
-	$$(CC) $(CFLAGS) $$^ -LSDL -LSDLmain -o $$@
+	$$(CC) $(CFLAGS) -Wl,--demangle $$^ $(PLATFORM_LIBS) -static-libgcc -o $$@
 
+ifeq ($(shell uname),Linux)
+$1: poke$1
+	@:
+else
 $1: poke$1.exe
 	@:
+endif
 
 endef
 

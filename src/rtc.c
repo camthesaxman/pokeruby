@@ -166,6 +166,10 @@ u16 RtcCheckInfo(struct SiiRtcInfo *rtc)
     s32 month;
     s32 value;
 
+#ifdef PORTABLE
+    puts("function \"u16 RtcCheckInfo(struct SiiRtcInfo *rtc)\" is a stub");
+    errorFlags |= RTC_ERR_POWER_FAILURE;
+#else
     if (rtc->status & SIIRTCINFO_POWER)
         errorFlags |= RTC_ERR_POWER_FAILURE;
 
@@ -212,6 +216,7 @@ u16 RtcCheckInfo(struct SiiRtcInfo *rtc)
 
     if (value > 60)
         errorFlags |= RTC_ERR_INVALID_SECOND;
+#endif
 
     return errorFlags;
 }

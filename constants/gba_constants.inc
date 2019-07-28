@@ -15,16 +15,24 @@
 	.set IWRAM_START, 0x03000000
 	.set IWRAM_END,   IWRAM_START + 0x8000
 
+.ifndef NO_UNDERSCORE_HACK
 	.set PLTT,     _PLTT
+.endif
 	.set BG_PLTT,  PLTT
 	.set OBJ_PLTT, PLTT + 0x200
 
+.ifndef NO_UNDERSCORE_HACK
 	.set VRAM,      _VRAM_
+.else
+	.set VRAM,      VRAM_
+.endif
 	.set BG_VRAM,   VRAM
 	.set OBJ_VRAM0, VRAM + 0x10000 @ text-mode BG
 	.set OBJ_VRAM1, VRAM + 0x14000 @ bitmap-mode BG
 
+.ifndef NO_UNDERSCORE_HACK
 	.set OAM, _OAM
+.endif
 
 	.set SOUND_INFO_PTR, 0x3007FF0
 	.set INTR_CHECK,     _INTR_CHECK
@@ -48,7 +56,9 @@
 	.set VCOUNT_VBLANK, 160
 	.set TOTAL_SCANLINES, 228
 
+.ifndef NO_UNDERSCORE_HACK
 	.set REG_BASE, _REG_BASE @ I/O register base address
+.endif
 
 @ I/O register offsets
 	.set OFFSET_REG_DISPCNT,     0x0
