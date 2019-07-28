@@ -895,10 +895,10 @@ void sub_80C3158(const u8 *string, u8 spriteId)
 
     sub_80034D4(eContestLink80C2020Struct2018068, gDisplayedStringBattle);
 
-    CpuCopy32(&gUnknown_083D1624[0x0], (void *)0x6010000 + 32 * sp00[0], 32);
-    CpuCopy32(&gUnknown_083D1624[0x40], (void *)0x6010000 + 32 * sp00[0] + 0x100, 32);
-    CpuCopy32(&gUnknown_083D1624[0x40], (void *)0x6010000 + 32 * sp00[0] + 0x200, 32);
-    CpuCopy32(&gUnknown_083D1624[0x20], (void *)0x6010000 + 32 * sp00[0] + 0x300, 32);
+    CpuCopy32(&gUnknown_083D1624[0x0], (void *)VRAM+0x10000 + 32 * sp00[0], 32);
+    CpuCopy32(&gUnknown_083D1624[0x40], (void *)VRAM+0x10000 + 32 * sp00[0] + 0x100, 32);
+    CpuCopy32(&gUnknown_083D1624[0x40], (void *)VRAM+0x10000 + 32 * sp00[0] + 0x200, 32);
+    CpuCopy32(&gUnknown_083D1624[0x20], (void *)VRAM+0x10000 + 32 * sp00[0] + 0x300, 32);
 
     w = width / 8;
     j = 0;

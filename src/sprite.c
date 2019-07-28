@@ -423,9 +423,15 @@ static void SortSprites(void)
             }
         }
 
+#ifdef PORTABLE
+        while (j > 1
+            && ((sprite1Priority > sprite2Priority)
+             || (sprite1Priority == sprite2Priority && sprite1Y < sprite2Y)))
+#else
         while (j > 0
             && ((sprite1Priority > sprite2Priority)
              || (sprite1Priority == sprite2Priority && sprite1Y < sprite2Y)))
+#endif
         {
             u8 temp = gSpriteOrder[j];
             gSpriteOrder[j] = gSpriteOrder[j - 1];

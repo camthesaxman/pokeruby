@@ -2700,7 +2700,7 @@ static void GetGlyphTilePointers(u8 fontNum, u8 language, u16 glyph, u8 **upperT
         break;
     case 4:
         *upperTilePtr = font->glyphs
-            + (glyph & 0xFFF0) * font->glyphSize
+            + ((glyph & 0xFFF0) * font->glyphSize)
             + (((glyph &= 0xF) * font->glyphSize) >> 1);
         *lowerTilePtr = *upperTilePtr + font->lowerTileOffset;
         break;
