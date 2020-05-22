@@ -1390,3 +1390,16 @@ static const u8 gItemDescription_HM08[] = _(
     "attacks next turn.");
 
 static const u8 gItemDescription_Dummy[] = _("");
+
+#ifdef RUBY
+static const u8 gItemDescription_EonFlute[] = _(
+    "A flute that can\n"
+    "summon LATIOS\n"
+    "wherever you are.");
+#elif defined(SAPPHIRE)
+static const u8 gItemDescription_EonFlute[] = _(
+    "A flute that can\n"
+    "summon LATIAS\n"
+    "wherever you are.");
+#endif
+

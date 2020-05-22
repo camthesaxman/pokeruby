@@ -1,0 +1,3 @@
+These codes replace the first item in your Key Items slot with the EON Flute.
+English R/S: Replaces the value at 0x02025CE4 with 267
+82025CE4010B

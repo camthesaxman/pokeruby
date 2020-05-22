@@ -69,6 +69,7 @@ void sub_80FAEC4(void);
 u8 sub_80FAFC0(void);
 void UpdateRegionMapVideoRegs(void);
 void RegionMapDefaultZoomOffsetPlayerSprite(s16, s16);
+void RegionMap_GetSectionCoordsFromCurrFieldPos(u16 *mapSectionId, u16 *cursorPosX, u16 *cursorPosY, bool8 *playerIsInCave);
 u16 GetOverworldMapFromUnderwaterMap(u16 mapSectionId);
 void CreateRegionMapCursor(u16, u16);
 void CreateRegionMapPlayerIcon(u16, u16);

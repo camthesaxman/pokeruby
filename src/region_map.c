@@ -49,9 +49,9 @@ static const u16 sRegionMapBrendanIcon_Pal[] = INCBIN_U16("graphics/pokenav/bren
 static const u8 sRegionMapBrendanIcon_Image[] = INCBIN_U8("graphics/pokenav/brendan_icon.4bpp");
 static const u16 sRegionMapMayIcon_Pal[] = INCBIN_U16("graphics/pokenav/may_icon.gbapal");
 static const u8 sRegionMapMayIcon_Image[] = INCBIN_U8("graphics/pokenav/may_icon.4bpp");
-static const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/pokenav/region_map.gbapal");
-static const u8 sRegionMapBkgnd_ImageLZ[] = INCBIN_U8("graphics/pokenav/region_map.8bpp.lz");
-static const u8 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U8("graphics/pokenav/region_map_map.bin.lz");
+/*static*/ const u16 sRegionMapBkgnd_Pal[] = INCBIN_U16("graphics/pokenav/region_map.gbapal");
+/*static*/ const u8 sRegionMapBkgnd_ImageLZ[] = INCBIN_U8("graphics/pokenav/region_map.8bpp.lz");
+/*static*/ const u8 sRegionMapBkgnd_TilemapLZ[] = INCBIN_U8("graphics/pokenav/region_map_map.bin.lz");
 
 static const u8 sRegionMapLayout[] = INCBIN_U8("graphics/pokenav/region_map_section_layout.bin");
 
@@ -509,7 +509,7 @@ static u16 GetRegionMapSectionAt(u16 x, u16 y)
     return sRegionMapLayout[x + y * 28];
 }
 
-static void InitializeCursorPosition(void)
+void RegionMap_GetSectionCoordsFromCurrFieldPos(u16 *mapSectionId, u16 *cursorPosX, u16 *cursorPosY, bool8 *playerIsInCave)
 {
     struct MapHeader *mapHeader;
     u16 mapWidth;
@@ -536,20 +536,20 @@ static void InitializeCursorPosition(void)
     case 2:
     case 4:
     case 5:
-        gRegionMap->mapSectionId = gMapHeader.regionMapSectionId;
-        gRegionMap->playerIsInCave = FALSE;
+        *mapSectionId = gMapHeader.regionMapSectionId;
+        *playerIsInCave = FALSE;
         mapWidth = gMapHeader.mapLayout->width;
         mapHeight = gMapHeader.mapLayout->height;
         x = gSaveBlock1.pos.x;
         y = gSaveBlock1.pos.y;
-        if (gRegionMap->mapSectionId == MAPSEC_UNDERWATER_128)
-            gRegionMap->playerIsInCave = TRUE;
+        if (*mapSectionId == MAPSEC_UNDERWATER_128)
+            *playerIsInCave = TRUE;
         break;
     case 3:
     case 6:
         mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1.warp4.mapGroup, gSaveBlock1.warp4.mapNum);
-        gRegionMap->mapSectionId = mapHeader->regionMapSectionId;
-        gRegionMap->playerIsInCave = TRUE;
+        *mapSectionId = mapHeader->regionMapSectionId;
+        *playerIsInCave = TRUE;
         mapWidth = mapHeader->mapLayout->width;
         mapHeight = mapHeader->mapLayout->height;
         x = gSaveBlock1.warp4.x;
@@ -557,8 +557,8 @@ static void InitializeCursorPosition(void)
         break;
     case 8:
         mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1.warp2.mapGroup, gSaveBlock1.warp2.mapNum);
-        gRegionMap->mapSectionId = mapHeader->regionMapSectionId;
-        gRegionMap->playerIsInCave = TRUE;
+        *mapSectionId = mapHeader->regionMapSectionId;
+        *playerIsInCave = TRUE;
         mapWidth = mapHeader->mapLayout->width;
         mapHeight = mapHeader->mapLayout->height;
         x = gSaveBlock1.warp2.x;
@@ -568,8 +568,8 @@ static void InitializeCursorPosition(void)
         {
             struct WarpData *r4;
 
-            gRegionMap->mapSectionId = gMapHeader.regionMapSectionId;
-            if (gRegionMap->mapSectionId != MAPSEC_DYNAMIC)
+            *mapSectionId = gMapHeader.regionMapSectionId;
+            if (*mapSectionId != MAPSEC_DYNAMIC)
             {
                 r4 = &gSaveBlock1.warp4;
                 mapHeader = Overworld_GetMapHeaderByGroupAndId(r4->mapGroup, r4->mapNum);
@@ -578,9 +578,9 @@ static void InitializeCursorPosition(void)
             {
                 r4 = &gSaveBlock1.warp2;
                 mapHeader = Overworld_GetMapHeaderByGroupAndId(r4->mapGroup, r4->mapNum);
-                gRegionMap->mapSectionId = mapHeader->regionMapSectionId;
+                *mapSectionId = mapHeader->regionMapSectionId;
             }
-            gRegionMap->playerIsInCave = FALSE;
+            *playerIsInCave = FALSE;
             mapWidth = mapHeader->mapLayout->width;
             mapHeight = mapHeader->mapLayout->height;
             x = r4->x;
@@ -591,21 +591,21 @@ static void InitializeCursorPosition(void)
 
     r9 = x;
 
-    r1 = mapWidth / gRegionMapEntries[gRegionMap->mapSectionId].width;
+    r1 = mapWidth / gRegionMapEntries[*mapSectionId].width;
     if (r1 == 0)
         r1 = 1;
     x /= r1;
-    if (x >= gRegionMapEntries[gRegionMap->mapSectionId].width)
-        x = gRegionMapEntries[gRegionMap->mapSectionId].width - 1;
+    if (x >= gRegionMapEntries[*mapSectionId].width)
+        x = gRegionMapEntries[*mapSectionId].width - 1;
 
-    r1 = mapHeight / gRegionMapEntries[gRegionMap->mapSectionId].height;
+    r1 = mapHeight / gRegionMapEntries[*mapSectionId].height;
     if (r1 == 0)
         r1 = 1;
     y /= r1;
-    if (y >= gRegionMapEntries[gRegionMap->mapSectionId].height)
-        y = gRegionMapEntries[gRegionMap->mapSectionId].height - 1;
+    if (y >= gRegionMapEntries[*mapSectionId].height)
+        y = gRegionMapEntries[*mapSectionId].height - 1;
 
-    switch (gRegionMap->mapSectionId)
+    switch (*mapSectionId)
     {
     case MAPSEC_ROUTE_114:
         if (y != 0)
@@ -634,8 +634,14 @@ static void InitializeCursorPosition(void)
             x++;
         break;
     }
-    gRegionMap->cursorPosX = gRegionMapEntries[gRegionMap->mapSectionId].x + x + MAPCURSOR_X_MIN;
-    gRegionMap->cursorPosY = gRegionMapEntries[gRegionMap->mapSectionId].y + y + MAPCURSOR_Y_MIN;
+    *cursorPosX = gRegionMapEntries[*mapSectionId].x + x + MAPCURSOR_X_MIN;
+    *cursorPosY = gRegionMapEntries[*mapSectionId].y + y + MAPCURSOR_Y_MIN;
+}
+
+static void InitializeCursorPosition(void)
+{
+    RegionMap_GetSectionCoordsFromCurrFieldPos(&gRegionMap->mapSectionId,
+      &gRegionMap->cursorPosX, &gRegionMap->cursorPosY, &gRegionMap->playerIsInCave);
 }
 
 static void sub_80FB600(void)
@@ -1170,7 +1176,7 @@ static const u8 sFlyRegionMapFrame_TilemapLZ[] = INCBIN_U8("graphics/pokenav/map
 static const u16 sFlyTargetIcons_Pal[] = INCBIN_U16("graphics/pokenav/fly_target_icons.gbapal");
 static const u8 sFlyTargetIcons_ImageLZ[] = INCBIN_U8("graphics/pokenav/fly_target_icons.4bpp.lz");
 
-static const u8 sMapHealLocations[][3] =
+/*static*/ const u8 sMapHealLocations[][3] =
 {
     {MAP_GROUP(LITTLEROOT_TOWN), MAP_NUM(LITTLEROOT_TOWN), HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F},
     {MAP_GROUP(OLDALE_TOWN), MAP_NUM(OLDALE_TOWN), HEAL_LOCATION_OLDALE_TOWN},

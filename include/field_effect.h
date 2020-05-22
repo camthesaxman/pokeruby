@@ -41,6 +41,7 @@ void SpriteCB_PokecenterMonitor(struct Sprite *);
 void SpriteCB_HallOfFameMonitor(struct Sprite *);
 
 void sub_80865BC(void);
+void sub_80865BC_SoarLand(void);
 
 void PokecenterHealEffect_0(struct Task *);
 void PokecenterHealEffect_1(struct Task *);
@@ -176,6 +177,7 @@ void MultiplyInvertedPaletteRGBComponents(u16, u8, u8, u8);
 void StartEscapeRopeFieldEffect(void);
 void CreateTeleportFieldEffectTask(void);
 void MultiplyPaletteRGBComponents(u16 i, u8 r, u8 g, u8 b);
+void Fldeff_FlyLand(void);
 
 extern s32 gFieldEffectArguments[8];
 

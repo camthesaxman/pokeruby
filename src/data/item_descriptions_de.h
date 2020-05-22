@@ -1390,3 +1390,16 @@ static const u8 gItemDescription_HM08[] = _(
     "griff aus der Tiefe.");
 
 static const u8 gItemDescription_Dummy[] = _("");
+
+#ifdef RUBY
+static const u8 gItemDescription_EonFlute[] = _(
+    "Beschwört LATIOS,\n"
+    "um dich hoch in den\n"
+    "Himmel zu befördern.");
+#elif defined(SAPPHIRE)
+static const u8 gItemDescription_EonFlute[] = _(
+    "Beschwört LATIAS,\n"
+    "um dich hoch in den\n"
+    "Himmel zu befördern.");
+#endif
+

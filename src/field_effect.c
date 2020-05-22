@@ -1074,6 +1074,8 @@ void mapldr_08084390(void);
 void task00_8084310(u8);
 void c3_080843F8(u8);
 
+// The following two functions handle FLY
+
 void sub_80865BC(void)
 {
     SetMainCallback2(CB2_ReturnToField);
@@ -1084,6 +1086,27 @@ void mapldr_080842E8(void)
 {
     pal_fill_black();
     CreateTask(task00_8084310, 0);
+    ScriptContext2_Enable();
+    FreezeEventObjects();
+    gFieldCallback = NULL;
+}
+
+// The following two functions do the fly animation, but only the landing (used for soaring)
+
+void mapldr_080842E8_SoarLand(void);
+void sub_80865BC_SoarLand(void)
+{
+    SetMainCallback2(CB2_ReturnToField);
+    gFieldCallback = mapldr_080842E8_SoarLand;
+}
+
+void mapldr_080842E8_SoarLand(void)
+{
+    u8 taskId;
+
+    pal_fill_black();
+    taskId = CreateTask(task00_8084310, 0);
+    gTasks[taskId].data[0] = 1;  // Skip the ascension and map picker, we only want to play the landing anim.
     ScriptContext2_Enable();
     FreezeEventObjects();
     gFieldCallback = NULL;

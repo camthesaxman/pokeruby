@@ -38,6 +38,7 @@
 #include "constants/map_types.h"
 #include "constants/species.h"
 #include "constants/vars.h"
+#include "soar.h"
 
 extern void (*gFieldItemUseCallback)(u8);
 extern void (*gFieldCallback)(void);
@@ -1206,4 +1207,17 @@ void ItemUseInBattle_EnigmaBerry(u8 taskId)
 void ItemUseOutOfBattle_CannotUse(u8 taskId)
 {
     DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[2]);
+}
+
+static void ItemUseOnFieldCB_EonFlute(u8 taskId)
+{
+    ScriptContext2_Enable();
+    FreezeEventObjects();
+    SetMainCallback2(CB2_InitSoar);
+}
+
+void ItemUseOutOfBattle_EonFlute(u8 taskId)
+{
+    gFieldItemUseCallback = (void *)ItemUseOnFieldCB_EonFlute;
+    SetUpItemUseOnFieldCallback(taskId);
 }
